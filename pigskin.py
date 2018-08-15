@@ -74,8 +74,10 @@ class pigskin(object):
         if headers:
             self.log('Headers: %s' % headers)
 
-        # requests session implements connection pooling, after being idle for some time the connection might be closed server side.
-        # In case it's the servers being very slow, the timeout should fail fast and retry with longer timeout.
+        # requests session implements connection pooling, after being idle for
+        # some time the connection might be closed server side.
+        # In case it's the servers being very slow, the timeout should fail fast
+        # and retry with longer timeout.
         failed = False
         for t in [3, 22]:
             try:
@@ -88,14 +90,16 @@ class pigskin(object):
                 # We made it without error, exit the loop
                 break
             except requests.Timeout:
-                self.log('Timeout condition occured after %i seconds' % t)
+                self.log('Timeout condition occurred after %i seconds' % t)
                 if failed:
-                    #failed twice while sending request, should we show a dialog here? Ask only for debug log if the servers are confirmed functional?
+                    # failed twice while sending request
+                    # TODO: this should be raised so the user can be informed.
                     pass
                 else:
                     failed = True
             except:
-                #Something went wrong, not a timeout
+                # something else went wrong, not a timeout
+                # TODO: raise this
                 pass
 
         self.log('Response code: %s' % req.status_code)
