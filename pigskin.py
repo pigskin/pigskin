@@ -1,5 +1,5 @@
 """
-A Kodi-agnostic library for NFL Game Pass
+A Python library for NFL Game Pass
 """
 import codecs
 import uuid
