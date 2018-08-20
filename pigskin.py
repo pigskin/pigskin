@@ -310,6 +310,7 @@ class pigskin(object):
         return game_versions
 
     def get_stream(self, video_id, game_type=None, username=None):
+        # TODO: return all available stream types (HLS, chromecast, etc) or accept preferred stream-type as an argument
         """Return the URL for a stream."""
         self.refresh_tokens()
 
@@ -338,19 +339,11 @@ class pigskin(object):
                 stream_request_url = i.attrib['value'].replace('{V.ID}', video_id)
         akamai_xml_data = self.make_request(stream_request_url, 'get')
         akamai_xml_root = ET.fromstring(akamai_xml_data)
+
         for i in akamai_xml_root.iter('videoSource'):
-            if i.attrib['format'].lower() == 'chromecast':
-                for text in i.itertext():
-                    if 'http' in text:
-                        m3u8_url = text
-                        break
             if i.attrib['format'].lower() == 'hls':
-                for text in i.itertext():
-                    self.log('m3u8 url.')
-                    self.log('Python Version: %s' % text)
-                    if 'http' in text and 'highlights' in text:
-                        m3u8_url = text
-                        break
+                m3u8_url = i.findtext('uri')
+                break
 
         post_data = {
             'Type': '1',
@@ -365,22 +358,23 @@ class pigskin(object):
 
         response = self.make_request(processing_url, 'post', payload=json.dumps(post_data))
 
-        return self.parse_m3u8_manifest(response['ContentUrl'])
+        return response['ContentUrl']
 
-    def parse_m3u8_manifest(self, manifest_url):
-        """Return the manifest URL along with its bitrate."""
+    def m3u8_to_dict(self, manifest_url):
+        """Return a dict of available bitrates and their respective stream. This
+        is especially useful if you need to pass a URL to a player that doesn't
+        support adaptive streaming."""
         streams = {}
         m3u8_header = {
             'Connection': 'keep-alive',
             'User-Agent': self.user_agent
         }
-        streams['manifest_url'] = manifest_url + '|' + urllib.urlencode(m3u8_header)
-        streams['bitrates'] = {}
+
         m3u8_manifest = self.make_request(manifest_url, 'get')
         m3u8_obj = m3u8.loads(m3u8_manifest)
         for playlist in m3u8_obj.playlists:
             bitrate = int(playlist.stream_info.bandwidth) / 1000
-            streams['bitrates'][bitrate] = manifest_url[:manifest_url.rfind('/manifest') + 1] + playlist.uri + '?' + manifest_url.split('?')[1] + '|' + urllib.urlencode(m3u8_header)
+            streams[bitrate] = manifest_url[:manifest_url.rfind('/manifest') + 1] + playlist.uri + '?' + manifest_url.split('?')[1] + '|' + urllib.urlencode(m3u8_header)
 
         return streams
 
