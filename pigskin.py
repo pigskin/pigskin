@@ -166,10 +166,15 @@ class pigskin(object):
             'client_id': self.client_id,
             'grant_type': 'password'
         }
-        data = self.make_request(url, 'post', payload=post_data)
-        self.access_token = data['access_token']
-        self.refresh_token = data['refresh_token']
-        self.check_for_subscription()
+        try:
+            data = self.make_request(url, 'post', payload=post_data)
+            self.access_token = data['access_token']
+            self.refresh_token = data['refresh_token']
+            self.check_for_subscription()
+        except TypeError:
+            self.log('Login Failed.')
+            self.log(data)
+            raise self.GamePassError('failed_login')
 
         return True
 
@@ -179,10 +184,10 @@ class pigskin(object):
         headers = {'Authorization': 'Bearer {0}'.format(self.access_token)}
         account_data = self.make_request(url, 'get', headers=headers)
 
-        if account_data['subscriptions']:
-            self.log('NFL Game Pass Europe subscription detected.')
+        try:
+            self.log('subscription: %s' % account_data['subscriptions'])
             return True
-        else:
+        except TypeError:
             self.log('No active NFL Game Pass Europe subscription was found.')
             raise self.GamePassError('no_subscription')
 
