@@ -49,7 +49,7 @@ class pigskin(object):
     def log(self, string):
         if self.debug:
             try:
-                print('[pigskin]: %s' % string.decode('utf-8-sig'))
+                print('[pigskin]: {0}'.format(string.decode('utf-8-sig')))
             except:
                 pass
 
