@@ -1,4 +1,4 @@
-from ..pigskin import pigskin
+from pigskin.pigskin import pigskin
 
 gp = pigskin(debug=True)
 
