@@ -1,6 +1,7 @@
 # A Python Library for NFL Game Pass #
 
 [![Build Status](https://travis-ci.org/aqw/pigskin.svg?branch=master)](https://travis-ci.org/aqw/pigskin)
+[![codecov.io](https://codecov.io/github/aqw/pigskin/coverage.svg?branch=master)](https://codecov.io/github/aqw/pigskin?branch=master)
 
 This is a Python module for connecting to the NFL Game Pass service. The code
 originated with the aqw/xbmc-gamepass project, but was moved to its own repo to
