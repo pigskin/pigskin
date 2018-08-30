@@ -20,8 +20,9 @@ scrub_list = [
 ]
 
 def scrub_request(request):
-    for i in scrub_list:
-        request.body = request.body.decode().replace(i, 'REDACTED').encode()
+    if request.body:
+        for i in scrub_list:
+            request.body = request.body.decode().replace(i, 'REDACTED').encode()
     return request
 
 def scrub_response(response):
