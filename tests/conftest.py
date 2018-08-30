@@ -1,5 +1,6 @@
 import os
 import pytest
+import json
 try:
     from urllib import quote  # Python 2.X
 except ImportError:
@@ -24,8 +25,16 @@ def scrub_request(request):
     return request
 
 def scrub_response(response):
+    body = response['body']['string'].decode()
     for i in scrub_list:
-        response['body']['string'] = response['body']['string'].replace(i, 'REDACTED')
+        body = body.replace(i, 'REDACTED')
+
+    try:
+        parsed = json.loads(body)
+        response['body']['string'] = parsed
+    except JSONDecodeError as e:
+        response['body']['string'] = body.encode()
+
     return response
 
 @pytest.fixture
@@ -33,5 +42,5 @@ def vcr_config():
     return {
         'decode_compressed_response': True,
         'before_record_request': scrub_request,
-        #'before_record_response': scrub_response
+        'before_record_response': scrub_response,
     }
