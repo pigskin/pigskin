@@ -6,13 +6,12 @@ python:
   - 3.5
   - 3.6
 install:
-  - pip install -U pyflakes
-  - pip install -U pytest
-  - pip install -U codecov pytest-cov
+  - pip install -U .[test]
+  - pip install -U codecov
   - pip install -r requirements.txt
   - pip list
 script:
   - pyflakes --version && pyflakes pigskin/ setup.py
-  - pytest --version && pytest --cov=pigskin/
+  - pytest --version && pytest --vcr-record=none --cov=pigskin/
   - codecov
 sudo: false

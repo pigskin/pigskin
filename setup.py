@@ -24,6 +24,10 @@ REQUIRED = [
     'requests', 'm3u8'
 ]
 
+TEST_DEPS = [
+    'pytest', 'pytest-cov', 'vcrpy', 'pytest-vcr', 'pyflakes'
+]
+
 # What packages are optional?
 EXTRAS = {
     # 'fancy feature': ['django'],
@@ -97,6 +101,7 @@ setup(
     # },
     install_requires=REQUIRED,
     extras_require=EXTRAS,
+    tests_require=TEST_DEPS,
     include_package_data=True,
     license='MIT',
     classifiers=[
