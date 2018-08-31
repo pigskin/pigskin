@@ -30,11 +30,13 @@ def scrub_response(response):
     for i in scrub_list:
         body = body.replace(i, 'REDACTED')
 
-    try:
+    response['body']['string'] = body.encode()
+
+    try:  # load JSON as a python dict so it can be pretty printed
         parsed = json.loads(body)
-        response['body']['string'] = parsed
-    except JSONDecodeError as e:
-        response['body']['string'] = body.encode()
+        response['body']['pretty'] = parsed
+    except ValueError as e:
+        pass
 
     return response
 
