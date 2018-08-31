@@ -1,0 +1,25 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/bytes/20
+  response:
+    body:
+      string: !!binary |
+        vdeb0srMHGY92rNo51R4w31+8zU=
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['20']
+      Content-Type: [application/octet-stream]
+      Date: ['Fri, 31 Aug 2018 11:23:36 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+version: 1
