@@ -19,13 +19,24 @@ for i in [ pytest.gp_username, pytest.gp_password ]:
         scrub_list.append(quote(i))
 
 def scrub_request(request):
-    if request.body:
-        for i in scrub_list:
-            request.body = request.body.decode().replace(i, 'REDACTED').encode()
+    try:
+        body = request.body.decode()
+    except (AttributeError, UnicodeDecodeError) as e:
+        return request
+
+    for i in scrub_list:
+        body = body.replace(i, 'REDACTED')
+
+    request.body = body.encode()
+
     return request
 
 def scrub_response(response):
-    body = response['body']['string'].decode()
+    try:
+        body = response['body']['string'].decode()
+    except (AttributeError, UnicodeDecodeError) as e:
+        return response
+
     for i in scrub_list:
         body = body.replace(i, 'REDACTED')
 
