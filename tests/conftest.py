@@ -11,13 +11,12 @@ from pigskin.pigskin import pigskin
 
 pytest.gp_username = os.getenv('PIGSKIN_USER', '')
 pytest.gp_password = os.getenv('PIGSKIN_PASS', '')
+scrub_list = []
 
-scrub_list = [
-    pytest.gp_username,
-    pytest.gp_password,
-    quote(pytest.gp_username),
-    quote(pytest.gp_password)
-]
+for i in [ pytest.gp_username, pytest.gp_password ]:
+    if i:
+        scrub_list.append(i)
+        scrub_list.append(quote(i))
 
 def scrub_request(request):
     if request.body:
