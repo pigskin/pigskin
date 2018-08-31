@@ -20,14 +20,17 @@ AUTHOR = 'Alex Waite and many others'
 REQUIRES_PYTHON = ">2.7,!=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 # What packages are required for this module to be executed?
-REQUIRED = [
-    'requests', 'm3u8'
+INSTALL_DEPS = [
+    'requests',
+    'm3u8',
 ]
-
 TEST_DEPS = [
-    'pytest', 'pytest-cov', 'vcrpy', 'pytest-vcr', 'pyflakes'
+    'pyflakes',
+    'pytest',
+    'pytest-cov',
+    'pytest-vcr',
+    'vcrpy',
 ]
-
 # What packages are optional?
 EXTRAS = {
     # 'fancy feature': ['django'],
@@ -99,7 +102,7 @@ setup(
     # entry_points={
     #     'console_scripts': ['mycli=mymodule:cli'],
     # },
-    install_requires=REQUIRED,
+    install_requires=INSTALL_DEPS,
     extras_require=EXTRAS,
     tests_require=TEST_DEPS,
     include_package_data=True,
