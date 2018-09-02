@@ -11,14 +11,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        IWUDDzOm2LKj587A1b1/9N2aWSw=
+        dy+xETk3teHGGFazIV/htQK2AUg=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sun, 02 Sep 2018 07:56:38 GMT']
+      Date: ['Sun, 02 Sep 2018 10:18:06 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -34,14 +34,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        TL5P7HYqypLHZIlHzic6qUq4WAk=
+        +gibrIlK9iBLDlPm5GZK9n8EI5o=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sun, 02 Sep 2018 07:56:38 GMT']
+      Date: ['Sun, 02 Sep 2018 10:18:06 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -57,14 +57,37 @@ interactions:
   response:
     body:
       string: !!binary |
-        tpOQr9GeUVanYZZ6e+WH8GXan5Y=
+        zngIweSY8cTmSRJhih1p6RAjcGY=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sun, 02 Sep 2018 07:56:38 GMT']
+      Date: ['Sun, 02 Sep 2018 10:18:06 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://httpbin.org/bytes/20
+  response:
+    body:
+      string: !!binary |
+        NRCRtsQQxPkzRltOZvhWVkLx39Y=
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['20']
+      Content-Type: [application/octet-stream]
+      Date: ['Sun, 02 Sep 2018 10:18:06 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
