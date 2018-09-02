@@ -21,22 +21,3 @@ def test_get_current_season_and_week():
     assert int(current['season']) > 2000 and int(current['season']) < 2050
     assert current['season_type'] in {'pre', 'reg', 'post'}
     assert int(current['week']) > 0 and int(current['week']) < 23
-
-
-@pytest.mark.vcr()
-def test_get_current_season_and_week_failure():
-    gp = pigskin()
-
-    # change to a wrong URL
-    gp.config['modules']['ROUTES_DATA_PROVIDERS']['games'] = 'https://httpbin.org/json'
-    current = gp.get_current_season_and_week()
-
-    # make sure we have no answer
-    assert not current
-
-    # another wrong URL
-    gp.config['modules']['ROUTES_DATA_PROVIDERS']['games'] = 'https://httpbin.org/html'
-    current = gp.get_current_season_and_week()
-
-    # make sure we have no answer
-    assert not current

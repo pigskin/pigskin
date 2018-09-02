@@ -1,5 +1,4 @@
 import os
-import logging
 import pytest
 
 from pigskin.pigskin import pigskin

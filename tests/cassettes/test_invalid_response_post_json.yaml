@@ -1,0 +1,88 @@
+interactions:
+- request:
+    body: client_id=https%3A%2F%2Fhttpbin.org%2Fpost&grant_type=password&password=so_secret&username=nope
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['95']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://httpbin.org/post
+  response:
+    body:
+      pretty:
+        args: {}
+        data: ''
+        files: {}
+        form: {client_id: 'https://httpbin.org/post', grant_type: password, password: so_secret,
+          username: nope}
+        headers: {Accept: '*/*', Accept-Encoding: 'gzip, deflate', Connection: close,
+          Content-Length: '95', Content-Type: application/x-www-form-urlencoded, Host: httpbin.org,
+          User-Agent: python-requests/2.19.1}
+        json: null
+        origin: REDACTED
+        url: https://httpbin.org/post
+      string: "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\"\
+        : {\n    \"client_id\": \"https://httpbin.org/post\", \n    \"grant_type\"\
+        : \"password\", \n    \"password\": \"so_secret\", \n    \"username\": \"\
+        nope\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\"\
+        : \"gzip, deflate\", \n    \"Connection\": \"close\", \n    \"Content-Length\"\
+        : \"95\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n\
+        \    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"python-requests/2.19.1\"\
+        \n  }, \n  \"json\": null, \n  \"origin\": \"REDACTED\", \n  \"url\": \"https://httpbin.org/post\"\
+        \n}\n"
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['551']
+      Content-Type: [application/json]
+      Date: ['Sun, 02 Sep 2018 07:56:40 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: client_id=https%3A%2F%2Fhttpbin.org%2Fpost&grant_type=refresh_token
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['67']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://httpbin.org/post
+  response:
+    body:
+      pretty:
+        args: {}
+        data: ''
+        files: {}
+        form: {client_id: 'https://httpbin.org/post', grant_type: refresh_token}
+        headers: {Accept: '*/*', Accept-Encoding: 'gzip, deflate', Connection: close,
+          Content-Length: '67', Content-Type: application/x-www-form-urlencoded, Host: httpbin.org,
+          User-Agent: python-requests/2.19.1}
+        json: null
+        origin: REDACTED
+        url: https://httpbin.org/post
+      string: "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\"\
+        : {\n    \"client_id\": \"https://httpbin.org/post\", \n    \"grant_type\"\
+        : \"refresh_token\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n\
+        \    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Connection\": \"close\"\
+        , \n    \"Content-Length\": \"67\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\"\
+        , \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"python-requests/2.19.1\"\
+        \n  }, \n  \"json\": null, \n  \"origin\": \"REDACTED\", \n  \"url\": \"https://httpbin.org/post\"\
+        \n}\n"
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['501']
+      Content-Type: [application/json]
+      Date: ['Sun, 02 Sep 2018 07:56:40 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+version: 1
