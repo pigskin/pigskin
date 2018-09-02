@@ -6,7 +6,6 @@ from pigskin.pigskin import pigskin
 @pytest.mark.vcr()
 def test_get_weeks():
     gp = pigskin()
-    gp.login(username=pytest.gp_username, password=pytest.gp_password)
 
     weeks_int = gp.get_weeks(2017)
     weeks_str = gp.get_weeks('2017')
@@ -31,7 +30,6 @@ def test_get_weeks():
 @pytest.mark.vcr()
 def test_get_weeks_failure():
     gp = pigskin()
-    gp.login(username=pytest.gp_username, password=pytest.gp_password)
 
     # change to a wrong URL
     gp.config['modules']['ROUTES_DATA_PROVIDERS']['games'] = 'https://httpbin.org/json'
