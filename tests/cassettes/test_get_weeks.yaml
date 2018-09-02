@@ -11,7 +11,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: website config, lastUpdate: '2018-09-01T17:59:35.192Z', title: '',
+        header: {id: website config, lastUpdate: '2018-09-02T04:59:55.974Z', title: '',
           version: '1.0'}
         modules:
           ADOBE_HEARTBEAT:
@@ -448,7 +448,7 @@ interactions:
             IFRAME_BASE_OPTIONS: {STYLE: inline, SUBMIT_ENABLED: true, SUPPORTED_CARD_TYPES: 'AmericanExpress,JCB,Visa,MasterCard,Discover'}
             JAVASCRIPT_API_URL: https://apisandboxstatic.zuora.com/Resources/libs/hosted/1.3.0/zuora-min.js
             LOCALE: en_US
-      string: '{"header":{"id":"website config","version":"1.0","title":"","lastUpdate":"2018-09-01T17:59:35.192Z"},"modules":{"FEATURES":{"FUNNEL":{"IS_ENABLED":true},"AUTHENTICATION":{"GIGYA_LOGIN_FLOW_IS_ENABLED":true},"CURRENT_CONTEXT":{"SEASON":2018}},"IMAGE_FORMATS":{"FALLBACK_BASE_URL":"fallbackimageprd-temporary","DefaulList_16:9":[{"singleFormat":"t_16-9_480","doubleFormat":"t_16-9_960","breakpoint":"220px"}],"Hero_16:9":[{"singleFormat":"t_16-9_1920","doubleFormat":"t_16-9_3840","breakpoint":"1200px"},{"singleFormat":"t_16-9_1200","doubleFormat":"t_16-9_1920","breakpoint":"768px"},{"singleFormat":"t_16-9_960","doubleFormat":"t_16-9_1200","breakpoint":"480px"},{"singleFormat":"t_16-9_480","doubleFormat":"t_16-9_960","breakpoint":"220px"}]},"SOCIAL_PROVIDERS":{"FACEBOOK":{"sdk_url":"//connect.facebook.net/en_US/sdk.js","sdk_configuration":{"appId":"219276878564579
+      string: '{"header":{"id":"website config","version":"1.0","title":"","lastUpdate":"2018-09-02T04:59:55.974Z"},"modules":{"FEATURES":{"FUNNEL":{"IS_ENABLED":true},"AUTHENTICATION":{"GIGYA_LOGIN_FLOW_IS_ENABLED":true},"CURRENT_CONTEXT":{"SEASON":2018}},"IMAGE_FORMATS":{"FALLBACK_BASE_URL":"fallbackimageprd-temporary","DefaulList_16:9":[{"singleFormat":"t_16-9_480","doubleFormat":"t_16-9_960","breakpoint":"220px"}],"Hero_16:9":[{"singleFormat":"t_16-9_1920","doubleFormat":"t_16-9_3840","breakpoint":"1200px"},{"singleFormat":"t_16-9_1200","doubleFormat":"t_16-9_1920","breakpoint":"768px"},{"singleFormat":"t_16-9_960","doubleFormat":"t_16-9_1200","breakpoint":"480px"},{"singleFormat":"t_16-9_480","doubleFormat":"t_16-9_960","breakpoint":"220px"}]},"SOCIAL_PROVIDERS":{"FACEBOOK":{"sdk_url":"//connect.facebook.net/en_US/sdk.js","sdk_configuration":{"appId":"219276878564579
         temporary","xfbml":false,"version":"v2.9"},"share":{"hashtag":"#gamepass"}},"TWITTER":{"sdk_url":"//platform.twitter.com/widgets.js","share":{"hashtags":["nfl","gamepass"],"via":"NFLGamePass"}},"SOCIAL_MESSAGE":"I''m
         watching the NFL on http://gamepass-europe.nfl.com"},"COOKIES":{"DOMAIN":".nflgamepass.com","COOKIES_POLICY":{"name":"gp_cp","duration":30}},"MOMENT":{"LOCALE":"en-gb","FREE_TRIAL_DATE_FORMAT":"DD
         MMMM YYYY"},"API":{"GRANT_TYPES":{"PASSWORD":"password","REFRESH_TOKEN":"refresh_token","SHIELD_AUTHENTICATION":"shield_authentication"},"CLIENT_ID":"42cc360e-6fbb-4472-9437-2f088b8730de","DEVICE_TYPE":"web","BASE_URL":"https://www.nflgamepass.com/api/user","VOCABULARY":"https://www.nflgamepass.com/api/en/content/v1/web/voc","TV_SHOWS":"https://www.nflgamepass.com/api/en/content/v1/web/tv-programs/:showCategory/programs","NETWORK_PROGRAMS":"https://www.nflgamepass.com/api/en/content/v1/web/network/programs","NETWORK_EPISODES":"https://www.nflgamepass.com/api/en/content/v1/web/network/:seasonSlug/:tvShowSlug/list","VIDEO_BY_SLUG":"https://www.nflgamepass.com/api/en/content/v1/web/videos/:videoSlug/video","LIVE_VIDEOS":"https://www.nflgamepass.com/api/en/content/v1/web/live/all","FAVOURITE_TEAM_MATCHES":"https://www.nflgamepass.com/api/en/content/v1/web/teams/:favouriteTeam/preferred-team","TEAMS":"https://www.nflgamepass.com/api/en/content/v1/common/teams","GEOLOCALIZATION":"https://www.nflgamepass.com/api/user/api/users/v1/geolocation","LOGIN":"https://www.nflgamepass.com/api/user/oauth/token","LOGOUT":"https://www.nflgamepass.com/api/user/api/users/v1/identity/logout","REFRESH_TOKEN":"https://www.nflgamepass.com/api/user/oauth/token","USER_PROFILE":"https://www.nflgamepass.com/api/user/api/users/v1/profile/me","USER_ACCOUNT":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/myaccount","CHECK_USER_NICKNAME":"https://www.nflgamepass.com/api/user/api/users/v1/identity/existsusername","CHECK_USER_SESSION":"https://www.nflgamepass.com/api/user/api/users/v1/identity/isauthenticated","REGISTER":"https://www.nflgamepass.com/api/user/api/users/v1/identity/register","ZUORA_IFRAME_CONFIGURATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/iframe","ZUORA_CREDIT_CARD_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/purchase/creditcard","ZUORA_CREDIT_CARD_UPGRADE_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/upgrade/creditcard","ZUORA_PAYPAL_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/purchase/paypal","ZUORA_PAYPAL_UPGRADE_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/upgrade/paypal","ZUORA_FREE_TRIAL_STOP":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/freetrial","ZUORA_AUTO_RENEWAL_STOP":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/cancelautorenewal","ZUORA_AUTO_RENEWAL_ENABLE":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/enableautorenewal","ZUORA_PAYMENT_METHOD_UPDATE":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/changepaymentmethod/creditcard","ZUORA_VALIDATE_PROMO_CODE":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/preview/promocode","ZUORA_FREEMIUM_PRODUCT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/add","ZUORA_ENABLE_PAYMENT_VIA_INSTALLMENTS":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/paymentmode/installments","ZUORA_TOGGLE_PAYMENT_VIA_INSTALLMENTS":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/paymentmode","SOFT_ENTITLEMENT":"https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/softcheck","PAYPAL_CHECKOUT_TOKEN":"https://www.nflgamepass.com/api/user/api/users/v1/paypal/getcheckouttoken","CONTACT_FORM":"https://nfl-functions-prd-we.azurewebsites.net/api/SendSupportEmail?code=9rsqW1AGlLP/9yFf77Dilan7/Ja88OwaaSMXHusHaW74kcITLBNFJw=="},"GIGYA":{"JAVASCRIPT_API_URL":"https://cdns.eu1.gigya.com/js/gigya.js?apiKey=3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp","SUCCESS_ERROR_CODES":[0],"WRONG_CREDENTIALS_ERROR_CODES":[403042],"THROTTLING_ERROR_CODES":[403048]},"ZUORA":{"LOCALE":"en_US","JAVASCRIPT_API_URL":"https://apisandboxstatic.zuora.com/Resources/libs/hosted/1.3.0/zuora-min.js","IFRAME_BASE_OPTIONS":{"SUPPORTED_CARD_TYPES":"AmericanExpress,JCB,Visa,MasterCard,Discover","SUBMIT_ENABLED":true,"STYLE":"inline"}},"DIVA":{"FLASH":{"SWF_PATH":"https://www.nflgamepass.com/api/diva/swf/diva.swf","MINIMUM_VERSION_NUMBER":20,"PLAYER_SIZE":{"WIDTH":990,"HEIGHT":590},"PARAMS":{"scale":"noscale","wmode":"direct","bgcolor":"#000000","allowfullscreen":"true","allowscriptaccess":"always","base":"."},"SETTINGS":{"LiveNoData":"https://www.nflgamepass.com/api/diva/diva/settings/livenodata/device","ReplayNoData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/device","LiveWithData":"https://www.nflgamepass.com/api/diva/diva/settings/livenfl/device","ReplayWithData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/device","NoAdsWithData":"https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/device","VodNoData":"https://www.nflgamepass.com/api/diva/diva/settings/vod/device","Live24x7":"https://www.nflgamepass.com/api/diva/diva/settings/24h7d/device","CoachFilm":"https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/device"}},"HTML5":{"CONVIVA":{"IS_ENABLED":true,"ANALYTICS_JAVASCRIPT_API_URL":"https://www.nflgamepass.com/api/diva/scripts/conviva_integration.min.js","DEFAULT_ANALYTICS_PAYLOAD":{"assetName":"{V.Category1}-{V.Title}","applicationName":"nfl-prd-html5","customerKey":"6679b240d0b48c69402268577b537232458a6e78","viewerId":"{Settings.cs5}","tags":{"playerVendor":"deltatre","category":"Diva","channel":"Diva","retryNumber":"0","streamProtocol":"HLS","contentId":"Diva-{V.ID}"},"gatewayUrl":"","log":false}},"PLAYER_PATH":"https://www.nflgamepass.com/api/diva/html5/divaplayer.html","PLAYER_LOGO":"/custom/nfl/img/gp-logo__white.svg","RECOMMENDATIONS_IFRAME_URL":"https://www.nflgamepass.com/api/diva/customoverlay/videolist/video_switch.html?useHashNav=false&templateName=fullVideo&mrssUrl=https://www.nflgamepass.com/api/en/content/v1/rss-feeds/{videoId}/video-raccomendation&errorText=There%20are%20no%20videos%20available%20at%20the%20moment.&pollingTime=00:02:00&ribbonBgColor=0xef082b&ribbonFgColor=0x000000&noDescription=true&mode=switch","SETTINGS":{"LiveNoData":"https://www.nflgamepass.com/api/diva/diva/settings/livenodata/html5","ReplayNoData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/html5","LiveWithData":"https://www.nflgamepass.com/api/diva/diva/settings/livenfl/html5","ReplayWithData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/html5","NoAdsWithData":"https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/html5","VodNoData":"https://www.nflgamepass.com/api/diva/diva/settings/vod/html5","Live24x7":"https://www.nflgamepass.com/api/diva/diva/settings/24h7d/html5","CoachFilm":"https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/html5"}}},"REDIRECT_URIS":{"ERROR":"error","LOGIN":"login"},"ROUTES_DATA_PROVIDERS":{"home":"https://www.nflgamepass.com/api/en/content/v1/web/homepage","login":"https://www.nflgamepass.com/api/en/content/v1/web/login","games":"https://www.nflgamepass.com/api/en/content/v1/web/games/seasons","games_detail":"https://www.nflgamepass.com/api/en/content/v1/web/games/:season/:seasonType/:week/list","game_page":"https://www.nflgamepass.com/api/en/content/v1/web/games/:season/:gameslug/data","teams":"https://www.nflgamepass.com/api/en/content/v1/web/teams/list","team_detail":"https://www.nflgamepass.com/api/en/content/v1/web/teams/:team/videos","funnel_plans":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/zuora/{{GeolocationService:userInfo.geoLocation.country.isoCode}}/subscription/catalog","funnel_upgrade_plans":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/zuora/{{GeolocationService:userInfo.geoLocation.country.isoCode}}/upgrade/{{UserProfileService:basicInfo.upgradeRatePlanTag}}/catalog","funnel_account":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/account","funnel_payment":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/payment","funnel_upgrade_payment":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/payment","funnel_confirm":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/confirmation-page","funnel_upgrade_confirm":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/confirmation-page","funnel_unavailable":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/unavailable","funnel_upgrade_unavailable":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/unavailable","funnel_error":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/error","funnel_upgrade_error":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/error","funnel_subscription_renewal":"https://www.nflgamepass.com/api/en/content/v1/web/autorenewal-landing-page/data","featured":"https://www.nflgamepass.com/api/en/content/v1/web/featured/videos","featured_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/featured/show/:video-slug/video","nfl_shows":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-shows/videos","nfl_shows_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-shows/show/:video-slug/video","nfl_originals":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-originals/videos","nfl_originals_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-originals/show/:video-slug/video","video-slug":"https://www.nflgamepass.com/api/en/content/v1/web/videos/:video-slug/video","network_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/network/show/:video-slug/video","featured_local":"http://localhost:61544/v1/web/featured/videos","redzone":"https://www.nflgamepass.com/api/en/content/v1/web/redzone/videos","network":"https://www.nflgamepass.com/api/en/content/v1/web/network/data","terms_of_service":"https://www.nflgamepass.com/api/en/content/v1/web/terms-and-conditions","discover_the_service":"https://www.nflgamepass.com/api/en/content/v1/web/discover-the-service","discover_redzone":"https://www.nflgamepass.com/api/en/content/v1/web/discover-redzone","privacy":"https://www.nflgamepass.com/api/en/content/v1/web/privacy","support":"https://www.nflgamepass.com/api/en/content/v1/web/support","faq":"https://www.nflgamepass.com/api/en/content/v1/web/faq","cookies_policy":"https://www.nflgamepass.com/api/en/content/v1/web/cookies-policy","payment_terms":"https://www.nflgamepass.com/api/en/content/v1/web/payment-terms","account":"https://www.nflgamepass.com/api/en/content/v1/web/subscription/myaccount","contact-us":"https://www.nflgamepass.com/api/en/content/v1/web/contactus/data","confirm-subscription":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/confirmation-page","refund_faq":"https://www.nflgamepass.com/api/en/content/v1/web/exrefund-faq","sb_competition_tc":"https://www.nflgamepass.com/api/en/content/v1/web/sb_competition_tc","error":"https://www.nflgamepass.com/api/en/content/v1/web/500","no-content":"https://www.nflgamepass.com/api/en/content/v1/web/404"},"LOCAL_STORAGE":{"OAUTH_KEY":"oauth_payload","PREFERENCES_KEY":"preferences","TRANSACTION_DETAILS_KEY":"transaction_details"},"GOOGLE":{"RECAPTCHA":{"JAVASCRIPT_API_URL":"https://www.google.com/recaptcha/api.js?onload=googleReCaptchaOnloadCallback&render=explicit","SITE_KEY":"6LfVuiIUAAAAAAFdPEG3HtHJGbKl0PqEKvRws9hV"}},"PAYPAL":{"REDIRECT_URIS":{"PRODUCT_PURCHASE":{"SUCCESS":"{{window:location.origin}}/en/subscribe/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=purchase&success-redirect=/en/subscribe/confirmation&error-redirect=/en/subscribe/paypal/error","ERROR":"{{window:location.origin}}/en/subscribe/paypal/error"},"PRODUCT_UPGRADE":{"SUCCESS":"{{window:location.origin}}/en/upgrade/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=upgrade&success-redirect=/en/upgrade/confirmation&error-redirect=/en/upgrade/paypal/error","ERROR":"{{window:location.origin}}/en/upgrade/paypal/error"},"SUCCESS":"{{window:location.origin}}/en/subscribe/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=purchase&success-redirect=/en/subscribe/confirmation&error-redirect=/en/subscribe/paypal/error","ERROR":"{{window:location.origin}}/en/subscribe/paypal/error"}},"POLLING":{"VIDEO_STATUS_CHECK":{"INTERVAL":10000}},"ADOBE_HEARTBEAT":{"VISITOR":{"ID":"F75C3025512D2C1D0A490D44@AdobeOrg","TRACKING_SERVER":"smetrics.nfl.com"},"APP_MEASUREMENT":{"TRACKING_SERVER":"nfl.hb.omtrdc.net","ACCOUNT":"nflprod","CHARSET":"UTF-8"},"MEDIA_CONFIGURATION":{"TRACKING_SERVER":"nfl.hb.omtrdc.net","PLAYER_NAME":"Diva
@@ -461,41 +461,43 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 01 Sep 2018 18:02:49 GMT']
-      Expires: ['Sat, 01 Sep 2018 18:04:49 GMT']
+      Date: ['Sun, 02 Sep 2018 05:01:46 GMT']
+      Expires: ['Sun, 02 Sep 2018 05:03:46 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
       content-length: ['23749']
     status: {code: 200, message: OK}
 - request:
-    body: username=&password=&client_id=42cc360e-6fbb-4472-9437-2f088b8730de&grant_type=password
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&password=REDACTED&username=REDACTED&grant_type=password
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      Content-Length: ['86']
+      Content-Length: ['125']
       Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-requests/2.19.1]
     method: POST
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {code: UR_10006, httpStatusCode: 401, id: fc158075-77dd-4cf4-9b18-e6869f240b60,
-        message: error_unauthorised, validationErrors: null}
-      string: '{"id":"fc158075-77dd-4cf4-9b18-e6869f240b60","code":"UR_10006","message":"error_unauthorised","httpStatusCode":401,"validationErrors":null}'
+      pretty: {access_token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwdGsiOiJ7XCJhY2Nlc3NfdG9rZW5cIjpcImV5SmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5Ym1GdFpTSTZJbUZzWlhoeGR5SXNJbVJsZG1salpVbGtJanB1ZFd4c0xDSmpiR2xsYm5SSlpDSTZJa2hMWjBoQlR6TllXRTlrUTBKYVNuVmlkMFJLYTAxVWFuQjNRMWR4VjBZMUlpd2lZV1JKWkNJNkltUTNZV00yT0RKbU16aGlPR00xWW1abVkySmxaamhrTTJRek1qTTBObVV5TkdaaU56Y3pNV00xWVRRMk5UQmtNbUZrTUdZd1pXTTRaR1V3TlRFNE9USWlMQ0psZUhBaU9qRTFNelU0TmpneE1EWXNJbWxoZENJNk1UVXpOVGcyTkRVd05uMC5MUDNMZWhmN3BxV3Y4U3N0a19Qb2RKaHJPUEJnWTFIcWw3cFYtQ09fTkRBXCIsXCJ0b2tlbl90eXBlXCI6XCJCZWFyZXJcIixcImV4cGlyZXNfaW5cIjozNjAwLFwicmVmcmVzaF90b2tlblwiOlwiWjhUVm9INURkNlV5dTU4YXprZWhcIixcInNjb3BlXCI6bnVsbH0iLCJrdG0iOiIxYjEyYTIwYS1iMzlmLTQ2MjMtODQ5OC01MTM5NWQ5N2QxMWMiLCJuYW1laWQiOiJhbGV4cXciLCJyb2xlIjoidXNlciIsInpjdCI6Ikdlcm1hbnkiLCJiYXRjaCI6ImJhdGNoMTMiLCJzY29wZXMiOiJwcm9kdWN0LXByZW1pdW06cGF5bWVudC1vcHRpb24teWVhcmx5IiwiaXNzIjoibmZsLXVzZXItYXBpIiwiYXVkIjoiZnJvbnQtZW5kLWNsaWVudHMiLCJleHAiOjE1MzU4NjgwNDcsIm5iZiI6MTUzNTg2NDUwN30.MTa6SkQEYI---he6GOiPXyzT_ixKTEHwPHDvEavj3kw,
+        expires_in: 3539, refresh_token: yxVLPzg3rc8tofch5T5aM43g6o5tTLwkQmeHPy6sKU8lbcrdU4w41m0GFRXjF4F58_3uO6QVtVvlAPJMxFxqdInqz22CyZHS3_xamGYBwivaQpnXRr1zwjreEu5ctUzLKiLUG9gl4UFdhqexLFmKt0aYcThslMspyNW_Tw_OmSu3r9SFtJXv5AOauw3vmhJkGR1vYjYWFb9TfErSiWXmoPT2ToiyZO2iZwHS5PuwUNLh9SchpweR58awidLKe87sHr4ViYWmYYZ-vPAi29mlOw29u6gcyn207fIU3RSzCtr5cQ66gCpX_QhIbPGnrQBUPcCG9DjJq4TqVJpN0OZx0Ly7WOMWJJTC-ayriw8i4G82n5I5G2lFeuC26t_HhRi6hSahSrnQu1jNjxXbV3sX8p4-LW7hMBR1iCkBAx_QHACv8B47hmvP_bClh8z97GsgA3cqeFhIrwvO5S1lPd8vgMtjd9M2QTm8nse-TX-xRGFlPe2TYL9riK2Nf-pkn04CdmsmSFgXpWAzbZeqgWI3hS-GXzRv8PiXyo1m2Qhi4dV3iNpik4tla9xhUKhD4AXFGlQqnqXbPcTj_fNyz9CRybdk0WRudxbVPjJNCUsBYZBV55thFivstVAKh60ZAJ487swGeHAak_s4jz-KiAcalCD0vvcp-gnkX4A1ihh2z3nwKnePq8TDOuj8OW6fBQ5lro5liJ9fEPk0qCdI1SshiRrusReZ3fRCd1Lcen0KnIfTUZc_PEIJvMaW5y5rq-m7LJDvtVABA9DvDejqc8NFnLLAbrZeARPcXcgh6n-2N-cHVtrs4x6BPRaijJPdHu-opgHqLu5_B73vmqEGZKRc0t5yZ3P4jtU5MGXpFTVnV7PjQwUMEYllDFmDPo1LMdfDydILyqsNUJ2GhcSN0xDpSeEoID7XNgGCSTy__OZYOBWV7IOPwcLRcjjNtYFz0EUx3Uxx6lkQLqptuX0MAPTabNJU_wKH77I4EtuMWSypJK-4avpIRVD86qKB4du0SKnnbrrNvCYUmmYjQVuN7VON3LUAjVerJlOhGzD7Ay0_3Fs1l1tK,
+        token_type: bearer}
+      string: '{"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwdGsiOiJ7XCJhY2Nlc3NfdG9rZW5cIjpcImV5SmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5Ym1GdFpTSTZJbUZzWlhoeGR5SXNJbVJsZG1salpVbGtJanB1ZFd4c0xDSmpiR2xsYm5SSlpDSTZJa2hMWjBoQlR6TllXRTlrUTBKYVNuVmlkMFJLYTAxVWFuQjNRMWR4VjBZMUlpd2lZV1JKWkNJNkltUTNZV00yT0RKbU16aGlPR00xWW1abVkySmxaamhrTTJRek1qTTBObVV5TkdaaU56Y3pNV00xWVRRMk5UQmtNbUZrTUdZd1pXTTRaR1V3TlRFNE9USWlMQ0psZUhBaU9qRTFNelU0TmpneE1EWXNJbWxoZENJNk1UVXpOVGcyTkRVd05uMC5MUDNMZWhmN3BxV3Y4U3N0a19Qb2RKaHJPUEJnWTFIcWw3cFYtQ09fTkRBXCIsXCJ0b2tlbl90eXBlXCI6XCJCZWFyZXJcIixcImV4cGlyZXNfaW5cIjozNjAwLFwicmVmcmVzaF90b2tlblwiOlwiWjhUVm9INURkNlV5dTU4YXprZWhcIixcInNjb3BlXCI6bnVsbH0iLCJrdG0iOiIxYjEyYTIwYS1iMzlmLTQ2MjMtODQ5OC01MTM5NWQ5N2QxMWMiLCJuYW1laWQiOiJhbGV4cXciLCJyb2xlIjoidXNlciIsInpjdCI6Ikdlcm1hbnkiLCJiYXRjaCI6ImJhdGNoMTMiLCJzY29wZXMiOiJwcm9kdWN0LXByZW1pdW06cGF5bWVudC1vcHRpb24teWVhcmx5IiwiaXNzIjoibmZsLXVzZXItYXBpIiwiYXVkIjoiZnJvbnQtZW5kLWNsaWVudHMiLCJleHAiOjE1MzU4NjgwNDcsIm5iZiI6MTUzNTg2NDUwN30.MTa6SkQEYI---he6GOiPXyzT_ixKTEHwPHDvEavj3kw","token_type":"bearer","expires_in":3539,"refresh_token":"yxVLPzg3rc8tofch5T5aM43g6o5tTLwkQmeHPy6sKU8lbcrdU4w41m0GFRXjF4F58_3uO6QVtVvlAPJMxFxqdInqz22CyZHS3_xamGYBwivaQpnXRr1zwjreEu5ctUzLKiLUG9gl4UFdhqexLFmKt0aYcThslMspyNW_Tw_OmSu3r9SFtJXv5AOauw3vmhJkGR1vYjYWFb9TfErSiWXmoPT2ToiyZO2iZwHS5PuwUNLh9SchpweR58awidLKe87sHr4ViYWmYYZ-vPAi29mlOw29u6gcyn207fIU3RSzCtr5cQ66gCpX_QhIbPGnrQBUPcCG9DjJq4TqVJpN0OZx0Ly7WOMWJJTC-ayriw8i4G82n5I5G2lFeuC26t_HhRi6hSahSrnQu1jNjxXbV3sX8p4-LW7hMBR1iCkBAx_QHACv8B47hmvP_bClh8z97GsgA3cqeFhIrwvO5S1lPd8vgMtjd9M2QTm8nse-TX-xRGFlPe2TYL9riK2Nf-pkn04CdmsmSFgXpWAzbZeqgWI3hS-GXzRv8PiXyo1m2Qhi4dV3iNpik4tla9xhUKhD4AXFGlQqnqXbPcTj_fNyz9CRybdk0WRudxbVPjJNCUsBYZBV55thFivstVAKh60ZAJ487swGeHAak_s4jz-KiAcalCD0vvcp-gnkX4A1ihh2z3nwKnePq8TDOuj8OW6fBQ5lro5liJ9fEPk0qCdI1SshiRrusReZ3fRCd1Lcen0KnIfTUZc_PEIJvMaW5y5rq-m7LJDvtVABA9DvDejqc8NFnLLAbrZeARPcXcgh6n-2N-cHVtrs4x6BPRaijJPdHu-opgHqLu5_B73vmqEGZKRc0t5yZ3P4jtU5MGXpFTVnV7PjQwUMEYllDFmDPo1LMdfDydILyqsNUJ2GhcSN0xDpSeEoID7XNgGCSTy__OZYOBWV7IOPwcLRcjjNtYFz0EUx3Uxx6lkQLqptuX0MAPTabNJU_wKH77I4EtuMWSypJK-4avpIRVD86qKB4du0SKnnbrrNvCYUmmYjQVuN7VON3LUAjVerJlOhGzD7Ay0_3Fs1l1tK"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
-      Connection: [close]
-      Content-Length: ['139']
+      Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Sat, 01 Sep 2018 18:02:49 GMT']
-      Expires: ['Sat, 01 Sep 2018 18:02:49 GMT']
+      Date: ['Sun, 02 Sep 2018 05:01:47 GMT']
+      Expires: ['Sun, 02 Sep 2018 05:01:47 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
       X-Powered-By: [ASP.NET]
-    status: {code: 400, message: Bad Request}
+      content-length: ['2162']
+    status: {code: 200, message: OK}
 - request:
     body: null
     headers:
@@ -508,7 +510,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: Home Games, lastUpdate: '2018-09-01T18:00:32.622Z', title: '',
+        header: {id: Home Games, lastUpdate: '2018-09-02T04:56:50.140Z', title: '',
           version: '1'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: landing,
@@ -1566,7 +1568,7 @@ interactions:
               title: AP_Jaguars_Fournette
             title: ALL 2018 GAMES
             type: story
-      string: '{"header":{"id":"Home Games","version":"1","title":"","lastUpdate":"2018-09-01T18:00:32.622Z"},"modules":{"meta":{"currentContext":{"currentSeason":"2018","currentSeasonType":"pre","currentWeek":"4"},"_links":[{"ref":"polling","href":null},{"ref":"self","href":"https://www.nflgamepass.com/v1/web/games/seasons"}]},"mainMenu":{"seasonStructureList":[{"season":2018,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/17/list"}]}]}]},{"season":2017,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/22/list"}]}]}]},{"season":2016,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/22/list"}]}]}]},{"season":2015,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/22/list"}]}]}]},{"season":2014,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/22/list"}]}]}]},{"season":2013,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/22/list"}]}]}]},{"season":2012,"seasonTypes":[{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/22/list"}]}]}]}]},"analytics":{"site_name":"gamepass
+      string: '{"header":{"id":"Home Games","version":"1","title":"","lastUpdate":"2018-09-02T04:56:50.140Z"},"modules":{"meta":{"currentContext":{"currentSeason":"2018","currentSeasonType":"pre","currentWeek":"4"},"_links":[{"ref":"polling","href":null},{"ref":"self","href":"https://www.nflgamepass.com/v1/web/games/seasons"}]},"mainMenu":{"seasonStructureList":[{"season":2018,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/17/list"}]}]}]},{"season":2017,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/22/list"}]}]}]},{"season":2016,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/22/list"}]}]}]},{"season":2015,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/22/list"}]}]}]},{"season":2014,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/22/list"}]}]}]},{"season":2013,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/22/list"}]}]}]},{"season":2012,"seasonTypes":[{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/22/list"}]}]}]}]},"analytics":{"site_name":"gamepass
         international","language":"en_US","site_section":"games","site_subsection":"games","page_detail":"landing","content_type":"index","page_name":"gamepass
         international:games:games:landing"},"notLoggedTeaser":{"type":"story","_translationId":"a015bf49-10dd-43e2-ac9c-923b31da4c8f","_entityId":"f2864ffe-249b-421f-ae4f-85dbdf22660a","selfUrl":"https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/stories/all-2017-games","slug":"all-2017-games","title":"ALL
         2018 GAMES","tags":[{"type":"tag","_translationId":"399a7ed1-1b3d-4123-a42d-7b04764c3590","_entityId":"f236d880-0d40-4a4a-bf81-989f95f67818","selfUrl":"https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/tags/games-teaser","title":"games-teaser","slug":"games-teaser","neutralSlug":"games-teaser","externalSourceName":null,"externalSourceReference":{"sourceId":null,"sourceName":null},"extraData":null,"fields":{}}],"relations":[],"references":{},"fields":{},"createdBy":"domenico
@@ -1585,8 +1587,1104 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 01 Sep 2018 18:02:49 GMT']
-      Expires: ['Sat, 01 Sep 2018 18:04:49 GMT']
+      Date: ['Sun, 02 Sep 2018 05:01:47 GMT']
+      Expires: ['Sun, 02 Sep 2018 05:03:47 GMT']
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-AspNet-Version: [4.0.30319]
+      content-length: ['28192']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://www.nflgamepass.com/api/en/content/v1/web/games/seasons
+  response:
+    body:
+      pretty:
+        header: {id: Home Games, lastUpdate: '2018-09-02T04:56:50.140Z', title: '',
+          version: '1'}
+        modules:
+          analytics: {content_type: index, language: en_US, page_detail: landing,
+            page_name: 'gamepass international:games:games:landing', site_name: gamepass
+              international, site_section: games, site_subsection: games}
+          mainMenu:
+            seasonStructureList:
+            - season: 2018
+              seasonTypes:
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: pre
+                seasonType: pre
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/0/list',
+                    ref: self}
+                  number: 0
+                  weekNameAbbr: hof
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/1/list',
+                    ref: self}
+                  number: 1
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/2/list',
+                    ref: self}
+                  number: 2
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/3/list',
+                    ref: self}
+                  number: 3
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/4/list',
+                    ref: self}
+                  number: 4
+                  weekNameAbbr: p
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: reg
+                seasonType: reg
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/1/list',
+                    ref: self}
+                  number: 1
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/2/list',
+                    ref: self}
+                  number: 2
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/3/list',
+                    ref: self}
+                  number: 3
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/4/list',
+                    ref: self}
+                  number: 4
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/5/list',
+                    ref: self}
+                  number: 5
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/6/list',
+                    ref: self}
+                  number: 6
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/7/list',
+                    ref: self}
+                  number: 7
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/8/list',
+                    ref: self}
+                  number: 8
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/9/list',
+                    ref: self}
+                  number: 9
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/10/list',
+                    ref: self}
+                  number: 10
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/11/list',
+                    ref: self}
+                  number: 11
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/12/list',
+                    ref: self}
+                  number: 12
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/13/list',
+                    ref: self}
+                  number: 13
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/14/list',
+                    ref: self}
+                  number: 14
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/15/list',
+                    ref: self}
+                  number: 15
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/16/list',
+                    ref: self}
+                  number: 16
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/17/list',
+                    ref: self}
+                  number: 17
+                  weekNameAbbr: week
+            - season: 2017
+              seasonTypes:
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: pre
+                seasonType: pre
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/0/list',
+                    ref: self}
+                  number: 0
+                  weekNameAbbr: hof
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/1/list',
+                    ref: self}
+                  number: 1
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/2/list',
+                    ref: self}
+                  number: 2
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/3/list',
+                    ref: self}
+                  number: 3
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/4/list',
+                    ref: self}
+                  number: 4
+                  weekNameAbbr: p
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: reg
+                seasonType: reg
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/1/list',
+                    ref: self}
+                  number: 1
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/2/list',
+                    ref: self}
+                  number: 2
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/3/list',
+                    ref: self}
+                  number: 3
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/4/list',
+                    ref: self}
+                  number: 4
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/5/list',
+                    ref: self}
+                  number: 5
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/6/list',
+                    ref: self}
+                  number: 6
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/7/list',
+                    ref: self}
+                  number: 7
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/8/list',
+                    ref: self}
+                  number: 8
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/9/list',
+                    ref: self}
+                  number: 9
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/10/list',
+                    ref: self}
+                  number: 10
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/11/list',
+                    ref: self}
+                  number: 11
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/12/list',
+                    ref: self}
+                  number: 12
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/13/list',
+                    ref: self}
+                  number: 13
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/14/list',
+                    ref: self}
+                  number: 14
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/15/list',
+                    ref: self}
+                  number: 15
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/16/list',
+                    ref: self}
+                  number: 16
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/17/list',
+                    ref: self}
+                  number: 17
+                  weekNameAbbr: week
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: post
+                seasonType: post
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/post/18/list',
+                    ref: self}
+                  number: 18
+                  weekNameAbbr: wc
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/post/19/list',
+                    ref: self}
+                  number: 19
+                  weekNameAbbr: div
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/post/20/list',
+                    ref: self}
+                  number: 20
+                  weekNameAbbr: conf
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/post/21/list',
+                    ref: self}
+                  number: 21
+                  weekNameAbbr: pro
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2017/post/22/list',
+                    ref: self}
+                  number: 22
+                  weekNameAbbr: sb
+            - season: 2016
+              seasonTypes:
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: pre
+                seasonType: pre
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/0/list',
+                    ref: self}
+                  number: 0
+                  weekNameAbbr: hof
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/1/list',
+                    ref: self}
+                  number: 1
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/2/list',
+                    ref: self}
+                  number: 2
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/3/list',
+                    ref: self}
+                  number: 3
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/4/list',
+                    ref: self}
+                  number: 4
+                  weekNameAbbr: p
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: reg
+                seasonType: reg
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/1/list',
+                    ref: self}
+                  number: 1
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/2/list',
+                    ref: self}
+                  number: 2
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/3/list',
+                    ref: self}
+                  number: 3
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/4/list',
+                    ref: self}
+                  number: 4
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/5/list',
+                    ref: self}
+                  number: 5
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/6/list',
+                    ref: self}
+                  number: 6
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/7/list',
+                    ref: self}
+                  number: 7
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/8/list',
+                    ref: self}
+                  number: 8
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/9/list',
+                    ref: self}
+                  number: 9
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/10/list',
+                    ref: self}
+                  number: 10
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/11/list',
+                    ref: self}
+                  number: 11
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/12/list',
+                    ref: self}
+                  number: 12
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/13/list',
+                    ref: self}
+                  number: 13
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/14/list',
+                    ref: self}
+                  number: 14
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/15/list',
+                    ref: self}
+                  number: 15
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/16/list',
+                    ref: self}
+                  number: 16
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/17/list',
+                    ref: self}
+                  number: 17
+                  weekNameAbbr: week
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: post
+                seasonType: post
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/post/18/list',
+                    ref: self}
+                  number: 18
+                  weekNameAbbr: wc
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/post/19/list',
+                    ref: self}
+                  number: 19
+                  weekNameAbbr: div
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/post/20/list',
+                    ref: self}
+                  number: 20
+                  weekNameAbbr: conf
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/post/21/list',
+                    ref: self}
+                  number: 21
+                  weekNameAbbr: pro
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2016/post/22/list',
+                    ref: self}
+                  number: 22
+                  weekNameAbbr: sb
+            - season: 2015
+              seasonTypes:
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: pre
+                seasonType: pre
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/0/list',
+                    ref: self}
+                  number: 0
+                  weekNameAbbr: hof
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/1/list',
+                    ref: self}
+                  number: 1
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/2/list',
+                    ref: self}
+                  number: 2
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/3/list',
+                    ref: self}
+                  number: 3
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/4/list',
+                    ref: self}
+                  number: 4
+                  weekNameAbbr: p
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: reg
+                seasonType: reg
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/1/list',
+                    ref: self}
+                  number: 1
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/2/list',
+                    ref: self}
+                  number: 2
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/3/list',
+                    ref: self}
+                  number: 3
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/4/list',
+                    ref: self}
+                  number: 4
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/5/list',
+                    ref: self}
+                  number: 5
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/6/list',
+                    ref: self}
+                  number: 6
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/7/list',
+                    ref: self}
+                  number: 7
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/8/list',
+                    ref: self}
+                  number: 8
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/9/list',
+                    ref: self}
+                  number: 9
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/10/list',
+                    ref: self}
+                  number: 10
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/11/list',
+                    ref: self}
+                  number: 11
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/12/list',
+                    ref: self}
+                  number: 12
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/13/list',
+                    ref: self}
+                  number: 13
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/14/list',
+                    ref: self}
+                  number: 14
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/15/list',
+                    ref: self}
+                  number: 15
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/16/list',
+                    ref: self}
+                  number: 16
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/17/list',
+                    ref: self}
+                  number: 17
+                  weekNameAbbr: week
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: post
+                seasonType: post
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/post/18/list',
+                    ref: self}
+                  number: 18
+                  weekNameAbbr: wc
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/post/19/list',
+                    ref: self}
+                  number: 19
+                  weekNameAbbr: div
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/post/20/list',
+                    ref: self}
+                  number: 20
+                  weekNameAbbr: conf
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/post/21/list',
+                    ref: self}
+                  number: 21
+                  weekNameAbbr: pro
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2015/post/22/list',
+                    ref: self}
+                  number: 22
+                  weekNameAbbr: sb
+            - season: 2014
+              seasonTypes:
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: pre
+                seasonType: pre
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/0/list',
+                    ref: self}
+                  number: 0
+                  weekNameAbbr: hof
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/1/list',
+                    ref: self}
+                  number: 1
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/2/list',
+                    ref: self}
+                  number: 2
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/3/list',
+                    ref: self}
+                  number: 3
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/4/list',
+                    ref: self}
+                  number: 4
+                  weekNameAbbr: p
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: reg
+                seasonType: reg
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/1/list',
+                    ref: self}
+                  number: 1
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/2/list',
+                    ref: self}
+                  number: 2
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/3/list',
+                    ref: self}
+                  number: 3
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/4/list',
+                    ref: self}
+                  number: 4
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/5/list',
+                    ref: self}
+                  number: 5
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/6/list',
+                    ref: self}
+                  number: 6
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/7/list',
+                    ref: self}
+                  number: 7
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/8/list',
+                    ref: self}
+                  number: 8
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/9/list',
+                    ref: self}
+                  number: 9
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/10/list',
+                    ref: self}
+                  number: 10
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/11/list',
+                    ref: self}
+                  number: 11
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/12/list',
+                    ref: self}
+                  number: 12
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/13/list',
+                    ref: self}
+                  number: 13
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/14/list',
+                    ref: self}
+                  number: 14
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/15/list',
+                    ref: self}
+                  number: 15
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/16/list',
+                    ref: self}
+                  number: 16
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/17/list',
+                    ref: self}
+                  number: 17
+                  weekNameAbbr: week
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: post
+                seasonType: post
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/post/18/list',
+                    ref: self}
+                  number: 18
+                  weekNameAbbr: wc
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/post/19/list',
+                    ref: self}
+                  number: 19
+                  weekNameAbbr: div
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/post/20/list',
+                    ref: self}
+                  number: 20
+                  weekNameAbbr: conf
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/post/21/list',
+                    ref: self}
+                  number: 21
+                  weekNameAbbr: pro
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2014/post/22/list',
+                    ref: self}
+                  number: 22
+                  weekNameAbbr: sb
+            - season: 2013
+              seasonTypes:
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: pre
+                seasonType: pre
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/0/list',
+                    ref: self}
+                  number: 0
+                  weekNameAbbr: hof
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/1/list',
+                    ref: self}
+                  number: 1
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/2/list',
+                    ref: self}
+                  number: 2
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/3/list',
+                    ref: self}
+                  number: 3
+                  weekNameAbbr: p
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/4/list',
+                    ref: self}
+                  number: 4
+                  weekNameAbbr: p
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: reg
+                seasonType: reg
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/1/list',
+                    ref: self}
+                  number: 1
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/2/list',
+                    ref: self}
+                  number: 2
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/3/list',
+                    ref: self}
+                  number: 3
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/4/list',
+                    ref: self}
+                  number: 4
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/5/list',
+                    ref: self}
+                  number: 5
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/6/list',
+                    ref: self}
+                  number: 6
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/7/list',
+                    ref: self}
+                  number: 7
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/8/list',
+                    ref: self}
+                  number: 8
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/9/list',
+                    ref: self}
+                  number: 9
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/10/list',
+                    ref: self}
+                  number: 10
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/11/list',
+                    ref: self}
+                  number: 11
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/12/list',
+                    ref: self}
+                  number: 12
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/13/list',
+                    ref: self}
+                  number: 13
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/14/list',
+                    ref: self}
+                  number: 14
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/15/list',
+                    ref: self}
+                  number: 15
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/16/list',
+                    ref: self}
+                  number: 16
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/17/list',
+                    ref: self}
+                  number: 17
+                  weekNameAbbr: week
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: post
+                seasonType: post
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/post/18/list',
+                    ref: self}
+                  number: 18
+                  weekNameAbbr: wc
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/post/19/list',
+                    ref: self}
+                  number: 19
+                  weekNameAbbr: div
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/post/20/list',
+                    ref: self}
+                  number: 20
+                  weekNameAbbr: conf
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/post/21/list',
+                    ref: self}
+                  number: 21
+                  weekNameAbbr: pro
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2013/post/22/list',
+                    ref: self}
+                  number: 22
+                  weekNameAbbr: sb
+            - season: 2012
+              seasonTypes:
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: reg
+                seasonType: reg
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/1/list',
+                    ref: self}
+                  number: 1
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/2/list',
+                    ref: self}
+                  number: 2
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/3/list',
+                    ref: self}
+                  number: 3
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/4/list',
+                    ref: self}
+                  number: 4
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/5/list',
+                    ref: self}
+                  number: 5
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/6/list',
+                    ref: self}
+                  number: 6
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/7/list',
+                    ref: self}
+                  number: 7
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/8/list',
+                    ref: self}
+                  number: 8
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/9/list',
+                    ref: self}
+                  number: 9
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/10/list',
+                    ref: self}
+                  number: 10
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/11/list',
+                    ref: self}
+                  number: 11
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/12/list',
+                    ref: self}
+                  number: 12
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/13/list',
+                    ref: self}
+                  number: 13
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/14/list',
+                    ref: self}
+                  number: 14
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/15/list',
+                    ref: self}
+                  number: 15
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/16/list',
+                    ref: self}
+                  number: 16
+                  weekNameAbbr: week
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/17/list',
+                    ref: self}
+                  number: 17
+                  weekNameAbbr: week
+              - displayText: {seasonType: SeasonTypeTranslationTag}
+                name: post
+                seasonType: post
+                weeks:
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/post/18/list',
+                    ref: self}
+                  number: 18
+                  weekNameAbbr: wc
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/post/19/list',
+                    ref: self}
+                  number: 19
+                  weekNameAbbr: div
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/post/20/list',
+                    ref: self}
+                  number: 20
+                  weekNameAbbr: conf
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/post/21/list',
+                    ref: self}
+                  number: 21
+                  weekNameAbbr: pro
+                - _links:
+                  - {href: 'https://nflgp-prd.akamaized.net/v1/web/games/2012/post/22/list',
+                    ref: self}
+                  number: 22
+                  weekNameAbbr: sb
+          meta:
+            _links:
+            - {href: null, ref: polling}
+            - {href: 'https://www.nflgamepass.com/v1/web/games/seasons', ref: self}
+            currentContext: {currentSeason: '2018', currentSeasonType: pre, currentWeek: '4'}
+          notLoggedTeaser:
+            _entityId: f2864ffe-249b-421f-ae4f-85dbdf22660a
+            _translationId: a015bf49-10dd-43e2-ac9c-923b31da4c8f
+            contentDate: '2017-09-13T15:32:37.206Z'
+            context: null
+            createdBy: domenico ventura
+            featured: 0
+            fields: {}
+            headline: null
+            lastUpdatedBy: marco lorenzi
+            lastUpdatedDate: '2018-06-28T14:16:47.504Z'
+            parts:
+            - content: '<p><span style="font-size: 11pt;"></span></p>
+
+
+                <p><span style="color: #555555;">Watch the season live or on demand,
+                including the Playoffs and the Super Bowl.</span><span style="font-size:
+                10.5pt;color: #555555;"></span></p>
+
+
+                <p><span style="color: #555555;">Stream or download the full game
+                or Game in 40'' (full game replays in 40 minutes).</span></p>
+
+
+                <p><span style="font-size: 11pt;"></span></p>
+
+                '
+              contextualFields: {}
+              type: markdown
+            references: {}
+            relations: []
+            selfUrl: https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/stories/all-2017-games
+            slug: all-2017-games
+            summary: '<p>Watch the season live or on demand, including the Playoffs
+              and the Super Bowl.
+
+              Stream or download the full game or Game in 40'' (full game replays
+              in 40 minutes).</p>
+
+              '
+            tags:
+            - _entityId: f236d880-0d40-4a4a-bf81-989f95f67818
+              _translationId: 399a7ed1-1b3d-4123-a42d-7b04764c3590
+              externalSourceName: null
+              externalSourceReference: {sourceId: null, sourceName: null}
+              extraData: null
+              fields: {}
+              neutralSlug: games-teaser
+              selfUrl: https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/tags/games-teaser
+              slug: games-teaser
+              title: games-teaser
+              type: tag
+            thumbnail:
+              format: jpg
+              overriddenFormats: {}
+              templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/dmjm7chklcclokxvsezg
+              thumbnailUrl: https://nflgp-prd.akamaized.net/api/images/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_jpg/dmjm7chklcclokxvsezg
+              title: AP_Jaguars_Fournette
+            title: ALL 2018 GAMES
+            type: story
+      string: '{"header":{"id":"Home Games","version":"1","title":"","lastUpdate":"2018-09-02T04:56:50.140Z"},"modules":{"meta":{"currentContext":{"currentSeason":"2018","currentSeasonType":"pre","currentWeek":"4"},"_links":[{"ref":"polling","href":null},{"ref":"self","href":"https://www.nflgamepass.com/v1/web/games/seasons"}]},"mainMenu":{"seasonStructureList":[{"season":2018,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2018/reg/17/list"}]}]}]},{"season":2017,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2017/post/22/list"}]}]}]},{"season":2016,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2016/post/22/list"}]}]}]},{"season":2015,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2015/post/22/list"}]}]}]},{"season":2014,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2014/post/22/list"}]}]}]},{"season":2013,"seasonTypes":[{"seasonType":"pre","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"pre","weeks":[{"number":0,"weekNameAbbr":"hof","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/0/list"}]},{"number":1,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/1/list"}]},{"number":2,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/2/list"}]},{"number":3,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/3/list"}]},{"number":4,"weekNameAbbr":"p","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/pre/4/list"}]}]},{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2013/post/22/list"}]}]}]},{"season":2012,"seasonTypes":[{"seasonType":"reg","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"reg","weeks":[{"number":1,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/1/list"}]},{"number":2,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/2/list"}]},{"number":3,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/3/list"}]},{"number":4,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/4/list"}]},{"number":5,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/5/list"}]},{"number":6,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/6/list"}]},{"number":7,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/7/list"}]},{"number":8,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/8/list"}]},{"number":9,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/9/list"}]},{"number":10,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/10/list"}]},{"number":11,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/11/list"}]},{"number":12,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/12/list"}]},{"number":13,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/13/list"}]},{"number":14,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/14/list"}]},{"number":15,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/15/list"}]},{"number":16,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/16/list"}]},{"number":17,"weekNameAbbr":"week","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/reg/17/list"}]}]},{"seasonType":"post","displayText":{"seasonType":"SeasonTypeTranslationTag"},"name":"post","weeks":[{"number":18,"weekNameAbbr":"wc","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/18/list"}]},{"number":19,"weekNameAbbr":"div","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/19/list"}]},{"number":20,"weekNameAbbr":"conf","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/20/list"}]},{"number":21,"weekNameAbbr":"pro","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/21/list"}]},{"number":22,"weekNameAbbr":"sb","_links":[{"ref":"self","href":"https://nflgp-prd.akamaized.net/v1/web/games/2012/post/22/list"}]}]}]}]},"analytics":{"site_name":"gamepass
+        international","language":"en_US","site_section":"games","site_subsection":"games","page_detail":"landing","content_type":"index","page_name":"gamepass
+        international:games:games:landing"},"notLoggedTeaser":{"type":"story","_translationId":"a015bf49-10dd-43e2-ac9c-923b31da4c8f","_entityId":"f2864ffe-249b-421f-ae4f-85dbdf22660a","selfUrl":"https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/stories/all-2017-games","slug":"all-2017-games","title":"ALL
+        2018 GAMES","tags":[{"type":"tag","_translationId":"399a7ed1-1b3d-4123-a42d-7b04764c3590","_entityId":"f236d880-0d40-4a4a-bf81-989f95f67818","selfUrl":"https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/tags/games-teaser","title":"games-teaser","slug":"games-teaser","neutralSlug":"games-teaser","externalSourceName":null,"externalSourceReference":{"sourceId":null,"sourceName":null},"extraData":null,"fields":{}}],"relations":[],"references":{},"fields":{},"createdBy":"domenico
+        ventura","lastUpdatedBy":"marco lorenzi","lastUpdatedDate":"2018-06-28T14:16:47.504Z","contentDate":"2017-09-13T15:32:37.206Z","context":null,"featured":0,"headline":null,"summary":"<p>Watch
+        the season live or on demand, including the Playoffs and the Super Bowl.\nStream
+        or download the full game or Game in 40'' (full game replays in 40 minutes).</p>\n","parts":[{"type":"markdown","content":"<p><span
+        style=\"font-size: 11pt;\"></span></p>\n\n<p><span style=\"color: #555555;\">Watch
+        the season live or on demand, including the Playoffs and the Super Bowl.</span><span
+        style=\"font-size: 10.5pt;color: #555555;\"></span></p>\n\n<p><span style=\"color:
+        #555555;\">Stream or download the full game or Game in 40'' (full game replays
+        in 40 minutes).</span></p>\n\n<p><span style=\"font-size: 11pt;\"></span></p>\n","contextualFields":{}}],"thumbnail":{"title":"AP_Jaguars_Fournette","templateUrl":"https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/dmjm7chklcclokxvsezg","thumbnailUrl":"https://nflgp-prd.akamaized.net/api/images/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_jpg/dmjm7chklcclokxvsezg","format":"jpg","overriddenFormats":{}}}}}'
+    headers:
+      Access-Control-Allow-Headers: [Content-Type]
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: ['private, max-age=120']
+      Connection: [keep-alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sun, 02 Sep 2018 05:01:47 GMT']
+      Expires: ['Sun, 02 Sep 2018 05:03:47 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
