@@ -11,14 +11,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        dy+xETk3teHGGFazIV/htQK2AUg=
+        vG3JeNxpi9WROMy4C1BFB4zZdy0=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sun, 02 Sep 2018 10:18:06 GMT']
+      Date: ['Sun, 02 Sep 2018 13:07:12 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -34,14 +34,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        +gibrIlK9iBLDlPm5GZK9n8EI5o=
+        h3AV1vyuLtID78+LoBc4EzEXyC4=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sun, 02 Sep 2018 10:18:06 GMT']
+      Date: ['Sun, 02 Sep 2018 13:07:12 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -57,14 +57,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        zngIweSY8cTmSRJhih1p6RAjcGY=
+        YIlUnbXbPGpa7Lbcgn/LVXKEqp4=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sun, 02 Sep 2018 10:18:06 GMT']
+      Date: ['Sun, 02 Sep 2018 13:07:12 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -80,14 +80,37 @@ interactions:
   response:
     body:
       string: !!binary |
-        NRCRtsQQxPkzRltOZvhWVkLx39Y=
+        vavVA/WYmYVo5H6DCUlmePrRqhg=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sun, 02 Sep 2018 10:18:06 GMT']
+      Date: ['Sun, 02 Sep 2018 13:07:13 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://httpbin.org/bytes/20
+  response:
+    body:
+      string: !!binary |
+        XUgGM1sUnGc4ev9t4ofZg8r5dIE=
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['20']
+      Content-Type: [application/octet-stream]
+      Date: ['Sun, 02 Sep 2018 13:07:13 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
