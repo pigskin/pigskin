@@ -25,22 +25,3 @@ def test_get_weeks():
             assert int(week) >= 1 and int(week) <= 17
         for week in weeks['post']:
             assert int(week) >= 18 and int(week) <= 22
-
-
-@pytest.mark.vcr()
-def test_get_weeks_failure():
-    gp = pigskin()
-
-    # change to a wrong URL
-    gp.config['modules']['ROUTES_DATA_PROVIDERS']['games'] = 'https://httpbin.org/json'
-    weeks = gp.get_weeks(2017)
-
-    # make sure we don't have a list
-    assert not weeks
-
-    # another wrong URL
-    gp.config['modules']['ROUTES_DATA_PROVIDERS']['games'] = 'https://httpbin.org/html'
-    weeks = gp.get_weeks(2017)
-
-    # make sure we don't have a list
-    assert not weeks
