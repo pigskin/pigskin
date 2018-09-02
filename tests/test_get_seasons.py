@@ -6,7 +6,6 @@ from pigskin.pigskin import pigskin
 @pytest.mark.vcr()
 def test_get_seasons():
     gp = pigskin()
-    gp.login(username=pytest.gp_username, password=pytest.gp_password)
 
     seasons = gp.get_seasons()
 
@@ -24,13 +23,12 @@ def test_get_seasons():
 @pytest.mark.vcr()
 def test_get_seasons_failure():
     gp = pigskin()
-    gp.login(username=pytest.gp_username, password=pytest.gp_password)
 
     # change to a wrong URL
     gp.config['modules']['ROUTES_DATA_PROVIDERS']['games'] = 'https://httpbin.org/json'
     seasons = gp.get_seasons()
 
-    # make sure we have a response
+    # make sure we don't have a response
     assert not seasons
 
     # another wrong URL
