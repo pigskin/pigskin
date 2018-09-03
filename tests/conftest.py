@@ -4,9 +4,9 @@ import json
 import re
 import socket
 try:
-    from urllib import quote  # Python 2.X
-except ImportError:
-    from urllib.parse import quote  # Python 3+
+    from urllib.parse import quote
+except ImportError:  # Python 2.7
+    from urllib import quote
 
 from pigskin.pigskin import pigskin
 
