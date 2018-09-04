@@ -3,6 +3,7 @@ import pytest
 import json
 import re
 import socket
+from hashlib import sha256
 try:
     from urllib.parse import quote
 except ImportError:  # Python 2.7
@@ -14,6 +15,7 @@ from pigskin.pigskin import pigskin
 pytest.gp_username = os.getenv('PIGSKIN_USER', '')
 pytest.gp_password = os.getenv('PIGSKIN_PASS', '')
 scrub_list = []
+token_list = {}
 
 for i in [ pytest.gp_username, pytest.gp_password ]:
     if i:
@@ -35,31 +37,67 @@ def scrub_IPs(text):
 
     return text
 
+
+def search_for_tokens(text):
+    """Add any tokens to a list to scrub and generate fake versions of it.
+    The fake keys are generated so that refresh_tokens() can test that indeed
+    the tokens /did/ change without leaking these tokens."""
+    try:
+        parsed = json.loads(text)
+    except ValueError as e:
+        return
+
+    for t in ['access_token', 'refresh_token']:
+        try:
+            print(parsed[t])
+            if parsed[t] not in token_list:
+                fake_token = sha256(parsed[t].encode()).hexdigest()
+                token_list[parsed[t]] = 'FAKE_TOKEN_' + fake_token
+        except KeyError:
+            continue
+
+
 def scrub_secrets(text):
+    search_for_tokens(text)
+
     for i in scrub_list:
         text = text.replace(i, 'REDACTED')
 
+    for k in token_list:
+        text = text.replace(k, token_list[k])
+
+    text = scrub_IPs(text)
+
     return text
 
+
 def scrub_request(request):
+    # scrub headers
+    try:
+        if request.headers['Authorization']:
+            request.headers['Authorization'] = 'REDACTED'
+    except KeyError:
+        pass
+
+    # scrub body
     try:
         body = request.body.decode()
-    except (AttributeError, UnicodeDecodeError) as e:
+    except (AttributeError, UnicodeDecodeError) as e:  # likely binary data
         return request
-
-    body = scrub_secrets(body)
-    request.body = body.encode()
+    else:
+        body = scrub_secrets(body)
+        request.body = body.encode()
 
     return request
+
 
 def scrub_response(response):
     try:
         body = response['body']['string'].decode()
-    except (AttributeError, UnicodeDecodeError) as e:
+    except (AttributeError, UnicodeDecodeError) as e:  # likely binary data
         return response
 
     body = scrub_secrets(body)
-    body = scrub_IPs(body)
     response['body']['string'] = body.encode()
 
     try:  # load JSON as a python dict so it can be pretty printed
