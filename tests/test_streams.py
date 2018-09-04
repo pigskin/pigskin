@@ -28,6 +28,8 @@ def test_get_game_streams():
     for f in ['hls', 'chromecast', 'connecttv']:
         assert 'https://' in streams[f]
 
+# TODO: test live game stream
+#def test_get_game_streams_live():
 
 @pytest.mark.vcr()
 def test_get_nfl_network_streams():
