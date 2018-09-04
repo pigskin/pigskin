@@ -5,7 +5,7 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.18.4]
     method: GET
     uri: https://httpbin.org/json
   response:
@@ -33,7 +33,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sun, 02 Sep 2018 14:33:24 GMT']
+      Date: ['Tue, 04 Sep 2018 09:27:40 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -43,7 +43,7 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.18.4]
     method: GET
     uri: https://httpbin.org/json
   response:
@@ -71,7 +71,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sun, 02 Sep 2018 14:33:25 GMT']
+      Date: ['Tue, 04 Sep 2018 09:27:40 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -81,7 +81,7 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.18.4]
     method: GET
     uri: https://httpbin.org/json
   response:
@@ -109,7 +109,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sun, 02 Sep 2018 14:33:25 GMT']
+      Date: ['Tue, 04 Sep 2018 09:27:41 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -119,7 +119,7 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.18.4]
     method: GET
     uri: https://httpbin.org/json
   response:
@@ -147,7 +147,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sun, 02 Sep 2018 14:33:27 GMT']
+      Date: ['Tue, 04 Sep 2018 09:27:41 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -157,7 +157,7 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.18.4]
     method: GET
     uri: https://httpbin.org/json
   response:
@@ -185,7 +185,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sun, 02 Sep 2018 14:33:27 GMT']
+      Date: ['Tue, 04 Sep 2018 09:27:41 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -195,7 +195,7 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.18.4]
     method: GET
     uri: https://httpbin.org/json
   response:
@@ -223,7 +223,223 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sun, 02 Sep 2018 14:33:27 GMT']
+      Date: ['Tue, 04 Sep 2018 09:27:41 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: client_id=https%3A%2F%2Fhttpbin.org%2Fjson&grant_type=refresh_token
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['67']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.18.4]
+    method: POST
+    uri: https://httpbin.org/json
+  response:
+    body: {string: '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+        <title>405 Method Not Allowed</title>
+
+        <h1>Method Not Allowed</h1>
+
+        <p>The method is not allowed for the requested URL.</p>
+
+        '}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Allow: ['GET, OPTIONS, HEAD']
+      Connection: [keep-alive]
+      Content-Length: ['178']
+      Content-Type: [text/html]
+      Date: ['Tue, 04 Sep 2018 09:27:41 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 405, message: METHOD NOT ALLOWED}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/json
+  response:
+    body:
+      pretty:
+        slideshow:
+          author: Yours Truly
+          date: date of publication
+          slides:
+          - {title: Wake up to WonderWidgets!, type: all}
+          - items: [Why <em>WonderWidgets</em> are great, Who <em>buys</em> WonderWidgets]
+            title: Overview
+            type: all
+          title: Sample Slide Show
+      string: "{\n  \"slideshow\": {\n    \"author\": \"Yours Truly\", \n    \"date\"\
+        : \"date of publication\", \n    \"slides\": [\n      {\n        \"title\"\
+        : \"Wake up to WonderWidgets!\", \n        \"type\": \"all\"\n      }, \n\
+        \      {\n        \"items\": [\n          \"Why <em>WonderWidgets</em> are\
+        \ great\", \n          \"Who <em>buys</em> WonderWidgets\"\n        ], \n\
+        \        \"title\": \"Overview\", \n        \"type\": \"all\"\n      }\n \
+        \   ], \n    \"title\": \"Sample Slide Show\"\n  }\n}\n"
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['429']
+      Content-Type: [application/json]
+      Date: ['Tue, 04 Sep 2018 09:27:41 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/json
+  response:
+    body:
+      pretty:
+        slideshow:
+          author: Yours Truly
+          date: date of publication
+          slides:
+          - {title: Wake up to WonderWidgets!, type: all}
+          - items: [Why <em>WonderWidgets</em> are great, Who <em>buys</em> WonderWidgets]
+            title: Overview
+            type: all
+          title: Sample Slide Show
+      string: "{\n  \"slideshow\": {\n    \"author\": \"Yours Truly\", \n    \"date\"\
+        : \"date of publication\", \n    \"slides\": [\n      {\n        \"title\"\
+        : \"Wake up to WonderWidgets!\", \n        \"type\": \"all\"\n      }, \n\
+        \      {\n        \"items\": [\n          \"Why <em>WonderWidgets</em> are\
+        \ great\", \n          \"Who <em>buys</em> WonderWidgets\"\n        ], \n\
+        \        \"title\": \"Overview\", \n        \"type\": \"all\"\n      }\n \
+        \   ], \n    \"title\": \"Sample Slide Show\"\n  }\n}\n"
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['429']
+      Content-Type: [application/json]
+      Date: ['Tue, 04 Sep 2018 09:27:41 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/json
+  response:
+    body:
+      pretty:
+        slideshow:
+          author: Yours Truly
+          date: date of publication
+          slides:
+          - {title: Wake up to WonderWidgets!, type: all}
+          - items: [Why <em>WonderWidgets</em> are great, Who <em>buys</em> WonderWidgets]
+            title: Overview
+            type: all
+          title: Sample Slide Show
+      string: "{\n  \"slideshow\": {\n    \"author\": \"Yours Truly\", \n    \"date\"\
+        : \"date of publication\", \n    \"slides\": [\n      {\n        \"title\"\
+        : \"Wake up to WonderWidgets!\", \n        \"type\": \"all\"\n      }, \n\
+        \      {\n        \"items\": [\n          \"Why <em>WonderWidgets</em> are\
+        \ great\", \n          \"Who <em>buys</em> WonderWidgets\"\n        ], \n\
+        \        \"title\": \"Overview\", \n        \"type\": \"all\"\n      }\n \
+        \   ], \n    \"title\": \"Sample Slide Show\"\n  }\n}\n"
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['429']
+      Content-Type: [application/json]
+      Date: ['Tue, 04 Sep 2018 09:27:41 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: client_id=https%3A%2F%2Fhttpbin.org%2Fjson&grant_type=refresh_token
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['67']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.18.4]
+    method: POST
+    uri: https://httpbin.org/json
+  response:
+    body: {string: '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+        <title>405 Method Not Allowed</title>
+
+        <h1>Method Not Allowed</h1>
+
+        <p>The method is not allowed for the requested URL.</p>
+
+        '}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Allow: ['HEAD, GET, OPTIONS']
+      Connection: [keep-alive]
+      Content-Length: ['178']
+      Content-Type: [text/html]
+      Date: ['Tue, 04 Sep 2018 09:27:41 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 405, message: METHOD NOT ALLOWED}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/json
+  response:
+    body:
+      pretty:
+        slideshow:
+          author: Yours Truly
+          date: date of publication
+          slides:
+          - {title: Wake up to WonderWidgets!, type: all}
+          - items: [Why <em>WonderWidgets</em> are great, Who <em>buys</em> WonderWidgets]
+            title: Overview
+            type: all
+          title: Sample Slide Show
+      string: "{\n  \"slideshow\": {\n    \"author\": \"Yours Truly\", \n    \"date\"\
+        : \"date of publication\", \n    \"slides\": [\n      {\n        \"title\"\
+        : \"Wake up to WonderWidgets!\", \n        \"type\": \"all\"\n      }, \n\
+        \      {\n        \"items\": [\n          \"Why <em>WonderWidgets</em> are\
+        \ great\", \n          \"Who <em>buys</em> WonderWidgets\"\n        ], \n\
+        \        \"title\": \"Overview\", \n        \"type\": \"all\"\n      }\n \
+        \   ], \n    \"title\": \"Sample Slide Show\"\n  }\n}\n"
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['429']
+      Content-Type: [application/json]
+      Date: ['Tue, 04 Sep 2018 09:27:42 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}

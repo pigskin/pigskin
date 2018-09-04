@@ -5,20 +5,20 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.18.4]
     method: GET
     uri: https://httpbin.org/bytes/20
   response:
     body:
       string: !!binary |
-        uIJWaAJ2P+58kuT8K7KaGf2w4uE=
+        X5VUAS0sCKyfZ4Z+OrRUnVJS4Xg=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sun, 02 Sep 2018 14:33:29 GMT']
+      Date: ['Tue, 04 Sep 2018 09:27:44 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -28,20 +28,20 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.18.4]
     method: GET
     uri: https://httpbin.org/bytes/20
   response:
     body:
       string: !!binary |
-        fxYNvlZeYmZUcy5sV9v0fCiqz/M=
+        sSj5a6rxZuUJEFuTmioTpvMvqPU=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sun, 02 Sep 2018 14:33:30 GMT']
+      Date: ['Tue, 04 Sep 2018 09:27:44 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -51,20 +51,20 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.18.4]
     method: GET
     uri: https://httpbin.org/bytes/20
   response:
     body:
       string: !!binary |
-        gtb4snN+nfeIQlEJRTnNBipg5u0=
+        PHCWMhPbJUMu5n7HEDirgeJUfQg=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sun, 02 Sep 2018 14:33:30 GMT']
+      Date: ['Tue, 04 Sep 2018 09:27:44 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -74,20 +74,20 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.18.4]
     method: GET
     uri: https://httpbin.org/bytes/20
   response:
     body:
       string: !!binary |
-        0keO2ZFiJfOLCZRWRv3PpseKwxc=
+        lbP/61WnY6lwwpv8KEJS2saIVEs=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sun, 02 Sep 2018 14:33:30 GMT']
+      Date: ['Tue, 04 Sep 2018 09:27:45 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -97,20 +97,20 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.18.4]
     method: GET
     uri: https://httpbin.org/bytes/20
   response:
     body:
       string: !!binary |
-        9ScPPtuMIJh2kidFgz/cbxJkSyk=
+        eF0CamDHJRZEI4wJ7igyvw8RWIY=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sun, 02 Sep 2018 14:33:31 GMT']
+      Date: ['Tue, 04 Sep 2018 09:27:45 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -120,20 +120,176 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.18.4]
     method: GET
     uri: https://httpbin.org/bytes/20
   response:
     body:
       string: !!binary |
-        eYnJQoOESxy3eAm1rRJbGhYDWzs=
+        zWloU7vK1DaCkA79pijwyoaH2dk=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sun, 02 Sep 2018 14:33:31 GMT']
+      Date: ['Tue, 04 Sep 2018 09:27:45 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: client_id=https%3A%2F%2Fhttpbin.org%2Fbytes%2F20&grant_type=refresh_token
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['73']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.18.4]
+    method: POST
+    uri: https://httpbin.org/bytes/20
+  response:
+    body: {string: '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+        <title>405 Method Not Allowed</title>
+
+        <h1>Method Not Allowed</h1>
+
+        <p>The method is not allowed for the requested URL.</p>
+
+        '}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Allow: ['OPTIONS, GET, HEAD']
+      Connection: [keep-alive]
+      Content-Length: ['178']
+      Content-Type: [text/html]
+      Date: ['Tue, 04 Sep 2018 09:27:45 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 405, message: METHOD NOT ALLOWED}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/bytes/20
+  response:
+    body:
+      string: !!binary |
+        xrymEUQvXmHK6pCVAWCdSwgrlHo=
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['20']
+      Content-Type: [application/octet-stream]
+      Date: ['Tue, 04 Sep 2018 09:27:45 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/bytes/20
+  response:
+    body:
+      string: !!binary |
+        J394Qv5Eh/qnzshXs+J5ywcMffc=
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['20']
+      Content-Type: [application/octet-stream]
+      Date: ['Tue, 04 Sep 2018 09:27:45 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/bytes/20
+  response:
+    body:
+      string: !!binary |
+        4prooKxk37ONcrZOx7FdU1pfnFg=
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['20']
+      Content-Type: [application/octet-stream]
+      Date: ['Tue, 04 Sep 2018 09:27:45 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: client_id=https%3A%2F%2Fhttpbin.org%2Fbytes%2F20&grant_type=refresh_token
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['73']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.18.4]
+    method: POST
+    uri: https://httpbin.org/bytes/20
+  response:
+    body: {string: '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+        <title>405 Method Not Allowed</title>
+
+        <h1>Method Not Allowed</h1>
+
+        <p>The method is not allowed for the requested URL.</p>
+
+        '}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Allow: ['OPTIONS, GET, HEAD']
+      Connection: [keep-alive]
+      Content-Length: ['178']
+      Content-Type: [text/html]
+      Date: ['Tue, 04 Sep 2018 09:27:45 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 405, message: METHOD NOT ALLOWED}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/bytes/20
+  response:
+    body:
+      string: !!binary |
+        BHJJ7H3rS4j2HvBS6viM1jOIOvw=
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['20']
+      Content-Type: [application/octet-stream]
+      Date: ['Tue, 04 Sep 2018 09:27:46 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}

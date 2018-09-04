@@ -18,6 +18,11 @@ def test_invalid_response_get_json():
     assert not gp.get_games(2017, 'reg', 8)
     assert not gp.get_team_games('2018', '49ers')
     assert not gp.get_game_versions('2017090700', '2017')
+    assert not gp.get_nfl_network_streams()
+    assert not gp.get_redzone_streams()
+    assert not gp._get_diva_config(junk_url)
+    assert not gp._get_diva_streams(video_id='invalid', diva_config_url=junk_url)
+
 
 @pytest.mark.vcr()
 def test_invalid_response_get_html():
@@ -31,6 +36,11 @@ def test_invalid_response_get_html():
     assert not gp.get_games(2017, 'reg', 8)
     assert not gp.get_team_games('2018', '49ers')
     assert not gp.get_game_versions('2017090700', '2017')
+    assert not gp.get_nfl_network_streams()
+    assert not gp.get_redzone_streams()
+    assert not gp._get_diva_config(junk_url)
+    assert not gp._get_diva_streams(video_id='invalid', diva_config_url=junk_url)
+
 
 @pytest.mark.vcr()
 def test_invalid_response_get_bytes():
@@ -44,6 +54,11 @@ def test_invalid_response_get_bytes():
     assert not gp.get_games(2017, 'reg', 8)
     assert not gp.get_team_games('2018', '49ers')
     assert not gp.get_game_versions('2017090700', '2017')
+    assert not gp.get_nfl_network_streams()
+    assert not gp.get_redzone_streams()
+    assert not gp._get_diva_config(junk_url)
+    assert not gp._get_diva_streams(video_id='invalid', diva_config_url=junk_url)
+
 
 @pytest.mark.vcr()
 def test_invalid_response_post_json():
