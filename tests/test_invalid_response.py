@@ -11,6 +11,7 @@ def test_invalid_response_get_bytes():
     junk_url = 'https://httpbin.org/bytes/20'
     gp.config['modules']['API'] = { key: junk_url for key in gp.config['modules']['API'] }
     gp.config['modules']['ROUTES_DATA_PROVIDERS'] = { key: junk_url for key in gp.config['modules']['ROUTES_DATA_PROVIDERS'] }
+    gp.gigya_auth_url = junk_url
 
     assert not gp.get_current_season_and_week()
     assert not gp.get_seasons()
@@ -29,6 +30,7 @@ def test_invalid_response_get_html():
     junk_url = 'https://httpbin.org/html'
     gp.config['modules']['API'] = { key: junk_url for key in gp.config['modules']['API'] }
     gp.config['modules']['ROUTES_DATA_PROVIDERS'] = { key: junk_url for key in gp.config['modules']['ROUTES_DATA_PROVIDERS'] }
+    gp.gigya_auth_url = junk_url
 
     assert not gp.get_current_season_and_week()
     assert not gp.get_seasons()
@@ -47,6 +49,7 @@ def test_invalid_response_get_json():
     junk_url = 'https://httpbin.org/json'
     gp.config['modules']['API'] = { key: junk_url for key in gp.config['modules']['API'] }
     gp.config['modules']['ROUTES_DATA_PROVIDERS'] = { key: junk_url for key in gp.config['modules']['ROUTES_DATA_PROVIDERS'] }
+    gp.gigya_auth_url = junk_url
 
     assert not gp.get_current_season_and_week()
     assert not gp.get_seasons()
@@ -65,6 +68,7 @@ def test_invalid_response_get_xml():
     junk_url = 'https://httpbin.org/xml'
     gp.config['modules']['API'] = { key: junk_url for key in gp.config['modules']['API'] }
     gp.config['modules']['ROUTES_DATA_PROVIDERS'] = { key: junk_url for key in gp.config['modules']['ROUTES_DATA_PROVIDERS'] }
+    gp.gigya_auth_url = junk_url
 
     assert not gp.get_current_season_and_week()
     assert not gp.get_seasons()
@@ -83,8 +87,10 @@ def test_invalid_response_post_json():
     junk_url = 'https://httpbin.org/post'
     gp.config['modules']['API'] = { key: junk_url for key in gp.config['modules']['API'] }
     gp.config['modules']['ROUTES_DATA_PROVIDERS'] = { key: junk_url for key in gp.config['modules']['ROUTES_DATA_PROVIDERS'] }
+    gp.gigya_auth_url = junk_url
 
     # it seems that httbin only provides JSON responses to POST requests
     # TODO: find a way to get html and bytes responses for POST as well
+    assert not gp._gigya_auth(username='nope', password='so_secret')
     assert not gp.login(username='nope', password='so_secret')
     assert not gp.refresh_tokens()
