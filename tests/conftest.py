@@ -57,6 +57,23 @@ def search_for_tokens(text):
             continue
 
 
+def scrub_profile_info(text):
+    """The Gigya auth response includes a bunch of personal info. Scrub it."""
+    try:
+        parsed = json.loads(text)
+    except ValueError:
+        return text
+
+    try:
+        if parsed['profile']:
+            parsed['profile'] = 'REDACTED'
+    except KeyError:
+        pass
+
+    text = json.dumps(parsed)
+    return text
+
+
 def scrub_secrets(text):
     search_for_tokens(text)
 
@@ -67,6 +84,7 @@ def scrub_secrets(text):
         text = text.replace(k, token_list[k])
 
     text = scrub_IPs(text)
+    text = scrub_profile_info(text)
 
     return text
 
