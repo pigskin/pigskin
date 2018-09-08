@@ -3,7 +3,7 @@ import pytest
 from pigskin.pigskin import pigskin
 
 @pytest.mark.vcr()
-def test_login_success():
+def test_login():
     gp = pigskin()
     result = gp.login(username=pytest.gp_username, password=pytest.gp_password)
     assert result == True

@@ -11,7 +11,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: website config, lastUpdate: '2018-09-04T08:11:43.591Z', title: '',
+        header: {id: website config, lastUpdate: '2018-09-08T12:03:35.326Z', title: '',
           version: '1.0'}
         modules:
           ADOBE_HEARTBEAT:
@@ -379,6 +379,8 @@ interactions:
               SHOW_VIDEO: false}
             REDZONE: {HERO_VIDEO: 'https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4',
               HERO_VIDEO_MOB: 'https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4'}
+            WELCOME: {HERO_VIDEO: 'https://www.nflgamepass.com/api/images/video/upload/v1535355398/ScottHanson_Game_Pass_Read_5Mbps_ddu4rr.mp4',
+              HERO_VIDEO_MOB: 'https://www.nflgamepass.com/api/images/video/upload/v1535355398/ScottHanson_Game_Pass_Read_5Mbps_ddu4rr.mp4'}
           MOMENT: {FREE_TRIAL_DATE_FORMAT: DD MMMM YYYY, LOCALE: en-gb}
           PAYPAL:
             REDIRECT_URIS:
@@ -448,12 +450,12 @@ interactions:
             IFRAME_BASE_OPTIONS: {STYLE: inline, SUBMIT_ENABLED: true, SUPPORTED_CARD_TYPES: 'AmericanExpress,JCB,Visa,MasterCard,Discover'}
             JAVASCRIPT_API_URL: https://apisandboxstatic.zuora.com/Resources/libs/hosted/1.3.0/zuora-min.js
             LOCALE: en_US
-      string: '{"header":{"id":"website config","version":"1.0","title":"","lastUpdate":"2018-09-04T08:11:43.591Z"},"modules":{"FEATURES":{"FUNNEL":{"IS_ENABLED":true},"AUTHENTICATION":{"GIGYA_LOGIN_FLOW_IS_ENABLED":true},"CURRENT_CONTEXT":{"SEASON":2018}},"IMAGE_FORMATS":{"FALLBACK_BASE_URL":"fallbackimageprd-temporary","DefaulList_16:9":[{"singleFormat":"t_16-9_480","doubleFormat":"t_16-9_960","breakpoint":"220px"}],"Hero_16:9":[{"singleFormat":"t_16-9_1920","doubleFormat":"t_16-9_3840","breakpoint":"1200px"},{"singleFormat":"t_16-9_1200","doubleFormat":"t_16-9_1920","breakpoint":"768px"},{"singleFormat":"t_16-9_960","doubleFormat":"t_16-9_1200","breakpoint":"480px"},{"singleFormat":"t_16-9_480","doubleFormat":"t_16-9_960","breakpoint":"220px"}]},"SOCIAL_PROVIDERS":{"FACEBOOK":{"sdk_url":"//connect.facebook.net/en_US/sdk.js","sdk_configuration":{"appId":"219276878564579
+      string: '{"header":{"id":"website config","version":"1.0","title":"","lastUpdate":"2018-09-08T12:03:35.326Z"},"modules":{"FEATURES":{"FUNNEL":{"IS_ENABLED":true},"AUTHENTICATION":{"GIGYA_LOGIN_FLOW_IS_ENABLED":true},"CURRENT_CONTEXT":{"SEASON":2018}},"IMAGE_FORMATS":{"FALLBACK_BASE_URL":"fallbackimageprd-temporary","DefaulList_16:9":[{"singleFormat":"t_16-9_480","doubleFormat":"t_16-9_960","breakpoint":"220px"}],"Hero_16:9":[{"singleFormat":"t_16-9_1920","doubleFormat":"t_16-9_3840","breakpoint":"1200px"},{"singleFormat":"t_16-9_1200","doubleFormat":"t_16-9_1920","breakpoint":"768px"},{"singleFormat":"t_16-9_960","doubleFormat":"t_16-9_1200","breakpoint":"480px"},{"singleFormat":"t_16-9_480","doubleFormat":"t_16-9_960","breakpoint":"220px"}]},"SOCIAL_PROVIDERS":{"FACEBOOK":{"sdk_url":"//connect.facebook.net/en_US/sdk.js","sdk_configuration":{"appId":"219276878564579
         temporary","xfbml":false,"version":"v2.9"},"share":{"hashtag":"#gamepass"}},"TWITTER":{"sdk_url":"//platform.twitter.com/widgets.js","share":{"hashtags":["nfl","gamepass"],"via":"NFLGamePass"}},"SOCIAL_MESSAGE":"I''m
         watching the NFL on http://gamepass-europe.nfl.com"},"COOKIES":{"DOMAIN":".nflgamepass.com","COOKIES_POLICY":{"name":"gp_cp","duration":30}},"MOMENT":{"LOCALE":"en-gb","FREE_TRIAL_DATE_FORMAT":"DD
         MMMM YYYY"},"API":{"GRANT_TYPES":{"PASSWORD":"password","REFRESH_TOKEN":"refresh_token","SHIELD_AUTHENTICATION":"shield_authentication"},"CLIENT_ID":"42cc360e-6fbb-4472-9437-2f088b8730de","DEVICE_TYPE":"web","BASE_URL":"https://www.nflgamepass.com/api/user","VOCABULARY":"https://www.nflgamepass.com/api/en/content/v1/web/voc","TV_SHOWS":"https://www.nflgamepass.com/api/en/content/v1/web/tv-programs/:showCategory/programs","NETWORK_PROGRAMS":"https://www.nflgamepass.com/api/en/content/v1/web/network/programs","NETWORK_EPISODES":"https://www.nflgamepass.com/api/en/content/v1/web/network/:seasonSlug/:tvShowSlug/list","VIDEO_BY_SLUG":"https://www.nflgamepass.com/api/en/content/v1/web/videos/:videoSlug/video","LIVE_VIDEOS":"https://www.nflgamepass.com/api/en/content/v1/web/live/all","FAVOURITE_TEAM_MATCHES":"https://www.nflgamepass.com/api/en/content/v1/web/teams/:favouriteTeam/preferred-team","TEAMS":"https://www.nflgamepass.com/api/en/content/v1/common/teams","GEOLOCALIZATION":"https://www.nflgamepass.com/api/user/api/users/v1/geolocation","LOGIN":"https://www.nflgamepass.com/api/user/oauth/token","LOGOUT":"https://www.nflgamepass.com/api/user/api/users/v1/identity/logout","REFRESH_TOKEN":"https://www.nflgamepass.com/api/user/oauth/token","USER_PROFILE":"https://www.nflgamepass.com/api/user/api/users/v1/profile/me","USER_ACCOUNT":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/myaccount","CHECK_USER_NICKNAME":"https://www.nflgamepass.com/api/user/api/users/v1/identity/existsusername","CHECK_USER_SESSION":"https://www.nflgamepass.com/api/user/api/users/v1/identity/isauthenticated","REGISTER":"https://www.nflgamepass.com/api/user/api/users/v1/identity/register","ZUORA_IFRAME_CONFIGURATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/iframe","ZUORA_CREDIT_CARD_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/purchase/creditcard","ZUORA_CREDIT_CARD_UPGRADE_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/upgrade/creditcard","ZUORA_PAYPAL_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/purchase/paypal","ZUORA_PAYPAL_UPGRADE_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/upgrade/paypal","ZUORA_FREE_TRIAL_STOP":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/freetrial","ZUORA_AUTO_RENEWAL_STOP":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/cancelautorenewal","ZUORA_AUTO_RENEWAL_ENABLE":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/enableautorenewal","ZUORA_PAYMENT_METHOD_UPDATE":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/changepaymentmethod/creditcard","ZUORA_VALIDATE_PROMO_CODE":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/preview/promocode","ZUORA_FREEMIUM_PRODUCT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/add","ZUORA_ENABLE_PAYMENT_VIA_INSTALLMENTS":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/paymentmode/installments","ZUORA_TOGGLE_PAYMENT_VIA_INSTALLMENTS":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/paymentmode","SOFT_ENTITLEMENT":"https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/softcheck","PAYPAL_CHECKOUT_TOKEN":"https://www.nflgamepass.com/api/user/api/users/v1/paypal/getcheckouttoken","CONTACT_FORM":"https://nfl-functions-prd-we.azurewebsites.net/api/SendSupportEmail?code=9rsqW1AGlLP/9yFf77Dilan7/Ja88OwaaSMXHusHaW74kcITLBNFJw=="},"GIGYA":{"JAVASCRIPT_API_URL":"https://cdns.eu1.gigya.com/js/gigya.js?apiKey=3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp","SUCCESS_ERROR_CODES":[0],"WRONG_CREDENTIALS_ERROR_CODES":[403042],"THROTTLING_ERROR_CODES":[403048]},"ZUORA":{"LOCALE":"en_US","JAVASCRIPT_API_URL":"https://apisandboxstatic.zuora.com/Resources/libs/hosted/1.3.0/zuora-min.js","IFRAME_BASE_OPTIONS":{"SUPPORTED_CARD_TYPES":"AmericanExpress,JCB,Visa,MasterCard,Discover","SUBMIT_ENABLED":true,"STYLE":"inline"}},"DIVA":{"FLASH":{"SWF_PATH":"https://www.nflgamepass.com/api/diva/swf/diva.swf","MINIMUM_VERSION_NUMBER":20,"PLAYER_SIZE":{"WIDTH":990,"HEIGHT":590},"PARAMS":{"scale":"noscale","wmode":"direct","bgcolor":"#000000","allowfullscreen":"true","allowscriptaccess":"always","base":"."},"SETTINGS":{"LiveNoData":"https://www.nflgamepass.com/api/diva/diva/settings/livenodata/device","ReplayNoData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/device","LiveWithData":"https://www.nflgamepass.com/api/diva/diva/settings/livenfl/device","ReplayWithData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/device","NoAdsWithData":"https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/device","VodNoData":"https://www.nflgamepass.com/api/diva/diva/settings/vod/device","Live24x7":"https://www.nflgamepass.com/api/diva/diva/settings/24h7d/device","CoachFilm":"https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/device"}},"HTML5":{"CONVIVA":{"IS_ENABLED":true,"ANALYTICS_JAVASCRIPT_API_URL":"https://www.nflgamepass.com/api/diva/scripts/conviva_integration.min.js","DEFAULT_ANALYTICS_PAYLOAD":{"assetName":"{V.Category1}-{V.Title}","applicationName":"nfl-prd-html5","customerKey":"6679b240d0b48c69402268577b537232458a6e78","viewerId":"{Settings.cs5}","tags":{"playerVendor":"deltatre","category":"Diva","channel":"Diva","retryNumber":"0","streamProtocol":"HLS","contentId":"Diva-{V.ID}"},"gatewayUrl":"","log":false}},"PLAYER_PATH":"https://www.nflgamepass.com/api/diva/html5/divaplayer.html","PLAYER_LOGO":"/custom/nfl/img/gp-logo__white.svg","RECOMMENDATIONS_IFRAME_URL":"https://www.nflgamepass.com/api/diva/customoverlay/videolist/video_switch.html?useHashNav=false&templateName=fullVideo&mrssUrl=https://www.nflgamepass.com/api/en/content/v1/rss-feeds/{videoId}/video-raccomendation&errorText=There%20are%20no%20videos%20available%20at%20the%20moment.&pollingTime=00:02:00&ribbonBgColor=0xef082b&ribbonFgColor=0x000000&noDescription=true&mode=switch","SETTINGS":{"LiveNoData":"https://www.nflgamepass.com/api/diva/diva/settings/livenodata/html5","ReplayNoData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/html5","LiveWithData":"https://www.nflgamepass.com/api/diva/diva/settings/livenfl/html5","ReplayWithData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/html5","NoAdsWithData":"https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/html5","VodNoData":"https://www.nflgamepass.com/api/diva/diva/settings/vod/html5","Live24x7":"https://www.nflgamepass.com/api/diva/diva/settings/24h7d/html5","CoachFilm":"https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/html5"}}},"REDIRECT_URIS":{"ERROR":"error","LOGIN":"login"},"ROUTES_DATA_PROVIDERS":{"home":"https://www.nflgamepass.com/api/en/content/v1/web/homepage","login":"https://www.nflgamepass.com/api/en/content/v1/web/login","games":"https://www.nflgamepass.com/api/en/content/v1/web/games/seasons","games_detail":"https://www.nflgamepass.com/api/en/content/v1/web/games/:season/:seasonType/:week/list","game_page":"https://www.nflgamepass.com/api/en/content/v1/web/games/:season/:gameslug/data","teams":"https://www.nflgamepass.com/api/en/content/v1/web/teams/list","team_detail":"https://www.nflgamepass.com/api/en/content/v1/web/teams/:team/videos","funnel_plans":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/zuora/{{GeolocationService:userInfo.geoLocation.country.isoCode}}/subscription/catalog","funnel_upgrade_plans":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/zuora/{{GeolocationService:userInfo.geoLocation.country.isoCode}}/upgrade/{{UserProfileService:basicInfo.upgradeRatePlanTag}}/catalog","funnel_account":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/account","funnel_payment":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/payment","funnel_upgrade_payment":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/payment","funnel_confirm":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/confirmation-page","funnel_upgrade_confirm":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/confirmation-page","funnel_unavailable":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/unavailable","funnel_upgrade_unavailable":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/unavailable","funnel_error":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/error","funnel_upgrade_error":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/error","funnel_subscription_renewal":"https://www.nflgamepass.com/api/en/content/v1/web/autorenewal-landing-page/data","featured":"https://www.nflgamepass.com/api/en/content/v1/web/featured/videos","featured_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/featured/show/:video-slug/video","nfl_shows":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-shows/videos","nfl_shows_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-shows/show/:video-slug/video","nfl_originals":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-originals/videos","nfl_originals_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-originals/show/:video-slug/video","video-slug":"https://www.nflgamepass.com/api/en/content/v1/web/videos/:video-slug/video","network_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/network/show/:video-slug/video","featured_local":"http://localhost:61544/v1/web/featured/videos","redzone":"https://www.nflgamepass.com/api/en/content/v1/web/redzone/videos","network":"https://www.nflgamepass.com/api/en/content/v1/web/network/data","terms_of_service":"https://www.nflgamepass.com/api/en/content/v1/web/terms-and-conditions","discover_the_service":"https://www.nflgamepass.com/api/en/content/v1/web/discover-the-service","discover_redzone":"https://www.nflgamepass.com/api/en/content/v1/web/discover-redzone","privacy":"https://www.nflgamepass.com/api/en/content/v1/web/privacy","support":"https://www.nflgamepass.com/api/en/content/v1/web/support","faq":"https://www.nflgamepass.com/api/en/content/v1/web/faq","cookies_policy":"https://www.nflgamepass.com/api/en/content/v1/web/cookies-policy","payment_terms":"https://www.nflgamepass.com/api/en/content/v1/web/payment-terms","account":"https://www.nflgamepass.com/api/en/content/v1/web/subscription/myaccount","contact-us":"https://www.nflgamepass.com/api/en/content/v1/web/contactus/data","confirm-subscription":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/confirmation-page","refund_faq":"https://www.nflgamepass.com/api/en/content/v1/web/exrefund-faq","sb_competition_tc":"https://www.nflgamepass.com/api/en/content/v1/web/sb_competition_tc","error":"https://www.nflgamepass.com/api/en/content/v1/web/500","no-content":"https://www.nflgamepass.com/api/en/content/v1/web/404"},"LOCAL_STORAGE":{"OAUTH_KEY":"oauth_payload","PREFERENCES_KEY":"preferences","TRANSACTION_DETAILS_KEY":"transaction_details"},"GOOGLE":{"RECAPTCHA":{"JAVASCRIPT_API_URL":"https://www.google.com/recaptcha/api.js?onload=googleReCaptchaOnloadCallback&render=explicit","SITE_KEY":"6LfVuiIUAAAAAAFdPEG3HtHJGbKl0PqEKvRws9hV"}},"PAYPAL":{"REDIRECT_URIS":{"PRODUCT_PURCHASE":{"SUCCESS":"{{window:location.origin}}/en/subscribe/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=purchase&success-redirect=/en/subscribe/confirmation&error-redirect=/en/subscribe/paypal/error","ERROR":"{{window:location.origin}}/en/subscribe/paypal/error"},"PRODUCT_UPGRADE":{"SUCCESS":"{{window:location.origin}}/en/upgrade/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=upgrade&success-redirect=/en/upgrade/confirmation&error-redirect=/en/upgrade/paypal/error","ERROR":"{{window:location.origin}}/en/upgrade/paypal/error"},"SUCCESS":"{{window:location.origin}}/en/subscribe/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=purchase&success-redirect=/en/subscribe/confirmation&error-redirect=/en/subscribe/paypal/error","ERROR":"{{window:location.origin}}/en/subscribe/paypal/error"}},"POLLING":{"VIDEO_STATUS_CHECK":{"INTERVAL":10000}},"ADOBE_HEARTBEAT":{"VISITOR":{"ID":"F75C3025512D2C1D0A490D44@AdobeOrg","TRACKING_SERVER":"smetrics.nfl.com"},"APP_MEASUREMENT":{"TRACKING_SERVER":"nfl.hb.omtrdc.net","ACCOUNT":"nflprod","CHARSET":"UTF-8"},"MEDIA_CONFIGURATION":{"TRACKING_SERVER":"nfl.hb.omtrdc.net","PLAYER_NAME":"Diva
         Player","CHANNEL":"NFL GamePass - Prod.","DEBUG_LOGGING":false,"APP_VERSION":"Diva
-        Player","SSL":false,"OVP":"NFL GamePass OVP - Prod."}},"MEDIA":{"HOME_PAGE":{"SHOW_VIDEO":false,"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1497617597/HomePageVideoGP_2500Kb_1280_no_Audio_lglspi.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1497612187/HomePageVideoGP_1500Kb_720_no_Audio_esd7az.mp4"},"DISCOVER_THE_SERVICE":{"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1532794979/OVE_003_Game_Pass_Product_Video_V01_12_5Mbps_sbgdzr.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1532794979/OVE_003_Game_Pass_Product_Video_V01_12_5Mbps_sbgdzr.mp4"},"REDZONE":{"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4"}},"COUNTRIES":{"ISO3611":[{"isoCode":"AX","isEuropean":true},{"isoCode":"AL","isEuropean":true},{"isoCode":"DZ","isEuropean":false},{"isoCode":"AS","isEuropean":false},{"isoCode":"AD","isEuropean":true},{"isoCode":"AO","isEuropean":false},{"isoCode":"AI","isEuropean":false},{"isoCode":"AQ","isEuropean":false},{"isoCode":"AG","isEuropean":false},{"isoCode":"AR","isEuropean":false},{"isoCode":"AM","isEuropean":true},{"isoCode":"AW","isEuropean":false},{"isoCode":"AU","isEuropean":false},{"isoCode":"AT","isEuropean":true},{"isoCode":"AZ","isEuropean":true},{"isoCode":"BS","isEuropean":false},{"isoCode":"BH","isEuropean":false},{"isoCode":"BD","isEuropean":false},{"isoCode":"BB","isEuropean":false},{"isoCode":"BY","isEuropean":true},{"isoCode":"BE","isEuropean":true},{"isoCode":"BZ","isEuropean":false},{"isoCode":"BJ","isEuropean":false},{"isoCode":"BM","isEuropean":false},{"isoCode":"BT","isEuropean":false},{"isoCode":"BO","isEuropean":false},{"isoCode":"BA","isEuropean":true},{"isoCode":"BW","isEuropean":false},{"isoCode":"BV","isEuropean":false},{"isoCode":"BR","isEuropean":false},{"isoCode":"VG","isEuropean":false},{"isoCode":"IO","isEuropean":false},{"isoCode":"BN","isEuropean":false},{"isoCode":"BG","isEuropean":true},{"isoCode":"BF","isEuropean":false},{"isoCode":"BI","isEuropean":false},{"isoCode":"KH","isEuropean":false},{"isoCode":"CM","isEuropean":false},{"isoCode":"CA","isEuropean":false},{"isoCode":"CV","isEuropean":false},{"isoCode":"KY","isEuropean":false},{"isoCode":"CF","isEuropean":false},{"isoCode":"TD","isEuropean":false},{"isoCode":"CL","isEuropean":false},{"isoCode":"CN","isEuropean":false},{"isoCode":"HK","isEuropean":false},{"isoCode":"MO","isEuropean":false},{"isoCode":"CX","isEuropean":false},{"isoCode":"CC","isEuropean":false},{"isoCode":"CO","isEuropean":false},{"isoCode":"KM","isEuropean":false},{"isoCode":"CG","isEuropean":false},{"isoCode":"CD","isEuropean":false},{"isoCode":"CK","isEuropean":false},{"isoCode":"CR","isEuropean":false},{"isoCode":"CI","isEuropean":false},{"isoCode":"HR","isEuropean":true},{"isoCode":"CU","isEuropean":false},{"isoCode":"CY","isEuropean":true},{"isoCode":"CZ","isEuropean":true},{"isoCode":"DK","isEuropean":true},{"isoCode":"DJ","isEuropean":false},{"isoCode":"DM","isEuropean":false},{"isoCode":"DO","isEuropean":false},{"isoCode":"EC","isEuropean":false},{"isoCode":"EG","isEuropean":false},{"isoCode":"SV","isEuropean":false},{"isoCode":"GQ","isEuropean":false},{"isoCode":"ER","isEuropean":false},{"isoCode":"EE","isEuropean":true},{"isoCode":"ET","isEuropean":false},{"isoCode":"FK","isEuropean":false},{"isoCode":"FO","isEuropean":true},{"isoCode":"FJ","isEuropean":false},{"isoCode":"FI","isEuropean":true},{"isoCode":"FR","isEuropean":true},{"isoCode":"GF","isEuropean":false},{"isoCode":"PF","isEuropean":false},{"isoCode":"TF","isEuropean":false},{"isoCode":"GA","isEuropean":false},{"isoCode":"GM","isEuropean":false},{"isoCode":"GE","isEuropean":true},{"isoCode":"DE","isEuropean":true},{"isoCode":"GH","isEuropean":false},{"isoCode":"GI","isEuropean":true},{"isoCode":"GR","isEuropean":true},{"isoCode":"GL","isEuropean":false},{"isoCode":"GD","isEuropean":false},{"isoCode":"GP","isEuropean":false},{"isoCode":"GU","isEuropean":false},{"isoCode":"GT","isEuropean":false},{"isoCode":"GG","isEuropean":true},{"isoCode":"GN","isEuropean":false},{"isoCode":"GW","isEuropean":false},{"isoCode":"GY","isEuropean":false},{"isoCode":"HT","isEuropean":false},{"isoCode":"HM","isEuropean":false},{"isoCode":"VA","isEuropean":true},{"isoCode":"HN","isEuropean":false},{"isoCode":"HU","isEuropean":true},{"isoCode":"IS","isEuropean":true},{"isoCode":"IN","isEuropean":false},{"isoCode":"ID","isEuropean":false},{"isoCode":"IR","isEuropean":false},{"isoCode":"IQ","isEuropean":false},{"isoCode":"IE","isEuropean":true},{"isoCode":"IM","isEuropean":true},{"isoCode":"IL","isEuropean":false},{"isoCode":"IT","isEuropean":true},{"isoCode":"JM","isEuropean":false},{"isoCode":"JP","isEuropean":false},{"isoCode":"JE","isEuropean":true},{"isoCode":"JO","isEuropean":false},{"isoCode":"KZ","isEuropean":true},{"isoCode":"KE","isEuropean":false},{"isoCode":"KI","isEuropean":false},{"isoCode":"KP","isEuropean":false},{"isoCode":"KR","isEuropean":false},{"isoCode":"KW","isEuropean":false},{"isoCode":"KG","isEuropean":true},{"isoCode":"LA","isEuropean":false},{"isoCode":"LV","isEuropean":true},{"isoCode":"LB","isEuropean":false},{"isoCode":"LS","isEuropean":false},{"isoCode":"LR","isEuropean":false},{"isoCode":"LY","isEuropean":false},{"isoCode":"LI","isEuropean":true},{"isoCode":"LT","isEuropean":true},{"isoCode":"LU","isEuropean":true},{"isoCode":"MK","isEuropean":true},{"isoCode":"MG","isEuropean":false},{"isoCode":"MW","isEuropean":false},{"isoCode":"MY","isEuropean":false},{"isoCode":"MV","isEuropean":false},{"isoCode":"ML","isEuropean":false},{"isoCode":"MT","isEuropean":true},{"isoCode":"MH","isEuropean":false},{"isoCode":"MQ","isEuropean":false},{"isoCode":"MR","isEuropean":false},{"isoCode":"MU","isEuropean":false},{"isoCode":"YT","isEuropean":false},{"isoCode":"MX","isEuropean":false},{"isoCode":"FM","isEuropean":false},{"isoCode":"MD","isEuropean":true},{"isoCode":"MC","isEuropean":true},{"isoCode":"MN","isEuropean":false},{"isoCode":"ME","isEuropean":true},{"isoCode":"MS","isEuropean":false},{"isoCode":"MA","isEuropean":false},{"isoCode":"MZ","isEuropean":false},{"isoCode":"MM","isEuropean":false},{"isoCode":"NA","isEuropean":false},{"isoCode":"NR","isEuropean":false},{"isoCode":"NP","isEuropean":false},{"isoCode":"NL","isEuropean":true},{"isoCode":"AN","isEuropean":false},{"isoCode":"NC","isEuropean":false},{"isoCode":"NZ","isEuropean":false},{"isoCode":"NI","isEuropean":false},{"isoCode":"NE","isEuropean":false},{"isoCode":"NG","isEuropean":false},{"isoCode":"NU","isEuropean":false},{"isoCode":"NF","isEuropean":false},{"isoCode":"MP","isEuropean":false},{"isoCode":"NO","isEuropean":true},{"isoCode":"OM","isEuropean":false},{"isoCode":"PK","isEuropean":false},{"isoCode":"PW","isEuropean":false},{"isoCode":"PS","isEuropean":false},{"isoCode":"PA","isEuropean":false},{"isoCode":"PG","isEuropean":false},{"isoCode":"PY","isEuropean":false},{"isoCode":"PE","isEuropean":false},{"isoCode":"PH","isEuropean":false},{"isoCode":"PN","isEuropean":false},{"isoCode":"PL","isEuropean":true},{"isoCode":"PT","isEuropean":true},{"isoCode":"PR","isEuropean":false},{"isoCode":"QA","isEuropean":false},{"isoCode":"RE","isEuropean":false},{"isoCode":"RO","isEuropean":true},{"isoCode":"RU","isEuropean":true},{"isoCode":"RW","isEuropean":false},{"isoCode":"BL","isEuropean":false},{"isoCode":"SH","isEuropean":false},{"isoCode":"KN","isEuropean":false},{"isoCode":"LC","isEuropean":false},{"isoCode":"MF","isEuropean":false},{"isoCode":"PM","isEuropean":false},{"isoCode":"VC","isEuropean":false},{"isoCode":"WS","isEuropean":false},{"isoCode":"SM","isEuropean":true},{"isoCode":"ST","isEuropean":false},{"isoCode":"SA","isEuropean":false},{"isoCode":"SN","isEuropean":false},{"isoCode":"RS","isEuropean":true},{"isoCode":"SC","isEuropean":false},{"isoCode":"SL","isEuropean":false},{"isoCode":"SG","isEuropean":false},{"isoCode":"SK","isEuropean":true},{"isoCode":"SI","isEuropean":true},{"isoCode":"SB","isEuropean":false},{"isoCode":"SO","isEuropean":false},{"isoCode":"ZA","isEuropean":false},{"isoCode":"GS","isEuropean":false},{"isoCode":"SS","isEuropean":false},{"isoCode":"ES","isEuropean":true},{"isoCode":"LK","isEuropean":false},{"isoCode":"SD","isEuropean":false},{"isoCode":"SR","isEuropean":false},{"isoCode":"SJ","isEuropean":false},{"isoCode":"SZ","isEuropean":false},{"isoCode":"SE","isEuropean":true},{"isoCode":"CH","isEuropean":true},{"isoCode":"SY","isEuropean":false},{"isoCode":"TW","isEuropean":false},{"isoCode":"TJ","isEuropean":true},{"isoCode":"TZ","isEuropean":false},{"isoCode":"TH","isEuropean":false},{"isoCode":"TL","isEuropean":false},{"isoCode":"TG","isEuropean":false},{"isoCode":"TK","isEuropean":false},{"isoCode":"TO","isEuropean":false},{"isoCode":"TT","isEuropean":false},{"isoCode":"TN","isEuropean":false},{"isoCode":"TR","isEuropean":false},{"isoCode":"TM","isEuropean":true},{"isoCode":"TC","isEuropean":false},{"isoCode":"TV","isEuropean":false},{"isoCode":"UG","isEuropean":false},{"isoCode":"UA","isEuropean":true},{"isoCode":"AE","isEuropean":false},{"isoCode":"GB","isEuropean":true},{"isoCode":"US","isEuropean":false},{"isoCode":"UM","isEuropean":false},{"isoCode":"UY","isEuropean":false},{"isoCode":"UZ","isEuropean":true},{"isoCode":"VU","isEuropean":false},{"isoCode":"VE","isEuropean":false},{"isoCode":"VN","isEuropean":false},{"isoCode":"VI","isEuropean":false},{"isoCode":"WF","isEuropean":false},{"isoCode":"EH","isEuropean":false},{"isoCode":"YE","isEuropean":false},{"isoCode":"ZM","isEuropean":false},{"isoCode":"ZW","isEuropean":false}]}}}'
+        Player","SSL":false,"OVP":"NFL GamePass OVP - Prod."}},"MEDIA":{"HOME_PAGE":{"SHOW_VIDEO":false,"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1497617597/HomePageVideoGP_2500Kb_1280_no_Audio_lglspi.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1497612187/HomePageVideoGP_1500Kb_720_no_Audio_esd7az.mp4"},"DISCOVER_THE_SERVICE":{"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1532794979/OVE_003_Game_Pass_Product_Video_V01_12_5Mbps_sbgdzr.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1532794979/OVE_003_Game_Pass_Product_Video_V01_12_5Mbps_sbgdzr.mp4"},"REDZONE":{"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4"},"WELCOME":{"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1535355398/ScottHanson_Game_Pass_Read_5Mbps_ddu4rr.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1535355398/ScottHanson_Game_Pass_Read_5Mbps_ddu4rr.mp4"}},"COUNTRIES":{"ISO3611":[{"isoCode":"AX","isEuropean":true},{"isoCode":"AL","isEuropean":true},{"isoCode":"DZ","isEuropean":false},{"isoCode":"AS","isEuropean":false},{"isoCode":"AD","isEuropean":true},{"isoCode":"AO","isEuropean":false},{"isoCode":"AI","isEuropean":false},{"isoCode":"AQ","isEuropean":false},{"isoCode":"AG","isEuropean":false},{"isoCode":"AR","isEuropean":false},{"isoCode":"AM","isEuropean":true},{"isoCode":"AW","isEuropean":false},{"isoCode":"AU","isEuropean":false},{"isoCode":"AT","isEuropean":true},{"isoCode":"AZ","isEuropean":true},{"isoCode":"BS","isEuropean":false},{"isoCode":"BH","isEuropean":false},{"isoCode":"BD","isEuropean":false},{"isoCode":"BB","isEuropean":false},{"isoCode":"BY","isEuropean":true},{"isoCode":"BE","isEuropean":true},{"isoCode":"BZ","isEuropean":false},{"isoCode":"BJ","isEuropean":false},{"isoCode":"BM","isEuropean":false},{"isoCode":"BT","isEuropean":false},{"isoCode":"BO","isEuropean":false},{"isoCode":"BA","isEuropean":true},{"isoCode":"BW","isEuropean":false},{"isoCode":"BV","isEuropean":false},{"isoCode":"BR","isEuropean":false},{"isoCode":"VG","isEuropean":false},{"isoCode":"IO","isEuropean":false},{"isoCode":"BN","isEuropean":false},{"isoCode":"BG","isEuropean":true},{"isoCode":"BF","isEuropean":false},{"isoCode":"BI","isEuropean":false},{"isoCode":"KH","isEuropean":false},{"isoCode":"CM","isEuropean":false},{"isoCode":"CA","isEuropean":false},{"isoCode":"CV","isEuropean":false},{"isoCode":"KY","isEuropean":false},{"isoCode":"CF","isEuropean":false},{"isoCode":"TD","isEuropean":false},{"isoCode":"CL","isEuropean":false},{"isoCode":"CN","isEuropean":false},{"isoCode":"HK","isEuropean":false},{"isoCode":"MO","isEuropean":false},{"isoCode":"CX","isEuropean":false},{"isoCode":"CC","isEuropean":false},{"isoCode":"CO","isEuropean":false},{"isoCode":"KM","isEuropean":false},{"isoCode":"CG","isEuropean":false},{"isoCode":"CD","isEuropean":false},{"isoCode":"CK","isEuropean":false},{"isoCode":"CR","isEuropean":false},{"isoCode":"CI","isEuropean":false},{"isoCode":"HR","isEuropean":true},{"isoCode":"CU","isEuropean":false},{"isoCode":"CY","isEuropean":true},{"isoCode":"CZ","isEuropean":true},{"isoCode":"DK","isEuropean":true},{"isoCode":"DJ","isEuropean":false},{"isoCode":"DM","isEuropean":false},{"isoCode":"DO","isEuropean":false},{"isoCode":"EC","isEuropean":false},{"isoCode":"EG","isEuropean":false},{"isoCode":"SV","isEuropean":false},{"isoCode":"GQ","isEuropean":false},{"isoCode":"ER","isEuropean":false},{"isoCode":"EE","isEuropean":true},{"isoCode":"ET","isEuropean":false},{"isoCode":"FK","isEuropean":false},{"isoCode":"FO","isEuropean":true},{"isoCode":"FJ","isEuropean":false},{"isoCode":"FI","isEuropean":true},{"isoCode":"FR","isEuropean":true},{"isoCode":"GF","isEuropean":false},{"isoCode":"PF","isEuropean":false},{"isoCode":"TF","isEuropean":false},{"isoCode":"GA","isEuropean":false},{"isoCode":"GM","isEuropean":false},{"isoCode":"GE","isEuropean":true},{"isoCode":"DE","isEuropean":true},{"isoCode":"GH","isEuropean":false},{"isoCode":"GI","isEuropean":true},{"isoCode":"GR","isEuropean":true},{"isoCode":"GL","isEuropean":false},{"isoCode":"GD","isEuropean":false},{"isoCode":"GP","isEuropean":false},{"isoCode":"GU","isEuropean":false},{"isoCode":"GT","isEuropean":false},{"isoCode":"GG","isEuropean":true},{"isoCode":"GN","isEuropean":false},{"isoCode":"GW","isEuropean":false},{"isoCode":"GY","isEuropean":false},{"isoCode":"HT","isEuropean":false},{"isoCode":"HM","isEuropean":false},{"isoCode":"VA","isEuropean":true},{"isoCode":"HN","isEuropean":false},{"isoCode":"HU","isEuropean":true},{"isoCode":"IS","isEuropean":true},{"isoCode":"IN","isEuropean":false},{"isoCode":"ID","isEuropean":false},{"isoCode":"IR","isEuropean":false},{"isoCode":"IQ","isEuropean":false},{"isoCode":"IE","isEuropean":true},{"isoCode":"IM","isEuropean":true},{"isoCode":"IL","isEuropean":false},{"isoCode":"IT","isEuropean":true},{"isoCode":"JM","isEuropean":false},{"isoCode":"JP","isEuropean":false},{"isoCode":"JE","isEuropean":true},{"isoCode":"JO","isEuropean":false},{"isoCode":"KZ","isEuropean":true},{"isoCode":"KE","isEuropean":false},{"isoCode":"KI","isEuropean":false},{"isoCode":"KP","isEuropean":false},{"isoCode":"KR","isEuropean":false},{"isoCode":"KW","isEuropean":false},{"isoCode":"KG","isEuropean":true},{"isoCode":"LA","isEuropean":false},{"isoCode":"LV","isEuropean":true},{"isoCode":"LB","isEuropean":false},{"isoCode":"LS","isEuropean":false},{"isoCode":"LR","isEuropean":false},{"isoCode":"LY","isEuropean":false},{"isoCode":"LI","isEuropean":true},{"isoCode":"LT","isEuropean":true},{"isoCode":"LU","isEuropean":true},{"isoCode":"MK","isEuropean":true},{"isoCode":"MG","isEuropean":false},{"isoCode":"MW","isEuropean":false},{"isoCode":"MY","isEuropean":false},{"isoCode":"MV","isEuropean":false},{"isoCode":"ML","isEuropean":false},{"isoCode":"MT","isEuropean":true},{"isoCode":"MH","isEuropean":false},{"isoCode":"MQ","isEuropean":false},{"isoCode":"MR","isEuropean":false},{"isoCode":"MU","isEuropean":false},{"isoCode":"YT","isEuropean":false},{"isoCode":"MX","isEuropean":false},{"isoCode":"FM","isEuropean":false},{"isoCode":"MD","isEuropean":true},{"isoCode":"MC","isEuropean":true},{"isoCode":"MN","isEuropean":false},{"isoCode":"ME","isEuropean":true},{"isoCode":"MS","isEuropean":false},{"isoCode":"MA","isEuropean":false},{"isoCode":"MZ","isEuropean":false},{"isoCode":"MM","isEuropean":false},{"isoCode":"NA","isEuropean":false},{"isoCode":"NR","isEuropean":false},{"isoCode":"NP","isEuropean":false},{"isoCode":"NL","isEuropean":true},{"isoCode":"AN","isEuropean":false},{"isoCode":"NC","isEuropean":false},{"isoCode":"NZ","isEuropean":false},{"isoCode":"NI","isEuropean":false},{"isoCode":"NE","isEuropean":false},{"isoCode":"NG","isEuropean":false},{"isoCode":"NU","isEuropean":false},{"isoCode":"NF","isEuropean":false},{"isoCode":"MP","isEuropean":false},{"isoCode":"NO","isEuropean":true},{"isoCode":"OM","isEuropean":false},{"isoCode":"PK","isEuropean":false},{"isoCode":"PW","isEuropean":false},{"isoCode":"PS","isEuropean":false},{"isoCode":"PA","isEuropean":false},{"isoCode":"PG","isEuropean":false},{"isoCode":"PY","isEuropean":false},{"isoCode":"PE","isEuropean":false},{"isoCode":"PH","isEuropean":false},{"isoCode":"PN","isEuropean":false},{"isoCode":"PL","isEuropean":true},{"isoCode":"PT","isEuropean":true},{"isoCode":"PR","isEuropean":false},{"isoCode":"QA","isEuropean":false},{"isoCode":"RE","isEuropean":false},{"isoCode":"RO","isEuropean":true},{"isoCode":"RU","isEuropean":true},{"isoCode":"RW","isEuropean":false},{"isoCode":"BL","isEuropean":false},{"isoCode":"SH","isEuropean":false},{"isoCode":"KN","isEuropean":false},{"isoCode":"LC","isEuropean":false},{"isoCode":"MF","isEuropean":false},{"isoCode":"PM","isEuropean":false},{"isoCode":"VC","isEuropean":false},{"isoCode":"WS","isEuropean":false},{"isoCode":"SM","isEuropean":true},{"isoCode":"ST","isEuropean":false},{"isoCode":"SA","isEuropean":false},{"isoCode":"SN","isEuropean":false},{"isoCode":"RS","isEuropean":true},{"isoCode":"SC","isEuropean":false},{"isoCode":"SL","isEuropean":false},{"isoCode":"SG","isEuropean":false},{"isoCode":"SK","isEuropean":true},{"isoCode":"SI","isEuropean":true},{"isoCode":"SB","isEuropean":false},{"isoCode":"SO","isEuropean":false},{"isoCode":"ZA","isEuropean":false},{"isoCode":"GS","isEuropean":false},{"isoCode":"SS","isEuropean":false},{"isoCode":"ES","isEuropean":true},{"isoCode":"LK","isEuropean":false},{"isoCode":"SD","isEuropean":false},{"isoCode":"SR","isEuropean":false},{"isoCode":"SJ","isEuropean":false},{"isoCode":"SZ","isEuropean":false},{"isoCode":"SE","isEuropean":true},{"isoCode":"CH","isEuropean":true},{"isoCode":"SY","isEuropean":false},{"isoCode":"TW","isEuropean":false},{"isoCode":"TJ","isEuropean":true},{"isoCode":"TZ","isEuropean":false},{"isoCode":"TH","isEuropean":false},{"isoCode":"TL","isEuropean":false},{"isoCode":"TG","isEuropean":false},{"isoCode":"TK","isEuropean":false},{"isoCode":"TO","isEuropean":false},{"isoCode":"TT","isEuropean":false},{"isoCode":"TN","isEuropean":false},{"isoCode":"TR","isEuropean":false},{"isoCode":"TM","isEuropean":true},{"isoCode":"TC","isEuropean":false},{"isoCode":"TV","isEuropean":false},{"isoCode":"UG","isEuropean":false},{"isoCode":"UA","isEuropean":true},{"isoCode":"AE","isEuropean":false},{"isoCode":"GB","isEuropean":true},{"isoCode":"US","isEuropean":false},{"isoCode":"UM","isEuropean":false},{"isoCode":"UY","isEuropean":false},{"isoCode":"UZ","isEuropean":true},{"isoCode":"VU","isEuropean":false},{"isoCode":"VE","isEuropean":false},{"isoCode":"VN","isEuropean":false},{"isoCode":"VI","isEuropean":false},{"isoCode":"WF","isEuropean":false},{"isoCode":"EH","isEuropean":false},{"isoCode":"YE","isEuropean":false},{"isoCode":"ZM","isEuropean":false},{"isoCode":"ZW","isEuropean":false}]}}}'
     headers:
       Access-Control-Allow-Headers: [Content-Type]
       Access-Control-Allow-Methods: [GET]
@@ -461,36 +463,112 @@ interactions:
       Cache-Control: [max-age=120]
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 04 Sep 2018 08:15:44 GMT']
-      Expires: ['Tue, 04 Sep 2018 08:17:44 GMT']
+      Date: ['Sat, 08 Sep 2018 12:05:38 GMT']
+      Expires: ['Sat, 08 Sep 2018 12:07:38 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
-      content-length: ['23749']
+      content-length: ['24011']
     status: {code: 200, message: OK}
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&username=REDACTED&password=REDACTED&grant_type=password
+    body: apiKey=3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp&loginID=REDACTED&password=REDACTED
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      Content-Length: ['113']
+      Content-Length: ['119']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.18.4]
+    method: POST
+    uri: https://accounts.us1.gigya.com/accounts.login
+  response:
+    body:
+      pretty:
+        UID: 8caecb9d8857dc3fd9c7b2ce9fcc5368
+        UIDSignature: OGyeY+PqNu0HiazzoPL6X8/2u8M=
+        apiVersion: 2
+        callId: a3ddd46a42b74e898df3367ba5a0d0ce
+        created: '2012-08-04T11:20:09.000Z'
+        createdTimestamp: 1344079209
+        errorCode: 0
+        isActive: true
+        isRegistered: true
+        isVerified: true
+        lastLogin: '2018-09-08T12:05:39.103Z'
+        lastLoginTimestamp: 1536408339
+        lastUpdated: '2018-09-04T06:49:25.683Z'
+        lastUpdatedTimestamp: 1536043765683
+        loginProvider: site
+        newUser: false
+        oldestDataUpdated: '2012-08-04T11:20:09.000Z'
+        oldestDataUpdatedTimestamp: 1344079209000
+        profile: REDACTED
+        registered: '2018-03-02T04:03:59.927Z'
+        registeredTimestamp: 1519963439
+        sessionInfo: {cookieName: gac_3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp,
+          cookieValue: st2.MUp8ehAul-gqUc2SQbObKK-JoLY.eA9NDUs4ORS1qebhVzA1Pw.ALBslSiOZtBhpLjcLJDIzJ6amIU}
+        signatureTimestamp: '1536408339'
+        socialProviders: site
+        statusCode: 200
+        statusReason: OK
+        time: '2018-09-08T12:05:39.135Z'
+        verified: '2018-03-02T04:03:59.786Z'
+        verifiedTimestamp: 1519963439786
+      string: "{\r\n  \"callId\": \"a3ddd46a42b74e898df3367ba5a0d0ce\",\r\n  \"errorCode\"\
+        : 0,\r\n  \"apiVersion\": 2,\r\n  \"statusCode\": 200,\r\n  \"statusReason\"\
+        : \"OK\",\r\n  \"time\": \"2018-09-08T12:05:39.135Z\",\r\n  \"registeredTimestamp\"\
+        : 1519963439,\r\n  \"UID\": \"8caecb9d8857dc3fd9c7b2ce9fcc5368\",\r\n  \"\
+        UIDSignature\": \"OGyeY+PqNu0HiazzoPL6X8/2u8M=\",\r\n  \"signatureTimestamp\"\
+        : \"1536408339\",\r\n  \"created\": \"2012-08-04T11:20:09.000Z\",\r\n  \"\
+        createdTimestamp\": 1344079209,\r\n  \"isActive\": true,\r\n  \"isRegistered\"\
+        : true,\r\n  \"isVerified\": true,\r\n  \"lastLogin\": \"2018-09-08T12:05:39.103Z\"\
+        ,\r\n  \"lastLoginTimestamp\": 1536408339,\r\n  \"lastUpdated\": \"2018-09-04T06:49:25.683Z\"\
+        ,\r\n  \"lastUpdatedTimestamp\": 1536043765683,\r\n  \"loginProvider\": \"\
+        site\",\r\n  \"oldestDataUpdated\": \"2012-08-04T11:20:09.000Z\",\r\n  \"\
+        oldestDataUpdatedTimestamp\": 1344079209000,\r\n  \"profile\": \"REDACTED\"\r\n,\r\n  \"\
+        registered\": \"2018-03-02T04:03:59.927Z\",\r\n  \"socialProviders\": \"site\"\
+        ,\r\n  \"verified\": \"2018-03-02T04:03:59.786Z\",\r\n  \"verifiedTimestamp\"\
+        : 1519963439786,\r\n  \"newUser\": false,\r\n  \"sessionInfo\": {\r\n    \"\
+        cookieName\": \"gac_3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp\"\
+        ,\r\n    \"cookieValue\": \"st2.MUp8ehAul-gqUc2SQbObKK-JoLY.eA9NDUs4ORS1qebhVzA1Pw.ALBslSiOZtBhpLjcLJDIzJ6amIU\"\
+        \r\n  }\r\n}"
+    headers:
+      Cache-Control: [private]
+      Connection: [keep-alive]
+      Content-Type: [text/javascript; charset=utf-8]
+      Date: ['Sat, 08 Sep 2018 12:05:39 GMT']
+      P3P: [CP="IDC COR PSA DEV ADM OUR IND ONL"]
+      Vary: [Accept-Encoding]
+      X-CallID: [a3ddd46a42b74e898df3367ba5a0d0ce]
+      X-Gigya-HA-cfg-ver: ['5']
+      X-Robots-Tag: [none]
+      X-Server: [us1d-nomad-g30]
+      X-Soa: ['true, Gator']
+      content-length: ['1404']
+    status: {code: 200, message: OK}
+- request:
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&errorCode=0&grant_type=password&password=REDACTED&signature=OGyeY%2BPqNu0HiazzoPL6X8%2F2u8M%3D&ts=1536408339&username=REDACTED&uuid=8caecb9d8857dc3fd9c7b2ce9fcc5368
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['222']
       Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-requests/2.18.4]
     method: POST
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_blah2,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_blah2,
+      pretty: {access_token: FAKE_TOKEN_a366fda4a920ed0b22f7d27f07d030e90b15c03c4bba3816f390844c92f91b04,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_c120201eccf4b3ec9e59ce8f3d7a533fe44ce2f8e893d595c22d6bf9fa69d3c5,
         token_type: bearer}
-      string: '{"access_token":"FAKE_TOKEN_blah2","token_type":"bearer","expires_in":3539,"refresh_token":"FAKE_TOKEN_blah2"}'
+      string: '{"access_token":"FAKE_TOKEN_a366fda4a920ed0b22f7d27f07d030e90b15c03c4bba3816f390844c92f91b04","token_type":"bearer","expires_in":3539,"refresh_token":"FAKE_TOKEN_c120201eccf4b3ec9e59ce8f3d7a533fe44ce2f8e893d595c22d6bf9fa69d3c5"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 04 Sep 2018 08:15:44 GMT']
-      Expires: ['Tue, 04 Sep 2018 08:15:44 GMT']
+      Date: ['Sat, 08 Sep 2018 12:05:39 GMT']
+      Expires: ['Sat, 08 Sep 2018 12:05:39 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -510,7 +588,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: game list, lastUpdate: '2018-09-04T08:15:45.865Z', title: '',
+        header: {id: game list, lastUpdate: '2018-09-08T12:05:40.598Z', title: '',
           version: '1.0'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: '2017:reg:Week
@@ -1835,7 +1913,7 @@ interactions:
             content: []
             displayText: {subTitle: game-list-subtitle, title: game-list-title}
       string: "{\"header\":{\"id\":\"game list\",\"version\":\"1.0\",\"title\":\"\"\
-        ,\"lastUpdate\":\"2018-09-04T08:15:45.865Z\"},\"modules\":{\"weekLiveGames\"\
+        ,\"lastUpdate\":\"2018-09-08T12:05:40.598Z\"},\"modules\":{\"weekLiveGames\"\
         :{\"displayText\":{\"title\":\"game-list-title\",\"subTitle\":\"game-list-subtitle\"\
         },\"content\":[]},\"weekScheduledGames\":{\"displayText\":{\"title\":\"game-list-title\"\
         ,\"subTitle\":\"game-list-subtitle\"},\"content\":[]},\"weekCompletedGames\"\
@@ -2315,8 +2393,8 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 04 Sep 2018 08:15:45 GMT']
-      Expires: ['Tue, 04 Sep 2018 08:17:45 GMT']
+      Date: ['Sat, 08 Sep 2018 12:05:40 GMT']
+      Expires: ['Sat, 08 Sep 2018 12:07:40 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
@@ -2334,7 +2412,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: single game, lastUpdate: '2018-09-04T08:15:46.426Z', title: '',
+        header: {id: single game, lastUpdate: '2018-09-08T12:05:41.114Z', title: '',
           version: '1.0'}
         modules:
           analytics: {content_type: index, game_id: '2017102900', language: en_US,
@@ -2447,7 +2525,7 @@ interactions:
               weekName: Week 8
               winner: Vikings
             displayText: {subTitle: game-list-subtitle, title: game-list-title}
-      string: '{"header":{"id":"single game","version":"1.0","title":"","lastUpdate":"2018-09-04T08:15:46.426Z"},"modules":{"singlegame":{"displayText":{"title":"game-list-title","subTitle":"game-list-subtitle"},"content":[{"homeNickName":"Browns","homeCityState":"Cleveland","visitorNickName":"Vikings","visitorCityState":"Minnesota","gameId":2017102900,"backgroundImage":"https://nflgp-prd.akamaized.net/api/images/image/private/sgknokqibjyqcl2iortb","gameDateTimeUtc":"2017-10-29T13:30:00.000Z","redZone":false,"phase":"FINAL","winner":"Vikings","videoStatus":"ONDEMAND","season":2017,"seasonType":"REG","week":8,"weekName":"Week
+      string: '{"header":{"id":"single game","version":"1.0","title":"","lastUpdate":"2018-09-08T12:05:41.114Z"},"modules":{"singlegame":{"displayText":{"title":"game-list-title","subTitle":"game-list-subtitle"},"content":[{"homeNickName":"Browns","homeCityState":"Cleveland","visitorNickName":"Vikings","visitorCityState":"Minnesota","gameId":2017102900,"backgroundImage":"https://nflgp-prd.akamaized.net/api/images/image/private/sgknokqibjyqcl2iortb","gameDateTimeUtc":"2017-10-29T13:30:00.000Z","redZone":false,"phase":"FINAL","winner":"Vikings","videoStatus":"ONDEMAND","season":2017,"seasonType":"REG","week":8,"weekName":"Week
         8","homeTeamId":"1050","homeTeamAbbr":"CLE","homeScore":{"pointTotal":16},"homeTeamResult":"loser","visitorTeamId":"3000","visitorTeamAbbr":"MIN","visitorScore":{"pointTotal":33},"visitorTeamResult":"winner","siteId":5526,"siteCity":"Twickenham","siteFullName":"Twickenham
         Stadium","displayText":{"scheduled":"video-scheduled","live":"video-live","liveIn":"video-live-in","ondemand":"video-ondemand"},"video":{"videoId":"741e2248-3a9a-41f9-bc1b-23fba6b27b5f","title":"Minnesota
         Vikings @ Cleveland Browns","description":"<p>NoAd<em>Reg8</em>02<em>Minnesota</em>Vikings<em>at</em>Cleveland<em>Browns</em>1080</p>\n","kind":"Game
@@ -2469,17 +2547,16 @@ interactions:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 04 Sep 2018 08:15:46 GMT']
-      Expires: ['Tue, 04 Sep 2018 08:15:46 GMT']
+      Date: ['Sat, 08 Sep 2018 12:05:41 GMT']
+      Expires: ['Sat, 08 Sep 2018 12:05:41 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/10.0]
-      Set-Cookie: [ARRAffinity=886499804195e288b437373fd161071d479ff2cf4d55e4079658939deec3670f;Path=/;HttpOnly;Domain=nfl-content-api-prd.deltatre.net]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
       content-length: ['3345']
     status: {code: 200, message: OK}
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=oLmbKutpVIEjqvOLMbdDY-I6J9cqAFJan1dpfwxlZteJVUkU-UTSWnb3ojZO2v4xW_PFmmF7g_jZBBi8jRfDSUykb_ZVqMILVDPC8EnP9xj4FYpufwDWu-wdKN9eOLBoOZmXL3r0aP8zjLkbM4G1qi43KZ7bSXU2AjAZeKZpNMTVCBYfQm6mCAQWhE7x7pBE3L21bT9Ymkfj2fgWYorx2w9ADcJ4ESqJhaXegEWlsR_rHz7m_DCnGPkAtxq96AyL2vmXUHZDvd_LdC91Ri06T_aq5XS-1ZWlRRl-vLmF8l--0OKnlMWV2jgyryBX6ikGMFDZMtdJPRDUOrajUSga1_RSGs89F0KfNrwkrLFwqCfOW-sItwNC2V3tWDFWiAqMLuMj1jjDUVb8swU7_mPkkikqZkhEjUYDzhiGjninUo6tMNDyN_8LHH1QD-zQsKwz9hYMQndB_qb1fN5h-AgCAnZqGv33JhWoy-UKHKR1o8YZ_MzNiONSXTAGDK2ReYe6zY5eZJvl8mraMuEJ9_GiCsB1IAH6zXW9YYtI4MvYwjCNbHYYh_RulYX-2fTACZuQnJybObLMopv-l1FIRyYeOuf4Bg4zjhe6ImD7iDTAMthrc8sxKwqmF8KM4P5pUUGiF9lntIS97AmotUDcBaQYgKzh1DdxFYT-Q2GpIh5FW-rMCy-TmR1pNBZP8NjTymUiMcAtD_3vxEygR1nZiUSp93So7d4b7ML0ej7xdKpLmjmLMFD6RjVhrnpzFImJdCE9T6kZ4xmotyGEHEc5qKuobdjRugNtvlZxzv5k58CL3g5edNiCppwW8nRIpBhsPskggiBpcEgyGBUOqU5BlH0w0NWfTMdyef5Pfd6GBGGDC5RtzrMJY9qGEg_qArlFPyta-em4McUNBJ7NbtyyhimFeVowzvy0xkQ224Y1C1kaP8APprKHQFIBI6JcTSzhH5bO70epc_83_Lv0s1v3QBWNzRakMo6ox3mhWB7rqRqwxokp7vTKLSDsVYFc02EtNCQ7yDki67LBgSKCetFapxfieIH0DcSfmdF1bphd8TXitEGUQWNT&grant_type=refresh_token
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_c120201eccf4b3ec9e59ce8f3d7a533fe44ce2f8e893d595c22d6bf9fa69d3c5&grant_type=refresh_token
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -2491,16 +2568,16 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_blah3,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_blah3,
+      pretty: {access_token: FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_625fa8f5bab12ff994e498312a065a21fbbfad03f33d9cf34428a824767d8d00,
         token_type: bearer}
-      string: '{"access_token":"FAKE_TOKEN_blah3","token_type":"bearer","expires_in":3539,"refresh_token":"FAKE_TOKEN_blah3"}'
+      string: '{"access_token":"FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d","token_type":"bearer","expires_in":3539,"refresh_token":"FAKE_TOKEN_625fa8f5bab12ff994e498312a065a21fbbfad03f33d9cf34428a824767d8d00"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 04 Sep 2018 08:15:46 GMT']
-      Expires: ['Tue, 04 Sep 2018 08:15:46 GMT']
+      Date: ['Sat, 08 Sep 2018 12:05:41 GMT']
+      Expires: ['Sat, 08 Sep 2018 12:05:41 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -2564,8 +2641,8 @@ interactions:
       Cache-Control: [max-age=300]
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Tue, 04 Sep 2018 08:15:46 GMT']
-      Expires: ['Tue, 04 Sep 2018 08:20:46 GMT']
+      Date: ['Sat, 08 Sep 2018 12:05:41 GMT']
+      Expires: ['Sat, 08 Sep 2018 12:10:41 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/8.5]
       Vary: [Accept-Encoding]
@@ -2616,11 +2693,10 @@ interactions:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Tue, 04 Sep 2018 08:15:47 GMT']
-      Expires: ['Tue, 04 Sep 2018 08:15:47 GMT']
+      Date: ['Sat, 08 Sep 2018 12:05:41 GMT']
+      Expires: ['Sat, 08 Sep 2018 12:05:41 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/10.0]
-      Set-Cookie: [ARRAffinity=886499804195e288b437373fd161071d479ff2cf4d55e4079658939deec3670f;Path=/;HttpOnly;Domain=nfl-content-api-prd.deltatre.net]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
       content-length: ['2645']
@@ -2628,7 +2704,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "421936c7-4044-4be1-a509-8eaacf69679a",
       "VideoSource": "https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=hls)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "4d922533-eae6-41c6-bfa0-71723d5c1bb1|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1laWQiOiJhbGV4cXciLCJyb2xlIjoidXNlciIsImt0bSI6ImVmYTA0MWI3LTg1NzAtNDBhNy1hZDNmLTM0NjNmZDIwYmRjMSIsInB0ayI6IntcImFjY2Vzc190b2tlblwiOlwiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKMWMyVnlibUZ0WlNJNkltRnNaWGh4ZHlJc0ltUmxkbWxqWlVsa0lqcHVkV3hzTENKamJHbGxiblJKWkNJNklraExaMGhCVHpOWVdFOWtRMEphU25WaWQwUkthMDFVYW5CM1ExZHhWMFkxSWl3aVlXUkpaQ0k2SW1RM1lXTTJPREptTXpoaU9HTTFZbVptWTJKbFpqaGtNMlF6TWpNME5tVXlOR1ppTnpjek1XTTFZVFEyTlRCa01tRmtNR1l3WldNNFpHVXdOVEU0T1RJaUxDSmxlSEFpT2pFMU16WXdOVEkxTkRZc0ltbGhkQ0k2TVRVek5qQTBPRGswTm4wLkYwWGxHVXZNNEhaYzFlc0JBUDJXWVpXMlhMZWZmaWMyUzNVOVhELWRWc3dcIixcInRva2VuX3R5cGVcIjpcIkJlYXJlclwiLFwiZXhwaXJlc19pblwiOjM2MDAsXCJyZWZyZXNoX3Rva2VuXCI6XCJaOFRWb0g1RGQ2VXl1NThhemtlaFwiLFwic2NvcGVcIjpudWxsfSIsInpjdCI6Ikdlcm1hbnkiLCJiYXRjaCI6ImJhdGNoMTMiLCJzY29wZXMiOiJwcm9kdWN0LXByZW1pdW06cGF5bWVudC1vcHRpb24teWVhcmx5IiwiaXNzIjoibmZsLXVzZXItYXBpIiwiYXVkIjoiZnJvbnQtZW5kLWNsaWVudHMiLCJleHAiOjE1MzYwNTI0ODYsIm5iZiI6MTUzNjA0ODk0Nn0.lelwLRT_tiO9ew9nWJtqoCJtjyxe8pplhfm9jxyBb3w|web|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1laWQiOiJhbGV4cXciLCJyb2xlIjoidXNlciIsImt0bSI6ImVmYTA0MWI3LTg1NzAtNDBhNy1hZDNmLTM0NjNmZDIwYmRjMSIsInB0ayI6IntcImFjY2Vzc190b2tlblwiOlwiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKMWMyVnlibUZ0WlNJNkltRnNaWGh4ZHlJc0ltUmxkbWxqWlVsa0lqcHVkV3hzTENKamJHbGxiblJKWkNJNklraExaMGhCVHpOWVdFOWtRMEphU25WaWQwUkthMDFVYW5CM1ExZHhWMFkxSWl3aVlXUkpaQ0k2SW1RM1lXTTJPREptTXpoaU9HTTFZbVptWTJKbFpqaGtNMlF6TWpNME5tVXlOR1ppTnpjek1XTTFZVFEyTlRCa01tRmtNR1l3WldNNFpHVXdOVEU0T1RJaUxDSmxlSEFpT2pFMU16WXdOVEkxTkRZc0ltbGhkQ0k2TVRVek5qQTBPRGswTm4wLkYwWGxHVXZNNEhaYzFlc0JBUDJXWVpXMlhMZWZmaWMyUzNVOVhELWRWc3dcIixcInRva2VuX3R5cGVcIjpcIkJlYXJlclwiLFwiZXhwaXJlc19pblwiOjM2MDAsXCJyZWZyZXNoX3Rva2VuXCI6XCJaOFRWb0g1RGQ2VXl1NThhemtlaFwiLFwic2NvcGVcIjpudWxsfSIsInpjdCI6Ikdlcm1hbnkiLCJiYXRjaCI6ImJhdGNoMTMiLCJzY29wZXMiOiJwcm9kdWN0LXByZW1pdW06cGF5bWVudC1vcHRpb24teWVhcmx5IiwiaXNzIjoibmZsLXVzZXItYXBpIiwiYXVkIjoiZnJvbnQtZW5kLWNsaWVudHMiLCJleHAiOjE1MzYwNTI0ODYsIm5iZiI6MTUzNjA0ODk0Nn0.lelwLRT_tiO9ew9nWJtqoCJtjyxe8pplhfm9jxyBb3w|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "77f7b6c5-8c4f-43cc-b2f9-aa4299f76548|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|web|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -2639,15 +2715,15 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1536048857~exp=1536049037~acl=/*~hmac=9e65092103f13a8950c9c32c3a6e4ef29314fa6ff35dbe4b098092868ac9b3d1&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 67E17245DF05D798CE728150B2701D2AB353391F}
-      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1536048857~exp=1536049037~acl=/*~hmac=9e65092103f13a8950c9c32c3a6e4ef29314fa6ff35dbe4b098092868ac9b3d1&hdcore=2.11.3","HeartBeatTime":0,"Signature":"67E17245DF05D798CE728150B2701D2AB353391F","ActionParameters":""}'
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 83CB990D7DD13C847C472EAC5BE332A0F6ABE7FE}
+      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3","HeartBeatTime":0,"Signature":"83CB990D7DD13C847C472EAC5BE332A0F6ABE7FE","ActionParameters":""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 04 Sep 2018 08:15:47 GMT']
-      Expires: ['Tue, 04 Sep 2018 08:15:47 GMT']
+      Date: ['Sat, 08 Sep 2018 12:05:42 GMT']
+      Expires: ['Sat, 08 Sep 2018 12:05:42 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -2658,7 +2734,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "421936c7-4044-4be1-a509-8eaacf69679a",
       "VideoSource": "https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "b036e95b-7b0d-447a-b1ff-e34bcd2b64f2|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1laWQiOiJhbGV4cXciLCJyb2xlIjoidXNlciIsImt0bSI6ImVmYTA0MWI3LTg1NzAtNDBhNy1hZDNmLTM0NjNmZDIwYmRjMSIsInB0ayI6IntcImFjY2Vzc190b2tlblwiOlwiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKMWMyVnlibUZ0WlNJNkltRnNaWGh4ZHlJc0ltUmxkbWxqWlVsa0lqcHVkV3hzTENKamJHbGxiblJKWkNJNklraExaMGhCVHpOWVdFOWtRMEphU25WaWQwUkthMDFVYW5CM1ExZHhWMFkxSWl3aVlXUkpaQ0k2SW1RM1lXTTJPREptTXpoaU9HTTFZbVptWTJKbFpqaGtNMlF6TWpNME5tVXlOR1ppTnpjek1XTTFZVFEyTlRCa01tRmtNR1l3WldNNFpHVXdOVEU0T1RJaUxDSmxlSEFpT2pFMU16WXdOVEkxTkRZc0ltbGhkQ0k2TVRVek5qQTBPRGswTm4wLkYwWGxHVXZNNEhaYzFlc0JBUDJXWVpXMlhMZWZmaWMyUzNVOVhELWRWc3dcIixcInRva2VuX3R5cGVcIjpcIkJlYXJlclwiLFwiZXhwaXJlc19pblwiOjM2MDAsXCJyZWZyZXNoX3Rva2VuXCI6XCJaOFRWb0g1RGQ2VXl1NThhemtlaFwiLFwic2NvcGVcIjpudWxsfSIsInpjdCI6Ikdlcm1hbnkiLCJiYXRjaCI6ImJhdGNoMTMiLCJzY29wZXMiOiJwcm9kdWN0LXByZW1pdW06cGF5bWVudC1vcHRpb24teWVhcmx5IiwiaXNzIjoibmZsLXVzZXItYXBpIiwiYXVkIjoiZnJvbnQtZW5kLWNsaWVudHMiLCJleHAiOjE1MzYwNTI0ODYsIm5iZiI6MTUzNjA0ODk0Nn0.lelwLRT_tiO9ew9nWJtqoCJtjyxe8pplhfm9jxyBb3w|web|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1laWQiOiJhbGV4cXciLCJyb2xlIjoidXNlciIsImt0bSI6ImVmYTA0MWI3LTg1NzAtNDBhNy1hZDNmLTM0NjNmZDIwYmRjMSIsInB0ayI6IntcImFjY2Vzc190b2tlblwiOlwiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKMWMyVnlibUZ0WlNJNkltRnNaWGh4ZHlJc0ltUmxkbWxqWlVsa0lqcHVkV3hzTENKamJHbGxiblJKWkNJNklraExaMGhCVHpOWVdFOWtRMEphU25WaWQwUkthMDFVYW5CM1ExZHhWMFkxSWl3aVlXUkpaQ0k2SW1RM1lXTTJPREptTXpoaU9HTTFZbVptWTJKbFpqaGtNMlF6TWpNME5tVXlOR1ppTnpjek1XTTFZVFEyTlRCa01tRmtNR1l3WldNNFpHVXdOVEU0T1RJaUxDSmxlSEFpT2pFMU16WXdOVEkxTkRZc0ltbGhkQ0k2TVRVek5qQTBPRGswTm4wLkYwWGxHVXZNNEhaYzFlc0JBUDJXWVpXMlhMZWZmaWMyUzNVOVhELWRWc3dcIixcInRva2VuX3R5cGVcIjpcIkJlYXJlclwiLFwiZXhwaXJlc19pblwiOjM2MDAsXCJyZWZyZXNoX3Rva2VuXCI6XCJaOFRWb0g1RGQ2VXl1NThhemtlaFwiLFwic2NvcGVcIjpudWxsfSIsInpjdCI6Ikdlcm1hbnkiLCJiYXRjaCI6ImJhdGNoMTMiLCJzY29wZXMiOiJwcm9kdWN0LXByZW1pdW06cGF5bWVudC1vcHRpb24teWVhcmx5IiwiaXNzIjoibmZsLXVzZXItYXBpIiwiYXVkIjoiZnJvbnQtZW5kLWNsaWVudHMiLCJleHAiOjE1MzYwNTI0ODYsIm5iZiI6MTUzNjA0ODk0Nn0.lelwLRT_tiO9ew9nWJtqoCJtjyxe8pplhfm9jxyBb3w|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "1170fe14-2568-485e-8644-3b4ee483d1a4|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|web|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -2669,15 +2745,15 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1536048857~exp=1536049037~acl=/*~hmac=9e65092103f13a8950c9c32c3a6e4ef29314fa6ff35dbe4b098092868ac9b3d1&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: FEEE44B1E252EFBFACC5D29C5E16F6C59621B78D}
-      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1536048857~exp=1536049037~acl=/*~hmac=9e65092103f13a8950c9c32c3a6e4ef29314fa6ff35dbe4b098092868ac9b3d1&hdcore=2.11.3","HeartBeatTime":0,"Signature":"FEEE44B1E252EFBFACC5D29C5E16F6C59621B78D","ActionParameters":""}'
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 5F20B4873180907D269357926BF4FBB556B4EB47}
+      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3","HeartBeatTime":0,"Signature":"5F20B4873180907D269357926BF4FBB556B4EB47","ActionParameters":""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 04 Sep 2018 08:15:47 GMT']
-      Expires: ['Tue, 04 Sep 2018 08:15:47 GMT']
+      Date: ['Sat, 08 Sep 2018 12:05:42 GMT']
+      Expires: ['Sat, 08 Sep 2018 12:05:42 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -2688,7 +2764,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "421936c7-4044-4be1-a509-8eaacf69679a",
       "VideoSource": "https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "abe13cde-f2cf-4770-ab9f-2382c7955893|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1laWQiOiJhbGV4cXciLCJyb2xlIjoidXNlciIsImt0bSI6ImVmYTA0MWI3LTg1NzAtNDBhNy1hZDNmLTM0NjNmZDIwYmRjMSIsInB0ayI6IntcImFjY2Vzc190b2tlblwiOlwiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKMWMyVnlibUZ0WlNJNkltRnNaWGh4ZHlJc0ltUmxkbWxqWlVsa0lqcHVkV3hzTENKamJHbGxiblJKWkNJNklraExaMGhCVHpOWVdFOWtRMEphU25WaWQwUkthMDFVYW5CM1ExZHhWMFkxSWl3aVlXUkpaQ0k2SW1RM1lXTTJPREptTXpoaU9HTTFZbVptWTJKbFpqaGtNMlF6TWpNME5tVXlOR1ppTnpjek1XTTFZVFEyTlRCa01tRmtNR1l3WldNNFpHVXdOVEU0T1RJaUxDSmxlSEFpT2pFMU16WXdOVEkxTkRZc0ltbGhkQ0k2TVRVek5qQTBPRGswTm4wLkYwWGxHVXZNNEhaYzFlc0JBUDJXWVpXMlhMZWZmaWMyUzNVOVhELWRWc3dcIixcInRva2VuX3R5cGVcIjpcIkJlYXJlclwiLFwiZXhwaXJlc19pblwiOjM2MDAsXCJyZWZyZXNoX3Rva2VuXCI6XCJaOFRWb0g1RGQ2VXl1NThhemtlaFwiLFwic2NvcGVcIjpudWxsfSIsInpjdCI6Ikdlcm1hbnkiLCJiYXRjaCI6ImJhdGNoMTMiLCJzY29wZXMiOiJwcm9kdWN0LXByZW1pdW06cGF5bWVudC1vcHRpb24teWVhcmx5IiwiaXNzIjoibmZsLXVzZXItYXBpIiwiYXVkIjoiZnJvbnQtZW5kLWNsaWVudHMiLCJleHAiOjE1MzYwNTI0ODYsIm5iZiI6MTUzNjA0ODk0Nn0.lelwLRT_tiO9ew9nWJtqoCJtjyxe8pplhfm9jxyBb3w|web|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1laWQiOiJhbGV4cXciLCJyb2xlIjoidXNlciIsImt0bSI6ImVmYTA0MWI3LTg1NzAtNDBhNy1hZDNmLTM0NjNmZDIwYmRjMSIsInB0ayI6IntcImFjY2Vzc190b2tlblwiOlwiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKMWMyVnlibUZ0WlNJNkltRnNaWGh4ZHlJc0ltUmxkbWxqWlVsa0lqcHVkV3hzTENKamJHbGxiblJKWkNJNklraExaMGhCVHpOWVdFOWtRMEphU25WaWQwUkthMDFVYW5CM1ExZHhWMFkxSWl3aVlXUkpaQ0k2SW1RM1lXTTJPREptTXpoaU9HTTFZbVptWTJKbFpqaGtNMlF6TWpNME5tVXlOR1ppTnpjek1XTTFZVFEyTlRCa01tRmtNR1l3WldNNFpHVXdOVEU0T1RJaUxDSmxlSEFpT2pFMU16WXdOVEkxTkRZc0ltbGhkQ0k2TVRVek5qQTBPRGswTm4wLkYwWGxHVXZNNEhaYzFlc0JBUDJXWVpXMlhMZWZmaWMyUzNVOVhELWRWc3dcIixcInRva2VuX3R5cGVcIjpcIkJlYXJlclwiLFwiZXhwaXJlc19pblwiOjM2MDAsXCJyZWZyZXNoX3Rva2VuXCI6XCJaOFRWb0g1RGQ2VXl1NThhemtlaFwiLFwic2NvcGVcIjpudWxsfSIsInpjdCI6Ikdlcm1hbnkiLCJiYXRjaCI6ImJhdGNoMTMiLCJzY29wZXMiOiJwcm9kdWN0LXByZW1pdW06cGF5bWVudC1vcHRpb24teWVhcmx5IiwiaXNzIjoibmZsLXVzZXItYXBpIiwiYXVkIjoiZnJvbnQtZW5kLWNsaWVudHMiLCJleHAiOjE1MzYwNTI0ODYsIm5iZiI6MTUzNjA0ODk0Nn0.lelwLRT_tiO9ew9nWJtqoCJtjyxe8pplhfm9jxyBb3w|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "4e9722e1-c037-4943-93be-9af0977e4e2c|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|web|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -2699,15 +2775,15 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1536048857~exp=1536049037~acl=/*~hmac=9e65092103f13a8950c9c32c3a6e4ef29314fa6ff35dbe4b098092868ac9b3d1&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: DFE2CE1066606382EC94E8D087D318B05ECF1B47}
-      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1536048857~exp=1536049037~acl=/*~hmac=9e65092103f13a8950c9c32c3a6e4ef29314fa6ff35dbe4b098092868ac9b3d1&hdcore=2.11.3","HeartBeatTime":0,"Signature":"DFE2CE1066606382EC94E8D087D318B05ECF1B47","ActionParameters":""}'
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 8A4D1D5A891ABCF7A45FAB761F53C0847C8E6B2A}
+      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3","HeartBeatTime":0,"Signature":"8A4D1D5A891ABCF7A45FAB761F53C0847C8E6B2A","ActionParameters":""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 04 Sep 2018 08:15:48 GMT']
-      Expires: ['Tue, 04 Sep 2018 08:15:48 GMT']
+      Date: ['Sat, 08 Sep 2018 12:05:42 GMT']
+      Expires: ['Sat, 08 Sep 2018 12:05:42 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -2718,7 +2794,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "421936c7-4044-4be1-a509-8eaacf69679a",
       "VideoSource": "https://vod-s-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(filter=iis)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "37490f7a-87e3-47fb-b9a1-e751494a8aff|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1laWQiOiJhbGV4cXciLCJyb2xlIjoidXNlciIsImt0bSI6ImVmYTA0MWI3LTg1NzAtNDBhNy1hZDNmLTM0NjNmZDIwYmRjMSIsInB0ayI6IntcImFjY2Vzc190b2tlblwiOlwiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKMWMyVnlibUZ0WlNJNkltRnNaWGh4ZHlJc0ltUmxkbWxqWlVsa0lqcHVkV3hzTENKamJHbGxiblJKWkNJNklraExaMGhCVHpOWVdFOWtRMEphU25WaWQwUkthMDFVYW5CM1ExZHhWMFkxSWl3aVlXUkpaQ0k2SW1RM1lXTTJPREptTXpoaU9HTTFZbVptWTJKbFpqaGtNMlF6TWpNME5tVXlOR1ppTnpjek1XTTFZVFEyTlRCa01tRmtNR1l3WldNNFpHVXdOVEU0T1RJaUxDSmxlSEFpT2pFMU16WXdOVEkxTkRZc0ltbGhkQ0k2TVRVek5qQTBPRGswTm4wLkYwWGxHVXZNNEhaYzFlc0JBUDJXWVpXMlhMZWZmaWMyUzNVOVhELWRWc3dcIixcInRva2VuX3R5cGVcIjpcIkJlYXJlclwiLFwiZXhwaXJlc19pblwiOjM2MDAsXCJyZWZyZXNoX3Rva2VuXCI6XCJaOFRWb0g1RGQ2VXl1NThhemtlaFwiLFwic2NvcGVcIjpudWxsfSIsInpjdCI6Ikdlcm1hbnkiLCJiYXRjaCI6ImJhdGNoMTMiLCJzY29wZXMiOiJwcm9kdWN0LXByZW1pdW06cGF5bWVudC1vcHRpb24teWVhcmx5IiwiaXNzIjoibmZsLXVzZXItYXBpIiwiYXVkIjoiZnJvbnQtZW5kLWNsaWVudHMiLCJleHAiOjE1MzYwNTI0ODYsIm5iZiI6MTUzNjA0ODk0Nn0.lelwLRT_tiO9ew9nWJtqoCJtjyxe8pplhfm9jxyBb3w|web|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1laWQiOiJhbGV4cXciLCJyb2xlIjoidXNlciIsImt0bSI6ImVmYTA0MWI3LTg1NzAtNDBhNy1hZDNmLTM0NjNmZDIwYmRjMSIsInB0ayI6IntcImFjY2Vzc190b2tlblwiOlwiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKMWMyVnlibUZ0WlNJNkltRnNaWGh4ZHlJc0ltUmxkbWxqWlVsa0lqcHVkV3hzTENKamJHbGxiblJKWkNJNklraExaMGhCVHpOWVdFOWtRMEphU25WaWQwUkthMDFVYW5CM1ExZHhWMFkxSWl3aVlXUkpaQ0k2SW1RM1lXTTJPREptTXpoaU9HTTFZbVptWTJKbFpqaGtNMlF6TWpNME5tVXlOR1ppTnpjek1XTTFZVFEyTlRCa01tRmtNR1l3WldNNFpHVXdOVEU0T1RJaUxDSmxlSEFpT2pFMU16WXdOVEkxTkRZc0ltbGhkQ0k2TVRVek5qQTBPRGswTm4wLkYwWGxHVXZNNEhaYzFlc0JBUDJXWVpXMlhMZWZmaWMyUzNVOVhELWRWc3dcIixcInRva2VuX3R5cGVcIjpcIkJlYXJlclwiLFwiZXhwaXJlc19pblwiOjM2MDAsXCJyZWZyZXNoX3Rva2VuXCI6XCJaOFRWb0g1RGQ2VXl1NThhemtlaFwiLFwic2NvcGVcIjpudWxsfSIsInpjdCI6Ikdlcm1hbnkiLCJiYXRjaCI6ImJhdGNoMTMiLCJzY29wZXMiOiJwcm9kdWN0LXByZW1pdW06cGF5bWVudC1vcHRpb24teWVhcmx5IiwiaXNzIjoibmZsLXVzZXItYXBpIiwiYXVkIjoiZnJvbnQtZW5kLWNsaWVudHMiLCJleHAiOjE1MzYwNTI0ODYsIm5iZiI6MTUzNjA0ODk0Nn0.lelwLRT_tiO9ew9nWJtqoCJtjyxe8pplhfm9jxyBb3w|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "87d39760-ce09-4aa9-8212-5b08cc546852|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|web|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -2729,15 +2805,15 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-s-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(filter=iis)?hdnea=st=1536048858~exp=1536049038~acl=/*~hmac=147930cea379a8a9396f9601200a0d8df4b8573bdca72dac15c626a37d6e31c4&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: F362360EB48A2DD3B14674C1E9CEBCCF0AC7CDD9}
-      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://vod-s-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(filter=iis)?hdnea=st=1536048858~exp=1536049038~acl=/*~hmac=147930cea379a8a9396f9601200a0d8df4b8573bdca72dac15c626a37d6e31c4&hdcore=2.11.3","HeartBeatTime":0,"Signature":"F362360EB48A2DD3B14674C1E9CEBCCF0AC7CDD9","ActionParameters":""}'
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-s-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(filter=iis)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 047AD0A90DDEA65A32BC1FA336BB964ED18232EF}
+      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://vod-s-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(filter=iis)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3","HeartBeatTime":0,"Signature":"047AD0A90DDEA65A32BC1FA336BB964ED18232EF","ActionParameters":""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 04 Sep 2018 08:15:48 GMT']
-      Expires: ['Tue, 04 Sep 2018 08:15:48 GMT']
+      Date: ['Sat, 08 Sep 2018 12:05:42 GMT']
+      Expires: ['Sat, 08 Sep 2018 12:05:42 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
