@@ -7,8 +7,7 @@ def test_refresh_tokens():
     gp = pigskin()
 
     # login
-    login_success = gp.login(username=pytest.gp_username, password=pytest.gp_password)
-    assert login_success == True
+    assert gp.login(username=pytest.gp_username, password=pytest.gp_password)
 
     # make sure tokens are actually set
     assert gp.access_token
@@ -19,8 +18,7 @@ def test_refresh_tokens():
     first_refresh_token = gp.refresh_token
 
     # refresh the tokens
-    refresh_success = gp.refresh_tokens()
-    assert refresh_success == True
+    assert gp.refresh_tokens()
 
     # make sure new tokens are actually set
     assert gp.access_token
@@ -35,8 +33,7 @@ def test_refresh_tokens_no_login():
     gp = pigskin()
 
     # refresh the tokens
-    refresh_success = gp.refresh_tokens()
-    assert refresh_success == False
+    assert not gp.refresh_tokens()
 
     # make sure new tokens are not set
     assert not gp.access_token

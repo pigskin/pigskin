@@ -49,7 +49,6 @@ def search_for_tokens(text):
 
     for t in ['access_token', 'refresh_token']:
         try:
-            print(parsed[t])
             if parsed[t] not in token_list:
                 fake_token = sha256(parsed[t].encode()).hexdigest()
                 token_list[parsed[t]] = 'FAKE_TOKEN_' + fake_token
