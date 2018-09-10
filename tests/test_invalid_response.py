@@ -24,6 +24,7 @@ def test_invalid_response_get_bytes():
     assert not gp.get_redzone_streams()
     assert not gp._get_diva_config(junk_url)
     assert not gp._get_diva_streams(video_id='invalid', diva_config_url=diva_config_url)
+    assert not gp.check_for_subscription()
 
 
 @pytest.mark.vcr()
@@ -44,6 +45,7 @@ def test_invalid_response_get_html():
     assert not gp.get_redzone_streams()
     assert not gp._get_diva_config(junk_url)
     assert not gp._get_diva_streams(video_id='invalid', diva_config_url=diva_config_url)
+    assert not gp.check_for_subscription()
 
 
 @pytest.mark.vcr()
@@ -64,6 +66,7 @@ def test_invalid_response_get_json():
     assert not gp.get_redzone_streams()
     assert not gp._get_diva_config(junk_url)
     assert not gp._get_diva_streams(video_id='invalid', diva_config_url=diva_config_url)
+    assert not gp.check_for_subscription()
 
 
 @pytest.mark.vcr()
@@ -84,6 +87,7 @@ def test_invalid_response_get_xml():
     assert not gp.get_redzone_streams()
     assert not gp._get_diva_config(junk_url)
     assert not gp._get_diva_streams(video_id='invalid', diva_config_url=diva_config_url)
+    assert not gp.check_for_subscription()
 
 
 @pytest.mark.vcr()
@@ -96,6 +100,7 @@ def test_invalid_response_post_json():
 
     # it seems that httbin only provides JSON responses to POST requests
     # TODO: find a way to get html and bytes responses for POST as well
+    assert not gp.login(username='nope', password='so_secret', force=True)
     assert not gp._gigya_auth(username='nope', password='so_secret')
-    assert not gp.login(username='nope', password='so_secret')
+    assert not gp._gp_auth(username='nope', password='so_secret')
     assert not gp.refresh_tokens()

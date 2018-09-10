@@ -23,7 +23,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['522']
       Content-Type: [application/xml]
-      Date: ['Sat, 08 Sep 2018 12:59:51 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:17 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -51,7 +51,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['522']
       Content-Type: [application/xml]
-      Date: ['Sat, 08 Sep 2018 12:59:51 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:32 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -79,7 +79,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['522']
       Content-Type: [application/xml]
-      Date: ['Sat, 08 Sep 2018 12:59:51 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:40 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -107,7 +107,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['522']
       Content-Type: [application/xml]
-      Date: ['Sat, 08 Sep 2018 12:59:51 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:40 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -135,7 +135,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['522']
       Content-Type: [application/xml]
-      Date: ['Sat, 08 Sep 2018 12:59:52 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:40 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -163,7 +163,123 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['522']
       Content-Type: [application/xml]
-      Date: ['Sat, 08 Sep 2018 12:59:52 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:40 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: client_id=https%3A%2F%2Fhttpbin.org%2Fxml&grant_type=refresh_token
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['66']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.18.4]
+    method: POST
+    uri: https://httpbin.org/xml
+  response:
+    body: {string: '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+        <title>405 Method Not Allowed</title>
+
+        <h1>Method Not Allowed</h1>
+
+        <p>The method is not allowed for the requested URL.</p>
+
+        '}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Allow: ['GET, OPTIONS, HEAD']
+      Connection: [keep-alive]
+      Content-Length: ['178']
+      Content-Type: [text/html]
+      Date: ['Mon, 10 Sep 2018 13:35:56 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 405, message: METHOD NOT ALLOWED}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/xml
+  response:
+    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
+        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
+        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
+        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
+        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
+        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
+        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
+        \   </slide>\n\n</slideshow>"}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['522']
+      Content-Type: [application/xml]
+      Date: ['Mon, 10 Sep 2018 13:35:56 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/xml
+  response:
+    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
+        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
+        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
+        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
+        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
+        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
+        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
+        \   </slide>\n\n</slideshow>"}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['522']
+      Content-Type: [application/xml]
+      Date: ['Mon, 10 Sep 2018 13:35:56 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/xml
+  response:
+    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
+        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
+        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
+        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
+        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
+        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
+        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
+        \   </slide>\n\n</slideshow>"}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['522']
+      Content-Type: [application/xml]
+      Date: ['Mon, 10 Sep 2018 13:35:56 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -195,123 +311,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['178']
       Content-Type: [text/html]
-      Date: ['Sat, 08 Sep 2018 12:59:52 GMT']
-      Server: [gunicorn/19.9.0]
-      Via: [1.1 vegur]
-    status: {code: 405, message: METHOD NOT ALLOWED}
-- request:
-    body: null
-    headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4]
-    method: GET
-    uri: https://httpbin.org/xml
-  response:
-    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
-        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
-        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
-        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
-        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
-        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
-        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
-        \   </slide>\n\n</slideshow>"}
-    headers:
-      Access-Control-Allow-Credentials: ['true']
-      Access-Control-Allow-Origin: ['*']
-      Connection: [keep-alive]
-      Content-Length: ['522']
-      Content-Type: [application/xml]
-      Date: ['Sat, 08 Sep 2018 12:59:52 GMT']
-      Server: [gunicorn/19.9.0]
-      Via: [1.1 vegur]
-    status: {code: 200, message: OK}
-- request:
-    body: null
-    headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4]
-    method: GET
-    uri: https://httpbin.org/xml
-  response:
-    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
-        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
-        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
-        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
-        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
-        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
-        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
-        \   </slide>\n\n</slideshow>"}
-    headers:
-      Access-Control-Allow-Credentials: ['true']
-      Access-Control-Allow-Origin: ['*']
-      Connection: [keep-alive]
-      Content-Length: ['522']
-      Content-Type: [application/xml]
-      Date: ['Sat, 08 Sep 2018 12:59:52 GMT']
-      Server: [gunicorn/19.9.0]
-      Via: [1.1 vegur]
-    status: {code: 200, message: OK}
-- request:
-    body: null
-    headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4]
-    method: GET
-    uri: https://httpbin.org/xml
-  response:
-    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
-        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
-        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
-        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
-        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
-        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
-        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
-        \   </slide>\n\n</slideshow>"}
-    headers:
-      Access-Control-Allow-Credentials: ['true']
-      Access-Control-Allow-Origin: ['*']
-      Connection: [keep-alive]
-      Content-Length: ['522']
-      Content-Type: [application/xml]
-      Date: ['Sat, 08 Sep 2018 12:59:52 GMT']
-      Server: [gunicorn/19.9.0]
-      Via: [1.1 vegur]
-    status: {code: 200, message: OK}
-- request:
-    body: client_id=https%3A%2F%2Fhttpbin.org%2Fxml&grant_type=refresh_token
-    headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Length: ['66']
-      Content-Type: [application/x-www-form-urlencoded]
-      User-Agent: [python-requests/2.18.4]
-    method: POST
-    uri: https://httpbin.org/xml
-  response:
-    body: {string: '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
-
-        <title>405 Method Not Allowed</title>
-
-        <h1>Method Not Allowed</h1>
-
-        <p>The method is not allowed for the requested URL.</p>
-
-        '}
-    headers:
-      Access-Control-Allow-Credentials: ['true']
-      Access-Control-Allow-Origin: ['*']
-      Allow: ['GET, HEAD, OPTIONS']
-      Connection: [keep-alive]
-      Content-Length: ['178']
-      Content-Type: [text/html]
-      Date: ['Sat, 08 Sep 2018 12:59:52 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:57 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 405, message: METHOD NOT ALLOWED}
@@ -370,8 +370,8 @@ interactions:
       Cache-Control: [max-age=300]
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:59:52 GMT']
-      Expires: ['Sat, 08 Sep 2018 13:04:52 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:57 GMT']
+      Expires: ['Mon, 10 Sep 2018 13:40:57 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/8.5]
       Vary: [Accept-Encoding]
@@ -397,12 +397,41 @@ interactions:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [text/html; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:59:52 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:59:52 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:57 GMT']
+      Expires: ['Mon, 10 Sep 2018 13:35:57 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
       content-length: ['34']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [REDACTED]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/xml
+  response:
+    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
+        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
+        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
+        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
+        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
+        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
+        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
+        \   </slide>\n\n</slideshow>"}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['522']
+      Content-Type: [application/xml]
+      Date: ['Mon, 10 Sep 2018 13:35:57 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
     status: {code: 200, message: OK}
 version: 1

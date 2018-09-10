@@ -11,14 +11,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        t2t3//lFQHCYwjXRHUWYZzTdW78=
+        MBmlXt7J2WvoUTyLfp914t5dvaM=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sat, 08 Sep 2018 12:59:45 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:00 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -34,14 +34,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        ybGWNNOwpQWwsh0kwltfGLKigbw=
+        VX6/zT8pV3nJy8l7AuaY63Tl8Mc=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sat, 08 Sep 2018 12:59:45 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:00 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -57,14 +57,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        wiSpmTqYHNQtRKUBYUAr82HP8N8=
+        1cmplLTwdJO1xojeFgPLr5ggwuo=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sat, 08 Sep 2018 12:59:45 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:00 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -80,14 +80,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        zPcvkfdB95OCFe/HjYsY1Jq/UOY=
+        DIjcp79jx4c7eEEyPFxuWfdYBAQ=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sat, 08 Sep 2018 12:59:45 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:00 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -103,14 +103,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        CnJIyA2ex4sRvuOr6HdmC7Amarg=
+        PhRfhpMTijA5hESL0lGR5l1wY2c=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sat, 08 Sep 2018 12:59:46 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:00 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -126,14 +126,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        irwqPGUqC/ljIhHsu5kYK6eyntM=
+        FAdiCE6lY7H1ddS5JxHBLpYDcq4=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sat, 08 Sep 2018 12:59:46 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:00 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -161,11 +161,11 @@ interactions:
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
-      Allow: ['GET, HEAD, OPTIONS']
+      Allow: ['OPTIONS, GET, HEAD']
       Connection: [keep-alive]
       Content-Length: ['178']
       Content-Type: [text/html]
-      Date: ['Sat, 08 Sep 2018 12:59:46 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:01 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 405, message: METHOD NOT ALLOWED}
@@ -181,14 +181,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        4YWCeS7v2yFJ1vbUcRHscy3J/z0=
+        bTqzM9KnqLptU7zN+sWCb7pgA6I=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sat, 08 Sep 2018 12:59:46 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:01 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -204,14 +204,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        NHXk9Y5c7DrzmeDUL3gYvPy8hT0=
+        EtoFRluXzLE/LxccUjcP7RHA3Dg=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sat, 08 Sep 2018 12:59:46 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:01 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -227,14 +227,14 @@ interactions:
   response:
     body:
       string: !!binary |
-        m2wjVPbC+vX+mDB0XZy3QVdF1iM=
+        2nrAnkk3c51ayA+iIpEjXdsdDeY=
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
       Connection: [keep-alive]
       Content-Length: ['20']
       Content-Type: [application/octet-stream]
-      Date: ['Sat, 08 Sep 2018 12:59:46 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:01 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -266,7 +266,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['178']
       Content-Type: [text/html]
-      Date: ['Sat, 08 Sep 2018 12:59:46 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:01 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 405, message: METHOD NOT ALLOWED}
@@ -325,8 +325,8 @@ interactions:
       Cache-Control: [max-age=300]
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:59:46 GMT']
-      Expires: ['Sat, 08 Sep 2018 13:04:46 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:02 GMT']
+      Expires: ['Mon, 10 Sep 2018 13:40:02 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/8.5]
       Vary: [Accept-Encoding]
@@ -352,13 +352,36 @@ interactions:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [text/html; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:59:46 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:59:46 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:02 GMT']
+      Expires: ['Mon, 10 Sep 2018 13:35:02 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/10.0]
-      Set-Cookie: [ARRAffinity=1ba3bd532f7d0001bdd23266c8b8a20253ba0bd7365fcb44d9dbf782640b9827;Path=/;HttpOnly;Domain=nfl-content-api-prd.deltatre.net]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
       content-length: ['34']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [REDACTED]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/bytes/20
+  response:
+    body:
+      string: !!binary |
+        aNG+s02BEHRV20LPAYIjovSEWGY=
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['20']
+      Content-Type: [application/octet-stream]
+      Date: ['Mon, 10 Sep 2018 13:35:02 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
     status: {code: 200, message: OK}
 version: 1

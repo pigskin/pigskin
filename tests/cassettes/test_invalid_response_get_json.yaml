@@ -30,7 +30,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sat, 08 Sep 2018 12:59:49 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:05 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -65,7 +65,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sat, 08 Sep 2018 12:59:49 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:05 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -100,7 +100,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sat, 08 Sep 2018 12:59:49 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:05 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -135,7 +135,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sat, 08 Sep 2018 12:59:49 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:05 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -170,7 +170,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sat, 08 Sep 2018 12:59:49 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:05 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -205,7 +205,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sat, 08 Sep 2018 12:59:50 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:05 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -233,11 +233,11 @@ interactions:
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
-      Allow: ['HEAD, OPTIONS, GET']
+      Allow: ['HEAD, GET, OPTIONS']
       Connection: [keep-alive]
       Content-Length: ['178']
       Content-Type: [text/html]
-      Date: ['Sat, 08 Sep 2018 12:59:50 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:06 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 405, message: METHOD NOT ALLOWED}
@@ -272,7 +272,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sat, 08 Sep 2018 12:59:50 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:06 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -307,7 +307,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sat, 08 Sep 2018 12:59:50 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:16 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -342,7 +342,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['429']
       Content-Type: [application/json]
-      Date: ['Sat, 08 Sep 2018 12:59:50 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:16 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 200, message: OK}
@@ -370,11 +370,11 @@ interactions:
     headers:
       Access-Control-Allow-Credentials: ['true']
       Access-Control-Allow-Origin: ['*']
-      Allow: ['GET, HEAD, OPTIONS']
+      Allow: ['HEAD, GET, OPTIONS']
       Connection: [keep-alive]
       Content-Length: ['178']
       Content-Type: [text/html]
-      Date: ['Sat, 08 Sep 2018 12:59:50 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:16 GMT']
       Server: [gunicorn/19.9.0]
       Via: [1.1 vegur]
     status: {code: 405, message: METHOD NOT ALLOWED}
@@ -433,8 +433,8 @@ interactions:
       Cache-Control: [max-age=300]
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:59:51 GMT']
-      Expires: ['Sat, 08 Sep 2018 13:04:51 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:16 GMT']
+      Expires: ['Mon, 10 Sep 2018 13:40:16 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/8.5]
       Vary: [Accept-Encoding]
@@ -460,12 +460,48 @@ interactions:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [text/html; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:59:51 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:59:51 GMT']
+      Date: ['Mon, 10 Sep 2018 13:35:16 GMT']
+      Expires: ['Mon, 10 Sep 2018 13:35:16 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
       content-length: ['34']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [REDACTED]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://httpbin.org/json
+  response:
+    body:
+      pretty:
+        slideshow:
+          author: Yours Truly
+          date: date of publication
+          slides:
+          - {title: Wake up to WonderWidgets!, type: all}
+          - items: [Why <em>WonderWidgets</em> are great, Who <em>buys</em> WonderWidgets]
+            title: Overview
+            type: all
+          title: Sample Slide Show
+      string: '{"slideshow": {"author": "Yours Truly", "date": "date of publication",
+        "slides": [{"title": "Wake up to WonderWidgets!", "type": "all"}, {"items":
+        ["Why <em>WonderWidgets</em> are great", "Who <em>buys</em> WonderWidgets"],
+        "title": "Overview", "type": "all"}], "title": "Sample Slide Show"}}'
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['429']
+      Content-Type: [application/json]
+      Date: ['Mon, 10 Sep 2018 13:35:16 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
     status: {code: 200, message: OK}
 version: 1
