@@ -11,7 +11,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: website config, lastUpdate: '2018-09-08T12:03:35.326Z', title: '',
+        header: {id: website config, lastUpdate: '2018-09-11T08:34:47.424Z', title: '',
           version: '1.0'}
         modules:
           ADOBE_HEARTBEAT:
@@ -450,125 +450,350 @@ interactions:
             IFRAME_BASE_OPTIONS: {STYLE: inline, SUBMIT_ENABLED: true, SUPPORTED_CARD_TYPES: 'AmericanExpress,JCB,Visa,MasterCard,Discover'}
             JAVASCRIPT_API_URL: https://apisandboxstatic.zuora.com/Resources/libs/hosted/1.3.0/zuora-min.js
             LOCALE: en_US
-      string: '{"header":{"id":"website config","version":"1.0","title":"","lastUpdate":"2018-09-08T12:03:35.326Z"},"modules":{"FEATURES":{"FUNNEL":{"IS_ENABLED":true},"AUTHENTICATION":{"GIGYA_LOGIN_FLOW_IS_ENABLED":true},"CURRENT_CONTEXT":{"SEASON":2018}},"IMAGE_FORMATS":{"FALLBACK_BASE_URL":"fallbackimageprd-temporary","DefaulList_16:9":[{"singleFormat":"t_16-9_480","doubleFormat":"t_16-9_960","breakpoint":"220px"}],"Hero_16:9":[{"singleFormat":"t_16-9_1920","doubleFormat":"t_16-9_3840","breakpoint":"1200px"},{"singleFormat":"t_16-9_1200","doubleFormat":"t_16-9_1920","breakpoint":"768px"},{"singleFormat":"t_16-9_960","doubleFormat":"t_16-9_1200","breakpoint":"480px"},{"singleFormat":"t_16-9_480","doubleFormat":"t_16-9_960","breakpoint":"220px"}]},"SOCIAL_PROVIDERS":{"FACEBOOK":{"sdk_url":"//connect.facebook.net/en_US/sdk.js","sdk_configuration":{"appId":"219276878564579
-        temporary","xfbml":false,"version":"v2.9"},"share":{"hashtag":"#gamepass"}},"TWITTER":{"sdk_url":"//platform.twitter.com/widgets.js","share":{"hashtags":["nfl","gamepass"],"via":"NFLGamePass"}},"SOCIAL_MESSAGE":"I''m
-        watching the NFL on http://gamepass-europe.nfl.com"},"COOKIES":{"DOMAIN":".nflgamepass.com","COOKIES_POLICY":{"name":"gp_cp","duration":30}},"MOMENT":{"LOCALE":"en-gb","FREE_TRIAL_DATE_FORMAT":"DD
-        MMMM YYYY"},"API":{"GRANT_TYPES":{"PASSWORD":"password","REFRESH_TOKEN":"refresh_token","SHIELD_AUTHENTICATION":"shield_authentication"},"CLIENT_ID":"42cc360e-6fbb-4472-9437-2f088b8730de","DEVICE_TYPE":"web","BASE_URL":"https://www.nflgamepass.com/api/user","VOCABULARY":"https://www.nflgamepass.com/api/en/content/v1/web/voc","TV_SHOWS":"https://www.nflgamepass.com/api/en/content/v1/web/tv-programs/:showCategory/programs","NETWORK_PROGRAMS":"https://www.nflgamepass.com/api/en/content/v1/web/network/programs","NETWORK_EPISODES":"https://www.nflgamepass.com/api/en/content/v1/web/network/:seasonSlug/:tvShowSlug/list","VIDEO_BY_SLUG":"https://www.nflgamepass.com/api/en/content/v1/web/videos/:videoSlug/video","LIVE_VIDEOS":"https://www.nflgamepass.com/api/en/content/v1/web/live/all","FAVOURITE_TEAM_MATCHES":"https://www.nflgamepass.com/api/en/content/v1/web/teams/:favouriteTeam/preferred-team","TEAMS":"https://www.nflgamepass.com/api/en/content/v1/common/teams","GEOLOCALIZATION":"https://www.nflgamepass.com/api/user/api/users/v1/geolocation","LOGIN":"https://www.nflgamepass.com/api/user/oauth/token","LOGOUT":"https://www.nflgamepass.com/api/user/api/users/v1/identity/logout","REFRESH_TOKEN":"https://www.nflgamepass.com/api/user/oauth/token","USER_PROFILE":"https://www.nflgamepass.com/api/user/api/users/v1/profile/me","USER_ACCOUNT":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/myaccount","CHECK_USER_NICKNAME":"https://www.nflgamepass.com/api/user/api/users/v1/identity/existsusername","CHECK_USER_SESSION":"https://www.nflgamepass.com/api/user/api/users/v1/identity/isauthenticated","REGISTER":"https://www.nflgamepass.com/api/user/api/users/v1/identity/register","ZUORA_IFRAME_CONFIGURATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/iframe","ZUORA_CREDIT_CARD_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/purchase/creditcard","ZUORA_CREDIT_CARD_UPGRADE_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/upgrade/creditcard","ZUORA_PAYPAL_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/purchase/paypal","ZUORA_PAYPAL_UPGRADE_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/upgrade/paypal","ZUORA_FREE_TRIAL_STOP":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/freetrial","ZUORA_AUTO_RENEWAL_STOP":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/cancelautorenewal","ZUORA_AUTO_RENEWAL_ENABLE":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/enableautorenewal","ZUORA_PAYMENT_METHOD_UPDATE":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/changepaymentmethod/creditcard","ZUORA_VALIDATE_PROMO_CODE":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/preview/promocode","ZUORA_FREEMIUM_PRODUCT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/add","ZUORA_ENABLE_PAYMENT_VIA_INSTALLMENTS":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/paymentmode/installments","ZUORA_TOGGLE_PAYMENT_VIA_INSTALLMENTS":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/paymentmode","SOFT_ENTITLEMENT":"https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/softcheck","PAYPAL_CHECKOUT_TOKEN":"https://www.nflgamepass.com/api/user/api/users/v1/paypal/getcheckouttoken","CONTACT_FORM":"https://nfl-functions-prd-we.azurewebsites.net/api/SendSupportEmail?code=9rsqW1AGlLP/9yFf77Dilan7/Ja88OwaaSMXHusHaW74kcITLBNFJw=="},"GIGYA":{"JAVASCRIPT_API_URL":"https://cdns.eu1.gigya.com/js/gigya.js?apiKey=3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp","SUCCESS_ERROR_CODES":[0],"WRONG_CREDENTIALS_ERROR_CODES":[403042],"THROTTLING_ERROR_CODES":[403048]},"ZUORA":{"LOCALE":"en_US","JAVASCRIPT_API_URL":"https://apisandboxstatic.zuora.com/Resources/libs/hosted/1.3.0/zuora-min.js","IFRAME_BASE_OPTIONS":{"SUPPORTED_CARD_TYPES":"AmericanExpress,JCB,Visa,MasterCard,Discover","SUBMIT_ENABLED":true,"STYLE":"inline"}},"DIVA":{"FLASH":{"SWF_PATH":"https://www.nflgamepass.com/api/diva/swf/diva.swf","MINIMUM_VERSION_NUMBER":20,"PLAYER_SIZE":{"WIDTH":990,"HEIGHT":590},"PARAMS":{"scale":"noscale","wmode":"direct","bgcolor":"#000000","allowfullscreen":"true","allowscriptaccess":"always","base":"."},"SETTINGS":{"LiveNoData":"https://www.nflgamepass.com/api/diva/diva/settings/livenodata/device","ReplayNoData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/device","LiveWithData":"https://www.nflgamepass.com/api/diva/diva/settings/livenfl/device","ReplayWithData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/device","NoAdsWithData":"https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/device","VodNoData":"https://www.nflgamepass.com/api/diva/diva/settings/vod/device","Live24x7":"https://www.nflgamepass.com/api/diva/diva/settings/24h7d/device","CoachFilm":"https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/device"}},"HTML5":{"CONVIVA":{"IS_ENABLED":true,"ANALYTICS_JAVASCRIPT_API_URL":"https://www.nflgamepass.com/api/diva/scripts/conviva_integration.min.js","DEFAULT_ANALYTICS_PAYLOAD":{"assetName":"{V.Category1}-{V.Title}","applicationName":"nfl-prd-html5","customerKey":"6679b240d0b48c69402268577b537232458a6e78","viewerId":"{Settings.cs5}","tags":{"playerVendor":"deltatre","category":"Diva","channel":"Diva","retryNumber":"0","streamProtocol":"HLS","contentId":"Diva-{V.ID}"},"gatewayUrl":"","log":false}},"PLAYER_PATH":"https://www.nflgamepass.com/api/diva/html5/divaplayer.html","PLAYER_LOGO":"/custom/nfl/img/gp-logo__white.svg","RECOMMENDATIONS_IFRAME_URL":"https://www.nflgamepass.com/api/diva/customoverlay/videolist/video_switch.html?useHashNav=false&templateName=fullVideo&mrssUrl=https://www.nflgamepass.com/api/en/content/v1/rss-feeds/{videoId}/video-raccomendation&errorText=There%20are%20no%20videos%20available%20at%20the%20moment.&pollingTime=00:02:00&ribbonBgColor=0xef082b&ribbonFgColor=0x000000&noDescription=true&mode=switch","SETTINGS":{"LiveNoData":"https://www.nflgamepass.com/api/diva/diva/settings/livenodata/html5","ReplayNoData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/html5","LiveWithData":"https://www.nflgamepass.com/api/diva/diva/settings/livenfl/html5","ReplayWithData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/html5","NoAdsWithData":"https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/html5","VodNoData":"https://www.nflgamepass.com/api/diva/diva/settings/vod/html5","Live24x7":"https://www.nflgamepass.com/api/diva/diva/settings/24h7d/html5","CoachFilm":"https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/html5"}}},"REDIRECT_URIS":{"ERROR":"error","LOGIN":"login"},"ROUTES_DATA_PROVIDERS":{"home":"https://www.nflgamepass.com/api/en/content/v1/web/homepage","login":"https://www.nflgamepass.com/api/en/content/v1/web/login","games":"https://www.nflgamepass.com/api/en/content/v1/web/games/seasons","games_detail":"https://www.nflgamepass.com/api/en/content/v1/web/games/:season/:seasonType/:week/list","game_page":"https://www.nflgamepass.com/api/en/content/v1/web/games/:season/:gameslug/data","teams":"https://www.nflgamepass.com/api/en/content/v1/web/teams/list","team_detail":"https://www.nflgamepass.com/api/en/content/v1/web/teams/:team/videos","funnel_plans":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/zuora/{{GeolocationService:userInfo.geoLocation.country.isoCode}}/subscription/catalog","funnel_upgrade_plans":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/zuora/{{GeolocationService:userInfo.geoLocation.country.isoCode}}/upgrade/{{UserProfileService:basicInfo.upgradeRatePlanTag}}/catalog","funnel_account":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/account","funnel_payment":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/payment","funnel_upgrade_payment":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/payment","funnel_confirm":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/confirmation-page","funnel_upgrade_confirm":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/confirmation-page","funnel_unavailable":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/unavailable","funnel_upgrade_unavailable":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/unavailable","funnel_error":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/error","funnel_upgrade_error":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/error","funnel_subscription_renewal":"https://www.nflgamepass.com/api/en/content/v1/web/autorenewal-landing-page/data","featured":"https://www.nflgamepass.com/api/en/content/v1/web/featured/videos","featured_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/featured/show/:video-slug/video","nfl_shows":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-shows/videos","nfl_shows_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-shows/show/:video-slug/video","nfl_originals":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-originals/videos","nfl_originals_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-originals/show/:video-slug/video","video-slug":"https://www.nflgamepass.com/api/en/content/v1/web/videos/:video-slug/video","network_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/network/show/:video-slug/video","featured_local":"http://localhost:61544/v1/web/featured/videos","redzone":"https://www.nflgamepass.com/api/en/content/v1/web/redzone/videos","network":"https://www.nflgamepass.com/api/en/content/v1/web/network/data","terms_of_service":"https://www.nflgamepass.com/api/en/content/v1/web/terms-and-conditions","discover_the_service":"https://www.nflgamepass.com/api/en/content/v1/web/discover-the-service","discover_redzone":"https://www.nflgamepass.com/api/en/content/v1/web/discover-redzone","privacy":"https://www.nflgamepass.com/api/en/content/v1/web/privacy","support":"https://www.nflgamepass.com/api/en/content/v1/web/support","faq":"https://www.nflgamepass.com/api/en/content/v1/web/faq","cookies_policy":"https://www.nflgamepass.com/api/en/content/v1/web/cookies-policy","payment_terms":"https://www.nflgamepass.com/api/en/content/v1/web/payment-terms","account":"https://www.nflgamepass.com/api/en/content/v1/web/subscription/myaccount","contact-us":"https://www.nflgamepass.com/api/en/content/v1/web/contactus/data","confirm-subscription":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/confirmation-page","refund_faq":"https://www.nflgamepass.com/api/en/content/v1/web/exrefund-faq","sb_competition_tc":"https://www.nflgamepass.com/api/en/content/v1/web/sb_competition_tc","error":"https://www.nflgamepass.com/api/en/content/v1/web/500","no-content":"https://www.nflgamepass.com/api/en/content/v1/web/404"},"LOCAL_STORAGE":{"OAUTH_KEY":"oauth_payload","PREFERENCES_KEY":"preferences","TRANSACTION_DETAILS_KEY":"transaction_details"},"GOOGLE":{"RECAPTCHA":{"JAVASCRIPT_API_URL":"https://www.google.com/recaptcha/api.js?onload=googleReCaptchaOnloadCallback&render=explicit","SITE_KEY":"6LfVuiIUAAAAAAFdPEG3HtHJGbKl0PqEKvRws9hV"}},"PAYPAL":{"REDIRECT_URIS":{"PRODUCT_PURCHASE":{"SUCCESS":"{{window:location.origin}}/en/subscribe/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=purchase&success-redirect=/en/subscribe/confirmation&error-redirect=/en/subscribe/paypal/error","ERROR":"{{window:location.origin}}/en/subscribe/paypal/error"},"PRODUCT_UPGRADE":{"SUCCESS":"{{window:location.origin}}/en/upgrade/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=upgrade&success-redirect=/en/upgrade/confirmation&error-redirect=/en/upgrade/paypal/error","ERROR":"{{window:location.origin}}/en/upgrade/paypal/error"},"SUCCESS":"{{window:location.origin}}/en/subscribe/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=purchase&success-redirect=/en/subscribe/confirmation&error-redirect=/en/subscribe/paypal/error","ERROR":"{{window:location.origin}}/en/subscribe/paypal/error"}},"POLLING":{"VIDEO_STATUS_CHECK":{"INTERVAL":10000}},"ADOBE_HEARTBEAT":{"VISITOR":{"ID":"F75C3025512D2C1D0A490D44@AdobeOrg","TRACKING_SERVER":"smetrics.nfl.com"},"APP_MEASUREMENT":{"TRACKING_SERVER":"nfl.hb.omtrdc.net","ACCOUNT":"nflprod","CHARSET":"UTF-8"},"MEDIA_CONFIGURATION":{"TRACKING_SERVER":"nfl.hb.omtrdc.net","PLAYER_NAME":"Diva
-        Player","CHANNEL":"NFL GamePass - Prod.","DEBUG_LOGGING":false,"APP_VERSION":"Diva
-        Player","SSL":false,"OVP":"NFL GamePass OVP - Prod."}},"MEDIA":{"HOME_PAGE":{"SHOW_VIDEO":false,"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1497617597/HomePageVideoGP_2500Kb_1280_no_Audio_lglspi.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1497612187/HomePageVideoGP_1500Kb_720_no_Audio_esd7az.mp4"},"DISCOVER_THE_SERVICE":{"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1532794979/OVE_003_Game_Pass_Product_Video_V01_12_5Mbps_sbgdzr.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1532794979/OVE_003_Game_Pass_Product_Video_V01_12_5Mbps_sbgdzr.mp4"},"REDZONE":{"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4"},"WELCOME":{"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1535355398/ScottHanson_Game_Pass_Read_5Mbps_ddu4rr.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1535355398/ScottHanson_Game_Pass_Read_5Mbps_ddu4rr.mp4"}},"COUNTRIES":{"ISO3611":[{"isoCode":"AX","isEuropean":true},{"isoCode":"AL","isEuropean":true},{"isoCode":"DZ","isEuropean":false},{"isoCode":"AS","isEuropean":false},{"isoCode":"AD","isEuropean":true},{"isoCode":"AO","isEuropean":false},{"isoCode":"AI","isEuropean":false},{"isoCode":"AQ","isEuropean":false},{"isoCode":"AG","isEuropean":false},{"isoCode":"AR","isEuropean":false},{"isoCode":"AM","isEuropean":true},{"isoCode":"AW","isEuropean":false},{"isoCode":"AU","isEuropean":false},{"isoCode":"AT","isEuropean":true},{"isoCode":"AZ","isEuropean":true},{"isoCode":"BS","isEuropean":false},{"isoCode":"BH","isEuropean":false},{"isoCode":"BD","isEuropean":false},{"isoCode":"BB","isEuropean":false},{"isoCode":"BY","isEuropean":true},{"isoCode":"BE","isEuropean":true},{"isoCode":"BZ","isEuropean":false},{"isoCode":"BJ","isEuropean":false},{"isoCode":"BM","isEuropean":false},{"isoCode":"BT","isEuropean":false},{"isoCode":"BO","isEuropean":false},{"isoCode":"BA","isEuropean":true},{"isoCode":"BW","isEuropean":false},{"isoCode":"BV","isEuropean":false},{"isoCode":"BR","isEuropean":false},{"isoCode":"VG","isEuropean":false},{"isoCode":"IO","isEuropean":false},{"isoCode":"BN","isEuropean":false},{"isoCode":"BG","isEuropean":true},{"isoCode":"BF","isEuropean":false},{"isoCode":"BI","isEuropean":false},{"isoCode":"KH","isEuropean":false},{"isoCode":"CM","isEuropean":false},{"isoCode":"CA","isEuropean":false},{"isoCode":"CV","isEuropean":false},{"isoCode":"KY","isEuropean":false},{"isoCode":"CF","isEuropean":false},{"isoCode":"TD","isEuropean":false},{"isoCode":"CL","isEuropean":false},{"isoCode":"CN","isEuropean":false},{"isoCode":"HK","isEuropean":false},{"isoCode":"MO","isEuropean":false},{"isoCode":"CX","isEuropean":false},{"isoCode":"CC","isEuropean":false},{"isoCode":"CO","isEuropean":false},{"isoCode":"KM","isEuropean":false},{"isoCode":"CG","isEuropean":false},{"isoCode":"CD","isEuropean":false},{"isoCode":"CK","isEuropean":false},{"isoCode":"CR","isEuropean":false},{"isoCode":"CI","isEuropean":false},{"isoCode":"HR","isEuropean":true},{"isoCode":"CU","isEuropean":false},{"isoCode":"CY","isEuropean":true},{"isoCode":"CZ","isEuropean":true},{"isoCode":"DK","isEuropean":true},{"isoCode":"DJ","isEuropean":false},{"isoCode":"DM","isEuropean":false},{"isoCode":"DO","isEuropean":false},{"isoCode":"EC","isEuropean":false},{"isoCode":"EG","isEuropean":false},{"isoCode":"SV","isEuropean":false},{"isoCode":"GQ","isEuropean":false},{"isoCode":"ER","isEuropean":false},{"isoCode":"EE","isEuropean":true},{"isoCode":"ET","isEuropean":false},{"isoCode":"FK","isEuropean":false},{"isoCode":"FO","isEuropean":true},{"isoCode":"FJ","isEuropean":false},{"isoCode":"FI","isEuropean":true},{"isoCode":"FR","isEuropean":true},{"isoCode":"GF","isEuropean":false},{"isoCode":"PF","isEuropean":false},{"isoCode":"TF","isEuropean":false},{"isoCode":"GA","isEuropean":false},{"isoCode":"GM","isEuropean":false},{"isoCode":"GE","isEuropean":true},{"isoCode":"DE","isEuropean":true},{"isoCode":"GH","isEuropean":false},{"isoCode":"GI","isEuropean":true},{"isoCode":"GR","isEuropean":true},{"isoCode":"GL","isEuropean":false},{"isoCode":"GD","isEuropean":false},{"isoCode":"GP","isEuropean":false},{"isoCode":"GU","isEuropean":false},{"isoCode":"GT","isEuropean":false},{"isoCode":"GG","isEuropean":true},{"isoCode":"GN","isEuropean":false},{"isoCode":"GW","isEuropean":false},{"isoCode":"GY","isEuropean":false},{"isoCode":"HT","isEuropean":false},{"isoCode":"HM","isEuropean":false},{"isoCode":"VA","isEuropean":true},{"isoCode":"HN","isEuropean":false},{"isoCode":"HU","isEuropean":true},{"isoCode":"IS","isEuropean":true},{"isoCode":"IN","isEuropean":false},{"isoCode":"ID","isEuropean":false},{"isoCode":"IR","isEuropean":false},{"isoCode":"IQ","isEuropean":false},{"isoCode":"IE","isEuropean":true},{"isoCode":"IM","isEuropean":true},{"isoCode":"IL","isEuropean":false},{"isoCode":"IT","isEuropean":true},{"isoCode":"JM","isEuropean":false},{"isoCode":"JP","isEuropean":false},{"isoCode":"JE","isEuropean":true},{"isoCode":"JO","isEuropean":false},{"isoCode":"KZ","isEuropean":true},{"isoCode":"KE","isEuropean":false},{"isoCode":"KI","isEuropean":false},{"isoCode":"KP","isEuropean":false},{"isoCode":"KR","isEuropean":false},{"isoCode":"KW","isEuropean":false},{"isoCode":"KG","isEuropean":true},{"isoCode":"LA","isEuropean":false},{"isoCode":"LV","isEuropean":true},{"isoCode":"LB","isEuropean":false},{"isoCode":"LS","isEuropean":false},{"isoCode":"LR","isEuropean":false},{"isoCode":"LY","isEuropean":false},{"isoCode":"LI","isEuropean":true},{"isoCode":"LT","isEuropean":true},{"isoCode":"LU","isEuropean":true},{"isoCode":"MK","isEuropean":true},{"isoCode":"MG","isEuropean":false},{"isoCode":"MW","isEuropean":false},{"isoCode":"MY","isEuropean":false},{"isoCode":"MV","isEuropean":false},{"isoCode":"ML","isEuropean":false},{"isoCode":"MT","isEuropean":true},{"isoCode":"MH","isEuropean":false},{"isoCode":"MQ","isEuropean":false},{"isoCode":"MR","isEuropean":false},{"isoCode":"MU","isEuropean":false},{"isoCode":"YT","isEuropean":false},{"isoCode":"MX","isEuropean":false},{"isoCode":"FM","isEuropean":false},{"isoCode":"MD","isEuropean":true},{"isoCode":"MC","isEuropean":true},{"isoCode":"MN","isEuropean":false},{"isoCode":"ME","isEuropean":true},{"isoCode":"MS","isEuropean":false},{"isoCode":"MA","isEuropean":false},{"isoCode":"MZ","isEuropean":false},{"isoCode":"MM","isEuropean":false},{"isoCode":"NA","isEuropean":false},{"isoCode":"NR","isEuropean":false},{"isoCode":"NP","isEuropean":false},{"isoCode":"NL","isEuropean":true},{"isoCode":"AN","isEuropean":false},{"isoCode":"NC","isEuropean":false},{"isoCode":"NZ","isEuropean":false},{"isoCode":"NI","isEuropean":false},{"isoCode":"NE","isEuropean":false},{"isoCode":"NG","isEuropean":false},{"isoCode":"NU","isEuropean":false},{"isoCode":"NF","isEuropean":false},{"isoCode":"MP","isEuropean":false},{"isoCode":"NO","isEuropean":true},{"isoCode":"OM","isEuropean":false},{"isoCode":"PK","isEuropean":false},{"isoCode":"PW","isEuropean":false},{"isoCode":"PS","isEuropean":false},{"isoCode":"PA","isEuropean":false},{"isoCode":"PG","isEuropean":false},{"isoCode":"PY","isEuropean":false},{"isoCode":"PE","isEuropean":false},{"isoCode":"PH","isEuropean":false},{"isoCode":"PN","isEuropean":false},{"isoCode":"PL","isEuropean":true},{"isoCode":"PT","isEuropean":true},{"isoCode":"PR","isEuropean":false},{"isoCode":"QA","isEuropean":false},{"isoCode":"RE","isEuropean":false},{"isoCode":"RO","isEuropean":true},{"isoCode":"RU","isEuropean":true},{"isoCode":"RW","isEuropean":false},{"isoCode":"BL","isEuropean":false},{"isoCode":"SH","isEuropean":false},{"isoCode":"KN","isEuropean":false},{"isoCode":"LC","isEuropean":false},{"isoCode":"MF","isEuropean":false},{"isoCode":"PM","isEuropean":false},{"isoCode":"VC","isEuropean":false},{"isoCode":"WS","isEuropean":false},{"isoCode":"SM","isEuropean":true},{"isoCode":"ST","isEuropean":false},{"isoCode":"SA","isEuropean":false},{"isoCode":"SN","isEuropean":false},{"isoCode":"RS","isEuropean":true},{"isoCode":"SC","isEuropean":false},{"isoCode":"SL","isEuropean":false},{"isoCode":"SG","isEuropean":false},{"isoCode":"SK","isEuropean":true},{"isoCode":"SI","isEuropean":true},{"isoCode":"SB","isEuropean":false},{"isoCode":"SO","isEuropean":false},{"isoCode":"ZA","isEuropean":false},{"isoCode":"GS","isEuropean":false},{"isoCode":"SS","isEuropean":false},{"isoCode":"ES","isEuropean":true},{"isoCode":"LK","isEuropean":false},{"isoCode":"SD","isEuropean":false},{"isoCode":"SR","isEuropean":false},{"isoCode":"SJ","isEuropean":false},{"isoCode":"SZ","isEuropean":false},{"isoCode":"SE","isEuropean":true},{"isoCode":"CH","isEuropean":true},{"isoCode":"SY","isEuropean":false},{"isoCode":"TW","isEuropean":false},{"isoCode":"TJ","isEuropean":true},{"isoCode":"TZ","isEuropean":false},{"isoCode":"TH","isEuropean":false},{"isoCode":"TL","isEuropean":false},{"isoCode":"TG","isEuropean":false},{"isoCode":"TK","isEuropean":false},{"isoCode":"TO","isEuropean":false},{"isoCode":"TT","isEuropean":false},{"isoCode":"TN","isEuropean":false},{"isoCode":"TR","isEuropean":false},{"isoCode":"TM","isEuropean":true},{"isoCode":"TC","isEuropean":false},{"isoCode":"TV","isEuropean":false},{"isoCode":"UG","isEuropean":false},{"isoCode":"UA","isEuropean":true},{"isoCode":"AE","isEuropean":false},{"isoCode":"GB","isEuropean":true},{"isoCode":"US","isEuropean":false},{"isoCode":"UM","isEuropean":false},{"isoCode":"UY","isEuropean":false},{"isoCode":"UZ","isEuropean":true},{"isoCode":"VU","isEuropean":false},{"isoCode":"VE","isEuropean":false},{"isoCode":"VN","isEuropean":false},{"isoCode":"VI","isEuropean":false},{"isoCode":"WF","isEuropean":false},{"isoCode":"EH","isEuropean":false},{"isoCode":"YE","isEuropean":false},{"isoCode":"ZM","isEuropean":false},{"isoCode":"ZW","isEuropean":false}]}}}'
+      string: '{"header": {"id": "website config", "version": "1.0", "title": "",
+        "lastUpdate": "2018-09-11T08:34:47.424Z"}, "modules": {"FEATURES": {"FUNNEL":
+        {"IS_ENABLED": true}, "AUTHENTICATION": {"GIGYA_LOGIN_FLOW_IS_ENABLED": true},
+        "CURRENT_CONTEXT": {"SEASON": 2018}}, "IMAGE_FORMATS": {"FALLBACK_BASE_URL":
+        "fallbackimageprd-temporary", "DefaulList_16:9": [{"singleFormat": "t_16-9_480",
+        "doubleFormat": "t_16-9_960", "breakpoint": "220px"}], "Hero_16:9": [{"singleFormat":
+        "t_16-9_1920", "doubleFormat": "t_16-9_3840", "breakpoint": "1200px"}, {"singleFormat":
+        "t_16-9_1200", "doubleFormat": "t_16-9_1920", "breakpoint": "768px"}, {"singleFormat":
+        "t_16-9_960", "doubleFormat": "t_16-9_1200", "breakpoint": "480px"}, {"singleFormat":
+        "t_16-9_480", "doubleFormat": "t_16-9_960", "breakpoint": "220px"}]}, "SOCIAL_PROVIDERS":
+        {"FACEBOOK": {"sdk_url": "//connect.facebook.net/en_US/sdk.js", "sdk_configuration":
+        {"appId": "219276878564579 temporary", "xfbml": false, "version": "v2.9"},
+        "share": {"hashtag": "#gamepass"}}, "TWITTER": {"sdk_url": "//platform.twitter.com/widgets.js",
+        "share": {"hashtags": ["nfl", "gamepass"], "via": "NFLGamePass"}}, "SOCIAL_MESSAGE":
+        "I''m watching the NFL on http://gamepass-europe.nfl.com"}, "COOKIES": {"DOMAIN":
+        ".nflgamepass.com", "COOKIES_POLICY": {"name": "gp_cp", "duration": 30}},
+        "MOMENT": {"LOCALE": "en-gb", "FREE_TRIAL_DATE_FORMAT": "DD MMMM YYYY"}, "API":
+        {"GRANT_TYPES": {"PASSWORD": "password", "REFRESH_TOKEN": "refresh_token",
+        "SHIELD_AUTHENTICATION": "shield_authentication"}, "CLIENT_ID": "42cc360e-6fbb-4472-9437-2f088b8730de",
+        "DEVICE_TYPE": "web", "BASE_URL": "https://www.nflgamepass.com/api/user",
+        "VOCABULARY": "https://www.nflgamepass.com/api/en/content/v1/web/voc", "TV_SHOWS":
+        "https://www.nflgamepass.com/api/en/content/v1/web/tv-programs/:showCategory/programs",
+        "NETWORK_PROGRAMS": "https://www.nflgamepass.com/api/en/content/v1/web/network/programs",
+        "NETWORK_EPISODES": "https://www.nflgamepass.com/api/en/content/v1/web/network/:seasonSlug/:tvShowSlug/list",
+        "VIDEO_BY_SLUG": "https://www.nflgamepass.com/api/en/content/v1/web/videos/:videoSlug/video",
+        "LIVE_VIDEOS": "https://www.nflgamepass.com/api/en/content/v1/web/live/all",
+        "FAVOURITE_TEAM_MATCHES": "https://www.nflgamepass.com/api/en/content/v1/web/teams/:favouriteTeam/preferred-team",
+        "TEAMS": "https://www.nflgamepass.com/api/en/content/v1/common/teams", "GEOLOCALIZATION":
+        "https://www.nflgamepass.com/api/user/api/users/v1/geolocation", "LOGIN":
+        "https://www.nflgamepass.com/api/user/oauth/token", "LOGOUT": "https://www.nflgamepass.com/api/user/api/users/v1/identity/logout",
+        "REFRESH_TOKEN": "https://www.nflgamepass.com/api/user/oauth/token", "USER_PROFILE":
+        "https://www.nflgamepass.com/api/user/api/users/v1/profile/me", "USER_ACCOUNT":
+        "https://www.nflgamepass.com/api/user/api/users/v1/subscription/myaccount",
+        "CHECK_USER_NICKNAME": "https://www.nflgamepass.com/api/user/api/users/v1/identity/existsusername",
+        "CHECK_USER_SESSION": "https://www.nflgamepass.com/api/user/api/users/v1/identity/isauthenticated",
+        "REGISTER": "https://www.nflgamepass.com/api/user/api/users/v1/identity/register",
+        "ZUORA_IFRAME_CONFIGURATION": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/iframe",
+        "ZUORA_CREDIT_CARD_PAYMENT_REGISTRATION": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/purchase/creditcard",
+        "ZUORA_CREDIT_CARD_UPGRADE_PAYMENT_REGISTRATION": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/upgrade/creditcard",
+        "ZUORA_PAYPAL_PAYMENT_REGISTRATION": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/purchase/paypal",
+        "ZUORA_PAYPAL_UPGRADE_PAYMENT_REGISTRATION": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/upgrade/paypal",
+        "ZUORA_FREE_TRIAL_STOP": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/freetrial",
+        "ZUORA_AUTO_RENEWAL_STOP": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/cancelautorenewal",
+        "ZUORA_AUTO_RENEWAL_ENABLE": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/enableautorenewal",
+        "ZUORA_PAYMENT_METHOD_UPDATE": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/changepaymentmethod/creditcard",
+        "ZUORA_VALIDATE_PROMO_CODE": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/preview/promocode",
+        "ZUORA_FREEMIUM_PRODUCT_REGISTRATION": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/add",
+        "ZUORA_ENABLE_PAYMENT_VIA_INSTALLMENTS": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/paymentmode/installments",
+        "ZUORA_TOGGLE_PAYMENT_VIA_INSTALLMENTS": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/paymentmode",
+        "SOFT_ENTITLEMENT": "https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/softcheck",
+        "PAYPAL_CHECKOUT_TOKEN": "https://www.nflgamepass.com/api/user/api/users/v1/paypal/getcheckouttoken",
+        "CONTACT_FORM": "https://nfl-functions-prd-we.azurewebsites.net/api/SendSupportEmail?code=9rsqW1AGlLP/9yFf77Dilan7/Ja88OwaaSMXHusHaW74kcITLBNFJw=="},
+        "GIGYA": {"JAVASCRIPT_API_URL": "https://cdns.eu1.gigya.com/js/gigya.js?apiKey=3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp",
+        "SUCCESS_ERROR_CODES": [0], "WRONG_CREDENTIALS_ERROR_CODES": [403042], "THROTTLING_ERROR_CODES":
+        [403048]}, "ZUORA": {"LOCALE": "en_US", "JAVASCRIPT_API_URL": "https://apisandboxstatic.zuora.com/Resources/libs/hosted/1.3.0/zuora-min.js",
+        "IFRAME_BASE_OPTIONS": {"SUPPORTED_CARD_TYPES": "AmericanExpress,JCB,Visa,MasterCard,Discover",
+        "SUBMIT_ENABLED": true, "STYLE": "inline"}}, "DIVA": {"FLASH": {"SWF_PATH":
+        "https://www.nflgamepass.com/api/diva/swf/diva.swf", "MINIMUM_VERSION_NUMBER":
+        20, "PLAYER_SIZE": {"WIDTH": 990, "HEIGHT": 590}, "PARAMS": {"scale": "noscale",
+        "wmode": "direct", "bgcolor": "#000000", "allowfullscreen": "true", "allowscriptaccess":
+        "always", "base": "."}, "SETTINGS": {"LiveNoData": "https://www.nflgamepass.com/api/diva/diva/settings/livenodata/device",
+        "ReplayNoData": "https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/device",
+        "LiveWithData": "https://www.nflgamepass.com/api/diva/diva/settings/livenfl/device",
+        "ReplayWithData": "https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/device",
+        "NoAdsWithData": "https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/device",
+        "VodNoData": "https://www.nflgamepass.com/api/diva/diva/settings/vod/device",
+        "Live24x7": "https://www.nflgamepass.com/api/diva/diva/settings/24h7d/device",
+        "CoachFilm": "https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/device"}},
+        "HTML5": {"CONVIVA": {"IS_ENABLED": true, "ANALYTICS_JAVASCRIPT_API_URL":
+        "https://www.nflgamepass.com/api/diva/scripts/conviva_integration.min.js",
+        "DEFAULT_ANALYTICS_PAYLOAD": {"assetName": "{V.Category1}-{V.Title}", "applicationName":
+        "nfl-prd-html5", "customerKey": "6679b240d0b48c69402268577b537232458a6e78",
+        "viewerId": "{Settings.cs5}", "tags": {"playerVendor": "deltatre", "category":
+        "Diva", "channel": "Diva", "retryNumber": "0", "streamProtocol": "HLS", "contentId":
+        "Diva-{V.ID}"}, "gatewayUrl": "", "log": false}}, "PLAYER_PATH": "https://www.nflgamepass.com/api/diva/html5/divaplayer.html",
+        "PLAYER_LOGO": "/custom/nfl/img/gp-logo__white.svg", "RECOMMENDATIONS_IFRAME_URL":
+        "https://www.nflgamepass.com/api/diva/customoverlay/videolist/video_switch.html?useHashNav=false&templateName=fullVideo&mrssUrl=https://www.nflgamepass.com/api/en/content/v1/rss-feeds/{videoId}/video-raccomendation&errorText=There%20are%20no%20videos%20available%20at%20the%20moment.&pollingTime=00:02:00&ribbonBgColor=0xef082b&ribbonFgColor=0x000000&noDescription=true&mode=switch",
+        "SETTINGS": {"LiveNoData": "https://www.nflgamepass.com/api/diva/diva/settings/livenodata/html5",
+        "ReplayNoData": "https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/html5",
+        "LiveWithData": "https://www.nflgamepass.com/api/diva/diva/settings/livenfl/html5",
+        "ReplayWithData": "https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/html5",
+        "NoAdsWithData": "https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/html5",
+        "VodNoData": "https://www.nflgamepass.com/api/diva/diva/settings/vod/html5",
+        "Live24x7": "https://www.nflgamepass.com/api/diva/diva/settings/24h7d/html5",
+        "CoachFilm": "https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/html5"}}},
+        "REDIRECT_URIS": {"ERROR": "error", "LOGIN": "login"}, "ROUTES_DATA_PROVIDERS":
+        {"home": "https://www.nflgamepass.com/api/en/content/v1/web/homepage", "login":
+        "https://www.nflgamepass.com/api/en/content/v1/web/login", "games": "https://www.nflgamepass.com/api/en/content/v1/web/games/seasons",
+        "games_detail": "https://www.nflgamepass.com/api/en/content/v1/web/games/:season/:seasonType/:week/list",
+        "game_page": "https://www.nflgamepass.com/api/en/content/v1/web/games/:season/:gameslug/data",
+        "teams": "https://www.nflgamepass.com/api/en/content/v1/web/teams/list", "team_detail":
+        "https://www.nflgamepass.com/api/en/content/v1/web/teams/:team/videos", "funnel_plans":
+        "https://www.nflgamepass.com/api/en/content/v1/web/funnel/zuora/{{GeolocationService:userInfo.geoLocation.country.isoCode}}/subscription/catalog",
+        "funnel_upgrade_plans": "https://www.nflgamepass.com/api/en/content/v1/web/upgrade/zuora/{{GeolocationService:userInfo.geoLocation.country.isoCode}}/upgrade/{{UserProfileService:basicInfo.upgradeRatePlanTag}}/catalog",
+        "funnel_account": "https://www.nflgamepass.com/api/en/content/v1/web/funnel/account",
+        "funnel_payment": "https://www.nflgamepass.com/api/en/content/v1/web/funnel/payment",
+        "funnel_upgrade_payment": "https://www.nflgamepass.com/api/en/content/v1/web/upgrade/payment",
+        "funnel_confirm": "https://www.nflgamepass.com/api/en/content/v1/web/funnel/confirmation-page",
+        "funnel_upgrade_confirm": "https://www.nflgamepass.com/api/en/content/v1/web/upgrade/confirmation-page",
+        "funnel_unavailable": "https://www.nflgamepass.com/api/en/content/v1/web/funnel/unavailable",
+        "funnel_upgrade_unavailable": "https://www.nflgamepass.com/api/en/content/v1/web/upgrade/unavailable",
+        "funnel_error": "https://www.nflgamepass.com/api/en/content/v1/web/funnel/error",
+        "funnel_upgrade_error": "https://www.nflgamepass.com/api/en/content/v1/web/upgrade/error",
+        "funnel_subscription_renewal": "https://www.nflgamepass.com/api/en/content/v1/web/autorenewal-landing-page/data",
+        "featured": "https://www.nflgamepass.com/api/en/content/v1/web/featured/videos",
+        "featured_video_slug": "https://www.nflgamepass.com/api/en/content/v1/web/featured/show/:video-slug/video",
+        "nfl_shows": "https://www.nflgamepass.com/api/en/content/v1/web/nfl-shows/videos",
+        "nfl_shows_video_slug": "https://www.nflgamepass.com/api/en/content/v1/web/nfl-shows/show/:video-slug/video",
+        "nfl_originals": "https://www.nflgamepass.com/api/en/content/v1/web/nfl-originals/videos",
+        "nfl_originals_video_slug": "https://www.nflgamepass.com/api/en/content/v1/web/nfl-originals/show/:video-slug/video",
+        "video-slug": "https://www.nflgamepass.com/api/en/content/v1/web/videos/:video-slug/video",
+        "network_video_slug": "https://www.nflgamepass.com/api/en/content/v1/web/network/show/:video-slug/video",
+        "featured_local": "http://localhost:61544/v1/web/featured/videos", "redzone":
+        "https://www.nflgamepass.com/api/en/content/v1/web/redzone/videos", "network":
+        "https://www.nflgamepass.com/api/en/content/v1/web/network/data", "terms_of_service":
+        "https://www.nflgamepass.com/api/en/content/v1/web/terms-and-conditions",
+        "discover_the_service": "https://www.nflgamepass.com/api/en/content/v1/web/discover-the-service",
+        "discover_redzone": "https://www.nflgamepass.com/api/en/content/v1/web/discover-redzone",
+        "privacy": "https://www.nflgamepass.com/api/en/content/v1/web/privacy", "support":
+        "https://www.nflgamepass.com/api/en/content/v1/web/support", "faq": "https://www.nflgamepass.com/api/en/content/v1/web/faq",
+        "cookies_policy": "https://www.nflgamepass.com/api/en/content/v1/web/cookies-policy",
+        "payment_terms": "https://www.nflgamepass.com/api/en/content/v1/web/payment-terms",
+        "account": "https://www.nflgamepass.com/api/en/content/v1/web/subscription/myaccount",
+        "contact-us": "https://www.nflgamepass.com/api/en/content/v1/web/contactus/data",
+        "confirm-subscription": "https://www.nflgamepass.com/api/en/content/v1/web/funnel/confirmation-page",
+        "refund_faq": "https://www.nflgamepass.com/api/en/content/v1/web/exrefund-faq",
+        "sb_competition_tc": "https://www.nflgamepass.com/api/en/content/v1/web/sb_competition_tc",
+        "error": "https://www.nflgamepass.com/api/en/content/v1/web/500", "no-content":
+        "https://www.nflgamepass.com/api/en/content/v1/web/404"}, "LOCAL_STORAGE":
+        {"OAUTH_KEY": "oauth_payload", "PREFERENCES_KEY": "preferences", "TRANSACTION_DETAILS_KEY":
+        "transaction_details"}, "GOOGLE": {"RECAPTCHA": {"JAVASCRIPT_API_URL": "https://www.google.com/recaptcha/api.js?onload=googleReCaptchaOnloadCallback&render=explicit",
+        "SITE_KEY": "6LfVuiIUAAAAAAFdPEG3HtHJGbKl0PqEKvRws9hV"}}, "PAYPAL": {"REDIRECT_URIS":
+        {"PRODUCT_PURCHASE": {"SUCCESS": "{{window:location.origin}}/en/subscribe/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=purchase&success-redirect=/en/subscribe/confirmation&error-redirect=/en/subscribe/paypal/error",
+        "ERROR": "{{window:location.origin}}/en/subscribe/paypal/error"}, "PRODUCT_UPGRADE":
+        {"SUCCESS": "{{window:location.origin}}/en/upgrade/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=upgrade&success-redirect=/en/upgrade/confirmation&error-redirect=/en/upgrade/paypal/error",
+        "ERROR": "{{window:location.origin}}/en/upgrade/paypal/error"}, "SUCCESS":
+        "{{window:location.origin}}/en/subscribe/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=purchase&success-redirect=/en/subscribe/confirmation&error-redirect=/en/subscribe/paypal/error",
+        "ERROR": "{{window:location.origin}}/en/subscribe/paypal/error"}}, "POLLING":
+        {"VIDEO_STATUS_CHECK": {"INTERVAL": 10000}}, "ADOBE_HEARTBEAT": {"VISITOR":
+        {"ID": "F75C3025512D2C1D0A490D44@AdobeOrg", "TRACKING_SERVER": "smetrics.nfl.com"},
+        "APP_MEASUREMENT": {"TRACKING_SERVER": "nfl.hb.omtrdc.net", "ACCOUNT": "nflprod",
+        "CHARSET": "UTF-8"}, "MEDIA_CONFIGURATION": {"TRACKING_SERVER": "nfl.hb.omtrdc.net",
+        "PLAYER_NAME": "Diva Player", "CHANNEL": "NFL GamePass - Prod.", "DEBUG_LOGGING":
+        false, "APP_VERSION": "Diva Player", "SSL": false, "OVP": "NFL GamePass OVP
+        - Prod."}}, "MEDIA": {"HOME_PAGE": {"SHOW_VIDEO": false, "HERO_VIDEO": "https://www.nflgamepass.com/api/images/video/upload/v1497617597/HomePageVideoGP_2500Kb_1280_no_Audio_lglspi.mp4",
+        "HERO_VIDEO_MOB": "https://www.nflgamepass.com/api/images/video/upload/v1497612187/HomePageVideoGP_1500Kb_720_no_Audio_esd7az.mp4"},
+        "DISCOVER_THE_SERVICE": {"HERO_VIDEO": "https://www.nflgamepass.com/api/images/video/upload/v1532794979/OVE_003_Game_Pass_Product_Video_V01_12_5Mbps_sbgdzr.mp4",
+        "HERO_VIDEO_MOB": "https://www.nflgamepass.com/api/images/video/upload/v1532794979/OVE_003_Game_Pass_Product_Video_V01_12_5Mbps_sbgdzr.mp4"},
+        "REDZONE": {"HERO_VIDEO": "https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4",
+        "HERO_VIDEO_MOB": "https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4"},
+        "WELCOME": {"HERO_VIDEO": "https://www.nflgamepass.com/api/images/video/upload/v1535355398/ScottHanson_Game_Pass_Read_5Mbps_ddu4rr.mp4",
+        "HERO_VIDEO_MOB": "https://www.nflgamepass.com/api/images/video/upload/v1535355398/ScottHanson_Game_Pass_Read_5Mbps_ddu4rr.mp4"}},
+        "COUNTRIES": {"ISO3611": [{"isoCode": "AX", "isEuropean": true}, {"isoCode":
+        "AL", "isEuropean": true}, {"isoCode": "DZ", "isEuropean": false}, {"isoCode":
+        "AS", "isEuropean": false}, {"isoCode": "AD", "isEuropean": true}, {"isoCode":
+        "AO", "isEuropean": false}, {"isoCode": "AI", "isEuropean": false}, {"isoCode":
+        "AQ", "isEuropean": false}, {"isoCode": "AG", "isEuropean": false}, {"isoCode":
+        "AR", "isEuropean": false}, {"isoCode": "AM", "isEuropean": true}, {"isoCode":
+        "AW", "isEuropean": false}, {"isoCode": "AU", "isEuropean": false}, {"isoCode":
+        "AT", "isEuropean": true}, {"isoCode": "AZ", "isEuropean": true}, {"isoCode":
+        "BS", "isEuropean": false}, {"isoCode": "BH", "isEuropean": false}, {"isoCode":
+        "BD", "isEuropean": false}, {"isoCode": "BB", "isEuropean": false}, {"isoCode":
+        "BY", "isEuropean": true}, {"isoCode": "BE", "isEuropean": true}, {"isoCode":
+        "BZ", "isEuropean": false}, {"isoCode": "BJ", "isEuropean": false}, {"isoCode":
+        "BM", "isEuropean": false}, {"isoCode": "BT", "isEuropean": false}, {"isoCode":
+        "BO", "isEuropean": false}, {"isoCode": "BA", "isEuropean": true}, {"isoCode":
+        "BW", "isEuropean": false}, {"isoCode": "BV", "isEuropean": false}, {"isoCode":
+        "BR", "isEuropean": false}, {"isoCode": "VG", "isEuropean": false}, {"isoCode":
+        "IO", "isEuropean": false}, {"isoCode": "BN", "isEuropean": false}, {"isoCode":
+        "BG", "isEuropean": true}, {"isoCode": "BF", "isEuropean": false}, {"isoCode":
+        "BI", "isEuropean": false}, {"isoCode": "KH", "isEuropean": false}, {"isoCode":
+        "CM", "isEuropean": false}, {"isoCode": "CA", "isEuropean": false}, {"isoCode":
+        "CV", "isEuropean": false}, {"isoCode": "KY", "isEuropean": false}, {"isoCode":
+        "CF", "isEuropean": false}, {"isoCode": "TD", "isEuropean": false}, {"isoCode":
+        "CL", "isEuropean": false}, {"isoCode": "CN", "isEuropean": false}, {"isoCode":
+        "HK", "isEuropean": false}, {"isoCode": "MO", "isEuropean": false}, {"isoCode":
+        "CX", "isEuropean": false}, {"isoCode": "CC", "isEuropean": false}, {"isoCode":
+        "CO", "isEuropean": false}, {"isoCode": "KM", "isEuropean": false}, {"isoCode":
+        "CG", "isEuropean": false}, {"isoCode": "CD", "isEuropean": false}, {"isoCode":
+        "CK", "isEuropean": false}, {"isoCode": "CR", "isEuropean": false}, {"isoCode":
+        "CI", "isEuropean": false}, {"isoCode": "HR", "isEuropean": true}, {"isoCode":
+        "CU", "isEuropean": false}, {"isoCode": "CY", "isEuropean": true}, {"isoCode":
+        "CZ", "isEuropean": true}, {"isoCode": "DK", "isEuropean": true}, {"isoCode":
+        "DJ", "isEuropean": false}, {"isoCode": "DM", "isEuropean": false}, {"isoCode":
+        "DO", "isEuropean": false}, {"isoCode": "EC", "isEuropean": false}, {"isoCode":
+        "EG", "isEuropean": false}, {"isoCode": "SV", "isEuropean": false}, {"isoCode":
+        "GQ", "isEuropean": false}, {"isoCode": "ER", "isEuropean": false}, {"isoCode":
+        "EE", "isEuropean": true}, {"isoCode": "ET", "isEuropean": false}, {"isoCode":
+        "FK", "isEuropean": false}, {"isoCode": "FO", "isEuropean": true}, {"isoCode":
+        "FJ", "isEuropean": false}, {"isoCode": "FI", "isEuropean": true}, {"isoCode":
+        "FR", "isEuropean": true}, {"isoCode": "GF", "isEuropean": false}, {"isoCode":
+        "PF", "isEuropean": false}, {"isoCode": "TF", "isEuropean": false}, {"isoCode":
+        "GA", "isEuropean": false}, {"isoCode": "GM", "isEuropean": false}, {"isoCode":
+        "GE", "isEuropean": true}, {"isoCode": "DE", "isEuropean": true}, {"isoCode":
+        "GH", "isEuropean": false}, {"isoCode": "GI", "isEuropean": true}, {"isoCode":
+        "GR", "isEuropean": true}, {"isoCode": "GL", "isEuropean": false}, {"isoCode":
+        "GD", "isEuropean": false}, {"isoCode": "GP", "isEuropean": false}, {"isoCode":
+        "GU", "isEuropean": false}, {"isoCode": "GT", "isEuropean": false}, {"isoCode":
+        "GG", "isEuropean": true}, {"isoCode": "GN", "isEuropean": false}, {"isoCode":
+        "GW", "isEuropean": false}, {"isoCode": "GY", "isEuropean": false}, {"isoCode":
+        "HT", "isEuropean": false}, {"isoCode": "HM", "isEuropean": false}, {"isoCode":
+        "VA", "isEuropean": true}, {"isoCode": "HN", "isEuropean": false}, {"isoCode":
+        "HU", "isEuropean": true}, {"isoCode": "IS", "isEuropean": true}, {"isoCode":
+        "IN", "isEuropean": false}, {"isoCode": "ID", "isEuropean": false}, {"isoCode":
+        "IR", "isEuropean": false}, {"isoCode": "IQ", "isEuropean": false}, {"isoCode":
+        "IE", "isEuropean": true}, {"isoCode": "IM", "isEuropean": true}, {"isoCode":
+        "IL", "isEuropean": false}, {"isoCode": "IT", "isEuropean": true}, {"isoCode":
+        "JM", "isEuropean": false}, {"isoCode": "JP", "isEuropean": false}, {"isoCode":
+        "JE", "isEuropean": true}, {"isoCode": "JO", "isEuropean": false}, {"isoCode":
+        "KZ", "isEuropean": true}, {"isoCode": "KE", "isEuropean": false}, {"isoCode":
+        "KI", "isEuropean": false}, {"isoCode": "KP", "isEuropean": false}, {"isoCode":
+        "KR", "isEuropean": false}, {"isoCode": "KW", "isEuropean": false}, {"isoCode":
+        "KG", "isEuropean": true}, {"isoCode": "LA", "isEuropean": false}, {"isoCode":
+        "LV", "isEuropean": true}, {"isoCode": "LB", "isEuropean": false}, {"isoCode":
+        "LS", "isEuropean": false}, {"isoCode": "LR", "isEuropean": false}, {"isoCode":
+        "LY", "isEuropean": false}, {"isoCode": "LI", "isEuropean": true}, {"isoCode":
+        "LT", "isEuropean": true}, {"isoCode": "LU", "isEuropean": true}, {"isoCode":
+        "MK", "isEuropean": true}, {"isoCode": "MG", "isEuropean": false}, {"isoCode":
+        "MW", "isEuropean": false}, {"isoCode": "MY", "isEuropean": false}, {"isoCode":
+        "MV", "isEuropean": false}, {"isoCode": "ML", "isEuropean": false}, {"isoCode":
+        "MT", "isEuropean": true}, {"isoCode": "MH", "isEuropean": false}, {"isoCode":
+        "MQ", "isEuropean": false}, {"isoCode": "MR", "isEuropean": false}, {"isoCode":
+        "MU", "isEuropean": false}, {"isoCode": "YT", "isEuropean": false}, {"isoCode":
+        "MX", "isEuropean": false}, {"isoCode": "FM", "isEuropean": false}, {"isoCode":
+        "MD", "isEuropean": true}, {"isoCode": "MC", "isEuropean": true}, {"isoCode":
+        "MN", "isEuropean": false}, {"isoCode": "ME", "isEuropean": true}, {"isoCode":
+        "MS", "isEuropean": false}, {"isoCode": "MA", "isEuropean": false}, {"isoCode":
+        "MZ", "isEuropean": false}, {"isoCode": "MM", "isEuropean": false}, {"isoCode":
+        "NA", "isEuropean": false}, {"isoCode": "NR", "isEuropean": false}, {"isoCode":
+        "NP", "isEuropean": false}, {"isoCode": "NL", "isEuropean": true}, {"isoCode":
+        "AN", "isEuropean": false}, {"isoCode": "NC", "isEuropean": false}, {"isoCode":
+        "NZ", "isEuropean": false}, {"isoCode": "NI", "isEuropean": false}, {"isoCode":
+        "NE", "isEuropean": false}, {"isoCode": "NG", "isEuropean": false}, {"isoCode":
+        "NU", "isEuropean": false}, {"isoCode": "NF", "isEuropean": false}, {"isoCode":
+        "MP", "isEuropean": false}, {"isoCode": "NO", "isEuropean": true}, {"isoCode":
+        "OM", "isEuropean": false}, {"isoCode": "PK", "isEuropean": false}, {"isoCode":
+        "PW", "isEuropean": false}, {"isoCode": "PS", "isEuropean": false}, {"isoCode":
+        "PA", "isEuropean": false}, {"isoCode": "PG", "isEuropean": false}, {"isoCode":
+        "PY", "isEuropean": false}, {"isoCode": "PE", "isEuropean": false}, {"isoCode":
+        "PH", "isEuropean": false}, {"isoCode": "PN", "isEuropean": false}, {"isoCode":
+        "PL", "isEuropean": true}, {"isoCode": "PT", "isEuropean": true}, {"isoCode":
+        "PR", "isEuropean": false}, {"isoCode": "QA", "isEuropean": false}, {"isoCode":
+        "RE", "isEuropean": false}, {"isoCode": "RO", "isEuropean": true}, {"isoCode":
+        "RU", "isEuropean": true}, {"isoCode": "RW", "isEuropean": false}, {"isoCode":
+        "BL", "isEuropean": false}, {"isoCode": "SH", "isEuropean": false}, {"isoCode":
+        "KN", "isEuropean": false}, {"isoCode": "LC", "isEuropean": false}, {"isoCode":
+        "MF", "isEuropean": false}, {"isoCode": "PM", "isEuropean": false}, {"isoCode":
+        "VC", "isEuropean": false}, {"isoCode": "WS", "isEuropean": false}, {"isoCode":
+        "SM", "isEuropean": true}, {"isoCode": "ST", "isEuropean": false}, {"isoCode":
+        "SA", "isEuropean": false}, {"isoCode": "SN", "isEuropean": false}, {"isoCode":
+        "RS", "isEuropean": true}, {"isoCode": "SC", "isEuropean": false}, {"isoCode":
+        "SL", "isEuropean": false}, {"isoCode": "SG", "isEuropean": false}, {"isoCode":
+        "SK", "isEuropean": true}, {"isoCode": "SI", "isEuropean": true}, {"isoCode":
+        "SB", "isEuropean": false}, {"isoCode": "SO", "isEuropean": false}, {"isoCode":
+        "ZA", "isEuropean": false}, {"isoCode": "GS", "isEuropean": false}, {"isoCode":
+        "SS", "isEuropean": false}, {"isoCode": "ES", "isEuropean": true}, {"isoCode":
+        "LK", "isEuropean": false}, {"isoCode": "SD", "isEuropean": false}, {"isoCode":
+        "SR", "isEuropean": false}, {"isoCode": "SJ", "isEuropean": false}, {"isoCode":
+        "SZ", "isEuropean": false}, {"isoCode": "SE", "isEuropean": true}, {"isoCode":
+        "CH", "isEuropean": true}, {"isoCode": "SY", "isEuropean": false}, {"isoCode":
+        "TW", "isEuropean": false}, {"isoCode": "TJ", "isEuropean": true}, {"isoCode":
+        "TZ", "isEuropean": false}, {"isoCode": "TH", "isEuropean": false}, {"isoCode":
+        "TL", "isEuropean": false}, {"isoCode": "TG", "isEuropean": false}, {"isoCode":
+        "TK", "isEuropean": false}, {"isoCode": "TO", "isEuropean": false}, {"isoCode":
+        "TT", "isEuropean": false}, {"isoCode": "TN", "isEuropean": false}, {"isoCode":
+        "TR", "isEuropean": false}, {"isoCode": "TM", "isEuropean": true}, {"isoCode":
+        "TC", "isEuropean": false}, {"isoCode": "TV", "isEuropean": false}, {"isoCode":
+        "UG", "isEuropean": false}, {"isoCode": "UA", "isEuropean": true}, {"isoCode":
+        "AE", "isEuropean": false}, {"isoCode": "GB", "isEuropean": true}, {"isoCode":
+        "US", "isEuropean": false}, {"isoCode": "UM", "isEuropean": false}, {"isoCode":
+        "UY", "isEuropean": false}, {"isoCode": "UZ", "isEuropean": true}, {"isoCode":
+        "VU", "isEuropean": false}, {"isoCode": "VE", "isEuropean": false}, {"isoCode":
+        "VN", "isEuropean": false}, {"isoCode": "VI", "isEuropean": false}, {"isoCode":
+        "WF", "isEuropean": false}, {"isoCode": "EH", "isEuropean": false}, {"isoCode":
+        "YE", "isEuropean": false}, {"isoCode": "ZM", "isEuropean": false}, {"isoCode":
+        "ZW", "isEuropean": false}]}}}'
     headers:
       Access-Control-Allow-Headers: [Content-Type]
       Access-Control-Allow-Methods: [GET]
       Access-Control-Allow-Origin: ['*']
-      Cache-Control: [max-age=120]
+      Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:43 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:07:43 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:04 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:38:04 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
       content-length: ['24011']
     status: {code: 200, message: OK}
 - request:
-    body: apiKey=3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp&loginID=REDACTED&password=REDACTED
+    body: null
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
+      Authorization: [REDACTED]
       Connection: [keep-alive]
-      Content-Length: ['119']
-      Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-requests/2.18.4]
-    method: POST
-    uri: https://accounts.us1.gigya.com/accounts.login
+    method: GET
+    uri: https://www.nflgamepass.com/api/user/api/users/v1/subscription/myaccount
   response:
     body:
-      pretty:
-        UID: 8caecb9d8857dc3fd9c7b2ce9fcc5368
-        UIDSignature: jDtHh78jWgQjQ5TXZdf4Pr4B8U0=
-        apiVersion: 2
-        callId: 8c80917930944b4dbfc8f445c4eeb536
-        created: '2012-08-04T11:20:09.000Z'
-        createdTimestamp: 1344079209
-        errorCode: 0
-        isActive: true
-        isRegistered: true
-        isVerified: true
-        lastLogin: '2018-09-08T12:05:43.513Z'
-        lastLoginTimestamp: 1536408343
-        lastUpdated: '2018-09-04T06:49:25.683Z'
-        lastUpdatedTimestamp: 1536043765683
-        loginProvider: site
-        newUser: false
-        oldestDataUpdated: '2012-08-04T11:20:09.000Z'
-        oldestDataUpdatedTimestamp: 1344079209000
-        profile: REDACTED
-        registered: '2018-03-02T04:03:59.927Z'
-        registeredTimestamp: 1519963439
-        sessionInfo: {cookieName: gac_3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp,
-          cookieValue: st2.NG4GulOF64K1IE9OoNl9wJF2bwk.ql_aOr5utCPQoWzYAFkJWg.Vx3PlNqPxRNmqrZQM1D80egy9Jg}
-        signatureTimestamp: '1536408343'
-        socialProviders: site
-        statusCode: 200
-        statusReason: OK
-        time: '2018-09-08T12:05:43.517Z'
-        verified: '2018-03-02T04:03:59.786Z'
-        verifiedTimestamp: 1519963439786
-      string: "{\r\n  \"callId\": \"8c80917930944b4dbfc8f445c4eeb536\",\r\n  \"errorCode\"\
-        : 0,\r\n  \"apiVersion\": 2,\r\n  \"statusCode\": 200,\r\n  \"statusReason\"\
-        : \"OK\",\r\n  \"time\": \"2018-09-08T12:05:43.517Z\",\r\n  \"registeredTimestamp\"\
-        : 1519963439,\r\n  \"UID\": \"8caecb9d8857dc3fd9c7b2ce9fcc5368\",\r\n  \"\
-        UIDSignature\": \"jDtHh78jWgQjQ5TXZdf4Pr4B8U0=\",\r\n  \"signatureTimestamp\"\
-        : \"1536408343\",\r\n  \"created\": \"2012-08-04T11:20:09.000Z\",\r\n  \"\
-        createdTimestamp\": 1344079209,\r\n  \"isActive\": true,\r\n  \"isRegistered\"\
-        : true,\r\n  \"isVerified\": true,\r\n  \"lastLogin\": \"2018-09-08T12:05:43.513Z\"\
-        ,\r\n  \"lastLoginTimestamp\": 1536408343,\r\n  \"lastUpdated\": \"2018-09-04T06:49:25.683Z\"\
-        ,\r\n  \"lastUpdatedTimestamp\": 1536043765683,\r\n  \"loginProvider\": \"\
-        site\",\r\n  \"oldestDataUpdated\": \"2012-08-04T11:20:09.000Z\",\r\n  \"\
-        oldestDataUpdatedTimestamp\": 1344079209000,\r\n  \"profile\": \"REDACTED\"\r\n,\r\n  \"\
-        registered\": \"2018-03-02T04:03:59.927Z\",\r\n  \"socialProviders\": \"site\"\
-        ,\r\n  \"verified\": \"2018-03-02T04:03:59.786Z\",\r\n  \"verifiedTimestamp\"\
-        : 1519963439786,\r\n  \"newUser\": false,\r\n  \"sessionInfo\": {\r\n    \"\
-        cookieName\": \"gac_3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp\"\
-        ,\r\n    \"cookieValue\": \"st2.NG4GulOF64K1IE9OoNl9wJF2bwk.ql_aOr5utCPQoWzYAFkJWg.Vx3PlNqPxRNmqrZQM1D80egy9Jg\"\
-        \r\n  }\r\n}"
+      pretty: {code: UR_10006, httpStatusCode: 401, id: 124b813f-fbf0-4520-b39d-610e02eb46c5,
+        message: error_unauthorised, validationErrors: null}
+      string: '{"id": "124b813f-fbf0-4520-b39d-610e02eb46c5", "code": "UR_10006",
+        "message": "error_unauthorised", "httpStatusCode": 401, "validationErrors":
+        null}'
     headers:
-      Cache-Control: [private]
+      Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
-      Content-Type: [text/javascript; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:43 GMT']
-      P3P: [CP="IDC COR PSA DEV ADM OUR IND ONL"]
-      Vary: [Accept-Encoding]
-      X-CallID: [8c80917930944b4dbfc8f445c4eeb536]
-      X-Gigya-HA-cfg-ver: ['5']
-      X-Robots-Tag: [none]
-      X-Server: [us1d-nomad-g32]
-      X-Soa: ['true, Gator']
-      content-length: ['1404']
-    status: {code: 200, message: OK}
+      Content-Length: ['139']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 11 Sep 2018 08:36:04 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:04 GMT']
+      Pragma: [no-cache]
+      Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
+      Server: [Microsoft-IIS/10.0]
+      WWW-Authenticate: [Bearer]
+      X-Powered-By: [ASP.NET]
+    status: {code: 401, message: Unauthorized}
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&errorCode=0&grant_type=password&password=REDACTED&signature=jDtHh78jWgQjQ5TXZdf4Pr4B8U0%3D&ts=1536408343&username=REDACTED&uuid=8caecb9d8857dc3fd9c7b2ce9fcc5368
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&username=REDACTED&password=REDACTED&grant_type=password
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      Content-Length: ['218']
+      Content-Length: ['113']
       Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-requests/2.18.4]
     method: POST
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_1d36a0ba9d02f532a5a67a4d097b98493c788952c98ff7a43562c80a17c34ba1,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_224af7d5f1585d7225261def62bf4607f6aa952f014184da062e0743b2c60cae,
+      pretty: {access_token: FAKE_TOKEN_980264211e093b3f6d9870875406aa50f649ace1841ba85469ec76bc784eb9f4,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_22e867cdf30bb9058ae32d484e8a9cf68437ec0aae0b0af936bd5e0264e5987c,
         token_type: bearer}
-      string: '{"access_token":"FAKE_TOKEN_1d36a0ba9d02f532a5a67a4d097b98493c788952c98ff7a43562c80a17c34ba1","token_type":"bearer","expires_in":3539,"refresh_token":"FAKE_TOKEN_224af7d5f1585d7225261def62bf4607f6aa952f014184da062e0743b2c60cae"}'
+      string: '{"access_token": "FAKE_TOKEN_980264211e093b3f6d9870875406aa50f649ace1841ba85469ec76bc784eb9f4",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_22e867cdf30bb9058ae32d484e8a9cf68437ec0aae0b0af936bd5e0264e5987c"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Sat, 08 Sep 2018 12:05:43 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:43 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:05 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:05 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -577,7 +802,7 @@ interactions:
       content-length: ['2162']
     status: {code: 200, message: OK}
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_224af7d5f1585d7225261def62bf4607f6aa952f014184da062e0743b2c60cae&grant_type=refresh_token
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_22e867cdf30bb9058ae32d484e8a9cf68437ec0aae0b0af936bd5e0264e5987c&grant_type=refresh_token
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -589,16 +814,17 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_b004e31b64c7d7cd4346524163839d91df60ba72feea080973235ca62bc2020a,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_98956868f137556af165dade6b8d96a8d2eecab5cb974db3dbf342b20cf227de,
+      pretty: {access_token: FAKE_TOKEN_b30d0e2102c7523f80f4cad1949aa1581ce3300b07c50fb9f718d4acd9824289,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_f11893d7197ec270e860df2d1245db20a3d462a3d86cdb93710629a6c8e3b3f0,
         token_type: bearer}
-      string: '{"access_token":"FAKE_TOKEN_b004e31b64c7d7cd4346524163839d91df60ba72feea080973235ca62bc2020a","token_type":"bearer","expires_in":3539,"refresh_token":"FAKE_TOKEN_98956868f137556af165dade6b8d96a8d2eecab5cb974db3dbf342b20cf227de"}'
+      string: '{"access_token": "FAKE_TOKEN_b30d0e2102c7523f80f4cad1949aa1581ce3300b07c50fb9f718d4acd9824289",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_f11893d7197ec270e860df2d1245db20a3d462a3d86cdb93710629a6c8e3b3f0"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Sat, 08 Sep 2018 12:05:44 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:44 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:05 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:05 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -618,111 +844,111 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: network, lastUpdate: '2018-09-08T12:03:30.819Z', title: '', version: '1.0'}
+        header: {id: network, lastUpdate: '2018-09-11T08:36:05.746Z', title: '', version: '1.0'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: landing,
             page_name: 'gamepass international:nfl network:nfl network:landing', site_name: gamepass
               international, site_section: nfl network, site_subsection: nfl network}
           networkEpg:
             futurePrograms:
-            - {description: '"Good Morning Football: Weekend" - Catch up on everything
-                NFL with the latest news, fantasy updates and a look ahead to Sunday''s
-                games. ', duration: 3.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
-              month: 9, programId: 22513596, repeats: null, shortDescription: '"Good
-                Morning Football: Weekend" - Catch up on everything NFL with the latest
-                news, fantasy updates and a look ahead to Sunday''s games. ', showLinkCode: 'Null',
-              startDayEST: 8, startMonthEST: 9, startTime: 1536411600000, startTimeUTC: '2018-09-08T13:00:00Z',
-              team1: null, team2: null, title: GOOD MORNING FOOTBALL WKND}
-            - {description: '"Good Morning Football: Weekend" - Catch up on everything
-                NFL with the latest news, fantasy updates and a look ahead to Sunday''s
-                games. ', duration: 3.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
-              month: 9, programId: 22513597, repeats: null, shortDescription: '"Good
-                Morning Football: Weekend" - Catch up on everything NFL with the latest
-                news, fantasy updates and a look ahead to Sunday''s games. ', showLinkCode: 'Null',
-              startDayEST: 8, startMonthEST: 9, startTime: 1536422400000, startTimeUTC: '2018-09-08T16:00:00Z',
-              team1: null, team2: null, title: GOOD MORNING FOOTBALL WKND}
+            - {description: '"Good Morning Football" - Catch up on everything NFL
+                with the latest news, highlights, and trending topics from across
+                the football world and beyond.', duration: 3.0, featured: 'false',
+              logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 9, programId: 22549523, repeats: p, shortDescription: '"Good
+                Morning Football" - Catch up on everything NFL with the latest news,
+                highlights, and trending topics from across the football world and
+                beyond.', showLinkCode: 'Null', startDayEST: 11, startMonthEST: 9,
+              startTime: 1536663600000, startTimeUTC: '2018-09-11T11:00:00Z', team1: null,
+              team2: null, title: GOOD MORNING FOOTBALL}
+            - {description: '"Good Morning Football" - Catch up on everything NFL
+                with the latest news, highlights, and trending topics from across
+                the football world and beyond.', duration: 3.0, featured: 'false',
+              logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 9, programId: 22549524, repeats: r, shortDescription: '"Good
+                Morning Football" - Catch up on everything NFL with the latest news,
+                highlights, and trending topics from across the football world and
+                beyond.', showLinkCode: 'Null', startDayEST: 11, startMonthEST: 9,
+              startTime: 1536674400000, startTimeUTC: '2018-09-11T14:00:00Z', team1: null,
+              team2: null, title: GOOD MORNING FOOTBALL}
+            - {description: '"Monday Night Football" - Los Angeles Rams vs. Oakland
+                Raiders (From 9/10/18)', duration: 3.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 9, programId: 22549525, repeats: null, shortDescription: '"Monday
+                Night Football" - Los Angeles Rams vs. Oakland Raiders (From 9/10/18)',
+              showLinkCode: 'Null', startDayEST: 11, startMonthEST: 9, startTime: 1536685200000,
+              startTimeUTC: '2018-09-11T17:00:00Z', team1: null, team2: null, title: MONDAY
+                NIGHT FOOTBALL}
+            - {description: '"NFL Up to the Minute" - Go inside the NFL Media newsroom
+                for all the latest NFL news, injury updates and inside information
+                from reporters across the country.', duration: 1.0, featured: 'false',
+              logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 9, programId: 22549526, repeats: p, shortDescription: '"NFL Up
+                to the Minute" - Go inside the NFL Media newsroom for all the latest
+                NFL news, injury updates and inside information from reporters across
+                the country.', showLinkCode: 'Null', startDayEST: 11, startMonthEST: 9,
+              startTime: 1536696000000, startTimeUTC: '2018-09-11T20:00:00Z', team1: null,
+              team2: null, title: NFL UP TO THE MINUTE}
             - {description: '"NFL Fantasy Live" - Michael Fabiano and our NFL.com
                 fantasy experts get you all the latest news and analysis you need
                 to dominate your fantasy matchup.', duration: 1.0, featured: 'false',
               logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
-              month: 9, programId: 22513598, repeats: r, shortDescription: '"NFL Fantasy
+              month: 9, programId: 22549527, repeats: p, shortDescription: '"NFL Fantasy
                 Live" - Michael Fabiano and our NFL.com fantasy experts get you all
                 the latest news and analysis you need to dominate your fantasy matchup.',
-              showLinkCode: 'Null', startDayEST: 8, startMonthEST: 9, startTime: 1536433200000,
-              startTimeUTC: '2018-09-08T19:00:00Z', team1: null, team2: null, title: NFL
+              showLinkCode: 'Null', startDayEST: 11, startMonthEST: 9, startTime: 1536699600000,
+              startTimeUTC: '2018-09-11T21:00:00Z', team1: null, team2: null, title: NFL
                 FANTASY LIVE}
-            - {description: '"NFL Football" - 2018 Week 1: Atlanta Falcons vs. Philadelphia
-                Eagles (From 9/06/18)', duration: 3.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
-              month: 9, programId: 22513599, repeats: null, shortDescription: '"NFL
-                Football" - 2018 Week 1: Atlanta Falcons vs. Philadelphia Eagles (From
-                9/06/18)', showLinkCode: 'Null', startDayEST: 8, startMonthEST: 9,
-              startTime: 1536436800000, startTimeUTC: '2018-09-08T20:00:00Z', team1: null,
+            - {description: '"NFL Power Rankings" - An in depth look at where your
+                team ranks on Elliot Harrison''s rankings of all 32 clubs. Who has
+                moved up and who has lost ground in the NFL? Our experts debate.',
+              duration: 0.5, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 9, programId: 22549528, repeats: null, shortDescription: '"NFL
+                Power Rankings" - An in depth look at where your team ranks on Elliot
+                Harrison''s rankings of all 32 clubs. Who has moved up and who has
+                lost ground in the NFL? Our experts debate.', showLinkCode: 'Null',
+              startDayEST: 11, startMonthEST: 9, startTime: 1536703200000, startTimeUTC: '2018-09-11T22:00:00Z',
+              team1: null, team2: null, title: NFL POWER RANKINGS}
+            - {description: '"21st & Prime" - Deion "Primetime" Sanders takes on the
+                hottest topics from around the NFL as only he can. ', duration: 0.5,
+              featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 9, programId: 22549529, repeats: null, shortDescription: '"21st
+                & Prime" - Deion "Primetime" Sanders takes on the hottest topics from
+                around the NFL as only he can. ', showLinkCode: 'Null', startDayEST: 11,
+              startMonthEST: 9, startTime: 1536705000000, startTimeUTC: '2018-09-11T22:30:00Z',
+              team1: null, team2: null, title: 21ST & PRIME}
+            - {description: '"NFL Total Access" - NFL Network''s nightly flagship
+                program brings you all the latest news, opinions, highlights and interviews
+                from around the NFL. ', duration: 1.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 9, programId: 22549530, repeats: p, shortDescription: '"NFL Total
+                Access" - NFL Network''s nightly flagship program brings you all the
+                latest news, opinions, highlights and interviews from around the NFL. ',
+              showLinkCode: 'Null', startDayEST: 11, startMonthEST: 9, startTime: 1536706800000,
+              startTimeUTC: '2018-09-11T23:00:00Z', team1: null, team2: null, title: NFL
+                TOTAL ACCESS}
+            - {description: '"NFL Football" - 2018 Week 1: Chicago Bears vs. Green
+                Bay Packers (From 9/9/18).', duration: 3.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 9, programId: 22549531, repeats: null, shortDescription: '"NFL
+                Football" - 2018 Week 1: Chicago Bears vs. Green Bay Packers (From
+                9/9/18).', showLinkCode: 'Null', startDayEST: 11, startMonthEST: 9,
+              startTime: 1536710400000, startTimeUTC: '2018-09-12T00:00:00Z', team1: null,
               team2: null, title: FULL GAME BROADCAST}
-            - {description: "\"NFL GameDay Pick'Em\" - \n\nOur team of analysts pick\
-                \ every game, make score predictions, and tell you which players will\
-                \ have a great week. Game picks by the gut, the film, and the analytics. ",
-              duration: 1.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
-              month: 9, programId: 22513600, repeats: null, shortDescription: "\"\
-                NFL GameDay Pick'Em\" - \n\nOur team of analysts pick every game,\
-                \ make score predictions, and tell you which players will have a great\
-                \ week. Game picks by the gut, the film, and the analytics. ", showLinkCode: 'Null',
-              startDayEST: 8, startMonthEST: 9, startTime: 1536447600000, startTimeUTC: '2018-09-08T23:00:00Z',
-              team1: null, team2: null, title: NFL GAMEDAY PICK'EM}
-            - {description: '"Philly Special: Doug Pederson & the 2017 Eagles" - A
-                look at the 2017 Eagles season through the eyes of the Philadelphia
-                coaching staff. ', duration: 1.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
-              month: 9, programId: 22513601, repeats: null, shortDescription: '"Philly
-                Special: Doug Pederson & the 2017 Eagles" - A look at the 2017 Eagles
-                season through the eyes of the Philadelphia coaching staff. ', showLinkCode: 'Null',
-              startDayEST: 8, startMonthEST: 9, startTime: 1536451200000, startTimeUTC: '2018-09-09T00:00:00Z',
-              team1: null, team2: null, title: NFL NETWORK ORIGINAL}
-            - {description: '"America''s Game" - 2017 Philadelphia Eagles - The story
-                of the 2017 Philadelphia Eagles and their run to Super Bowl LII told ',
-              duration: 1.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
-              month: 9, programId: 22513602, repeats: r, shortDescription: '"America''s
-                Game" - 2017 Philadelphia Eagles - The story of the 2017 Philadelphia
-                Eagles and their run to Super Bowl LII told ', showLinkCode: 'Null',
-              startDayEST: 8, startMonthEST: 9, startTime: 1536454800000, startTimeUTC: '2018-09-09T01:00:00Z',
-              team1: null, team2: null, title: AMERICA'S GAME}
-            - {description: "\"Top 10 Endzone Celebrations of 2017\" - Rejoice! Celebrations\
-                \ are back in the end zone! This countdown looks at the best of 2017.\r\
-                \n", duration: 1.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
-              month: 9, programId: 22513603, repeats: r, shortDescription: "\"Top\
-                \ 10 Endzone Celebrations of 2017\" - Rejoice! Celebrations are back\
-                \ in the end zone! This countdown looks at the best of 2017.\r\n",
-              showLinkCode: 'Null', startDayEST: 8, startMonthEST: 9, startTime: 1536458400000,
-              startTimeUTC: '2018-09-09T02:00:00Z', team1: null, team2: null, title: TOP
-                10}
-            - {description: "\"NFL GameDay Pick'Em\" - \n\nOur team of analysts pick\
-                \ every game, make score predictions, and tell you which players will\
-                \ have a great week. Game picks by the gut, the film, and the analytics. ",
-              duration: 1.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
-              month: 9, programId: 22513604, repeats: null, shortDescription: "\"\
-                NFL GameDay Pick'Em\" - \n\nOur team of analysts pick every game,\
-                \ make score predictions, and tell you which players will have a great\
-                \ week. Game picks by the gut, the film, and the analytics. ", showLinkCode: 'Null',
-              startDayEST: 8, startMonthEST: 9, startTime: 1536462000000, startTimeUTC: '2018-09-09T03:00:00Z',
-              team1: null, team2: null, title: NFL GAMEDAY PICK'EM}
-            - {description: '"NFL Fantasy Live" - Michael Fabiano and our NFL.com
-                fantasy experts get you all the latest news and analysis you need
-                to dominate your fantasy matchup.', duration: 1.0, featured: 'false',
+            - {description: '"NFL Total Access" - NFL Network''s nightly flagship
+                program brings you all the latest news, opinions, highlights and interviews
+                from around the NFL. ', duration: 1.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 9, programId: 22549532, repeats: r, shortDescription: '"NFL Total
+                Access" - NFL Network''s nightly flagship program brings you all the
+                latest news, opinions, highlights and interviews from around the NFL. ',
+              showLinkCode: 'Null', startDayEST: 11, startMonthEST: 9, startTime: 1536721200000,
+              startTimeUTC: '2018-09-12T03:00:00Z', team1: null, team2: null, title: NFL
+                TOTAL ACCESS}
+            liveProgram: {description: '"Monday Night Football" - Los Angeles Rams
+                vs. Oakland Raiders (From 9/10/18)', duration: 3.0, featured: 'false',
               logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
-              month: 9, programId: 22513605, repeats: r, shortDescription: '"NFL Fantasy
-                Live" - Michael Fabiano and our NFL.com fantasy experts get you all
-                the latest news and analysis you need to dominate your fantasy matchup.',
-              showLinkCode: 'Null', startDayEST: 9, startMonthEST: 9, startTime: 1536465600000,
-              startTimeUTC: '2018-09-09T04:00:00Z', team1: null, team2: null, title: NFL
-                FANTASY LIVE}
-            liveProgram: {description: "\"NFL GameDay Pick'Em\" - \n\nOur team of\
-                \ analysts pick every game, make score predictions, and tell you which\
-                \ players will have a great week. Game picks by the gut, the film,\
-                \ and the analytics. ", duration: 1.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
-              month: 9, programId: 22513595, repeats: null, shortDescription: "\"\
-                NFL GameDay Pick'Em\" - \n\nOur team of analysts pick every game,\
-                \ make score predictions, and tell you which players will have a great\
-                \ week. Game picks by the gut, the film, and the analytics. ", showLinkCode: 'Null',
-              startDayEST: 8, startMonthEST: 9, startTime: 1536408000000, startTimeUTC: '2018-09-08T12:00:00Z',
-              team1: null, team2: null, title: NFL GAMEDAY PICK'EM}
+              month: 9, programId: 22545316, repeats: null, shortDescription: '"Monday
+                Night Football" - Los Angeles Rams vs. Oakland Raiders (From 9/10/18)',
+              showLinkCode: 'Null', startDayEST: 11, startMonthEST: 9, startTime: 1536652800000,
+              startTimeUTC: '2018-09-11T08:00:00Z', team1: null, team2: null, title: MONDAY
+                NIGHT FOOTBALL}
           networkLiveVideo:
             content:
             - description: '<p>NFL Network Channel</p>
@@ -796,146 +1022,130 @@ interactions:
               title: AP_Seahawks_Wilson
             title: "NFL Network\_"
             type: story
-      string: "{\"header\":{\"id\":\"network\",\"version\":\"1.0\",\"title\":\"\"\
-        ,\"lastUpdate\":\"2018-09-08T12:03:30.819Z\"},\"modules\":{\"notLoggedTeaser\"\
-        :{\"type\":\"story\",\"_translationId\":\"474d2089-e3ce-4b93-9fff-a09aaa481b81\"\
-        ,\"_entityId\":\"52e45f3f-2e51-4051-8b2f-594ecb82e5fd\",\"selfUrl\":\"https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/stories/nfl-network-mobile\"\
-        ,\"slug\":\"nfl-network-mobile\",\"title\":\"NFL Network\_\",\"tags\":[{\"\
-        type\":\"tag\",\"_translationId\":\"b4a5501b-bf30-4fe8-ae4c-bc8eb075bd87\"\
-        ,\"_entityId\":\"f33f8bbc-bca7-4aad-89e7-4a079b8dd38a\",\"selfUrl\":\"https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/tags/network-heromodule-not-logged\"\
-        ,\"title\":\"network-heromodule-not-logged\",\"slug\":\"network-heromodule-not-logged\"\
-        ,\"neutralSlug\":\"network-heromodule-not-logged\",\"externalSourceName\"\
-        :null,\"externalSourceReference\":{\"sourceId\":null,\"sourceName\":null},\"\
-        extraData\":null,\"fields\":{}}],\"relations\":[],\"references\":{},\"fields\"\
-        :{},\"createdBy\":\"domenico ventura\",\"lastUpdatedBy\":\"marco lorenzi\"\
-        ,\"lastUpdatedDate\":\"2018-06-29T15:57:20.633Z\",\"contentDate\":\"2017-08-02T11:05:25.08Z\"\
-        ,\"context\":null,\"featured\":0,\"headline\":\"\",\"summary\":\"<p>Watch\
-        \ the NFL Network channel live 24 hours a day, 7 days a week.Plus a huge library\
-        \ of on demand films, like A Football Life, The Timeline, Hard Knocks and\
-        \ Total Access</p>\\n\",\"parts\":[{\"type\":\"markdown\",\"content\":\"<p>Watch\
-        \ the NFL Network channel live 24 hours a day, 7 days a week.Plus a huge library\
-        \ of on demand films, like A Football Life, The Timeline, Hard Knocks and\
-        \ Total Access</p>\\n\",\"contextualFields\":{}}],\"thumbnail\":{\"title\"\
-        :\"AP_Seahawks_Wilson\",\"templateUrl\":\"https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/l7wc80cv63dm6cveggqg\"\
-        ,\"thumbnailUrl\":\"https://nflgp-prd.akamaized.net/api/images/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_jpg/l7wc80cv63dm6cveggqg\"\
-        ,\"format\":\"jpg\",\"overriddenFormats\":{}}},\"networkLiveVideo\":{\"texts\"\
-        :{\"title\":\"videos-list-title\",\"subTitle\":\"videos-list-subtitle\"},\"\
-        content\":[{\"videoId\":\"86696b55-9d15-4625-856c-d88a8cdb9f33\",\"title\"\
-        :\"NFL Network\",\"description\":\"<p>NFL Network Channel</p>\\n\",\"kind\"\
-        :\"NFL Network Live video\",\"videoStatus\":\"LIVE\",\"videoDuration\":\"\"\
-        ,\"trimmedVideoDuration\":\"\",\"slug\":\"nfl-network-channel\",\"videoThumbnail\"\
-        :{\"templateUrl\":\"https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/l86u2cmbhskwgq7nmsph\"\
-        ,\"overridenFormats\":{}},\"week\":null,\"season\":null,\"seasonType\":null,\"\
-        scheduleDate\":\"2017-05-30 14:41:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null}]},\"\
-        networkEpg\":{\"liveProgram\":{\"programId\":22513595,\"startTime\":1536408000000,\"\
-        startTimeUTC\":\"2018-09-08T12:00:00Z\",\"duration\":1.0,\"repeats\":null,\"\
-        team1\":null,\"team2\":null,\"month\":9,\"showLinkCode\":\"Null\",\"featured\"\
-        :\"false\",\"startMonthEST\":9,\"startDayEST\":8,\"title\":\"NFL GAMEDAY PICK'EM\"\
-        ,\"description\":\"\\\"NFL GameDay Pick'Em\\\" - \\n\\nOur team of analysts\
-        \ pick every game, make score predictions, and tell you which players will\
-        \ have a great week. Game picks by the gut, the film, and the analytics. \"\
-        ,\"shortDescription\":\"\\\"NFL GameDay Pick'Em\\\" - \\n\\nOur team of analysts\
-        \ pick every game, make score predictions, and tell you which players will\
-        \ have a great week. Game picks by the gut, the film, and the analytics. \"\
-        ,\"logo\":\"http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png\"\
-        },\"futurePrograms\":[{\"programId\":22513596,\"startTime\":1536411600000,\"\
-        startTimeUTC\":\"2018-09-08T13:00:00Z\",\"duration\":3.0,\"repeats\":null,\"\
-        team1\":null,\"team2\":null,\"month\":9,\"showLinkCode\":\"Null\",\"featured\"\
-        :\"false\",\"startMonthEST\":9,\"startDayEST\":8,\"title\":\"GOOD MORNING\
-        \ FOOTBALL WKND\",\"description\":\"\\\"Good Morning Football: Weekend\\\"\
-        \ - Catch up on everything NFL with the latest news, fantasy updates and a\
-        \ look ahead to Sunday's games. \",\"shortDescription\":\"\\\"Good Morning\
-        \ Football: Weekend\\\" - Catch up on everything NFL with the latest news,\
-        \ fantasy updates and a look ahead to Sunday's games. \",\"logo\":\"http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png\"\
-        },{\"programId\":22513597,\"startTime\":1536422400000,\"startTimeUTC\":\"\
-        2018-09-08T16:00:00Z\",\"duration\":3.0,\"repeats\":null,\"team1\":null,\"\
-        team2\":null,\"month\":9,\"showLinkCode\":\"Null\",\"featured\":\"false\"\
-        ,\"startMonthEST\":9,\"startDayEST\":8,\"title\":\"GOOD MORNING FOOTBALL WKND\"\
-        ,\"description\":\"\\\"Good Morning Football: Weekend\\\" - Catch up on everything\
-        \ NFL with the latest news, fantasy updates and a look ahead to Sunday's games.\
-        \ \",\"shortDescription\":\"\\\"Good Morning Football: Weekend\\\" - Catch\
-        \ up on everything NFL with the latest news, fantasy updates and a look ahead\
-        \ to Sunday's games. \",\"logo\":\"http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png\"\
-        },{\"programId\":22513598,\"startTime\":1536433200000,\"startTimeUTC\":\"\
-        2018-09-08T19:00:00Z\",\"duration\":1.0,\"repeats\":\"r\",\"team1\":null,\"\
-        team2\":null,\"month\":9,\"showLinkCode\":\"Null\",\"featured\":\"false\"\
-        ,\"startMonthEST\":9,\"startDayEST\":8,\"title\":\"NFL FANTASY LIVE\",\"description\"\
-        :\"\\\"NFL Fantasy Live\\\" - Michael Fabiano and our NFL.com fantasy experts\
-        \ get you all the latest news and analysis you need to dominate your fantasy\
-        \ matchup.\",\"shortDescription\":\"\\\"NFL Fantasy Live\\\" - Michael Fabiano\
-        \ and our NFL.com fantasy experts get you all the latest news and analysis\
-        \ you need to dominate your fantasy matchup.\",\"logo\":\"http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png\"\
-        },{\"programId\":22513599,\"startTime\":1536436800000,\"startTimeUTC\":\"\
-        2018-09-08T20:00:00Z\",\"duration\":3.0,\"repeats\":null,\"team1\":null,\"\
-        team2\":null,\"month\":9,\"showLinkCode\":\"Null\",\"featured\":\"false\"\
-        ,\"startMonthEST\":9,\"startDayEST\":8,\"title\":\"FULL GAME BROADCAST\",\"\
-        description\":\"\\\"NFL Football\\\" - 2018 Week 1: Atlanta Falcons vs. Philadelphia\
-        \ Eagles (From 9/06/18)\",\"shortDescription\":\"\\\"NFL Football\\\" - 2018\
-        \ Week 1: Atlanta Falcons vs. Philadelphia Eagles (From 9/06/18)\",\"logo\"\
-        :\"http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png\"\
-        },{\"programId\":22513600,\"startTime\":1536447600000,\"startTimeUTC\":\"\
-        2018-09-08T23:00:00Z\",\"duration\":1.0,\"repeats\":null,\"team1\":null,\"\
-        team2\":null,\"month\":9,\"showLinkCode\":\"Null\",\"featured\":\"false\"\
-        ,\"startMonthEST\":9,\"startDayEST\":8,\"title\":\"NFL GAMEDAY PICK'EM\",\"\
-        description\":\"\\\"NFL GameDay Pick'Em\\\" - \\n\\nOur team of analysts pick\
-        \ every game, make score predictions, and tell you which players will have\
-        \ a great week. Game picks by the gut, the film, and the analytics. \",\"\
-        shortDescription\":\"\\\"NFL GameDay Pick'Em\\\" - \\n\\nOur team of analysts\
-        \ pick every game, make score predictions, and tell you which players will\
-        \ have a great week. Game picks by the gut, the film, and the analytics. \"\
-        ,\"logo\":\"http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png\"\
-        },{\"programId\":22513601,\"startTime\":1536451200000,\"startTimeUTC\":\"\
-        2018-09-09T00:00:00Z\",\"duration\":1.0,\"repeats\":null,\"team1\":null,\"\
-        team2\":null,\"month\":9,\"showLinkCode\":\"Null\",\"featured\":\"false\"\
-        ,\"startMonthEST\":9,\"startDayEST\":8,\"title\":\"NFL NETWORK ORIGINAL\"\
-        ,\"description\":\"\\\"Philly Special: Doug Pederson & the 2017 Eagles\\\"\
-        \ - A look at the 2017 Eagles season through the eyes of the Philadelphia\
-        \ coaching staff. \",\"shortDescription\":\"\\\"Philly Special: Doug Pederson\
-        \ & the 2017 Eagles\\\" - A look at the 2017 Eagles season through the eyes\
-        \ of the Philadelphia coaching staff. \",\"logo\":\"http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png\"\
-        },{\"programId\":22513602,\"startTime\":1536454800000,\"startTimeUTC\":\"\
-        2018-09-09T01:00:00Z\",\"duration\":1.0,\"repeats\":\"r\",\"team1\":null,\"\
-        team2\":null,\"month\":9,\"showLinkCode\":\"Null\",\"featured\":\"false\"\
-        ,\"startMonthEST\":9,\"startDayEST\":8,\"title\":\"AMERICA'S GAME\",\"description\"\
-        :\"\\\"America's Game\\\" - 2017 Philadelphia Eagles - The story of the 2017\
-        \ Philadelphia Eagles and their run to Super Bowl LII told \",\"shortDescription\"\
-        :\"\\\"America's Game\\\" - 2017 Philadelphia Eagles - The story of the 2017\
-        \ Philadelphia Eagles and their run to Super Bowl LII told \",\"logo\":\"\
-        http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png\"\
-        },{\"programId\":22513603,\"startTime\":1536458400000,\"startTimeUTC\":\"\
-        2018-09-09T02:00:00Z\",\"duration\":1.0,\"repeats\":\"r\",\"team1\":null,\"\
-        team2\":null,\"month\":9,\"showLinkCode\":\"Null\",\"featured\":\"false\"\
-        ,\"startMonthEST\":9,\"startDayEST\":8,\"title\":\"TOP 10\",\"description\"\
-        :\"\\\"Top 10 Endzone Celebrations of 2017\\\" - Rejoice! Celebrations are\
-        \ back in the end zone! This countdown looks at the best of 2017.\\r\\n\"\
-        ,\"shortDescription\":\"\\\"Top 10 Endzone Celebrations of 2017\\\" - Rejoice!\
-        \ Celebrations are back in the end zone! This countdown looks at the best\
-        \ of 2017.\\r\\n\",\"logo\":\"http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png\"\
-        },{\"programId\":22513604,\"startTime\":1536462000000,\"startTimeUTC\":\"\
-        2018-09-09T03:00:00Z\",\"duration\":1.0,\"repeats\":null,\"team1\":null,\"\
-        team2\":null,\"month\":9,\"showLinkCode\":\"Null\",\"featured\":\"false\"\
-        ,\"startMonthEST\":9,\"startDayEST\":8,\"title\":\"NFL GAMEDAY PICK'EM\",\"\
-        description\":\"\\\"NFL GameDay Pick'Em\\\" - \\n\\nOur team of analysts pick\
-        \ every game, make score predictions, and tell you which players will have\
-        \ a great week. Game picks by the gut, the film, and the analytics. \",\"\
-        shortDescription\":\"\\\"NFL GameDay Pick'Em\\\" - \\n\\nOur team of analysts\
-        \ pick every game, make score predictions, and tell you which players will\
-        \ have a great week. Game picks by the gut, the film, and the analytics. \"\
-        ,\"logo\":\"http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png\"\
-        },{\"programId\":22513605,\"startTime\":1536465600000,\"startTimeUTC\":\"\
-        2018-09-09T04:00:00Z\",\"duration\":1.0,\"repeats\":\"r\",\"team1\":null,\"\
-        team2\":null,\"month\":9,\"showLinkCode\":\"Null\",\"featured\":\"false\"\
-        ,\"startMonthEST\":9,\"startDayEST\":9,\"title\":\"NFL FANTASY LIVE\",\"description\"\
-        :\"\\\"NFL Fantasy Live\\\" - Michael Fabiano and our NFL.com fantasy experts\
-        \ get you all the latest news and analysis you need to dominate your fantasy\
-        \ matchup.\",\"shortDescription\":\"\\\"NFL Fantasy Live\\\" - Michael Fabiano\
-        \ and our NFL.com fantasy experts get you all the latest news and analysis\
-        \ you need to dominate your fantasy matchup.\",\"logo\":\"http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png\"\
-        }]},\"analytics\":{\"site_name\":\"gamepass international\",\"language\":\"\
-        en_US\",\"site_section\":\"nfl network\",\"site_subsection\":\"nfl network\"\
-        ,\"page_detail\":\"landing\",\"content_type\":\"index\",\"page_name\":\"gamepass\
-        \ international:nfl network:nfl network:landing\"}}}"
+      string: '{"header": {"id": "network", "version": "1.0", "title": "", "lastUpdate":
+        "2018-09-11T08:36:05.746Z"}, "modules": {"notLoggedTeaser": {"type": "story",
+        "_translationId": "474d2089-e3ce-4b93-9fff-a09aaa481b81", "_entityId": "52e45f3f-2e51-4051-8b2f-594ecb82e5fd",
+        "selfUrl": "https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/stories/nfl-network-mobile",
+        "slug": "nfl-network-mobile", "title": "NFL Network\u00a0", "tags": [{"type":
+        "tag", "_translationId": "b4a5501b-bf30-4fe8-ae4c-bc8eb075bd87", "_entityId":
+        "f33f8bbc-bca7-4aad-89e7-4a079b8dd38a", "selfUrl": "https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/tags/network-heromodule-not-logged",
+        "title": "network-heromodule-not-logged", "slug": "network-heromodule-not-logged",
+        "neutralSlug": "network-heromodule-not-logged", "externalSourceName": null,
+        "externalSourceReference": {"sourceId": null, "sourceName": null}, "extraData":
+        null, "fields": {}}], "relations": [], "references": {}, "fields": {}, "createdBy":
+        "domenico ventura", "lastUpdatedBy": "marco lorenzi", "lastUpdatedDate": "2018-06-29T15:57:20.633Z",
+        "contentDate": "2017-08-02T11:05:25.08Z", "context": null, "featured": 0,
+        "headline": "", "summary": "<p>Watch the NFL Network channel live 24 hours
+        a day, 7 days a week.Plus a huge library of on demand films, like A Football
+        Life, The Timeline, Hard Knocks and Total Access</p>\n", "parts": [{"type":
+        "markdown", "content": "<p>Watch the NFL Network channel live 24 hours a day,
+        7 days a week.Plus a huge library of on demand films, like A Football Life,
+        The Timeline, Hard Knocks and Total Access</p>\n", "contextualFields": {}}],
+        "thumbnail": {"title": "AP_Seahawks_Wilson", "templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/l7wc80cv63dm6cveggqg",
+        "thumbnailUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_jpg/l7wc80cv63dm6cveggqg",
+        "format": "jpg", "overriddenFormats": {}}}, "networkLiveVideo": {"texts":
+        {"title": "videos-list-title", "subTitle": "videos-list-subtitle"}, "content":
+        [{"videoId": "86696b55-9d15-4625-856c-d88a8cdb9f33", "title": "NFL Network",
+        "description": "<p>NFL Network Channel</p>\n", "kind": "NFL Network Live video",
+        "videoStatus": "LIVE", "videoDuration": "", "trimmedVideoDuration": "", "slug":
+        "nfl-network-channel", "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/l86u2cmbhskwgq7nmsph",
+        "overridenFormats": {}}, "week": null, "season": null, "seasonType": null,
+        "scheduleDate": "2017-05-30 14:41:00Z", "isGameOfTheWeek": false, "vocGameTopTag":
+        null, "isBasic": false, "nflprogram": null, "nflprogramcode": null}]}, "networkEpg":
+        {"liveProgram": {"programId": 22545316, "startTime": 1536652800000, "startTimeUTC":
+        "2018-09-11T08:00:00Z", "duration": 3.0, "repeats": null, "team1": null, "team2":
+        null, "month": 9, "showLinkCode": "Null", "featured": "false", "startMonthEST":
+        9, "startDayEST": 11, "title": "MONDAY NIGHT FOOTBALL", "description": "\"Monday
+        Night Football\" - Los Angeles Rams vs. Oakland Raiders (From 9/10/18)", "shortDescription":
+        "\"Monday Night Football\" - Los Angeles Rams vs. Oakland Raiders (From 9/10/18)",
+        "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        "futurePrograms": [{"programId": 22549523, "startTime": 1536663600000, "startTimeUTC":
+        "2018-09-11T11:00:00Z", "duration": 3.0, "repeats": "p", "team1": null, "team2":
+        null, "month": 9, "showLinkCode": "Null", "featured": "false", "startMonthEST":
+        9, "startDayEST": 11, "title": "GOOD MORNING FOOTBALL", "description": "\"Good
+        Morning Football\" - Catch up on everything NFL with the latest news, highlights,
+        and trending topics from across the football world and beyond.", "shortDescription":
+        "\"Good Morning Football\" - Catch up on everything NFL with the latest news,
+        highlights, and trending topics from across the football world and beyond.",
+        "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22549524, "startTime": 1536674400000, "startTimeUTC": "2018-09-11T14:00:00Z",
+        "duration": 3.0, "repeats": "r", "team1": null, "team2": null, "month": 9,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 9, "startDayEST":
+        11, "title": "GOOD MORNING FOOTBALL", "description": "\"Good Morning Football\"
+        - Catch up on everything NFL with the latest news, highlights, and trending
+        topics from across the football world and beyond.", "shortDescription": "\"Good
+        Morning Football\" - Catch up on everything NFL with the latest news, highlights,
+        and trending topics from across the football world and beyond.", "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22549525, "startTime": 1536685200000, "startTimeUTC": "2018-09-11T17:00:00Z",
+        "duration": 3.0, "repeats": null, "team1": null, "team2": null, "month": 9,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 9, "startDayEST":
+        11, "title": "MONDAY NIGHT FOOTBALL", "description": "\"Monday Night Football\"
+        - Los Angeles Rams vs. Oakland Raiders (From 9/10/18)", "shortDescription":
+        "\"Monday Night Football\" - Los Angeles Rams vs. Oakland Raiders (From 9/10/18)",
+        "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22549526, "startTime": 1536696000000, "startTimeUTC": "2018-09-11T20:00:00Z",
+        "duration": 1.0, "repeats": "p", "team1": null, "team2": null, "month": 9,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 9, "startDayEST":
+        11, "title": "NFL UP TO THE MINUTE", "description": "\"NFL Up to the Minute\"
+        - Go inside the NFL Media newsroom for all the latest NFL news, injury updates
+        and inside information from reporters across the country.", "shortDescription":
+        "\"NFL Up to the Minute\" - Go inside the NFL Media newsroom for all the latest
+        NFL news, injury updates and inside information from reporters across the
+        country.", "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22549527, "startTime": 1536699600000, "startTimeUTC": "2018-09-11T21:00:00Z",
+        "duration": 1.0, "repeats": "p", "team1": null, "team2": null, "month": 9,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 9, "startDayEST":
+        11, "title": "NFL FANTASY LIVE", "description": "\"NFL Fantasy Live\" - Michael
+        Fabiano and our NFL.com fantasy experts get you all the latest news and analysis
+        you need to dominate your fantasy matchup.", "shortDescription": "\"NFL Fantasy
+        Live\" - Michael Fabiano and our NFL.com fantasy experts get you all the latest
+        news and analysis you need to dominate your fantasy matchup.", "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22549528, "startTime": 1536703200000, "startTimeUTC": "2018-09-11T22:00:00Z",
+        "duration": 0.5, "repeats": null, "team1": null, "team2": null, "month": 9,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 9, "startDayEST":
+        11, "title": "NFL POWER RANKINGS", "description": "\"NFL Power Rankings\"
+        - An in depth look at where your team ranks on Elliot Harrison''s rankings
+        of all 32 clubs. Who has moved up and who has lost ground in the NFL? Our
+        experts debate.", "shortDescription": "\"NFL Power Rankings\" - An in depth
+        look at where your team ranks on Elliot Harrison''s rankings of all 32 clubs.
+        Who has moved up and who has lost ground in the NFL? Our experts debate.",
+        "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22549529, "startTime": 1536705000000, "startTimeUTC": "2018-09-11T22:30:00Z",
+        "duration": 0.5, "repeats": null, "team1": null, "team2": null, "month": 9,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 9, "startDayEST":
+        11, "title": "21ST & PRIME", "description": "\"21st & Prime\" - Deion \"Primetime\"
+        Sanders takes on the hottest topics from around the NFL as only he can. ",
+        "shortDescription": "\"21st & Prime\" - Deion \"Primetime\" Sanders takes
+        on the hottest topics from around the NFL as only he can. ", "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22549530, "startTime": 1536706800000, "startTimeUTC": "2018-09-11T23:00:00Z",
+        "duration": 1.0, "repeats": "p", "team1": null, "team2": null, "month": 9,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 9, "startDayEST":
+        11, "title": "NFL TOTAL ACCESS", "description": "\"NFL Total Access\" - NFL
+        Network''s nightly flagship program brings you all the latest news, opinions,
+        highlights and interviews from around the NFL. ", "shortDescription": "\"NFL
+        Total Access\" - NFL Network''s nightly flagship program brings you all the
+        latest news, opinions, highlights and interviews from around the NFL. ", "logo":
+        "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22549531, "startTime": 1536710400000, "startTimeUTC": "2018-09-12T00:00:00Z",
+        "duration": 3.0, "repeats": null, "team1": null, "team2": null, "month": 9,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 9, "startDayEST":
+        11, "title": "FULL GAME BROADCAST", "description": "\"NFL Football\" - 2018
+        Week 1: Chicago Bears vs. Green Bay Packers (From 9/9/18).", "shortDescription":
+        "\"NFL Football\" - 2018 Week 1: Chicago Bears vs. Green Bay Packers (From
+        9/9/18).", "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22549532, "startTime": 1536721200000, "startTimeUTC": "2018-09-12T03:00:00Z",
+        "duration": 1.0, "repeats": "r", "team1": null, "team2": null, "month": 9,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 9, "startDayEST":
+        11, "title": "NFL TOTAL ACCESS", "description": "\"NFL Total Access\" - NFL
+        Network''s nightly flagship program brings you all the latest news, opinions,
+        highlights and interviews from around the NFL. ", "shortDescription": "\"NFL
+        Total Access\" - NFL Network''s nightly flagship program brings you all the
+        latest news, opinions, highlights and interviews from around the NFL. ", "logo":
+        "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"}]},
+        "analytics": {"site_name": "gamepass international", "language": "en_US",
+        "site_section": "nfl network", "site_subsection": "nfl network", "page_detail":
+        "landing", "content_type": "index", "page_name": "gamepass international:nfl
+        network:nfl network:landing"}}}'
     headers:
       Access-Control-Allow-Headers: [Content-Type]
       Access-Control-Allow-Methods: [GET]
@@ -943,15 +1153,15 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:44 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:07:44 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:05 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:38:05 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
-      content-length: ['10341']
+      content-length: ['9949']
     status: {code: 200, message: OK}
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_98956868f137556af165dade6b8d96a8d2eecab5cb974db3dbf342b20cf227de&grant_type=refresh_token
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_f11893d7197ec270e860df2d1245db20a3d462a3d86cdb93710629a6c8e3b3f0&grant_type=refresh_token
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -963,16 +1173,17 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_abee56378d97439009347836e5c29002906e61c93b99c6fe0c59e8e4885b9c2a,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_cfe114df7ab5f842a1cc4f17da1b7de2e4d35c7b513a53849e75bb5add082502,
+      pretty: {access_token: FAKE_TOKEN_5086d57f9824ac564d586b51a9a15450b3bfc5050988bc84b9c79a1564ca2aba,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_4ec3f92e9c5fdcd055398da591c62cecefe0ae769ca77571f2d1bc38b981ac69,
         token_type: bearer}
-      string: '{"access_token":"FAKE_TOKEN_abee56378d97439009347836e5c29002906e61c93b99c6fe0c59e8e4885b9c2a","token_type":"bearer","expires_in":3539,"refresh_token":"FAKE_TOKEN_cfe114df7ab5f842a1cc4f17da1b7de2e4d35c7b513a53849e75bb5add082502"}'
+      string: '{"access_token": "FAKE_TOKEN_5086d57f9824ac564d586b51a9a15450b3bfc5050988bc84b9c79a1564ca2aba",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_4ec3f92e9c5fdcd055398da591c62cecefe0ae769ca77571f2d1bc38b981ac69"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Sat, 08 Sep 2018 12:05:44 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:44 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:06 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:06 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -1035,8 +1246,8 @@ interactions:
       Cache-Control: [max-age=300]
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:44 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:10:44 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:06 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:41:06 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/8.5]
       Vary: [Accept-Encoding]
@@ -1084,8 +1295,8 @@ interactions:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:44 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:44 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:06 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:06 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
@@ -1095,7 +1306,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "86696b55-9d15-4625-856c-d88a8cdb9f33",
       "VideoSource": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=hls)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "993fd4bd-222c-4795-8430-f0178ad1d09a|FAKE_TOKEN_abee56378d97439009347836e5c29002906e61c93b99c6fe0c59e8e4885b9c2a|web|FAKE_TOKEN_abee56378d97439009347836e5c29002906e61c93b99c6fe0c59e8e4885b9c2a|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "19f39e4d-bd9b-4283-b0f2-a1a245ea9d17|FAKE_TOKEN_5086d57f9824ac564d586b51a9a15450b3bfc5050988bc84b9c79a1564ca2aba|web|FAKE_TOKEN_5086d57f9824ac564d586b51a9a15450b3bfc5050988bc84b9c79a1564ca2aba|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -1106,15 +1317,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1536408254~exp=1536408434~acl=/*~hmac=5b7c79660c411a6c1880443670b3ee777397eb3ac705b6895a5904b0d78d0888&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: B6164E6FB2DA8E6373BA5DD9DFE75D5A632F5F92}
-      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1536408254~exp=1536408434~acl=/*~hmac=5b7c79660c411a6c1880443670b3ee777397eb3ac705b6895a5904b0d78d0888&hdcore=2.11.3","HeartBeatTime":0,"Signature":"B6164E6FB2DA8E6373BA5DD9DFE75D5A632F5F92","ActionParameters":""}'
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1536654876~exp=1536655056~acl=/*~hmac=2b2dcb497cf19c460abb1b36e0dc9c965488788926a3c7e672bc564bcc2169c4&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 4B6C22396E6970DADA947900276EA40BD65949DD}
+      string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
+        "ContentUrl": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1536654876~exp=1536655056~acl=/*~hmac=2b2dcb497cf19c460abb1b36e0dc9c965488788926a3c7e672bc564bcc2169c4&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "4B6C22396E6970DADA947900276EA40BD65949DD",
+        "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:44 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:44 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:06 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:06 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -1125,7 +1339,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "86696b55-9d15-4625-856c-d88a8cdb9f33",
       "VideoSource": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "fd9bc724-c31f-4923-83e3-a103fe4b5826|FAKE_TOKEN_abee56378d97439009347836e5c29002906e61c93b99c6fe0c59e8e4885b9c2a|web|FAKE_TOKEN_abee56378d97439009347836e5c29002906e61c93b99c6fe0c59e8e4885b9c2a|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "ea9fc763-fe53-4f9b-a1b4-43517b1b2aca|FAKE_TOKEN_5086d57f9824ac564d586b51a9a15450b3bfc5050988bc84b9c79a1564ca2aba|web|FAKE_TOKEN_5086d57f9824ac564d586b51a9a15450b3bfc5050988bc84b9c79a1564ca2aba|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -1136,15 +1350,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1536408254~exp=1536408434~acl=/*~hmac=5b7c79660c411a6c1880443670b3ee777397eb3ac705b6895a5904b0d78d0888&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: E086795572B211074FA44FDA11CC46700E4215A9}
-      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1536408254~exp=1536408434~acl=/*~hmac=5b7c79660c411a6c1880443670b3ee777397eb3ac705b6895a5904b0d78d0888&hdcore=2.11.3","HeartBeatTime":0,"Signature":"E086795572B211074FA44FDA11CC46700E4215A9","ActionParameters":""}'
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1536654876~exp=1536655056~acl=/*~hmac=2b2dcb497cf19c460abb1b36e0dc9c965488788926a3c7e672bc564bcc2169c4&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 4C07B926CEB91DC1DDF89BC2D2FFC3E8F6273842}
+      string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
+        "ContentUrl": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1536654876~exp=1536655056~acl=/*~hmac=2b2dcb497cf19c460abb1b36e0dc9c965488788926a3c7e672bc564bcc2169c4&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "4C07B926CEB91DC1DDF89BC2D2FFC3E8F6273842",
+        "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:44 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:44 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:06 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:06 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -1155,7 +1372,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "86696b55-9d15-4625-856c-d88a8cdb9f33",
       "VideoSource": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "f593c632-337b-42b4-87fc-82fb1d409a91|FAKE_TOKEN_abee56378d97439009347836e5c29002906e61c93b99c6fe0c59e8e4885b9c2a|web|FAKE_TOKEN_abee56378d97439009347836e5c29002906e61c93b99c6fe0c59e8e4885b9c2a|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "afeaf16a-5450-4fc6-8421-e5287ec7d188|FAKE_TOKEN_5086d57f9824ac564d586b51a9a15450b3bfc5050988bc84b9c79a1564ca2aba|web|FAKE_TOKEN_5086d57f9824ac564d586b51a9a15450b3bfc5050988bc84b9c79a1564ca2aba|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -1166,15 +1383,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1536408254~exp=1536408434~acl=/*~hmac=5b7c79660c411a6c1880443670b3ee777397eb3ac705b6895a5904b0d78d0888&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: BD3B7D6B8505AEB6BFDF8929B573BE7C49B47DD7}
-      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1536408254~exp=1536408434~acl=/*~hmac=5b7c79660c411a6c1880443670b3ee777397eb3ac705b6895a5904b0d78d0888&hdcore=2.11.3","HeartBeatTime":0,"Signature":"BD3B7D6B8505AEB6BFDF8929B573BE7C49B47DD7","ActionParameters":""}'
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1536654876~exp=1536655056~acl=/*~hmac=2b2dcb497cf19c460abb1b36e0dc9c965488788926a3c7e672bc564bcc2169c4&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 07F73104BF86DB4A0EC41BFF6BFAE0A55D42568D}
+      string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
+        "ContentUrl": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1536654876~exp=1536655056~acl=/*~hmac=2b2dcb497cf19c460abb1b36e0dc9c965488788926a3c7e672bc564bcc2169c4&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "07F73104BF86DB4A0EC41BFF6BFAE0A55D42568D",
+        "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:44 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:44 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:06 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:06 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]

@@ -11,7 +11,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: website config, lastUpdate: '2018-09-08T12:03:35.326Z', title: '',
+        header: {id: website config, lastUpdate: '2018-09-11T08:34:47.424Z', title: '',
           version: '1.0'}
         modules:
           ADOBE_HEARTBEAT:
@@ -450,125 +450,350 @@ interactions:
             IFRAME_BASE_OPTIONS: {STYLE: inline, SUBMIT_ENABLED: true, SUPPORTED_CARD_TYPES: 'AmericanExpress,JCB,Visa,MasterCard,Discover'}
             JAVASCRIPT_API_URL: https://apisandboxstatic.zuora.com/Resources/libs/hosted/1.3.0/zuora-min.js
             LOCALE: en_US
-      string: '{"header":{"id":"website config","version":"1.0","title":"","lastUpdate":"2018-09-08T12:03:35.326Z"},"modules":{"FEATURES":{"FUNNEL":{"IS_ENABLED":true},"AUTHENTICATION":{"GIGYA_LOGIN_FLOW_IS_ENABLED":true},"CURRENT_CONTEXT":{"SEASON":2018}},"IMAGE_FORMATS":{"FALLBACK_BASE_URL":"fallbackimageprd-temporary","DefaulList_16:9":[{"singleFormat":"t_16-9_480","doubleFormat":"t_16-9_960","breakpoint":"220px"}],"Hero_16:9":[{"singleFormat":"t_16-9_1920","doubleFormat":"t_16-9_3840","breakpoint":"1200px"},{"singleFormat":"t_16-9_1200","doubleFormat":"t_16-9_1920","breakpoint":"768px"},{"singleFormat":"t_16-9_960","doubleFormat":"t_16-9_1200","breakpoint":"480px"},{"singleFormat":"t_16-9_480","doubleFormat":"t_16-9_960","breakpoint":"220px"}]},"SOCIAL_PROVIDERS":{"FACEBOOK":{"sdk_url":"//connect.facebook.net/en_US/sdk.js","sdk_configuration":{"appId":"219276878564579
-        temporary","xfbml":false,"version":"v2.9"},"share":{"hashtag":"#gamepass"}},"TWITTER":{"sdk_url":"//platform.twitter.com/widgets.js","share":{"hashtags":["nfl","gamepass"],"via":"NFLGamePass"}},"SOCIAL_MESSAGE":"I''m
-        watching the NFL on http://gamepass-europe.nfl.com"},"COOKIES":{"DOMAIN":".nflgamepass.com","COOKIES_POLICY":{"name":"gp_cp","duration":30}},"MOMENT":{"LOCALE":"en-gb","FREE_TRIAL_DATE_FORMAT":"DD
-        MMMM YYYY"},"API":{"GRANT_TYPES":{"PASSWORD":"password","REFRESH_TOKEN":"refresh_token","SHIELD_AUTHENTICATION":"shield_authentication"},"CLIENT_ID":"42cc360e-6fbb-4472-9437-2f088b8730de","DEVICE_TYPE":"web","BASE_URL":"https://www.nflgamepass.com/api/user","VOCABULARY":"https://www.nflgamepass.com/api/en/content/v1/web/voc","TV_SHOWS":"https://www.nflgamepass.com/api/en/content/v1/web/tv-programs/:showCategory/programs","NETWORK_PROGRAMS":"https://www.nflgamepass.com/api/en/content/v1/web/network/programs","NETWORK_EPISODES":"https://www.nflgamepass.com/api/en/content/v1/web/network/:seasonSlug/:tvShowSlug/list","VIDEO_BY_SLUG":"https://www.nflgamepass.com/api/en/content/v1/web/videos/:videoSlug/video","LIVE_VIDEOS":"https://www.nflgamepass.com/api/en/content/v1/web/live/all","FAVOURITE_TEAM_MATCHES":"https://www.nflgamepass.com/api/en/content/v1/web/teams/:favouriteTeam/preferred-team","TEAMS":"https://www.nflgamepass.com/api/en/content/v1/common/teams","GEOLOCALIZATION":"https://www.nflgamepass.com/api/user/api/users/v1/geolocation","LOGIN":"https://www.nflgamepass.com/api/user/oauth/token","LOGOUT":"https://www.nflgamepass.com/api/user/api/users/v1/identity/logout","REFRESH_TOKEN":"https://www.nflgamepass.com/api/user/oauth/token","USER_PROFILE":"https://www.nflgamepass.com/api/user/api/users/v1/profile/me","USER_ACCOUNT":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/myaccount","CHECK_USER_NICKNAME":"https://www.nflgamepass.com/api/user/api/users/v1/identity/existsusername","CHECK_USER_SESSION":"https://www.nflgamepass.com/api/user/api/users/v1/identity/isauthenticated","REGISTER":"https://www.nflgamepass.com/api/user/api/users/v1/identity/register","ZUORA_IFRAME_CONFIGURATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/iframe","ZUORA_CREDIT_CARD_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/purchase/creditcard","ZUORA_CREDIT_CARD_UPGRADE_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/upgrade/creditcard","ZUORA_PAYPAL_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/purchase/paypal","ZUORA_PAYPAL_UPGRADE_PAYMENT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/upgrade/paypal","ZUORA_FREE_TRIAL_STOP":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/freetrial","ZUORA_AUTO_RENEWAL_STOP":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/cancelautorenewal","ZUORA_AUTO_RENEWAL_ENABLE":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/enableautorenewal","ZUORA_PAYMENT_METHOD_UPDATE":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/changepaymentmethod/creditcard","ZUORA_VALIDATE_PROMO_CODE":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/preview/promocode","ZUORA_FREEMIUM_PRODUCT_REGISTRATION":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/add","ZUORA_ENABLE_PAYMENT_VIA_INSTALLMENTS":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/paymentmode/installments","ZUORA_TOGGLE_PAYMENT_VIA_INSTALLMENTS":"https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/paymentmode","SOFT_ENTITLEMENT":"https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/softcheck","PAYPAL_CHECKOUT_TOKEN":"https://www.nflgamepass.com/api/user/api/users/v1/paypal/getcheckouttoken","CONTACT_FORM":"https://nfl-functions-prd-we.azurewebsites.net/api/SendSupportEmail?code=9rsqW1AGlLP/9yFf77Dilan7/Ja88OwaaSMXHusHaW74kcITLBNFJw=="},"GIGYA":{"JAVASCRIPT_API_URL":"https://cdns.eu1.gigya.com/js/gigya.js?apiKey=3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp","SUCCESS_ERROR_CODES":[0],"WRONG_CREDENTIALS_ERROR_CODES":[403042],"THROTTLING_ERROR_CODES":[403048]},"ZUORA":{"LOCALE":"en_US","JAVASCRIPT_API_URL":"https://apisandboxstatic.zuora.com/Resources/libs/hosted/1.3.0/zuora-min.js","IFRAME_BASE_OPTIONS":{"SUPPORTED_CARD_TYPES":"AmericanExpress,JCB,Visa,MasterCard,Discover","SUBMIT_ENABLED":true,"STYLE":"inline"}},"DIVA":{"FLASH":{"SWF_PATH":"https://www.nflgamepass.com/api/diva/swf/diva.swf","MINIMUM_VERSION_NUMBER":20,"PLAYER_SIZE":{"WIDTH":990,"HEIGHT":590},"PARAMS":{"scale":"noscale","wmode":"direct","bgcolor":"#000000","allowfullscreen":"true","allowscriptaccess":"always","base":"."},"SETTINGS":{"LiveNoData":"https://www.nflgamepass.com/api/diva/diva/settings/livenodata/device","ReplayNoData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/device","LiveWithData":"https://www.nflgamepass.com/api/diva/diva/settings/livenfl/device","ReplayWithData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/device","NoAdsWithData":"https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/device","VodNoData":"https://www.nflgamepass.com/api/diva/diva/settings/vod/device","Live24x7":"https://www.nflgamepass.com/api/diva/diva/settings/24h7d/device","CoachFilm":"https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/device"}},"HTML5":{"CONVIVA":{"IS_ENABLED":true,"ANALYTICS_JAVASCRIPT_API_URL":"https://www.nflgamepass.com/api/diva/scripts/conviva_integration.min.js","DEFAULT_ANALYTICS_PAYLOAD":{"assetName":"{V.Category1}-{V.Title}","applicationName":"nfl-prd-html5","customerKey":"6679b240d0b48c69402268577b537232458a6e78","viewerId":"{Settings.cs5}","tags":{"playerVendor":"deltatre","category":"Diva","channel":"Diva","retryNumber":"0","streamProtocol":"HLS","contentId":"Diva-{V.ID}"},"gatewayUrl":"","log":false}},"PLAYER_PATH":"https://www.nflgamepass.com/api/diva/html5/divaplayer.html","PLAYER_LOGO":"/custom/nfl/img/gp-logo__white.svg","RECOMMENDATIONS_IFRAME_URL":"https://www.nflgamepass.com/api/diva/customoverlay/videolist/video_switch.html?useHashNav=false&templateName=fullVideo&mrssUrl=https://www.nflgamepass.com/api/en/content/v1/rss-feeds/{videoId}/video-raccomendation&errorText=There%20are%20no%20videos%20available%20at%20the%20moment.&pollingTime=00:02:00&ribbonBgColor=0xef082b&ribbonFgColor=0x000000&noDescription=true&mode=switch","SETTINGS":{"LiveNoData":"https://www.nflgamepass.com/api/diva/diva/settings/livenodata/html5","ReplayNoData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/html5","LiveWithData":"https://www.nflgamepass.com/api/diva/diva/settings/livenfl/html5","ReplayWithData":"https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/html5","NoAdsWithData":"https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/html5","VodNoData":"https://www.nflgamepass.com/api/diva/diva/settings/vod/html5","Live24x7":"https://www.nflgamepass.com/api/diva/diva/settings/24h7d/html5","CoachFilm":"https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/html5"}}},"REDIRECT_URIS":{"ERROR":"error","LOGIN":"login"},"ROUTES_DATA_PROVIDERS":{"home":"https://www.nflgamepass.com/api/en/content/v1/web/homepage","login":"https://www.nflgamepass.com/api/en/content/v1/web/login","games":"https://www.nflgamepass.com/api/en/content/v1/web/games/seasons","games_detail":"https://www.nflgamepass.com/api/en/content/v1/web/games/:season/:seasonType/:week/list","game_page":"https://www.nflgamepass.com/api/en/content/v1/web/games/:season/:gameslug/data","teams":"https://www.nflgamepass.com/api/en/content/v1/web/teams/list","team_detail":"https://www.nflgamepass.com/api/en/content/v1/web/teams/:team/videos","funnel_plans":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/zuora/{{GeolocationService:userInfo.geoLocation.country.isoCode}}/subscription/catalog","funnel_upgrade_plans":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/zuora/{{GeolocationService:userInfo.geoLocation.country.isoCode}}/upgrade/{{UserProfileService:basicInfo.upgradeRatePlanTag}}/catalog","funnel_account":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/account","funnel_payment":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/payment","funnel_upgrade_payment":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/payment","funnel_confirm":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/confirmation-page","funnel_upgrade_confirm":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/confirmation-page","funnel_unavailable":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/unavailable","funnel_upgrade_unavailable":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/unavailable","funnel_error":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/error","funnel_upgrade_error":"https://www.nflgamepass.com/api/en/content/v1/web/upgrade/error","funnel_subscription_renewal":"https://www.nflgamepass.com/api/en/content/v1/web/autorenewal-landing-page/data","featured":"https://www.nflgamepass.com/api/en/content/v1/web/featured/videos","featured_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/featured/show/:video-slug/video","nfl_shows":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-shows/videos","nfl_shows_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-shows/show/:video-slug/video","nfl_originals":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-originals/videos","nfl_originals_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/nfl-originals/show/:video-slug/video","video-slug":"https://www.nflgamepass.com/api/en/content/v1/web/videos/:video-slug/video","network_video_slug":"https://www.nflgamepass.com/api/en/content/v1/web/network/show/:video-slug/video","featured_local":"http://localhost:61544/v1/web/featured/videos","redzone":"https://www.nflgamepass.com/api/en/content/v1/web/redzone/videos","network":"https://www.nflgamepass.com/api/en/content/v1/web/network/data","terms_of_service":"https://www.nflgamepass.com/api/en/content/v1/web/terms-and-conditions","discover_the_service":"https://www.nflgamepass.com/api/en/content/v1/web/discover-the-service","discover_redzone":"https://www.nflgamepass.com/api/en/content/v1/web/discover-redzone","privacy":"https://www.nflgamepass.com/api/en/content/v1/web/privacy","support":"https://www.nflgamepass.com/api/en/content/v1/web/support","faq":"https://www.nflgamepass.com/api/en/content/v1/web/faq","cookies_policy":"https://www.nflgamepass.com/api/en/content/v1/web/cookies-policy","payment_terms":"https://www.nflgamepass.com/api/en/content/v1/web/payment-terms","account":"https://www.nflgamepass.com/api/en/content/v1/web/subscription/myaccount","contact-us":"https://www.nflgamepass.com/api/en/content/v1/web/contactus/data","confirm-subscription":"https://www.nflgamepass.com/api/en/content/v1/web/funnel/confirmation-page","refund_faq":"https://www.nflgamepass.com/api/en/content/v1/web/exrefund-faq","sb_competition_tc":"https://www.nflgamepass.com/api/en/content/v1/web/sb_competition_tc","error":"https://www.nflgamepass.com/api/en/content/v1/web/500","no-content":"https://www.nflgamepass.com/api/en/content/v1/web/404"},"LOCAL_STORAGE":{"OAUTH_KEY":"oauth_payload","PREFERENCES_KEY":"preferences","TRANSACTION_DETAILS_KEY":"transaction_details"},"GOOGLE":{"RECAPTCHA":{"JAVASCRIPT_API_URL":"https://www.google.com/recaptcha/api.js?onload=googleReCaptchaOnloadCallback&render=explicit","SITE_KEY":"6LfVuiIUAAAAAAFdPEG3HtHJGbKl0PqEKvRws9hV"}},"PAYPAL":{"REDIRECT_URIS":{"PRODUCT_PURCHASE":{"SUCCESS":"{{window:location.origin}}/en/subscribe/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=purchase&success-redirect=/en/subscribe/confirmation&error-redirect=/en/subscribe/paypal/error","ERROR":"{{window:location.origin}}/en/subscribe/paypal/error"},"PRODUCT_UPGRADE":{"SUCCESS":"{{window:location.origin}}/en/upgrade/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=upgrade&success-redirect=/en/upgrade/confirmation&error-redirect=/en/upgrade/paypal/error","ERROR":"{{window:location.origin}}/en/upgrade/paypal/error"},"SUCCESS":"{{window:location.origin}}/en/subscribe/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=purchase&success-redirect=/en/subscribe/confirmation&error-redirect=/en/subscribe/paypal/error","ERROR":"{{window:location.origin}}/en/subscribe/paypal/error"}},"POLLING":{"VIDEO_STATUS_CHECK":{"INTERVAL":10000}},"ADOBE_HEARTBEAT":{"VISITOR":{"ID":"F75C3025512D2C1D0A490D44@AdobeOrg","TRACKING_SERVER":"smetrics.nfl.com"},"APP_MEASUREMENT":{"TRACKING_SERVER":"nfl.hb.omtrdc.net","ACCOUNT":"nflprod","CHARSET":"UTF-8"},"MEDIA_CONFIGURATION":{"TRACKING_SERVER":"nfl.hb.omtrdc.net","PLAYER_NAME":"Diva
-        Player","CHANNEL":"NFL GamePass - Prod.","DEBUG_LOGGING":false,"APP_VERSION":"Diva
-        Player","SSL":false,"OVP":"NFL GamePass OVP - Prod."}},"MEDIA":{"HOME_PAGE":{"SHOW_VIDEO":false,"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1497617597/HomePageVideoGP_2500Kb_1280_no_Audio_lglspi.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1497612187/HomePageVideoGP_1500Kb_720_no_Audio_esd7az.mp4"},"DISCOVER_THE_SERVICE":{"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1532794979/OVE_003_Game_Pass_Product_Video_V01_12_5Mbps_sbgdzr.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1532794979/OVE_003_Game_Pass_Product_Video_V01_12_5Mbps_sbgdzr.mp4"},"REDZONE":{"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4"},"WELCOME":{"HERO_VIDEO":"https://www.nflgamepass.com/api/images/video/upload/v1535355398/ScottHanson_Game_Pass_Read_5Mbps_ddu4rr.mp4","HERO_VIDEO_MOB":"https://www.nflgamepass.com/api/images/video/upload/v1535355398/ScottHanson_Game_Pass_Read_5Mbps_ddu4rr.mp4"}},"COUNTRIES":{"ISO3611":[{"isoCode":"AX","isEuropean":true},{"isoCode":"AL","isEuropean":true},{"isoCode":"DZ","isEuropean":false},{"isoCode":"AS","isEuropean":false},{"isoCode":"AD","isEuropean":true},{"isoCode":"AO","isEuropean":false},{"isoCode":"AI","isEuropean":false},{"isoCode":"AQ","isEuropean":false},{"isoCode":"AG","isEuropean":false},{"isoCode":"AR","isEuropean":false},{"isoCode":"AM","isEuropean":true},{"isoCode":"AW","isEuropean":false},{"isoCode":"AU","isEuropean":false},{"isoCode":"AT","isEuropean":true},{"isoCode":"AZ","isEuropean":true},{"isoCode":"BS","isEuropean":false},{"isoCode":"BH","isEuropean":false},{"isoCode":"BD","isEuropean":false},{"isoCode":"BB","isEuropean":false},{"isoCode":"BY","isEuropean":true},{"isoCode":"BE","isEuropean":true},{"isoCode":"BZ","isEuropean":false},{"isoCode":"BJ","isEuropean":false},{"isoCode":"BM","isEuropean":false},{"isoCode":"BT","isEuropean":false},{"isoCode":"BO","isEuropean":false},{"isoCode":"BA","isEuropean":true},{"isoCode":"BW","isEuropean":false},{"isoCode":"BV","isEuropean":false},{"isoCode":"BR","isEuropean":false},{"isoCode":"VG","isEuropean":false},{"isoCode":"IO","isEuropean":false},{"isoCode":"BN","isEuropean":false},{"isoCode":"BG","isEuropean":true},{"isoCode":"BF","isEuropean":false},{"isoCode":"BI","isEuropean":false},{"isoCode":"KH","isEuropean":false},{"isoCode":"CM","isEuropean":false},{"isoCode":"CA","isEuropean":false},{"isoCode":"CV","isEuropean":false},{"isoCode":"KY","isEuropean":false},{"isoCode":"CF","isEuropean":false},{"isoCode":"TD","isEuropean":false},{"isoCode":"CL","isEuropean":false},{"isoCode":"CN","isEuropean":false},{"isoCode":"HK","isEuropean":false},{"isoCode":"MO","isEuropean":false},{"isoCode":"CX","isEuropean":false},{"isoCode":"CC","isEuropean":false},{"isoCode":"CO","isEuropean":false},{"isoCode":"KM","isEuropean":false},{"isoCode":"CG","isEuropean":false},{"isoCode":"CD","isEuropean":false},{"isoCode":"CK","isEuropean":false},{"isoCode":"CR","isEuropean":false},{"isoCode":"CI","isEuropean":false},{"isoCode":"HR","isEuropean":true},{"isoCode":"CU","isEuropean":false},{"isoCode":"CY","isEuropean":true},{"isoCode":"CZ","isEuropean":true},{"isoCode":"DK","isEuropean":true},{"isoCode":"DJ","isEuropean":false},{"isoCode":"DM","isEuropean":false},{"isoCode":"DO","isEuropean":false},{"isoCode":"EC","isEuropean":false},{"isoCode":"EG","isEuropean":false},{"isoCode":"SV","isEuropean":false},{"isoCode":"GQ","isEuropean":false},{"isoCode":"ER","isEuropean":false},{"isoCode":"EE","isEuropean":true},{"isoCode":"ET","isEuropean":false},{"isoCode":"FK","isEuropean":false},{"isoCode":"FO","isEuropean":true},{"isoCode":"FJ","isEuropean":false},{"isoCode":"FI","isEuropean":true},{"isoCode":"FR","isEuropean":true},{"isoCode":"GF","isEuropean":false},{"isoCode":"PF","isEuropean":false},{"isoCode":"TF","isEuropean":false},{"isoCode":"GA","isEuropean":false},{"isoCode":"GM","isEuropean":false},{"isoCode":"GE","isEuropean":true},{"isoCode":"DE","isEuropean":true},{"isoCode":"GH","isEuropean":false},{"isoCode":"GI","isEuropean":true},{"isoCode":"GR","isEuropean":true},{"isoCode":"GL","isEuropean":false},{"isoCode":"GD","isEuropean":false},{"isoCode":"GP","isEuropean":false},{"isoCode":"GU","isEuropean":false},{"isoCode":"GT","isEuropean":false},{"isoCode":"GG","isEuropean":true},{"isoCode":"GN","isEuropean":false},{"isoCode":"GW","isEuropean":false},{"isoCode":"GY","isEuropean":false},{"isoCode":"HT","isEuropean":false},{"isoCode":"HM","isEuropean":false},{"isoCode":"VA","isEuropean":true},{"isoCode":"HN","isEuropean":false},{"isoCode":"HU","isEuropean":true},{"isoCode":"IS","isEuropean":true},{"isoCode":"IN","isEuropean":false},{"isoCode":"ID","isEuropean":false},{"isoCode":"IR","isEuropean":false},{"isoCode":"IQ","isEuropean":false},{"isoCode":"IE","isEuropean":true},{"isoCode":"IM","isEuropean":true},{"isoCode":"IL","isEuropean":false},{"isoCode":"IT","isEuropean":true},{"isoCode":"JM","isEuropean":false},{"isoCode":"JP","isEuropean":false},{"isoCode":"JE","isEuropean":true},{"isoCode":"JO","isEuropean":false},{"isoCode":"KZ","isEuropean":true},{"isoCode":"KE","isEuropean":false},{"isoCode":"KI","isEuropean":false},{"isoCode":"KP","isEuropean":false},{"isoCode":"KR","isEuropean":false},{"isoCode":"KW","isEuropean":false},{"isoCode":"KG","isEuropean":true},{"isoCode":"LA","isEuropean":false},{"isoCode":"LV","isEuropean":true},{"isoCode":"LB","isEuropean":false},{"isoCode":"LS","isEuropean":false},{"isoCode":"LR","isEuropean":false},{"isoCode":"LY","isEuropean":false},{"isoCode":"LI","isEuropean":true},{"isoCode":"LT","isEuropean":true},{"isoCode":"LU","isEuropean":true},{"isoCode":"MK","isEuropean":true},{"isoCode":"MG","isEuropean":false},{"isoCode":"MW","isEuropean":false},{"isoCode":"MY","isEuropean":false},{"isoCode":"MV","isEuropean":false},{"isoCode":"ML","isEuropean":false},{"isoCode":"MT","isEuropean":true},{"isoCode":"MH","isEuropean":false},{"isoCode":"MQ","isEuropean":false},{"isoCode":"MR","isEuropean":false},{"isoCode":"MU","isEuropean":false},{"isoCode":"YT","isEuropean":false},{"isoCode":"MX","isEuropean":false},{"isoCode":"FM","isEuropean":false},{"isoCode":"MD","isEuropean":true},{"isoCode":"MC","isEuropean":true},{"isoCode":"MN","isEuropean":false},{"isoCode":"ME","isEuropean":true},{"isoCode":"MS","isEuropean":false},{"isoCode":"MA","isEuropean":false},{"isoCode":"MZ","isEuropean":false},{"isoCode":"MM","isEuropean":false},{"isoCode":"NA","isEuropean":false},{"isoCode":"NR","isEuropean":false},{"isoCode":"NP","isEuropean":false},{"isoCode":"NL","isEuropean":true},{"isoCode":"AN","isEuropean":false},{"isoCode":"NC","isEuropean":false},{"isoCode":"NZ","isEuropean":false},{"isoCode":"NI","isEuropean":false},{"isoCode":"NE","isEuropean":false},{"isoCode":"NG","isEuropean":false},{"isoCode":"NU","isEuropean":false},{"isoCode":"NF","isEuropean":false},{"isoCode":"MP","isEuropean":false},{"isoCode":"NO","isEuropean":true},{"isoCode":"OM","isEuropean":false},{"isoCode":"PK","isEuropean":false},{"isoCode":"PW","isEuropean":false},{"isoCode":"PS","isEuropean":false},{"isoCode":"PA","isEuropean":false},{"isoCode":"PG","isEuropean":false},{"isoCode":"PY","isEuropean":false},{"isoCode":"PE","isEuropean":false},{"isoCode":"PH","isEuropean":false},{"isoCode":"PN","isEuropean":false},{"isoCode":"PL","isEuropean":true},{"isoCode":"PT","isEuropean":true},{"isoCode":"PR","isEuropean":false},{"isoCode":"QA","isEuropean":false},{"isoCode":"RE","isEuropean":false},{"isoCode":"RO","isEuropean":true},{"isoCode":"RU","isEuropean":true},{"isoCode":"RW","isEuropean":false},{"isoCode":"BL","isEuropean":false},{"isoCode":"SH","isEuropean":false},{"isoCode":"KN","isEuropean":false},{"isoCode":"LC","isEuropean":false},{"isoCode":"MF","isEuropean":false},{"isoCode":"PM","isEuropean":false},{"isoCode":"VC","isEuropean":false},{"isoCode":"WS","isEuropean":false},{"isoCode":"SM","isEuropean":true},{"isoCode":"ST","isEuropean":false},{"isoCode":"SA","isEuropean":false},{"isoCode":"SN","isEuropean":false},{"isoCode":"RS","isEuropean":true},{"isoCode":"SC","isEuropean":false},{"isoCode":"SL","isEuropean":false},{"isoCode":"SG","isEuropean":false},{"isoCode":"SK","isEuropean":true},{"isoCode":"SI","isEuropean":true},{"isoCode":"SB","isEuropean":false},{"isoCode":"SO","isEuropean":false},{"isoCode":"ZA","isEuropean":false},{"isoCode":"GS","isEuropean":false},{"isoCode":"SS","isEuropean":false},{"isoCode":"ES","isEuropean":true},{"isoCode":"LK","isEuropean":false},{"isoCode":"SD","isEuropean":false},{"isoCode":"SR","isEuropean":false},{"isoCode":"SJ","isEuropean":false},{"isoCode":"SZ","isEuropean":false},{"isoCode":"SE","isEuropean":true},{"isoCode":"CH","isEuropean":true},{"isoCode":"SY","isEuropean":false},{"isoCode":"TW","isEuropean":false},{"isoCode":"TJ","isEuropean":true},{"isoCode":"TZ","isEuropean":false},{"isoCode":"TH","isEuropean":false},{"isoCode":"TL","isEuropean":false},{"isoCode":"TG","isEuropean":false},{"isoCode":"TK","isEuropean":false},{"isoCode":"TO","isEuropean":false},{"isoCode":"TT","isEuropean":false},{"isoCode":"TN","isEuropean":false},{"isoCode":"TR","isEuropean":false},{"isoCode":"TM","isEuropean":true},{"isoCode":"TC","isEuropean":false},{"isoCode":"TV","isEuropean":false},{"isoCode":"UG","isEuropean":false},{"isoCode":"UA","isEuropean":true},{"isoCode":"AE","isEuropean":false},{"isoCode":"GB","isEuropean":true},{"isoCode":"US","isEuropean":false},{"isoCode":"UM","isEuropean":false},{"isoCode":"UY","isEuropean":false},{"isoCode":"UZ","isEuropean":true},{"isoCode":"VU","isEuropean":false},{"isoCode":"VE","isEuropean":false},{"isoCode":"VN","isEuropean":false},{"isoCode":"VI","isEuropean":false},{"isoCode":"WF","isEuropean":false},{"isoCode":"EH","isEuropean":false},{"isoCode":"YE","isEuropean":false},{"isoCode":"ZM","isEuropean":false},{"isoCode":"ZW","isEuropean":false}]}}}'
+      string: '{"header": {"id": "website config", "version": "1.0", "title": "",
+        "lastUpdate": "2018-09-11T08:34:47.424Z"}, "modules": {"FEATURES": {"FUNNEL":
+        {"IS_ENABLED": true}, "AUTHENTICATION": {"GIGYA_LOGIN_FLOW_IS_ENABLED": true},
+        "CURRENT_CONTEXT": {"SEASON": 2018}}, "IMAGE_FORMATS": {"FALLBACK_BASE_URL":
+        "fallbackimageprd-temporary", "DefaulList_16:9": [{"singleFormat": "t_16-9_480",
+        "doubleFormat": "t_16-9_960", "breakpoint": "220px"}], "Hero_16:9": [{"singleFormat":
+        "t_16-9_1920", "doubleFormat": "t_16-9_3840", "breakpoint": "1200px"}, {"singleFormat":
+        "t_16-9_1200", "doubleFormat": "t_16-9_1920", "breakpoint": "768px"}, {"singleFormat":
+        "t_16-9_960", "doubleFormat": "t_16-9_1200", "breakpoint": "480px"}, {"singleFormat":
+        "t_16-9_480", "doubleFormat": "t_16-9_960", "breakpoint": "220px"}]}, "SOCIAL_PROVIDERS":
+        {"FACEBOOK": {"sdk_url": "//connect.facebook.net/en_US/sdk.js", "sdk_configuration":
+        {"appId": "219276878564579 temporary", "xfbml": false, "version": "v2.9"},
+        "share": {"hashtag": "#gamepass"}}, "TWITTER": {"sdk_url": "//platform.twitter.com/widgets.js",
+        "share": {"hashtags": ["nfl", "gamepass"], "via": "NFLGamePass"}}, "SOCIAL_MESSAGE":
+        "I''m watching the NFL on http://gamepass-europe.nfl.com"}, "COOKIES": {"DOMAIN":
+        ".nflgamepass.com", "COOKIES_POLICY": {"name": "gp_cp", "duration": 30}},
+        "MOMENT": {"LOCALE": "en-gb", "FREE_TRIAL_DATE_FORMAT": "DD MMMM YYYY"}, "API":
+        {"GRANT_TYPES": {"PASSWORD": "password", "REFRESH_TOKEN": "refresh_token",
+        "SHIELD_AUTHENTICATION": "shield_authentication"}, "CLIENT_ID": "42cc360e-6fbb-4472-9437-2f088b8730de",
+        "DEVICE_TYPE": "web", "BASE_URL": "https://www.nflgamepass.com/api/user",
+        "VOCABULARY": "https://www.nflgamepass.com/api/en/content/v1/web/voc", "TV_SHOWS":
+        "https://www.nflgamepass.com/api/en/content/v1/web/tv-programs/:showCategory/programs",
+        "NETWORK_PROGRAMS": "https://www.nflgamepass.com/api/en/content/v1/web/network/programs",
+        "NETWORK_EPISODES": "https://www.nflgamepass.com/api/en/content/v1/web/network/:seasonSlug/:tvShowSlug/list",
+        "VIDEO_BY_SLUG": "https://www.nflgamepass.com/api/en/content/v1/web/videos/:videoSlug/video",
+        "LIVE_VIDEOS": "https://www.nflgamepass.com/api/en/content/v1/web/live/all",
+        "FAVOURITE_TEAM_MATCHES": "https://www.nflgamepass.com/api/en/content/v1/web/teams/:favouriteTeam/preferred-team",
+        "TEAMS": "https://www.nflgamepass.com/api/en/content/v1/common/teams", "GEOLOCALIZATION":
+        "https://www.nflgamepass.com/api/user/api/users/v1/geolocation", "LOGIN":
+        "https://www.nflgamepass.com/api/user/oauth/token", "LOGOUT": "https://www.nflgamepass.com/api/user/api/users/v1/identity/logout",
+        "REFRESH_TOKEN": "https://www.nflgamepass.com/api/user/oauth/token", "USER_PROFILE":
+        "https://www.nflgamepass.com/api/user/api/users/v1/profile/me", "USER_ACCOUNT":
+        "https://www.nflgamepass.com/api/user/api/users/v1/subscription/myaccount",
+        "CHECK_USER_NICKNAME": "https://www.nflgamepass.com/api/user/api/users/v1/identity/existsusername",
+        "CHECK_USER_SESSION": "https://www.nflgamepass.com/api/user/api/users/v1/identity/isauthenticated",
+        "REGISTER": "https://www.nflgamepass.com/api/user/api/users/v1/identity/register",
+        "ZUORA_IFRAME_CONFIGURATION": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/iframe",
+        "ZUORA_CREDIT_CARD_PAYMENT_REGISTRATION": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/purchase/creditcard",
+        "ZUORA_CREDIT_CARD_UPGRADE_PAYMENT_REGISTRATION": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/upgrade/creditcard",
+        "ZUORA_PAYPAL_PAYMENT_REGISTRATION": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/purchase/paypal",
+        "ZUORA_PAYPAL_UPGRADE_PAYMENT_REGISTRATION": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/upgrade/paypal",
+        "ZUORA_FREE_TRIAL_STOP": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/freetrial",
+        "ZUORA_AUTO_RENEWAL_STOP": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/cancelautorenewal",
+        "ZUORA_AUTO_RENEWAL_ENABLE": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/enableautorenewal",
+        "ZUORA_PAYMENT_METHOD_UPDATE": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/changepaymentmethod/creditcard",
+        "ZUORA_VALIDATE_PROMO_CODE": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/preview/promocode",
+        "ZUORA_FREEMIUM_PRODUCT_REGISTRATION": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/add",
+        "ZUORA_ENABLE_PAYMENT_VIA_INSTALLMENTS": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/paymentmode/installments",
+        "ZUORA_TOGGLE_PAYMENT_VIA_INSTALLMENTS": "https://www.nflgamepass.com/api/user/api/users/v1/subscription/zuora/paymentmode",
+        "SOFT_ENTITLEMENT": "https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/softcheck",
+        "PAYPAL_CHECKOUT_TOKEN": "https://www.nflgamepass.com/api/user/api/users/v1/paypal/getcheckouttoken",
+        "CONTACT_FORM": "https://nfl-functions-prd-we.azurewebsites.net/api/SendSupportEmail?code=9rsqW1AGlLP/9yFf77Dilan7/Ja88OwaaSMXHusHaW74kcITLBNFJw=="},
+        "GIGYA": {"JAVASCRIPT_API_URL": "https://cdns.eu1.gigya.com/js/gigya.js?apiKey=3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp",
+        "SUCCESS_ERROR_CODES": [0], "WRONG_CREDENTIALS_ERROR_CODES": [403042], "THROTTLING_ERROR_CODES":
+        [403048]}, "ZUORA": {"LOCALE": "en_US", "JAVASCRIPT_API_URL": "https://apisandboxstatic.zuora.com/Resources/libs/hosted/1.3.0/zuora-min.js",
+        "IFRAME_BASE_OPTIONS": {"SUPPORTED_CARD_TYPES": "AmericanExpress,JCB,Visa,MasterCard,Discover",
+        "SUBMIT_ENABLED": true, "STYLE": "inline"}}, "DIVA": {"FLASH": {"SWF_PATH":
+        "https://www.nflgamepass.com/api/diva/swf/diva.swf", "MINIMUM_VERSION_NUMBER":
+        20, "PLAYER_SIZE": {"WIDTH": 990, "HEIGHT": 590}, "PARAMS": {"scale": "noscale",
+        "wmode": "direct", "bgcolor": "#000000", "allowfullscreen": "true", "allowscriptaccess":
+        "always", "base": "."}, "SETTINGS": {"LiveNoData": "https://www.nflgamepass.com/api/diva/diva/settings/livenodata/device",
+        "ReplayNoData": "https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/device",
+        "LiveWithData": "https://www.nflgamepass.com/api/diva/diva/settings/livenfl/device",
+        "ReplayWithData": "https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/device",
+        "NoAdsWithData": "https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/device",
+        "VodNoData": "https://www.nflgamepass.com/api/diva/diva/settings/vod/device",
+        "Live24x7": "https://www.nflgamepass.com/api/diva/diva/settings/24h7d/device",
+        "CoachFilm": "https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/device"}},
+        "HTML5": {"CONVIVA": {"IS_ENABLED": true, "ANALYTICS_JAVASCRIPT_API_URL":
+        "https://www.nflgamepass.com/api/diva/scripts/conviva_integration.min.js",
+        "DEFAULT_ANALYTICS_PAYLOAD": {"assetName": "{V.Category1}-{V.Title}", "applicationName":
+        "nfl-prd-html5", "customerKey": "6679b240d0b48c69402268577b537232458a6e78",
+        "viewerId": "{Settings.cs5}", "tags": {"playerVendor": "deltatre", "category":
+        "Diva", "channel": "Diva", "retryNumber": "0", "streamProtocol": "HLS", "contentId":
+        "Diva-{V.ID}"}, "gatewayUrl": "", "log": false}}, "PLAYER_PATH": "https://www.nflgamepass.com/api/diva/html5/divaplayer.html",
+        "PLAYER_LOGO": "/custom/nfl/img/gp-logo__white.svg", "RECOMMENDATIONS_IFRAME_URL":
+        "https://www.nflgamepass.com/api/diva/customoverlay/videolist/video_switch.html?useHashNav=false&templateName=fullVideo&mrssUrl=https://www.nflgamepass.com/api/en/content/v1/rss-feeds/{videoId}/video-raccomendation&errorText=There%20are%20no%20videos%20available%20at%20the%20moment.&pollingTime=00:02:00&ribbonBgColor=0xef082b&ribbonFgColor=0x000000&noDescription=true&mode=switch",
+        "SETTINGS": {"LiveNoData": "https://www.nflgamepass.com/api/diva/diva/settings/livenodata/html5",
+        "ReplayNoData": "https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/html5",
+        "LiveWithData": "https://www.nflgamepass.com/api/diva/diva/settings/livenfl/html5",
+        "ReplayWithData": "https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/html5",
+        "NoAdsWithData": "https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/html5",
+        "VodNoData": "https://www.nflgamepass.com/api/diva/diva/settings/vod/html5",
+        "Live24x7": "https://www.nflgamepass.com/api/diva/diva/settings/24h7d/html5",
+        "CoachFilm": "https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/html5"}}},
+        "REDIRECT_URIS": {"ERROR": "error", "LOGIN": "login"}, "ROUTES_DATA_PROVIDERS":
+        {"home": "https://www.nflgamepass.com/api/en/content/v1/web/homepage", "login":
+        "https://www.nflgamepass.com/api/en/content/v1/web/login", "games": "https://www.nflgamepass.com/api/en/content/v1/web/games/seasons",
+        "games_detail": "https://www.nflgamepass.com/api/en/content/v1/web/games/:season/:seasonType/:week/list",
+        "game_page": "https://www.nflgamepass.com/api/en/content/v1/web/games/:season/:gameslug/data",
+        "teams": "https://www.nflgamepass.com/api/en/content/v1/web/teams/list", "team_detail":
+        "https://www.nflgamepass.com/api/en/content/v1/web/teams/:team/videos", "funnel_plans":
+        "https://www.nflgamepass.com/api/en/content/v1/web/funnel/zuora/{{GeolocationService:userInfo.geoLocation.country.isoCode}}/subscription/catalog",
+        "funnel_upgrade_plans": "https://www.nflgamepass.com/api/en/content/v1/web/upgrade/zuora/{{GeolocationService:userInfo.geoLocation.country.isoCode}}/upgrade/{{UserProfileService:basicInfo.upgradeRatePlanTag}}/catalog",
+        "funnel_account": "https://www.nflgamepass.com/api/en/content/v1/web/funnel/account",
+        "funnel_payment": "https://www.nflgamepass.com/api/en/content/v1/web/funnel/payment",
+        "funnel_upgrade_payment": "https://www.nflgamepass.com/api/en/content/v1/web/upgrade/payment",
+        "funnel_confirm": "https://www.nflgamepass.com/api/en/content/v1/web/funnel/confirmation-page",
+        "funnel_upgrade_confirm": "https://www.nflgamepass.com/api/en/content/v1/web/upgrade/confirmation-page",
+        "funnel_unavailable": "https://www.nflgamepass.com/api/en/content/v1/web/funnel/unavailable",
+        "funnel_upgrade_unavailable": "https://www.nflgamepass.com/api/en/content/v1/web/upgrade/unavailable",
+        "funnel_error": "https://www.nflgamepass.com/api/en/content/v1/web/funnel/error",
+        "funnel_upgrade_error": "https://www.nflgamepass.com/api/en/content/v1/web/upgrade/error",
+        "funnel_subscription_renewal": "https://www.nflgamepass.com/api/en/content/v1/web/autorenewal-landing-page/data",
+        "featured": "https://www.nflgamepass.com/api/en/content/v1/web/featured/videos",
+        "featured_video_slug": "https://www.nflgamepass.com/api/en/content/v1/web/featured/show/:video-slug/video",
+        "nfl_shows": "https://www.nflgamepass.com/api/en/content/v1/web/nfl-shows/videos",
+        "nfl_shows_video_slug": "https://www.nflgamepass.com/api/en/content/v1/web/nfl-shows/show/:video-slug/video",
+        "nfl_originals": "https://www.nflgamepass.com/api/en/content/v1/web/nfl-originals/videos",
+        "nfl_originals_video_slug": "https://www.nflgamepass.com/api/en/content/v1/web/nfl-originals/show/:video-slug/video",
+        "video-slug": "https://www.nflgamepass.com/api/en/content/v1/web/videos/:video-slug/video",
+        "network_video_slug": "https://www.nflgamepass.com/api/en/content/v1/web/network/show/:video-slug/video",
+        "featured_local": "http://localhost:61544/v1/web/featured/videos", "redzone":
+        "https://www.nflgamepass.com/api/en/content/v1/web/redzone/videos", "network":
+        "https://www.nflgamepass.com/api/en/content/v1/web/network/data", "terms_of_service":
+        "https://www.nflgamepass.com/api/en/content/v1/web/terms-and-conditions",
+        "discover_the_service": "https://www.nflgamepass.com/api/en/content/v1/web/discover-the-service",
+        "discover_redzone": "https://www.nflgamepass.com/api/en/content/v1/web/discover-redzone",
+        "privacy": "https://www.nflgamepass.com/api/en/content/v1/web/privacy", "support":
+        "https://www.nflgamepass.com/api/en/content/v1/web/support", "faq": "https://www.nflgamepass.com/api/en/content/v1/web/faq",
+        "cookies_policy": "https://www.nflgamepass.com/api/en/content/v1/web/cookies-policy",
+        "payment_terms": "https://www.nflgamepass.com/api/en/content/v1/web/payment-terms",
+        "account": "https://www.nflgamepass.com/api/en/content/v1/web/subscription/myaccount",
+        "contact-us": "https://www.nflgamepass.com/api/en/content/v1/web/contactus/data",
+        "confirm-subscription": "https://www.nflgamepass.com/api/en/content/v1/web/funnel/confirmation-page",
+        "refund_faq": "https://www.nflgamepass.com/api/en/content/v1/web/exrefund-faq",
+        "sb_competition_tc": "https://www.nflgamepass.com/api/en/content/v1/web/sb_competition_tc",
+        "error": "https://www.nflgamepass.com/api/en/content/v1/web/500", "no-content":
+        "https://www.nflgamepass.com/api/en/content/v1/web/404"}, "LOCAL_STORAGE":
+        {"OAUTH_KEY": "oauth_payload", "PREFERENCES_KEY": "preferences", "TRANSACTION_DETAILS_KEY":
+        "transaction_details"}, "GOOGLE": {"RECAPTCHA": {"JAVASCRIPT_API_URL": "https://www.google.com/recaptcha/api.js?onload=googleReCaptchaOnloadCallback&render=explicit",
+        "SITE_KEY": "6LfVuiIUAAAAAAFdPEG3HtHJGbKl0PqEKvRws9hV"}}, "PAYPAL": {"REDIRECT_URIS":
+        {"PRODUCT_PURCHASE": {"SUCCESS": "{{window:location.origin}}/en/subscribe/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=purchase&success-redirect=/en/subscribe/confirmation&error-redirect=/en/subscribe/paypal/error",
+        "ERROR": "{{window:location.origin}}/en/subscribe/paypal/error"}, "PRODUCT_UPGRADE":
+        {"SUCCESS": "{{window:location.origin}}/en/upgrade/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=upgrade&success-redirect=/en/upgrade/confirmation&error-redirect=/en/upgrade/paypal/error",
+        "ERROR": "{{window:location.origin}}/en/upgrade/paypal/error"}, "SUCCESS":
+        "{{window:location.origin}}/en/subscribe/paypal/success/{{FunnelService:selectedPayment.id}}/{{FunnelService:selectedPaymentOption.currency}}?payment-type=purchase&success-redirect=/en/subscribe/confirmation&error-redirect=/en/subscribe/paypal/error",
+        "ERROR": "{{window:location.origin}}/en/subscribe/paypal/error"}}, "POLLING":
+        {"VIDEO_STATUS_CHECK": {"INTERVAL": 10000}}, "ADOBE_HEARTBEAT": {"VISITOR":
+        {"ID": "F75C3025512D2C1D0A490D44@AdobeOrg", "TRACKING_SERVER": "smetrics.nfl.com"},
+        "APP_MEASUREMENT": {"TRACKING_SERVER": "nfl.hb.omtrdc.net", "ACCOUNT": "nflprod",
+        "CHARSET": "UTF-8"}, "MEDIA_CONFIGURATION": {"TRACKING_SERVER": "nfl.hb.omtrdc.net",
+        "PLAYER_NAME": "Diva Player", "CHANNEL": "NFL GamePass - Prod.", "DEBUG_LOGGING":
+        false, "APP_VERSION": "Diva Player", "SSL": false, "OVP": "NFL GamePass OVP
+        - Prod."}}, "MEDIA": {"HOME_PAGE": {"SHOW_VIDEO": false, "HERO_VIDEO": "https://www.nflgamepass.com/api/images/video/upload/v1497617597/HomePageVideoGP_2500Kb_1280_no_Audio_lglspi.mp4",
+        "HERO_VIDEO_MOB": "https://www.nflgamepass.com/api/images/video/upload/v1497612187/HomePageVideoGP_1500Kb_720_no_Audio_esd7az.mp4"},
+        "DISCOVER_THE_SERVICE": {"HERO_VIDEO": "https://www.nflgamepass.com/api/images/video/upload/v1532794979/OVE_003_Game_Pass_Product_Video_V01_12_5Mbps_sbgdzr.mp4",
+        "HERO_VIDEO_MOB": "https://www.nflgamepass.com/api/images/video/upload/v1532794979/OVE_003_Game_Pass_Product_Video_V01_12_5Mbps_sbgdzr.mp4"},
+        "REDZONE": {"HERO_VIDEO": "https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4",
+        "HERO_VIDEO_MOB": "https://www.nflgamepass.com/api/images/video/upload/v1534408368/NFLGP_Redzone_2018_5_0Mbps_nx8ofi.mp4"},
+        "WELCOME": {"HERO_VIDEO": "https://www.nflgamepass.com/api/images/video/upload/v1535355398/ScottHanson_Game_Pass_Read_5Mbps_ddu4rr.mp4",
+        "HERO_VIDEO_MOB": "https://www.nflgamepass.com/api/images/video/upload/v1535355398/ScottHanson_Game_Pass_Read_5Mbps_ddu4rr.mp4"}},
+        "COUNTRIES": {"ISO3611": [{"isoCode": "AX", "isEuropean": true}, {"isoCode":
+        "AL", "isEuropean": true}, {"isoCode": "DZ", "isEuropean": false}, {"isoCode":
+        "AS", "isEuropean": false}, {"isoCode": "AD", "isEuropean": true}, {"isoCode":
+        "AO", "isEuropean": false}, {"isoCode": "AI", "isEuropean": false}, {"isoCode":
+        "AQ", "isEuropean": false}, {"isoCode": "AG", "isEuropean": false}, {"isoCode":
+        "AR", "isEuropean": false}, {"isoCode": "AM", "isEuropean": true}, {"isoCode":
+        "AW", "isEuropean": false}, {"isoCode": "AU", "isEuropean": false}, {"isoCode":
+        "AT", "isEuropean": true}, {"isoCode": "AZ", "isEuropean": true}, {"isoCode":
+        "BS", "isEuropean": false}, {"isoCode": "BH", "isEuropean": false}, {"isoCode":
+        "BD", "isEuropean": false}, {"isoCode": "BB", "isEuropean": false}, {"isoCode":
+        "BY", "isEuropean": true}, {"isoCode": "BE", "isEuropean": true}, {"isoCode":
+        "BZ", "isEuropean": false}, {"isoCode": "BJ", "isEuropean": false}, {"isoCode":
+        "BM", "isEuropean": false}, {"isoCode": "BT", "isEuropean": false}, {"isoCode":
+        "BO", "isEuropean": false}, {"isoCode": "BA", "isEuropean": true}, {"isoCode":
+        "BW", "isEuropean": false}, {"isoCode": "BV", "isEuropean": false}, {"isoCode":
+        "BR", "isEuropean": false}, {"isoCode": "VG", "isEuropean": false}, {"isoCode":
+        "IO", "isEuropean": false}, {"isoCode": "BN", "isEuropean": false}, {"isoCode":
+        "BG", "isEuropean": true}, {"isoCode": "BF", "isEuropean": false}, {"isoCode":
+        "BI", "isEuropean": false}, {"isoCode": "KH", "isEuropean": false}, {"isoCode":
+        "CM", "isEuropean": false}, {"isoCode": "CA", "isEuropean": false}, {"isoCode":
+        "CV", "isEuropean": false}, {"isoCode": "KY", "isEuropean": false}, {"isoCode":
+        "CF", "isEuropean": false}, {"isoCode": "TD", "isEuropean": false}, {"isoCode":
+        "CL", "isEuropean": false}, {"isoCode": "CN", "isEuropean": false}, {"isoCode":
+        "HK", "isEuropean": false}, {"isoCode": "MO", "isEuropean": false}, {"isoCode":
+        "CX", "isEuropean": false}, {"isoCode": "CC", "isEuropean": false}, {"isoCode":
+        "CO", "isEuropean": false}, {"isoCode": "KM", "isEuropean": false}, {"isoCode":
+        "CG", "isEuropean": false}, {"isoCode": "CD", "isEuropean": false}, {"isoCode":
+        "CK", "isEuropean": false}, {"isoCode": "CR", "isEuropean": false}, {"isoCode":
+        "CI", "isEuropean": false}, {"isoCode": "HR", "isEuropean": true}, {"isoCode":
+        "CU", "isEuropean": false}, {"isoCode": "CY", "isEuropean": true}, {"isoCode":
+        "CZ", "isEuropean": true}, {"isoCode": "DK", "isEuropean": true}, {"isoCode":
+        "DJ", "isEuropean": false}, {"isoCode": "DM", "isEuropean": false}, {"isoCode":
+        "DO", "isEuropean": false}, {"isoCode": "EC", "isEuropean": false}, {"isoCode":
+        "EG", "isEuropean": false}, {"isoCode": "SV", "isEuropean": false}, {"isoCode":
+        "GQ", "isEuropean": false}, {"isoCode": "ER", "isEuropean": false}, {"isoCode":
+        "EE", "isEuropean": true}, {"isoCode": "ET", "isEuropean": false}, {"isoCode":
+        "FK", "isEuropean": false}, {"isoCode": "FO", "isEuropean": true}, {"isoCode":
+        "FJ", "isEuropean": false}, {"isoCode": "FI", "isEuropean": true}, {"isoCode":
+        "FR", "isEuropean": true}, {"isoCode": "GF", "isEuropean": false}, {"isoCode":
+        "PF", "isEuropean": false}, {"isoCode": "TF", "isEuropean": false}, {"isoCode":
+        "GA", "isEuropean": false}, {"isoCode": "GM", "isEuropean": false}, {"isoCode":
+        "GE", "isEuropean": true}, {"isoCode": "DE", "isEuropean": true}, {"isoCode":
+        "GH", "isEuropean": false}, {"isoCode": "GI", "isEuropean": true}, {"isoCode":
+        "GR", "isEuropean": true}, {"isoCode": "GL", "isEuropean": false}, {"isoCode":
+        "GD", "isEuropean": false}, {"isoCode": "GP", "isEuropean": false}, {"isoCode":
+        "GU", "isEuropean": false}, {"isoCode": "GT", "isEuropean": false}, {"isoCode":
+        "GG", "isEuropean": true}, {"isoCode": "GN", "isEuropean": false}, {"isoCode":
+        "GW", "isEuropean": false}, {"isoCode": "GY", "isEuropean": false}, {"isoCode":
+        "HT", "isEuropean": false}, {"isoCode": "HM", "isEuropean": false}, {"isoCode":
+        "VA", "isEuropean": true}, {"isoCode": "HN", "isEuropean": false}, {"isoCode":
+        "HU", "isEuropean": true}, {"isoCode": "IS", "isEuropean": true}, {"isoCode":
+        "IN", "isEuropean": false}, {"isoCode": "ID", "isEuropean": false}, {"isoCode":
+        "IR", "isEuropean": false}, {"isoCode": "IQ", "isEuropean": false}, {"isoCode":
+        "IE", "isEuropean": true}, {"isoCode": "IM", "isEuropean": true}, {"isoCode":
+        "IL", "isEuropean": false}, {"isoCode": "IT", "isEuropean": true}, {"isoCode":
+        "JM", "isEuropean": false}, {"isoCode": "JP", "isEuropean": false}, {"isoCode":
+        "JE", "isEuropean": true}, {"isoCode": "JO", "isEuropean": false}, {"isoCode":
+        "KZ", "isEuropean": true}, {"isoCode": "KE", "isEuropean": false}, {"isoCode":
+        "KI", "isEuropean": false}, {"isoCode": "KP", "isEuropean": false}, {"isoCode":
+        "KR", "isEuropean": false}, {"isoCode": "KW", "isEuropean": false}, {"isoCode":
+        "KG", "isEuropean": true}, {"isoCode": "LA", "isEuropean": false}, {"isoCode":
+        "LV", "isEuropean": true}, {"isoCode": "LB", "isEuropean": false}, {"isoCode":
+        "LS", "isEuropean": false}, {"isoCode": "LR", "isEuropean": false}, {"isoCode":
+        "LY", "isEuropean": false}, {"isoCode": "LI", "isEuropean": true}, {"isoCode":
+        "LT", "isEuropean": true}, {"isoCode": "LU", "isEuropean": true}, {"isoCode":
+        "MK", "isEuropean": true}, {"isoCode": "MG", "isEuropean": false}, {"isoCode":
+        "MW", "isEuropean": false}, {"isoCode": "MY", "isEuropean": false}, {"isoCode":
+        "MV", "isEuropean": false}, {"isoCode": "ML", "isEuropean": false}, {"isoCode":
+        "MT", "isEuropean": true}, {"isoCode": "MH", "isEuropean": false}, {"isoCode":
+        "MQ", "isEuropean": false}, {"isoCode": "MR", "isEuropean": false}, {"isoCode":
+        "MU", "isEuropean": false}, {"isoCode": "YT", "isEuropean": false}, {"isoCode":
+        "MX", "isEuropean": false}, {"isoCode": "FM", "isEuropean": false}, {"isoCode":
+        "MD", "isEuropean": true}, {"isoCode": "MC", "isEuropean": true}, {"isoCode":
+        "MN", "isEuropean": false}, {"isoCode": "ME", "isEuropean": true}, {"isoCode":
+        "MS", "isEuropean": false}, {"isoCode": "MA", "isEuropean": false}, {"isoCode":
+        "MZ", "isEuropean": false}, {"isoCode": "MM", "isEuropean": false}, {"isoCode":
+        "NA", "isEuropean": false}, {"isoCode": "NR", "isEuropean": false}, {"isoCode":
+        "NP", "isEuropean": false}, {"isoCode": "NL", "isEuropean": true}, {"isoCode":
+        "AN", "isEuropean": false}, {"isoCode": "NC", "isEuropean": false}, {"isoCode":
+        "NZ", "isEuropean": false}, {"isoCode": "NI", "isEuropean": false}, {"isoCode":
+        "NE", "isEuropean": false}, {"isoCode": "NG", "isEuropean": false}, {"isoCode":
+        "NU", "isEuropean": false}, {"isoCode": "NF", "isEuropean": false}, {"isoCode":
+        "MP", "isEuropean": false}, {"isoCode": "NO", "isEuropean": true}, {"isoCode":
+        "OM", "isEuropean": false}, {"isoCode": "PK", "isEuropean": false}, {"isoCode":
+        "PW", "isEuropean": false}, {"isoCode": "PS", "isEuropean": false}, {"isoCode":
+        "PA", "isEuropean": false}, {"isoCode": "PG", "isEuropean": false}, {"isoCode":
+        "PY", "isEuropean": false}, {"isoCode": "PE", "isEuropean": false}, {"isoCode":
+        "PH", "isEuropean": false}, {"isoCode": "PN", "isEuropean": false}, {"isoCode":
+        "PL", "isEuropean": true}, {"isoCode": "PT", "isEuropean": true}, {"isoCode":
+        "PR", "isEuropean": false}, {"isoCode": "QA", "isEuropean": false}, {"isoCode":
+        "RE", "isEuropean": false}, {"isoCode": "RO", "isEuropean": true}, {"isoCode":
+        "RU", "isEuropean": true}, {"isoCode": "RW", "isEuropean": false}, {"isoCode":
+        "BL", "isEuropean": false}, {"isoCode": "SH", "isEuropean": false}, {"isoCode":
+        "KN", "isEuropean": false}, {"isoCode": "LC", "isEuropean": false}, {"isoCode":
+        "MF", "isEuropean": false}, {"isoCode": "PM", "isEuropean": false}, {"isoCode":
+        "VC", "isEuropean": false}, {"isoCode": "WS", "isEuropean": false}, {"isoCode":
+        "SM", "isEuropean": true}, {"isoCode": "ST", "isEuropean": false}, {"isoCode":
+        "SA", "isEuropean": false}, {"isoCode": "SN", "isEuropean": false}, {"isoCode":
+        "RS", "isEuropean": true}, {"isoCode": "SC", "isEuropean": false}, {"isoCode":
+        "SL", "isEuropean": false}, {"isoCode": "SG", "isEuropean": false}, {"isoCode":
+        "SK", "isEuropean": true}, {"isoCode": "SI", "isEuropean": true}, {"isoCode":
+        "SB", "isEuropean": false}, {"isoCode": "SO", "isEuropean": false}, {"isoCode":
+        "ZA", "isEuropean": false}, {"isoCode": "GS", "isEuropean": false}, {"isoCode":
+        "SS", "isEuropean": false}, {"isoCode": "ES", "isEuropean": true}, {"isoCode":
+        "LK", "isEuropean": false}, {"isoCode": "SD", "isEuropean": false}, {"isoCode":
+        "SR", "isEuropean": false}, {"isoCode": "SJ", "isEuropean": false}, {"isoCode":
+        "SZ", "isEuropean": false}, {"isoCode": "SE", "isEuropean": true}, {"isoCode":
+        "CH", "isEuropean": true}, {"isoCode": "SY", "isEuropean": false}, {"isoCode":
+        "TW", "isEuropean": false}, {"isoCode": "TJ", "isEuropean": true}, {"isoCode":
+        "TZ", "isEuropean": false}, {"isoCode": "TH", "isEuropean": false}, {"isoCode":
+        "TL", "isEuropean": false}, {"isoCode": "TG", "isEuropean": false}, {"isoCode":
+        "TK", "isEuropean": false}, {"isoCode": "TO", "isEuropean": false}, {"isoCode":
+        "TT", "isEuropean": false}, {"isoCode": "TN", "isEuropean": false}, {"isoCode":
+        "TR", "isEuropean": false}, {"isoCode": "TM", "isEuropean": true}, {"isoCode":
+        "TC", "isEuropean": false}, {"isoCode": "TV", "isEuropean": false}, {"isoCode":
+        "UG", "isEuropean": false}, {"isoCode": "UA", "isEuropean": true}, {"isoCode":
+        "AE", "isEuropean": false}, {"isoCode": "GB", "isEuropean": true}, {"isoCode":
+        "US", "isEuropean": false}, {"isoCode": "UM", "isEuropean": false}, {"isoCode":
+        "UY", "isEuropean": false}, {"isoCode": "UZ", "isEuropean": true}, {"isoCode":
+        "VU", "isEuropean": false}, {"isoCode": "VE", "isEuropean": false}, {"isoCode":
+        "VN", "isEuropean": false}, {"isoCode": "VI", "isEuropean": false}, {"isoCode":
+        "WF", "isEuropean": false}, {"isoCode": "EH", "isEuropean": false}, {"isoCode":
+        "YE", "isEuropean": false}, {"isoCode": "ZM", "isEuropean": false}, {"isoCode":
+        "ZW", "isEuropean": false}]}}}'
     headers:
       Access-Control-Allow-Headers: [Content-Type]
       Access-Control-Allow-Methods: [GET]
       Access-Control-Allow-Origin: ['*']
-      Cache-Control: [max-age=120]
+      Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:38 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:07:38 GMT']
+      Date: ['Tue, 11 Sep 2018 08:35:57 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:37:57 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
       content-length: ['24011']
     status: {code: 200, message: OK}
 - request:
-    body: apiKey=3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp&loginID=REDACTED&password=REDACTED
+    body: null
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
+      Authorization: [REDACTED]
       Connection: [keep-alive]
-      Content-Length: ['119']
-      Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-requests/2.18.4]
-    method: POST
-    uri: https://accounts.us1.gigya.com/accounts.login
+    method: GET
+    uri: https://www.nflgamepass.com/api/user/api/users/v1/subscription/myaccount
   response:
     body:
-      pretty:
-        UID: 8caecb9d8857dc3fd9c7b2ce9fcc5368
-        UIDSignature: OGyeY+PqNu0HiazzoPL6X8/2u8M=
-        apiVersion: 2
-        callId: a3ddd46a42b74e898df3367ba5a0d0ce
-        created: '2012-08-04T11:20:09.000Z'
-        createdTimestamp: 1344079209
-        errorCode: 0
-        isActive: true
-        isRegistered: true
-        isVerified: true
-        lastLogin: '2018-09-08T12:05:39.103Z'
-        lastLoginTimestamp: 1536408339
-        lastUpdated: '2018-09-04T06:49:25.683Z'
-        lastUpdatedTimestamp: 1536043765683
-        loginProvider: site
-        newUser: false
-        oldestDataUpdated: '2012-08-04T11:20:09.000Z'
-        oldestDataUpdatedTimestamp: 1344079209000
-        profile: REDACTED
-        registered: '2018-03-02T04:03:59.927Z'
-        registeredTimestamp: 1519963439
-        sessionInfo: {cookieName: gac_3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp,
-          cookieValue: st2.MUp8ehAul-gqUc2SQbObKK-JoLY.eA9NDUs4ORS1qebhVzA1Pw.ALBslSiOZtBhpLjcLJDIzJ6amIU}
-        signatureTimestamp: '1536408339'
-        socialProviders: site
-        statusCode: 200
-        statusReason: OK
-        time: '2018-09-08T12:05:39.135Z'
-        verified: '2018-03-02T04:03:59.786Z'
-        verifiedTimestamp: 1519963439786
-      string: "{\r\n  \"callId\": \"a3ddd46a42b74e898df3367ba5a0d0ce\",\r\n  \"errorCode\"\
-        : 0,\r\n  \"apiVersion\": 2,\r\n  \"statusCode\": 200,\r\n  \"statusReason\"\
-        : \"OK\",\r\n  \"time\": \"2018-09-08T12:05:39.135Z\",\r\n  \"registeredTimestamp\"\
-        : 1519963439,\r\n  \"UID\": \"8caecb9d8857dc3fd9c7b2ce9fcc5368\",\r\n  \"\
-        UIDSignature\": \"OGyeY+PqNu0HiazzoPL6X8/2u8M=\",\r\n  \"signatureTimestamp\"\
-        : \"1536408339\",\r\n  \"created\": \"2012-08-04T11:20:09.000Z\",\r\n  \"\
-        createdTimestamp\": 1344079209,\r\n  \"isActive\": true,\r\n  \"isRegistered\"\
-        : true,\r\n  \"isVerified\": true,\r\n  \"lastLogin\": \"2018-09-08T12:05:39.103Z\"\
-        ,\r\n  \"lastLoginTimestamp\": 1536408339,\r\n  \"lastUpdated\": \"2018-09-04T06:49:25.683Z\"\
-        ,\r\n  \"lastUpdatedTimestamp\": 1536043765683,\r\n  \"loginProvider\": \"\
-        site\",\r\n  \"oldestDataUpdated\": \"2012-08-04T11:20:09.000Z\",\r\n  \"\
-        oldestDataUpdatedTimestamp\": 1344079209000,\r\n  \"profile\": \"REDACTED\"\r\n,\r\n  \"\
-        registered\": \"2018-03-02T04:03:59.927Z\",\r\n  \"socialProviders\": \"site\"\
-        ,\r\n  \"verified\": \"2018-03-02T04:03:59.786Z\",\r\n  \"verifiedTimestamp\"\
-        : 1519963439786,\r\n  \"newUser\": false,\r\n  \"sessionInfo\": {\r\n    \"\
-        cookieName\": \"gac_3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp\"\
-        ,\r\n    \"cookieValue\": \"st2.MUp8ehAul-gqUc2SQbObKK-JoLY.eA9NDUs4ORS1qebhVzA1Pw.ALBslSiOZtBhpLjcLJDIzJ6amIU\"\
-        \r\n  }\r\n}"
+      pretty: {code: UR_10006, httpStatusCode: 401, id: 8be889d4-47bc-449f-b545-03494ad8ea3c,
+        message: error_unauthorised, validationErrors: null}
+      string: '{"id": "8be889d4-47bc-449f-b545-03494ad8ea3c", "code": "UR_10006",
+        "message": "error_unauthorised", "httpStatusCode": 401, "validationErrors":
+        null}'
     headers:
-      Cache-Control: [private]
+      Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
-      Content-Type: [text/javascript; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:39 GMT']
-      P3P: [CP="IDC COR PSA DEV ADM OUR IND ONL"]
-      Vary: [Accept-Encoding]
-      X-CallID: [a3ddd46a42b74e898df3367ba5a0d0ce]
-      X-Gigya-HA-cfg-ver: ['5']
-      X-Robots-Tag: [none]
-      X-Server: [us1d-nomad-g30]
-      X-Soa: ['true, Gator']
-      content-length: ['1404']
-    status: {code: 200, message: OK}
+      Content-Length: ['139']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 11 Sep 2018 08:35:57 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:35:57 GMT']
+      Pragma: [no-cache]
+      Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
+      Server: [Microsoft-IIS/10.0]
+      WWW-Authenticate: [Bearer]
+      X-Powered-By: [ASP.NET]
+    status: {code: 401, message: Unauthorized}
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&errorCode=0&grant_type=password&password=REDACTED&signature=OGyeY%2BPqNu0HiazzoPL6X8%2F2u8M%3D&ts=1536408339&username=REDACTED&uuid=8caecb9d8857dc3fd9c7b2ce9fcc5368
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&username=REDACTED&password=REDACTED&grant_type=password
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      Content-Length: ['222']
+      Content-Length: ['113']
       Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-requests/2.18.4]
     method: POST
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_a366fda4a920ed0b22f7d27f07d030e90b15c03c4bba3816f390844c92f91b04,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_c120201eccf4b3ec9e59ce8f3d7a533fe44ce2f8e893d595c22d6bf9fa69d3c5,
+      pretty: {access_token: FAKE_TOKEN_0f16328b044d6ea3b33a91dfbeba40d689c89c061638f1edd89e3c180418d0b0,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_96cb132bd31a7db53ffdec2dec31d8a54f235dc7f7f44fdc2d368115ca2d167a,
         token_type: bearer}
-      string: '{"access_token":"FAKE_TOKEN_a366fda4a920ed0b22f7d27f07d030e90b15c03c4bba3816f390844c92f91b04","token_type":"bearer","expires_in":3539,"refresh_token":"FAKE_TOKEN_c120201eccf4b3ec9e59ce8f3d7a533fe44ce2f8e893d595c22d6bf9fa69d3c5"}'
+      string: '{"access_token": "FAKE_TOKEN_0f16328b044d6ea3b33a91dfbeba40d689c89c061638f1edd89e3c180418d0b0",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_96cb132bd31a7db53ffdec2dec31d8a54f235dc7f7f44fdc2d368115ca2d167a"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Sat, 08 Sep 2018 12:05:39 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:39 GMT']
+      Date: ['Tue, 11 Sep 2018 08:35:58 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:35:58 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -588,7 +813,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: game list, lastUpdate: '2018-09-08T12:05:40.598Z', title: '',
+        header: {id: game list, lastUpdate: '2018-09-11T08:35:59.637Z', title: '',
           version: '1.0'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: '2017:reg:Week
@@ -1912,480 +2137,456 @@ interactions:
           weekScheduledGames:
             content: []
             displayText: {subTitle: game-list-subtitle, title: game-list-title}
-      string: "{\"header\":{\"id\":\"game list\",\"version\":\"1.0\",\"title\":\"\"\
-        ,\"lastUpdate\":\"2018-09-08T12:05:40.598Z\"},\"modules\":{\"weekLiveGames\"\
-        :{\"displayText\":{\"title\":\"game-list-title\",\"subTitle\":\"game-list-subtitle\"\
-        },\"content\":[]},\"weekScheduledGames\":{\"displayText\":{\"title\":\"game-list-title\"\
-        ,\"subTitle\":\"game-list-subtitle\"},\"content\":[]},\"weekCompletedGames\"\
-        :{\"displayText\":{\"title\":\"game-list-title\",\"subTitle\":\"game-list-subtitle\"\
-        },\"content\":[{\"homeNickName\":\"Ravens\",\"homeCityState\":\"Baltimore\"\
-        ,\"visitorNickName\":\"Dolphins\",\"visitorCityState\":\"Miami\",\"gameId\"\
-        :2017102600,\"backgroundImage\":null,\"gameDateTimeUtc\":\"2017-10-27T00:25:00.000Z\"\
-        ,\"redZone\":false,\"phase\":\"FINAL\",\"winner\":\"Ravens\",\"videoStatus\"\
-        :\"ONDEMAND\",\"season\":2017,\"seasonType\":\"REG\",\"week\":8,\"weekName\"\
-        :\"Week 8\",\"homeTeamId\":\"0325\",\"homeTeamAbbr\":\"BAL\",\"homeScore\"\
-        :{\"pointTotal\":40},\"homeTeamResult\":\"winner\",\"visitorTeamId\":\"2700\"\
-        ,\"visitorTeamAbbr\":\"MIA\",\"visitorScore\":{\"pointTotal\":0},\"visitorTeamResult\"\
-        :\"loser\",\"siteId\":3695,\"siteCity\":\"Baltimore\",\"siteFullName\":\"\
-        M&T Bank Stadium\",\"displayText\":{\"scheduled\":\"video-scheduled\",\"live\"\
-        :\"video-live\",\"liveIn\":\"video-live-in\",\"ondemand\":\"video-ondemand\"\
-        },\"video\":{\"videoId\":\"9f411680-eacd-4cde-b500-d8bfdbc67f0f\",\"title\"\
-        :\"Miami Dolphins @ Baltimore Ravens\",\"description\":\"<p>MIA@BAL</p>\\\
-        n\",\"kind\":\"Game video\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"8365.3\",\"trimmedVideoDuration\":\"\",\"slug\":\"miami-dolphins-baltimore-ravens-4\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/avkbaaeibrzzsrllmxcy\"\
-        ,\"overridenFormats\":{}},\"week\":\"week-8\",\"season\":\"season-2017\",\"\
-        seasonType\":\"seasontype-reg\",\"scheduleDate\":\"2017-10-27 08:30:00Z\"\
-        ,\"isGameOfTheWeek\":false,\"vocGameTopTag\":null,\"isBasic\":false,\"nflprogram\"\
-        :null,\"nflprogramcode\":null},\"condensedVideo\":{\"videoId\":\"69fd4c38-311d-4fc3-a1f0-bc5681c68cd0\"\
-        ,\"title\":\"Miami Dolphins @ Baltimore Ravens - Reg8 - Game In 40'\",\"description\"\
-        :\"<p>GI40<em>Reg8</em>01Miami<em>Dolphins</em>at<em>Baltimore</em>Ravens<em>1080</em>_</p>\\\
-        n\",\"kind\":\"Condensed game\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"2119.733\",\"trimmedVideoDuration\":\"\",\"slug\":\"miami-dolphins-baltimore-ravens-reg8-game-in-40\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-27 06:09:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"coachfilmVideo\"\
-        :{\"videoId\":\"e510971c-1a50-44c9-9553-c285a35141fc\",\"title\":\"Dolphins\
-        \ @ Ravens - Coaches\",\"description\":\"<p>MIA @ BAL\_</p>\\n\\n<p>G57341<em>Ravens</em>vs<em>Dolphins</em>v2.mp4</p>\\\
-        n\",\"kind\":\"Coach film\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"4409.152\",\"trimmedVideoDuration\":\"\",\"slug\":\"dolphins-ravens-coaches\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-11-01 11:38:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"highlightsVideo\"\
-        :null,\"redZoneLiveVideo\":null},{\"homeNickName\":\"Browns\",\"homeCityState\"\
-        :\"Cleveland\",\"visitorNickName\":\"Vikings\",\"visitorCityState\":\"Minnesota\"\
-        ,\"gameId\":2017102900,\"backgroundImage\":null,\"gameDateTimeUtc\":\"2017-10-29T13:30:00.000Z\"\
-        ,\"redZone\":false,\"phase\":\"FINAL\",\"winner\":\"Vikings\",\"videoStatus\"\
-        :\"ONDEMAND\",\"season\":2017,\"seasonType\":\"REG\",\"week\":8,\"weekName\"\
-        :\"Week 8\",\"homeTeamId\":\"1050\",\"homeTeamAbbr\":\"CLE\",\"homeScore\"\
-        :{\"pointTotal\":16},\"homeTeamResult\":\"loser\",\"visitorTeamId\":\"3000\"\
-        ,\"visitorTeamAbbr\":\"MIN\",\"visitorScore\":{\"pointTotal\":33},\"visitorTeamResult\"\
-        :\"winner\",\"siteId\":5526,\"siteCity\":\"Twickenham\",\"siteFullName\":\"\
-        Twickenham Stadium\",\"displayText\":{\"scheduled\":\"video-scheduled\",\"\
-        live\":\"video-live\",\"liveIn\":\"video-live-in\",\"ondemand\":\"video-ondemand\"\
-        },\"video\":{\"videoId\":\"741e2248-3a9a-41f9-bc1b-23fba6b27b5f\",\"title\"\
-        :\"Minnesota Vikings @ Cleveland Browns\",\"description\":\"<p>NoAd<em>Reg8</em>02<em>Minnesota</em>Vikings<em>at</em>Cleveland<em>Browns</em>1080</p>\\\
-        n\",\"kind\":\"Game video\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"8744.341\",\"trimmedVideoDuration\":\"\",\"slug\":\"minnesota-vikings-cleveland-browns-1\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-29 20:35:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"condensedVideo\"\
-        :{\"videoId\":\"421936c7-4044-4be1-a509-8eaacf69679a\",\"title\":\"Minnesota\
-        \ Vikings @ Cleveland Browns - Reg8 - Game in 40'\",\"description\":\"<p>GI40<em>Reg8</em>02<em>Minnesota</em>Vikings<em>at</em>Cleveland<em>Browns</em>1080</p>\\\
-        n\",\"kind\":\"Condensed game\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"2713.301\",\"trimmedVideoDuration\":\"\",\"slug\":\"minnesota-vikings-cleveland-browns-reg8-game-in-40\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-29 18:42:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"coachfilmVideo\"\
-        :{\"videoId\":\"cf27a746-a093-4de9-8479-74c72e326bb9\",\"title\":\"Vikings\
-        \ @ Browns - Coaches\",\"description\":\"<p>MIN @ CLE</p>\\n\\n<p>G57342<em>Browns</em>vs<em>Vikings</em>v2.mp4</p>\\\
-        n\",\"kind\":\"Coach film\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"5856.405\",\"trimmedVideoDuration\":\"\",\"slug\":\"vikings-browns-coaches\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-11-01 12:19:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"highlightsVideo\"\
-        :null,\"redZoneLiveVideo\":null},{\"homeNickName\":\"Bills\",\"homeCityState\"\
-        :\"Buffalo\",\"visitorNickName\":\"Raiders\",\"visitorCityState\":\"Oakland\"\
-        ,\"gameId\":2017102901,\"backgroundImage\":null,\"gameDateTimeUtc\":\"2017-10-29T17:00:00.000Z\"\
-        ,\"redZone\":false,\"phase\":\"FINAL\",\"winner\":\"Bills\",\"videoStatus\"\
-        :\"ONDEMAND\",\"season\":2017,\"seasonType\":\"REG\",\"week\":8,\"weekName\"\
-        :\"Week 8\",\"homeTeamId\":\"0610\",\"homeTeamAbbr\":\"BUF\",\"homeScore\"\
-        :{\"pointTotal\":34},\"homeTeamResult\":\"winner\",\"visitorTeamId\":\"2520\"\
-        ,\"visitorTeamAbbr\":\"OAK\",\"visitorScore\":{\"pointTotal\":14},\"visitorTeamResult\"\
-        :\"loser\",\"siteId\":3770,\"siteCity\":\"Orchard Park\",\"siteFullName\"\
-        :\"New Era Field\",\"displayText\":{\"scheduled\":\"video-scheduled\",\"live\"\
-        :\"video-live\",\"liveIn\":\"video-live-in\",\"ondemand\":\"video-ondemand\"\
-        },\"video\":{\"videoId\":\"aa1507e7-2bfe-49ef-88be-5c35fb501f21\",\"title\"\
-        :\"Oakland Raiders @ Buffalo Bills\",\"description\":\"<p>NoAds<em>Reg8</em>03<em>Oakland</em>Raiders<em>at</em>Buffalo<em>Bills</em>1080</p>\\\
-        n\",\"kind\":\"Game video\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"8078.533\",\"trimmedVideoDuration\":\"\",\"slug\":\"oakland-raiders-buffalo-bills-1\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-30 02:20:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"condensedVideo\"\
-        :{\"videoId\":\"c4f022a5-6d4b-4f2f-8db8-e7343cf76f7f\",\"title\":\"Oakland\
-        \ Raiders @ Buffalo Bills - Reg8 - Game In 40'\",\"description\":\"<p>GI40<em>Reg8</em>03<em>Oakland</em>Raiders<em>at</em>Buffalo<em>Bills</em>1080</p>\\\
-        n\",\"kind\":\"Condensed game\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"2349.803\",\"trimmedVideoDuration\":\"\",\"slug\":\"oakland-raiders-buffalo-bills-reg8-game-in-40\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-29 22:16:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"coachfilmVideo\"\
-        :{\"videoId\":\"db813e24-8542-4e71-beae-98c0d60c5c90\",\"title\":\"Raiders\
-        \ @ Bills - Coaches\",\"description\":\"<p>OAK @ BUF</p>\\n\\n<p>G57343<em>Bills</em>vs<em>Raiders</em>v2.mp4</p>\\\
-        n\",\"kind\":\"Coach film\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"4463.253\",\"trimmedVideoDuration\":\"\",\"slug\":\"raiders-bulls-coaches\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-11-01 11:37:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"highlightsVideo\"\
-        :null,\"redZoneLiveVideo\":null},{\"homeNickName\":\"Bengals\",\"homeCityState\"\
-        :\"Cincinnati\",\"visitorNickName\":\"Colts\",\"visitorCityState\":\"Indianapolis\"\
-        ,\"gameId\":2017102902,\"backgroundImage\":null,\"gameDateTimeUtc\":\"2017-10-29T17:00:00.000Z\"\
-        ,\"redZone\":false,\"phase\":\"FINAL\",\"winner\":\"Bengals\",\"videoStatus\"\
-        :\"ONDEMAND\",\"season\":2017,\"seasonType\":\"REG\",\"week\":8,\"weekName\"\
-        :\"Week 8\",\"homeTeamId\":\"0920\",\"homeTeamAbbr\":\"CIN\",\"homeScore\"\
-        :{\"pointTotal\":24},\"homeTeamResult\":\"winner\",\"visitorTeamId\":\"2200\"\
-        ,\"visitorTeamAbbr\":\"IND\",\"visitorScore\":{\"pointTotal\":23},\"visitorTeamResult\"\
-        :\"loser\",\"siteId\":3530,\"siteCity\":\"Cincinnati\",\"siteFullName\":\"\
-        Paul Brown Stadium\",\"displayText\":{\"scheduled\":\"video-scheduled\",\"\
-        live\":\"video-live\",\"liveIn\":\"video-live-in\",\"ondemand\":\"video-ondemand\"\
-        },\"video\":{\"videoId\":\"98b742cb-dcc7-4986-806a-6d236d462233\",\"title\"\
-        :\"Indianapolis Colts @ Cincinnati Bengals\",\"description\":\"<p>NoAds<em>Reg8</em>04<em>Indianapolis</em>Colts<em>at</em>Cinncinati<em>Bengals</em>1080</p>\\\
-        n\",\"kind\":\"Game video\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"8502.805\",\"trimmedVideoDuration\":\"\",\"slug\":\"indianapolis-colts-cincinnati-bengals-6\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-30 02:51:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"condensedVideo\"\
-        :{\"videoId\":\"c8b57b0f-2bd1-4c78-93a5-c9a2a5fe6112\",\"title\":\"Indianapolis\
-        \ Colts @ Cincinnati Bengals - Reg8 - Game In 40'\",\"description\":\"<p>GI40<em>Reg8</em>04<em>Indianapolis</em>Colts<em>at</em>Cinncinati<em>Bengals</em>1080</p>\\\
-        n\",\"kind\":\"Condensed game\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"2399.133\",\"trimmedVideoDuration\":\"\",\"slug\":\"indianapolis-colts-cincinnati-bengals-reg8-game-in-40\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-30 00:19:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"coachfilmVideo\"\
-        :{\"videoId\":\"83aeb324-3438-4bd0-ae54-e38aa3c5d90a\",\"title\":\"Colts @\
-        \ Bengals - Coaches\",\"description\":\"<p>IND @ CIN\_</p>\\n\\n<p>G57344<em>Bengals</em>vs<em>Colts</em>v2.mp4</p>\\\
-        n\",\"kind\":\"Coach film\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"4980.757\",\"trimmedVideoDuration\":\"\",\"slug\":\"colts-bengals-coaches\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-11-01 11:41:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"highlightsVideo\"\
-        :null,\"redZoneLiveVideo\":null},{\"homeNickName\":\"Patriots\",\"homeCityState\"\
-        :\"New England\",\"visitorNickName\":\"Chargers\",\"visitorCityState\":\"\
-        Los Angeles Chargers\",\"gameId\":2017102903,\"backgroundImage\":null,\"gameDateTimeUtc\"\
-        :\"2017-10-29T17:00:00.000Z\",\"redZone\":false,\"phase\":\"FINAL\",\"winner\"\
-        :\"Patriots\",\"videoStatus\":\"ONDEMAND\",\"season\":2017,\"seasonType\"\
-        :\"REG\",\"week\":8,\"weekName\":\"Week 8\",\"homeTeamId\":\"3200\",\"homeTeamAbbr\"\
-        :\"NE\",\"homeScore\":{\"pointTotal\":21},\"homeTeamResult\":\"winner\",\"\
-        visitorTeamId\":\"4400\",\"visitorTeamAbbr\":\"LAC\",\"visitorScore\":{\"\
-        pointTotal\":13},\"visitorTeamResult\":\"loser\",\"siteId\":1065,\"siteCity\"\
-        :\"Foxborough\",\"siteFullName\":\"Gillette Stadium\",\"displayText\":{\"\
-        scheduled\":\"video-scheduled\",\"live\":\"video-live\",\"liveIn\":\"video-live-in\"\
-        ,\"ondemand\":\"video-ondemand\"},\"video\":{\"videoId\":\"4deef772-e842-416d-afd1-bb2186735091\"\
-        ,\"title\":\"Los Angeles Chargers @ New England Patriots\",\"description\"\
-        :\"<p>NoAds<em>Reg8</em>05<em>Los</em>Angeles<em>Chargers</em>at<em>New</em>England<em>Patriots</em>1080</p>\\\
-        n\",\"kind\":\"Game video\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"8032.469\",\"trimmedVideoDuration\":\"\",\"slug\":\"los-angeles-chargers-new-england-patriots-2\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-30 02:04:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"condensedVideo\"\
-        :{\"videoId\":\"b333df26-b833-4bee-8195-2fbc70fab87f\",\"title\":\"Los Angeles\
-        \ Chargers @ New England Patriots - Reg8 - Game In 40'\",\"description\":\"\
-        <p>GI40<em>REG8</em>05<em>Los</em>Angeles<em>Chargers</em>at<em>New</em>England<em>Patriots</em>1080</p>\\\
-        n\",\"kind\":\"Condensed game\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"2406.533\",\"trimmedVideoDuration\":\"\",\"slug\":\"los-angeles-chargers-new-england-patriots-1\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-29 21:55:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"coachfilmVideo\"\
-        :{\"videoId\":\"4ee73379-d859-4850-9837-c91a2ad641ed\",\"title\":\"Chargers\
-        \ @ Patriots - Coaches\",\"description\":\"<p>LAC @ NE</p>\\n\\n<p>G57345<em>Patriots</em>vs<em>Chargers</em>v2.mp4</p>\\\
-        n\",\"kind\":\"Coach film\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"6418.261\",\"trimmedVideoDuration\":\"\",\"slug\":\"chargers-patriots-coaches\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-11-01 12:24:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"highlightsVideo\"\
-        :null,\"redZoneLiveVideo\":null},{\"homeNickName\":\"Saints\",\"homeCityState\"\
-        :\"New Orleans\",\"visitorNickName\":\"Bears\",\"visitorCityState\":\"Chicago\"\
-        ,\"gameId\":2017102904,\"backgroundImage\":null,\"gameDateTimeUtc\":\"2017-10-29T17:00:00.000Z\"\
-        ,\"redZone\":false,\"phase\":\"FINAL\",\"winner\":\"Saints\",\"videoStatus\"\
-        :\"ONDEMAND\",\"season\":2017,\"seasonType\":\"REG\",\"week\":8,\"weekName\"\
-        :\"Week 8\",\"homeTeamId\":\"3300\",\"homeTeamAbbr\":\"NO\",\"homeScore\"\
-        :{\"pointTotal\":20},\"homeTeamResult\":\"winner\",\"visitorTeamId\":\"0810\"\
-        ,\"visitorTeamAbbr\":\"CHI\",\"visitorScore\":{\"pointTotal\":12},\"visitorTeamResult\"\
-        :\"loser\",\"siteId\":2870,\"siteCity\":\"New Orleans\",\"siteFullName\":\"\
-        Mercedes-Benz Superdome\",\"displayText\":{\"scheduled\":\"video-scheduled\"\
-        ,\"live\":\"video-live\",\"liveIn\":\"video-live-in\",\"ondemand\":\"video-ondemand\"\
-        },\"video\":{\"videoId\":\"ca2e2d0c-0823-4116-99ce-abcce635e139\",\"title\"\
-        :\"Chicago Bears @ New Orleans Saints\",\"description\":\"<p>NoAds<em>Reg8</em>06<em>chicago</em>Bears<em>at</em>new<em>Orleans</em>Saints_720p</p>\\\
-        n\",\"kind\":\"Game video\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"8082.304\",\"trimmedVideoDuration\":\"\",\"slug\":\"chicago-bears-new-orleans-saints-1\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-30 01:19:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"condensedVideo\"\
-        :{\"videoId\":\"e8909ac9-fa3b-4dbb-bc72-56e4da6d5360\",\"title\":\"Chicago\
-        \ Bears @ New Orleans Saints - Reg8 - Game In 40'\",\"description\":\"<p>GI40<em>Reg8</em>06<em>Chicago</em>Bears<em>at</em>new<em>Orleans</em>Saints_720p</p>\\\
-        n\",\"kind\":\"Condensed game\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"2636.139\",\"trimmedVideoDuration\":\"\",\"slug\":\"chicago-bears-new-orleans-saints-reg8-game-in-40\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-29 22:45:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"coachfilmVideo\"\
-        :{\"videoId\":\"81cf7822-030e-4b2d-b0c3-5a5d2b3c5a3c\",\"title\":\"Bears @\
-        \ Saints - Coaches\",\"description\":\"<p>CHI @ NO</p>\\n\\n<p>G57346<em>Saints</em>vs<em>Bears</em>v2.mp4</p>\\\
-        n\",\"kind\":\"Coach film\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"4360.106\",\"trimmedVideoDuration\":\"\",\"slug\":\"bears-saints-coaches\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-11-01 11:36:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"highlightsVideo\"\
-        :null,\"redZoneLiveVideo\":null},{\"homeNickName\":\"Jets\",\"homeCityState\"\
-        :\"New York Jets\",\"visitorNickName\":\"Falcons\",\"visitorCityState\":\"\
-        Atlanta\",\"gameId\":2017102905,\"backgroundImage\":null,\"gameDateTimeUtc\"\
-        :\"2017-10-29T17:00:00.000Z\",\"redZone\":false,\"phase\":\"FINAL\",\"winner\"\
-        :\"Falcons\",\"videoStatus\":\"ONDEMAND\",\"season\":2017,\"seasonType\":\"\
-        REG\",\"week\":8,\"weekName\":\"Week 8\",\"homeTeamId\":\"3430\",\"homeTeamAbbr\"\
-        :\"NYJ\",\"homeScore\":{\"pointTotal\":20},\"homeTeamResult\":\"loser\",\"\
-        visitorTeamId\":\"0200\",\"visitorTeamAbbr\":\"ATL\",\"visitorScore\":{\"\
-        pointTotal\":25},\"visitorTeamResult\":\"winner\",\"siteId\":3757,\"siteCity\"\
-        :\"East Rutherford\",\"siteFullName\":\"MetLife Stadium\",\"displayText\"\
-        :{\"scheduled\":\"video-scheduled\",\"live\":\"video-live\",\"liveIn\":\"\
-        video-live-in\",\"ondemand\":\"video-ondemand\"},\"video\":{\"videoId\":\"\
-        e145c9d0-a883-4632-be55-9db07e1f819a\",\"title\":\"Atlanta Falcons @ New York\
-        \ Jets\",\"description\":\"<p>NoAds<em>Reg8</em>07<em>Atlanta</em>Falcons<em>at</em>New<em>York</em>Jets_720</p>\\\
-        n\",\"kind\":\"Game video\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"7711.9\",\"trimmedVideoDuration\":\"\",\"slug\":\"atlanta-falcons-new-york-jets-2\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-30 00:56:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"condensedVideo\"\
-        :{\"videoId\":\"45512eb2-bdec-40b4-a94e-fcfe75e4edf4\",\"title\":\"Atlanta\
-        \ Falcons @ New York Jets - Reg8 - Game In 40'\",\"description\":\"<p>GI40<em>Reg8</em>07<em>Atlanta</em>Falcons<em>at</em>New<em>York</em>Jets_720</p>\\\
-        n\",\"kind\":\"Condensed game\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"2384.6\",\"trimmedVideoDuration\":\"\",\"slug\":\"atlanta-falcons-new-york-jets-reg8-game-in-40\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-29 22:22:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"coachfilmVideo\"\
-        :{\"videoId\":\"dad40499-516d-4beb-aff1-b572da4741ac\",\"title\":\"Falcons\
-        \ @ Jets - Coaches\",\"description\":\"<p>ATL @ NYJ\_</p>\\n\\n<p>G57347<em>Jets</em>vs<em>Falcons</em>v2.mp4</p>\\\
-        n\",\"kind\":\"Coach film\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"5593.301\",\"trimmedVideoDuration\":\"\",\"slug\":\"falcons-jets-coaches\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-11-01 11:42:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"highlightsVideo\"\
-        :null,\"redZoneLiveVideo\":null},{\"homeNickName\":\"Eagles\",\"homeCityState\"\
-        :\"Philadelphia\",\"visitorNickName\":\"49ers\",\"visitorCityState\":\"San\
-        \ Francisco\",\"gameId\":2017102906,\"backgroundImage\":null,\"gameDateTimeUtc\"\
-        :\"2017-10-29T17:00:00.000Z\",\"redZone\":false,\"phase\":\"FINAL\",\"winner\"\
-        :\"Eagles\",\"videoStatus\":\"ONDEMAND\",\"season\":2017,\"seasonType\":\"\
-        REG\",\"week\":8,\"weekName\":\"Week 8\",\"homeTeamId\":\"3700\",\"homeTeamAbbr\"\
-        :\"PHI\",\"homeScore\":{\"pointTotal\":33},\"homeTeamResult\":\"winner\",\"\
-        visitorTeamId\":\"4500\",\"visitorTeamAbbr\":\"SF\",\"visitorScore\":{\"pointTotal\"\
-        :10},\"visitorTeamResult\":\"loser\",\"siteId\":2769,\"siteCity\":\"Philadelphia\"\
-        ,\"siteFullName\":\"Lincoln Financial Field\",\"displayText\":{\"scheduled\"\
-        :\"video-scheduled\",\"live\":\"video-live\",\"liveIn\":\"video-live-in\"\
-        ,\"ondemand\":\"video-ondemand\"},\"video\":{\"videoId\":\"440d9dd6-7a2e-4aa8-aafd-faee9a2f35bd\"\
-        ,\"title\":\"San Francisco 49ers @ Philadelphia Eagles\",\"description\":\"\
-        <p>NoAds<em>Reg8</em>08<em>San</em>Francisco<em>49ers</em><em>Philadelphia</em>Eagles_720</p>\\\
-        n\",\"kind\":\"Game video\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"7988.373\",\"trimmedVideoDuration\":\"\",\"slug\":\"san-francisco-49ers-philadelphia-eagles-1\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-30 01:00:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"condensedVideo\"\
-        :{\"videoId\":\"f7481e7c-45f2-419b-b0c0-3ac0fb44f959\",\"title\":\"San Francisco\
-        \ 49ers @ Philadelphia Eagles - Reg8 - Game In 40'\",\"description\":\"<p>GI40<em>Reg8</em>08<em>San</em>Francisco<em>49ers</em><em>Philadelphia</em>Eagles_720</p>\\\
-        n\",\"kind\":\"Condensed game\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"2383.936\",\"trimmedVideoDuration\":\"\",\"slug\":\"san-francisco-49ers-philadelphia-eagles-reg8-game-in-40\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-29 21:58:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"coachfilmVideo\"\
-        :{\"videoId\":\"6b73a9fe-a733-4a09-87d8-4a2ebf3de6c6\",\"title\":\"49ers @\
-        \ Eagles - Coaches\",\"description\":\"<p>SF @ PHI</p>\\n\\n<p>G57348<em>Eagles</em>vs<em>49ers</em>v2.mp4</p>\\\
-        n\",\"kind\":\"Coach film\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"5283.69\",\"trimmedVideoDuration\":\"\",\"slug\":\"49ers-eagles-coaches\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-11-01 12:10:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"highlightsVideo\"\
-        :null,\"redZoneLiveVideo\":null},{\"homeNickName\":\"Buccaneers\",\"homeCityState\"\
-        :\"Tampa Bay\",\"visitorNickName\":\"Panthers\",\"visitorCityState\":\"Carolina\"\
-        ,\"gameId\":2017102907,\"backgroundImage\":null,\"gameDateTimeUtc\":\"2017-10-29T17:00:00.000Z\"\
-        ,\"redZone\":false,\"phase\":\"FINAL\",\"winner\":\"Panthers\",\"videoStatus\"\
-        :\"ONDEMAND\",\"season\":2017,\"seasonType\":\"REG\",\"week\":8,\"weekName\"\
-        :\"Week 8\",\"homeTeamId\":\"4900\",\"homeTeamAbbr\":\"TB\",\"homeScore\"\
-        :{\"pointTotal\":3},\"homeTeamResult\":\"loser\",\"visitorTeamId\":\"0750\"\
-        ,\"visitorTeamAbbr\":\"CAR\",\"visitorScore\":{\"pointTotal\":17},\"visitorTeamResult\"\
-        :\"winner\",\"siteId\":3697,\"siteCity\":\"Tampa\",\"siteFullName\":\"Raymond\
-        \ James Stadium\",\"displayText\":{\"scheduled\":\"video-scheduled\",\"live\"\
-        :\"video-live\",\"liveIn\":\"video-live-in\",\"ondemand\":\"video-ondemand\"\
-        },\"video\":{\"videoId\":\"56cf4c1b-51c1-4472-b4c3-4a9196e24917\",\"title\"\
-        :\"Carolina Panthers @ Tampa Bay Buccaneers\",\"description\":\"<p>NoAds<em>Reg8</em>09<em>Carolina</em>Panthers<em>at</em>Tampa<em>Bay</em>Buccaneers_720</p>\\\
-        n\",\"kind\":\"Game video\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"7643.2\",\"trimmedVideoDuration\":\"\",\"slug\":\"carolina-panthers-tampa-bay-buccaneers-8\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-30 01:14:00Z\",\"isGameOfTheWeek\":true,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"condensedVideo\"\
-        :{\"videoId\":\"67cf00b2-ed8e-4e2b-a307-b29fccef4444\",\"title\":\"Carolina\
-        \ Panthers @ Tampa Bay Buccaneers - Reg 8 - Game In 40'\",\"description\"\
-        :\"<p>GI40<em>Reg8</em>09<em>Carolina</em>Panthers<em>at</em>Tampa<em>Bay</em>Buccaneers_720</p>\\\
-        n\",\"kind\":\"Condensed game\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"2138.304\",\"trimmedVideoDuration\":\"\",\"slug\":\"carolina-panthers-tampa-bay-buccaneers-reg-8-game-in-40\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-29 21:53:00Z\",\"isGameOfTheWeek\":true,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"coachfilmVideo\"\
-        :{\"videoId\":\"e32f6b04-6bd3-4f6a-b328-35e5574354bf\",\"title\":\"Panthers\
-        \ @ Buccaneers - Coaches\",\"description\":\"<p>CAR @ TB</p>\\n\\n<p>G57349<em>Buccaneers</em>vs<em>Panthers</em>v2.mp4</p>\\\
-        n\",\"kind\":\"Coach film\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"4744.853\",\"trimmedVideoDuration\":\"\",\"slug\":\"panthers-buccaneers-coaches\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-11-01 11:31:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"highlightsVideo\"\
-        :null,\"redZoneLiveVideo\":null},{\"homeNickName\":\"Seahawks\",\"homeCityState\"\
-        :\"Seattle\",\"visitorNickName\":\"Texans\",\"visitorCityState\":\"Houston\"\
-        ,\"gameId\":2017102908,\"backgroundImage\":null,\"gameDateTimeUtc\":\"2017-10-29T20:05:00.000Z\"\
-        ,\"redZone\":false,\"phase\":\"FINAL\",\"winner\":\"Seahawks\",\"videoStatus\"\
-        :\"ONDEMAND\",\"season\":2017,\"seasonType\":\"REG\",\"week\":8,\"weekName\"\
-        :\"Week 8\",\"homeTeamId\":\"4600\",\"homeTeamAbbr\":\"SEA\",\"homeScore\"\
-        :{\"pointTotal\":41},\"homeTeamResult\":\"winner\",\"visitorTeamId\":\"2120\"\
-        ,\"visitorTeamAbbr\":\"HOU\",\"visitorScore\":{\"pointTotal\":38},\"visitorTeamResult\"\
-        :\"loser\",\"siteId\":5315,\"siteCity\":\"Seattle\",\"siteFullName\":\"CenturyLink\
-        \ Field\",\"displayText\":{\"scheduled\":\"video-scheduled\",\"live\":\"video-live\"\
-        ,\"liveIn\":\"video-live-in\",\"ondemand\":\"video-ondemand\"},\"video\":{\"\
-        videoId\":\"971f7352-76b8-4c53-9105-c67a9624338f\",\"title\":\"Houston Texans\
-        \ @ Seattle Seahawks\",\"description\":\"<p>NoAds<em>Reg8</em>10<em>Houston</em>Texans<em>at</em>Seattle<em>Seahawks</em>1080</p>\\\
-        n\",\"kind\":\"Game video\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"9152.341\",\"trimmedVideoDuration\":\"\",\"slug\":\"houston-texans-seattle-seahawks-1\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-30 03:57:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"condensedVideo\"\
-        :{\"videoId\":\"46fc63ca-6b5f-451b-bcde-03866b1d5011\",\"title\":\"Houston\
-        \ Texans @ Seattle Seahawks - Reg8 - Game In 40'\",\"description\":\"<p>GI40<em>Reg8</em>10<em>Houston</em>Texans<em>at</em>Seattle<em>Seahawks</em>1080</p>\\\
-        n\",\"kind\":\"Condensed game\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"2401.433\",\"trimmedVideoDuration\":\"\",\"slug\":\"houston-texans-seattle-seahawks-reg8-game-in-40\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-30 01:21:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"coachfilmVideo\"\
-        :{\"videoId\":\"78f44022-a3f9-43fe-af02-52f6dd994cdf\",\"title\":\"Texans\
-        \ @ Seahawks - Coaches\",\"description\":\"<p>HOU @ SEA</p>\\n\\n<p>G57350<em>Seahawks</em>vs<em>Texans</em>v2.mp4</p>\\\
-        n\",\"kind\":\"Coach film\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"5334.741\",\"trimmedVideoDuration\":\"\",\"slug\":\"texans-seahawks-coaches\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-11-01 11:43:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"highlightsVideo\"\
-        :null,\"redZoneLiveVideo\":null},{\"homeNickName\":\"Redskins\",\"homeCityState\"\
-        :\"Washington\",\"visitorNickName\":\"Cowboys\",\"visitorCityState\":\"Dallas\"\
-        ,\"gameId\":2017102909,\"backgroundImage\":null,\"gameDateTimeUtc\":\"2017-10-29T20:25:00.000Z\"\
-        ,\"redZone\":false,\"phase\":\"FINAL\",\"winner\":\"Cowboys\",\"videoStatus\"\
-        :\"ONDEMAND\",\"season\":2017,\"seasonType\":\"REG\",\"week\":8,\"weekName\"\
-        :\"Week 8\",\"homeTeamId\":\"5110\",\"homeTeamAbbr\":\"WAS\",\"homeScore\"\
-        :{\"pointTotal\":19},\"homeTeamResult\":\"loser\",\"visitorTeamId\":\"1200\"\
-        ,\"visitorTeamAbbr\":\"DAL\",\"visitorScore\":{\"pointTotal\":33},\"visitorTeamResult\"\
-        :\"winner\",\"siteId\":2389,\"siteCity\":\"Landover\",\"siteFullName\":\"\
-        FedExField\",\"displayText\":{\"scheduled\":\"video-scheduled\",\"live\":\"\
-        video-live\",\"liveIn\":\"video-live-in\",\"ondemand\":\"video-ondemand\"\
-        },\"video\":{\"videoId\":\"84d7c771-5863-41b8-9473-57f5791acdd3\",\"title\"\
-        :\"Dallas Cowboys @ Washington Redskins\",\"description\":\"<p>NoAds<em>Reg8</em>11<em>Dallas</em>Cowboys<em>at</em>Washington<em>Redskins</em>720</p>\\\
-        n\",\"kind\":\"Game video\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"8326.833\",\"trimmedVideoDuration\":\"\",\"slug\":\"dallas-cowboys-washington-redskins-8\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-30 02:45:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"condensedVideo\"\
-        :{\"videoId\":\"aa5f6115-5841-4822-964e-6e2f068f58b5\",\"title\":\"Dallas\
-        \ Cowboys @ Washington Redskins - Reg8 - Game In 40'\",\"description\":\"\
-        <p>GI40<em>Reg8</em>11<em>Dallas</em>Cowboys<em>at</em>Washington<em>Redskins</em>720</p>\\\
-        n\",\"kind\":\"Condensed game\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"2177.408\",\"trimmedVideoDuration\":\"\",\"slug\":\"dallas-cowboys-washington-redskins-reg8-game-in-40\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-30 00:45:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"coachfilmVideo\"\
-        :{\"videoId\":\"16e8b3b4-daf3-466d-9065-54bc6872d78b\",\"title\":\"Cowboys\
-        \ @ Redskins - Coaches\",\"description\":\"<p>DAL @ WAS</p>\\n\\n<p>G57351<em>Redskins</em>vs<em>Cowboys</em>v2.mp4</p>\\\
-        n\",\"kind\":\"Coach film\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"4929.536\",\"trimmedVideoDuration\":\"\",\"slug\":\"cowboys-redskins-coaches\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-11-01 11:37:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"highlightsVideo\"\
-        :null,\"redZoneLiveVideo\":null},{\"homeNickName\":\"Lions\",\"homeCityState\"\
-        :\"Detroit\",\"visitorNickName\":\"Steelers\",\"visitorCityState\":\"Pittsburgh\"\
-        ,\"gameId\":2017102910,\"backgroundImage\":null,\"gameDateTimeUtc\":\"2017-10-30T00:30:00.000Z\"\
-        ,\"redZone\":false,\"phase\":\"FINAL\",\"winner\":\"Steelers\",\"videoStatus\"\
-        :\"ONDEMAND\",\"season\":2017,\"seasonType\":\"REG\",\"week\":8,\"weekName\"\
-        :\"Week 8\",\"homeTeamId\":\"1540\",\"homeTeamAbbr\":\"DET\",\"homeScore\"\
-        :{\"pointTotal\":15},\"homeTeamResult\":\"loser\",\"visitorTeamId\":\"3900\"\
-        ,\"visitorTeamAbbr\":\"PIT\",\"visitorScore\":{\"pointTotal\":20},\"visitorTeamResult\"\
-        :\"winner\",\"siteId\":2026,\"siteCity\":\"Detroit\",\"siteFullName\":\"Ford\
-        \ Field\",\"displayText\":{\"scheduled\":\"video-scheduled\",\"live\":\"video-live\"\
-        ,\"liveIn\":\"video-live-in\",\"ondemand\":\"video-ondemand\"},\"video\":{\"\
-        videoId\":\"d482ab9b-bb15-4b6f-815f-fceb5017e719\",\"title\":\"Pittsburgh\
-        \ Steelers @ Detroit Lions\",\"description\":\"<p>NoAds<em>Reg8</em>12<em>Pittsburgh</em>Steelers<em>at</em>Detroit<em>Lions</em>1080</p>\\\
-        n\",\"kind\":\"Game video\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"8392.341\",\"trimmedVideoDuration\":\"\",\"slug\":\"pittsburgh-steelers-detroit-lions-1\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/rpu6qwkyuhex6dxjmh9j\"\
-        ,\"overridenFormats\":{}},\"week\":\"week-8\",\"season\":\"season-2017\",\"\
-        seasonType\":\"seasontype-reg\",\"scheduleDate\":\"2017-10-30 07:45:00Z\"\
-        ,\"isGameOfTheWeek\":false,\"vocGameTopTag\":null,\"isBasic\":false,\"nflprogram\"\
-        :null,\"nflprogramcode\":null},\"condensedVideo\":{\"videoId\":\"2a4e5c24-2648-4cfc-86a5-a166e0894761\"\
-        ,\"title\":\"Pittsburgh Steelers @ Detroit Lions - Reg8 - Game In 40'\",\"\
-        description\":\"<p>GI40<em>REG8</em>12<em>Pittsburgh</em>Steelers<em>At</em>Detroit<em>Lions</em>1080</p>\\\
-        n\",\"kind\":\"Condensed game\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"2225.133\",\"trimmedVideoDuration\":\"\",\"slug\":\"pittsburgh-steelers-detroit-lions-reg8-game-in-40\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-30 04:59:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"coachfilmVideo\"\
-        :{\"videoId\":\"86baebaf-ce60-41ca-9b0d-9419e880be10\",\"title\":\"Steelers\
-        \ @ Lions - Coaches\",\"description\":\"<p>PIT @ DET\_</p>\\n\\n<p>G57352<em>Lions</em>vs<em>Steelers</em>v2.mp4</p>\\\
-        n\",\"kind\":\"Coach film\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"6586.261\",\"trimmedVideoDuration\":\"\",\"slug\":\"steelers-lions-coaches\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-11-01 11:52:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"highlightsVideo\"\
-        :null,\"redZoneLiveVideo\":null},{\"homeNickName\":\"Chiefs\",\"homeCityState\"\
-        :\"Kansas City\",\"visitorNickName\":\"Broncos\",\"visitorCityState\":\"Denver\"\
-        ,\"gameId\":2017103000,\"backgroundImage\":null,\"gameDateTimeUtc\":\"2017-10-31T00:30:00.000Z\"\
-        ,\"redZone\":false,\"phase\":\"FINAL\",\"winner\":\"Chiefs\",\"videoStatus\"\
-        :\"ONDEMAND\",\"season\":2017,\"seasonType\":\"REG\",\"week\":8,\"weekName\"\
-        :\"Week 8\",\"homeTeamId\":\"2310\",\"homeTeamAbbr\":\"KC\",\"homeScore\"\
-        :{\"pointTotal\":29},\"homeTeamResult\":\"winner\",\"visitorTeamId\":\"1400\"\
-        ,\"visitorTeamAbbr\":\"DEN\",\"visitorScore\":{\"pointTotal\":19},\"visitorTeamResult\"\
-        :\"loser\",\"siteId\":1552,\"siteCity\":\"Kansas City\",\"siteFullName\":\"\
-        Arrowhead Stadium\",\"displayText\":{\"scheduled\":\"video-scheduled\",\"\
-        live\":\"video-live\",\"liveIn\":\"video-live-in\",\"ondemand\":\"video-ondemand\"\
-        },\"video\":{\"videoId\":\"8d796957-477d-4117-82d9-bcb2daf8caf8\",\"title\"\
-        :\"Denver Broncos @ Kansas City Chiefs\",\"description\":\"<p>NoAds<em>Reg8</em>13<em>Denver</em>Broncos<em>at</em>Kansas<em>City</em>Chiefs_720</p>\\\
-        n\",\"kind\":\"Game video\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"8305.1\",\"trimmedVideoDuration\":\"\",\"slug\":\"denver-broncos-kansas-city-chiefs-7\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/djyqhnfmo9zffa7hmpj8\"\
-        ,\"overridenFormats\":{}},\"week\":\"week-8\",\"season\":\"season-2017\",\"\
-        seasonType\":\"seasontype-reg\",\"scheduleDate\":\"2017-10-31 06:18:00Z\"\
-        ,\"isGameOfTheWeek\":false,\"vocGameTopTag\":null,\"isBasic\":false,\"nflprogram\"\
-        :null,\"nflprogramcode\":null},\"condensedVideo\":{\"videoId\":\"18f1ed30-034c-4612-a74e-f2cd8f568270\"\
-        ,\"title\":\"Denver Broncos @ Kansas City Chiefs - Reg8 - Game In 40'\",\"\
-        description\":\"<p>GI40<em>Reg8</em>13<em>Denver</em>Broncos<em>at</em>Kansas<em>City</em>Chiefs_720</p>\\\
-        n\",\"kind\":\"Condensed game\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"2303.766\",\"trimmedVideoDuration\":\"\",\"slug\":\"denver-broncos-kansas-city-chiefs-reg8-game-in-40\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-10-31 04:44:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"coachfilmVideo\"\
-        :{\"videoId\":\"3d48a922-d900-4b07-a6a7-0f77ab93fd3e\",\"title\":\"Broncos\
-        \ @ Chiefs - Coaches\",\"description\":\"<p>DEN @ KC</p>\\n\\n<p>G57353<em>Chiefs</em>vs<em>Broncos</em>v2.mp4</p>\\\
-        n\",\"kind\":\"Coach film\",\"videoStatus\":\"ONDEMAND\",\"videoDuration\"\
-        :\"5462.677\",\"trimmedVideoDuration\":\"\",\"slug\":\"broncos-chiefs-coaches\"\
-        ,\"videoThumbnail\":{\"templateUrl\":\"\",\"overridenFormats\":{}},\"week\"\
-        :\"week-8\",\"season\":\"season-2017\",\"seasonType\":\"seasontype-reg\",\"\
-        scheduleDate\":\"2017-11-01 11:39:00Z\",\"isGameOfTheWeek\":false,\"vocGameTopTag\"\
-        :null,\"isBasic\":false,\"nflprogram\":null,\"nflprogramcode\":null},\"highlightsVideo\"\
-        :null,\"redZoneLiveVideo\":null}]},\"analytics\":{\"site_name\":\"gamepass\
-        \ international\",\"language\":\"en_US\",\"site_section\":\"games\",\"site_subsection\"\
-        :\"games\",\"page_detail\":\"2017:reg:Week 8\",\"content_type\":\"index\"\
-        ,\"page_name\":\"gamepass international:games:games:2017:reg:week 8\"}}}"
+      string: '{"header": {"id": "game list", "version": "1.0", "title": "", "lastUpdate":
+        "2018-09-11T08:35:59.637Z"}, "modules": {"weekLiveGames": {"displayText":
+        {"title": "game-list-title", "subTitle": "game-list-subtitle"}, "content":
+        []}, "weekScheduledGames": {"displayText": {"title": "game-list-title", "subTitle":
+        "game-list-subtitle"}, "content": []}, "weekCompletedGames": {"displayText":
+        {"title": "game-list-title", "subTitle": "game-list-subtitle"}, "content":
+        [{"homeNickName": "Ravens", "homeCityState": "Baltimore", "visitorNickName":
+        "Dolphins", "visitorCityState": "Miami", "gameId": 2017102600, "backgroundImage":
+        null, "gameDateTimeUtc": "2017-10-27T00:25:00.000Z", "redZone": false, "phase":
+        "FINAL", "winner": "Ravens", "videoStatus": "ONDEMAND", "season": 2017, "seasonType":
+        "REG", "week": 8, "weekName": "Week 8", "homeTeamId": "0325", "homeTeamAbbr":
+        "BAL", "homeScore": {"pointTotal": 40}, "homeTeamResult": "winner", "visitorTeamId":
+        "2700", "visitorTeamAbbr": "MIA", "visitorScore": {"pointTotal": 0}, "visitorTeamResult":
+        "loser", "siteId": 3695, "siteCity": "Baltimore", "siteFullName": "M&T Bank
+        Stadium", "displayText": {"scheduled": "video-scheduled", "live": "video-live",
+        "liveIn": "video-live-in", "ondemand": "video-ondemand"}, "video": {"videoId":
+        "9f411680-eacd-4cde-b500-d8bfdbc67f0f", "title": "Miami Dolphins @ Baltimore
+        Ravens", "description": "<p>MIA@BAL</p>\n", "kind": "Game video", "videoStatus":
+        "ONDEMAND", "videoDuration": "8365.3", "trimmedVideoDuration": "", "slug":
+        "miami-dolphins-baltimore-ravens-4", "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/avkbaaeibrzzsrllmxcy",
+        "overridenFormats": {}}, "week": "week-8", "season": "season-2017", "seasonType":
+        "seasontype-reg", "scheduleDate": "2017-10-27 08:30:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "condensedVideo": {"videoId": "69fd4c38-311d-4fc3-a1f0-bc5681c68cd0",
+        "title": "Miami Dolphins @ Baltimore Ravens - Reg8 - Game In 40''", "description":
+        "<p>GI40<em>Reg8</em>01Miami<em>Dolphins</em>at<em>Baltimore</em>Ravens<em>1080</em>_</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2119.733",
+        "trimmedVideoDuration": "", "slug": "miami-dolphins-baltimore-ravens-reg8-game-in-40",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-27
+        06:09:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "e510971c-1a50-44c9-9553-c285a35141fc", "title": "Dolphins @ Ravens - Coaches",
+        "description": "<p>MIA @ BAL\u00a0</p>\n\n<p>G57341<em>Ravens</em>vs<em>Dolphins</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "4409.152",
+        "trimmedVideoDuration": "", "slug": "dolphins-ravens-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 11:38:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}, {"homeNickName":
+        "Browns", "homeCityState": "Cleveland", "visitorNickName": "Vikings", "visitorCityState":
+        "Minnesota", "gameId": 2017102900, "backgroundImage": null, "gameDateTimeUtc":
+        "2017-10-29T13:30:00.000Z", "redZone": false, "phase": "FINAL", "winner":
+        "Vikings", "videoStatus": "ONDEMAND", "season": 2017, "seasonType": "REG",
+        "week": 8, "weekName": "Week 8", "homeTeamId": "1050", "homeTeamAbbr": "CLE",
+        "homeScore": {"pointTotal": 16}, "homeTeamResult": "loser", "visitorTeamId":
+        "3000", "visitorTeamAbbr": "MIN", "visitorScore": {"pointTotal": 33}, "visitorTeamResult":
+        "winner", "siteId": 5526, "siteCity": "Twickenham", "siteFullName": "Twickenham
+        Stadium", "displayText": {"scheduled": "video-scheduled", "live": "video-live",
+        "liveIn": "video-live-in", "ondemand": "video-ondemand"}, "video": {"videoId":
+        "741e2248-3a9a-41f9-bc1b-23fba6b27b5f", "title": "Minnesota Vikings @ Cleveland
+        Browns", "description": "<p>NoAd<em>Reg8</em>02<em>Minnesota</em>Vikings<em>at</em>Cleveland<em>Browns</em>1080</p>\n",
+        "kind": "Game video", "videoStatus": "ONDEMAND", "videoDuration": "8744.341",
+        "trimmedVideoDuration": "", "slug": "minnesota-vikings-cleveland-browns-1",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-29
+        20:35:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "condensedVideo": {"videoId":
+        "421936c7-4044-4be1-a509-8eaacf69679a", "title": "Minnesota Vikings @ Cleveland
+        Browns - Reg8 - Game in 40''", "description": "<p>GI40<em>Reg8</em>02<em>Minnesota</em>Vikings<em>at</em>Cleveland<em>Browns</em>1080</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2713.301",
+        "trimmedVideoDuration": "", "slug": "minnesota-vikings-cleveland-browns-reg8-game-in-40",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-29
+        18:42:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "cf27a746-a093-4de9-8479-74c72e326bb9", "title": "Vikings @ Browns - Coaches",
+        "description": "<p>MIN @ CLE</p>\n\n<p>G57342<em>Browns</em>vs<em>Vikings</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "5856.405",
+        "trimmedVideoDuration": "", "slug": "vikings-browns-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 12:19:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}, {"homeNickName":
+        "Bills", "homeCityState": "Buffalo", "visitorNickName": "Raiders", "visitorCityState":
+        "Oakland", "gameId": 2017102901, "backgroundImage": null, "gameDateTimeUtc":
+        "2017-10-29T17:00:00.000Z", "redZone": false, "phase": "FINAL", "winner":
+        "Bills", "videoStatus": "ONDEMAND", "season": 2017, "seasonType": "REG", "week":
+        8, "weekName": "Week 8", "homeTeamId": "0610", "homeTeamAbbr": "BUF", "homeScore":
+        {"pointTotal": 34}, "homeTeamResult": "winner", "visitorTeamId": "2520", "visitorTeamAbbr":
+        "OAK", "visitorScore": {"pointTotal": 14}, "visitorTeamResult": "loser", "siteId":
+        3770, "siteCity": "Orchard Park", "siteFullName": "New Era Field", "displayText":
+        {"scheduled": "video-scheduled", "live": "video-live", "liveIn": "video-live-in",
+        "ondemand": "video-ondemand"}, "video": {"videoId": "aa1507e7-2bfe-49ef-88be-5c35fb501f21",
+        "title": "Oakland Raiders @ Buffalo Bills", "description": "<p>NoAds<em>Reg8</em>03<em>Oakland</em>Raiders<em>at</em>Buffalo<em>Bills</em>1080</p>\n",
+        "kind": "Game video", "videoStatus": "ONDEMAND", "videoDuration": "8078.533",
+        "trimmedVideoDuration": "", "slug": "oakland-raiders-buffalo-bills-1", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-10-30 02:20:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "condensedVideo": {"videoId": "c4f022a5-6d4b-4f2f-8db8-e7343cf76f7f",
+        "title": "Oakland Raiders @ Buffalo Bills - Reg8 - Game In 40''", "description":
+        "<p>GI40<em>Reg8</em>03<em>Oakland</em>Raiders<em>at</em>Buffalo<em>Bills</em>1080</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2349.803",
+        "trimmedVideoDuration": "", "slug": "oakland-raiders-buffalo-bills-reg8-game-in-40",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-29
+        22:16:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "db813e24-8542-4e71-beae-98c0d60c5c90", "title": "Raiders @ Bills - Coaches",
+        "description": "<p>OAK @ BUF</p>\n\n<p>G57343<em>Bills</em>vs<em>Raiders</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "4463.253",
+        "trimmedVideoDuration": "", "slug": "raiders-bulls-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 11:37:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}, {"homeNickName":
+        "Bengals", "homeCityState": "Cincinnati", "visitorNickName": "Colts", "visitorCityState":
+        "Indianapolis", "gameId": 2017102902, "backgroundImage": null, "gameDateTimeUtc":
+        "2017-10-29T17:00:00.000Z", "redZone": false, "phase": "FINAL", "winner":
+        "Bengals", "videoStatus": "ONDEMAND", "season": 2017, "seasonType": "REG",
+        "week": 8, "weekName": "Week 8", "homeTeamId": "0920", "homeTeamAbbr": "CIN",
+        "homeScore": {"pointTotal": 24}, "homeTeamResult": "winner", "visitorTeamId":
+        "2200", "visitorTeamAbbr": "IND", "visitorScore": {"pointTotal": 23}, "visitorTeamResult":
+        "loser", "siteId": 3530, "siteCity": "Cincinnati", "siteFullName": "Paul Brown
+        Stadium", "displayText": {"scheduled": "video-scheduled", "live": "video-live",
+        "liveIn": "video-live-in", "ondemand": "video-ondemand"}, "video": {"videoId":
+        "98b742cb-dcc7-4986-806a-6d236d462233", "title": "Indianapolis Colts @ Cincinnati
+        Bengals", "description": "<p>NoAds<em>Reg8</em>04<em>Indianapolis</em>Colts<em>at</em>Cinncinati<em>Bengals</em>1080</p>\n",
+        "kind": "Game video", "videoStatus": "ONDEMAND", "videoDuration": "8502.805",
+        "trimmedVideoDuration": "", "slug": "indianapolis-colts-cincinnati-bengals-6",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-30
+        02:51:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "condensedVideo": {"videoId":
+        "c8b57b0f-2bd1-4c78-93a5-c9a2a5fe6112", "title": "Indianapolis Colts @ Cincinnati
+        Bengals - Reg8 - Game In 40''", "description": "<p>GI40<em>Reg8</em>04<em>Indianapolis</em>Colts<em>at</em>Cinncinati<em>Bengals</em>1080</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2399.133",
+        "trimmedVideoDuration": "", "slug": "indianapolis-colts-cincinnati-bengals-reg8-game-in-40",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-30
+        00:19:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "83aeb324-3438-4bd0-ae54-e38aa3c5d90a", "title": "Colts @ Bengals - Coaches",
+        "description": "<p>IND @ CIN\u00a0</p>\n\n<p>G57344<em>Bengals</em>vs<em>Colts</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "4980.757",
+        "trimmedVideoDuration": "", "slug": "colts-bengals-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 11:41:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}, {"homeNickName":
+        "Patriots", "homeCityState": "New England", "visitorNickName": "Chargers",
+        "visitorCityState": "Los Angeles Chargers", "gameId": 2017102903, "backgroundImage":
+        null, "gameDateTimeUtc": "2017-10-29T17:00:00.000Z", "redZone": false, "phase":
+        "FINAL", "winner": "Patriots", "videoStatus": "ONDEMAND", "season": 2017,
+        "seasonType": "REG", "week": 8, "weekName": "Week 8", "homeTeamId": "3200",
+        "homeTeamAbbr": "NE", "homeScore": {"pointTotal": 21}, "homeTeamResult": "winner",
+        "visitorTeamId": "4400", "visitorTeamAbbr": "LAC", "visitorScore": {"pointTotal":
+        13}, "visitorTeamResult": "loser", "siteId": 1065, "siteCity": "Foxborough",
+        "siteFullName": "Gillette Stadium", "displayText": {"scheduled": "video-scheduled",
+        "live": "video-live", "liveIn": "video-live-in", "ondemand": "video-ondemand"},
+        "video": {"videoId": "4deef772-e842-416d-afd1-bb2186735091", "title": "Los
+        Angeles Chargers @ New England Patriots", "description": "<p>NoAds<em>Reg8</em>05<em>Los</em>Angeles<em>Chargers</em>at<em>New</em>England<em>Patriots</em>1080</p>\n",
+        "kind": "Game video", "videoStatus": "ONDEMAND", "videoDuration": "8032.469",
+        "trimmedVideoDuration": "", "slug": "los-angeles-chargers-new-england-patriots-2",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-30
+        02:04:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "condensedVideo": {"videoId":
+        "b333df26-b833-4bee-8195-2fbc70fab87f", "title": "Los Angeles Chargers @ New
+        England Patriots - Reg8 - Game In 40''", "description": "<p>GI40<em>REG8</em>05<em>Los</em>Angeles<em>Chargers</em>at<em>New</em>England<em>Patriots</em>1080</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2406.533",
+        "trimmedVideoDuration": "", "slug": "los-angeles-chargers-new-england-patriots-1",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-29
+        21:55:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "4ee73379-d859-4850-9837-c91a2ad641ed", "title": "Chargers @ Patriots - Coaches",
+        "description": "<p>LAC @ NE</p>\n\n<p>G57345<em>Patriots</em>vs<em>Chargers</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "6418.261",
+        "trimmedVideoDuration": "", "slug": "chargers-patriots-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 12:24:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}, {"homeNickName":
+        "Saints", "homeCityState": "New Orleans", "visitorNickName": "Bears", "visitorCityState":
+        "Chicago", "gameId": 2017102904, "backgroundImage": null, "gameDateTimeUtc":
+        "2017-10-29T17:00:00.000Z", "redZone": false, "phase": "FINAL", "winner":
+        "Saints", "videoStatus": "ONDEMAND", "season": 2017, "seasonType": "REG",
+        "week": 8, "weekName": "Week 8", "homeTeamId": "3300", "homeTeamAbbr": "NO",
+        "homeScore": {"pointTotal": 20}, "homeTeamResult": "winner", "visitorTeamId":
+        "0810", "visitorTeamAbbr": "CHI", "visitorScore": {"pointTotal": 12}, "visitorTeamResult":
+        "loser", "siteId": 2870, "siteCity": "New Orleans", "siteFullName": "Mercedes-Benz
+        Superdome", "displayText": {"scheduled": "video-scheduled", "live": "video-live",
+        "liveIn": "video-live-in", "ondemand": "video-ondemand"}, "video": {"videoId":
+        "ca2e2d0c-0823-4116-99ce-abcce635e139", "title": "Chicago Bears @ New Orleans
+        Saints", "description": "<p>NoAds<em>Reg8</em>06<em>chicago</em>Bears<em>at</em>new<em>Orleans</em>Saints_720p</p>\n",
+        "kind": "Game video", "videoStatus": "ONDEMAND", "videoDuration": "8082.304",
+        "trimmedVideoDuration": "", "slug": "chicago-bears-new-orleans-saints-1",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-30
+        01:19:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "condensedVideo": {"videoId":
+        "e8909ac9-fa3b-4dbb-bc72-56e4da6d5360", "title": "Chicago Bears @ New Orleans
+        Saints - Reg8 - Game In 40''", "description": "<p>GI40<em>Reg8</em>06<em>Chicago</em>Bears<em>at</em>new<em>Orleans</em>Saints_720p</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2636.139",
+        "trimmedVideoDuration": "", "slug": "chicago-bears-new-orleans-saints-reg8-game-in-40",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-29
+        22:45:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "81cf7822-030e-4b2d-b0c3-5a5d2b3c5a3c", "title": "Bears @ Saints - Coaches",
+        "description": "<p>CHI @ NO</p>\n\n<p>G57346<em>Saints</em>vs<em>Bears</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "4360.106",
+        "trimmedVideoDuration": "", "slug": "bears-saints-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 11:36:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}, {"homeNickName":
+        "Jets", "homeCityState": "New York Jets", "visitorNickName": "Falcons", "visitorCityState":
+        "Atlanta", "gameId": 2017102905, "backgroundImage": null, "gameDateTimeUtc":
+        "2017-10-29T17:00:00.000Z", "redZone": false, "phase": "FINAL", "winner":
+        "Falcons", "videoStatus": "ONDEMAND", "season": 2017, "seasonType": "REG",
+        "week": 8, "weekName": "Week 8", "homeTeamId": "3430", "homeTeamAbbr": "NYJ",
+        "homeScore": {"pointTotal": 20}, "homeTeamResult": "loser", "visitorTeamId":
+        "0200", "visitorTeamAbbr": "ATL", "visitorScore": {"pointTotal": 25}, "visitorTeamResult":
+        "winner", "siteId": 3757, "siteCity": "East Rutherford", "siteFullName": "MetLife
+        Stadium", "displayText": {"scheduled": "video-scheduled", "live": "video-live",
+        "liveIn": "video-live-in", "ondemand": "video-ondemand"}, "video": {"videoId":
+        "e145c9d0-a883-4632-be55-9db07e1f819a", "title": "Atlanta Falcons @ New York
+        Jets", "description": "<p>NoAds<em>Reg8</em>07<em>Atlanta</em>Falcons<em>at</em>New<em>York</em>Jets_720</p>\n",
+        "kind": "Game video", "videoStatus": "ONDEMAND", "videoDuration": "7711.9",
+        "trimmedVideoDuration": "", "slug": "atlanta-falcons-new-york-jets-2", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-10-30 00:56:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "condensedVideo": {"videoId": "45512eb2-bdec-40b4-a94e-fcfe75e4edf4",
+        "title": "Atlanta Falcons @ New York Jets - Reg8 - Game In 40''", "description":
+        "<p>GI40<em>Reg8</em>07<em>Atlanta</em>Falcons<em>at</em>New<em>York</em>Jets_720</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2384.6",
+        "trimmedVideoDuration": "", "slug": "atlanta-falcons-new-york-jets-reg8-game-in-40",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-29
+        22:22:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "dad40499-516d-4beb-aff1-b572da4741ac", "title": "Falcons @ Jets - Coaches",
+        "description": "<p>ATL @ NYJ\u00a0</p>\n\n<p>G57347<em>Jets</em>vs<em>Falcons</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "5593.301",
+        "trimmedVideoDuration": "", "slug": "falcons-jets-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 11:42:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}, {"homeNickName":
+        "Eagles", "homeCityState": "Philadelphia", "visitorNickName": "49ers", "visitorCityState":
+        "San Francisco", "gameId": 2017102906, "backgroundImage": null, "gameDateTimeUtc":
+        "2017-10-29T17:00:00.000Z", "redZone": false, "phase": "FINAL", "winner":
+        "Eagles", "videoStatus": "ONDEMAND", "season": 2017, "seasonType": "REG",
+        "week": 8, "weekName": "Week 8", "homeTeamId": "3700", "homeTeamAbbr": "PHI",
+        "homeScore": {"pointTotal": 33}, "homeTeamResult": "winner", "visitorTeamId":
+        "4500", "visitorTeamAbbr": "SF", "visitorScore": {"pointTotal": 10}, "visitorTeamResult":
+        "loser", "siteId": 2769, "siteCity": "Philadelphia", "siteFullName": "Lincoln
+        Financial Field", "displayText": {"scheduled": "video-scheduled", "live":
+        "video-live", "liveIn": "video-live-in", "ondemand": "video-ondemand"}, "video":
+        {"videoId": "440d9dd6-7a2e-4aa8-aafd-faee9a2f35bd", "title": "San Francisco
+        49ers @ Philadelphia Eagles", "description": "<p>NoAds<em>Reg8</em>08<em>San</em>Francisco<em>49ers</em><em>Philadelphia</em>Eagles_720</p>\n",
+        "kind": "Game video", "videoStatus": "ONDEMAND", "videoDuration": "7988.373",
+        "trimmedVideoDuration": "", "slug": "san-francisco-49ers-philadelphia-eagles-1",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-30
+        01:00:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "condensedVideo": {"videoId":
+        "f7481e7c-45f2-419b-b0c0-3ac0fb44f959", "title": "San Francisco 49ers @ Philadelphia
+        Eagles - Reg8 - Game In 40''", "description": "<p>GI40<em>Reg8</em>08<em>San</em>Francisco<em>49ers</em><em>Philadelphia</em>Eagles_720</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2383.936",
+        "trimmedVideoDuration": "", "slug": "san-francisco-49ers-philadelphia-eagles-reg8-game-in-40",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-29
+        21:58:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "6b73a9fe-a733-4a09-87d8-4a2ebf3de6c6", "title": "49ers @ Eagles - Coaches",
+        "description": "<p>SF @ PHI</p>\n\n<p>G57348<em>Eagles</em>vs<em>49ers</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "5283.69",
+        "trimmedVideoDuration": "", "slug": "49ers-eagles-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 12:10:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}, {"homeNickName":
+        "Buccaneers", "homeCityState": "Tampa Bay", "visitorNickName": "Panthers",
+        "visitorCityState": "Carolina", "gameId": 2017102907, "backgroundImage": null,
+        "gameDateTimeUtc": "2017-10-29T17:00:00.000Z", "redZone": false, "phase":
+        "FINAL", "winner": "Panthers", "videoStatus": "ONDEMAND", "season": 2017,
+        "seasonType": "REG", "week": 8, "weekName": "Week 8", "homeTeamId": "4900",
+        "homeTeamAbbr": "TB", "homeScore": {"pointTotal": 3}, "homeTeamResult": "loser",
+        "visitorTeamId": "0750", "visitorTeamAbbr": "CAR", "visitorScore": {"pointTotal":
+        17}, "visitorTeamResult": "winner", "siteId": 3697, "siteCity": "Tampa", "siteFullName":
+        "Raymond James Stadium", "displayText": {"scheduled": "video-scheduled", "live":
+        "video-live", "liveIn": "video-live-in", "ondemand": "video-ondemand"}, "video":
+        {"videoId": "56cf4c1b-51c1-4472-b4c3-4a9196e24917", "title": "Carolina Panthers
+        @ Tampa Bay Buccaneers", "description": "<p>NoAds<em>Reg8</em>09<em>Carolina</em>Panthers<em>at</em>Tampa<em>Bay</em>Buccaneers_720</p>\n",
+        "kind": "Game video", "videoStatus": "ONDEMAND", "videoDuration": "7643.2",
+        "trimmedVideoDuration": "", "slug": "carolina-panthers-tampa-bay-buccaneers-8",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-30
+        01:14:00Z", "isGameOfTheWeek": true, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "condensedVideo": {"videoId":
+        "67cf00b2-ed8e-4e2b-a307-b29fccef4444", "title": "Carolina Panthers @ Tampa
+        Bay Buccaneers - Reg 8 - Game In 40''", "description": "<p>GI40<em>Reg8</em>09<em>Carolina</em>Panthers<em>at</em>Tampa<em>Bay</em>Buccaneers_720</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2138.304",
+        "trimmedVideoDuration": "", "slug": "carolina-panthers-tampa-bay-buccaneers-reg-8-game-in-40",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-29
+        21:53:00Z", "isGameOfTheWeek": true, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "e32f6b04-6bd3-4f6a-b328-35e5574354bf", "title": "Panthers @ Buccaneers -
+        Coaches", "description": "<p>CAR @ TB</p>\n\n<p>G57349<em>Buccaneers</em>vs<em>Panthers</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "4744.853",
+        "trimmedVideoDuration": "", "slug": "panthers-buccaneers-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 11:31:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}, {"homeNickName":
+        "Seahawks", "homeCityState": "Seattle", "visitorNickName": "Texans", "visitorCityState":
+        "Houston", "gameId": 2017102908, "backgroundImage": null, "gameDateTimeUtc":
+        "2017-10-29T20:05:00.000Z", "redZone": false, "phase": "FINAL", "winner":
+        "Seahawks", "videoStatus": "ONDEMAND", "season": 2017, "seasonType": "REG",
+        "week": 8, "weekName": "Week 8", "homeTeamId": "4600", "homeTeamAbbr": "SEA",
+        "homeScore": {"pointTotal": 41}, "homeTeamResult": "winner", "visitorTeamId":
+        "2120", "visitorTeamAbbr": "HOU", "visitorScore": {"pointTotal": 38}, "visitorTeamResult":
+        "loser", "siteId": 5315, "siteCity": "Seattle", "siteFullName": "CenturyLink
+        Field", "displayText": {"scheduled": "video-scheduled", "live": "video-live",
+        "liveIn": "video-live-in", "ondemand": "video-ondemand"}, "video": {"videoId":
+        "971f7352-76b8-4c53-9105-c67a9624338f", "title": "Houston Texans @ Seattle
+        Seahawks", "description": "<p>NoAds<em>Reg8</em>10<em>Houston</em>Texans<em>at</em>Seattle<em>Seahawks</em>1080</p>\n",
+        "kind": "Game video", "videoStatus": "ONDEMAND", "videoDuration": "9152.341",
+        "trimmedVideoDuration": "", "slug": "houston-texans-seattle-seahawks-1", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-10-30 03:57:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "condensedVideo": {"videoId": "46fc63ca-6b5f-451b-bcde-03866b1d5011",
+        "title": "Houston Texans @ Seattle Seahawks - Reg8 - Game In 40''", "description":
+        "<p>GI40<em>Reg8</em>10<em>Houston</em>Texans<em>at</em>Seattle<em>Seahawks</em>1080</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2401.433",
+        "trimmedVideoDuration": "", "slug": "houston-texans-seattle-seahawks-reg8-game-in-40",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-30
+        01:21:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "78f44022-a3f9-43fe-af02-52f6dd994cdf", "title": "Texans @ Seahawks - Coaches",
+        "description": "<p>HOU @ SEA</p>\n\n<p>G57350<em>Seahawks</em>vs<em>Texans</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "5334.741",
+        "trimmedVideoDuration": "", "slug": "texans-seahawks-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 11:43:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}, {"homeNickName":
+        "Redskins", "homeCityState": "Washington", "visitorNickName": "Cowboys", "visitorCityState":
+        "Dallas", "gameId": 2017102909, "backgroundImage": null, "gameDateTimeUtc":
+        "2017-10-29T20:25:00.000Z", "redZone": false, "phase": "FINAL", "winner":
+        "Cowboys", "videoStatus": "ONDEMAND", "season": 2017, "seasonType": "REG",
+        "week": 8, "weekName": "Week 8", "homeTeamId": "5110", "homeTeamAbbr": "WAS",
+        "homeScore": {"pointTotal": 19}, "homeTeamResult": "loser", "visitorTeamId":
+        "1200", "visitorTeamAbbr": "DAL", "visitorScore": {"pointTotal": 33}, "visitorTeamResult":
+        "winner", "siteId": 2389, "siteCity": "Landover", "siteFullName": "FedExField",
+        "displayText": {"scheduled": "video-scheduled", "live": "video-live", "liveIn":
+        "video-live-in", "ondemand": "video-ondemand"}, "video": {"videoId": "84d7c771-5863-41b8-9473-57f5791acdd3",
+        "title": "Dallas Cowboys @ Washington Redskins", "description": "<p>NoAds<em>Reg8</em>11<em>Dallas</em>Cowboys<em>at</em>Washington<em>Redskins</em>720</p>\n",
+        "kind": "Game video", "videoStatus": "ONDEMAND", "videoDuration": "8326.833",
+        "trimmedVideoDuration": "", "slug": "dallas-cowboys-washington-redskins-8",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-30
+        02:45:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "condensedVideo": {"videoId":
+        "aa5f6115-5841-4822-964e-6e2f068f58b5", "title": "Dallas Cowboys @ Washington
+        Redskins - Reg8 - Game In 40''", "description": "<p>GI40<em>Reg8</em>11<em>Dallas</em>Cowboys<em>at</em>Washington<em>Redskins</em>720</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2177.408",
+        "trimmedVideoDuration": "", "slug": "dallas-cowboys-washington-redskins-reg8-game-in-40",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-30
+        00:45:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "16e8b3b4-daf3-466d-9065-54bc6872d78b", "title": "Cowboys @ Redskins - Coaches",
+        "description": "<p>DAL @ WAS</p>\n\n<p>G57351<em>Redskins</em>vs<em>Cowboys</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "4929.536",
+        "trimmedVideoDuration": "", "slug": "cowboys-redskins-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 11:37:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}, {"homeNickName":
+        "Lions", "homeCityState": "Detroit", "visitorNickName": "Steelers", "visitorCityState":
+        "Pittsburgh", "gameId": 2017102910, "backgroundImage": null, "gameDateTimeUtc":
+        "2017-10-30T00:30:00.000Z", "redZone": false, "phase": "FINAL", "winner":
+        "Steelers", "videoStatus": "ONDEMAND", "season": 2017, "seasonType": "REG",
+        "week": 8, "weekName": "Week 8", "homeTeamId": "1540", "homeTeamAbbr": "DET",
+        "homeScore": {"pointTotal": 15}, "homeTeamResult": "loser", "visitorTeamId":
+        "3900", "visitorTeamAbbr": "PIT", "visitorScore": {"pointTotal": 20}, "visitorTeamResult":
+        "winner", "siteId": 2026, "siteCity": "Detroit", "siteFullName": "Ford Field",
+        "displayText": {"scheduled": "video-scheduled", "live": "video-live", "liveIn":
+        "video-live-in", "ondemand": "video-ondemand"}, "video": {"videoId": "d482ab9b-bb15-4b6f-815f-fceb5017e719",
+        "title": "Pittsburgh Steelers @ Detroit Lions", "description": "<p>NoAds<em>Reg8</em>12<em>Pittsburgh</em>Steelers<em>at</em>Detroit<em>Lions</em>1080</p>\n",
+        "kind": "Game video", "videoStatus": "ONDEMAND", "videoDuration": "8392.341",
+        "trimmedVideoDuration": "", "slug": "pittsburgh-steelers-detroit-lions-1",
+        "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/rpu6qwkyuhex6dxjmh9j",
+        "overridenFormats": {}}, "week": "week-8", "season": "season-2017", "seasonType":
+        "seasontype-reg", "scheduleDate": "2017-10-30 07:45:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "condensedVideo": {"videoId": "2a4e5c24-2648-4cfc-86a5-a166e0894761",
+        "title": "Pittsburgh Steelers @ Detroit Lions - Reg8 - Game In 40''", "description":
+        "<p>GI40<em>REG8</em>12<em>Pittsburgh</em>Steelers<em>At</em>Detroit<em>Lions</em>1080</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2225.133",
+        "trimmedVideoDuration": "", "slug": "pittsburgh-steelers-detroit-lions-reg8-game-in-40",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-30
+        04:59:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "86baebaf-ce60-41ca-9b0d-9419e880be10", "title": "Steelers @ Lions - Coaches",
+        "description": "<p>PIT @ DET\u00a0</p>\n\n<p>G57352<em>Lions</em>vs<em>Steelers</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "6586.261",
+        "trimmedVideoDuration": "", "slug": "steelers-lions-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 11:52:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}, {"homeNickName":
+        "Chiefs", "homeCityState": "Kansas City", "visitorNickName": "Broncos", "visitorCityState":
+        "Denver", "gameId": 2017103000, "backgroundImage": null, "gameDateTimeUtc":
+        "2017-10-31T00:30:00.000Z", "redZone": false, "phase": "FINAL", "winner":
+        "Chiefs", "videoStatus": "ONDEMAND", "season": 2017, "seasonType": "REG",
+        "week": 8, "weekName": "Week 8", "homeTeamId": "2310", "homeTeamAbbr": "KC",
+        "homeScore": {"pointTotal": 29}, "homeTeamResult": "winner", "visitorTeamId":
+        "1400", "visitorTeamAbbr": "DEN", "visitorScore": {"pointTotal": 19}, "visitorTeamResult":
+        "loser", "siteId": 1552, "siteCity": "Kansas City", "siteFullName": "Arrowhead
+        Stadium", "displayText": {"scheduled": "video-scheduled", "live": "video-live",
+        "liveIn": "video-live-in", "ondemand": "video-ondemand"}, "video": {"videoId":
+        "8d796957-477d-4117-82d9-bcb2daf8caf8", "title": "Denver Broncos @ Kansas
+        City Chiefs", "description": "<p>NoAds<em>Reg8</em>13<em>Denver</em>Broncos<em>at</em>Kansas<em>City</em>Chiefs_720</p>\n",
+        "kind": "Game video", "videoStatus": "ONDEMAND", "videoDuration": "8305.1",
+        "trimmedVideoDuration": "", "slug": "denver-broncos-kansas-city-chiefs-7",
+        "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/djyqhnfmo9zffa7hmpj8",
+        "overridenFormats": {}}, "week": "week-8", "season": "season-2017", "seasonType":
+        "seasontype-reg", "scheduleDate": "2017-10-31 06:18:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "condensedVideo": {"videoId": "18f1ed30-034c-4612-a74e-f2cd8f568270",
+        "title": "Denver Broncos @ Kansas City Chiefs - Reg8 - Game In 40''", "description":
+        "<p>GI40<em>Reg8</em>13<em>Denver</em>Broncos<em>at</em>Kansas<em>City</em>Chiefs_720</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2303.766",
+        "trimmedVideoDuration": "", "slug": "denver-broncos-kansas-city-chiefs-reg8-game-in-40",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-31
+        04:44:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "3d48a922-d900-4b07-a6a7-0f77ab93fd3e", "title": "Broncos @ Chiefs - Coaches",
+        "description": "<p>DEN @ KC</p>\n\n<p>G57353<em>Chiefs</em>vs<em>Broncos</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "5462.677",
+        "trimmedVideoDuration": "", "slug": "broncos-chiefs-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 11:39:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}]}, "analytics":
+        {"site_name": "gamepass international", "language": "en_US", "site_section":
+        "games", "site_subsection": "games", "page_detail": "2017:reg:Week 8", "content_type":
+        "index", "page_name": "gamepass international:games:games:2017:reg:week 8"}}}'
     headers:
       Access-Control-Allow-Headers: [Content-Type]
       Access-Control-Allow-Methods: [GET]
@@ -2393,8 +2594,8 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:40 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:07:40 GMT']
+      Date: ['Tue, 11 Sep 2018 08:35:59 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:37:59 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
@@ -2412,7 +2613,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: single game, lastUpdate: '2018-09-08T12:05:41.114Z', title: '',
+        header: {id: single game, lastUpdate: '2018-09-11T08:36:00.098Z', title: '',
           version: '1.0'}
         modules:
           analytics: {content_type: index, game_id: '2017102900', language: en_US,
@@ -2525,21 +2726,47 @@ interactions:
               weekName: Week 8
               winner: Vikings
             displayText: {subTitle: game-list-subtitle, title: game-list-title}
-      string: '{"header":{"id":"single game","version":"1.0","title":"","lastUpdate":"2018-09-08T12:05:41.114Z"},"modules":{"singlegame":{"displayText":{"title":"game-list-title","subTitle":"game-list-subtitle"},"content":[{"homeNickName":"Browns","homeCityState":"Cleveland","visitorNickName":"Vikings","visitorCityState":"Minnesota","gameId":2017102900,"backgroundImage":"https://nflgp-prd.akamaized.net/api/images/image/private/sgknokqibjyqcl2iortb","gameDateTimeUtc":"2017-10-29T13:30:00.000Z","redZone":false,"phase":"FINAL","winner":"Vikings","videoStatus":"ONDEMAND","season":2017,"seasonType":"REG","week":8,"weekName":"Week
-        8","homeTeamId":"1050","homeTeamAbbr":"CLE","homeScore":{"pointTotal":16},"homeTeamResult":"loser","visitorTeamId":"3000","visitorTeamAbbr":"MIN","visitorScore":{"pointTotal":33},"visitorTeamResult":"winner","siteId":5526,"siteCity":"Twickenham","siteFullName":"Twickenham
-        Stadium","displayText":{"scheduled":"video-scheduled","live":"video-live","liveIn":"video-live-in","ondemand":"video-ondemand"},"video":{"videoId":"741e2248-3a9a-41f9-bc1b-23fba6b27b5f","title":"Minnesota
-        Vikings @ Cleveland Browns","description":"<p>NoAd<em>Reg8</em>02<em>Minnesota</em>Vikings<em>at</em>Cleveland<em>Browns</em>1080</p>\n","kind":"Game
-        video","videoStatus":"ONDEMAND","videoDuration":"8744.341","trimmedVideoDuration":"","slug":"minnesota-vikings-cleveland-browns-1","videoThumbnail":{"templateUrl":"","overridenFormats":{}},"week":"week-8","season":"season-2017","seasonType":"seasontype-reg","scheduleDate":"2017-10-29
-        20:35:00Z","isGameOfTheWeek":false,"vocGameTopTag":null,"isBasic":false,"nflprogram":null,"nflprogramcode":null},"condensedVideo":{"videoId":"421936c7-4044-4be1-a509-8eaacf69679a","title":"Minnesota
-        Vikings @ Cleveland Browns - Reg8 - Game in 40''","description":"<p>GI40<em>Reg8</em>02<em>Minnesota</em>Vikings<em>at</em>Cleveland<em>Browns</em>1080</p>\n","kind":"Condensed
-        game","videoStatus":"ONDEMAND","videoDuration":"2713.301","trimmedVideoDuration":"","slug":"minnesota-vikings-cleveland-browns-reg8-game-in-40","videoThumbnail":{"templateUrl":"","overridenFormats":{}},"week":"week-8","season":"season-2017","seasonType":"seasontype-reg","scheduleDate":"2017-10-29
-        18:42:00Z","isGameOfTheWeek":false,"vocGameTopTag":null,"isBasic":false,"nflprogram":null,"nflprogramcode":null},"coachfilmVideo":{"videoId":"cf27a746-a093-4de9-8479-74c72e326bb9","title":"Vikings
-        @ Browns - Coaches","description":"<p>MIN @ CLE</p>\n\n<p>G57342<em>Browns</em>vs<em>Vikings</em>v2.mp4</p>\n","kind":"Coach
-        film","videoStatus":"ONDEMAND","videoDuration":"5856.405","trimmedVideoDuration":"","slug":"vikings-browns-coaches","videoThumbnail":{"templateUrl":"","overridenFormats":{}},"week":"week-8","season":"season-2017","seasonType":"seasontype-reg","scheduleDate":"2017-11-01
-        12:19:00Z","isGameOfTheWeek":false,"vocGameTopTag":null,"isBasic":false,"nflprogram":null,"nflprogramcode":null},"highlightsVideo":null,"redZoneLiveVideo":null}]},"analytics":{"site_name":"gamepass
-        international","language":"en_US","site_section":"games","site_subsection":"game
-        detail","page_detail":"matchup","content_type":"index","game_id":"2017102900","page_name":"gamepass
-        international:games:game detail:matchup"},"backgroundImage":{"url":"https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/sgknokqibjyqcl2iortb"}}}'
+      string: '{"header": {"id": "single game", "version": "1.0", "title": "", "lastUpdate":
+        "2018-09-11T08:36:00.098Z"}, "modules": {"singlegame": {"displayText": {"title":
+        "game-list-title", "subTitle": "game-list-subtitle"}, "content": [{"homeNickName":
+        "Browns", "homeCityState": "Cleveland", "visitorNickName": "Vikings", "visitorCityState":
+        "Minnesota", "gameId": 2017102900, "backgroundImage": "https://nflgp-prd.akamaized.net/api/images/image/private/sgknokqibjyqcl2iortb",
+        "gameDateTimeUtc": "2017-10-29T13:30:00.000Z", "redZone": false, "phase":
+        "FINAL", "winner": "Vikings", "videoStatus": "ONDEMAND", "season": 2017, "seasonType":
+        "REG", "week": 8, "weekName": "Week 8", "homeTeamId": "1050", "homeTeamAbbr":
+        "CLE", "homeScore": {"pointTotal": 16}, "homeTeamResult": "loser", "visitorTeamId":
+        "3000", "visitorTeamAbbr": "MIN", "visitorScore": {"pointTotal": 33}, "visitorTeamResult":
+        "winner", "siteId": 5526, "siteCity": "Twickenham", "siteFullName": "Twickenham
+        Stadium", "displayText": {"scheduled": "video-scheduled", "live": "video-live",
+        "liveIn": "video-live-in", "ondemand": "video-ondemand"}, "video": {"videoId":
+        "741e2248-3a9a-41f9-bc1b-23fba6b27b5f", "title": "Minnesota Vikings @ Cleveland
+        Browns", "description": "<p>NoAd<em>Reg8</em>02<em>Minnesota</em>Vikings<em>at</em>Cleveland<em>Browns</em>1080</p>\n",
+        "kind": "Game video", "videoStatus": "ONDEMAND", "videoDuration": "8744.341",
+        "trimmedVideoDuration": "", "slug": "minnesota-vikings-cleveland-browns-1",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-29
+        20:35:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "condensedVideo": {"videoId":
+        "421936c7-4044-4be1-a509-8eaacf69679a", "title": "Minnesota Vikings @ Cleveland
+        Browns - Reg8 - Game in 40''", "description": "<p>GI40<em>Reg8</em>02<em>Minnesota</em>Vikings<em>at</em>Cleveland<em>Browns</em>1080</p>\n",
+        "kind": "Condensed game", "videoStatus": "ONDEMAND", "videoDuration": "2713.301",
+        "trimmedVideoDuration": "", "slug": "minnesota-vikings-cleveland-browns-reg8-game-in-40",
+        "videoThumbnail": {"templateUrl": "", "overridenFormats": {}}, "week": "week-8",
+        "season": "season-2017", "seasonType": "seasontype-reg", "scheduleDate": "2017-10-29
+        18:42:00Z", "isGameOfTheWeek": false, "vocGameTopTag": null, "isBasic": false,
+        "nflprogram": null, "nflprogramcode": null}, "coachfilmVideo": {"videoId":
+        "cf27a746-a093-4de9-8479-74c72e326bb9", "title": "Vikings @ Browns - Coaches",
+        "description": "<p>MIN @ CLE</p>\n\n<p>G57342<em>Browns</em>vs<em>Vikings</em>v2.mp4</p>\n",
+        "kind": "Coach film", "videoStatus": "ONDEMAND", "videoDuration": "5856.405",
+        "trimmedVideoDuration": "", "slug": "vikings-browns-coaches", "videoThumbnail":
+        {"templateUrl": "", "overridenFormats": {}}, "week": "week-8", "season": "season-2017",
+        "seasonType": "seasontype-reg", "scheduleDate": "2017-11-01 12:19:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, "highlightsVideo": null, "redZoneLiveVideo": null}]}, "analytics":
+        {"site_name": "gamepass international", "language": "en_US", "site_section":
+        "games", "site_subsection": "game detail", "page_detail": "matchup", "content_type":
+        "index", "game_id": "2017102900", "page_name": "gamepass international:games:game
+        detail:matchup"}, "backgroundImage": {"url": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/sgknokqibjyqcl2iortb"}}}'
     headers:
       Access-Control-Allow-Headers: [Content-Type]
       Access-Control-Allow-Methods: [GET]
@@ -2547,8 +2774,8 @@ interactions:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:41 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:41 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:00 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:00 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
@@ -2556,7 +2783,7 @@ interactions:
       content-length: ['3345']
     status: {code: 200, message: OK}
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_c120201eccf4b3ec9e59ce8f3d7a533fe44ce2f8e893d595c22d6bf9fa69d3c5&grant_type=refresh_token
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_96cb132bd31a7db53ffdec2dec31d8a54f235dc7f7f44fdc2d368115ca2d167a&grant_type=refresh_token
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -2568,16 +2795,17 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_625fa8f5bab12ff994e498312a065a21fbbfad03f33d9cf34428a824767d8d00,
+      pretty: {access_token: FAKE_TOKEN_c5324d301ac61170fbfa5c37d73864d49131807fff8145129d97e7d6477104f6,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_3c83a040d91981f8530aadf2476976f3c606498164eebc4417fce05639b917d1,
         token_type: bearer}
-      string: '{"access_token":"FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d","token_type":"bearer","expires_in":3539,"refresh_token":"FAKE_TOKEN_625fa8f5bab12ff994e498312a065a21fbbfad03f33d9cf34428a824767d8d00"}'
+      string: '{"access_token": "FAKE_TOKEN_c5324d301ac61170fbfa5c37d73864d49131807fff8145129d97e7d6477104f6",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_3c83a040d91981f8530aadf2476976f3c606498164eebc4417fce05639b917d1"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Sat, 08 Sep 2018 12:05:41 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:41 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:00 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:00 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -2641,8 +2869,8 @@ interactions:
       Cache-Control: [max-age=300]
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:41 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:10:41 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:00 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:41:00 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/8.5]
       Vary: [Accept-Encoding]
@@ -2693,8 +2921,8 @@ interactions:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:41 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:41 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:00 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:00 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
@@ -2704,7 +2932,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "421936c7-4044-4be1-a509-8eaacf69679a",
       "VideoSource": "https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=hls)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "77f7b6c5-8c4f-43cc-b2f9-aa4299f76548|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|web|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "af072682-353b-4504-b0b5-88ec463f83da|FAKE_TOKEN_c5324d301ac61170fbfa5c37d73864d49131807fff8145129d97e7d6477104f6|web|FAKE_TOKEN_c5324d301ac61170fbfa5c37d73864d49131807fff8145129d97e7d6477104f6|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -2715,15 +2943,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 83CB990D7DD13C847C472EAC5BE332A0F6ABE7FE}
-      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3","HeartBeatTime":0,"Signature":"83CB990D7DD13C847C472EAC5BE332A0F6ABE7FE","ActionParameters":""}'
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1536654873~exp=1536655053~acl=/*~hmac=48a724f26cdb0bf9f58eb18cff80578c8754e7742a9e61868eda778bf1414770&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: B52D8F32F0A8DC18B9899615BA7B0820CBE81ADF}
+      string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
+        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1536654873~exp=1536655053~acl=/*~hmac=48a724f26cdb0bf9f58eb18cff80578c8754e7742a9e61868eda778bf1414770&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "B52D8F32F0A8DC18B9899615BA7B0820CBE81ADF",
+        "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:42 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:42 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:03 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:03 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -2734,7 +2965,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "421936c7-4044-4be1-a509-8eaacf69679a",
       "VideoSource": "https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "1170fe14-2568-485e-8644-3b4ee483d1a4|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|web|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "1a56a068-491a-4803-9d11-e07697cb4724|FAKE_TOKEN_c5324d301ac61170fbfa5c37d73864d49131807fff8145129d97e7d6477104f6|web|FAKE_TOKEN_c5324d301ac61170fbfa5c37d73864d49131807fff8145129d97e7d6477104f6|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -2745,15 +2976,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 5F20B4873180907D269357926BF4FBB556B4EB47}
-      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3","HeartBeatTime":0,"Signature":"5F20B4873180907D269357926BF4FBB556B4EB47","ActionParameters":""}'
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1536654873~exp=1536655053~acl=/*~hmac=48a724f26cdb0bf9f58eb18cff80578c8754e7742a9e61868eda778bf1414770&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: A9AF9D8C732284341C47A16738279C567A1F7A0D}
+      string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
+        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1536654873~exp=1536655053~acl=/*~hmac=48a724f26cdb0bf9f58eb18cff80578c8754e7742a9e61868eda778bf1414770&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "A9AF9D8C732284341C47A16738279C567A1F7A0D",
+        "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:42 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:42 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:03 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:03 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -2764,7 +2998,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "421936c7-4044-4be1-a509-8eaacf69679a",
       "VideoSource": "https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "4e9722e1-c037-4943-93be-9af0977e4e2c|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|web|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "0dccdd35-6dc4-45aa-a150-88953bf573ee|FAKE_TOKEN_c5324d301ac61170fbfa5c37d73864d49131807fff8145129d97e7d6477104f6|web|FAKE_TOKEN_c5324d301ac61170fbfa5c37d73864d49131807fff8145129d97e7d6477104f6|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -2775,15 +3009,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 8A4D1D5A891ABCF7A45FAB761F53C0847C8E6B2A}
-      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3","HeartBeatTime":0,"Signature":"8A4D1D5A891ABCF7A45FAB761F53C0847C8E6B2A","ActionParameters":""}'
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1536654874~exp=1536655054~acl=/*~hmac=8e82cf2a346886300caa2e5566b6304f0749fe359800ad3e62d7e6fa004825a2&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: F9BAF70F69D378E3366CA764F353B869ED442D90}
+      string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
+        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1536654874~exp=1536655054~acl=/*~hmac=8e82cf2a346886300caa2e5566b6304f0749fe359800ad3e62d7e6fa004825a2&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "F9BAF70F69D378E3366CA764F353B869ED442D90",
+        "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:42 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:42 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:04 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:04 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -2794,7 +3031,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "421936c7-4044-4be1-a509-8eaacf69679a",
       "VideoSource": "https://vod-s-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(filter=iis)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "87d39760-ce09-4aa9-8212-5b08cc546852|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|web|FAKE_TOKEN_cc3f49a02e4011267ce9d4b515e377732a8206a248af9b6b521af7a1f45a137d|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "e83521b2-525c-4ba9-9839-b7846c09a0c7|FAKE_TOKEN_c5324d301ac61170fbfa5c37d73864d49131807fff8145129d97e7d6477104f6|web|FAKE_TOKEN_c5324d301ac61170fbfa5c37d73864d49131807fff8145129d97e7d6477104f6|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -2805,15 +3042,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-s-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(filter=iis)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 047AD0A90DDEA65A32BC1FA336BB964ED18232EF}
-      string: '{"Response":"OK","ResponseCode":1,"Message":"","Action":"","ContentUrl":"https://vod-s-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(filter=iis)?hdnea=st=1536408252~exp=1536408432~acl=/*~hmac=18dee99c8b0f454265435f52d55176ab87a85734e9edda5250dacce1f247cc3f&hdcore=2.11.3","HeartBeatTime":0,"Signature":"047AD0A90DDEA65A32BC1FA336BB964ED18232EF","ActionParameters":""}'
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-s-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(filter=iis)?hdnea=st=1536654874~exp=1536655054~acl=/*~hmac=8e82cf2a346886300caa2e5566b6304f0749fe359800ad3e62d7e6fa004825a2&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 68BC4F7ED8F62A6F0DDB1F436F8CC4BC97B0B5BB}
+      string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
+        "ContentUrl": "https://vod-s-video-nfl.akamaized.net/vod/70495643-2e1b-4012-8284-95614ef5eead/GI40_Reg8_02_Minnesota_Vikings_at_Cleveland_Browns_1080.ism/manifest(filter=iis)?hdnea=st=1536654874~exp=1536655054~acl=/*~hmac=8e82cf2a346886300caa2e5566b6304f0749fe359800ad3e62d7e6fa004825a2&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "68BC4F7ED8F62A6F0DDB1F436F8CC4BC97B0B5BB",
+        "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 08 Sep 2018 12:05:42 GMT']
-      Expires: ['Sat, 08 Sep 2018 12:05:42 GMT']
+      Date: ['Tue, 11 Sep 2018 08:36:04 GMT']
+      Expires: ['Tue, 11 Sep 2018 08:36:04 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
