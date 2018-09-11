@@ -1035,14 +1035,38 @@ class pigskin(object):
 
         return streams
 
-    def redzone_on_air(self):
-        """Return whether RedZone Live is currently broadcasting."""
+
+    def is_redzone_on_air(self):
+        """Return whether RedZone Live is currently broadcasting.
+
+        Returns
+        -------
+        bool
+            Returns True if RedZone Live is broadcasting, False otherwise.
+        """
         url = self.config['modules']['ROUTES_DATA_PROVIDERS']['redzone']
-        response = self.make_request(url, 'get')
-        if not response['modules']['redZoneLive']['content']:
-            return False
-        else:
-            return True
+
+        try:
+            r = self.http_session.get(url)
+            self._log_request(r)
+            data = r.json()
+        except ValueError:
+            self.logger.error('is_redzone_on_air: server response is invalid')
+            return None
+        except Exception as e:
+            raise e
+
+        try:
+            if data['modules']['redZoneLive']['content']:
+                return True
+        except KeyError:
+            self.logger.error('could not parse RedZoneLive data')
+            return None
+        except Exception as e:
+            raise e
+
+        return False
+
 
     def parse_shows(self):
         """Dynamically parse the NFL Network shows into a dict."""
