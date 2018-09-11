@@ -283,7 +283,7 @@ class pigskin(object):
             self._log_request(r)
             data = r.json()
         except ValueError:
-            self.logger.error('login: server response is invalid')
+            self.logger.error('_gp_auth: server response is invalid')
             return {}
         except Exception as e:
             raise e
@@ -325,6 +325,10 @@ class pigskin(object):
         A successful login does not necessarily mean that access to content is
         granted (i.e. has a valid subscription). Use ``check_for_subscription()``
         to determine if access has been granted.
+
+        See Also
+        --------
+        ``check_for_subscription()``
         """
         # if the user already has access, just skip the entire auth process
         if not force:
@@ -454,7 +458,7 @@ class pigskin(object):
             self._log_request(r)
             data = r.json()
         except ValueError:
-            self.logger.error('')
+            self.logger.error('get_seasons: invalid server response')
             return []
         except Exception as e:
             raise e
@@ -505,7 +509,7 @@ class pigskin(object):
             self._log_request(r)
             data = r.json()
         except ValueError:
-            self.logger.error('')
+            self.logger.error('get_weeks: invalid server response')
             return []
         except Exception as e:
             raise e
@@ -620,7 +624,6 @@ class pigskin(object):
             games = sorted(games, key=lambda x: x['gameDateTimeUtc'])
         except KeyError:
             self.logger.error('could not parse/build the games list')
-            self.logger.error('')
             return []
         except Exception as e:
             raise e
