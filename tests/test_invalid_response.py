@@ -25,6 +25,7 @@ def test_invalid_response_get_bytes():
     assert not gp._get_diva_config(junk_url)
     assert not gp._get_diva_streams(video_id='invalid', diva_config_url=diva_config_url)
     assert not gp.check_for_subscription()
+    assert gp.is_redzone_on_air() == None
 
 
 @pytest.mark.vcr()
@@ -46,6 +47,7 @@ def test_invalid_response_get_html():
     assert not gp._get_diva_config(junk_url)
     assert not gp._get_diva_streams(video_id='invalid', diva_config_url=diva_config_url)
     assert not gp.check_for_subscription()
+    assert gp.is_redzone_on_air() == None
 
 
 @pytest.mark.vcr()
@@ -67,6 +69,7 @@ def test_invalid_response_get_json():
     assert not gp._get_diva_config(junk_url)
     assert not gp._get_diva_streams(video_id='invalid', diva_config_url=diva_config_url)
     assert not gp.check_for_subscription()
+    assert gp.is_redzone_on_air() == None
 
 
 @pytest.mark.vcr()
@@ -88,6 +91,7 @@ def test_invalid_response_get_xml():
     assert not gp._get_diva_config(junk_url)
     assert not gp._get_diva_streams(video_id='invalid', diva_config_url=diva_config_url)
     assert not gp.check_for_subscription()
+    assert gp.is_redzone_on_air() == None
 
 
 @pytest.mark.vcr()
