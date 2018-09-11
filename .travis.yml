@@ -1,12 +1,26 @@
+group: travis_latest
 language: python
 cache: pip
-python:
-  - 2.7
-  - 3.4
-  - 3.5
-  - 3.6
-  - pypy
-  - pypy3
+matrix:
+    include:
+      - python: 2.7
+      - python: 3.4
+      - python: 3.5
+      - python: 3.6
+      - python: 3.7
+        dist: xenial
+        sudo: true
+      - python: 3.8-dev
+        dist: xenial
+        sudo: true
+      - python: nightly
+        dist: xenial
+        sudo: true
+      - python: pypy
+      - python: pypy3
+    allow_failures:
+        - python: 3.8-dev
+        - python: nightly
 install:
   - pip install -U -r requirements.txt
   - pip install -U -r requirements-test.txt
@@ -16,4 +30,3 @@ script:
   - pyflakes --version && pyflakes pigskin/ setup.py
   - pytest --version && pytest --vcr-record=none --cov=pigskin/
   - codecov
-sudo: false
