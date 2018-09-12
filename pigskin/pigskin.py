@@ -498,7 +498,7 @@ class pigskin(object):
         'hof'
         >>> print(weeks['reg']['8']
         'weeks'
-        >>> print(weeks['post']'22']
+        >>> print(weeks['post']['22']
         'sb'
         """
         url = self.config['modules']['ROUTES_DATA_PROVIDERS']['games']
@@ -1192,7 +1192,7 @@ class pigskin(object):
 
         Parameters
         ----------
-        nfldata : str
+        nfldate : str
             The DIVA config URL that you need parsed.
         localize : bool
             Whether the datetime object should be localized.
