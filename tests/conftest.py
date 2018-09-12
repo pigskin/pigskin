@@ -57,17 +57,18 @@ def search_for_tokens(text):
 
 
 def scrub_profile_info(text):
-    """The Gigya auth response includes a bunch of personal info. Scrub it."""
+    """The Gigya auth response and account pages contain personal info. Scrub it."""
     try:
         parsed = json.loads(text)
     except ValueError:
         return text
 
-    try:
-        if parsed['profile']:
-            parsed['profile'] = 'REDACTED'
-    except KeyError:
-        pass
+    for i in ['profile', 'billing']:
+        try:
+            if parsed[i]:
+                parsed[i] = 'REDACTED'
+        except KeyError:
+            pass
 
     text = json.dumps(parsed)
     return text
@@ -89,13 +90,6 @@ def scrub_secrets(text):
 
 
 def scrub_request(request):
-    # scrub headers
-    try:
-        if request.headers['Authorization']:
-            request.headers['Authorization'] = 'REDACTED'
-    except KeyError:
-        pass
-
     # scrub body
     try:
         body = request.body.decode()
@@ -131,4 +125,5 @@ def vcr_config():
         'decode_compressed_response': True,
         'before_record_request': scrub_request,
         'before_record_response': scrub_response,
+        'filter_headers': [('Authorization', 'REDACTED')],
     }
