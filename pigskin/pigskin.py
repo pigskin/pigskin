@@ -19,6 +19,17 @@ except ImportError:  # Python 2.7
 import requests
 import m3u8
 
+from . import settings
+
+
+class store(object):
+    def __init__(self):
+        self.s = None  # a requests session
+        self.gp_config = None
+        self.access_token = None
+        self.refresh_token = None
+        self.username = None
+
 
 class pigskin(object):
     def __init__(
@@ -30,20 +41,17 @@ class pigskin(object):
         self.ch.setLevel(logging.INFO)
         self.logger.addHandler(self.ch)
 
-        self.base_url = 'https://www.nflgamepass.com'
-        self.user_agent = 'Firefox'
-        self.http_session = requests.Session()
-        self.http_session.proxies['http'] = proxy_url
-        self.http_session.proxies['https'] = proxy_url
+        self._store = store()
+        self._store.s = requests.Session()
+        self._store.s.proxies['http'] = proxy_url
+        self._store.s.proxies['https'] = proxy_url
+        self._store.gp_config = self.populate_config()
 
-        self.access_token = None
-        self.refresh_token = None
-        self.config = self.populate_config()
         self.nfln_shows = {}
         self.episode_list = []
-        self.gigya_auth_url = 'https://accounts.us1.gigya.com/accounts.login'
 
         self.logger.debug('Python Version: %s' % sys.version)
+
 
     class GamePassError(Exception):
         def __init__(self, value):
@@ -54,8 +62,8 @@ class pigskin(object):
 
 
     def populate_config(self):
-        url = self.base_url + '/api/en/content/v1/web/config'
-        r = self.http_session.get(url)
+        url = settings.base_url + '/api/en/content/v1/web/config'
+        r = self._store.s.get(url)
         return r.json()
 
 
@@ -78,7 +86,7 @@ class pigskin(object):
 
         Examples
         --------
-        >>> r = self.http_session.get(url)
+        >>> r = self._store.s.get(url)
         >>> self._log_request(r)
         """
         request_dict = {}
@@ -140,11 +148,11 @@ class pigskin(object):
         for t in [3, 22]:
             try:
                 if method == 'get':
-                    req = self.http_session.get(url, params=params, headers=headers, timeout=t)
+                    req = self._store.s.get(url, params=params, headers=headers, timeout=t)
                 elif method == 'put':
-                    req = self.http_session.put(url, params=params, data=payload, headers=headers, timeout=t)
+                    req = self._store.s.put(url, params=params, data=payload, headers=headers, timeout=t)
                 else:  # post
-                    req = self.http_session.post(url, params=params, data=payload, headers=headers, timeout=t)
+                    req = self._store.s.post(url, params=params, data=payload, headers=headers, timeout=t)
                 # We made it without error, exit the loop
                 break
             except requests.Timeout:
@@ -202,8 +210,8 @@ class pigskin(object):
         ``login()``
         ``_gp_auth()``
         """
-        url = self.gigya_auth_url
-        api_key = self.config['modules']['GIGYA']['JAVASCRIPT_API_URL'].split('apiKey=')[1]
+        url = settings.gigya_auth_url
+        api_key = self._store.gp_config['modules']['GIGYA']['JAVASCRIPT_API_URL'].split('apiKey=')[1]
         post_data = {
             'apiKey' : api_key,
             'loginID' : username,
@@ -211,7 +219,7 @@ class pigskin(object):
         }
 
         try:
-            r = self.http_session.post(url, data=post_data)
+            r = self._store.s.post(url, data=post_data)
             self._log_request(r)
             gigya_data = r.json()
         except ValueError:
@@ -256,10 +264,10 @@ class pigskin(object):
         ``_gigya_auth()``
         ``login()``
         """
-        url = self.config['modules']['API']['LOGIN']
+        url = self._store.gp_config['modules']['API']['LOGIN']
 
         post_data = {
-            'client_id': self.config['modules']['API']['CLIENT_ID'],
+            'client_id': self._store.gp_config['modules']['API']['CLIENT_ID'],
             'username': username,
             'password': password,
             'grant_type': 'password'
@@ -268,7 +276,7 @@ class pigskin(object):
         if gigya_data:
             # TODO: audit if in fact all these fields are needed
             post_data = {
-                'client_id' : self.config['modules']['API']['CLIENT_ID'],
+                'client_id' : self._store.gp_config['modules']['API']['CLIENT_ID'],
                 'uuid' : gigya_data['UID'],
                 'signature' : gigya_data['UIDSignature'],
                 'ts' : gigya_data['signatureTimestamp'],
@@ -279,7 +287,7 @@ class pigskin(object):
             }
 
         try:
-            r = self.http_session.post(url, data=post_data)
+            r = self._store.s.post(url, data=post_data)
             self._log_request(r)
             data = r.json()
         except ValueError:
@@ -348,10 +356,10 @@ class pigskin(object):
             except Exception as e:
                 raise e
             else:
-                self.username = username
+                self._store.username = username
                 # TODO: are these tokens provided for valid accounts without a subscription?
-                self.access_token = data['access_token']
-                self.refresh_token = data['refresh_token']
+                self._store.access_token = data['access_token']
+                self._store.refresh_token = data['refresh_token']
 
                 self.logger.debug('login was successful')
                 return True
@@ -377,11 +385,11 @@ class pigskin(object):
         --------
         ``login()``
         """
-        url = self.config['modules']['API']['USER_ACCOUNT']
-        headers = {'Authorization': 'Bearer {0}'.format(self.access_token)}
+        url = self._store.gp_config['modules']['API']['USER_ACCOUNT']
+        headers = {'Authorization': 'Bearer {0}'.format(self._store.access_token)}
 
         try:
-            r = self.http_session.get(url, headers=headers)
+            r = self._store.s.get(url, headers=headers)
             self._log_request(r)
             data = r.json()
         except ValueError:
@@ -409,15 +417,15 @@ class pigskin(object):
         ----
         TODO: raise an error on failure so people can catch and attempt to login again
         """
-        url = self.config['modules']['API']['REFRESH_TOKEN']
+        url = self._store.gp_config['modules']['API']['REFRESH_TOKEN']
         post_data = {
-            'client_id': self.config['modules']['API']['CLIENT_ID'],
-            'refresh_token': self.refresh_token,
+            'client_id': self._store.gp_config['modules']['API']['CLIENT_ID'],
+            'refresh_token': self._store.refresh_token,
             'grant_type': 'refresh_token'
         }
 
         try:
-            r = self.http_session.post(url, data=post_data)
+            r = self._store.s.post(url, data=post_data)
             self._log_request(r)
             data = r.json()
         except ValueError:
@@ -427,8 +435,8 @@ class pigskin(object):
             raise e
 
         try:
-            self.access_token = data['access_token']
-            self.refresh_token = data['refresh_token']
+            self._store.access_token = data['access_token']
+            self._store.refresh_token = data['refresh_token']
         except KeyError:
             self.logger.error('could not find GP tokens to refresh')
             return False
@@ -450,11 +458,11 @@ class pigskin(object):
             a list of available seasons, sorted from the most to least recent;
             empty if there was a failure.
         """
-        url = self.config['modules']['ROUTES_DATA_PROVIDERS']['games']
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games']
         seasons = []
 
         try:
-            r = self.http_session.get(url)
+            r = self._store.s.get(url)
             self._log_request(r)
             data = r.json()
         except ValueError:
@@ -501,11 +509,11 @@ class pigskin(object):
         >>> print(weeks['post']['22']
         'sb'
         """
-        url = self.config['modules']['ROUTES_DATA_PROVIDERS']['games']
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games']
         weeks = {}
 
         try:
-            r = self.http_session.get(url)
+            r = self._store.s.get(url)
             self._log_request(r)
             data = r.json()
         except ValueError:
@@ -547,11 +555,11 @@ class pigskin(object):
             with the ``season``, ``season_type``, and ``week`` fields populated
             if successful; empty if otherwise.
         """
-        url = self.config['modules']['ROUTES_DATA_PROVIDERS']['games']
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games']
         current = {}
 
         try:
-            r = self.http_session.get(url)
+            r = self._store.s.get(url)
             self._log_request(r)
             data = r.json()
         except ValueError:
@@ -605,12 +613,12 @@ class pigskin(object):
         >>> print(games[1]['gameId'])
         2017091000
         """
-        url = self.config['modules']['ROUTES_DATA_PROVIDERS']['games_detail']
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games_detail']
         url = url.replace(':seasonType', season_type).replace(':season', str(season)).replace(':week', str(week))
         games = []
 
         try:
-            r = self.http_session.get(url)
+            r = self._store.s.get(url)
             self._log_request(r)
             data = r.json()
         except ValueError:
@@ -640,7 +648,7 @@ class pigskin(object):
             The season can be provided as either a ``str`` or ``int``.
         team : str
             Accepts the team ``seo_name``. For a list of team seo names, see
-            self.config['modules']['ROUTES_DATA_PROVIDERS']['team_detail'].
+            self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['team_detail'].
 
         Returns
         -------
@@ -664,14 +672,14 @@ class pigskin(object):
         >>> print(games[2]['weekName'])
         Preseason Week 3
         """
-        url = self.config['modules']['ROUTES_DATA_PROVIDERS']['team_detail']
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['team_detail']
         url = url.replace(':team', team)
         games = []
 
         # TODO: bail if ``season`` isn't the current season
 
         try:
-            r = self.http_session.get(url)
+            r = self._store.s.get(url)
             self._log_request(r)
             data = r.json()
         except ValueError:
@@ -728,12 +736,12 @@ class pigskin(object):
         >>> print(versions.keys())
         dict_keys(['Coach film', 'Condensed game', 'Game video'])
         """
-        url = self.config['modules']['ROUTES_DATA_PROVIDERS']['game_page']
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['game_page']
         url = url.replace(':gameslug', str(game_id)).replace(':season', str(season))
         versions = {}
 
         try:
-            r = self.http_session.get(url)
+            r = self._store.s.get(url)
             self._log_request(r)
             data = r.json()
         except ValueError:
@@ -769,13 +777,13 @@ class pigskin(object):
             with the stream format (hls, chromecast, etc) as the key and the
             stream content_url as the value.
         """
-        url = self.config['modules']['ROUTES_DATA_PROVIDERS']['network']
-        diva_config_url = self.config['modules']['DIVA']['HTML5']['SETTINGS']['Live24x7']
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['network']
+        diva_config_url = self._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['Live24x7']
         self.refresh_tokens()  # we aren't even told about the live video unless we have up-to-date tokens
         streams = {}
 
         try:
-            r = self.http_session.get(url)
+            r = self._store.s.get(url)
             self._log_request(r)
             data = r.json()
         except ValueError:
@@ -808,12 +816,12 @@ class pigskin(object):
             stream content_url as the value.
         """
         # TODO: do we need refresh_tokens() like get_nfl_network_streams()? likely
-        url = self.config['modules']['ROUTES_DATA_PROVIDERS']['redzone']
-        diva_config_url = self.config['modules']['DIVA']['HTML5']['SETTINGS']['Live24x7']
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['redzone']
+        diva_config_url = self._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['Live24x7']
         streams = {}
 
         try:
-            r = self.http_session.get(url)
+            r = self._store.s.get(url)
             self._log_request(r)
             data = r.json()
         except ValueError:
@@ -862,9 +870,9 @@ class pigskin(object):
         >>> print(streams.keys())
         dict_keys(['hls', 'chromecast', 'connecttv'])
         """
-        diva_config_url = self.config['modules']['DIVA']['HTML5']['SETTINGS']['VodNoData']
+        diva_config_url = self._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['VodNoData']
         if live:
-            diva_config_url = self.config['modules']['DIVA']['HTML5']['SETTINGS']['LiveNoData']
+            diva_config_url = self._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['LiveNoData']
 
         streams = self._get_diva_streams(video_id=video_id, diva_config_url=diva_config_url)
         return streams
@@ -887,7 +895,7 @@ class pigskin(object):
         diva_config = {}
 
         try:
-            r = self.http_session.get(url)
+            r = self._store.s.get(url)
             self._log_request(r)
             data = r.content
         except Exception as e:
@@ -937,7 +945,7 @@ class pigskin(object):
             return {}
 
         try:
-            r = self.http_session.get(video_data_url)
+            r = self._store.s.get(video_data_url)
             self._log_request(r)
             akamai_data = r.content
         except Exception as e:
@@ -953,7 +961,7 @@ class pigskin(object):
         # TODO: allow user-agent override
         m3u8_header = {
             'Connection': 'keep-alive',
-            'User-Agent': self.user_agent
+            'User-Agent': settings.user_agent
         }
         for vs in akamai_xml.iter('videoSource'):
             try:
@@ -965,7 +973,7 @@ class pigskin(object):
             payload = self._build_processing_url_payload(video_id, vs_url)
 
             try:
-                r = self.http_session.post(url=processing_url, data=payload)
+                r = self._store.s.post(url=processing_url, data=payload)
                 self._log_request(r)
                 data = r.json()
             except ValueError:
@@ -1004,7 +1012,7 @@ class pigskin(object):
         # than regenerating for each request.
         unique_id = str(uuid.uuid4())
         # TODO: This does not look right, and doesn't even use the username
-        other = '{0}|{1}|web|{1}|undefined|{2}'.format(unique_id, self.access_token, self.user_agent, self.username)
+        other = '{0}|{1}|web|{1}|undefined|{2}'.format(unique_id, self._store.access_token, settings.user_agent, self._store.username)
         post_data = {
             'Type': '1',
             'User': '',
@@ -1027,7 +1035,7 @@ class pigskin(object):
         streams = {}
         m3u8_header = {
             'Connection': 'keep-alive',
-            'User-Agent': self.user_agent
+            'User-Agent': settings.user_agent
         }
 
         m3u8_manifest = self.make_request(manifest_url, 'get')
@@ -1047,10 +1055,10 @@ class pigskin(object):
         bool
             Returns True if RedZone Live is broadcasting, False otherwise.
         """
-        url = self.config['modules']['ROUTES_DATA_PROVIDERS']['redzone']
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['redzone']
 
         try:
-            r = self.http_session.get(url)
+            r = self._store.s.get(url)
             self._log_request(r)
             data = r.json()
         except ValueError:
@@ -1077,7 +1085,7 @@ class pigskin(object):
         self.episode_list = []
 
         # NFL Network shows
-        url = self.config['modules']['API']['NETWORK_PROGRAMS']
+        url = self._store.gp_config['modules']['API']['NETWORK_PROGRAMS']
         response = self.make_request(url, 'get')
         current_season = self.get_current_season_and_week()['season']
 
@@ -1086,7 +1094,7 @@ class pigskin(object):
             # So we loop over every episode for every show to build the list.
             # TODO: this causes a lot of network traffic and slows down init
             #       quite a bit. Would be nice to have a better workaround.
-            request_url = self.config['modules']['API']['NETWORK_EPISODES']
+            request_url = self._store.gp_config['modules']['API']['NETWORK_EPISODES']
             episodes_url = request_url.replace(':seasonSlug/', '').replace(':tvShowSlug', show['slug'])
             episodes_data = self.make_request(episodes_url, 'get')['modules']['archive']['content']
 
@@ -1131,7 +1139,7 @@ class pigskin(object):
         # episode_season_dict = {episode_season, episode_id_dict{}}
         # show_season_dict = {show_title, episode_season_dict{}}
         # The Function returns all Season and Episodes
-        url = self.config['modules']['ROUTES_DATA_PROVIDERS']['redzone']
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['redzone']
         response = self.make_request(url, 'get')
 
         season_list = []
