@@ -47,6 +47,7 @@ class pigskin(object):
         self._store.s.proxies['https'] = proxy_url
         self._store.gp_config = self.populate_config()
 
+        self._seasons = None
         self.nfln_shows = {}
         self.episode_list = []
 
@@ -59,6 +60,52 @@ class pigskin(object):
 
         def __str__(self):
             return repr(self.value)
+
+
+    @property
+    def seasons(self):
+        if self._seasons is None:
+            self.logger.debug('``seasons`` not set. attempting to populate')
+            self._seasons = self._get_seasons()
+
+        return self._seasons
+
+
+    def _get_seasons(self):
+        """Get a list of available seasons.
+
+        Returns
+        -------
+        list
+            a list of available seasons, sorted from the most to least recent;
+            None if there was a failure.
+        """
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games']
+        seasons = None
+
+        try:
+            r = self._store.s.get(url)
+            self._log_request(r)
+            data = r.json()
+        except ValueError:
+            self.logger.error('_get_seasons: invalid server response')
+            return None
+        except Exception as e:
+            raise e
+
+        try:
+            self.logger.debug('parsing seasons')
+            giga_list = data['modules']['mainMenu']['seasonStructureList']
+            seasons = [str(x['season']) for x in giga_list if x.get('season') != None]
+            seasons.sort(reverse=True)
+        except KeyError:
+            self.logger.error('unable to find the seasons list')
+            return None
+        except Exception as e:
+            raise e
+
+        self.logger.debug('``seasons`` ready')
+        return seasons
 
 
     def populate_config(self):
@@ -447,42 +494,6 @@ class pigskin(object):
 
         self.logger.debug('successfully refreshed tokens')
         return True
-
-
-    def get_seasons(self):
-        """Get a list of available seasons.
-
-        Returns
-        -------
-        list
-            a list of available seasons, sorted from the most to least recent;
-            empty if there was a failure.
-        """
-        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games']
-        seasons = []
-
-        try:
-            r = self._store.s.get(url)
-            self._log_request(r)
-            data = r.json()
-        except ValueError:
-            self.logger.error('get_seasons: invalid server response')
-            return []
-        except Exception as e:
-            raise e
-
-        try:
-            self.logger.debug('parsing seasons')
-            giga_list = data['modules']['mainMenu']['seasonStructureList']
-            seasons = [str(x['season']) for x in giga_list if x.get('season') != None]
-            seasons.sort(reverse=True)
-        except KeyError:
-            self.logger.error('unable to find the seasons list')
-            return []
-        except Exception as e:
-            raise e
-
-        return seasons
 
 
     def get_weeks(self, season):

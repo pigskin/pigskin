@@ -16,7 +16,7 @@ def test_invalid_response_get_bytes():
     gp.gigya_auth_url = junk_url
 
     assert not gp.get_current_season_and_week()
-    assert not gp.get_seasons()
+    assert gp.seasons is None
     assert not gp.get_weeks(2017)
     assert not gp.get_games(2017, 'reg', 8)
     assert not gp.get_team_games('2018', '49ers')
@@ -38,7 +38,7 @@ def test_invalid_response_get_html():
     gp.gigya_auth_url = junk_url
 
     assert not gp.get_current_season_and_week()
-    assert not gp.get_seasons()
+    assert gp.seasons is None
     assert not gp.get_weeks(2017)
     assert not gp.get_games(2017, 'reg', 8)
     assert not gp.get_team_games('2018', '49ers')
@@ -60,7 +60,7 @@ def test_invalid_response_get_json():
     gp.gigya_auth_url = junk_url
 
     assert not gp.get_current_season_and_week()
-    assert not gp.get_seasons()
+    assert gp.seasons is None
     assert not gp.get_weeks(2017)
     assert not gp.get_games(2017, 'reg', 8)
     assert not gp.get_team_games('2018', '49ers')
@@ -82,7 +82,7 @@ def test_invalid_response_get_xml():
     gp.gigya_auth_url = junk_url
 
     assert not gp.get_current_season_and_week()
-    assert not gp.get_seasons()
+    assert gp.seasons is None
     assert not gp.get_weeks(2017)
     assert not gp.get_games(2017, 'reg', 8)
     assert not gp.get_team_games('2018', '49ers')

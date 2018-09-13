@@ -3,17 +3,18 @@ import pytest
 from pigskin.pigskin import pigskin
 
 @pytest.mark.vcr()
-def test_get_seasons():
+def test_seasons():
     gp = pigskin()
 
-    seasons = gp.get_seasons()
+    # make sure it's a list
+    assert type(gp.seasons) is list
 
-    # make sure we have a response
-    assert seasons
+    # make sure we have content
+    assert gp.seasons
 
     # make sure it's sorted high to low
-    assert seasons == sorted(seasons, reverse=True)
+    assert gp.seasons == sorted(gp.seasons, reverse=True)
 
     # make sure the seasons look sane-ish
-    for i in seasons:
+    for i in gp.seasons:
         assert int(i) > 2000 and int(i) < 2050
