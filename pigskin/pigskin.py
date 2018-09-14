@@ -496,67 +496,6 @@ class pigskin(object):
         return True
 
 
-    def get_weeks(self, season):
-        """Get the weeks of a given season.
-        Parameters
-        ----------
-        season : int or str
-            The season can be provided as either a ``str`` or ``int``.
-
-        Returns
-        -------
-        dict
-            with the ``pre``, ``reg``, and ``post`` fields populated with dicts
-            containing the week's number (key) and the week's abbreviation
-            (value). Empty if there was a failure.
-
-        Examples
-        --------
-        >>> weeks = gp.get_weeks(2017)
-        >>> print(weeks['pre']['0']
-        'hof'
-        >>> print(weeks['reg']['8']
-        'weeks'
-        >>> print(weeks['post']['22']
-        'sb'
-        """
-        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games']
-        weeks = {}
-
-        try:
-            r = self._store.s.get(url)
-            self._log_request(r)
-            data = r.json()
-        except ValueError:
-            self.logger.error('get_weeks: invalid server response')
-            return []
-        except Exception as e:
-            raise e
-
-        try:
-            self.logger.debug('parsing week list')
-
-            giga_list = data['modules']['mainMenu']['seasonStructureList']
-            season_types_list = [x['seasonTypes'] for x in giga_list if x.get('season') == int(season)][0]
-
-            for st in season_types_list:
-                if st['seasonType'] == 'pre':
-                    weeks['pre'] = { str(w['number']) : w['weekNameAbbr'] for w in st['weeks'] }
-                elif st['seasonType'] == 'reg':
-                    weeks['reg'] = { str(w['number']) : w['weekNameAbbr'] for w in st['weeks'] }
-                elif st['seasonType'] == 'post':
-                    weeks['post'] = { str(w['number']) : w['weekNameAbbr'] for w in st['weeks'] }
-                else:
-                    self.logger.warning('found an unexpected season type')
-        except KeyError:
-            self.logger.error("unable to find the season's week-list")
-            return {}
-        except Exception as e:
-            raise e
-
-        return weeks
-
-
     def get_current_season_and_week(self):
         """Get the current season (year), season type, and week.
 

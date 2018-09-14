@@ -3,6 +3,7 @@ import requests
 
 from pigskin.pigskin import pigskin
 from pigskin.pigskin import settings
+from pigskin.pigskin import season
 
 gp = pigskin()
 
@@ -17,7 +18,10 @@ def test_invalid_response_get_bytes():
 
     assert not gp.get_current_season_and_week()
     assert gp.seasons is None
-    assert not gp.get_weeks(2017)
+
+    s = season(gp._store, 2017)
+    assert s._get_weeks(2017) is None
+
     assert not gp.get_games(2017, 'reg', 8)
     assert not gp.get_team_games('2018', '49ers')
     assert not gp.get_game_versions('2017090700', '2017')
@@ -39,7 +43,10 @@ def test_invalid_response_get_html():
 
     assert not gp.get_current_season_and_week()
     assert gp.seasons is None
-    assert not gp.get_weeks(2017)
+
+    s = season(gp._store, 2017)
+    assert s._get_weeks(2017) is None
+
     assert not gp.get_games(2017, 'reg', 8)
     assert not gp.get_team_games('2018', '49ers')
     assert not gp.get_game_versions('2017090700', '2017')
@@ -61,7 +68,10 @@ def test_invalid_response_get_json():
 
     assert not gp.get_current_season_and_week()
     assert gp.seasons is None
-    assert not gp.get_weeks(2017)
+
+    s = season(gp._store, 2017)
+    assert s._get_weeks(2017) is None
+
     assert not gp.get_games(2017, 'reg', 8)
     assert not gp.get_team_games('2018', '49ers')
     assert not gp.get_game_versions('2017090700', '2017')
@@ -83,7 +93,10 @@ def test_invalid_response_get_xml():
 
     assert not gp.get_current_season_and_week()
     assert gp.seasons is None
-    assert not gp.get_weeks(2017)
+
+    s = season(gp._store, 2017)
+    assert s._get_weeks(2017) is None
+
     assert not gp.get_games(2017, 'reg', 8)
     assert not gp.get_team_games('2018', '49ers')
     assert not gp.get_game_versions('2017090700', '2017')
