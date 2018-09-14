@@ -4,6 +4,7 @@ import requests
 from pigskin.pigskin import pigskin
 from pigskin.pigskin import settings
 from pigskin.pigskin import season
+from pigskin.week import week
 
 gp = pigskin()
 
@@ -22,7 +23,9 @@ def test_invalid_response_get_bytes():
     s = season(gp._store, 2017)
     assert s._get_weeks(2017) is None
 
-    assert not gp.get_games(2017, 'reg', 8)
+    w = week(gp._store, 2017, 'reg', 8)
+    assert w.games is None
+
     assert not gp.get_team_games('2018', '49ers')
     assert not gp.get_game_versions('2017090700', '2017')
     assert not gp.get_nfl_network_streams()
@@ -47,7 +50,9 @@ def test_invalid_response_get_html():
     s = season(gp._store, 2017)
     assert s._get_weeks(2017) is None
 
-    assert not gp.get_games(2017, 'reg', 8)
+    w = week(gp._store, 2017, 'reg', 8)
+    assert w.games is None
+
     assert not gp.get_team_games('2018', '49ers')
     assert not gp.get_game_versions('2017090700', '2017')
     assert not gp.get_nfl_network_streams()
@@ -72,7 +77,9 @@ def test_invalid_response_get_json():
     s = season(gp._store, 2017)
     assert s._get_weeks(2017) is None
 
-    assert not gp.get_games(2017, 'reg', 8)
+    w = week(gp._store, 2017, 'reg', 8)
+    assert w.games is None
+
     assert not gp.get_team_games('2018', '49ers')
     assert not gp.get_game_versions('2017090700', '2017')
     assert not gp.get_nfl_network_streams()
@@ -97,7 +104,9 @@ def test_invalid_response_get_xml():
     s = season(gp._store, 2017)
     assert s._get_weeks(2017) is None
 
-    assert not gp.get_games(2017, 'reg', 8)
+    w = week(gp._store, 2017, 'reg', 8)
+    assert w.games is None
+
     assert not gp.get_team_games('2018', '49ers')
     assert not gp.get_game_versions('2017090700', '2017')
     assert not gp.get_nfl_network_streams()

@@ -535,62 +535,6 @@ class pigskin(object):
         return current
 
 
-    def get_games(self, season, season_type, week):
-        """Get the raw game data for a given season (year), season type, and week.
-
-        Parameters
-        ----------
-        season : str or int
-            The season can be provided as either a ``str`` or ``int``.
-        season_type : str
-            The season_type can be either ``pre``, ``reg``, or ``post``.
-        week : str or int
-            The week can be provided as either a ``str`` or ``int``.
-
-        Returns
-        -------
-        list
-            of dicts with the metadata for each game
-
-        Note
-        ----
-        TODO: the data returned really should be normalized, rather than a
-              (nearly) straight dump of the raw data.
-
-        Examples
-        --------
-        >>> games = gp.get_games(2017, 'reg', 1)
-        >>> print(games[1]['video']['title'])
-        New York Jets @ Buffalo Bills
-        >>> print(games[1]['gameId'])
-        2017091000
-        """
-        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games_detail']
-        url = url.replace(':seasonType', season_type).replace(':season', str(season)).replace(':week', str(week))
-        games = []
-
-        try:
-            r = self._store.s.get(url)
-            self._log_request(r)
-            data = r.json()
-        except ValueError:
-            self.logger.error('get_games: server response is invalid')
-            return []
-        except Exception as e:
-            raise e
-
-        try:
-            games = [g for x in data['modules'] if data['modules'][x].get('content') for g in data['modules'][x]['content']]
-            games = sorted(games, key=lambda x: x['gameDateTimeUtc'])
-        except KeyError:
-            self.logger.error('could not parse/build the games list')
-            return []
-        except Exception as e:
-            raise e
-
-        return games
-
-
     def get_team_games(self, season, team):
         """Get the raw game data for a given season (year) and team.
 
