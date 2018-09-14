@@ -17,7 +17,7 @@ def test_invalid_response_get_bytes():
     gp.gigya_auth_url = junk_url
 
     assert not gp.get_current_season_and_week()
-    assert gp.seasons is None
+    assert gp._get_seasons() is None
 
     s = season(gp._store, 2017)
     assert s._get_weeks(2017) is None
@@ -42,7 +42,7 @@ def test_invalid_response_get_html():
     gp.gigya_auth_url = junk_url
 
     assert not gp.get_current_season_and_week()
-    assert gp.seasons is None
+    assert gp._get_seasons() is None
 
     s = season(gp._store, 2017)
     assert s._get_weeks(2017) is None
@@ -67,7 +67,7 @@ def test_invalid_response_get_json():
     gp.gigya_auth_url = junk_url
 
     assert not gp.get_current_season_and_week()
-    assert gp.seasons is None
+    assert gp._get_seasons() is None
 
     s = season(gp._store, 2017)
     assert s._get_weeks(2017) is None
@@ -92,7 +92,7 @@ def test_invalid_response_get_xml():
     gp.gigya_auth_url = junk_url
 
     assert not gp.get_current_season_and_week()
-    assert gp.seasons is None
+    assert gp._get_seasons() is None
 
     s = season(gp._store, 2017)
     assert s._get_weeks(2017) is None

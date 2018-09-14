@@ -5,6 +5,7 @@ import uuid
 import sys
 import json
 import logging
+from collections import OrderedDict
 import xml.etree.ElementTree as ET
 try:
     from urllib.parse import urlencode
@@ -20,6 +21,7 @@ import requests
 import m3u8
 
 from . import settings
+from .season import season
 
 
 class store(object):
@@ -81,7 +83,7 @@ class pigskin(object):
             None if there was a failure.
         """
         url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games']
-        seasons = None
+        seasons_dict = None
 
         try:
             r = self._store.s.get(url)
@@ -96,8 +98,8 @@ class pigskin(object):
         try:
             self.logger.debug('parsing seasons')
             giga_list = data['modules']['mainMenu']['seasonStructureList']
-            seasons = [str(x['season']) for x in giga_list if x.get('season') != None]
-            seasons.sort(reverse=True)
+            seasons_list = [str(x['season']) for x in giga_list if x.get('season') != None]
+            seasons_dict = OrderedDict((s, season(self._store, s)) for s in sorted(seasons_list, reverse=True))
         except KeyError:
             self.logger.error('unable to find the seasons list')
             return None
@@ -105,7 +107,7 @@ class pigskin(object):
             raise e
 
         self.logger.debug('``seasons`` ready')
-        return seasons
+        return seasons_dict
 
 
     def populate_config(self):
