@@ -52,6 +52,20 @@ class TestPigskin(object):
         assert weeks['pre']
         assert weeks['reg']
         assert weeks['post']
+        assert type(weeks['pre']) is OrderedDict
+        assert type(weeks['reg']) is OrderedDict
+        assert type(weeks['post']) is OrderedDict
+
+        # make sure it's in order
+        i = 0
+        for season_type in weeks:
+            if i == 0:
+                assert season_type == 'pre'
+            elif i == 1:
+                assert season_type == 'reg'
+            elif i == 2:
+                assert season_type == 'post'
+            i += 1
 
         # make sure the week numbers look sane
         for week in weeks['pre']:
@@ -60,6 +74,12 @@ class TestPigskin(object):
             assert int(week) >= 1 and int(week) <= 17
         for week in weeks['post']:
             assert int(week) >= 18 and int(week) <= 22
+
+        # make sure at least some week descriptions look alright
+        assert weeks['pre']['0'].desc == 'Hall of Fame'
+        assert weeks['pre']['2'].desc == ''
+        assert weeks['reg']['5'].desc == ''
+        assert weeks['post']['22'].desc == 'Super Bowl'
 
 
     @vcr.use_cassette('pigskin_games.yaml')

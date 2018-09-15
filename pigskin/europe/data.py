@@ -98,10 +98,11 @@ class data(object):
 
         Returns
         -------
-        dict
-            with the ``pre``, ``reg``, and ``post`` fields populated with dicts
-            containing the week's number (key) and the week's abbreviation
-            (value). None if there was a failure.
+        OrderedDict
+            with the ``pre``, ``reg``, and ``post`` fields populated with
+            OrderedDicts containing the week's number (key) and the week's
+            description (value) if it's a special week (Hall of Fame, Super
+            Bowl, etc). None if there was a failure.
         """
         url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games']
         season = int(season)
@@ -120,23 +121,34 @@ class data(object):
         try:
             self.logger.debug('parsing weeks')
             giga_list = data['modules']['mainMenu']['seasonStructureList']
-            season_types_list = [x['seasonTypes'] for x in giga_list if x.get('season') == season][0]
+            season_data = [x['seasonTypes'] for x in giga_list if x.get('season') == season][0]
 
-            # TODO: These need to be assigned in order, and the assigned dicts
-            # need to be OrderedDict
-            for st in season_types_list:
-                if st['seasonType'] == 'pre':
-                    weeks['pre'] = { str(w['number']) : w['weekNameAbbr'] for w in st['weeks'] }
-                elif st['seasonType'] == 'reg':
-                    weeks['reg'] = { str(w['number']) : w['weekNameAbbr'] for w in st['weeks'] }
-                elif st['seasonType'] == 'post':
-                    weeks['post'] = { str(w['number']) : w['weekNameAbbr'] for w in st['weeks'] }
-                else:
-                    self.logger.warning('found an unexpected season type')
+            for st in ['pre', 'reg', 'post']:
+                # TODO: This is one long line. Either reformat it, or split the
+                # check into a filter or function.
+                weeks[st] = OrderedDict((str(w['number']), self._week_description(w['weekNameAbbr'])) for t in season_data if t.get('seasonType') == st for w in t['weeks'])
         except KeyError:
-            self.logger.error("unable to parse the weeks data")
+            self.logger.error('unable to parse the weeks data')
             return None
         except Exception as e:
             raise e
 
         return weeks
+
+
+    def _week_description(self, abbr):
+        desc = ''
+        if abbr == 'hof':
+            desc = 'Hall of Fame'
+        elif abbr == 'wc':
+            desc = 'Wild Card'
+        elif abbr == 'div':
+            desc = 'Divisional'
+        elif abbr == 'conf':
+            desc = 'Conference'
+        elif abbr == 'pro':
+            desc = 'Pro Bowl'
+        elif abbr == 'sb':
+            desc = 'Super Bowl'
+
+        return desc

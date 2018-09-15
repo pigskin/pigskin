@@ -932,22 +932,51 @@ class season(object):
 
     @property
     def weeks(self):
+        """An OrderedDict of weeks and their week objects.
+
+        Returns
+        -------
+        OrderedDict
+            With the keys ``pre``, ``reg``, and ``post``. Each is an OrderedDict
+            with the week number as the key and a week object as the value.
+        """
+
         if self._weeks is None:
             self.logger.debug('``weeks`` not set. attempting to populate')
-            self._weeks = self._data.get_weeks(self._season)
+            weeks_dict = self._data.get_weeks(self._season)
+
+            for st in weeks_dict:
+                weeks_dict[st] = OrderedDict((w, week(self._data, self._season, st, w, weeks_dict[st][w])) for w in weeks_dict[st])
+
+            self._weeks = weeks_dict
+            self.logger.debug('``weeks`` ready')
 
         return self._weeks
 
 
 class week(object):
-    def __init__(self, data, season, season_type, week):
+    def __init__(self, data, season, season_type, week, desc):
         self._data = data
         self._season = season
         self._season_type = season_type
         self._week = week
+        self._description = desc
 
         self.logger = logging.getLogger(__name__)
         self._games = None
+
+
+    @property
+    def desc(self):
+        """The description of a week if it's special (such as Hall of Fame,
+            Super Bowl, etc).
+
+        Returns
+        -------
+        str
+            The description of the week if it's special. Otherwise an empty string.
+        """
+        return self._description
 
 
     @property
