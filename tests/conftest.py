@@ -3,6 +3,7 @@ import pytest
 import json
 import re
 import socket
+import vcr
 from hashlib import sha256
 try:
     from urllib.parse import quote
@@ -119,11 +120,12 @@ def scrub_response(response):
 
     return response
 
-@pytest.fixture
-def vcr_config():
-    return {
-        'decode_compressed_response': True,
-        'before_record_request': scrub_request,
-        'before_record_response': scrub_response,
-        'filter_headers': [('Authorization', 'REDACTED')],
-    }
+
+vcr.default_vcr = vcr.VCR(
+    cassette_library_dir='tests/cassettes',
+    decode_compressed_response=True,
+    before_record_request=scrub_request,
+    before_record_response=scrub_response,
+    filter_headers=[('Authorization', 'REDACTED')],
+)
+vcr.use_cassette = vcr.default_vcr.use_cassette
