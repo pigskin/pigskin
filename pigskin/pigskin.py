@@ -21,7 +21,7 @@ import requests
 import m3u8
 
 from . import settings
-from .season import season
+from .europe.data import data
 
 
 class store(object):
@@ -53,6 +53,8 @@ class pigskin(object):
         self.nfln_shows = {}
         self.episode_list = []
 
+        self._data = data(self._store)
+
         self.logger.debug('Python Version: %s' % sys.version)
 
 
@@ -66,48 +68,22 @@ class pigskin(object):
 
     @property
     def seasons(self):
-        if self._seasons is None:
-            self.logger.debug('``seasons`` not set. attempting to populate')
-            self._seasons = self._get_seasons()
-
-        return self._seasons
-
-
-    def _get_seasons(self):
-        """Get a list of available seasons.
+        """An OrderedDict of available seasons and their season objects.
 
         Returns
         -------
-        list
-            a list of available seasons, sorted from the most to least recent;
-            None if there was a failure.
+        OrderedDict
+            Sorted from most to least recent, with a season object as the value.
+            ``None`` if there was a failure.
         """
-        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games']
-        seasons_dict = None
 
-        try:
-            r = self._store.s.get(url)
-            self._log_request(r)
-            data = r.json()
-        except ValueError:
-            self.logger.error('_get_seasons: invalid server response')
-            return None
-        except Exception as e:
-            raise e
+        if self._seasons is None:
+            self.logger.debug('``seasons`` not set. attempting to populate')
+            seasons_list = self._data.get_seasons()
+            self._seasons = OrderedDict((s, season(self._data, s)) for s in seasons_list)
+            self.logger.debug('``seasons`` ready')
 
-        try:
-            self.logger.debug('parsing seasons')
-            giga_list = data['modules']['mainMenu']['seasonStructureList']
-            seasons_list = [str(x['season']) for x in giga_list if x.get('season') != None]
-            seasons_dict = OrderedDict((s, season(self._store, s)) for s in sorted(seasons_list, reverse=True))
-        except KeyError:
-            self.logger.error('unable to find the seasons list')
-            return None
-        except Exception as e:
-            raise e
-
-        self.logger.debug('``seasons`` ready')
-        return seasons_dict
+        return self._seasons
 
 
     def populate_config(self):
@@ -1134,3 +1110,41 @@ class pigskin(object):
         dt_local = datetime.fromtimestamp(timestamp)
         assert dt_utc.resolution >= timedelta(microseconds=1)
         return dt_local.replace(microsecond=dt_utc.microsecond)
+
+
+class season(object):
+    def __init__(self, data, season):
+        self._data = data
+        self._season = season
+
+        self.logger = logging.getLogger(__name__)
+        self._weeks = None
+
+
+    @property
+    def weeks(self):
+        if self._weeks is None:
+            self.logger.debug('``weeks`` not set. attempting to populate')
+            self._weeks = self._data.get_weeks(self._season)
+
+        return self._weeks
+
+
+class week(object):
+    def __init__(self, data, season, season_type, week):
+        self._data = data
+        self._season = season
+        self._season_type = season_type
+        self._week = week
+
+        self.logger = logging.getLogger(__name__)
+        self._games = None
+
+
+    @property
+    def games(self):
+        if self._games is None:
+            self.logger.debug('``games`` not set. attempting to populate')
+            self._games = self._data.get_games(self._season, self._season_type, self._week)
+
+        return self._games
