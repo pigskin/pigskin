@@ -23,6 +23,7 @@ for i in [ pytest.gp_username, pytest.gp_password ]:
         scrub_list.append(i)
         scrub_list.append(quote(i))
 
+
 def scrub_IPs(text):
     # TODO: also redact IPv6 IPs. When we drop Python 2.7 and < 3.4, we can use
     # ``ipaddress`` to validate both IPv4 and IPv6 IPs
