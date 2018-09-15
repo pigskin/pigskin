@@ -9,6 +9,43 @@ class data(object):
         self.logger = logging.getLogger(__name__)
 
 
+    def get_current_season_and_week(self):
+        """Get the current season (year), season type, and week.
+
+        Returns
+        -------
+        dict
+            with the ``season``, ``season_type``, and ``week`` fields populated
+            if successful. None if otherwise.
+        """
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games']
+        current = None
+
+        try:
+            r = self._store.s.get(url)
+            #self._log_request(r)
+            data = r.json()
+        except ValueError:
+            self.logger.error('current_season_and_week: server response is invalid')
+            return None
+        except Exception as e:
+            raise e
+
+        try:
+            current = {
+                'season': data['modules']['meta']['currentContext']['currentSeason'],
+                'season_type': data['modules']['meta']['currentContext']['currentSeasonType'],
+                'week': str(data['modules']['meta']['currentContext']['currentWeek'])
+            }
+        except KeyError:
+            self.logger.error('could not determine the current season and week')
+            return None
+        except Exception as e:
+            raise e
+
+        return current
+
+
     def get_games(self, season, season_type, week):
         """Get the raw game data for a given season (year), season type, and week.
 

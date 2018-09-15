@@ -51,6 +51,7 @@ class pigskin(object):
         self._store.gp_config = self.populate_config()
 
         self._seasons = None
+        self._current = None
         self.nfln_shows = {}
         self.episode_list = []
 
@@ -66,6 +67,25 @@ class pigskin(object):
 
         def __str__(self):
             return repr(self.value)
+
+
+    @property
+    def current(self):
+        """A Dict of the current season and week.
+
+        Returns
+        -------
+        Dict
+            With the ``season``, ``season_type``,  and ``week`` keys set.
+            ``None`` if there was a failure.
+        """
+
+        if self._current is None:
+            self.logger.debug('``current`` not set. attempting to populate')
+            self._current = self._data.get_current_season_and_week()
+            self.logger.debug('``current`` ready')
+
+        return self._current
 
 
     @property
@@ -281,43 +301,6 @@ class pigskin(object):
               attempt to login again
         """
         return self._auth.refresh_tokens()
-
-
-    def get_current_season_and_week(self):
-        """Get the current season (year), season type, and week.
-
-        Returns
-        -------
-        dict
-            with the ``season``, ``season_type``, and ``week`` fields populated
-            if successful; empty if otherwise.
-        """
-        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games']
-        current = {}
-
-        try:
-            r = self._store.s.get(url)
-            self._log_request(r)
-            data = r.json()
-        except ValueError:
-            self.logger.error('current_season_and_week: server response is invalid')
-            return {}
-        except Exception as e:
-            raise e
-
-        try:
-            current = {
-                'season': data['modules']['meta']['currentContext']['currentSeason'],
-                'season_type': data['modules']['meta']['currentContext']['currentSeasonType'],
-                'week': str(data['modules']['meta']['currentContext']['currentWeek'])
-            }
-        except KeyError:
-            self.logger.error('could not determine the current season and week')
-            return {}
-        except Exception as e:
-            raise e
-
-        return current
 
 
     def get_team_games(self, season, team):
