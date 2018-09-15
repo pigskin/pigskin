@@ -1,0 +1,59 @@
+interactions:
+- request:
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&username=I_do_not_exist&password=wrong&grant_type=password
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['105']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://www.nflgamepass.com/api/user/oauth/token
+  response:
+    body: {string: ''}
+    headers:
+      Cache-Control: ['max-age=0, no-cache, no-store']
+      Connection: [close]
+      Content-Length: ['0']
+      Date: ['Sat, 15 Sep 2018 13:57:32 GMT']
+      Expires: ['Sat, 15 Sep 2018 13:57:32 GMT']
+      Pragma: [no-cache]
+      Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
+      Retry-After: ['3598']
+      Server: [Microsoft-IIS/10.0]
+      X-Powered-By: [ASP.NET]
+    status: {code: 400, message: Bad Request}
+- request:
+    body: apiKey=3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp&loginID=I_do_not_exist&password=wrong
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['111']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://accounts.us1.gigya.com/accounts.login
+  response:
+    body:
+      pretty: {apiVersion: 2, callId: 956a83042f7145f2be97030a0c4a8373, errorCode: 403042,
+        errorDetails: invalid loginID or password, errorMessage: Invalid LoginID,
+        statusCode: 403, statusReason: Forbidden, time: '2018-09-15T13:57:32.758Z'}
+      string: '{"callId": "956a83042f7145f2be97030a0c4a8373", "errorCode": 403042,
+        "errorDetails": "invalid loginID or password", "errorMessage": "Invalid LoginID",
+        "apiVersion": 2, "statusCode": 403, "statusReason": "Forbidden", "time": "2018-09-15T13:57:32.758Z"}'
+    headers:
+      Cache-Control: [private]
+      Connection: [keep-alive]
+      Content-Length: ['277']
+      Content-Type: [text/javascript; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:57:32 GMT']
+      P3P: [CP="IDC COR PSA DEV ADM OUR IND ONL"]
+      X-CallID: [956a83042f7145f2be97030a0c4a8373]
+      X-Gigya-HA-cfg-ver: ['5']
+      X-Robots-Tag: [none]
+      X-Server: [us1d-nomad-g37]
+      X-Soa: ['true, Gator']
+    status: {code: 200, message: OK}
+version: 1

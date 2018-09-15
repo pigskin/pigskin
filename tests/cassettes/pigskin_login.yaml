@@ -1,0 +1,128 @@
+interactions:
+- request:
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&username=REDACTED&password=REDACTED&grant_type=password
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['113']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://www.nflgamepass.com/api/user/oauth/token
+  response:
+    body: {string: ''}
+    headers:
+      Cache-Control: ['max-age=0, no-cache, no-store']
+      Connection: [close]
+      Content-Length: ['0']
+      Date: ['Sat, 15 Sep 2018 13:57:30 GMT']
+      Expires: ['Sat, 15 Sep 2018 13:57:30 GMT']
+      Pragma: [no-cache]
+      Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
+      Retry-After: ['3237']
+      Server: [Microsoft-IIS/10.0]
+      X-Powered-By: [ASP.NET]
+    status: {code: 400, message: Bad Request}
+- request:
+    body: apiKey=3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp&loginID=REDACTED&password=REDACTED
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['119']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://accounts.us1.gigya.com/accounts.login
+  response:
+    body:
+      pretty:
+        UID: 8caecb9d8857dc3fd9c7b2ce9fcc5368
+        UIDSignature: 831uWS+QzntBouQ5YlVFqyEXS4E=
+        apiVersion: 2
+        callId: 9aefc3cebc5144ae9d1c4d6f7880f92c
+        created: '2012-08-04T11:20:09.000Z'
+        createdTimestamp: 1344079209
+        errorCode: 0
+        isActive: true
+        isRegistered: true
+        isVerified: true
+        lastLogin: '2018-09-15T13:57:30.447Z'
+        lastLoginTimestamp: 1537019850
+        lastUpdated: '2018-09-04T06:49:25.683Z'
+        lastUpdatedTimestamp: 1536043765683
+        loginProvider: site
+        newUser: false
+        oldestDataUpdated: '2012-08-04T11:20:09.000Z'
+        oldestDataUpdatedTimestamp: 1344079209000
+        profile: REDACTED
+        registered: '2018-03-02T04:03:59.927Z'
+        registeredTimestamp: 1519963439
+        sessionInfo: {cookieName: gac_3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp,
+          cookieValue: st2.A1mgRxbc9UaUb66hQyMhxE1eqXU.cD-mGYqzEcPAeu0uIfW8_w.jOduyfCqj5RWLgeVTqBDZEVRFDg}
+        signatureTimestamp: '1537019850'
+        socialProviders: site
+        statusCode: 200
+        statusReason: OK
+        time: '2018-09-15T13:57:30.668Z'
+        verified: '2018-03-02T04:03:59.786Z'
+        verifiedTimestamp: 1519963439786
+      string: '{"callId": "9aefc3cebc5144ae9d1c4d6f7880f92c", "errorCode": 0, "apiVersion":
+        2, "statusCode": 200, "statusReason": "OK", "time": "2018-09-15T13:57:30.668Z",
+        "registeredTimestamp": 1519963439, "UID": "8caecb9d8857dc3fd9c7b2ce9fcc5368",
+        "UIDSignature": "831uWS+QzntBouQ5YlVFqyEXS4E=", "signatureTimestamp": "1537019850",
+        "created": "2012-08-04T11:20:09.000Z", "createdTimestamp": 1344079209, "isActive":
+        true, "isRegistered": true, "isVerified": true, "lastLogin": "2018-09-15T13:57:30.447Z",
+        "lastLoginTimestamp": 1537019850, "lastUpdated": "2018-09-04T06:49:25.683Z",
+        "lastUpdatedTimestamp": 1536043765683, "loginProvider": "site", "oldestDataUpdated":
+        "2012-08-04T11:20:09.000Z", "oldestDataUpdatedTimestamp": 1344079209000, "profile":
+        "REDACTED", "registered": "2018-03-02T04:03:59.927Z", "socialProviders": "site",
+        "verified": "2018-03-02T04:03:59.786Z", "verifiedTimestamp": 1519963439786,
+        "newUser": false, "sessionInfo": {"cookieName": "gac_3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp",
+        "cookieValue": "st2.A1mgRxbc9UaUb66hQyMhxE1eqXU.cD-mGYqzEcPAeu0uIfW8_w.jOduyfCqj5RWLgeVTqBDZEVRFDg"}}'
+    headers:
+      Cache-Control: [private]
+      Connection: [keep-alive]
+      Content-Length: ['1404']
+      Content-Type: [text/javascript; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:57:30 GMT']
+      P3P: [CP="IDC COR PSA DEV ADM OUR IND ONL"]
+      X-CallID: [9aefc3cebc5144ae9d1c4d6f7880f92c]
+      X-Gigya-HA-cfg-ver: ['5']
+      X-Robots-Tag: [none]
+      X-Server: [us1d-nomad-g37]
+      X-Soa: ['true, Gator']
+    status: {code: 200, message: OK}
+- request:
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&uuid=8caecb9d8857dc3fd9c7b2ce9fcc5368&signature=831uWS%2BQzntBouQ5YlVFqyEXS4E%3D&ts=1537019850&errorCode=0&username=REDACTED&password=REDACTED&grant_type=password
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['220']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://www.nflgamepass.com/api/user/oauth/token
+  response:
+    body:
+      pretty: {access_token: FAKE_TOKEN_f23efc5bafb125c74ca8164a5a5a048115c0c3e8549ddfe9a724df079b08866c,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_81fc7724e4fdd0ad07f3c3a03987242159f1db7351f3cfb60da87dcf84f4d044,
+        token_type: bearer}
+      string: '{"access_token": "FAKE_TOKEN_f23efc5bafb125c74ca8164a5a5a048115c0c3e8549ddfe9a724df079b08866c",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_81fc7724e4fdd0ad07f3c3a03987242159f1db7351f3cfb60da87dcf84f4d044"}'
+    headers:
+      Cache-Control: ['max-age=0, no-cache, no-store']
+      Connection: [keep-alive]
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Sat, 15 Sep 2018 13:57:31 GMT']
+      Expires: ['Sat, 15 Sep 2018 13:57:31 GMT']
+      Pragma: [no-cache]
+      Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [ASP.NET]
+      content-length: ['2162']
+    status: {code: 200, message: OK}
+version: 1

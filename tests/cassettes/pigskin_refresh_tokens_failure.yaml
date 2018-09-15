@@ -1,0 +1,32 @@
+interactions:
+- request:
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&grant_type=refresh_token
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['71']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://www.nflgamepass.com/api/user/oauth/token
+  response:
+    body:
+      pretty: {code: UR_10006, httpStatusCode: 401, id: ecf16e18-27d4-40ff-8536-4e2f63faa04c,
+        message: error_unauthorised, validationErrors: null}
+      string: '{"id": "ecf16e18-27d4-40ff-8536-4e2f63faa04c", "code": "UR_10006",
+        "message": "error_unauthorised", "httpStatusCode": 401, "validationErrors":
+        null}'
+    headers:
+      Cache-Control: ['max-age=0, no-cache, no-store']
+      Connection: [close]
+      Content-Length: ['139']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Sat, 15 Sep 2018 13:57:32 GMT']
+      Expires: ['Sat, 15 Sep 2018 13:57:32 GMT']
+      Pragma: [no-cache]
+      Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
+      Server: [Microsoft-IIS/10.0]
+      X-Powered-By: [ASP.NET]
+    status: {code: 400, message: Bad Request}
+version: 1

@@ -93,3 +93,65 @@ class TestPigskin(object):
         assert games[0]['video']['title'] == 'Miami Dolphins @ Baltimore Ravens'
 
         # TODO: test that all values are of type game
+
+
+@pytest.mark.incremental
+class TestPigskinAuth(object):
+    """These require authentication to Game Pass"""
+    @vcr.use_cassette('pigskin_login.yaml')
+    def test_login(self, gp):
+        assert gp.login(pytest.gp_username, pytest.gp_password, force=True)
+
+        # make sure tokens are actually set
+        assert gp._store.access_token
+        assert gp._store.refresh_token
+
+
+    @vcr.use_cassette('pigskin_check_for_subscription.yaml')
+    def test_check_for_subscription(self, gp):
+        assert gp.check_for_subscription()
+
+
+    @vcr.use_cassette('pigskin_refresh_tokens.yaml')
+    def test_refresh_tokens(self, gp):
+        # store the initial tokens
+        first_access_token = gp._store.access_token
+        first_refresh_token = gp._store.refresh_token
+
+        # refresh the tokens
+        assert gp.refresh_tokens()
+
+        # make sure new tokens are actually set
+        assert gp._store.access_token
+        assert gp._store.refresh_token
+
+        # and finally make sure they've actually been refreshed
+        assert first_access_token != gp._store.access_token
+        assert first_refresh_token != gp._store.refresh_token
+
+
+@pytest.mark.incremental
+class TestPigskinAuthFail(object):
+    """These require authentication to Game Pass, and should fail without it."""
+    @vcr.use_cassette('pigskin_login_failure.yaml')
+    def test_login_failure(self, gp):
+        assert not gp.login(username='I_do_not_exist', password='wrong', force=True)
+
+        # make sure tokens are not set
+        assert not gp._store.access_token
+        assert not gp._store.refresh_token
+
+
+    @vcr.use_cassette('pigskin_check_for_subscription_failure.yaml')
+    def test_check_for_subscription(self, gp):
+        assert not gp.check_for_subscription()
+
+
+    @vcr.use_cassette('pigskin_refresh_tokens_failure.yaml')
+    def test_refresh_tokens_no_login(self, gp):
+        # refresh the tokens
+        assert not gp.refresh_tokens()
+
+        # make sure new tokens are not set
+        assert not gp._store.access_token
+        assert not gp._store.refresh_token

@@ -1,0 +1,71 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [REDACTED]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://www.nflgamepass.com/api/user/api/users/v1/subscription/myaccount
+  response:
+    body:
+      pretty:
+        billing: REDACTED
+        currency: EUR
+        favoriteTeams: [GB]
+        myAccountStatus: 0
+        paymentMode: default
+        profile: REDACTED
+        subscriptions:
+        - billedDate: '2016-08-01T00:00:00'
+          customAttributes: {renewalPricePerInstallment: 40.0, renewalTotal: 159.99,
+            showAutorenewStatus: true, showDisableAutorenew: false, showEnableAutorenew: false}
+          endDate: '2019-08-01T00:00:00'
+          extraCustomFields: {cancellationReason__c: null, cpqBundleJsonId__QT: null,
+            iP__c: null, opportunityCloseDate__QT: null, opportunityName__QT: null,
+            productTag__c: null, quoteBusinessType__QT: null, quoteNumber__QT: null,
+            quoteType__QT: null, sourceSystemUserID__c: null, sourceSystem__c: null,
+            subscriptionLastAction__c: null}
+          isAutorenew: true
+          isAutorenewable: true
+          isFreetrialPeriodActive: false
+          isUpgradable: false
+          productTag: product-premium
+          ratePlanId: 2c92a0fe5c7d819f015c8c1787b129d0
+          ratePlanTag: payment-option-yearly
+          startDate: '2016-08-01T00:00:00'
+          status: 3
+          statusLabel: active
+          subscriptionId: 2c92a09864f40e500164f67b170c0ae7
+          subscriptionNumber: A-S00011893
+      string: '{"paymentMode": "default", "currency": "EUR", "profile": "REDACTED",
+        "favoriteTeams": ["GB"], "subscriptions": [{"productTag": "product-premium",
+        "ratePlanId": "2c92a0fe5c7d819f015c8c1787b129d0", "ratePlanTag": "payment-option-yearly",
+        "billedDate": "2016-08-01T00:00:00", "startDate": "2016-08-01T00:00:00", "endDate":
+        "2019-08-01T00:00:00", "isAutorenew": true, "isAutorenewable": true, "isUpgradable":
+        false, "isFreetrialPeriodActive": false, "status": 3, "statusLabel": "active",
+        "subscriptionId": "2c92a09864f40e500164f67b170c0ae7", "subscriptionNumber":
+        "A-S00011893", "customAttributes": {"showAutorenewStatus": true, "showDisableAutorenew":
+        false, "showEnableAutorenew": false, "renewalTotal": 159.99, "renewalPricePerInstallment":
+        40.0}, "extraCustomFields": {"quoteNumber__QT": null, "quoteBusinessType__QT":
+        null, "opportunityCloseDate__QT": null, "subscriptionLastAction__c": null,
+        "opportunityName__QT": null, "iP__c": null, "sourceSystemUserID__c": null,
+        "cpqBundleJsonId__QT": null, "sourceSystem__c": null, "productTag__c": null,
+        "quoteType__QT": null, "cancellationReason__c": null}}], "billing": "REDACTED",
+        "myAccountStatus": 0}'
+    headers:
+      Cache-Control: ['max-age=0, no-cache, no-store']
+      Connection: [keep-alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Sat, 15 Sep 2018 13:57:31 GMT']
+      Expires: ['Sat, 15 Sep 2018 13:57:31 GMT']
+      Pragma: [no-cache]
+      Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [ASP.NET]
+      content-length: ['1403']
+    status: {code: 200, message: OK}
+version: 1
