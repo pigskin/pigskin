@@ -5,6 +5,16 @@ from collections import OrderedDict
 from pigskin.pigskin import pigskin
 
 
+try:  # Python 2.7
+    # requests's ``json()`` function returns JSON strings as unicode (as per the
+    # JSON spec). In 2.7, those are of type unicode rather than str. basestring
+    # was created to help with that.
+    # https://docs.python.org/2/library/functions.html#basestring
+    basestring = basestring
+except NameError:
+    basestring = str
+
+
 @pytest.fixture(scope='class')
 def gp():
     with vcr.use_cassette('pigskin_gp.yaml'):
@@ -99,22 +109,22 @@ class TestPigskin(object):
                 assert type(team) is dict
 
                 assert team['name']
-                assert type(team['name']) is str
+                assert isinstance(team['name'], basestring)
                 assert team['city']
-                assert type(team['city']) is str
+                assert isinstance(team['city'], basestring)
                 assert type(team['points']) is int
 
             # check game data
             assert game.city
-            assert type(game.city) is str
+            assert isinstance(game.city, basestring)
             assert game.stadium
-            assert type(game.stadium) is str
+            assert isinstance(game.stadium, basestring)
 
             assert game.phase
-            assert type(game.phase) is str
+            assert isinstance(game.phase, basestring)
 
             assert game.start_time
-            assert type(game.start_time) is str
+            assert isinstance(game.start_time, basestring)
             assert gp.nfldate_to_datetime(game.start_time)
 
             if prev:
@@ -152,7 +162,7 @@ class TestPigskin(object):
 
             # make sure the description has content, si the right type, and is sane
             assert versions[v].desc
-            assert type(versions[v].desc) is str
+            assert isinstance(versions[v].desc, basestring)
             assert versions[v].desc in ['Full Game', 'Condensed Game', 'Coaches Tape']
 
 
@@ -168,9 +178,9 @@ class TestPigskin(object):
         assert current['season']
         assert current['season_type']
         assert current['week']
-        assert type(current['season']) is str
-        assert type(current['season_type']) is str
-        assert type(current['week']) is str
+        assert isinstance(current['season'], basestring)
+        assert isinstance(current['season_type'], basestring)
+        assert isinstance(current['week'], basestring)
 
         # and that the data format remains stable and sane-ish
         assert int(current['season']) > 2000 and int(current['season']) < 2050
