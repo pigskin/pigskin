@@ -22,19 +22,18 @@ class TestPigskin(object):
         assert seasons
         assert type(seasons) is OrderedDict
 
-        # make sure it's sorted high to low
         prev = None
-        for i in seasons:
+        for s in seasons:
+            # TODO: assert type(seasons[s]) is season
+
             if prev:
-                assert prev > i
-            prev = i
+                # make sure it's sorted high to low
+                assert prev > s
 
-        for i in seasons:
             # make sure the years look sane-ish
-            assert int(i) > 2000 and int(i) < 2050
-            # TODO: assert type(i) is season
+            assert int(s) > 2000 and int(s) < 2050
 
-        # TODO: test that all values are of type season
+            prev = s
 
 
     @vcr.use_cassette('pigskin_weeks.yaml')
@@ -55,7 +54,7 @@ class TestPigskin(object):
 
         # make sure it's in order
         i = 0
-        for season_type in weeks:
+        for season_type in weeks:  # Python 2.7
             if i == 0:
                 assert season_type == 'pre'
             elif i == 1:
@@ -63,6 +62,8 @@ class TestPigskin(object):
             elif i == 2:
                 assert season_type == 'post'
             i += 1
+
+        # TODO: test that all weeks are of type week
 
         # make sure the week numbers look sane
         for week in weeks['pre']:
@@ -77,8 +78,6 @@ class TestPigskin(object):
         assert weeks['pre']['2'].desc == ''
         assert weeks['reg']['5'].desc == ''
         assert weeks['post']['22'].desc == 'Super Bowl'
-
-        # TODO: test that all values are of type week
 
 
     @vcr.use_cassette('pigskin_games.yaml')
