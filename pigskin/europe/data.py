@@ -204,18 +204,16 @@ class data(object):
 
 
     def _week_description(self, abbr):
-        desc = ''
-        if abbr == 'hof':
-            desc = 'Hall of Fame'
-        elif abbr == 'wc':
-            desc = 'Wild Card'
-        elif abbr == 'div':
-            desc = 'Divisional'
-        elif abbr == 'conf':
-            desc = 'Conference'
-        elif abbr == 'pro':
-            desc = 'Pro Bowl'
-        elif abbr == 'sb':
-            desc = 'Super Bowl'
+        descriptions = {
+            'hof': 'Hall of Fame',
+            'wc': 'Wild Card',
+            'div': 'Divisional',
+            'conf': 'Conference',
+            'pro': 'Pro Bowl',
+            'sb': 'Super Bowl',
+        }
 
-        return desc
+        try:
+            return descriptions[abbr]
+        except KeyError:
+            return ''
