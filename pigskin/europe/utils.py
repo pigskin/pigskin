@@ -30,23 +30,24 @@ class utils(object):
         # argument of ``nfldate_format`` provided by a service-specific
         # constants file.
         nfldate_format = '%Y-%m-%dT%H:%M:%S.%fZ'
+        dt = None
 
         try:
-            dt_utc = datetime.strptime(nfldate, nfldate_format)
+            dt = datetime.strptime(nfldate, nfldate_format)
         except ValueError:
             self.logger.error('unable to parse the nfldate string')
             return None
 
         if localize:
             try:
-                return dt_utc.replace(tzinfo=timezone.utc).astimezone(tz=None)
+                dt.replace(tzinfo=timezone.utc).astimezone(tz=None)
             except NameError:  # Python 2.7
-                return self._utc_to_local(dt_utc)
+                dt = self._utc_to_local(dt)
             except Exception:
                 self.logger.error('unable to localize the nfl datetime object')
                 return None
 
-        return dt_utc
+        return dt
 
 
     @staticmethod
