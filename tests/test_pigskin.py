@@ -116,11 +116,11 @@ class TestPigskin(object):
 
             assert game.start_time
             assert type(game.start_time) is str
-            #assert nfldate_to_datetime(game.start_time)
+            assert gp.nfldate_to_datetime(game.start_time)
 
-            #if prev:
-            #    # make sure it's sorted low to high
-            #    assert nfldate_to_datetime(game.start_time) >= nfldate_to_datetime(prev.start_time)
+            if prev:
+                # make sure it's sorted low to high
+                assert gp.nfldate_to_datetime(prev.start_time) <= gp.nfldate_to_datetime(game.start_time)
 
             #assert game.season
             #assert type(game.season) is str
@@ -161,6 +161,30 @@ class TestPigskin(object):
             assert int(current['week']) >= 1 and int(current['week']) <= 17
         if current['season_type'] == 'post':
             assert int(current['week']) >= 18 and int(current['week']) <= 22
+
+
+    def test_nfldate_to_datetime(self, gp):
+        # NOTE: nfldate_to_datetime() is also run for every game in test_games()
+        nfldate = '2017-09-12T02:20:00.000Z'
+        dt_utc = gp.nfldate_to_datetime(nfldate)
+
+        assert dt_utc
+        assert dt_utc.strftime('%Y.%m.%d-%H.%M.%S') == '2017.09.12-02.20.00'
+
+        # localize it
+        dt_local = gp.nfldate_to_datetime(nfldate, localize=True)
+        assert dt_local
+        # TODO: test localization in a way that still works on CI
+
+
+    def test_nfldate_to_datetime_failure(self, gp):
+        nfldate = 'not a date string'
+        dt_utc = gp.nfldate_to_datetime(nfldate)
+
+        assert not dt_utc
+
+        dt_utc = gp.nfldate_to_datetime(nfldate, localize=True)
+        assert not dt_utc
 
 
 @pytest.mark.incremental
