@@ -1,0 +1,124 @@
+interactions:
+- request:
+    body: client_id=https%3A%2F%2Fhttpbin.org%2Fbytes%2F20&grant_type=refresh_token
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['73']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://httpbin.org/bytes/20
+  response:
+    body: {string: '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+        <title>405 Method Not Allowed</title>
+
+        <h1>Method Not Allowed</h1>
+
+        <p>The method is not allowed for the requested URL.</p>
+
+        '}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Allow: ['OPTIONS, GET, HEAD']
+      Connection: [keep-alive]
+      Content-Length: ['178']
+      Content-Type: [text/html]
+      Date: ['Sun, 16 Sep 2018 16:19:58 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 405, message: METHOD NOT ALLOWED}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://www.nflgamepass.com/api/diva/diva/settings/24h7d/html5
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<settings version=\"\
+        31_07_2018_0001_24h7d_html5_prod\">\r\n  <advertisement enabled=\"false\"\
+        \ />\r\n  <behaviour>\r\n    <parameter name=\"isCommentaryEnabled\" value=\"\
+        false\" />\r\n    <parameter name=\"isScoreEnabled\" value=\"false\" />\r\n\
+        \    <parameter name=\"isTitleEnabled\" value=\"false\" />\r\n  </behaviour>\r\
+        \n  <assets>\r\n    <parameter name=\"videoThumbnailUrl\" value=\"https://www.nflgamepass.com/api/images/image/private/t_16-9_1920/twwekbzhieranl5r9qr6\"\
+        \ />\r\n  </assets>\r\n  <logging enabled=\"false\" />\r\n  <translations>\r\
+        \n    <parameter name=\"vocabularySource\" value=\"https://www.nflgamepass.com/api/diva/vocabulary/vocabulary-en-GB.xml\"\
+        \ />\r\n  </translations>\r\n  <video>\r\n    <!--<parameter name = \"allowJSVideoUrlStage\"\
+        \ value = \"false\"/>-->\r\n    <!--<parameter name = \"allowPathResolver\"\
+        \ value = \"false\"/>-->\r\n    <parameter name=\"baseExpectedVideoDuration\"\
+        \ value=\"08:00:00\" />\r\n    <!--<parameter name = \"closedCaption\" value\
+        \ = \"false\"/>-->\r\n    <!--<parameter name = \"isVREnabledFor360video\"\
+        \ value = \"true\"/>-->\r\n    <parameter name=\"liveBackOff\" value=\"00:00:20\"\
+        \ />\r\n    <!--<parameter name = \"maxBitrateKbps\" value = \"3500\"/>-->\r\
+        \n    <!--<parameter name = \"offsetExpectedVideoDuration\" value = \"00:15:00\"\
+        />-->\r\n    <parameter name=\"retryOnVideoError\" value=\"0\" />\r\n    <!--<parameter\
+        \ name = \"trackVideodataManifest\" value = \"true\"/>-->\r\n    <parameter\
+        \ name=\"startingBitrateKbps\" value=\"600\" />\r\n    <!--<parameter name\
+        \ = \"userAudioSelection\" value = \"false\"/>-->\r\n    <!--<parameter name\
+        \ = \"videoAnalyticsEventFrequency\" value = \"00:00:20\"/>-->\r\n    <!--<parameter\
+        \ name = \"iosInternalOverrides\" value =\"{ \\\"iPhone7,1=\"\"\\\": 3238279\
+        \ }\"/>-->\r\n    <!--<parameter name = \"videoPlatformsPriority\" value=\"\
+        HLS,dash,chromecast-v2\" />-->\r\n    <!--<parameter name = \"androidForceSurfaceView\"\
+        \ value=\"false\" />-->\r\n  </video>\r\n  <videoData enabled=\"true\">\r\n\
+        \    <parameter name=\"videoDataPath\" value=\"https://www.nflgamepass.com/api/en/content/v1/diva/{V.ID}\"\
+        \ />\r\n    <parameter name=\"pollingInterval\" value=\"00:05:00\" />\r\n\
+        \  </videoData>\r\n  <entitlementCheck encoded=\"false\" enabled=\"true\"\
+        >\r\n    <parameter name=\"processingUrlCallPath\" value=\"https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open\"\
+        \ />\r\n    <parameter name=\"heartBeatCallPath\" value=\"https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/heartbeat\"\
+        \ />\r\n    <parameter name=\"userCookieName\" value=\"\" />\r\n    <!--to\
+        \ insert the agreeded name -->\r\n    <parameter name=\"callback\" value=\"\
+        \" />\r\n    <parameter name=\"heartbeatInterval\" value=\"00:03:00\" />\r\
+        \n    <parameter name=\"secretTxt\" value=\"\" />\r\n    <parameter name=\"\
+        other\" value=\"{Run.SessionID}|{Settings.cs1}|{Settings.cs2}|{Settings.cs3}|{Settings.cs4}|{Settings.cs5}\"\
+        \ />\r\n  </entitlementCheck>\r\n  <tracking enabled=\"true\">\r\n    <items>\r\
+        \n      <item>\r\n        <parameter name=\"type\" value=\"TagManager-html5\"\
+        \ />\r\n        <parameter name=\"setting1\" value=\"GTM-MFDKV77\" />\r\n\
+        \        <parameter name=\"setting2\" value=\"https://www.nflgamepass.com/api/diva/gtm/tracking_configuration_40.json\"\
+        \ />\r\n      </item>\r\n    </items>\r\n  </tracking>\r\n</settings>\r\n\
+        <!--DivaS:cB0BCUdR4J05OrmDHY94NApiEpo=-->"}
+    headers:
+      Cache-Control: [max-age=300]
+      Connection: [keep-alive]
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Sun, 16 Sep 2018 16:19:58 GMT']
+      Expires: ['Sun, 16 Sep 2018 16:24:58 GMT']
+      Pragma: [no-cache]
+      Server: [Microsoft-IIS/8.5]
+      Vary: [Accept-Encoding]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+      content-length: ['3160']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://www.nflgamepass.com/api/en/content/v1/diva/invalid
+  response:
+    body: {string: 'Video not found: videoid = invalid'}
+    headers:
+      Access-Control-Allow-Headers: [Content-Type]
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: ['max-age=0, no-cache, no-store']
+      Connection: [keep-alive]
+      Content-Type: [text/html; charset=utf-8]
+      Date: ['Sun, 16 Sep 2018 16:19:58 GMT']
+      Expires: ['Sun, 16 Sep 2018 16:19:58 GMT']
+      Pragma: [no-cache]
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-AspNet-Version: [4.0.30319]
+      content-length: ['34']
+    status: {code: 200, message: OK}
+version: 1

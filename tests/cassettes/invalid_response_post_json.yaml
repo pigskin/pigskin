@@ -1,0 +1,71 @@
+interactions:
+- request:
+    body: client_id=https%3A%2F%2Fhttpbin.org%2Fpost&username=no_name&password=not_a_password&grant_type=password
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['103']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://httpbin.org/post
+  response:
+    body:
+      pretty:
+        args: {}
+        data: ''
+        files: {}
+        form: {client_id: 'https://httpbin.org/post', grant_type: password, password: not_a_password,
+          username: no_name}
+        headers: {Accept: '*/*', Accept-Encoding: 'gzip, deflate', Connection: close,
+          Content-Length: '103', Content-Type: application/x-www-form-urlencoded,
+          Host: httpbin.org, User-Agent: python-requests/2.19.1}
+        json: null
+        origin: REDACTED
+        url: https://httpbin.org/post
+      string: '{"args": {}, "data": "", "files": {}, "form": {"client_id": "https://httpbin.org/post",
+        "grant_type": "password", "password": "not_a_password", "username": "no_name"},
+        "headers": {"Accept": "*/*", "Accept-Encoding": "gzip, deflate", "Connection":
+        "close", "Content-Length": "103", "Content-Type": "application/x-www-form-urlencoded",
+        "Host": "httpbin.org", "User-Agent": "python-requests/2.19.1"}, "json": null,
+        "origin": "REDACTED", "url": "https://httpbin.org/post"}'
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['559']
+      Content-Type: [application/json]
+      Date: ['Sun, 16 Sep 2018 16:39:15 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: apiKey=3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp&loginID=no_name&password=not_a_password
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['113']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://httpbin.org/post
+  response:
+    body: {string: "<!DOCTYPE html>\n\t<html>\n\t  <head>\n\t\t<meta name=\"viewport\"\
+        \ content=\"width=device-width, initial-scale=1\">\n\t\t<meta charset=\"utf-8\"\
+        >\n\t\t<title>Application Error</title>\n\t\t<style media=\"screen\">\n\t\t\
+        \  html,body,iframe {\n\t\t\tmargin: 0;\n\t\t\tpadding: 0;\n\t\t  }\n\t\t\
+        \  html,body {\n\t\t\theight: 100%;\n\t\t\toverflow: hidden;\n\t\t  }\n\t\t\
+        \  iframe {\n\t\t\twidth: 100%;\n\t\t\theight: 100%;\n\t\t\tborder: 0;\n\t\
+        \t  }\n\t\t</style>\n\t  </head>\n\t  <body>\n\t\t<iframe src=\"//www.herokucdn.com/error-pages/application-error.html\"\
+        ></iframe>\n\t  </body>\n\t</html>"}
+    headers:
+      Cache-Control: ['no-cache, no-store']
+      Connection: [keep-alive]
+      Content-Length: ['506']
+      Content-Type: [text/html; charset=utf-8]
+      Date: ['Sun, 16 Sep 2018 16:39:15 GMT']
+      Server: [Cowboy]
+    status: {code: 503, message: Service Unavailable}
+version: 1

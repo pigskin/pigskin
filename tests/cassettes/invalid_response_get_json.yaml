@@ -1,0 +1,37 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://httpbin.org/json
+  response:
+    body:
+      pretty:
+        slideshow:
+          author: Yours Truly
+          date: date of publication
+          slides:
+          - {title: Wake up to WonderWidgets!, type: all}
+          - items: [Why <em>WonderWidgets</em> are great, Who <em>buys</em> WonderWidgets]
+            title: Overview
+            type: all
+          title: Sample Slide Show
+      string: '{"slideshow": {"author": "Yours Truly", "date": "date of publication",
+        "slides": [{"title": "Wake up to WonderWidgets!", "type": "all"}, {"items":
+        ["Why <em>WonderWidgets</em> are great", "Who <em>buys</em> WonderWidgets"],
+        "title": "Overview", "type": "all"}], "title": "Sample Slide Show"}}'
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['429']
+      Content-Type: [application/json]
+      Date: ['Sun, 16 Sep 2018 16:30:37 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+version: 1
