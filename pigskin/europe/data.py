@@ -47,7 +47,7 @@ class data(object):
 
 
     def get_games(self, season, season_type, week):
-        """Get the raw game data for a given season (year), season type, and week.
+        """Get the games list and metadata for a given week.
 
         Parameters
         ----------
@@ -60,17 +60,19 @@ class data(object):
 
         Returns
         -------
-        list
-            of dicts with the metadata for each game
+        OrderedDict
+            With the key as the game name (e.g. Packers@Bears) and value a dict
+            of the game's metadata.
 
-        Note
-        ----
-        TODO: the data returned really should be normalized, rather than a
-              (nearly) straight dump of the raw data.
+            Games are sorted according to their broadcast time and date.
+
+        Notes
+        -----
+        TODO: describe metadata structure
         """
         url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games_detail']
         url = url.replace(':seasonType', season_type).replace(':season', str(season)).replace(':week', str(week))
-        games = None
+        games = OrderedDict()
 
         try:
             r = self._store.s.get(url)
@@ -83,8 +85,26 @@ class data(object):
             raise e
 
         try:
-            games = [g for x in data['modules'] if data['modules'][x].get('content') for g in data['modules'][x]['content']]
-            games = sorted(games, key=lambda x: x['gameDateTimeUtc'])
+            games_list = [g for x in data['modules'] if data['modules'][x].get('content') for g in data['modules'][x]['content']]
+            games_list = sorted(games_list, key=lambda x: x['gameDateTimeUtc'])
+            for game in games_list:
+                key = '{0}@{1}'.format(game['visitorNickName'],  game['homeNickName'])
+                games[key] = {
+                    'city': game['siteCity'],
+                    'stadium': game['siteFullName'],
+                    'start_time': game['gameDateTimeUtc'],
+                    'phase': game['phase'],
+                    'home': {
+                        'name': game['homeNickName'],
+                        'city': game['homeCityState'],
+                        'points': game['homeScore']['pointTotal'],
+                    },
+                    'away': {
+                        'name': game['visitorNickName'],
+                        'city': game['visitorCityState'],
+                        'points': game['visitorScore']['pointTotal'],
+                    }
+                }
         except KeyError:
             self.logger.error('could not parse/build the games list')
             return None
