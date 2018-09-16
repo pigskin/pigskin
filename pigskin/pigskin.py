@@ -11,11 +11,6 @@ try:
     from urllib.parse import urlencode
 except ImportError:  # Python 2.7
     from urllib import urlencode
-try:
-    from datetime import datetime, timezone
-except ImportError:  # Python 2.7
-    import calendar
-    from datetime import datetime, timedelta
 
 import requests
 import m3u8
@@ -23,6 +18,7 @@ import m3u8
 from . import settings
 from .europe.auth import auth
 from .europe.data import data
+from .europe.utils import utils
 
 
 class store(object):
@@ -57,6 +53,7 @@ class pigskin(object):
 
         self._auth = auth(self._store)
         self._data = data(self._store)
+        self._utils = utils()
 
         self.logger.debug('Python Version: %s' % sys.version)
 
@@ -874,34 +871,7 @@ class pigskin(object):
         datetime
             A datetime object when successful, None otherwise.
         """
-        nfldate_format = '%Y-%m-%dT%H:%M:%S.%fZ'
-
-        try:
-            dt_utc = datetime.strptime(nfldate, nfldate_format)
-        except ValueError:
-            self.logger.error('unable to parse the nfldate string')
-            return None
-
-        if localize:
-            try:
-                return dt_utc.replace(tzinfo=timezone.utc).astimezone(tz=None)
-            except NameError:  # Python 2.7
-                return self.utc_to_local(dt_utc)
-            except Exception:
-                self.logger.error('unable to localize the nfl datetime object')
-                return None
-
-        return dt_utc
-
-
-    @staticmethod
-    def utc_to_local(dt_utc):
-        """Convert UTC time to local time."""
-        # get integer timestamp to avoid precision lost
-        timestamp = calendar.timegm(dt_utc.timetuple())
-        dt_local = datetime.fromtimestamp(timestamp)
-        assert dt_utc.resolution >= timedelta(microseconds=1)
-        return dt_local.replace(microsecond=dt_utc.microsecond)
+        return self._utils.nfldate_to_datetime(nfldate, localize)
 
 
 class season(object):
