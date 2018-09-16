@@ -969,3 +969,96 @@ class week(object):
             self._games = self._data.get_games(self._season, self._season_type, self._week)
 
         return self._games
+
+
+class game(object):
+    def __init__(self, data, game_info):
+        self._data = data
+        #self._season = season
+        #self._season_type = season_type
+        #self._week = week
+        #self._description = desc
+        self._game_info = game_info
+
+        self.logger = logging.getLogger(__name__)
+        self._versions = None
+
+
+    @property
+    def away(self):
+        """Information about the away team.
+
+        Returns
+        -------
+        dict
+            With the keys ``name``, ``city``, and ``points``.
+        """
+        # TODO: perhaps it's better to return a ``team`` object here with all
+        # team info and move the points to different property.
+        return self._game_info['away']
+
+
+    @property
+    def city(self):
+        """The city the game is played in.
+
+        Returns
+        -------
+        str
+        """
+        return self._game_info['city']
+
+
+    @property
+    def home(self):
+        """Information about the home team.
+
+        Returns
+        -------
+        dict
+            With the keys ``name``, ``city``, and ``points``.
+        """
+        # TODO: perhaps it's better to return a ``team`` object here with all
+        # team info and move the points to different property.
+        return self._game_info['home']
+
+
+    @property
+    def phase(self):
+        return self._game_info['phase']
+
+
+    @property
+    def stadium(self):
+        """The stadium/field the game is played at.
+
+        Returns
+        -------
+        str
+        """
+        return self._game_info['stadium']
+
+
+    @property
+    def start_time(self):
+        """The UTC start date and time of the game.
+
+        Returns
+        -------
+        str
+
+        See Also
+        --------
+        nfldate_to_datetime()
+        """
+        return self._game_info['start_time']
+
+
+    @property
+    def versions(self):
+        if self._versions is None:
+            self.logger.debug('``versions`` not set. attempting to populate')
+            self._versions = {}
+            self.logger.debug('``versions`` ready')
+
+        return self._versions
