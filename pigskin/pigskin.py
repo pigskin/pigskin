@@ -51,8 +51,8 @@ class pigskin(object):
         self.nfln_shows = {}
         self.episode_list = []
 
-        self._auth = auth(self._store)
-        self._data = data(self._store)
+        self._auth = auth(self)
+        self._data = data(self)
         self._utils = utils()
 
         self.logger.debug('Python Version: %s' % sys.version)
@@ -99,7 +99,7 @@ class pigskin(object):
         if self._seasons is None:
             self.logger.debug('``seasons`` not set. attempting to populate')
             seasons_list = self._data.get_seasons()
-            self._seasons = OrderedDict((s, season(self._data, s)) for s in seasons_list)
+            self._seasons = OrderedDict((s, season(self, s)) for s in seasons_list)
             self.logger.debug('``seasons`` ready')
 
         return self._seasons
@@ -809,8 +809,9 @@ class pigskin(object):
 
 
 class season(object):
-    def __init__(self, data, season):
-        self._data = data
+    def __init__(self, pigskin_obj, season):
+        self._pigskin = pigskin_obj
+        self._data = self._pigskin._data
         self._season = season
 
         self.logger = logging.getLogger(__name__)
@@ -833,7 +834,7 @@ class season(object):
             weeks_dict = self._data.get_weeks(self._season)
 
             for st in weeks_dict:
-                weeks_dict[st] = OrderedDict((w, week(self._data, self._season, st, w, weeks_dict[st][w])) for w in weeks_dict[st])
+                weeks_dict[st] = OrderedDict((w, week(self, st, w, weeks_dict[st][w])) for w in weeks_dict[st])
 
             self._weeks = weeks_dict
             self.logger.debug('``weeks`` ready')
@@ -842,9 +843,10 @@ class season(object):
 
 
 class week(object):
-    def __init__(self, data, season, season_type, week, desc):
-        self._data = data
-        self._season = season
+    def __init__(self, season_obj, season_type, week, desc):
+        self._pigskin = season_obj._pigskin
+        self._data = self._pigskin._data
+        self._season = season_obj._season
         self._season_type = season_type
         self._week = week
         self._description = desc
@@ -880,7 +882,7 @@ class week(object):
             self.logger.debug('``games`` not set. attempting to populate')
 
             games_dict = self._data.get_games(self._season, self._season_type, self._week)
-            games_dict = OrderedDict((g, game(self._data, games_dict[g])) for g in games_dict)
+            games_dict = OrderedDict((g, game(self, games_dict[g])) for g in games_dict)
             self._games = games_dict
             self.logger.debug('``games`` ready')
 
@@ -888,8 +890,9 @@ class week(object):
 
 
 class game(object):
-    def __init__(self, data, game_info):
-        self._data = data
+    def __init__(self, week_obj, game_info):
+        self._pigskin = week_obj._pigskin
+        self._data = self._pigskin._data
         #self._season = season
         #self._season_type = season_type
         #self._week = week

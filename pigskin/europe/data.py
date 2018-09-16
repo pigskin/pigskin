@@ -4,8 +4,9 @@ from collections import OrderedDict
 
 
 class data(object):
-    def __init__(self, store):
-        self._store = store
+    def __init__(self, pigskin_obj):
+        self._pigskin = pigskin_obj
+        self._store = self._pigskin._store
         self.logger = logging.getLogger(__name__)
 
 
