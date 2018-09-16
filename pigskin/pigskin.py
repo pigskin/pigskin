@@ -362,72 +362,6 @@ class pigskin(object):
         return games
 
 
-    def get_game_versions(self, game_id, season):
-        """Return a dict of available game versions (full, condensed, coaches,
-        etc) for a game.
-
-        Parameters
-        ----------
-        season : str or int
-            The season can be provided as either a ``str`` or ``int``.
-        game_id : str or int
-            A game's ``game_id`` can be found in the metadata returned by either
-            ``get_games()`` or ``get_team_games()``.
-
-        Returns
-        -------
-        dict
-            with the ``key`` as game version and its ``value`` being the
-            ``video_id`` of the corresponding stream.
-
-        NOTE
-        ----
-        TODO: it seems that they return a schload of info with get_games(),
-              including the video_id. Verify that they actually provide that for
-              all games, and perhaps this entire function can be retired.
-
-        See Also
-        --------
-        ``get_games()``
-        ``get_team_games()``
-
-        Examples
-        --------
-        >>> versions = gp.get_game_versions('2017090700', '2017')
-        >>> print(versions.keys())
-        dict_keys(['Coach film', 'Condensed game', 'Game video'])
-        """
-        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['game_page']
-        url = url.replace(':gameslug', str(game_id)).replace(':season', str(season))
-        versions = {}
-
-        try:
-            r = self._store.s.get(url)
-            self._log_request(r)
-            data = r.json()
-        except ValueError:
-            self.logger.error('get_game_versions: server response is invalid')
-            return {}
-        except Exception as e:
-            raise e
-
-        try:
-            game_data = data['modules']['singlegame']['content'][0]
-            for key in game_data:
-                try:
-                    versions[game_data[key]['kind']] = game_data[key]['videoId']
-                except (KeyError, TypeError):
-                    pass
-        except KeyError:
-            self.logger.error('could not parse/build the game versions data')
-            return {}
-        except Exception as e:
-            raise e
-
-        self.logger.debug('Game versions found for {0}: {1}'.format(game_id, ', '.join(versions.keys())))
-        return versions
-
-
     def get_nfl_network_streams(self):
         """Return a dict of available stream formats and their URLs for NFL
         Network Live.
@@ -1038,9 +972,11 @@ class game(object):
 
     @property
     def versions(self):
-        if self._versions is None:
-            self.logger.debug('``versions`` not set. attempting to populate')
-            self._versions = {}
-            self.logger.debug('``versions`` ready')
+        """Stream versions available for a game.
 
-        return self._versions
+        Returns
+        -------
+        dict
+            Possible keys are ``full``, ``condensed``, and ``coach``.
+        """
+        return self._game_info['versions']

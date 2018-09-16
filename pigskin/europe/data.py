@@ -103,8 +103,18 @@ class data(object):
                         'name': game['visitorNickName'],
                         'city': game['visitorCityState'],
                         'points': game['visitorScore']['pointTotal'],
-                    }
+                    },
+                    'versions' : {},
                 }
+                # TODO: perhaps it would be nice for the version to be stored in
+                # an OrderedDict. full, then condensed, then coaches. What I
+                # assume to be in order of what users are most likely to want.
+                version_types = {'condensed': 'condensedVideo' , 'coach': 'condensedVideo', 'full': 'video'}
+                for v in version_types:
+                    try:
+                        games[key]['versions'][v] = game[version_types[v]]['videoId']
+                    except KeyError:
+                        pass
         except KeyError:
             self.logger.error('could not parse/build the games list')
             return None
