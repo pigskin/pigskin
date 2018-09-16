@@ -964,9 +964,21 @@ class week(object):
 
     @property
     def games(self):
+        # NOTE: Currently this only fetches once.
+        # TODO: caching: any data that is in the past, won't change, data in
+        # future weeks won't change any time soon. So, if what is requested is
+        # /not/ the current week and season, then we can safely return a cached
+        # result. If it is the current week, then we should fetch a fresh copy.
+        # However, we don't want a request to get_current_season_and_week()
+        # every time. That info should be grabbed from the parent pigskin
+        # instance, where it is cached.
         if self._games is None:
             self.logger.debug('``games`` not set. attempting to populate')
-            self._games = self._data.get_games(self._season, self._season_type, self._week)
+
+            games_dict = self._data.get_games(self._season, self._season_type, self._week)
+            games_dict = OrderedDict((g, game(self._data, games_dict[g])) for g in games_dict)
+            self._games = games_dict
+            self.logger.debug('``games`` ready')
 
         return self._games
 

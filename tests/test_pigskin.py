@@ -87,12 +87,51 @@ class TestPigskin(object):
 
         # make sure we have content and it's the right type
         assert games
-        assert type(games) is list
+        assert type(games) is OrderedDict
 
-        # and that at least a tiny bit of the response is correct:
-        assert games[0]['video']['title'] == 'Miami Dolphins @ Baltimore Ravens'
+        prev = None
+        for g in games:
+            game = games[g]
+            # TODO: test that all values are of type game
 
-        # TODO: test that all values are of type game
+            # check team data
+            assert game.home and game.away
+            for team in [game.home, game.away]:
+                assert type(team) is dict
+
+                assert team['name']
+                assert type(team['name']) is str
+                assert team['city']
+                assert type(team['city']) is str
+                assert type(team['points']) is int
+
+            # check game data
+            assert game.city
+            assert type(game.city) is str
+            assert game.stadium
+            assert type(game.stadium) is str
+
+            assert game.phase
+            assert type(game.phase) is str
+
+            assert game.start_time
+            assert type(game.start_time) is str
+            #assert nfldate_to_datetime(game.start_time)
+
+            #if prev:
+            #    # make sure it's sorted low to high
+            #    assert nfldate_to_datetime(game.start_time) >= nfldate_to_datetime(prev.start_time)
+
+            #assert game.season
+            #assert type(game.season) is str
+            #assert game.season_type
+            #assert type(game.season_type) is str
+            #assert game.week
+            #assert type(game.week) is str
+            #assert game.week_desc
+            #assert type(game.week_desc) is str
+
+            prev = game
 
 
     @vcr.use_cassette('pigskin_current.yaml')
