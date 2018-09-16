@@ -244,6 +244,19 @@ class TestPigskinAuth(object):
         assert first_refresh_token != gp._store.refresh_token
 
 
+    @vcr.use_cassette('pigskin_game_streams.yaml')
+    def test_game_streams(self, gp):
+        streams = gp.seasons['2017'].weeks['reg']['8'].games['Panthers@Buccaneers'].versions['full'].streams
+
+        # make sure we have content and it's the right type
+        assert streams
+        assert type(streams) is dict
+
+        for s in streams:
+            assert streams[s]
+            # TODO: test that all are of type ``stream``
+
+
 @pytest.mark.incremental
 class TestPigskinAuthFail(object):
     """These require authentication to Game Pass, and should fail without it."""

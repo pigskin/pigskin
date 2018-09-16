@@ -3,30 +3,6 @@ import pytest
 from pigskin.pigskin import pigskin
 
 
-@pytest.mark.vcr()
-def test_get_game_streams():
-    gp = pigskin()
-    assert gp.login(username=pytest.gp_username, password=pytest.gp_password)
-
-    season = 2017
-    season_type = 'reg'
-    week = '8'
-
-    games = gp.get_games(season, season_type, week)
-    assert games
-
-    game_id = games[1]['gameId'] # grab a game_id
-
-    versions = gp.get_game_versions(game_id, season)
-    assert versions
-
-    streams = gp.get_game_streams(versions['Condensed game'])
-    assert streams
-
-    # and check that there's actual links provided
-    for f in ['hls', 'chromecast', 'connecttv']:
-        assert 'https://' in streams[f]
-
 # TODO: test live game stream
 #def test_get_game_streams_live():
 
