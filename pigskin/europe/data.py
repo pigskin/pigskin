@@ -1,5 +1,4 @@
 import logging
-import requests
 from collections import OrderedDict
 
 

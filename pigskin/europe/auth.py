@@ -1,5 +1,4 @@
 import logging
-import requests
 from .. import settings
 
 class auth(object):

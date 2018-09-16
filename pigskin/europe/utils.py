@@ -5,8 +5,6 @@ except ImportError:  # Python 2.7
     import calendar
     from datetime import datetime, timedelta
 
-from .. import settings
-
 
 class utils(object):
     def __init__(self):

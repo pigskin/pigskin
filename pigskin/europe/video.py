@@ -1,5 +1,4 @@
 import logging
-import requests
 import uuid
 import json
 import xml.etree.ElementTree as ET
