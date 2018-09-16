@@ -133,6 +133,25 @@ class TestPigskin(object):
             prev = game
 
 
+    # This cassette is unused, as ``versions`` does not cause any HTTP requests.
+    # However, it remains here just in case that changes in the future.
+    @vcr.use_cassette('pigskin_versions.yaml')
+    def test_versions(self, gp):
+        versions = gp.seasons['2017'].weeks['reg']['8'].games['Panthers@Buccaneers'].versions
+
+        # make sure we have content and it's the right type
+        assert versions
+        assert type(versions) is dict
+
+        for v in versions:
+            # make sure it's a known type
+            assert v in ['full', 'condensed', 'coach']
+
+            # make sure we have content and it's the right type
+            assert versions[v]
+            assert type(versions[v]) is str
+
+
     @vcr.use_cassette('pigskin_current.yaml')
     def test_current(self, gp):
         current = gp.current
