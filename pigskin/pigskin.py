@@ -719,6 +719,52 @@ class game(object):
         Returns
         -------
         dict
-            Possible keys are ``full``, ``condensed``, and ``coach``.
+            Possible keys are ``full``, ``condensed``, and ``coach``. The values
+            are ``stream`` objects.
         """
-        return self._game_info['versions']
+        if self._versions is None:
+            self.logger.debug('``versions`` not set. attempting to populate')
+            # TODO: OrderedDict
+            versions_dict = OrderedDict((v, version(self, v, self._game_info['versions'][v])) for v in self._game_info['versions'])
+            self._versions = versions_dict
+            self.logger.debug('``versions`` ready')
+
+        return self._versions
+
+
+class version(object):
+    def __init__(self, game_obj, desc_key, video_id):
+        self._pigskin = game_obj._pigskin
+        self._video = self._pigskin._video
+        self._desc_key = desc_key
+        self._video_id = video_id
+
+        self.logger = logging.getLogger(__name__)
+        self._descriptions = {'full': 'Full Game', 'condensed': 'Condensed Game', 'coach': 'Coaches Tape'}
+        self._streams = None
+
+
+    @property
+    def desc(self):
+        """The description of a game version.
+
+        Returns
+        -------
+        str
+            The description of the game version.
+        """
+        try:
+            return self._descriptions[self._desc_key]
+        except KeyError:
+            return self._desc_key
+
+
+    @property
+    def streams(self):
+        if self._streams is None:
+            self.logger.debug('``streams`` not set. attempting to populate')
+            # TODO: support live streams
+            self._streams = {}
+            self.logger.debug('``streams`` ready')
+
+        return self._streams

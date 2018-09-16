@@ -141,15 +141,19 @@ class TestPigskin(object):
 
         # make sure we have content and it's the right type
         assert versions
-        assert type(versions) is dict
+        assert type(versions) is OrderedDict
 
         for v in versions:
-            # make sure it's a known type
+            assert versions[v]
+            # TODO: test that all are of type ``version``
+
+            # make sure it's a known version type
             assert v in ['full', 'condensed', 'coach']
 
-            # make sure we have content and it's the right type
-            assert versions[v]
-            assert type(versions[v]) is str
+            # make sure the description has content, si the right type, and is sane
+            assert versions[v].desc
+            assert type(versions[v].desc) is str
+            assert versions[v].desc in ['Full Game', 'Condensed Game', 'Coaches Tape']
 
 
     @vcr.use_cassette('pigskin_current.yaml')
