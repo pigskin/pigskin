@@ -9,24 +9,24 @@ gp = pigskin()
 # need to test the output, just that it doesn't fail.
 
 @pytest.mark.vcr()
-def test_response_json():
+def test_log_request_json():
     r = requests.get('https://httpbin.org/json')
     result = gp._log_request(r)
-    assert result == True
+    assert result is True
 
 @pytest.mark.vcr()
-def test_response_html():
+def test_log_request_html():
     r = requests.get('https://httpbin.org/html')
     result = gp._log_request(r)
-    assert result == True
+    assert result is True
 
 @pytest.mark.vcr()
-def test_response_bytes():
+def test_log_request_bytes():
     r = requests.get('https://httpbin.org/bytes/20')
     result = gp._log_request(r)
-    assert result == True
+    assert result is True
 
-def test_empty_handlel():
+def test_log_request_empty():
     result = gp._log_request(None)
 
-    assert result == True
+    assert result is True

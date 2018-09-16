@@ -11,7 +11,7 @@ def test_get_nfl_network_streams():
     gp = pigskin()
     assert gp.login(username=pytest.gp_username, password=pytest.gp_password)
 
-    streams = gp.get_nfl_network_streams()
+    streams = gp._video.get_nfl_network_streams()
 
     # make sure we have responses
     assert streams
@@ -42,7 +42,7 @@ def test_get_redzone_streams_failure():
     gp = pigskin()
     assert gp.login(username=pytest.gp_username, password=pytest.gp_password)
 
-    streams = gp.get_redzone_streams()
+    streams = gp._video.get_redzone_streams()
 
     # make sure we don't have a response
     assert not streams
@@ -53,7 +53,7 @@ def test__get_diva_config():
     gp = pigskin()
     diva_config_url = gp._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['Live24x7']
 
-    diva_config = gp._get_diva_config(diva_config_url)
+    diva_config = gp._video._get_diva_config(diva_config_url)
 
     # check our response
     assert diva_config
@@ -69,7 +69,7 @@ def test__build_processing_url_payload():
     video_id = 'this_is_a_video_id'
     vs_url = 'https://this.is.a.video.source.url'
 
-    response = gp._build_processing_url_payload(video_id, vs_url)
+    response = gp._video._build_processing_url_payload(video_id, vs_url)
 
     assert response
     assert video_id in response
