@@ -764,7 +764,7 @@ class version(object):
         if self._streams is None:
             self.logger.debug('``streams`` not set. attempting to populate')
             # TODO: support live streams
-            self._streams = {}
+            self._streams = self._video.get_game_streams(self._video_id, live=False)
             self.logger.debug('``streams`` ready')
 
         return self._streams
