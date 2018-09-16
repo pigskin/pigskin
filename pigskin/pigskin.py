@@ -1,7 +1,6 @@
 """
 A Python library for NFL Game Pass
 """
-import sys
 import json
 import logging
 from collections import OrderedDict
@@ -54,8 +53,6 @@ class pigskin(object):
         self._data = data(self)
         self._utils = utils()
         self._video = video(self)
-
-        self.logger.debug('Python Version: %s' % sys.version)
 
 
     class GamePassError(Exception):
