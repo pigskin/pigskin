@@ -10,8 +10,6 @@ try:
 except ImportError:  # Python 2.7
     from urllib import quote
 
-from pigskin.pigskin import pigskin
-
 
 pytest.gp_username = os.getenv('PIGSKIN_USER', '')
 pytest.gp_password = os.getenv('PIGSKIN_PASS', '')
@@ -46,7 +44,7 @@ def search_for_tokens(text):
     the tokens /did/ change without leaking these tokens."""
     try:
         parsed = json.loads(text)
-    except ValueError as e:
+    except ValueError:
         return
 
     for t in ['access_token', 'refresh_token']:
@@ -95,7 +93,7 @@ def scrub_request(request):
     # scrub body
     try:
         body = request.body.decode()
-    except (AttributeError, UnicodeDecodeError) as e:  # likely binary data
+    except (AttributeError, UnicodeDecodeError):  # likely binary data
         return request
     else:
         body = scrub_secrets(body)
@@ -107,7 +105,7 @@ def scrub_request(request):
 def scrub_response(response):
     try:
         body = response['body']['string'].decode()
-    except (AttributeError, UnicodeDecodeError) as e:  # likely binary data
+    except (AttributeError, UnicodeDecodeError):  # likely binary data
         return response
 
     body = scrub_secrets(body)
@@ -116,7 +114,7 @@ def scrub_response(response):
     try:  # load JSON as a python dict so it can be pretty printed
         parsed = json.loads(body)
         response['body']['pretty'] = parsed
-    except ValueError as e:
+    except ValueError:
         pass
 
     return response

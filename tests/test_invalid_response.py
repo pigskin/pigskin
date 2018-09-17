@@ -63,7 +63,6 @@ class TestInvalidResponseData(object):
 
     def test_invalid_response_post_json(self, gp):
         junk_url = 'https://httpbin.org/post'
-        diva_config_url = gp._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['Live24x7']
         gigya_auth_url_original = settings.gigya_auth_url
 
         set_all_config_urls(gp, junk_url)
