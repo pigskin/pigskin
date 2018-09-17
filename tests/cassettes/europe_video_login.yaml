@@ -1,0 +1,33 @@
+interactions:
+- request:
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&username=REDACTED&password=REDACTED&grant_type=password
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['113']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://www.nflgamepass.com/api/user/oauth/token
+  response:
+    body:
+      pretty: {access_token: FAKE_TOKEN_4580bda40377ff21c6e1ed62f5f6759a1a9cce9a9e883ef9d637d22aca96179a,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_cf60b538b58dabecf4a9c31f85fd729f786b5c9618c1f808a74cd8cf83eacfe1,
+        token_type: bearer}
+      string: '{"access_token": "FAKE_TOKEN_4580bda40377ff21c6e1ed62f5f6759a1a9cce9a9e883ef9d637d22aca96179a",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_cf60b538b58dabecf4a9c31f85fd729f786b5c9618c1f808a74cd8cf83eacfe1"}'
+    headers:
+      Cache-Control: ['max-age=0, no-cache, no-store']
+      Connection: [keep-alive]
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 17 Sep 2018 15:01:57 GMT']
+      Expires: ['Mon, 17 Sep 2018 15:01:57 GMT']
+      Pragma: [no-cache]
+      Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [ASP.NET]
+      content-length: ['2162']
+    status: {code: 200, message: OK}
+version: 1
