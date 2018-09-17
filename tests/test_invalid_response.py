@@ -1,5 +1,6 @@
 import pytest
 import vcr
+import requests
 
 from pigskin.pigskin import pigskin
 from pigskin import settings
@@ -60,6 +61,11 @@ class TestInvalidResponseData(object):
             #assert not gp.get_team_games('2018', '49ers')
             #assert gp.is_redzone_on_air() == None
 
+        # _log_request needs a requests handle
+        r = requests.get(junk_url)
+        result = gp._log_request(r)
+        assert result is True
+
 
     def test_invalid_response_post_json(self, gp):
         junk_url = 'https://httpbin.org/post'
@@ -81,3 +87,8 @@ class TestInvalidResponseData(object):
 
         # restore the setting
         settings.gigya_auth_url = gigya_auth_url_original
+
+        # _log_request needs a requests handle
+        r = requests.get(junk_url)
+        result = gp._log_request(r)
+        assert result is True
