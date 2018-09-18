@@ -76,8 +76,6 @@ class video(object):
         except ValueError:
             self.logger.error('get_nfl_network_streams: server response is invalid')
             return {}
-        except Exception as e:
-            raise e
 
         try:
             video_id = data['modules']['networkLiveVideo']['content'][0]['videoId']
@@ -85,8 +83,6 @@ class video(object):
             # TODO: move refresh_tokens() here and retry
             self.logger.error('could not parse the nfl network video_id data')
             return {}
-        except Exception as e:
-            raise e
 
         streams = self._get_diva_streams(video_id=video_id, diva_config_url=diva_config_url)
         return streams
@@ -114,16 +110,12 @@ class video(object):
         except ValueError:
             self.logger.error('get_redzone_streams: server response is invalid')
             return {}
-        except Exception as e:
-            raise e
 
         try:
             video_id = data['modules']['redZoneLive']['content'][0]['videoId']
         except (KeyError, IndexError):
             self.logger.error('could not parse the redzone video_id data')
             return {}
-        except Exception as e:
-            raise e
 
         streams = self._get_diva_streams(video_id=video_id, diva_config_url=diva_config_url)
         return streams
@@ -190,10 +182,6 @@ class video(object):
             r = self._store.s.get(url)
             #self._log_request(r)
             data = r.content
-        except Exception as e:
-            raise e
-
-        try:
             data_xml = ET.fromstring(data)
         except (ET.ParseError, TypeError):
             self.logger.error('_get_diva_config: server response is invalid')
@@ -240,10 +228,6 @@ class video(object):
             r = self._store.s.get(video_data_url)
             #self._log_request(r)
             akamai_data = r.content
-        except Exception as e:
-            raise e
-
-        try:
             akamai_xml = ET.fromstring(akamai_data)
         except (ET.ParseError, TypeError):
             self.logger.error('_get_diva_streams: server response is invalid')
@@ -271,8 +255,6 @@ class video(object):
             except ValueError:
                 self.logger.error('_get_diva_streams: server response is invalid')
                 continue
-            except Exception as e:
-                raise e
 
             streams[vs_format] = data['ContentUrl'] + '|' + urlencode(m3u8_header)
 

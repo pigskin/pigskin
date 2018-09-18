@@ -28,8 +28,6 @@ class data(object):
         except ValueError:
             self.logger.error('current_season_and_week: server response is invalid')
             return None
-        except Exception as e:
-            raise e
 
         try:
             current = {
@@ -40,8 +38,6 @@ class data(object):
         except KeyError:
             self.logger.error('could not determine the current season and week')
             return None
-        except Exception as e:
-            raise e
 
         return current
 
@@ -81,8 +77,6 @@ class data(object):
         except ValueError:
             self.logger.error('_get_games: invalid server response')
             return None
-        except Exception as e:
-            raise e
 
         try:
             games_list = [g for x in data['modules'] if data['modules'][x].get('content') for g in data['modules'][x]['content']]
@@ -118,8 +112,6 @@ class data(object):
         except KeyError:
             self.logger.error('could not parse/build the games list')
             return None
-        except Exception as e:
-            raise e
 
         self.logger.debug('``games`` ready')
         return games
@@ -144,8 +136,6 @@ class data(object):
         except ValueError:
             self.logger.error('_get_seasons: invalid server response')
             return None
-        except Exception as e:
-            raise e
 
         try:
             self.logger.debug('parsing seasons')
@@ -154,8 +144,6 @@ class data(object):
         except KeyError:
             self.logger.error('unable to parse the seasons data')
             return None
-        except Exception as e:
-            raise e
 
         return seasons_list
 
@@ -182,8 +170,6 @@ class data(object):
         except ValueError:
             self.logger.error('_get_weeks: invalid server response')
             return None
-        except Exception as e:
-            raise e
 
         try:
             self.logger.debug('parsing weeks')
@@ -197,8 +183,6 @@ class data(object):
         except KeyError:
             self.logger.error('unable to parse the weeks data')
             return None
-        except Exception as e:
-            raise e
 
         return weeks
 

@@ -47,8 +47,6 @@ class auth(object):
                 assert data['refresh_token']
             except (KeyError, AssertionError):
                 self.logger.error('Could not acquire GP tokens')
-            except Exception as e:
-                raise e
             else:
                 self._store.username = username
                 # TODO: are these tokens provided for valid accounts without a subscription?
@@ -78,8 +76,6 @@ class auth(object):
         except ValueError:
             self.logger.error('token refresh: server response is invalid')
             return False
-        except Exception as e:
-            raise e
 
         try:
             self._store.access_token = data['access_token']
@@ -87,8 +83,6 @@ class auth(object):
         except KeyError:
             self.logger.error('could not find GP tokens to refresh')
             return False
-        except Exception as e:
-            raise e
 
         # TODO: check for status codes, just in case
 
@@ -132,8 +126,6 @@ class auth(object):
         except ValueError:
             self.logger.error('_gigya_auth: server response is invalid')
             return {}
-        except Exception as e:
-            raise e
 
         try:
             # make sure some key data is here
@@ -145,8 +137,6 @@ class auth(object):
         except KeyError:
             self.logger.error('could not parse gigya auth response')
             return {}
-        except Exception as e:
-            raise e
 
         data = self._gp_auth(username, password, gigya_data)
 
@@ -200,8 +190,6 @@ class auth(object):
         except ValueError:
             self.logger.error('_gp_auth: server response is invalid')
             return {}
-        except Exception as e:
-            raise e
 
         try:
             # make sure some key data is here
@@ -210,8 +198,6 @@ class auth(object):
         except (KeyError, AssertionError):
             self.logger.error('could not parse auth response')
             return {}
-        except Exception as e:
-            raise e
 
         # TODO: check for status codes, just in case
         return data

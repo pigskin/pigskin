@@ -343,8 +343,6 @@ class pigskin(object):
         except ValueError:
             self.logger.error('get_team_games: server response is invalid')
             return []
-        except Exception as e:
-            raise e
 
         try:
             # currently, only data for the current season is available
@@ -353,8 +351,6 @@ class pigskin(object):
         except KeyError:
             self.logger.error('could not parse/build the team_games list')
             return []
-        except Exception as e:
-            raise e
 
         return games
 
@@ -395,8 +391,6 @@ class pigskin(object):
         except ValueError:
             self.logger.error('is_redzone_on_air: server response is invalid')
             return None
-        except Exception as e:
-            raise e
 
         try:
             if data['modules']['redZoneLive']['content']:
@@ -404,8 +398,6 @@ class pigskin(object):
         except KeyError:
             self.logger.error('could not parse RedZoneLive data')
             return None
-        except Exception as e:
-            raise e
 
         return False
 
