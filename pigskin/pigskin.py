@@ -551,7 +551,7 @@ class week(object):
         if self._games is None:
             self.logger.debug('``games`` not set. attempting to populate')
 
-            games_dict = self._data.get_games(self._season, self._season_type, self._week)
+            games_dict = self._data.get_week_games(self._season, self._season_type, self._week)
             games_dict = OrderedDict((g, game(self, games_dict[g])) for g in games_dict)
             self._games = games_dict
             self.logger.debug('``games`` ready')

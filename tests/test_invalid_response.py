@@ -38,7 +38,7 @@ class TestInvalidResponseData(object):
                 assert gp._data.get_current_season_and_week() is None
 
             with vcr.use_cassette('invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
-                assert gp._data.get_games('2017', 'reg', '12') is None
+                assert gp._data.get_week_games('2017', 'reg', '12') is None
 
             with vcr.use_cassette('invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
                 assert gp._data.get_seasons() is None

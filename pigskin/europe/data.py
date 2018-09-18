@@ -85,7 +85,7 @@ class data(object):
         return games
 
 
-    def get_games(self, season, season_type, week):
+    def get_week_games(self, season, season_type, week):
         """Get the games list and metadata for a given week.
 
         Parameters
@@ -149,7 +149,7 @@ class data(object):
                     except KeyError:
                         pass
         except KeyError:
-            self.logger.error('could not parse/build the games list')
+            self.logger.error('get_week_games: could not parse/build the games list')
             return None
 
         self.logger.debug('``games`` ready')
