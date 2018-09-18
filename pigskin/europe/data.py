@@ -108,21 +108,17 @@ class data(object):
         Notes
         -----
         TODO: describe metadata structure
+        TODO: 'home' should return the name of the team, so it can be easily
+              attached to a team object elsewhere
+
+        See Also
+        --------
+        ``_fetch_games()``
         """
-        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games_detail']
-        url = url.replace(':seasonType', season_type).replace(':season', str(season)).replace(':week', str(week))
         games = OrderedDict()
 
         try:
-            r = self._store.s.get(url)
-            #self._log_request(r)
-            data = r.json()
-        except ValueError:
-            self.logger.error('_get_games: invalid server response')
-            return None
-
-        try:
-            games_list = [g for x in data['modules'] if data['modules'][x].get('content') for g in data['modules'][x]['content']]
+            games_list = self._fetch_games(str(season), season_type, str(week))
             games_list = sorted(games_list, key=lambda x: x['gameDateTimeUtc'])
             for game in games_list:
                 key = '{0}@{1}'.format(game['visitorNickName'],  game['homeNickName'])
@@ -228,6 +224,44 @@ class data(object):
             return None
 
         return weeks
+
+
+    def _fetch_games(self, season, season_type, week):
+        """Get a list of games for a given week.
+
+        Parameters
+        ----------
+        season : str or int
+            The season can be provided as either a ``str`` or ``int``.
+        season_type : str
+            The season_type can be either ``pre``, ``reg``, or ``post``.
+        week : str or int
+            The week can be provided as either a ``str`` or ``int``.
+
+        Returns
+        -------
+        list
+            With a dict of metadata as the value
+        """
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games_detail']
+        url = url.replace(':seasonType', season_type).replace(':season', str(season)).replace(':week', str(week))
+        games_list = None
+
+        try:
+            r = self._store.s.get(url)
+            #self._log_request(r)
+            data = r.json()
+        except ValueError:
+            self.logger.error('_fetch_games: invalid server response')
+            return None
+
+        try:
+            games_list = [g for x in data['modules'] if data['modules'][x].get('content') for g in data['modules'][x]['content']]
+        except KeyError:
+            self.logger.error('_fetch_games: could not parse/build the games list')
+            return None
+
+        return games_list
 
 
     def _week_description(self, abbr):
