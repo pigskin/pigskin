@@ -6,14 +6,14 @@ from pigskin.pigskin import pigskin
 
 @pytest.fixture(scope='class')
 def gp():
-    with vcr.use_cassette('europe_video_gp.yaml'):
+    with vcr.use_cassette('backends/europe/video_gp.yaml'):
         return pigskin()
 
 
 @pytest.mark.incremental
 class TestEuropeVideo(object):
     """These don't require authentication to Game Pass."""
-    @vcr.use_cassette('europe_video__get_diva_config.yaml')
+    @vcr.use_cassette('backends/europe/video__get_diva_config.yaml')
     def test__get_diva_config(self, gp):
         diva_config_url = gp._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['Live24x7']
 
@@ -28,7 +28,7 @@ class TestEuropeVideo(object):
 @pytest.mark.incremental
 class TestEuropeVideoAuth(object):
     """These require authentication to Game Pass"""
-    @vcr.use_cassette('europe_video_login.yaml')
+    @vcr.use_cassette('backends/europe/video_login.yaml')
     def test_login(self, gp):
         assert gp.login(pytest.gp_username, pytest.gp_password, force=True)
 
