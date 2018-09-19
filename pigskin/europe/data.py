@@ -145,7 +145,7 @@ class data(object):
         # loop over non-bye weeks until we find one with 16 games
         # The 1st week should always have 16 games, but week 1 of 2017 had only 15.
         for week in no_bye_weeks:
-            games_list = self._fetch_games(str(season), 'reg', str(week))
+            games_list = self._fetch_games_list(str(season), 'reg', str(week))
 
             if len(games_list) == 16:
                 break
@@ -207,12 +207,12 @@ class data(object):
 
         See Also
         --------
-        ``_fetch_games()``
+        ``_fetch_games_list()``
         """
         games = OrderedDict()
 
         try:
-            games_list = self._fetch_games(str(season), season_type, str(week))
+            games_list = self._fetch_games_list(str(season), season_type, str(week))
             games_list = sorted(games_list, key=lambda x: x['gameDateTimeUtc'])
             for game in games_list:
                 key = '{0}@{1}'.format(game['visitorNickName'],  game['homeNickName'])
@@ -289,7 +289,7 @@ class data(object):
         return weeks
 
 
-    def _fetch_games(self, season, season_type, week):
+    def _fetch_games_list(self, season, season_type, week):
         """Get a list of games for a given week.
 
         Parameters
@@ -304,25 +304,26 @@ class data(object):
         Returns
         -------
         list
-            With a dict of metadata as the value
+            With a dict of metadata as the value. An empty list if there was a
+            failure.
         """
         url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games_detail']
         url = url.replace(':seasonType', season_type).replace(':season', str(season)).replace(':week', str(week))
-        games_list = None
+        games_list = []
 
         try:
             r = self._store.s.get(url)
             #self._log_request(r)
             data = r.json()
         except ValueError:
-            self.logger.error('_fetch_games: invalid server response')
-            return None
+            self.logger.error('_fetch_games_list: invalid server response')
+            return []
 
         try:
             games_list = [g for x in data['modules'] if data['modules'][x].get('content') for g in data['modules'][x]['content']]
         except KeyError:
-            self.logger.error('_fetch_games: could not parse/build the games list')
-            return None
+            self.logger.error('_fetch_games_list: could not parse/build the games list')
+            return []
 
         return games_list
 
