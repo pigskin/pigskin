@@ -46,6 +46,40 @@ class TestPigskin(object):
             prev = s
 
 
+    @vcr.use_cassette('pigskin_teams.yaml')
+    def test_teams(self, gp):
+        # we test 2015 for the St. Louis Rams; 2017 because week 1 had only 15
+        # games, and 2018 because it should be normal/typical.
+        for season in ['2015', '2017', '2018']:
+          teams = gp.seasons[season].teams
+
+          # make sure we have content and it's the right type
+          assert teams
+          assert type(teams) is OrderedDict
+
+          # make sure we have all the teams
+          assert len(teams) == 32
+
+          # teams move; make sure the Rams' info is correct
+          if season == '2015':
+              assert teams['Rams']['city'] == 'St. Louis'
+              assert teams['Rams']['abbr'] == 'STL'
+          else:
+              assert teams['Rams']['city'] == 'Los Angeles'
+              assert teams['Rams']['abbr'] == 'LA'
+
+          # The keys and names should always match
+          for t in teams:
+              assert t == teams[t]['name']
+              # TODO: check that they are alphabeticized
+              # TODO: test that all teams are of type team
+
+          # check some other random info
+          assert teams['Packers']['city'] == 'Green Bay'
+          assert teams['Eagles']['abbr'] == 'PHI'
+          assert teams['Jets']['abbr'] == 'NYJ'
+
+
     @vcr.use_cassette('pigskin_weeks.yaml')
     def test_weeks(self, gp):
         weeks = gp.seasons['2017'].weeks

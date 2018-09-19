@@ -485,7 +485,29 @@ class season(object):
         self._season = season
 
         self.logger = logging.getLogger(__name__)
+        self._teams = None
         self._weeks = None
+
+
+    @property
+    def teams(self):
+        """An OrderedDict of teams and their team objects.
+
+        Returns
+        -------
+        OrderedDict
+            With the keys as the team name (e.g. "Vikings") and value as the
+            team object.
+        """
+
+        if self._teams is None:
+            self.logger.debug('``teams`` not set. attempting to populate')
+            teams_dict = self._data.get_teams(self._season)
+
+            self._teams = teams_dict
+            self.logger.debug('``teams`` ready')
+
+        return self._teams
 
 
     @property

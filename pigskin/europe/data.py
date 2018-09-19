@@ -85,6 +85,69 @@ class data(object):
         return games
 
 
+    def get_teams(self, season):
+        """Get a list of teams for a given season.
+
+        Parameters
+        ----------
+        season : str or int
+            The season can be provided as either a ``str`` or ``int``.
+
+        Returns
+        -------
+        OrderedDict
+            With the key as the team name (e.g. Vikings) and value as a dict
+            of the teams's metadata.
+
+            Teams are sorted alphabetically.
+
+        Notes
+        -----
+        TODO: describe metadata structure
+        """
+        # ['modules']['API']['TEAMS'] only provides the teams for the current
+        # season. So, we ask for all the games of a non-bye-week of the regular
+        # season to assemble a list of teams.
+        no_bye_weeks = [1, 2, 3, 13, 14, 15, 16, 17]
+        teams = OrderedDict()
+
+        # loop over non-bye weeks until we find one with 16 games
+        # The 1st week should always have 16 games, but week 1 of 2017 had only 15.
+        for week in no_bye_weeks:
+            games_list = self._fetch_games(str(season), 'reg', str(week))
+
+            if len(games_list) == 16:
+                break
+
+        if len(games_list) != 16:
+            return None
+
+        try:
+            teams_list = []
+            for game in games_list:
+                # Cities which have multiple teams include the team name with
+                # the city name. We remove that.
+                teams_list.append({
+                    'abbr': game['homeTeamAbbr'],
+                    'city': game['homeCityState'].replace(' ' + game['homeNickName'], ''),
+                    'name': game['homeNickName'],
+                })
+
+                teams_list.append({
+                    'abbr': game['visitorTeamAbbr'],
+                    'city': game['visitorCityState'].replace(' ' + game['visitorNickName'], ''),
+                    'name': game['visitorNickName'],
+                })
+        except KeyError:
+            self.logger.error('get_teams: could not build the teams list')
+            return None
+
+        teams_list = sorted(teams_list, key=lambda x: x['name'])
+        teams = OrderedDict((t['name'], t) for t in teams_list)
+
+        return teams
+
+
     def get_week_games(self, season, season_type, week):
         """Get the games list and metadata for a given week.
 
