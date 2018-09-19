@@ -33,18 +33,6 @@ class video(object):
         dict
             with the stream format (hls, chromecast, etc) as the key and the
             stream content_url as the value.
-
-        See Also
-        --------
-        ``get_game_versions()``
-
-        Examples
-        --------
-        >>> games = gp.get_games('2017', 'reg', '1')
-        >>> versions = gp.get_game_versions(games[1]['gameId'], '2017')
-        >>> streams = gp.get_game_streams(versions['Condensed game'])
-        >>> print(streams.keys())
-        dict_keys(['hls', 'chromecast', 'connecttv'])
         """
         diva_config_url = self._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['VodNoData']
         if live:

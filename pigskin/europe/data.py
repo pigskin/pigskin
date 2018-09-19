@@ -42,6 +42,37 @@ class data(object):
         return current
 
 
+    def get_seasons(self):
+        """Get a list of available seasons.
+
+        Returns
+        -------
+        list
+            a list of available seasons, sorted from the most to least recent;
+            None if there was a failure.
+        """
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games']
+        seasons_list = None
+
+        try:
+            r = self._store.s.get(url)
+            #self._log_request(r)
+            data = r.json()
+        except ValueError:
+            self.logger.error('_get_seasons: invalid server response')
+            return None
+
+        try:
+            self.logger.debug('parsing seasons')
+            giga_list = data['modules']['mainMenu']['seasonStructureList']
+            seasons_list = [str(x['season']) for x in giga_list if x.get('season') != None]
+        except KeyError:
+            self.logger.error('unable to parse the seasons data')
+            return None
+
+        return seasons_list
+
+
     def get_team_games(self, season, team):
         """Get the raw game data for a given season (year) and team.
 
@@ -217,37 +248,6 @@ class data(object):
 
         self.logger.debug('``games`` ready')
         return games
-
-
-    def get_seasons(self):
-        """Get a list of available seasons.
-
-        Returns
-        -------
-        list
-            a list of available seasons, sorted from the most to least recent;
-            None if there was a failure.
-        """
-        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['games']
-        seasons_list = None
-
-        try:
-            r = self._store.s.get(url)
-            #self._log_request(r)
-            data = r.json()
-        except ValueError:
-            self.logger.error('_get_seasons: invalid server response')
-            return None
-
-        try:
-            self.logger.debug('parsing seasons')
-            giga_list = data['modules']['mainMenu']['seasonStructureList']
-            seasons_list = [str(x['season']) for x in giga_list if x.get('season') != None]
-        except KeyError:
-            self.logger.error('unable to parse the seasons data')
-            return None
-
-        return seasons_list
 
 
     def get_weeks(self, season):

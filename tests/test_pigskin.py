@@ -127,6 +127,8 @@ class TestPigskin(object):
     @vcr.use_cassette('pigskin_games.yaml')
     def test_games(self, gp):
         games = gp.seasons['2017'].weeks['reg']['8'].games
+        # TODO: create a list for team_games by walking
+        #       gp.seasons['2018'].teams['Steelers'].weeks[*][*]
 
         # make sure we have content and it's the right type
         assert games
@@ -182,6 +184,7 @@ class TestPigskin(object):
     @vcr.use_cassette('pigskin_versions.yaml')
     def test_versions(self, gp):
         versions = gp.seasons['2017'].weeks['reg']['8'].games['Panthers@Buccaneers'].versions
+        # TODO: test gp.seasons['2017'].teams['Steelers'].weeks['reg']['8'].versions
 
         # make sure we have content and it's the right type
         assert versions
