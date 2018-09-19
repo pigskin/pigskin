@@ -210,9 +210,12 @@ class data(object):
         ``_fetch_games_list()``
         """
         games = OrderedDict()
+        games_list = self._fetch_games_list(str(season), season_type, str(week))
+
+        if not games_list:
+            return None
 
         try:
-            games_list = self._fetch_games_list(str(season), season_type, str(week))
             games_list = sorted(games_list, key=lambda x: x['gameDateTimeUtc'])
             for game in games_list:
                 key = '{0}@{1}'.format(game['visitorNickName'],  game['homeNickName'])

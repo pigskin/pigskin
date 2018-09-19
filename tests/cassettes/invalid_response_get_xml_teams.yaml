@@ -1,0 +1,226 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://httpbin.org/xml
+  response:
+    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
+        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
+        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
+        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
+        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
+        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
+        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
+        \   </slide>\n\n</slideshow>"}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['522']
+      Content-Type: [application/xml]
+      Date: ['Wed, 19 Sep 2018 08:48:57 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://httpbin.org/xml
+  response:
+    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
+        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
+        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
+        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
+        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
+        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
+        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
+        \   </slide>\n\n</slideshow>"}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['522']
+      Content-Type: [application/xml]
+      Date: ['Wed, 19 Sep 2018 08:48:58 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://httpbin.org/xml
+  response:
+    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
+        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
+        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
+        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
+        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
+        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
+        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
+        \   </slide>\n\n</slideshow>"}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['522']
+      Content-Type: [application/xml]
+      Date: ['Wed, 19 Sep 2018 08:48:58 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://httpbin.org/xml
+  response:
+    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
+        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
+        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
+        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
+        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
+        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
+        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
+        \   </slide>\n\n</slideshow>"}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['522']
+      Content-Type: [application/xml]
+      Date: ['Wed, 19 Sep 2018 08:49:00 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://httpbin.org/xml
+  response:
+    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
+        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
+        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
+        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
+        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
+        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
+        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
+        \   </slide>\n\n</slideshow>"}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['522']
+      Content-Type: [application/xml]
+      Date: ['Wed, 19 Sep 2018 08:49:06 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://httpbin.org/xml
+  response:
+    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
+        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
+        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
+        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
+        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
+        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
+        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
+        \   </slide>\n\n</slideshow>"}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['522']
+      Content-Type: [application/xml]
+      Date: ['Wed, 19 Sep 2018 08:49:06 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://httpbin.org/xml
+  response:
+    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
+        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
+        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
+        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
+        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
+        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
+        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
+        \   </slide>\n\n</slideshow>"}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['522']
+      Content-Type: [application/xml]
+      Date: ['Wed, 19 Sep 2018 08:49:06 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://httpbin.org/xml
+  response:
+    body: {string: "<?xml version='1.0' encoding='us-ascii'?>\n\n<!--  A SAMPLE set\
+        \ of slides  -->\n\n<slideshow \n    title=\"Sample Slide Show\"\n    date=\"\
+        Date of publication\"\n    author=\"Yours Truly\"\n    >\n\n    <!-- TITLE\
+        \ SLIDE -->\n    <slide type=\"all\">\n      <title>Wake up to WonderWidgets!</title>\n\
+        \    </slide>\n\n    <!-- OVERVIEW -->\n    <slide type=\"all\">\n       \
+        \ <title>Overview</title>\n        <item>Why <em>WonderWidgets</em> are great</item>\n\
+        \        <item/>\n        <item>Who <em>buys</em> WonderWidgets</item>\n \
+        \   </slide>\n\n</slideshow>"}
+    headers:
+      Access-Control-Allow-Credentials: ['true']
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['522']
+      Content-Type: [application/xml]
+      Date: ['Wed, 19 Sep 2018 08:49:07 GMT']
+      Server: [gunicorn/19.9.0]
+      Via: [1.1 vegur]
+    status: {code: 200, message: OK}
+version: 1

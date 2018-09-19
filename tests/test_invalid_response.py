@@ -38,13 +38,23 @@ class TestInvalidResponseData(object):
                 assert gp._data.get_current_season_and_week() is None
 
             with vcr.use_cassette('invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
+                assert gp._data.get_seasons() is None
+
+            # TODO: test get_team_games
+
+            with vcr.use_cassette('invalid_response_get_{0}_teams.yaml'.format(junk_type), match_on=['method', 'uri']):
+                # this has its own cassette because it will loop through all
+                # non-bye-weeks searching for an answer
+                assert gp._data.get_teams('2018') is None
+
+            with vcr.use_cassette('invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
                 assert gp._data.get_week_games('2017', 'reg', '12') is None
 
             with vcr.use_cassette('invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
-                assert gp._data.get_seasons() is None
+                assert gp._data.get_weeks('2018') is None
 
             with vcr.use_cassette('invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
-                assert gp._data.get_weeks('2018') is None
+                assert not gp._data._fetch_games_list('2018', 'reg', '8')
 
             with vcr.use_cassette('invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
                 assert not gp._video._get_diva_config(junk_url)
