@@ -12,17 +12,17 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_773389f7793a2a9dd4730e7f8d44aff185d6fcdfbc489144813876a251dc2ef9,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_7f0c8418fbc604e62020e3b2e1906157ac96b40febcf5999f3367b377e04dcbe,
+      pretty: {access_token: FAKE_TOKEN_63437e012313b24e923baf2e0491ebd3890a6cce142701184c2d6f7341d10b53,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_6d6211405115bdf96c4bd6f85463c4c61d925b21a2f47630b1b36de5f8ef19db,
         token_type: bearer}
-      string: '{"access_token": "FAKE_TOKEN_773389f7793a2a9dd4730e7f8d44aff185d6fcdfbc489144813876a251dc2ef9",
-        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_7f0c8418fbc604e62020e3b2e1906157ac96b40febcf5999f3367b377e04dcbe"}'
+      string: '{"access_token": "FAKE_TOKEN_63437e012313b24e923baf2e0491ebd3890a6cce142701184c2d6f7341d10b53",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_6d6211405115bdf96c4bd6f85463c4c61d925b21a2f47630b1b36de5f8ef19db"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Sun, 16 Sep 2018 14:55:52 GMT']
-      Expires: ['Sun, 16 Sep 2018 14:55:52 GMT']
+      Date: ['Fri, 28 Sep 2018 13:13:00 GMT']
+      Expires: ['Fri, 28 Sep 2018 13:13:00 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]

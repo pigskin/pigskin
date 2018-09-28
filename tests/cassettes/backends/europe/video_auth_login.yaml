@@ -12,17 +12,17 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_4580bda40377ff21c6e1ed62f5f6759a1a9cce9a9e883ef9d637d22aca96179a,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_cf60b538b58dabecf4a9c31f85fd729f786b5c9618c1f808a74cd8cf83eacfe1,
+      pretty: {access_token: FAKE_TOKEN_88e85b30596c1743d3bc999cea5ba9f3127f2031f12666da8aa976eadd7495f4,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_ea284eb55b554faf28b6fd171d82459d599644f7b26c07bb5569384bc38e5217,
         token_type: bearer}
-      string: '{"access_token": "FAKE_TOKEN_4580bda40377ff21c6e1ed62f5f6759a1a9cce9a9e883ef9d637d22aca96179a",
-        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_cf60b538b58dabecf4a9c31f85fd729f786b5c9618c1f808a74cd8cf83eacfe1"}'
+      string: '{"access_token": "FAKE_TOKEN_88e85b30596c1743d3bc999cea5ba9f3127f2031f12666da8aa976eadd7495f4",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_ea284eb55b554faf28b6fd171d82459d599644f7b26c07bb5569384bc38e5217"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 17 Sep 2018 15:01:57 GMT']
-      Expires: ['Mon, 17 Sep 2018 15:01:57 GMT']
+      Date: ['Sat, 29 Sep 2018 10:30:15 GMT']
+      Expires: ['Sat, 29 Sep 2018 10:30:15 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]

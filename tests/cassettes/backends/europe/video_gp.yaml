@@ -11,7 +11,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: website config, lastUpdate: '2018-09-17T14:56:09.735Z', title: '',
+        header: {id: website config, lastUpdate: '2018-09-29T10:26:17.958Z', title: '',
           version: '1.0'}
         modules:
           ADOBE_HEARTBEAT:
@@ -315,14 +315,14 @@ interactions:
               PARAMS: {allowfullscreen: 'true', allowscriptaccess: always, base: .,
                 bgcolor: '#000000', scale: noscale, wmode: direct}
               PLAYER_SIZE: {HEIGHT: 590, WIDTH: 990}
-              SETTINGS: {CoachFilm: 'https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/device',
-                Live24x7: 'https://www.nflgamepass.com/api/diva/diva/settings/24h7d/device',
-                LiveNoData: 'https://www.nflgamepass.com/api/diva/diva/settings/livenodata/device',
-                LiveWithData: 'https://www.nflgamepass.com/api/diva/diva/settings/livenfl/device',
-                NoAdsWithData: 'https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/device',
-                ReplayNoData: 'https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/device',
-                ReplayWithData: 'https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/device',
-                VodNoData: 'https://www.nflgamepass.com/api/diva/diva/settings/vod/device'}
+              SETTINGS: {CoachFilm: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/coachfilm/device',
+                Live24x7: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/24h7d/device',
+                LiveNoData: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/livenodata/device',
+                LiveWithData: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/livenfl/device',
+                NoAdsWithData: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/noadswithdatanfl/device',
+                ReplayNoData: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/replaynodata/device',
+                ReplayWithData: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/replaynfl/device',
+                VodNoData: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/vod/device'}
               SWF_PATH: https://www.nflgamepass.com/api/diva/swf/diva.swf
             HTML5:
               CONVIVA:
@@ -340,14 +340,14 @@ interactions:
               PLAYER_LOGO: /custom/nfl/img/gp-logo__white.svg
               PLAYER_PATH: https://www.nflgamepass.com/api/diva/html5/divaplayer.html
               RECOMMENDATIONS_IFRAME_URL: https://www.nflgamepass.com/api/diva/customoverlay/videolist/video_switch.html?useHashNav=false&templateName=fullVideo&mrssUrl=https://www.nflgamepass.com/api/en/content/v1/rss-feeds/{videoId}/video-raccomendation&errorText=There%20are%20no%20videos%20available%20at%20the%20moment.&pollingTime=00:02:00&ribbonBgColor=0xef082b&ribbonFgColor=0x000000&noDescription=true&mode=switch
-              SETTINGS: {CoachFilm: 'https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/html5',
-                Live24x7: 'https://www.nflgamepass.com/api/diva/diva/settings/24h7d/html5',
-                LiveNoData: 'https://www.nflgamepass.com/api/diva/diva/settings/livenodata/html5',
-                LiveWithData: 'https://www.nflgamepass.com/api/diva/diva/settings/livenfl/html5',
-                NoAdsWithData: 'https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/html5',
-                ReplayNoData: 'https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/html5',
-                ReplayWithData: 'https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/html5',
-                VodNoData: 'https://www.nflgamepass.com/api/diva/diva/settings/vod/html5'}
+              SETTINGS: {CoachFilm: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/coachfilm/html5',
+                Live24x7: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/24h7d/html5',
+                LiveNoData: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/livenodata/html5',
+                LiveWithData: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/livenfl/html5',
+                NoAdsWithData: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/noadswithdatanfl/html5',
+                ReplayNoData: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/replaynodata/html5',
+                ReplayWithData: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/replaynfl/html5',
+                VodNoData: 'https://www.nflgamepass.com/api/diva/diva/settings/v5/vod/html5'}
           FEATURES:
             AUTHENTICATION: {GIGYA_LOGIN_FLOW_IS_ENABLED: true}
             CURRENT_CONTEXT: {SEASON: 2018}
@@ -452,7 +452,7 @@ interactions:
             JAVASCRIPT_API_URL: https://apisandboxstatic.zuora.com/Resources/libs/hosted/1.3.0/zuora-min.js
             LOCALE: en_US
       string: '{"header": {"id": "website config", "version": "1.0", "title": "",
-        "lastUpdate": "2018-09-17T14:56:09.735Z"}, "modules": {"FEATURES": {"FUNNEL":
+        "lastUpdate": "2018-09-29T10:26:17.958Z"}, "modules": {"FEATURES": {"FUNNEL":
         {"IS_ENABLED": true}, "WATCH_WITH_REDZONE": {"IS_ENABLED": true}, "AUTHENTICATION":
         {"GIGYA_LOGIN_FLOW_IS_ENABLED": true}, "CURRENT_CONTEXT": {"SEASON": 2018}},
         "IMAGE_FORMATS": {"FALLBACK_BASE_URL": "fallbackimageprd-temporary", "DefaulList_16:9":
@@ -511,14 +511,14 @@ interactions:
         "https://www.nflgamepass.com/api/diva/swf/diva.swf", "MINIMUM_VERSION_NUMBER":
         20, "PLAYER_SIZE": {"WIDTH": 990, "HEIGHT": 590}, "PARAMS": {"scale": "noscale",
         "wmode": "direct", "bgcolor": "#000000", "allowfullscreen": "true", "allowscriptaccess":
-        "always", "base": "."}, "SETTINGS": {"LiveNoData": "https://www.nflgamepass.com/api/diva/diva/settings/livenodata/device",
-        "ReplayNoData": "https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/device",
-        "LiveWithData": "https://www.nflgamepass.com/api/diva/diva/settings/livenfl/device",
-        "ReplayWithData": "https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/device",
-        "NoAdsWithData": "https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/device",
-        "VodNoData": "https://www.nflgamepass.com/api/diva/diva/settings/vod/device",
-        "Live24x7": "https://www.nflgamepass.com/api/diva/diva/settings/24h7d/device",
-        "CoachFilm": "https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/device"}},
+        "always", "base": "."}, "SETTINGS": {"LiveNoData": "https://www.nflgamepass.com/api/diva/diva/settings/v5/livenodata/device",
+        "ReplayNoData": "https://www.nflgamepass.com/api/diva/diva/settings/v5/replaynodata/device",
+        "LiveWithData": "https://www.nflgamepass.com/api/diva/diva/settings/v5/livenfl/device",
+        "ReplayWithData": "https://www.nflgamepass.com/api/diva/diva/settings/v5/replaynfl/device",
+        "NoAdsWithData": "https://www.nflgamepass.com/api/diva/diva/settings/v5/noadswithdatanfl/device",
+        "VodNoData": "https://www.nflgamepass.com/api/diva/diva/settings/v5/vod/device",
+        "Live24x7": "https://www.nflgamepass.com/api/diva/diva/settings/v5/24h7d/device",
+        "CoachFilm": "https://www.nflgamepass.com/api/diva/diva/settings/v5/coachfilm/device"}},
         "HTML5": {"CONVIVA": {"IS_ENABLED": true, "ANALYTICS_JAVASCRIPT_API_URL":
         "https://www.nflgamepass.com/api/diva/scripts/conviva_integration.min.js",
         "DEFAULT_ANALYTICS_PAYLOAD": {"assetName": "{V.Category1}-{V.Title}", "applicationName":
@@ -528,14 +528,14 @@ interactions:
         "Diva-{V.ID}"}, "gatewayUrl": "", "log": false}}, "PLAYER_PATH": "https://www.nflgamepass.com/api/diva/html5/divaplayer.html",
         "PLAYER_LOGO": "/custom/nfl/img/gp-logo__white.svg", "RECOMMENDATIONS_IFRAME_URL":
         "https://www.nflgamepass.com/api/diva/customoverlay/videolist/video_switch.html?useHashNav=false&templateName=fullVideo&mrssUrl=https://www.nflgamepass.com/api/en/content/v1/rss-feeds/{videoId}/video-raccomendation&errorText=There%20are%20no%20videos%20available%20at%20the%20moment.&pollingTime=00:02:00&ribbonBgColor=0xef082b&ribbonFgColor=0x000000&noDescription=true&mode=switch",
-        "SETTINGS": {"LiveNoData": "https://www.nflgamepass.com/api/diva/diva/settings/livenodata/html5",
-        "ReplayNoData": "https://www.nflgamepass.com/api/diva/diva/settings/replaynodata/html5",
-        "LiveWithData": "https://www.nflgamepass.com/api/diva/diva/settings/livenfl/html5",
-        "ReplayWithData": "https://www.nflgamepass.com/api/diva/diva/settings/replaynfl/html5",
-        "NoAdsWithData": "https://www.nflgamepass.com/api/diva/diva/settings/noadswithdatanfl/html5",
-        "VodNoData": "https://www.nflgamepass.com/api/diva/diva/settings/vod/html5",
-        "Live24x7": "https://www.nflgamepass.com/api/diva/diva/settings/24h7d/html5",
-        "CoachFilm": "https://www.nflgamepass.com/api/diva/diva/settings/coachfilm/html5"}}},
+        "SETTINGS": {"LiveNoData": "https://www.nflgamepass.com/api/diva/diva/settings/v5/livenodata/html5",
+        "ReplayNoData": "https://www.nflgamepass.com/api/diva/diva/settings/v5/replaynodata/html5",
+        "LiveWithData": "https://www.nflgamepass.com/api/diva/diva/settings/v5/livenfl/html5",
+        "ReplayWithData": "https://www.nflgamepass.com/api/diva/diva/settings/v5/replaynfl/html5",
+        "NoAdsWithData": "https://www.nflgamepass.com/api/diva/diva/settings/v5/noadswithdatanfl/html5",
+        "VodNoData": "https://www.nflgamepass.com/api/diva/diva/settings/v5/vod/html5",
+        "Live24x7": "https://www.nflgamepass.com/api/diva/diva/settings/v5/24h7d/html5",
+        "CoachFilm": "https://www.nflgamepass.com/api/diva/diva/settings/v5/coachfilm/html5"}}},
         "REDIRECT_URIS": {"ERROR": "error", "LOGIN": "login"}, "ROUTES_DATA_PROVIDERS":
         {"home": "https://www.nflgamepass.com/api/en/content/v1/web/homepage", "login":
         "https://www.nflgamepass.com/api/en/content/v1/web/login", "games": "https://www.nflgamepass.com/api/en/content/v1/web/games/seasons",
@@ -731,14 +731,14 @@ interactions:
       Access-Control-Allow-Headers: [Content-Type]
       Access-Control-Allow-Methods: [GET]
       Access-Control-Allow-Origin: ['*']
-      Cache-Control: ['private, max-age=120']
+      Cache-Control: [max-age=120]
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Mon, 17 Sep 2018 15:00:55 GMT']
-      Expires: ['Mon, 17 Sep 2018 15:02:55 GMT']
+      Date: ['Sat, 29 Sep 2018 10:30:13 GMT']
+      Expires: ['Sat, 29 Sep 2018 10:32:13 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
-      content-length: ['24052']
+      content-length: ['24100']
     status: {code: 200, message: OK}
 version: 1

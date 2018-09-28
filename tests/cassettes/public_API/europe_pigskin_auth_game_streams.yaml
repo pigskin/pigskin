@@ -11,7 +11,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: Home Games, lastUpdate: '2018-09-16T14:51:35.578Z', title: '',
+        header: {id: Home Games, lastUpdate: '2018-09-28T13:13:01.454Z', title: '',
           version: '1'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: landing,
@@ -1008,18 +1008,11 @@ interactions:
             _links:
             - {href: null, ref: polling}
             - {href: 'https://www.nflgamepass.com/v1/web/games/seasons', ref: self}
-            currentContext: {currentSeason: '2018', currentSeasonType: reg, currentWeek: '2'}
+            currentContext: {currentSeason: '2018', currentSeasonType: reg, currentWeek: '4'}
           notLoggedTeaser:
-            _entityId: f2864ffe-249b-421f-ae4f-85dbdf22660a
-            _translationId: a015bf49-10dd-43e2-ac9c-923b31da4c8f
             contentDate: '2017-09-13T15:32:37.206Z'
-            context: null
-            createdBy: domenico ventura
-            featured: 0
             fields: {}
             headline: null
-            lastUpdatedBy: marco lorenzi
-            lastUpdatedDate: '2018-06-28T14:16:47.504Z'
             parts:
             - content: '<p><span style="font-size: 11pt;"></span></p>
 
@@ -1040,7 +1033,6 @@ interactions:
               type: markdown
             references: {}
             relations: []
-            selfUrl: https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/stories/all-2017-games
             slug: all-2017-games
             summary: '<p>Watch the season live or on demand, including the Playoffs
               and the Super Bowl.
@@ -1050,14 +1042,9 @@ interactions:
 
               '
             tags:
-            - _entityId: f236d880-0d40-4a4a-bf81-989f95f67818
-              _translationId: 399a7ed1-1b3d-4123-a42d-7b04764c3590
-              externalSourceName: null
-              externalSourceReference: {sourceId: null, sourceName: null}
-              extraData: null
+            - extraData: {}
               fields: {}
               neutralSlug: games-teaser
-              selfUrl: https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/tags/games-teaser
               slug: games-teaser
               title: games-teaser
               type: tag
@@ -1070,8 +1057,8 @@ interactions:
             title: ALL 2018 GAMES
             type: story
       string: '{"header": {"id": "Home Games", "version": "1", "title": "", "lastUpdate":
-        "2018-09-16T14:51:35.578Z"}, "modules": {"meta": {"currentContext": {"currentSeason":
-        "2018", "currentSeasonType": "reg", "currentWeek": "2"}, "_links": [{"ref":
+        "2018-09-28T13:13:01.454Z"}, "modules": {"meta": {"currentContext": {"currentSeason":
+        "2018", "currentSeasonType": "reg", "currentWeek": "4"}, "_links": [{"ref":
         "polling", "href": null}, {"ref": "self", "href": "https://www.nflgamepass.com/v1/web/games/seasons"}]},
         "mainMenu": {"seasonStructureList": [{"season": 2018, "seasonTypes": [{"seasonType":
         "pre", "displayText": {"seasonType": "SeasonTypeTranslationTag"}, "name":
@@ -1328,28 +1315,22 @@ interactions:
         "analytics": {"site_name": "gamepass international", "language": "en_US",
         "site_section": "games", "site_subsection": "games", "page_detail": "landing",
         "content_type": "index", "page_name": "gamepass international:games:games:landing"},
-        "notLoggedTeaser": {"type": "story", "_translationId": "a015bf49-10dd-43e2-ac9c-923b31da4c8f",
-        "_entityId": "f2864ffe-249b-421f-ae4f-85dbdf22660a", "selfUrl": "https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/stories/all-2017-games",
-        "slug": "all-2017-games", "title": "ALL 2018 GAMES", "tags": [{"type": "tag",
-        "_translationId": "399a7ed1-1b3d-4123-a42d-7b04764c3590", "_entityId": "f236d880-0d40-4a4a-bf81-989f95f67818",
-        "selfUrl": "https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/tags/games-teaser",
-        "title": "games-teaser", "slug": "games-teaser", "neutralSlug": "games-teaser",
-        "externalSourceName": null, "externalSourceReference": {"sourceId": null,
-        "sourceName": null}, "extraData": null, "fields": {}}], "relations": [], "references":
-        {}, "fields": {}, "createdBy": "domenico ventura", "lastUpdatedBy": "marco
-        lorenzi", "lastUpdatedDate": "2018-06-28T14:16:47.504Z", "contentDate": "2017-09-13T15:32:37.206Z",
-        "context": null, "featured": 0, "headline": null, "summary": "<p>Watch the
-        season live or on demand, including the Playoffs and the Super Bowl.\nStream
-        or download the full game or Game in 40'' (full game replays in 40 minutes).</p>\n",
-        "parts": [{"type": "markdown", "content": "<p><span style=\"font-size: 11pt;\"></span></p>\n\n<p><span
-        style=\"color: #555555;\">Watch the season live or on demand, including the
-        Playoffs and the Super Bowl.</span><span style=\"font-size: 10.5pt;color:
-        #555555;\"></span></p>\n\n<p><span style=\"color: #555555;\">Stream or download
-        the full game or Game in 40'' (full game replays in 40 minutes).</span></p>\n\n<p><span
-        style=\"font-size: 11pt;\"></span></p>\n", "contextualFields": {}}], "thumbnail":
-        {"title": "AP_Jaguars_Fournette", "templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/dmjm7chklcclokxvsezg",
+        "notLoggedTeaser": {"type": "story", "slug": "all-2017-games", "relations":
+        [], "references": {}, "fields": {}, "contentDate": "2017-09-13T15:32:37.206Z",
+        "headline": null, "summary": "<p>Watch the season live or on demand, including
+        the Playoffs and the Super Bowl.\nStream or download the full game or Game
+        in 40'' (full game replays in 40 minutes).</p>\n", "parts": [{"type": "markdown",
+        "content": "<p><span style=\"font-size: 11pt;\"></span></p>\n\n<p><span style=\"color:
+        #555555;\">Watch the season live or on demand, including the Playoffs and
+        the Super Bowl.</span><span style=\"font-size: 10.5pt;color: #555555;\"></span></p>\n\n<p><span
+        style=\"color: #555555;\">Stream or download the full game or Game in 40''
+        (full game replays in 40 minutes).</span></p>\n\n<p><span style=\"font-size:
+        11pt;\"></span></p>\n", "contextualFields": {}}], "thumbnail": {"title": "AP_Jaguars_Fournette",
+        "templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/dmjm7chklcclokxvsezg",
         "thumbnailUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_jpg/dmjm7chklcclokxvsezg",
-        "format": "jpg", "overriddenFormats": {}}}}}'
+        "format": "jpg", "overriddenFormats": {}}, "tags": [{"type": "tag", "title":
+        "games-teaser", "slug": "games-teaser", "neutralSlug": "games-teaser", "extraData":
+        {}, "fields": {}}], "title": "ALL 2018 GAMES"}}}'
     headers:
       Access-Control-Allow-Headers: [Content-Type]
       Access-Control-Allow-Methods: [GET]
@@ -1357,12 +1338,12 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sun, 16 Sep 2018 14:55:52 GMT']
-      Expires: ['Sun, 16 Sep 2018 14:57:52 GMT']
+      Date: ['Fri, 28 Sep 2018 13:13:01 GMT']
+      Expires: ['Fri, 28 Sep 2018 13:15:01 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
-      content-length: ['28192']
+      content-length: ['27557']
     status: {code: 200, message: OK}
 - request:
     body: null
@@ -1376,7 +1357,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: Home Games, lastUpdate: '2018-09-16T14:51:35.578Z', title: '',
+        header: {id: Home Games, lastUpdate: '2018-09-28T13:13:01.454Z', title: '',
           version: '1'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: landing,
@@ -2373,18 +2354,11 @@ interactions:
             _links:
             - {href: null, ref: polling}
             - {href: 'https://www.nflgamepass.com/v1/web/games/seasons', ref: self}
-            currentContext: {currentSeason: '2018', currentSeasonType: reg, currentWeek: '2'}
+            currentContext: {currentSeason: '2018', currentSeasonType: reg, currentWeek: '4'}
           notLoggedTeaser:
-            _entityId: f2864ffe-249b-421f-ae4f-85dbdf22660a
-            _translationId: a015bf49-10dd-43e2-ac9c-923b31da4c8f
             contentDate: '2017-09-13T15:32:37.206Z'
-            context: null
-            createdBy: domenico ventura
-            featured: 0
             fields: {}
             headline: null
-            lastUpdatedBy: marco lorenzi
-            lastUpdatedDate: '2018-06-28T14:16:47.504Z'
             parts:
             - content: '<p><span style="font-size: 11pt;"></span></p>
 
@@ -2405,7 +2379,6 @@ interactions:
               type: markdown
             references: {}
             relations: []
-            selfUrl: https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/stories/all-2017-games
             slug: all-2017-games
             summary: '<p>Watch the season live or on demand, including the Playoffs
               and the Super Bowl.
@@ -2415,14 +2388,9 @@ interactions:
 
               '
             tags:
-            - _entityId: f236d880-0d40-4a4a-bf81-989f95f67818
-              _translationId: 399a7ed1-1b3d-4123-a42d-7b04764c3590
-              externalSourceName: null
-              externalSourceReference: {sourceId: null, sourceName: null}
-              extraData: null
+            - extraData: {}
               fields: {}
               neutralSlug: games-teaser
-              selfUrl: https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/tags/games-teaser
               slug: games-teaser
               title: games-teaser
               type: tag
@@ -2435,8 +2403,8 @@ interactions:
             title: ALL 2018 GAMES
             type: story
       string: '{"header": {"id": "Home Games", "version": "1", "title": "", "lastUpdate":
-        "2018-09-16T14:51:35.578Z"}, "modules": {"meta": {"currentContext": {"currentSeason":
-        "2018", "currentSeasonType": "reg", "currentWeek": "2"}, "_links": [{"ref":
+        "2018-09-28T13:13:01.454Z"}, "modules": {"meta": {"currentContext": {"currentSeason":
+        "2018", "currentSeasonType": "reg", "currentWeek": "4"}, "_links": [{"ref":
         "polling", "href": null}, {"ref": "self", "href": "https://www.nflgamepass.com/v1/web/games/seasons"}]},
         "mainMenu": {"seasonStructureList": [{"season": 2018, "seasonTypes": [{"seasonType":
         "pre", "displayText": {"seasonType": "SeasonTypeTranslationTag"}, "name":
@@ -2693,28 +2661,22 @@ interactions:
         "analytics": {"site_name": "gamepass international", "language": "en_US",
         "site_section": "games", "site_subsection": "games", "page_detail": "landing",
         "content_type": "index", "page_name": "gamepass international:games:games:landing"},
-        "notLoggedTeaser": {"type": "story", "_translationId": "a015bf49-10dd-43e2-ac9c-923b31da4c8f",
-        "_entityId": "f2864ffe-249b-421f-ae4f-85dbdf22660a", "selfUrl": "https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/stories/all-2017-games",
-        "slug": "all-2017-games", "title": "ALL 2018 GAMES", "tags": [{"type": "tag",
-        "_translationId": "399a7ed1-1b3d-4123-a42d-7b04764c3590", "_entityId": "f236d880-0d40-4a4a-bf81-989f95f67818",
-        "selfUrl": "https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/tags/games-teaser",
-        "title": "games-teaser", "slug": "games-teaser", "neutralSlug": "games-teaser",
-        "externalSourceName": null, "externalSourceReference": {"sourceId": null,
-        "sourceName": null}, "extraData": null, "fields": {}}], "relations": [], "references":
-        {}, "fields": {}, "createdBy": "domenico ventura", "lastUpdatedBy": "marco
-        lorenzi", "lastUpdatedDate": "2018-06-28T14:16:47.504Z", "contentDate": "2017-09-13T15:32:37.206Z",
-        "context": null, "featured": 0, "headline": null, "summary": "<p>Watch the
-        season live or on demand, including the Playoffs and the Super Bowl.\nStream
-        or download the full game or Game in 40'' (full game replays in 40 minutes).</p>\n",
-        "parts": [{"type": "markdown", "content": "<p><span style=\"font-size: 11pt;\"></span></p>\n\n<p><span
-        style=\"color: #555555;\">Watch the season live or on demand, including the
-        Playoffs and the Super Bowl.</span><span style=\"font-size: 10.5pt;color:
-        #555555;\"></span></p>\n\n<p><span style=\"color: #555555;\">Stream or download
-        the full game or Game in 40'' (full game replays in 40 minutes).</span></p>\n\n<p><span
-        style=\"font-size: 11pt;\"></span></p>\n", "contextualFields": {}}], "thumbnail":
-        {"title": "AP_Jaguars_Fournette", "templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/dmjm7chklcclokxvsezg",
+        "notLoggedTeaser": {"type": "story", "slug": "all-2017-games", "relations":
+        [], "references": {}, "fields": {}, "contentDate": "2017-09-13T15:32:37.206Z",
+        "headline": null, "summary": "<p>Watch the season live or on demand, including
+        the Playoffs and the Super Bowl.\nStream or download the full game or Game
+        in 40'' (full game replays in 40 minutes).</p>\n", "parts": [{"type": "markdown",
+        "content": "<p><span style=\"font-size: 11pt;\"></span></p>\n\n<p><span style=\"color:
+        #555555;\">Watch the season live or on demand, including the Playoffs and
+        the Super Bowl.</span><span style=\"font-size: 10.5pt;color: #555555;\"></span></p>\n\n<p><span
+        style=\"color: #555555;\">Stream or download the full game or Game in 40''
+        (full game replays in 40 minutes).</span></p>\n\n<p><span style=\"font-size:
+        11pt;\"></span></p>\n", "contextualFields": {}}], "thumbnail": {"title": "AP_Jaguars_Fournette",
+        "templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/dmjm7chklcclokxvsezg",
         "thumbnailUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_jpg/dmjm7chklcclokxvsezg",
-        "format": "jpg", "overriddenFormats": {}}}}}'
+        "format": "jpg", "overriddenFormats": {}}, "tags": [{"type": "tag", "title":
+        "games-teaser", "slug": "games-teaser", "neutralSlug": "games-teaser", "extraData":
+        {}, "fields": {}}], "title": "ALL 2018 GAMES"}}}'
     headers:
       Access-Control-Allow-Headers: [Content-Type]
       Access-Control-Allow-Methods: [GET]
@@ -2722,12 +2684,12 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sun, 16 Sep 2018 14:55:52 GMT']
-      Expires: ['Sun, 16 Sep 2018 14:57:52 GMT']
+      Date: ['Fri, 28 Sep 2018 13:13:01 GMT']
+      Expires: ['Fri, 28 Sep 2018 13:15:01 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
-      content-length: ['28192']
+      content-length: ['27557']
     status: {code: 200, message: OK}
 - request:
     body: null
@@ -2741,7 +2703,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: game list, lastUpdate: '2018-09-16T14:55:53.474Z', title: '',
+        header: {id: game list, lastUpdate: '2018-09-28T13:13:02.189Z', title: '',
           version: '1.0'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: '2017:reg:Week
@@ -4066,7 +4028,7 @@ interactions:
             content: []
             displayText: {subTitle: game-list-subtitle, title: game-list-title}
       string: '{"header": {"id": "game list", "version": "1.0", "title": "", "lastUpdate":
-        "2018-09-16T14:55:53.474Z"}, "modules": {"weekLiveGames": {"displayText":
+        "2018-09-28T13:13:02.189Z"}, "modules": {"weekLiveGames": {"displayText":
         {"title": "game-list-title", "subTitle": "game-list-subtitle"}, "content":
         []}, "weekScheduledGames": {"displayText": {"title": "game-list-title", "subTitle":
         "game-list-subtitle"}, "content": []}, "weekCompletedGames": {"displayText":
@@ -4522,15 +4484,15 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sun, 16 Sep 2018 14:55:53 GMT']
-      Expires: ['Sun, 16 Sep 2018 14:57:53 GMT']
+      Date: ['Fri, 28 Sep 2018 13:13:02 GMT']
+      Expires: ['Fri, 28 Sep 2018 13:15:02 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
       content-length: ['35634']
     status: {code: 200, message: OK}
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_1d96e1c12e789d1a97f3a6c6046f6af2b7119ce0c02b5c7f4bb0862e4fc231c7&grant_type=refresh_token
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_219b20b8ede46e02a6baa0c51fd5365d0b1417c78c8e72677ec4581680963a3a&grant_type=refresh_token
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -4542,17 +4504,17 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_6c652cc6bb6512e89f0fa20e35ce5cf22e799583f3c6cda9e6ec44680b8c345d,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_34a288b46bff8b418ccd9cfd7dd478ca1b82e36cb183eafeb7f2954a3cc40591,
+      pretty: {access_token: FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_5154bee6cc19fedf6b1107ccb3a0a63f3f6c767404979ece8b70f453d6501e0f,
         token_type: bearer}
-      string: '{"access_token": "FAKE_TOKEN_6c652cc6bb6512e89f0fa20e35ce5cf22e799583f3c6cda9e6ec44680b8c345d",
-        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_34a288b46bff8b418ccd9cfd7dd478ca1b82e36cb183eafeb7f2954a3cc40591"}'
+      string: '{"access_token": "FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_5154bee6cc19fedf6b1107ccb3a0a63f3f6c767404979ece8b70f453d6501e0f"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Sun, 16 Sep 2018 14:55:53 GMT']
-      Expires: ['Sun, 16 Sep 2018 14:55:53 GMT']
+      Date: ['Fri, 28 Sep 2018 13:13:03 GMT']
+      Expires: ['Fri, 28 Sep 2018 13:13:03 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -4573,11 +4535,24 @@ interactions:
     body: {string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<settings version=\"\
         31_07_2018_0003_default_html5_prod\">\r\n  <advertisement enabled=\"false\"\
         \ />\r\n  <assets>\r\n    <parameter name=\"videoThumbnailUrl\" value=\"https://www.nflgamepass.com/api/images/image/private/t_16-9_1920/twwekbzhieranl5r9qr6\"\
-        \ />\r\n  </assets>\r\n  <logging enabled=\"false\" />\r\n  <behaviour>\r\n\
-        \    <parameter name=\"isCommentaryEnabled\" value=\"false\" />\r\n    <parameter\
-        \ name=\"isScoreEnabled\" value=\"false\" />\r\n    <parameter name=\"isTitleEnabled\"\
-        \ value=\"false\" />\r\n  </behaviour>\r\n  <translations>\r\n    <parameter\
-        \ name=\"vocabularySource\" value=\"https://www.nflgamepass.com/api/diva/vocabulary/vocabulary-en-GB.xml\"\
+        \ />\r\n  </assets>\r\n  <behaviour>\r\n    <parameter name=\"isCommentaryEnabled\"\
+        \ value=\"false\" />\r\n    <parameter name=\"isScoreEnabled\" value=\"false\"\
+        \ />\r\n    <parameter name=\"isTitleEnabled\" value=\"false\" />\r\n  </behaviour>\r\
+        \n  <entitlementCheck encoded=\"false\" enabled=\"true\">\r\n    <parameter\
+        \ name=\"processingUrlCallPath\" value=\"https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open\"\
+        \ />\r\n    <parameter name=\"heartBeatCallPath\" value=\"https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/heartbeat\"\
+        \ />\r\n    <parameter name=\"userCookieName\" value=\"\" />\r\n    <!--to\
+        \ insert the agreeded name -->\r\n    <parameter name=\"callback\" value=\"\
+        \" />\r\n    <parameter name=\"heartbeatInterval\" value=\"00:03:00\" />\r\
+        \n    <parameter name=\"secretTxt\" value=\"\" />\r\n    <parameter name=\"\
+        other\" value=\"{Run.SessionID}|{Settings.cs1}|{Settings.cs2}|{Settings.cs3}|{Settings.cs4}|{Settings.cs5}\"\
+        \ />\r\n  </entitlementCheck>\r\n  <logging enabled=\"false\" />\r\n  <pushEngine\
+        \ enabled=\"false\" />\r\n  <tracking enabled=\"true\">\r\n    <items>\r\n\
+        \      <item>\r\n        <parameter name=\"type\" value=\"TagManager-html5\"\
+        \ />\r\n        <parameter name=\"setting1\" value=\"GTM-MFDKV77\" />\r\n\
+        \        <parameter name=\"setting2\" value=\"https://www.nflgamepass.com/api/diva/gtm/tracking_configuration_40.json\"\
+        \ />\r\n      </item>\r\n    </items>\r\n  </tracking>\r\n  <translations>\r\
+        \n    <parameter name=\"vocabularySource\" value=\"https://www.nflgamepass.com/api/diva/vocabulary/vocabulary-en-GB.xml\"\
         \ />\r\n  </translations>\r\n  <video>\r\n    <!--<parameter name = \"allowJSVideoUrlStage\"\
         \ value = \"false\"/>-->\r\n    <!--<parameter name = \"allowPathResolver\"\
         \ value = \"false\"/>-->\r\n    <!--<parameter name = \"baseExpectedVideoDuration\"\
@@ -4595,29 +4570,15 @@ interactions:
         \ }\"/>-->\r\n    <!--<parameter name = \"videoPlatformsPriority\" value=\"\
         HLS,dash,chromecast-v2\" />-->\r\n    <!--<parameter name = \"androidForceSurfaceView\"\
         \ value=\"false\" />-->\r\n  </video>\r\n  <videoData enabled=\"true\">\r\n\
-        \    <parameter name=\"videoDataPath\" value=\"https://www.nflgamepass.com/api/en/content/v1/diva/{V.ID}\"\
-        \ />\r\n    <parameter name=\"pollingInterval\" value=\"00:05:00\" />\r\n\
-        \  </videoData>\r\n  <entitlementCheck encoded=\"false\" enabled=\"true\"\
-        >\r\n    <parameter name=\"processingUrlCallPath\" value=\"https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open\"\
-        \ />\r\n    <parameter name=\"heartBeatCallPath\" value=\"https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/heartbeat\"\
-        \ />\r\n    <parameter name=\"userCookieName\" value=\"\" />\r\n    <!--to\
-        \ insert the agreeded name -->\r\n    <parameter name=\"callback\" value=\"\
-        \" />\r\n    <parameter name=\"heartbeatInterval\" value=\"00:03:00\" />\r\
-        \n    <parameter name=\"secretTxt\" value=\"\" />\r\n    <parameter name=\"\
-        other\" value=\"{Run.SessionID}|{Settings.cs1}|{Settings.cs2}|{Settings.cs3}|{Settings.cs4}|{Settings.cs5}\"\
-        \ />\r\n  </entitlementCheck>\r\n  <pushEngine enabled=\"false\" />\r\n  <tracking\
-        \ enabled=\"true\">\r\n    <items>\r\n      <item>\r\n        <parameter name=\"\
-        type\" value=\"TagManager-html5\" />\r\n        <parameter name=\"setting1\"\
-        \ value=\"GTM-MFDKV77\" />\r\n        <parameter name=\"setting2\" value=\"\
-        https://www.nflgamepass.com/api/diva/gtm/tracking_configuration_40.json\"\
-        \ />\r\n      </item>\r\n    </items>\r\n  </tracking>\r\n</settings>\r\n\
-        <!--DivaS:/p5sndqN19g7MJT2bpk7Xx7gSCw=-->"}
+        \    <parameter name=\"videoDataPath\" value=\"https://www.nflgamepass.com/api/en/content/v5/diva/{V.ID}\"\
+        \ />\r\n    <parameter name=\"pollingInterval\" value=\"00:59:59\" />\r\n\
+        \  </videoData>\r\n</settings>\r\n<!--DivaS:9UE/h81eV8CrutBc/K5iFhYtZmg=-->"}
     headers:
       Cache-Control: [max-age=300]
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Sun, 16 Sep 2018 14:55:53 GMT']
-      Expires: ['Sun, 16 Sep 2018 15:00:53 GMT']
+      Date: ['Fri, 28 Sep 2018 13:13:03 GMT']
+      Expires: ['Fri, 28 Sep 2018 13:18:03 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/8.5]
       Vary: [Accept-Encoding]
@@ -4633,7 +4594,7 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.19.1]
     method: GET
-    uri: https://www.nflgamepass.com/api/en/content/v1/diva/56cf4c1b-51c1-4472-b4c3-4a9196e24917
+    uri: https://www.nflgamepass.com/api/en/content/v5/diva/56cf4c1b-51c1-4472-b4c3-4a9196e24917
   response:
     body: {string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<video>\r\n  <assetId>56cf4c1b-51c1-4472-b4c3-4a9196e24917</assetId>\r\
         \n  <videoId>56cf4c1b-51c1-4472-b4c3-4a9196e24917</videoId>\r\n  <alternateId>aadf2a06-3671-4e4f-8a82-e49f1191fe48</alternateId>\r\
@@ -4642,12 +4603,12 @@ interactions:
         \n  <thumbnailUrl><![CDATA[]]></thumbnailUrl>\r\n  <assetState>3</assetState>\r\
         \n  <isMultistream>false</isMultistream>\r\n  <events>\r\n    <event id=\"\
         2017102907\" start=\"\" end=\"\" />\r\n  </events>\r\n  <videoSources>\r\n\
-        \    <videoSource format=\"HLS\" name=\"HLS\" offset=\"0:00:00\">\r\n    \
-        \  <dvrType>full</dvrType>\r\n      <uri><![CDATA[https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=hls)]]></uri>\r\
-        \n      <drm />\r\n    </videoSource>\r\n    <videoSource format=\"ChromeCast\"\
+        \    <videoSource format=\"HLS-V3\" name=\"HLS\" offset=\"0:00:00\">\r\n \
+        \     <dvrType>full</dvrType>\r\n      <uri><![CDATA[https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=hls)]]></uri>\r\
+        \n      <drm />\r\n    </videoSource>\r\n    <videoSource format=\"HLS-V3\"\
         \ name=\"ChromeCast\" offset=\"0:00:00\">\r\n      <dvrType>full</dvrType>\r\
         \n      <uri><![CDATA[https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)]]></uri>\r\
-        \n      <drm />\r\n    </videoSource>\r\n    <videoSource format=\"ConnectTV\"\
+        \n      <drm />\r\n    </videoSource>\r\n    <videoSource format=\"HLS-V3\"\
         \ name=\"ConnectTV\" offset=\"0:00:00\">\r\n      <dvrType>full</dvrType>\r\
         \n      <uri><![CDATA[https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)]]></uri>\r\
         \n      <drm />\r\n    </videoSource>\r\n    <videoSource format=\"IIS\" name=\"\
@@ -4669,18 +4630,18 @@ interactions:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Sun, 16 Sep 2018 14:55:54 GMT']
-      Expires: ['Sun, 16 Sep 2018 14:55:54 GMT']
+      Date: ['Fri, 28 Sep 2018 13:13:03 GMT']
+      Expires: ['Fri, 28 Sep 2018 13:13:03 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
-      content-length: ['2672']
+      content-length: ['2668']
     status: {code: 200, message: OK}
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "56cf4c1b-51c1-4472-b4c3-4a9196e24917",
       "VideoSource": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=hls)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "6d73d368-6679-4000-befd-040b853d4a1c|FAKE_TOKEN_6c652cc6bb6512e89f0fa20e35ce5cf22e799583f3c6cda9e6ec44680b8c345d|web|FAKE_TOKEN_6c652cc6bb6512e89f0fa20e35ce5cf22e799583f3c6cda9e6ec44680b8c345d|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "d0868e37-df1c-4b00-a751-b41d50a1d607|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|web|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -4691,18 +4652,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1537109664~exp=1537109844~acl=/*~hmac=5eed414c845d9c002f27b00df66366ac0ba2e6a3ac62fdcd763f4fab4f8fb5a6&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 6B6E0F6A861CEB85BFC60DB8F2B472034184E16A}
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 0B5C4CB9C14FB26DC902C0B45CE8A86251B9312A}
       string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
-        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1537109664~exp=1537109844~acl=/*~hmac=5eed414c845d9c002f27b00df66366ac0ba2e6a3ac62fdcd763f4fab4f8fb5a6&hdcore=2.11.3",
-        "HeartBeatTime": 0, "Signature": "6B6E0F6A861CEB85BFC60DB8F2B472034184E16A",
+        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "0B5C4CB9C14FB26DC902C0B45CE8A86251B9312A",
         "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sun, 16 Sep 2018 14:55:54 GMT']
-      Expires: ['Sun, 16 Sep 2018 14:55:54 GMT']
+      Date: ['Fri, 28 Sep 2018 13:13:04 GMT']
+      Expires: ['Fri, 28 Sep 2018 13:13:04 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -4713,7 +4674,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "56cf4c1b-51c1-4472-b4c3-4a9196e24917",
       "VideoSource": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "5006f729-3d14-43f1-8a16-124569dc981d|FAKE_TOKEN_6c652cc6bb6512e89f0fa20e35ce5cf22e799583f3c6cda9e6ec44680b8c345d|web|FAKE_TOKEN_6c652cc6bb6512e89f0fa20e35ce5cf22e799583f3c6cda9e6ec44680b8c345d|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "aca654e8-6f6e-494b-ab2f-2ecb9b897146|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|web|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -4724,18 +4685,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1537109664~exp=1537109844~acl=/*~hmac=5eed414c845d9c002f27b00df66366ac0ba2e6a3ac62fdcd763f4fab4f8fb5a6&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 7028C91B60E6D323A82E5C3BE1A617F7A55CC8D2}
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 3F49305A0E51478A7EFDF9FD827CC5C2AE25A865}
       string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
-        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1537109664~exp=1537109844~acl=/*~hmac=5eed414c845d9c002f27b00df66366ac0ba2e6a3ac62fdcd763f4fab4f8fb5a6&hdcore=2.11.3",
-        "HeartBeatTime": 0, "Signature": "7028C91B60E6D323A82E5C3BE1A617F7A55CC8D2",
+        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "3F49305A0E51478A7EFDF9FD827CC5C2AE25A865",
         "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sun, 16 Sep 2018 14:55:54 GMT']
-      Expires: ['Sun, 16 Sep 2018 14:55:54 GMT']
+      Date: ['Fri, 28 Sep 2018 13:13:04 GMT']
+      Expires: ['Fri, 28 Sep 2018 13:13:04 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -4746,7 +4707,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "56cf4c1b-51c1-4472-b4c3-4a9196e24917",
       "VideoSource": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "f177e93f-66e7-4679-aec1-fc2e79985502|FAKE_TOKEN_6c652cc6bb6512e89f0fa20e35ce5cf22e799583f3c6cda9e6ec44680b8c345d|web|FAKE_TOKEN_6c652cc6bb6512e89f0fa20e35ce5cf22e799583f3c6cda9e6ec44680b8c345d|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "f719bf8b-ce81-4a1a-b337-6f3ccc27f57c|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|web|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -4757,18 +4718,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1537109664~exp=1537109844~acl=/*~hmac=5eed414c845d9c002f27b00df66366ac0ba2e6a3ac62fdcd763f4fab4f8fb5a6&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: CAFF572BC4C11FA88C5BF173C5E5EE3724A65C58}
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 42F63C854AA9C28C581AE43B6F9850CDC2987D95}
       string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
-        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1537109664~exp=1537109844~acl=/*~hmac=5eed414c845d9c002f27b00df66366ac0ba2e6a3ac62fdcd763f4fab4f8fb5a6&hdcore=2.11.3",
-        "HeartBeatTime": 0, "Signature": "CAFF572BC4C11FA88C5BF173C5E5EE3724A65C58",
+        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "42F63C854AA9C28C581AE43B6F9850CDC2987D95",
         "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sun, 16 Sep 2018 14:55:54 GMT']
-      Expires: ['Sun, 16 Sep 2018 14:55:54 GMT']
+      Date: ['Fri, 28 Sep 2018 13:13:04 GMT']
+      Expires: ['Fri, 28 Sep 2018 13:13:04 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -4779,7 +4740,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "56cf4c1b-51c1-4472-b4c3-4a9196e24917",
       "VideoSource": "https://vod-s-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(filter=iis)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "ee49da76-4082-421e-98d0-a653cae1a7ab|FAKE_TOKEN_6c652cc6bb6512e89f0fa20e35ce5cf22e799583f3c6cda9e6ec44680b8c345d|web|FAKE_TOKEN_6c652cc6bb6512e89f0fa20e35ce5cf22e799583f3c6cda9e6ec44680b8c345d|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "c89dbe90-7f57-4511-84ba-92b25a57e1c2|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|web|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -4790,18 +4751,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-s-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(filter=iis)?hdnea=st=1537109664~exp=1537109844~acl=/*~hmac=5eed414c845d9c002f27b00df66366ac0ba2e6a3ac62fdcd763f4fab4f8fb5a6&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 70CE16BA3B706DE73053DF825E04A72B1861B636}
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-s-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(filter=iis)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 27B9B79475A7607C8DB60F60991BFFD40099BB3D}
       string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
-        "ContentUrl": "https://vod-s-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(filter=iis)?hdnea=st=1537109664~exp=1537109844~acl=/*~hmac=5eed414c845d9c002f27b00df66366ac0ba2e6a3ac62fdcd763f4fab4f8fb5a6&hdcore=2.11.3",
-        "HeartBeatTime": 0, "Signature": "70CE16BA3B706DE73053DF825E04A72B1861B636",
+        "ContentUrl": "https://vod-s-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(filter=iis)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "27B9B79475A7607C8DB60F60991BFFD40099BB3D",
         "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sun, 16 Sep 2018 14:55:54 GMT']
-      Expires: ['Sun, 16 Sep 2018 14:55:54 GMT']
+      Date: ['Fri, 28 Sep 2018 13:13:04 GMT']
+      Expires: ['Fri, 28 Sep 2018 13:13:04 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
