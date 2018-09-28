@@ -259,7 +259,7 @@ class TestPigskin(object):
 @pytest.mark.incremental
 class TestPigskinAuth(object):
     """These require authentication to Game Pass"""
-    @vcr.use_cassette('public_API/europe_pigskin_login.yaml')
+    @vcr.use_cassette('public_API/europe_pigskin_auth_login.yaml')
     def test_login(self, gp):
         assert gp.login(pytest.gp_username, pytest.gp_password, force=True)
 
@@ -268,12 +268,12 @@ class TestPigskinAuth(object):
         assert gp._store.refresh_token
 
 
-    @vcr.use_cassette('public_API/europe_pigskin_check_for_subscription.yaml')
+    @vcr.use_cassette('public_API/europe_pigskin_auth_check_for_subscription.yaml')
     def test_check_for_subscription(self, gp):
         assert gp.check_for_subscription()
 
 
-    @vcr.use_cassette('public_API/europe_pigskin_refresh_tokens.yaml')
+    @vcr.use_cassette('public_API/europe_pigskin_auth_refresh_tokens.yaml')
     def test_refresh_tokens(self, gp):
         # store the initial tokens
         first_access_token = gp._store.access_token
@@ -291,7 +291,7 @@ class TestPigskinAuth(object):
         assert first_refresh_token != gp._store.refresh_token
 
 
-    @vcr.use_cassette('public_API/europe_pigskin_game_streams.yaml')
+    @vcr.use_cassette('public_API/europe_pigskin_auth_game_streams.yaml')
     def test_game_streams(self, gp):
         streams = gp.seasons['2017'].weeks['reg']['8'].games['Panthers@Buccaneers'].versions['full'].streams
 
@@ -307,8 +307,8 @@ class TestPigskinAuth(object):
 @pytest.mark.incremental
 class TestPigskinAuthFail(object):
     """These require authentication to Game Pass, and should fail without it."""
-    @vcr.use_cassette('public_API/europe_pigskin_login_failure.yaml')
-    def test_login_failure(self, gp):
+    @vcr.use_cassette('public_API/europe_pigskin_bad_auth_login.yaml')
+    def test_bad_auth_login(self, gp):
         assert not gp.login(username='I_do_not_exist', password='wrong', force=True)
 
         # make sure tokens are not set
@@ -316,13 +316,13 @@ class TestPigskinAuthFail(object):
         assert not gp._store.refresh_token
 
 
-    @vcr.use_cassette('public_API/europe_pigskin_check_for_subscription_failure.yaml')
-    def test_check_for_subscription(self, gp):
+    @vcr.use_cassette('public_API/europe_pigskin_bad_auth_check_for_subscription.yaml')
+    def test_bad_auth_check_for_subscription(self, gp):
         assert not gp.check_for_subscription()
 
 
-    @vcr.use_cassette('public_API/europe_pigskin_refresh_tokens_failure.yaml')
-    def test_refresh_tokens_no_login(self, gp):
+    @vcr.use_cassette('public_API/europe_pigskin_bad_auth_refresh_tokens.yaml')
+    def test_bad_auth_refresh_tokens(self, gp):
         # refresh the tokens
         assert not gp.refresh_tokens()
 

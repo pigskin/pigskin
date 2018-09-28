@@ -28,7 +28,7 @@ class TestEuropeVideo(object):
 @pytest.mark.incremental
 class TestEuropeVideoAuth(object):
     """These require authentication to Game Pass"""
-    @vcr.use_cassette('backends/europe/video_login.yaml')
+    @vcr.use_cassette('backends/europe/video_auth_login.yaml')
     def test_login(self, gp):
         assert gp.login(pytest.gp_username, pytest.gp_password, force=True)
 
