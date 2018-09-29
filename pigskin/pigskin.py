@@ -506,6 +506,8 @@ class season(object):
             self.logger.debug('``teams`` not set. attempting to populate')
             teams_dict = self._data.get_teams(self._season)
 
+            teams_dict = OrderedDict((t, team(self, teams_dict[t])) for t in teams_dict)
+
             self._teams = teams_dict
             self.logger.debug('``teams`` ready')
 

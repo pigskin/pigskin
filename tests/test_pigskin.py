@@ -62,22 +62,22 @@ class TestPigskin(object):
 
             # teams move; make sure the Rams' info is correct
             if season == '2015':
-                assert teams['Rams']['city'] == 'St. Louis'
-                assert teams['Rams']['abbr'] == 'STL'
+                assert teams['Rams'].city == 'St. Louis'
+                assert teams['Rams'].abbr == 'STL'
             else:
-                assert teams['Rams']['city'] == 'Los Angeles'
-                assert teams['Rams']['abbr'] == 'LA'
+                assert teams['Rams'].city == 'Los Angeles'
+                assert teams['Rams'].abbr == 'LA'
 
             # The keys and names should always match
             for t in teams:
-                assert t == teams[t]['name']
+                assert t == teams[t].name
                 # TODO: check that they are alphabeticized
                 # TODO: test that all teams are of type team
 
             # check some other random info
-            assert teams['Packers']['city'] == 'Green Bay'
-            assert teams['Eagles']['abbr'] == 'PHI'
-            assert teams['Jets']['abbr'] == 'NYJ'
+            assert teams['Packers'].city == 'Green Bay'
+            assert teams['Eagles'].abbr == 'PHI'
+            assert teams['Jets'].abbr == 'NYJ'
 
 
     @vcr.use_cassette('public_API/europe_pigskin_weeks.yaml')
