@@ -32,7 +32,8 @@ class TestInvalidResponseData(object):
 
             set_all_config_urls(gp, junk_url)
 
-            #assert gp._auth.check_for_subscription() is False
+            with vcr.use_cassette('backends/europe/invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
+                assert gp._auth.get_subscription() is None
 
             with vcr.use_cassette('backends/europe/invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
                 assert gp._data.get_current_season_and_week() is None

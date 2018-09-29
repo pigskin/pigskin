@@ -268,9 +268,10 @@ class TestPigskinAuth(object):
         assert gp._store.refresh_token
 
 
-    @vcr.use_cassette('public_API/europe_pigskin_auth_check_for_subscription.yaml')
-    def test_check_for_subscription(self, gp):
-        assert gp.check_for_subscription()
+    @vcr.use_cassette('public_API/europe_pigskin_auth_subscription.yaml')
+    def test_subscription(self, gp):
+        assert gp.subscription
+        isinstance(gp.subscription, basestring)
 
 
     @vcr.use_cassette('public_API/europe_pigskin_auth_refresh_tokens.yaml')
@@ -316,9 +317,9 @@ class TestPigskinAuthFail(object):
         assert not gp._store.refresh_token
 
 
-    @vcr.use_cassette('public_API/europe_pigskin_bad_auth_check_for_subscription.yaml')
-    def test_bad_auth_check_for_subscription(self, gp):
-        assert not gp.check_for_subscription()
+    @vcr.use_cassette('public_API/europe_pigskin_bad_auth_subscription.yaml')
+    def test_bad_auth_subscription(self, gp):
+        assert gp.subscription is None
 
 
     @vcr.use_cassette('public_API/europe_pigskin_bad_auth_refresh_tokens.yaml')

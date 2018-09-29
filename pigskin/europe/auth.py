@@ -8,8 +8,8 @@ class auth(object):
         self.logger = logging.getLogger(__name__)
 
 
-    def check_for_subscription(self):
-        """Check if the user has a valid subscription."""
+    def get_subscription(self):
+        """Get the subscription (if any) of the user."""
         url = self._store.gp_config['modules']['API']['USER_ACCOUNT']
         headers = {'Authorization': 'Bearer {0}'.format(self._store.access_token)}
 
@@ -18,26 +18,25 @@ class auth(object):
             #self._log_request(r)
             data = r.json()
         except ValueError:
-            self.logger.error('check_for_subscription: unable to parse server response')
-            return False
+            self.logger.error('get_subscription: unable to parse server response')
+            return None
 
         try:
-            assert data['subscriptions']
-        except (KeyError, AssertionError):
+            # TODO: if multiple subscriptions are found, return a list of them,
+            # though I have no idea if this actually happens in practice.
+            return data['subscriptions'][0]['productTag']
+        except KeyError:
             self.logger.error('No active NFL Game Pass Europe subscription was found.')
-            return False
-
-        return True
+            return None
 
 
     def login(self, username, password, force=False):
         """Login to NFL Game Pass Europe."""
         # if the user already has access, just skip the entire auth process
         if not force:
-            if self.check_for_subscription():
+            if self._store.subscription:
                 self.logger.debug('No need to login; the user already has access.')
                 return True
-
 
         for auth in [self._gp_auth, self._gigya_auth]:
             self.logger.debug('Trying {0} authentication.'.format(auth.__name__))

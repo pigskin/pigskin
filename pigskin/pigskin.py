@@ -44,6 +44,10 @@ class pigskin(object):
         self._store.s.proxies['https'] = proxy_url
         self._store.gp_config = self.populate_config()
 
+        self._store.access_token = None
+        self._store.refresh_token = None
+        self._store.subscription = None
+
         self._seasons = None
         self._current = None
         self.nfln_shows = {}
@@ -251,34 +255,33 @@ class pigskin(object):
         Note
         ----
         A successful login does not necessarily mean that access to content is
-        granted (i.e. has a valid subscription). Use ``check_for_subscription()``
-        to determine if access has been granted.
+        granted (i.e. has a valid subscription). Use ``subscription``
+        to determine if a valid subscription (and thus access) is been granted.
 
         See Also
         --------
-        ``check_for_subscription()``
+        ``subscription``
         """
         return self._auth.login(username, password, force)
 
 
-    def check_for_subscription(self):
-        """Check if the user has a valid subscription.
+    @property
+    def subscription(self):
+        """The subscription type.
 
         Returns
         -------
-        bool
-            Returns True on the presence of a subscription, False otherwise.
-
-        Note
-        ----
-        There are different types of subscriptions.
-        TODO: This (or another function) should return the type of subscription.
-
-        See Also
-        --------
-        ``login()``
+        str
+            None if false.
         """
-        return self._auth.check_for_subscription()
+
+        if self._store.subscription is None:
+            self.logger.debug('``subscription`` not set. attempting to populate')
+            self._store.subscription = self._auth.get_subscription()
+            self.logger.debug('``subscription`` ready')
+
+        print(type(self._store.subscription))
+        return self._store.subscription
 
 
     def refresh_tokens(self):
