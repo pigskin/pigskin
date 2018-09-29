@@ -16,7 +16,7 @@ pytest.gp_password = os.getenv('PIGSKIN_PASS', '')
 scrub_list = []
 token_list = {}
 
-for i in [ pytest.gp_username, pytest.gp_password ]:
+for i in [pytest.gp_username, pytest.gp_password]:
     if i:
         scrub_list.append(i)
         scrub_list.append(quote(i))
@@ -57,7 +57,7 @@ def search_for_tokens(text):
 
 
 def scrub_profile_info(text):
-    """The Gigya auth response and account pages contain personal info. Scrub it."""
+    """Gigya auth and the account pages contain personal info. Scrub it."""
     try:
         parsed = json.loads(text)
     except ValueError:

@@ -502,7 +502,6 @@ class season(object):
             With the keys as the team name (e.g. "Vikings") and value as the
             team object.
         """
-
         if self._teams is None:
             self.logger.debug('``teams`` not set. attempting to populate')
             teams_dict = self._data.get_teams(self._season)
@@ -523,7 +522,6 @@ class season(object):
             With the keys ``pre``, ``reg``, and ``post``. Each is an OrderedDict
             with the week number as the key and a week object as the value.
         """
-
         if self._weeks is None:
             self.logger.debug('``weeks`` not set. attempting to populate')
             weeks_dict = self._data.get_weeks(self._season)

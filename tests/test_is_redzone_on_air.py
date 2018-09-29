@@ -13,4 +13,4 @@ from pigskin.pigskin import pigskin
 def test_is_redzone_on_air_nope():
     gp = pigskin()
 
-    assert gp.is_redzone_on_air() == False
+    assert gp.is_redzone_on_air() is False

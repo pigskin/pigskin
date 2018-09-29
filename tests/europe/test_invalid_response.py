@@ -13,8 +13,8 @@ def gp():
 
 
 def set_all_config_urls(gp, junk_url):
-    gp._store.gp_config['modules']['API'] = { key: junk_url for key in gp._store.gp_config['modules']['API'] }
-    gp._store.gp_config['modules']['ROUTES_DATA_PROVIDERS'] = { key: junk_url for key in gp._store.gp_config['modules']['ROUTES_DATA_PROVIDERS'] }
+    gp._store.gp_config['modules']['API'] = {key: junk_url for key in gp._store.gp_config['modules']['API']}
+    gp._store.gp_config['modules']['ROUTES_DATA_PROVIDERS'] = {key: junk_url for key in gp._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']}
 
 
 class TestInvalidResponseData(object):
