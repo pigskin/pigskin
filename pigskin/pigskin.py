@@ -535,6 +535,61 @@ class season(object):
         return self._weeks
 
 
+class team(object):
+    def __init__(self, season_obj, team_info):
+        self._pigskin = season_obj._pigskin
+        self._data = self._pigskin._data
+        self._season = season_obj._season
+        self._team_info = team_info
+
+        self.logger = logging.getLogger(__name__)
+
+
+    @property
+    def abbr(self):
+        """The team's abbreviation (e.g. GBP).
+
+        Returns
+        -------
+        str
+        """
+        return self._team_info['abbr']
+
+
+    @property
+    def city(self):
+        """The name team's home city (e.g. Houston).
+
+        Returns
+        -------
+        str
+        """
+        return self._team_info['city']
+
+
+    # TODO: add logo
+    #@property
+    #def logo(self):
+    #    """A url for the team's logo.
+
+    #    Returns
+    #    -------
+    #    str
+    #    """
+    #    return self._team_info['logo']
+
+
+    @property
+    def name(self):
+        """The name of the team (e.g. Bears).
+
+        Returns
+        -------
+        str
+        """
+        return self._team_info['name']
+
+
 class week(object):
     def __init__(self, season_obj, season_type, week, desc):
         self._pigskin = season_obj._pigskin
