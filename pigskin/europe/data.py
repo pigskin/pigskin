@@ -227,23 +227,27 @@ class data(object):
                     'home': {
                         'name': game['homeNickName'],
                         'city': game['homeCityState'],
-                        'points': game['homeScore']['pointTotal'],
                     },
                     'away': {
                         'name': game['visitorNickName'],
                         'city': game['visitorCityState'],
-                        'points': game['visitorScore']['pointTotal'],
                     },
                     'versions' : {},
                 }
+                try:
+                    games[key]['home']['points'] = game['homeScore']['pointTotal']
+                    games[key]['away']['points'] = game['visitorScore']['pointTotal']
+                except TypeError:
+                    games[key]['home']['points'] = None
+                    games[key]['away']['points'] = None
                 # TODO: perhaps it would be nice for the version to be stored in
                 # an OrderedDict. full, then condensed, then coaches. What I
                 # assume to be in order of what users are most likely to want.
-                version_types = {'condensed': 'condensedVideo' , 'coach': 'condensedVideo', 'full': 'video'}
+                version_types = {'condensed': 'condensedVideo' , 'coach': 'coachfilmVideo', 'full': 'video'}
                 for v in version_types:
                     try:
                         games[key]['versions'][v] = game[version_types[v]]['videoId']
-                    except KeyError:
+                    except (KeyError, TypeError):
                         pass
         except KeyError:
             self.logger.error('get_week_games: could not parse/build the games list')
