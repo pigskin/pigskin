@@ -543,6 +543,7 @@ class team(object):
         self._data = self._pigskin._data
         self._season = season_obj._season
         self._team_info = team_info
+        self._games = None
 
         self.logger = logging.getLogger(__name__)
 
@@ -567,6 +568,36 @@ class team(object):
         str
         """
         return self._team_info['city']
+
+
+    @property
+    def games(self):
+        """An OrderedDict of weeks and their week objects.
+
+        Returns
+        -------
+        OrderedDict
+            With the keys ``pre``, ``reg``, and ``post``. Each is an OrderedDict
+            with the game name (e.g. Packers@Bears) and a game object as the
+            value.
+
+        TODO
+        ----
+        The game class currently does not contain information about the week it
+        belongs to.
+        """
+        # NOTE: Currently this only fetches once.
+        if self._games is None:
+            self.logger.debug('``games`` not set. attempting to populate')
+
+            games_dict = self._data.get_team_games(self.name, self._season)
+            for st in games_dict:
+                games_dict[st] = OrderedDict((g, game(self, games_dict[st][g])) for g in games_dict[st])
+
+            self._games = games_dict
+            self.logger.debug('``games`` ready')
+
+        return self._games
 
 
     # TODO: add logo
@@ -647,6 +678,8 @@ class game(object):
         #self._season_type = season_type
         #self._week = week
         #self._description = desc
+        # TODO: add reference to week object; this helps especially teams.games
+        #       to know what week this game belongs to
         self._game_info = game_info
 
         self.logger = logging.getLogger(__name__)
