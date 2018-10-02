@@ -11,7 +11,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: game list, lastUpdate: '2018-09-15T13:34:04.863Z', title: '',
+        header: {id: game list, lastUpdate: '2018-10-02T07:17:19.559Z', title: '',
           version: '1.0'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: '2017:reg:Week
@@ -1336,7 +1336,7 @@ interactions:
             content: []
             displayText: {subTitle: game-list-subtitle, title: game-list-title}
       string: '{"header": {"id": "game list", "version": "1.0", "title": "", "lastUpdate":
-        "2018-09-15T13:34:04.863Z"}, "modules": {"weekLiveGames": {"displayText":
+        "2018-10-02T07:17:19.559Z"}, "modules": {"weekLiveGames": {"displayText":
         {"title": "game-list-title", "subTitle": "game-list-subtitle"}, "content":
         []}, "weekScheduledGames": {"displayText": {"title": "game-list-title", "subTitle":
         "game-list-subtitle"}, "content": []}, "weekCompletedGames": {"displayText":
@@ -1792,8 +1792,8 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 15 Sep 2018 13:34:04 GMT']
-      Expires: ['Sat, 15 Sep 2018 13:36:04 GMT']
+      Date: ['Tue, 02 Oct 2018 07:22:18 GMT']
+      Expires: ['Tue, 02 Oct 2018 07:24:18 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]

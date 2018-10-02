@@ -11,7 +11,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: Home Games, lastUpdate: '2018-09-28T13:13:01.454Z', title: '',
+        header: {id: Home Games, lastUpdate: '2018-10-02T07:19:48.458Z', title: '',
           version: '1'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: landing,
@@ -1057,7 +1057,7 @@ interactions:
             title: ALL 2018 GAMES
             type: story
       string: '{"header": {"id": "Home Games", "version": "1", "title": "", "lastUpdate":
-        "2018-09-28T13:13:01.454Z"}, "modules": {"meta": {"currentContext": {"currentSeason":
+        "2018-10-02T07:19:48.458Z"}, "modules": {"meta": {"currentContext": {"currentSeason":
         "2018", "currentSeasonType": "reg", "currentWeek": "4"}, "_links": [{"ref":
         "polling", "href": null}, {"ref": "self", "href": "https://www.nflgamepass.com/v1/web/games/seasons"}]},
         "mainMenu": {"seasonStructureList": [{"season": 2018, "seasonTypes": [{"seasonType":
@@ -1338,8 +1338,8 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 28 Sep 2018 13:13:01 GMT']
-      Expires: ['Fri, 28 Sep 2018 13:15:01 GMT']
+      Date: ['Tue, 02 Oct 2018 07:22:21 GMT']
+      Expires: ['Tue, 02 Oct 2018 07:24:21 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
@@ -1357,7 +1357,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: Home Games, lastUpdate: '2018-09-28T13:13:01.454Z', title: '',
+        header: {id: Home Games, lastUpdate: '2018-10-02T07:19:48.458Z', title: '',
           version: '1'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: landing,
@@ -2403,7 +2403,7 @@ interactions:
             title: ALL 2018 GAMES
             type: story
       string: '{"header": {"id": "Home Games", "version": "1", "title": "", "lastUpdate":
-        "2018-09-28T13:13:01.454Z"}, "modules": {"meta": {"currentContext": {"currentSeason":
+        "2018-10-02T07:19:48.458Z"}, "modules": {"meta": {"currentContext": {"currentSeason":
         "2018", "currentSeasonType": "reg", "currentWeek": "4"}, "_links": [{"ref":
         "polling", "href": null}, {"ref": "self", "href": "https://www.nflgamepass.com/v1/web/games/seasons"}]},
         "mainMenu": {"seasonStructureList": [{"season": 2018, "seasonTypes": [{"seasonType":
@@ -2684,8 +2684,8 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 28 Sep 2018 13:13:01 GMT']
-      Expires: ['Fri, 28 Sep 2018 13:15:01 GMT']
+      Date: ['Tue, 02 Oct 2018 07:22:21 GMT']
+      Expires: ['Tue, 02 Oct 2018 07:24:21 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
@@ -2703,7 +2703,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: game list, lastUpdate: '2018-09-28T13:13:02.189Z', title: '',
+        header: {id: game list, lastUpdate: '2018-10-02T07:21:54.119Z', title: '',
           version: '1.0'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: '2017:reg:Week
@@ -4028,7 +4028,7 @@ interactions:
             content: []
             displayText: {subTitle: game-list-subtitle, title: game-list-title}
       string: '{"header": {"id": "game list", "version": "1.0", "title": "", "lastUpdate":
-        "2018-09-28T13:13:02.189Z"}, "modules": {"weekLiveGames": {"displayText":
+        "2018-10-02T07:21:54.119Z"}, "modules": {"weekLiveGames": {"displayText":
         {"title": "game-list-title", "subTitle": "game-list-subtitle"}, "content":
         []}, "weekScheduledGames": {"displayText": {"title": "game-list-title", "subTitle":
         "game-list-subtitle"}, "content": []}, "weekCompletedGames": {"displayText":
@@ -4484,15 +4484,15 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 28 Sep 2018 13:13:02 GMT']
-      Expires: ['Fri, 28 Sep 2018 13:15:02 GMT']
+      Date: ['Tue, 02 Oct 2018 07:22:21 GMT']
+      Expires: ['Tue, 02 Oct 2018 07:24:21 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
       content-length: ['35634']
     status: {code: 200, message: OK}
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_219b20b8ede46e02a6baa0c51fd5365d0b1417c78c8e72677ec4581680963a3a&grant_type=refresh_token
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_c51b1157e76343e90da2cd6d64bc953791fd2f28e101e7d883787bf764ad1242&grant_type=refresh_token
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -4504,17 +4504,17 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_5154bee6cc19fedf6b1107ccb3a0a63f3f6c767404979ece8b70f453d6501e0f,
+      pretty: {access_token: FAKE_TOKEN_1574b0feb9afe7fc7b73864cb966a4b121c1abdc12970dffa8dc985eeb5c478e,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_ce36597b433fb613974049d9c013e5a641d1418e6b017f1ae379916346826304,
         token_type: bearer}
-      string: '{"access_token": "FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8",
-        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_5154bee6cc19fedf6b1107ccb3a0a63f3f6c767404979ece8b70f453d6501e0f"}'
+      string: '{"access_token": "FAKE_TOKEN_1574b0feb9afe7fc7b73864cb966a4b121c1abdc12970dffa8dc985eeb5c478e",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_ce36597b433fb613974049d9c013e5a641d1418e6b017f1ae379916346826304"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Fri, 28 Sep 2018 13:13:03 GMT']
-      Expires: ['Fri, 28 Sep 2018 13:13:03 GMT']
+      Date: ['Tue, 02 Oct 2018 07:22:21 GMT']
+      Expires: ['Tue, 02 Oct 2018 07:22:21 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -4530,10 +4530,10 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.19.1]
     method: GET
-    uri: https://www.nflgamepass.com/api/diva/diva/settings/vod/html5
+    uri: https://www.nflgamepass.com/api/diva/diva/settings/v5/vod/html5
   response:
     body: {string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<settings version=\"\
-        31_07_2018_0003_default_html5_prod\">\r\n  <advertisement enabled=\"false\"\
+        30_07_2018_0001_default_html5_v5_prod\">\r\n  <advertisement enabled=\"false\"\
         \ />\r\n  <assets>\r\n    <parameter name=\"videoThumbnailUrl\" value=\"https://www.nflgamepass.com/api/images/image/private/t_16-9_1920/twwekbzhieranl5r9qr6\"\
         \ />\r\n  </assets>\r\n  <behaviour>\r\n    <parameter name=\"isCommentaryEnabled\"\
         \ value=\"false\" />\r\n    <parameter name=\"isScoreEnabled\" value=\"false\"\
@@ -4565,26 +4565,26 @@ interactions:
         \ name = \"trackVideodataManifest\" value = \"true\"/>-->\r\n    <parameter\
         \ name=\"startingBitrateKbps\" value=\"600\" />\r\n    <!--<parameter name\
         \ = \"userAudioSelection\" value = \"false\"/>-->\r\n    <!--<parameter name\
-        \ = \"videoAnalyticsEventFrequency\" value = \"00:00:20\"/>-->\r\n    <!--<parameter\
+        \ = \"videoAnalyticsEventFrequency\" value = \"00:02:00\"/>-->\r\n    <!--<parameter\
         \ name = \"iosInternalOverrides\" value =\"{ \\\"iPhone7,1=\"\"\\\": 3238279\
         \ }\"/>-->\r\n    <!--<parameter name = \"videoPlatformsPriority\" value=\"\
         HLS,dash,chromecast-v2\" />-->\r\n    <!--<parameter name = \"androidForceSurfaceView\"\
         \ value=\"false\" />-->\r\n  </video>\r\n  <videoData enabled=\"true\">\r\n\
         \    <parameter name=\"videoDataPath\" value=\"https://www.nflgamepass.com/api/en/content/v5/diva/{V.ID}\"\
         \ />\r\n    <parameter name=\"pollingInterval\" value=\"00:59:59\" />\r\n\
-        \  </videoData>\r\n</settings>\r\n<!--DivaS:9UE/h81eV8CrutBc/K5iFhYtZmg=-->"}
+        \  </videoData>\r\n</settings>\r\n<!--DivaS:Tg2WhejuAacUNRVQtb6jK6/OCG8=-->"}
     headers:
       Cache-Control: [max-age=300]
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Fri, 28 Sep 2018 13:13:03 GMT']
-      Expires: ['Fri, 28 Sep 2018 13:18:03 GMT']
+      Date: ['Tue, 02 Oct 2018 07:22:21 GMT']
+      Expires: ['Tue, 02 Oct 2018 07:27:21 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/8.5]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
       X-Powered-By: [ASP.NET]
-      content-length: ['3208']
+      content-length: ['3211']
     status: {code: 200, message: OK}
 - request:
     body: null
@@ -4630,8 +4630,8 @@ interactions:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Fri, 28 Sep 2018 13:13:03 GMT']
-      Expires: ['Fri, 28 Sep 2018 13:13:03 GMT']
+      Date: ['Tue, 02 Oct 2018 07:22:21 GMT']
+      Expires: ['Tue, 02 Oct 2018 07:22:21 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
@@ -4641,7 +4641,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "56cf4c1b-51c1-4472-b4c3-4a9196e24917",
       "VideoSource": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=hls)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "d0868e37-df1c-4b00-a751-b41d50a1d607|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|web|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "751b55fa-cb92-42e8-90f4-896c0221e52a|FAKE_TOKEN_1574b0feb9afe7fc7b73864cb966a4b121c1abdc12970dffa8dc985eeb5c478e|web|FAKE_TOKEN_1574b0feb9afe7fc7b73864cb966a4b121c1abdc12970dffa8dc985eeb5c478e|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -4652,18 +4652,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 0B5C4CB9C14FB26DC902C0B45CE8A86251B9312A}
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1538464852~exp=1538465032~acl=/*~hmac=32ddfbead19841b8f5df2cec821a271c9fef8e5c1f47e905fa6ec40f18132511&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: D64DBD6086EEAABCE2683E80F5250CA33BA3F16E}
       string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
-        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3",
-        "HeartBeatTime": 0, "Signature": "0B5C4CB9C14FB26DC902C0B45CE8A86251B9312A",
+        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1538464852~exp=1538465032~acl=/*~hmac=32ddfbead19841b8f5df2cec821a271c9fef8e5c1f47e905fa6ec40f18132511&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "D64DBD6086EEAABCE2683E80F5250CA33BA3F16E",
         "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 28 Sep 2018 13:13:04 GMT']
-      Expires: ['Fri, 28 Sep 2018 13:13:04 GMT']
+      Date: ['Tue, 02 Oct 2018 07:22:22 GMT']
+      Expires: ['Tue, 02 Oct 2018 07:22:22 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -4674,7 +4674,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "56cf4c1b-51c1-4472-b4c3-4a9196e24917",
       "VideoSource": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "aca654e8-6f6e-494b-ab2f-2ecb9b897146|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|web|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "8edb3700-246a-40cb-af9f-d1eb160209ef|FAKE_TOKEN_1574b0feb9afe7fc7b73864cb966a4b121c1abdc12970dffa8dc985eeb5c478e|web|FAKE_TOKEN_1574b0feb9afe7fc7b73864cb966a4b121c1abdc12970dffa8dc985eeb5c478e|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -4685,18 +4685,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 3F49305A0E51478A7EFDF9FD827CC5C2AE25A865}
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1538464852~exp=1538465032~acl=/*~hmac=32ddfbead19841b8f5df2cec821a271c9fef8e5c1f47e905fa6ec40f18132511&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: DF9F2B5587F12EFE11725FF8C066E0F508EAD6DB}
       string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
-        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3",
-        "HeartBeatTime": 0, "Signature": "3F49305A0E51478A7EFDF9FD827CC5C2AE25A865",
+        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1538464852~exp=1538465032~acl=/*~hmac=32ddfbead19841b8f5df2cec821a271c9fef8e5c1f47e905fa6ec40f18132511&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "DF9F2B5587F12EFE11725FF8C066E0F508EAD6DB",
         "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 28 Sep 2018 13:13:04 GMT']
-      Expires: ['Fri, 28 Sep 2018 13:13:04 GMT']
+      Date: ['Tue, 02 Oct 2018 07:22:22 GMT']
+      Expires: ['Tue, 02 Oct 2018 07:22:22 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -4707,7 +4707,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "56cf4c1b-51c1-4472-b4c3-4a9196e24917",
       "VideoSource": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "f719bf8b-ce81-4a1a-b337-6f3ccc27f57c|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|web|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "dc2ff6a8-c184-4556-9f75-867e0a0c6c93|FAKE_TOKEN_1574b0feb9afe7fc7b73864cb966a4b121c1abdc12970dffa8dc985eeb5c478e|web|FAKE_TOKEN_1574b0feb9afe7fc7b73864cb966a4b121c1abdc12970dffa8dc985eeb5c478e|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -4718,18 +4718,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 42F63C854AA9C28C581AE43B6F9850CDC2987D95}
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1538464852~exp=1538465032~acl=/*~hmac=32ddfbead19841b8f5df2cec821a271c9fef8e5c1f47e905fa6ec40f18132511&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 5D150012FD2E415BC2FBFB99EFFAF509B4EEB012}
       string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
-        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3",
-        "HeartBeatTime": 0, "Signature": "42F63C854AA9C28C581AE43B6F9850CDC2987D95",
+        "ContentUrl": "https://vod-i-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1538464852~exp=1538465032~acl=/*~hmac=32ddfbead19841b8f5df2cec821a271c9fef8e5c1f47e905fa6ec40f18132511&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "5D150012FD2E415BC2FBFB99EFFAF509B4EEB012",
         "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 28 Sep 2018 13:13:04 GMT']
-      Expires: ['Fri, 28 Sep 2018 13:13:04 GMT']
+      Date: ['Tue, 02 Oct 2018 07:22:22 GMT']
+      Expires: ['Tue, 02 Oct 2018 07:22:22 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
@@ -4740,7 +4740,7 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "56cf4c1b-51c1-4472-b4c3-4a9196e24917",
       "VideoSource": "https://vod-s-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(filter=iis)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "c89dbe90-7f57-4511-84ba-92b25a57e1c2|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|web|FAKE_TOKEN_0eb48e660142f6e005d2b55fb7b01a2758ee1e920459fd82879d3e34fc74b5a8|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "28e9ab0f-3812-42db-b21b-936175421c04|FAKE_TOKEN_1574b0feb9afe7fc7b73864cb966a4b121c1abdc12970dffa8dc985eeb5c478e|web|FAKE_TOKEN_1574b0feb9afe7fc7b73864cb966a4b121c1abdc12970dffa8dc985eeb5c478e|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -4751,18 +4751,18 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-s-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(filter=iis)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3',
-        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 27B9B79475A7607C8DB60F60991BFFD40099BB3D}
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://vod-s-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(filter=iis)?hdnea=st=1538464852~exp=1538465032~acl=/*~hmac=32ddfbead19841b8f5df2cec821a271c9fef8e5c1f47e905fa6ec40f18132511&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: D9F930BF0005A0BD8ABF09B9643E5A59D601FD22}
       string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
-        "ContentUrl": "https://vod-s-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(filter=iis)?hdnea=st=1538140294~exp=1538140474~acl=/*~hmac=7fc8ef5aa8c3f39fe4ee80de1926f65ba2774081384644dd2a337c662d7884c1&hdcore=2.11.3",
-        "HeartBeatTime": 0, "Signature": "27B9B79475A7607C8DB60F60991BFFD40099BB3D",
+        "ContentUrl": "https://vod-s-video-nfl.akamaized.net/vod/6d52cdcb-3495-42e8-aa40-399d6007eea5/NoAds_Reg8_09_Carolina_Panthers_at_Tampa_Bay_Buccaneers_720.ism/manifest(filter=iis)?hdnea=st=1538464852~exp=1538465032~acl=/*~hmac=32ddfbead19841b8f5df2cec821a271c9fef8e5c1f47e905fa6ec40f18132511&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "D9F930BF0005A0BD8ABF09B9643E5A59D601FD22",
         "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 28 Sep 2018 13:13:04 GMT']
-      Expires: ['Fri, 28 Sep 2018 13:13:04 GMT']
+      Date: ['Tue, 02 Oct 2018 07:22:22 GMT']
+      Expires: ['Tue, 02 Oct 2018 07:22:22 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]

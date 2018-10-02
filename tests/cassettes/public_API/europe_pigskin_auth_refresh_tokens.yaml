@@ -1,6 +1,6 @@
 interactions:
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_6d6211405115bdf96c4bd6f85463c4c61d925b21a2f47630b1b36de5f8ef19db&grant_type=refresh_token
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_b426c3ae306f1fcbdef3b3d52225453e60c78bb092c52362df838e9f384ad030&grant_type=refresh_token
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
@@ -12,17 +12,17 @@ interactions:
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_dafebc9f2ec264b05e563fe3fe3facac984fed3cd228b0a006638e45378404ea,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_219b20b8ede46e02a6baa0c51fd5365d0b1417c78c8e72677ec4581680963a3a,
+      pretty: {access_token: FAKE_TOKEN_8ca8b50442a8a3c1ac5a5fda03d11b60cf3dcd1e47b14fbf90399880f5293c78,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_c51b1157e76343e90da2cd6d64bc953791fd2f28e101e7d883787bf764ad1242,
         token_type: bearer}
-      string: '{"access_token": "FAKE_TOKEN_dafebc9f2ec264b05e563fe3fe3facac984fed3cd228b0a006638e45378404ea",
-        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_219b20b8ede46e02a6baa0c51fd5365d0b1417c78c8e72677ec4581680963a3a"}'
+      string: '{"access_token": "FAKE_TOKEN_8ca8b50442a8a3c1ac5a5fda03d11b60cf3dcd1e47b14fbf90399880f5293c78",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_c51b1157e76343e90da2cd6d64bc953791fd2f28e101e7d883787bf764ad1242"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Fri, 28 Sep 2018 13:13:01 GMT']
-      Expires: ['Fri, 28 Sep 2018 13:13:01 GMT']
+      Date: ['Tue, 02 Oct 2018 07:22:21 GMT']
+      Expires: ['Tue, 02 Oct 2018 07:22:21 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]

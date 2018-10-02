@@ -11,7 +11,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: Home Games, lastUpdate: '2018-09-15T14:28:38.799Z', title: '',
+        header: {id: Home Games, lastUpdate: '2018-10-02T07:19:48.458Z', title: '',
           version: '1'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: landing,
@@ -1008,18 +1008,11 @@ interactions:
             _links:
             - {href: null, ref: polling}
             - {href: 'https://www.nflgamepass.com/v1/web/games/seasons', ref: self}
-            currentContext: {currentSeason: '2018', currentSeasonType: reg, currentWeek: '2'}
+            currentContext: {currentSeason: '2018', currentSeasonType: reg, currentWeek: '4'}
           notLoggedTeaser:
-            _entityId: f2864ffe-249b-421f-ae4f-85dbdf22660a
-            _translationId: a015bf49-10dd-43e2-ac9c-923b31da4c8f
             contentDate: '2017-09-13T15:32:37.206Z'
-            context: null
-            createdBy: domenico ventura
-            featured: 0
             fields: {}
             headline: null
-            lastUpdatedBy: marco lorenzi
-            lastUpdatedDate: '2018-06-28T14:16:47.504Z'
             parts:
             - content: '<p><span style="font-size: 11pt;"></span></p>
 
@@ -1040,7 +1033,6 @@ interactions:
               type: markdown
             references: {}
             relations: []
-            selfUrl: https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/stories/all-2017-games
             slug: all-2017-games
             summary: '<p>Watch the season live or on demand, including the Playoffs
               and the Super Bowl.
@@ -1050,14 +1042,9 @@ interactions:
 
               '
             tags:
-            - _entityId: f236d880-0d40-4a4a-bf81-989f95f67818
-              _translationId: 399a7ed1-1b3d-4123-a42d-7b04764c3590
-              externalSourceName: null
-              externalSourceReference: {sourceId: null, sourceName: null}
-              extraData: null
+            - extraData: {}
               fields: {}
               neutralSlug: games-teaser
-              selfUrl: https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/tags/games-teaser
               slug: games-teaser
               title: games-teaser
               type: tag
@@ -1070,8 +1057,8 @@ interactions:
             title: ALL 2018 GAMES
             type: story
       string: '{"header": {"id": "Home Games", "version": "1", "title": "", "lastUpdate":
-        "2018-09-15T14:28:38.799Z"}, "modules": {"meta": {"currentContext": {"currentSeason":
-        "2018", "currentSeasonType": "reg", "currentWeek": "2"}, "_links": [{"ref":
+        "2018-10-02T07:19:48.458Z"}, "modules": {"meta": {"currentContext": {"currentSeason":
+        "2018", "currentSeasonType": "reg", "currentWeek": "4"}, "_links": [{"ref":
         "polling", "href": null}, {"ref": "self", "href": "https://www.nflgamepass.com/v1/web/games/seasons"}]},
         "mainMenu": {"seasonStructureList": [{"season": 2018, "seasonTypes": [{"seasonType":
         "pre", "displayText": {"seasonType": "SeasonTypeTranslationTag"}, "name":
@@ -1328,28 +1315,22 @@ interactions:
         "analytics": {"site_name": "gamepass international", "language": "en_US",
         "site_section": "games", "site_subsection": "games", "page_detail": "landing",
         "content_type": "index", "page_name": "gamepass international:games:games:landing"},
-        "notLoggedTeaser": {"type": "story", "_translationId": "a015bf49-10dd-43e2-ac9c-923b31da4c8f",
-        "_entityId": "f2864ffe-249b-421f-ae4f-85dbdf22660a", "selfUrl": "https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/stories/all-2017-games",
-        "slug": "all-2017-games", "title": "ALL 2018 GAMES", "tags": [{"type": "tag",
-        "_translationId": "399a7ed1-1b3d-4123-a42d-7b04764c3590", "_entityId": "f236d880-0d40-4a4a-bf81-989f95f67818",
-        "selfUrl": "https://prd-nflgamepass-forge-dapi.deltatre.net/v1/content/en-us/tags/games-teaser",
-        "title": "games-teaser", "slug": "games-teaser", "neutralSlug": "games-teaser",
-        "externalSourceName": null, "externalSourceReference": {"sourceId": null,
-        "sourceName": null}, "extraData": null, "fields": {}}], "relations": [], "references":
-        {}, "fields": {}, "createdBy": "domenico ventura", "lastUpdatedBy": "marco
-        lorenzi", "lastUpdatedDate": "2018-06-28T14:16:47.504Z", "contentDate": "2017-09-13T15:32:37.206Z",
-        "context": null, "featured": 0, "headline": null, "summary": "<p>Watch the
-        season live or on demand, including the Playoffs and the Super Bowl.\nStream
-        or download the full game or Game in 40'' (full game replays in 40 minutes).</p>\n",
-        "parts": [{"type": "markdown", "content": "<p><span style=\"font-size: 11pt;\"></span></p>\n\n<p><span
-        style=\"color: #555555;\">Watch the season live or on demand, including the
-        Playoffs and the Super Bowl.</span><span style=\"font-size: 10.5pt;color:
-        #555555;\"></span></p>\n\n<p><span style=\"color: #555555;\">Stream or download
-        the full game or Game in 40'' (full game replays in 40 minutes).</span></p>\n\n<p><span
-        style=\"font-size: 11pt;\"></span></p>\n", "contextualFields": {}}], "thumbnail":
-        {"title": "AP_Jaguars_Fournette", "templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/dmjm7chklcclokxvsezg",
+        "notLoggedTeaser": {"type": "story", "slug": "all-2017-games", "relations":
+        [], "references": {}, "fields": {}, "contentDate": "2017-09-13T15:32:37.206Z",
+        "headline": null, "summary": "<p>Watch the season live or on demand, including
+        the Playoffs and the Super Bowl.\nStream or download the full game or Game
+        in 40'' (full game replays in 40 minutes).</p>\n", "parts": [{"type": "markdown",
+        "content": "<p><span style=\"font-size: 11pt;\"></span></p>\n\n<p><span style=\"color:
+        #555555;\">Watch the season live or on demand, including the Playoffs and
+        the Super Bowl.</span><span style=\"font-size: 10.5pt;color: #555555;\"></span></p>\n\n<p><span
+        style=\"color: #555555;\">Stream or download the full game or Game in 40''
+        (full game replays in 40 minutes).</span></p>\n\n<p><span style=\"font-size:
+        11pt;\"></span></p>\n", "contextualFields": {}}], "thumbnail": {"title": "AP_Jaguars_Fournette",
+        "templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/dmjm7chklcclokxvsezg",
         "thumbnailUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_jpg/dmjm7chklcclokxvsezg",
-        "format": "jpg", "overriddenFormats": {}}}}}'
+        "format": "jpg", "overriddenFormats": {}}, "tags": [{"type": "tag", "title":
+        "games-teaser", "slug": "games-teaser", "neutralSlug": "games-teaser", "extraData":
+        {}, "fields": {}}], "title": "ALL 2018 GAMES"}}}'
     headers:
       Access-Control-Allow-Headers: [Content-Type]
       Access-Control-Allow-Methods: [GET]
@@ -1357,11 +1338,11 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sat, 15 Sep 2018 14:32:47 GMT']
-      Expires: ['Sat, 15 Sep 2018 14:34:47 GMT']
+      Date: ['Tue, 02 Oct 2018 07:22:18 GMT']
+      Expires: ['Tue, 02 Oct 2018 07:24:18 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
-      content-length: ['28192']
+      content-length: ['27557']
     status: {code: 200, message: OK}
 version: 1
