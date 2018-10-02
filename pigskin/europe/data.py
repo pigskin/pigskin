@@ -73,8 +73,8 @@ class data(object):
         return seasons_list
 
 
-    def get_team_games(self, season, team):
-        """Get the raw game data for a given season (year) and team.
+    def get_team_games(self, team, season):
+        """Get the games (and metadata) for a given team and season.
 
         Parameters
         ----------
@@ -85,32 +85,26 @@ class data(object):
 
         Returns
         -------
-        list
-            of dicts with the metadata for each game
+        OrderedDict
+            With the keys ``pre``, ``reg``, and ``post``. Each is an OrderedDict
+            with the game name (e.g. Packers@Bears) and the value is a dict
+            containing game metadata.
 
-        Note
-        ----
-        TODO: currently only the current season is supported
-        TODO: this data really should be normalized
+            Games are sorted according to their broadcast time and date.
+
+        Notes
+        -----
+        See ``_extract_game_info()`` for a description of the metadata
+        structure.
+
+        See Also
+        --------
+        ``_get_team_games_easy()``
         """
-        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['team_detail']
-        url = url.replace(':team', team)
-        games = None
+        games = self._get_team_games_easy(team, season)
 
-        try:
-            r = self._store.s.get(url)
-            self._log_request(r)
-            data = r.json()
-        except ValueError:
-            self.logger.error('get_team_games: server response is invalid')
-            return None
 
-        try:
-            # currently, only data for the current season is available
-            games = [x for x in data['modules']['gamesCurrentSeason']['content']]
-            games = sorted(games, key=lambda x: x['gameDateTimeUtc'])
-        except KeyError:
-            self.logger.error('could not parse/build the team_games list')
+        if not games:
             return None
 
         return games
@@ -201,13 +195,8 @@ class data(object):
 
         Notes
         -----
-        TODO: describe metadata structure
-        TODO: 'home' should return the name of the team, so it can be easily
-              attached to a team object elsewhere
-
-        See Also
-        --------
-        ``_fetch_games_list()``
+        See ``_extract_game_info()`` for a description of the metadata
+        structure.
         """
         games = OrderedDict()
         games_list = self._fetch_games_list(str(season), season_type, str(week))
@@ -217,41 +206,17 @@ class data(object):
 
         try:
             games_list = sorted(games_list, key=lambda x: x['gameDateTimeUtc'])
-            for game in games_list:
-                key = '{0}@{1}'.format(game['visitorNickName'],  game['homeNickName'])
-                games[key] = {
-                    'city': game['siteCity'],
-                    'stadium': game['siteFullName'],
-                    'start_time': game['gameDateTimeUtc'],
-                    'phase': game['phase'],
-                    'home': {
-                        'name': game['homeNickName'],
-                        'city': game['homeCityState'],
-                    },
-                    'away': {
-                        'name': game['visitorNickName'],
-                        'city': game['visitorCityState'],
-                    },
-                    'versions' : {},
-                }
-                try:
-                    games[key]['home']['points'] = game['homeScore']['pointTotal']
-                    games[key]['away']['points'] = game['visitorScore']['pointTotal']
-                except TypeError:
-                    games[key]['home']['points'] = None
-                    games[key]['away']['points'] = None
-                # TODO: perhaps it would be nice for the version to be stored in
-                # an OrderedDict. full, then condensed, then coaches. What I
-                # assume to be in order of what users are most likely to want.
-                version_types = {'condensed': 'condensedVideo' , 'coach': 'coachfilmVideo', 'full': 'video'}
-                for v in version_types:
-                    try:
-                        games[key]['versions'][v] = game[version_types[v]]['videoId']
-                    except (KeyError, TypeError):
-                        pass
         except KeyError:
             self.logger.error('get_week_games: could not parse/build the games list')
             return None
+
+        for game in games_list:
+            try:
+                key = '{0}@{1}'.format(game['visitorNickName'],  game['homeNickName'])
+                games[key] = self._extract_game_info(game)
+            except KeyError:
+                self.logger.warn('get_week_games: invalid record; skipping.')
+                pass
 
         self.logger.debug('``games`` ready')
         return games
@@ -296,6 +261,68 @@ class data(object):
         return weeks
 
 
+    def _extract_game_info(self, raw_game):
+        """Return normalized game data.
+
+        Parameters
+        ----------
+        raw_game : dict
+            The raw dict for a game's data from Game Pass.
+
+        Returns
+        -------
+        dict
+            With the key as the game name (e.g. Packers@Bears) and value a dict
+            of the game's metadata.
+
+            Games are sorted according to their broadcast time and date.
+
+        Notes
+        -----
+        TODO: 'home' and 'away' should just return the name of the teams, so a
+              ``team`` handle can be attached there. And the scores should be
+              moved to other keys.
+        """
+        try:
+            game_info = {
+                'city': raw_game['siteCity'],
+                'stadium': raw_game['siteFullName'],
+                'start_time': raw_game['gameDateTimeUtc'],
+                'phase': raw_game['phase'],
+                'home': {
+                    'name': raw_game['homeNickName'],
+                    'city': raw_game['homeCityState'],
+                    'points': None,
+                },
+                'away': {
+                    'name': raw_game['visitorNickName'],
+                    'city': raw_game['visitorCityState'],
+                    'points': None,
+                },
+                'versions' : {},
+            }
+        except KeyError:
+            return None
+
+        try:
+            game_info['home']['points'] = raw_game['homeScore']['pointTotal']
+            game_info['away']['points'] = raw_game['visitorScore']['pointTotal']
+        except TypeError:
+            pass
+
+        # TODO: perhaps it would be nice for the version to be stored in
+        # an OrderedDict. full, then condensed, then coaches. What I
+        # assume to be in order of what users are most likely to want.
+        version_types = {'condensed': 'condensedVideo' , 'coach': 'coachfilmVideo', 'full': 'video'}
+        for v in version_types:
+            try:
+                game_info['versions'][v] = raw_game[version_types[v]]['videoId']
+            except (KeyError, TypeError):
+                pass
+
+        return game_info
+
+
     def _fetch_games_list(self, season, season_type, week):
         """Get a list of games for a given week.
 
@@ -333,6 +360,76 @@ class data(object):
             return []
 
         return games_list
+
+
+    def _get_team_games_easy(self, team, season):
+        """An OrderedDict of a team's games for a season and their game objects.
+
+        Parameters
+        ----------
+        season : str or int
+            The season can be provided as either a ``str`` or ``int``.
+        team : str
+            The name of the team (e.g. Dolphins).
+
+        Returns
+        -------
+        OrderedDict
+            With the keys ``pre``, ``reg``, and ``post``. Each is an OrderedDict
+            with the game name (e.g. Packers@Bears) and the value is a dict
+            containing game metadata.
+
+            Games are sorted according to their broadcast time and date.
+
+        Note
+        ----
+        The service API this talks to only supports the current season, but
+        ``season`` is accepted and checked for, just in case the service
+        changes..
+
+        See Also
+        --------
+        ``_get_team_games_hard()``
+        """
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['team_detail']
+        # TODO: make sure simply lower-casing is sufficient
+        team_seo_name = team.lower()
+        url = url.replace(':team', team_seo_name)
+
+        games_dict = OrderedDict()
+        for st in ['pre', 'reg', 'post']:
+            games_dict[st] = OrderedDict()
+
+        try:
+            r = self._store.s.get(url)
+            #self._log_request(r)
+            data = r.json()
+        except ValueError:
+            self.logger.error('_get_team_games_easy: server response is invalid')
+            return None
+
+        try:
+            games_list = data['modules']['gamesCurrentSeason']['content']
+            games_list = sorted(games_list, key=lambda x: x['gameDateTimeUtc'])
+        except KeyError:
+            self.logger.error('_get_week_games_easy: could not parse/build the games list')
+            return None
+
+        for game in games_list:
+            try:
+                if int(game['season']) == int(season):
+                    key = '{0}@{1}'.format(game['visitorNickName'], game['homeNickName'])
+                    st = game['seasonType'].lower()
+                    games_dict[st][key] = self._extract_game_info(game)
+            except KeyError:
+                self.logger.warn('_get_team_games_easy: invalid record; skipping.')
+                pass
+
+        # purge empty season types (the team may not have made the post season).
+        games_dict = OrderedDict((st, games_dict[st]) for st in games_dict if games_dict[st])
+
+        self.logger.debug('``games`` ready')
+        return games_dict
 
 
     def _week_description(self, abbr):
