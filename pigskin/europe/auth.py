@@ -40,18 +40,17 @@ class auth(object):
 
         for auth in [self._gp_auth, self._gigya_auth]:
             self.logger.debug('Trying {0} authentication.'.format(auth.__name__))
+            data = auth(username, password)
             try:
-                data = auth(username, password)
-                assert data['access_token']
-                assert data['refresh_token']
-            except (KeyError, AssertionError):
-                self.logger.error('Could not acquire GP tokens')
-            else:
                 self._store.username = username
                 # TODO: are these tokens provided for valid accounts without a subscription?
                 self._store.access_token = data['access_token']
                 self._store.refresh_token = data['refresh_token']
-
+            except KeyError:
+                self.logger.error('Could not acquire GP tokens')
+                self._store.access_token = None
+                self._store.refresh_token = None
+            else:
                 self.logger.debug('login was successful')
                 return True
 
@@ -126,17 +125,13 @@ class auth(object):
             self.logger.error('_gigya_auth: server response is invalid')
             return {}
 
-        try:
-            # make sure some key data is here
-            assert gigya_data['UID']
-            assert gigya_data['UIDSignature']
-            assert gigya_data['signatureTimestamp']
-        except AssertionError:
-            pass
-        except KeyError:
-            self.logger.error('could not parse gigya auth response')
-            return {}
+        # make sure auth data is there
+        for key in ['UID', 'UIDSignature', 'signatureTimestamp']:
+            if not gigya_data.get(key):
+                self.logger.error('could not parse gigya auth response')
+                return {}
 
+        # now that we have our gigya keys, auth against GP servers
         data = self._gp_auth(username, password, gigya_data)
 
         return data
@@ -190,13 +185,11 @@ class auth(object):
             self.logger.error('_gp_auth: server response is invalid')
             return {}
 
-        try:
-            # make sure some key data is here
-            assert data['access_token']
-            assert data['refresh_token']
-        except (KeyError, AssertionError):
-            self.logger.error('could not parse auth response')
-            return {}
+        # make sure auth data is there
+        for key in ['access_token', 'refresh_token']:
+            if not data.get(key):
+                self.logger.error('could not parse auth response')
+                return {}
 
         # TODO: check for status codes, just in case
         return data
