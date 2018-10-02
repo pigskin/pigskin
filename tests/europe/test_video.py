@@ -14,7 +14,8 @@ def gp():
 class TestEuropeVideo(object):
     """These don't require authentication to Game Pass."""
     @vcr.use_cassette('backends/europe/video__get_diva_config.yaml')
-    def test__get_diva_config(self, gp):
+    @staticmethod
+    def test__get_diva_config(gp):
         diva_config_url = gp._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['Live24x7']
 
         diva_config = gp._video._get_diva_config(diva_config_url)
@@ -29,7 +30,8 @@ class TestEuropeVideo(object):
 class TestEuropeVideoAuth(object):
     """These require authentication to Game Pass"""
     @vcr.use_cassette('backends/europe/video_auth_login.yaml')
-    def test_login(self, gp):
+    @staticmethod
+    def test_login(gp):
         assert gp.login(pytest.gp_username, pytest.gp_password, force=True)
 
         # make sure tokens are actually set
@@ -37,7 +39,8 @@ class TestEuropeVideoAuth(object):
         assert gp._store.refresh_token
 
 
-    def test__build_processing_url_payload(self, gp):
+    @staticmethod
+    def test__build_processing_url_payload(gp):
         video_id = 'this_is_a_video_id'
         vs_url = 'https://this.is.a.video.source.url'
 

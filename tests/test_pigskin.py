@@ -25,7 +25,8 @@ def gp():
 class TestPigskin(object):
     """These don't require authentication to Game Pass."""
     @vcr.use_cassette('public_API/europe_pigskin_seasons.yaml')
-    def test_seasons(self, gp):
+    @staticmethod
+    def test_seasons(gp):
         seasons = gp.seasons
 
         # make sure we have content and it's the right type
@@ -47,7 +48,8 @@ class TestPigskin(object):
 
 
     @vcr.use_cassette('public_API/europe_pigskin_teams.yaml')
-    def test_teams(self, gp):
+    @staticmethod
+    def test_teams(gp):
         # we test 2015 for the St. Louis Rams; 2017 because week 1 had only 15
         # games, and 2018 because it should be normal/typical.
         for season in ['2015', '2017', '2018']:
@@ -107,7 +109,8 @@ class TestPigskin(object):
 
 
     @vcr.use_cassette('public_API/europe_pigskin_weeks.yaml')
-    def test_weeks(self, gp):
+    @staticmethod
+    def test_weeks(gp):
         weeks = gp.seasons['2017'].weeks
 
         # make sure we have content and it's the right type
@@ -151,7 +154,8 @@ class TestPigskin(object):
 
 
     @vcr.use_cassette('public_API/europe_pigskin_games.yaml')
-    def test_games(self, gp):
+    @staticmethod
+    def test_games(gp):
         games = gp.seasons['2017'].weeks['reg']['8'].games
         # TODO: create a list for team_games by walking
         #       gp.seasons['2018'].teams['Steelers'].weeks[*][*]
@@ -208,7 +212,8 @@ class TestPigskin(object):
     # This cassette is unused, as ``versions`` does not cause any HTTP requests.
     # However, it remains here just in case that changes in the future.
     @vcr.use_cassette('public_API/europe_pigskin_versions.yaml')
-    def test_versions(self, gp):
+    @staticmethod
+    def test_versions(gp):
         versions = gp.seasons['2017'].weeks['reg']['8'].games['Panthers@Buccaneers'].versions
         # TODO: test gp.seasons['2017'].teams['Steelers'].weeks['reg']['8'].versions
 
@@ -230,7 +235,8 @@ class TestPigskin(object):
 
 
     @vcr.use_cassette('public_API/europe_pigskin_current.yaml')
-    def test_current(self, gp):
+    @staticmethod
+    def test_current(gp):
         current = gp.current
 
         # make sure we have a response
@@ -258,7 +264,8 @@ class TestPigskin(object):
             assert int(current['week']) >= 18 and int(current['week']) <= 22
 
 
-    def test_nfldate_to_datetime(self, gp):
+    @staticmethod
+    def test_nfldate_to_datetime(gp):
         # NOTE: nfldate_to_datetime() is also run for every game in test_games()
         nfldate = '2017-09-12T02:20:00.000Z'
         dt_utc = gp.nfldate_to_datetime(nfldate)
@@ -272,7 +279,8 @@ class TestPigskin(object):
         # TODO: test localization in a way that still works on CI
 
 
-    def test_nfldate_to_datetime_failure(self, gp):
+    @staticmethod
+    def test_nfldate_to_datetime_failure(gp):
         nfldate = 'not a date string'
         dt_utc = gp.nfldate_to_datetime(nfldate)
 
@@ -286,7 +294,8 @@ class TestPigskin(object):
 class TestPigskinAuth(object):
     """These require authentication to Game Pass"""
     @vcr.use_cassette('public_API/europe_pigskin_auth_login.yaml')
-    def test_login(self, gp):
+    @staticmethod
+    def test_login(gp):
         assert gp.login(pytest.gp_username, pytest.gp_password, force=True)
 
         # make sure tokens are actually set
@@ -295,13 +304,15 @@ class TestPigskinAuth(object):
 
 
     @vcr.use_cassette('public_API/europe_pigskin_auth_subscription.yaml')
-    def test_subscription(self, gp):
+    @staticmethod
+    def test_subscription(gp):
         assert gp.subscription
         isinstance(gp.subscription, basestring)
 
 
     @vcr.use_cassette('public_API/europe_pigskin_auth_refresh_tokens.yaml')
-    def test_refresh_tokens(self, gp):
+    @staticmethod
+    def test_refresh_tokens(gp):
         # store the initial tokens
         first_access_token = gp._store.access_token
         first_refresh_token = gp._store.refresh_token
@@ -319,7 +330,8 @@ class TestPigskinAuth(object):
 
 
     @vcr.use_cassette('public_API/europe_pigskin_auth_game_streams.yaml')
-    def test_game_streams(self, gp):
+    @staticmethod
+    def test_game_streams(gp):
         streams = gp.seasons['2017'].weeks['reg']['8'].games['Panthers@Buccaneers'].versions['full'].streams
 
         # make sure we have content and it's the right type
@@ -335,7 +347,8 @@ class TestPigskinAuth(object):
 class TestPigskinAuthFail(object):
     """These require authentication to Game Pass, and should fail without it."""
     @vcr.use_cassette('public_API/europe_pigskin_bad_auth_login.yaml')
-    def test_bad_auth_login(self, gp):
+    @staticmethod
+    def test_bad_auth_login(gp):
         assert not gp.login(username='I_do_not_exist', password='wrong', force=True)
 
         # make sure tokens are not set
@@ -344,12 +357,14 @@ class TestPigskinAuthFail(object):
 
 
     @vcr.use_cassette('public_API/europe_pigskin_bad_auth_subscription.yaml')
-    def test_bad_auth_subscription(self, gp):
+    @staticmethod
+    def test_bad_auth_subscription(gp):
         assert gp.subscription is None
 
 
     @vcr.use_cassette('public_API/europe_pigskin_bad_auth_refresh_tokens.yaml')
-    def test_bad_auth_refresh_tokens(self, gp):
+    @staticmethod
+    def test_bad_auth_refresh_tokens(gp):
         # refresh the tokens
         assert not gp.refresh_tokens()
 

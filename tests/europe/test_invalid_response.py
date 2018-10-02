@@ -18,7 +18,8 @@ def set_all_config_urls(gp, junk_url):
 
 
 class TestInvalidResponseData(object):
-    def test_invalid_get(self, gp):
+    @staticmethod
+    def test_invalid_get(gp):
         junk_dict = {
             'bytes': 'https://httpbin.org/bytes/20',
             'html': 'https://httpbin.org/html',
@@ -78,7 +79,8 @@ class TestInvalidResponseData(object):
         assert result is True
 
 
-    def test_invalid_response_post_json(self, gp):
+    @staticmethod
+    def test_invalid_response_post_json(gp):
         junk_url = 'https://httpbin.org/post'
         gigya_auth_url_original = settings.gigya_auth_url
 
