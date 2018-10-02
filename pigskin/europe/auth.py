@@ -114,6 +114,7 @@ class auth(object):
         post_data = {
             'apiKey' : api_key,
             'loginID' : username,
+            'includeUserInfo': 'false',
             'password' : password
         }
 
