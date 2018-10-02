@@ -266,7 +266,7 @@ class pigskin(object):
         """
         request_dict = {}
         response_dict = {}
-        if type(r) == requests.models.Response:
+        if isinstance(r, requests.models.Response):
             request_dict['body'] = r.request.body
             request_dict['headers'] = dict(r.request.headers)
             request_dict['method'] = r.request.method

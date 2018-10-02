@@ -335,7 +335,6 @@ class data(object):
                 games[key] = self._extract_game_info(game)
             except KeyError:
                 self.logger.warn('get_week_games: invalid record; skipping.')
-                pass
 
         self.logger.debug('``games`` ready')
         return games
@@ -380,7 +379,8 @@ class data(object):
         return weeks
 
 
-    def _extract_game_info(self, raw_game):
+    @staticmethod
+    def _extract_game_info(raw_game):
         """Return normalized game data.
 
         Parameters
@@ -597,7 +597,8 @@ class data(object):
         return games_dict
 
 
-    def _week_description(self, abbr):
+    @staticmethod
+    def _week_description(abbr):
         descriptions = {
             'hof': 'Hall of Fame',
             'wc': 'Wild Card',
