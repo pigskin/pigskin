@@ -73,6 +73,122 @@ class data(object):
         return seasons_list
 
 
+    def parse_shows(self):
+        """Dynamically parse the NFL Network shows into a dict."""
+        show_dict = {}
+        self.episode_list = []
+
+        # NFL Network shows
+        url = self._store.gp_config['modules']['API']['NETWORK_PROGRAMS']
+        response = self.make_request(url, 'get')
+        current_season = self.get_current_season_and_week()['season']
+
+        for show in response['modules']['programs']:
+            # Unfortunately, the 'seasons' list for each show cannot be trusted.
+            # So we loop over every episode for every show to build the list.
+            # TODO: this causes a lot of network traffic and slows down init
+            #       quite a bit. Would be nice to have a better workaround.
+            request_url = self._store.gp_config['modules']['API']['NETWORK_EPISODES']
+            episodes_url = request_url.replace(':seasonSlug/', '').replace(':tvShowSlug', show['slug'])
+            episodes_data = self.make_request(episodes_url, 'get')['modules']['archive']['content']
+
+            # 'season' is often left unset. It's impossible to know for sure,
+            # but the year of the current Season seems like a sane best guess.
+            season_list = set([episode['season'].replace('season-', '')
+                               if episode['season'] else current_season
+                               for episode in episodes_data])
+
+            show_dict[show['title']] = season_list
+
+            # Adding NFL-Network as a List of dictionary containing oher dictionaries.
+            # episode_thumbnail = {videoId, thumbnail}
+            # episode_id_dict = {episodename, episode_thumbnail{}}
+            # episode_season_dict = {episode_season, episode_id_dict{}}
+            # show_season_dict = {show_title, episode_season_dict{}}
+            # The Function returns all Season and Episodes
+            for episode in episodes_data:
+                episode_thumbnail = {}
+                episode_id_dict = {}
+                episode_season_dict = {}
+                show_season_dict = {}
+                episode_name = episode['title']
+                episode_id = episode['videoId']
+                if episode['season']:
+                    episode_season = episode['season'].replace('season-', '')
+                else:
+                    episode_season = current_season
+                # Using Episode Thumbnail if not present use theire corresponding Show Thumbnail
+                if episode['videoThumbnail']['templateUrl']:
+                    episode_thumbnail[episode_id] = episode['videoThumbnail']['templateUrl']
+                else:
+                    episode_thumbnail[episode_id] = show['thumbnail']['templateUrl']
+                episode_id_dict[episode_name] = episode_thumbnail
+                episode_season_dict[episode_season] = episode_id_dict
+                show_season_dict[show['title']] = episode_season_dict
+                self.episode_list.append(show_season_dict)
+
+        # Adding RedZone as a List of dictionary containing oher dictionaries.
+        # episode_thumbnail = {videoId, thumbnail}
+        # episode_id_dict = {episodename, episode_thumbnail{}}
+        # episode_season_dict = {episode_season, episode_id_dict{}}
+        # show_season_dict = {show_title, episode_season_dict{}}
+        # The Function returns all Season and Episodes
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['redzone']
+        response = self.make_request(url, 'get')
+
+        season_list = []
+        for episode in response['modules']['redZoneVod']['content']:
+            season_name = episode['season'].replace('season-', '')
+            season_list.append(season_name)
+            episode_thumbnail = {}
+            episode_id_dict = {}
+            episode_season_dict = {}
+            show_season_dict = {}
+            episode_name = episode['title']
+            episode_id = episode['videoId']
+            if episode['season']:
+                episode_season = episode['season'].replace('season-', '')
+            else:
+                episode_season = current_season
+            # Using Episode Thumbnail if not present use theire corresponding Show Thumbnail
+            if episode['videoThumbnail']['templateUrl']:
+                episode_thumbnail[episode_id] = episode['videoThumbnail']['templateUrl']
+            else:
+                episode_thumbnail[episode_id] = ''
+            episode_id_dict[episode_name] = episode_thumbnail
+            episode_season_dict[episode_season] = episode_id_dict
+            show_season_dict['RedZone'] = episode_season_dict
+            self.episode_list.append(show_season_dict)
+
+        show_dict['RedZone'] = season_list
+        self.nfln_shows.update(show_dict)
+
+    def get_shows(self, season):
+        """Return a list of all shows for a season."""
+        seasons_shows = []
+
+        for show_name, years in self.nfln_shows.items():
+            if season in years:
+                seasons_shows.append(show_name)
+
+        return sorted(seasons_shows)
+
+    def get_shows_episodes(self, show_name, season=None):
+        """Return a list of episodes for a show. Return empty list if none are
+        found or if an error occurs."""
+        # Create a List of all games related to a specific show_name and a season.
+        # The returning List contains episode name, episode id and episode thumbnail
+        episodes_data = []
+        for episode in self.episode_list:
+            for dict_show_name, episode_season_dict in episode.items():
+                if dict_show_name == show_name:
+                    for episode_season, episode_id_dict in episode_season_dict.items():
+                        if episode_season == season:
+                            episodes_data.append(episode_id_dict)
+
+        return episodes_data
+
+
     def get_team_games(self, team, season):
         """Get the games (and metadata) for a given team and season.
 
