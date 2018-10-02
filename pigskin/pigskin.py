@@ -42,7 +42,7 @@ class pigskin(object):
         self._store.s = requests.Session()
         self._store.s.proxies['http'] = proxy_url
         self._store.s.proxies['https'] = proxy_url
-        self._store.gp_config = self.populate_config()
+        self._store.gp_config = self._populate_config()
 
         self._store.access_token = None
         self._store.refresh_token = None
@@ -106,67 +106,6 @@ class pigskin(object):
         return self._seasons
 
 
-    def populate_config(self):
-        url = settings.base_url + '/api/en/content/v1/web/config'
-        r = self._store.s.get(url)
-        return r.json()
-
-
-    def _log_request(self, r):
-        """Log (at the debug level) everything about a provided HTTP request.
-
-        Note
-        ----
-        TODO: optional password filtering
-
-        Parameters
-        ----------
-        r : requests.models.Response
-            The handle of a Requests request.
-
-        Returns
-        -------
-        bool
-            True if successful
-
-        Examples
-        --------
-        >>> r = self._store.s.get(url)
-        >>> self._log_request(r)
-        """
-        request_dict = {}
-        response_dict = {}
-        if type(r) == requests.models.Response:
-            request_dict['body'] = r.request.body
-            request_dict['headers'] = dict(r.request.headers)
-            request_dict['method'] = r.request.method
-            request_dict['uri'] = r.request.url
-
-            try:
-                response_dict['body'] = r.json()
-            except ValueError:
-                # TODO: it would be nice handle XML too, but I have been unable
-                # to find a solution within the standard library to convert XML
-                # to a python object.
-                response_dict['body'] = str(r.content)
-            response_dict['headers'] = dict(r.headers)
-            response_dict['status_code'] = r.status_code
-
-        self.logger.debug('request:')
-        try:
-            self.logger.debug(json.dumps(request_dict, sort_keys=True, indent=4))
-        except UnicodeDecodeError:  # python 2.7
-            request_dict['body'] = 'BINARY DATA'
-            self.logger.debug(json.dumps(request_dict, sort_keys=True, indent=4))
-
-        self.logger.debug('response:')
-        try:
-            self.logger.debug(json.dumps(response_dict, sort_keys=True, indent=4))
-        except UnicodeDecodeError:  # python 2.7
-            response_dict['body'] = 'BINARY DATA'
-            self.logger.debug(json.dumps(response_dict, sort_keys=True, indent=4))
-
-        return True
     def login(self, username, password, force=False):
         """Login to NFL Game Pass.
 
@@ -207,7 +146,6 @@ class pigskin(object):
         str
             None if false.
         """
-
         if self._store.subscription is None:
             self.logger.debug('``subscription`` not set. attempting to populate')
             self._store.subscription = self._auth.get_subscription()
@@ -302,6 +240,69 @@ class pigskin(object):
             A datetime object when successful, None otherwise.
         """
         return self._utils.nfldate_to_datetime(nfldate, localize)
+
+
+    def _log_request(self, r):
+        """Log (at the debug level) everything about a provided HTTP request.
+
+        Note
+        ----
+        TODO: optional password filtering
+
+        Parameters
+        ----------
+        r : requests.models.Response
+            The handle of a Requests request.
+
+        Returns
+        -------
+        bool
+            True if successful
+
+        Examples
+        --------
+        >>> r = self._store.s.get(url)
+        >>> self._log_request(r)
+        """
+        request_dict = {}
+        response_dict = {}
+        if type(r) == requests.models.Response:
+            request_dict['body'] = r.request.body
+            request_dict['headers'] = dict(r.request.headers)
+            request_dict['method'] = r.request.method
+            request_dict['uri'] = r.request.url
+
+            try:
+                response_dict['body'] = r.json()
+            except ValueError:
+                # TODO: it would be nice handle XML too, but I have been unable
+                # to find a solution within the standard library to convert XML
+                # to a python object.
+                response_dict['body'] = str(r.content)
+            response_dict['headers'] = dict(r.headers)
+            response_dict['status_code'] = r.status_code
+
+        self.logger.debug('request:')
+        try:
+            self.logger.debug(json.dumps(request_dict, sort_keys=True, indent=4))
+        except UnicodeDecodeError:  # python 2.7
+            request_dict['body'] = 'BINARY DATA'
+            self.logger.debug(json.dumps(request_dict, sort_keys=True, indent=4))
+
+        self.logger.debug('response:')
+        try:
+            self.logger.debug(json.dumps(response_dict, sort_keys=True, indent=4))
+        except UnicodeDecodeError:  # python 2.7
+            response_dict['body'] = 'BINARY DATA'
+            self.logger.debug(json.dumps(response_dict, sort_keys=True, indent=4))
+
+        return True
+
+
+    def _populate_config(self):
+        url = settings.base_url + '/api/en/content/v1/web/config'
+        r = self._store.s.get(url)
+        return r.json()
 
 
 class season(object):
@@ -618,7 +619,8 @@ class version(object):
         Returns
         -------
         str
-            The description of the game version.
+            The description of the game version, such as ``full``,
+            ``condensed``, and ``coach``.
         """
         try:
             return self._descriptions[self._desc_key]
