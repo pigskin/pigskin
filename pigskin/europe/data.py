@@ -100,9 +100,12 @@ class data(object):
         See Also
         --------
         ``_get_team_games_easy()``
+        ``_get_team_games_hard()``
         """
         games = self._get_team_games_easy(team, season)
 
+        if not games:
+            games = self._get_team_games_hard(team, season)
 
         if not games:
             return None
@@ -429,6 +432,52 @@ class data(object):
         games_dict = OrderedDict((st, games_dict[st]) for st in games_dict if games_dict[st])
 
         self.logger.debug('``games`` ready')
+        return games_dict
+
+
+    def _get_team_games_hard(self, team, season):
+        """An OrderedDict of a team's games for a season and their game objects.
+
+        Parameters
+        ----------
+        season : str or int
+            The season can be provided as either a ``str`` or ``int``.
+        team : str
+            The name of the team (e.g. Dolphins).
+
+        Returns
+        -------
+        OrderedDict
+            With the keys ``pre``, ``reg``, and ``post``. Each is an OrderedDict
+            with the game name (e.g. Packers@Bears) and the value is a dict
+            containing game metadata.
+
+            Games are sorted according to their broadcast time and date.
+
+        Note
+        ----
+        This fallback exists because the API that ``_get_team_games_easy()``
+        talks to only supports the current season.
+
+        This method is quite slow and causes a lot of HTTP requests.
+        """
+        games_dict = OrderedDict()
+        weeks_dict = self.get_weeks(str(season))
+
+        for st in weeks_dict:
+            games_dict[st] = OrderedDict()
+            for week in weeks_dict[st]:
+                weeks_games_dict = self.get_week_games(season, st, week)
+
+                # TODO: this is quite un-Pythonic, but I don't know of an easier
+                # way to check for a substring in a dict key
+                for game_name in weeks_games_dict:
+                    if team in game_name:
+                        games_dict[st][game_name] = weeks_games_dict[game_name]
+
+        # purge empty season types (the team may not have made the post season).
+        games_dict = OrderedDict((st, games_dict[st]) for st in games_dict if games_dict[st])
+
         return games_dict
 
 
