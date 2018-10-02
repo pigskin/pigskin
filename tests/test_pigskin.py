@@ -71,7 +71,7 @@ class TestPigskin(object):
             # The keys and names should always match
             for t in teams:
                 assert t == teams[t].name
-                # TODO: check that they are alphabeticized
+                # TODO: check that they are alphabetized
                 # TODO: test that all teams are of type team
 
             # make the games list is there and is of the right type

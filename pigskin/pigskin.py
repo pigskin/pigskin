@@ -280,7 +280,6 @@ class pigskin(object):
             self._store.subscription = self._auth.get_subscription()
             self.logger.debug('``subscription`` ready')
 
-        print(type(self._store.subscription))
         return self._store.subscription
 
 
