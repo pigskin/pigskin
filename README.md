@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/aqw/pigskin.svg?branch=master)](https://travis-ci.org/aqw/pigskin)
 [![codecov](https://codecov.io/gh/aqw/pigskin/branch/master/graph/badge.svg)](https://codecov.io/gh/aqw/pigskin)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1c93258e07e444798ef09a31473da3bb)](https://www.codacy.com/app/aqw/pigskin?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aqw/pigskin&amp;utm_campaign=Badge_Grade)
 
 This is a Python module for connecting to the NFL Game Pass service. The code
 originated with the aqw/xbmc-gamepass project, but was moved to its own repo to
