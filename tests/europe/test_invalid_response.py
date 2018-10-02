@@ -41,8 +41,6 @@ class TestInvalidResponseData(object):
             with vcr.use_cassette('backends/europe/invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
                 assert gp._data.get_seasons() is None
 
-            # TODO: test get_team_games
-
             with vcr.use_cassette('backends/europe/invalid_response_get_{0}_teams.yaml'.format(junk_type), match_on=['method', 'uri']):
                 # this has its own cassette because it will loop through all
                 # non-bye-weeks searching for an answer
@@ -58,6 +56,9 @@ class TestInvalidResponseData(object):
                 assert not gp._data._fetch_games_list('2018', 'reg', '8')
 
             with vcr.use_cassette('backends/europe/invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
+                assert gp._data._get_team_games_easy('2018', 'Packers') is None
+
+            with vcr.use_cassette('backends/europe/invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
                 assert not gp._video._get_diva_config(junk_url)
 
             with vcr.use_cassette('backends/europe/invalid_response_get_{0}_streams.yaml'.format(junk_type), match_on=['method', 'uri']):
@@ -69,7 +70,6 @@ class TestInvalidResponseData(object):
             with vcr.use_cassette('backends/europe/invalid_response_get_{0}_diva.yaml'.format(junk_type), match_on=['method', 'uri']):
                 assert not gp._video._get_diva_streams(video_id='invalid', diva_config_url=diva_config_url)
 
-            #assert not gp.get_team_games('2018', '49ers')
             #assert gp.is_redzone_on_air() == None
 
         # _log_request needs a requests handle
