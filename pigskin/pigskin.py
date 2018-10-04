@@ -60,14 +60,6 @@ class pigskin(object):
         self._video = video(self)
 
 
-    class GamePassError(Exception):
-        def __init__(self, value):
-            self.value = value
-
-        def __str__(self):
-            return repr(self.value)
-
-
     @property
     def current(self):
         """A Dict of the current season and week.
