@@ -29,12 +29,21 @@ class utils(object):
         # TODO: this could be moved to pigskin/utils.py with an additional
         # argument of ``nfldate_format`` provided by a service-specific
         # constants file.
-        nfldate_format = '%Y-%m-%dT%H:%M:%S.%fZ'
+        nfldate_formats = [
+            '%Y-%m-%dT%H:%M:%S.%fZ',
+            '%Y-%m-%d %H:%M:%SZ',
+        ]
         dt = None
 
-        try:
-            dt = datetime.strptime(nfldate, nfldate_format)
-        except ValueError:
+        for f in nfldate_formats:
+            try:
+                dt = datetime.strptime(nfldate, f)
+            except ValueError:
+                pass
+            else:
+                break
+
+        if not dt:
             self.logger.error('unable to parse the nfldate string')
             return None
 
