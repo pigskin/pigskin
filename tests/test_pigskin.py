@@ -234,6 +234,39 @@ class TestPigskin(object):
             assert versions[v].desc in ['Full Game', 'Condensed Game', 'Coaches Tape']
 
 
+    @vcr.use_cassette('public_API/europe_pigskin_shows.yaml')
+    @staticmethod
+    def test_shows(gp):
+        shows = gp.shows
+
+        # make sure we have content and it's the right type
+        assert shows
+        assert type(shows) is OrderedDict
+
+        for name in shows:
+            assert isinstance(shows[name].desc, basestring)
+
+            assert isinstance(shows[name].name, basestring)
+
+            assert shows[name].name
+            assert isinstance(shows[name].name, basestring)
+            assert name == shows[name].name
+
+            assert type(shows[name].seasons) is OrderedDict
+            assert len(shows[name].seasons) > 0
+
+            prev = 9999
+            for s in shows[name].seasons:
+                # TODO: assert is type season
+
+                # make sure the years look sane-ish
+                assert int(s) > 2000 and int(s) < 2050
+
+                # make sure it's sorted high to low
+                assert int(prev) > int(s)
+                prev = s
+
+
     @vcr.use_cassette('public_API/europe_pigskin_current.yaml')
     @staticmethod
     def test_current(gp):
