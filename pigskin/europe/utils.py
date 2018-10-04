@@ -17,7 +17,7 @@ class utils(object):
         Parameters
         ----------
         nfldate : str
-            The DIVA config URL that you need parsed.
+            The date time string.
         localize : bool
             Whether the datetime object should be localized.
 

@@ -33,17 +33,16 @@ class TestPigskin(object):
         assert seasons
         assert type(seasons) is OrderedDict
 
-        prev = None
+        assert len(seasons) > 0
+        prev = 9999
         for s in seasons:
             # TODO: assert type(seasons[s]) is season
-
-            if prev:
-                # make sure it's sorted high to low
-                assert prev > s
 
             # make sure the years look sane-ish
             assert int(s) > 2000 and int(s) < 2050
 
+            # make sure it's sorted high to low
+            assert int(prev) > int(s)
             prev = s
 
 
@@ -179,6 +178,7 @@ class TestPigskin(object):
                 assert team['city']
                 assert isinstance(team['city'], basestring)
                 assert type(team['points']) is int
+                # TODO: test that if the game is in the future, points should be None
 
             # check game data
             assert game.city
@@ -207,6 +207,8 @@ class TestPigskin(object):
             #assert type(game.week_desc) is str
 
             prev = game
+
+        # TODO: test a specific game, fully, for all content.
 
 
     # This cassette is unused, as ``versions`` does not cause any HTTP requests.

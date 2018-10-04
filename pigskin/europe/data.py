@@ -529,7 +529,6 @@ class data(object):
                     games_dict[st][key] = self._extract_game_info(game)
             except KeyError:
                 self.logger.warn('_get_team_games_easy: invalid record; skipping.')
-                pass
 
         # purge empty season types (the team may not have made the post season).
         games_dict = OrderedDict((st, games_dict[st]) for st in games_dict if games_dict[st])
