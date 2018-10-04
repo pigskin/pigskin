@@ -48,8 +48,9 @@ class pigskin(object):
         self._store.refresh_token = None
         self._store.subscription = None
 
-        self._seasons = None
         self._current = None
+        self._seasons = None
+        self._shows = None
         self.nfln_shows = {}
         self.episode_list = []
 
@@ -104,6 +105,26 @@ class pigskin(object):
             self.logger.debug('``seasons`` ready')
 
         return self._seasons
+
+
+    @property
+    def shows(self):
+        """An OrderedDict of shows and their show objects.
+
+        Returns
+        -------
+        OrderedDict
+            Sorted alphabetically, with a show object as the value.
+            ``None`` if there was a failure.
+        """
+
+        if self._shows is None:
+            self.logger.debug('``shows`` not set. attempting to populate')
+            shows_list = self._data.get_shows()
+            self._shows = OrderedDict((s, show(self, shows_list[s])) for s in shows_list)
+            self.logger.debug('``shows`` ready')
+
+        return self._shows
 
 
     def login(self, username, password, force=False):
@@ -637,3 +658,49 @@ class version(object):
             self.logger.debug('``streams`` ready')
 
         return self._streams
+
+
+class show(object):
+    def __init__(self, pigskin_obj, show_info):
+        self._pigskin = pigskin_obj
+        self._data = self._pigskin._data
+        self._show_info = show_info
+
+        self.logger = logging.getLogger(__name__)
+        self._seasons = None
+
+
+    @property
+    def desc(self):
+        return self._show_info['desc']
+
+
+    @property
+    def logo(self):
+        return self._show_info['logo']
+
+
+    @property
+    def name(self):
+        return self._show_info['name']
+
+
+    @property
+    def seasons(self):
+        """An OrderedDict of available seasons and their season objects.
+
+        Returns
+        -------
+        OrderedDict
+            Sorted from most to least recent, with a season object as the value.
+            ``None`` if there was a failure.
+        """
+
+        if self._seasons is None:
+            self.logger.debug('show ``seasons`` not set. attempting to populate')
+            seasons_list = self._data.get_show_seasons(self._show_info['slug'])
+            # TODO: return season objects
+            self._seasons = OrderedDict((s, '') for s in sorted(seasons_list, reverse=True))
+            self.logger.debug('show ``seasons`` ready')
+
+        return self._seasons
