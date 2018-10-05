@@ -1,7 +1,7 @@
-import pytest
-import vcr
 from collections import OrderedDict
 
+import pytest
+import vcr
 from pigskin.pigskin import pigskin
 
 
@@ -13,12 +13,6 @@ try:  # Python 2.7
     basestring = basestring
 except NameError:
     basestring = str
-
-
-@pytest.fixture(scope='class')
-def gp():
-    with vcr.use_cassette('public_API/europe_pigskin_gp.yaml'):
-        return pigskin()
 
 
 @pytest.mark.incremental

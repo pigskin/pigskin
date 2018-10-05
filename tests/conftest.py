@@ -5,11 +5,17 @@ import re
 import socket
 import vcr
 from hashlib import sha256
+from pigskin.pigskin import pigskin
 try:
     from urllib.parse import quote
 except ImportError:  # Python 2.7
     from urllib import quote
 
+
+@pytest.fixture(scope='class')
+def gp():
+    with vcr.use_cassette('public_API/europe_gp.yaml'):
+        return pigskin()
 
 pytest.gp_username = os.getenv('PIGSKIN_USER', '')
 pytest.gp_password = os.getenv('PIGSKIN_PASS', '')
