@@ -48,13 +48,6 @@ class TestPigskin(object):
         for season in ['2015', '2017', '2018']:
             teams = gp.seasons[season].teams
 
-            # make sure we have content and it's the right type
-            assert teams
-            assert type(teams) is OrderedDict
-
-            # make sure we have all the teams
-            assert len(teams) == 32
-
             # teams move; make sure the Rams' info is correct
             if season == '2015':
                 assert teams['Rams'].city == 'St. Louis'
@@ -105,40 +98,6 @@ class TestPigskin(object):
     @staticmethod
     def test_weeks(gp):
         weeks = gp.seasons['2017'].weeks
-
-        # make sure we have content and it's the right type
-        assert weeks
-        assert type(weeks) is OrderedDict
-
-        # and all the season types are there
-        assert weeks['pre']
-        assert weeks['reg']
-        assert weeks['post']
-        assert type(weeks['pre']) is OrderedDict
-        assert type(weeks['reg']) is OrderedDict
-        assert type(weeks['post']) is OrderedDict
-
-        # make sure it's in order
-        i = 0
-        for season_type in weeks:  # Python 2.7
-            if i == 0:
-                assert season_type == 'pre'
-            elif i == 1:
-                assert season_type == 'reg'
-            elif i == 2:
-                assert season_type == 'post'
-            i += 1
-
-        # TODO: test that all weeks are of type week
-
-        # make sure the week numbers look sane
-        for week in weeks['pre']:
-            assert int(week) >= 0 and int(week) <= 4
-        for week in weeks['reg']:
-            assert int(week) >= 1 and int(week) <= 17
-        for week in weeks['post']:
-            assert int(week) >= 18 and int(week) <= 22
-
         # make sure at least some week descriptions look alright
         assert weeks['pre']['0'].desc == 'Hall of Fame'
         assert weeks['pre']['2'].desc == ''
