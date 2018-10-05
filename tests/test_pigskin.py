@@ -94,27 +94,12 @@ class TestPigskin(object):
         # complicated with the weeks.games and team.games
 
 
-    @vcr.use_cassette('public_API/europe_pigskin_weeks.yaml')
-    @staticmethod
-    def test_weeks(gp):
-        weeks = gp.seasons['2017'].weeks
-        # make sure at least some week descriptions look alright
-        assert weeks['pre']['0'].desc == 'Hall of Fame'
-        assert weeks['pre']['2'].desc == ''
-        assert weeks['reg']['5'].desc == ''
-        assert weeks['post']['22'].desc == 'Super Bowl'
-
-
     @vcr.use_cassette('public_API/europe_pigskin_games.yaml')
     @staticmethod
     def test_games(gp):
         games = gp.seasons['2017'].weeks['reg']['8'].games
         # TODO: create a list for team_games by walking
         #       gp.seasons['2018'].teams['Steelers'].weeks[*][*]
-
-        # make sure we have content and it's the right type
-        assert games
-        assert type(games) is OrderedDict
 
         prev = None
         for g in games:
