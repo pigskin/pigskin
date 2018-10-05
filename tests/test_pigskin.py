@@ -40,58 +40,17 @@ class TestPigskin(object):
             prev = s
 
 
-    @vcr.use_cassette('public_API/europe_pigskin_teams.yaml')
     @staticmethod
+    @vcr.use_cassette('public_API/europe_pigskin_teams.yaml')
     def test_teams(gp):
-        # we test 2015 for the St. Louis Rams; 2017 because week 1 had only 15
-        # games, and 2018 because it should be normal/typical.
-        for season in ['2015', '2017', '2018']:
-            teams = gp.seasons[season].teams
-
-            # teams move; make sure the Rams' info is correct
-            if season == '2015':
-                assert teams['Rams'].city == 'St. Louis'
-                assert teams['Rams'].abbr == 'STL'
-            else:
-                assert teams['Rams'].city == 'Los Angeles'
-                assert teams['Rams'].abbr == 'LA'
-
-            # The keys and names should always match
-            for t in teams:
-                assert t == teams[t].name
-                # TODO: check that they are alphabetized
-                # TODO: test that all teams are of type team
-
-            # make the games list is there and is of the right type
-            assert teams['Eagles'].games
-            assert type(teams['Eagles'].games) is OrderedDict
-
-            # check some other random info
-            assert teams['Packers'].city == 'Green Bay'
-            assert teams['Eagles'].abbr == 'PHI'
-            assert teams['Jets'].abbr == 'NYJ'
-
-        # test games for a team
         teams = gp.seasons['2017'].teams
 
-        for season_type in teams['Eagles'].games:
-            # a known season type
-            assert season_type in ['pre', 'reg', 'post']
-            assert type(teams['Eagles'].games[season_type]) is OrderedDict
+        # make sure we have content and it's the right type
+        assert teams
+        assert type(teams) is OrderedDict
 
-            for game_name in teams['Eagles'].games[season_type]:
-                assert 'Eagles' in game_name
-                # TODO: check that the games are sorted in order
-                # TODO: test that they are of type game
-
-        # test post season (Eagles won the Super Bowl in 2017)
-        assert teams['Eagles'].games['post']['Eagles@Patriots']
-
-        # there should be no post season entry for teams that miss out
-        assert 'post' not in teams['Browns'].games
-
-        # TODO: these game tests may really just belong elsewhere. it's a bit
-        # complicated with the weeks.games and team.games
+        # TODO: check that they are alphabetized
+        # TODO: test that all teams are of type team
 
 
     @vcr.use_cassette('public_API/europe_pigskin_games.yaml')
