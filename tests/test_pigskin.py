@@ -53,80 +53,14 @@ class TestPigskin(object):
         # TODO: test that all teams are of type team
 
 
-    @vcr.use_cassette('public_API/europe_pigskin_games.yaml')
-    @staticmethod
-    def test_games(gp):
-        games = gp.seasons['2017'].weeks['reg']['8'].games
-        # TODO: create a list for team_games by walking
-        #       gp.seasons['2018'].teams['Steelers'].weeks[*][*]
-
-        prev = None
-        for g in games:
-            game = games[g]
-            # TODO: test that all values are of type game
-
-            # check team data
-            assert game.home and game.away
-            for team in [game.home, game.away]:
-                assert type(team) is dict
-
-                assert team['name']
-                assert isinstance(team['name'], basestring)
-                assert team['city']
-                assert isinstance(team['city'], basestring)
-                assert type(team['points']) is int
-                # TODO: test that if the game is in the future, points should be None
-
-            # check game data
-            assert game.city
-            assert isinstance(game.city, basestring)
-            assert game.stadium
-            assert isinstance(game.stadium, basestring)
-
-            assert game.phase
-            assert isinstance(game.phase, basestring)
-
-            assert game.start_time
-            assert isinstance(game.start_time, basestring)
-            assert gp.nfldate_to_datetime(game.start_time)
-
-            if prev:
-                # make sure it's sorted low to high
-                assert gp.nfldate_to_datetime(prev.start_time) <= gp.nfldate_to_datetime(game.start_time)
-
-            #assert game.season
-            #assert type(game.season) is str
-            #assert game.season_type
-            #assert type(game.season_type) is str
-            #assert game.week
-            #assert type(game.week) is str
-            #assert game.week_desc
-            #assert type(game.week_desc) is str
-
-            prev = game
-
-        # TODO: test a specific game, fully, for all content.
-
-
     # This cassette is unused, as ``versions`` does not cause any HTTP requests.
     # However, it remains here just in case that changes in the future.
     @vcr.use_cassette('public_API/europe_pigskin_versions.yaml')
     @staticmethod
     def test_versions(gp):
         versions = gp.seasons['2017'].weeks['reg']['8'].games['Panthers@Buccaneers'].versions
-        # TODO: test gp.seasons['2017'].teams['Steelers'].weeks['reg']['8'].versions
-
-        # make sure we have content and it's the right type
-        assert versions
-        assert type(versions) is OrderedDict
 
         for v in versions:
-            assert versions[v]
-            # TODO: test that all are of type ``version``
-
-            # make sure it's a known version type
-            assert v in ['full', 'condensed', 'coach']
-
             # make sure the description has content, si the right type, and is sane
             assert versions[v].desc
             assert isinstance(versions[v].desc, basestring)
