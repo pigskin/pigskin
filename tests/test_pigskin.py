@@ -55,20 +55,6 @@ class TestPigskin(object):
         # TODO: test that all teams are of type team
 
 
-    # This cassette is unused, as ``versions`` does not cause any HTTP requests.
-    # However, it remains here just in case that changes in the future.
-    @vcr.use_cassette('public_API/europe_pigskin_versions.yaml')
-    @staticmethod
-    def test_versions(gp):
-        versions = gp.seasons['2017'].weeks['reg']['8'].games['Panthers@Buccaneers'].versions
-
-        for v in versions:
-            # make sure the description has content, si the right type, and is sane
-            assert isinstance(versions[v].desc, basestring)
-            assert versions[v].desc
-            assert versions[v].desc in ['Full Game', 'Condensed Game', 'Coaches Tape']
-
-
     @vcr.use_cassette('public_API/europe_pigskin_shows.yaml')
     @staticmethod
     def test_shows(gp):
@@ -196,20 +182,6 @@ class TestPigskinAuth(object):
         # and finally make sure they've actually been refreshed
         assert first_access_token != gp._store.access_token
         assert first_refresh_token != gp._store.refresh_token
-
-
-    @vcr.use_cassette('public_API/europe_pigskin_auth_game_streams.yaml')
-    @staticmethod
-    def test_game_streams(gp):
-        streams = gp.seasons['2017'].weeks['reg']['8'].games['Panthers@Buccaneers'].versions['full'].streams
-
-        # make sure we have content and it's the right type
-        assert streams
-        assert type(streams) is dict
-
-        for s in streams:
-            assert streams[s]
-            # TODO: test that all are of type ``stream``
 
 
 @pytest.mark.incremental
