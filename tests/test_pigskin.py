@@ -1,4 +1,5 @@
 from collections import OrderedDict
+from datetime import datetime
 
 import pytest
 import vcr
@@ -24,13 +25,14 @@ class TestPigskin(object):
         seasons = gp.seasons
 
         # make sure we have content and it's the right type
-        assert seasons
         assert type(seasons) is OrderedDict
+        assert seasons
 
         assert len(seasons) > 0
         prev = 9999
         for s in seasons:
             # TODO: assert type(seasons[s]) is season
+            assert seasons[s]
 
             # make sure the years look sane-ish
             assert int(s) > 2000 and int(s) < 2050
@@ -46,8 +48,8 @@ class TestPigskin(object):
         teams = gp.seasons['2017'].teams
 
         # make sure we have content and it's the right type
-        assert teams
         assert type(teams) is OrderedDict
+        assert teams
 
         # TODO: check that they are alphabetized
         # TODO: test that all teams are of type team
@@ -62,8 +64,8 @@ class TestPigskin(object):
 
         for v in versions:
             # make sure the description has content, si the right type, and is sane
-            assert versions[v].desc
             assert isinstance(versions[v].desc, basestring)
+            assert versions[v].desc
             assert versions[v].desc in ['Full Game', 'Condensed Game', 'Coaches Tape']
 
 
@@ -73,8 +75,8 @@ class TestPigskin(object):
         shows = gp.shows
 
         # make sure we have content and it's the right type
-        assert shows
         assert type(shows) is OrderedDict
+        assert shows
 
         for name in shows:
             assert isinstance(shows[name].desc, basestring)
@@ -106,8 +108,8 @@ class TestPigskin(object):
         current = gp.current
 
         # make sure we have a response
-        assert current
         assert type(current) is dict
+        assert current
 
         # that the fields are there and set
         assert current['season']
@@ -136,6 +138,7 @@ class TestPigskin(object):
         nfldate = '2017-09-12T02:20:00.000Z'
         dt_utc = gp.nfldate_to_datetime(nfldate)
 
+        assert type(dt_utc) is datetime
         assert dt_utc
         assert dt_utc.strftime('%Y.%m.%d-%H.%M.%S') == '2017.09.12-02.20.00'
 

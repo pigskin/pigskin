@@ -24,8 +24,8 @@ class TestSeason(object):
         weeks = gp.seasons['2017'].weeks
 
         # make sure we have content and it's the right type
-        assert weeks
         assert type(weeks) is OrderedDict
+        assert weeks
 
         # TODO: test that all weeks are of type week
 
@@ -36,8 +36,8 @@ class TestSeason(object):
         teams = gp.seasons['2017'].teams
 
         # make sure we have content and it's the right type
-        assert teams
         assert type(teams) is OrderedDict
+        assert teams
 
         # make sure we have all the teams
         assert len(teams) == 32
@@ -51,12 +51,12 @@ class TestSeason(object):
         weeks = gp.seasons['2017'].weeks
 
         # and all the season types are there
-        assert weeks['pre']
-        assert weeks['reg']
-        assert weeks['post']
         assert type(weeks['pre']) is OrderedDict
         assert type(weeks['reg']) is OrderedDict
         assert type(weeks['post']) is OrderedDict
+        assert weeks['pre']
+        assert weeks['reg']
+        assert weeks['post']
 
         # TODO: test that /only/ pre, reg, and post are present
 

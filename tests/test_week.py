@@ -66,12 +66,16 @@ class TestWeek(object):
         games = gp.seasons['2017'].weeks['reg']['8'].games
 
         # make sure we have content and it's the right type
-        assert games
         assert type(games) is OrderedDict
+        assert games
 
         prev = None
         for g in games:
             game = games[g]
+
+            # TODO: test that it is of type game
+            assert game
+
             if prev:
                 # make sure it's sorted low to high
                 dt_prev = gp.nfldate_to_datetime(prev.start_time)
@@ -79,5 +83,3 @@ class TestWeek(object):
                 assert dt_prev <= dt_game
 
             prev = game
-
-        # TODO: test that all are of type game

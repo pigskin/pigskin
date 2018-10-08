@@ -46,10 +46,10 @@ class TestGame(object):
             for team in [game.home, game.away]:
                 assert type(team) is dict
 
-                assert team['name']
                 assert isinstance(team['name'], basestring)
-                assert team['city']
+                assert team['name']
                 assert isinstance(team['city'], basestring)
+                assert team['city']
                 assert type(team['points']) is int
                 # TODO: test that if the game is in the future, points should be None
 
@@ -111,8 +111,8 @@ class TestGame(object):
             assert game.start_time
 
             dt = gp.nfldate_to_datetime(game.start_time)
-            assert dt
             assert type(dt) is datetime
+            assert dt
 
             # TODO: should we verify that the date looks sane?
 
@@ -129,13 +129,13 @@ class TestGame(object):
             assert game.versions
 
             for v in game.versions:
+                assert game.versions[v]
+                # TODO: test that all are of type ``version``
+
                 # make sure it's a known version type
                 assert v in ['full', 'condensed', 'coach']
 
                 # TODO: test order of OrderedDict
-
-                assert game.versions[v]
-                # TODO: test that all are of type ``version``
 
 
     # TODO: if data validation (city, stadium, etc) isn't done, then at least
