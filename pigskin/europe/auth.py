@@ -172,10 +172,9 @@ class auth(object):
                 'uuid' : gigya_data['UID'],
                 'signature' : gigya_data['UIDSignature'],
                 'ts' : gigya_data['signatureTimestamp'],
-                'errorCode' : '0',
+                'device_type' : 'web',
                 'username' : username,
-                'password' : password,
-                'grant_type' : 'password'
+                'grant_type' : 'shield_authentication',
             }
 
         try:
