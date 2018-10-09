@@ -51,8 +51,13 @@ class TestPigskin(object):
         assert type(teams) is OrderedDict
         assert teams
 
-        # TODO: check that they are alphabetized
-        # TODO: test that all teams are of type team
+        for t in teams:
+            team = teams[t]
+
+            # TODO: test that all teams are of type team
+            assert team
+
+            # TODO: check that they are alphabetized
 
 
     @vcr.use_cassette('public_API/europe_pigskin_shows.yaml')
@@ -100,7 +105,7 @@ class TestPigskin(object):
 
     @staticmethod
     def test_nfldate_to_datetime(gp):
-        # NOTE: nfldate_to_datetime() is also run for every game in test_games()
+        # NOTE: nfldate_to_datetime() is also run for every game in test_game.py
         nfldate = '2017-09-12T02:20:00.000Z'
         dt_utc = gp.nfldate_to_datetime(nfldate)
 
@@ -133,7 +138,8 @@ class TestPigskinAuth(object):
     def test_login(gp):
         assert gp.login(pytest.gp_username, pytest.gp_password, force=True)
 
-        # make sure tokens are actually set
+        # make sure tokens are set
+        # TODO: this is service-specific. It should be moved to backend/.
         assert gp._store.access_token
         assert gp._store.refresh_token
 
@@ -141,8 +147,8 @@ class TestPigskinAuth(object):
     @vcr.use_cassette('public_API/europe_pigskin_auth_subscription.yaml')
     @staticmethod
     def test_subscription(gp):
-        assert gp.subscription
         isinstance(gp.subscription, basestring)
+        assert gp.subscription
 
 
     @vcr.use_cassette('public_API/europe_pigskin_auth_refresh_tokens.yaml')
@@ -173,6 +179,7 @@ class TestPigskinAuthFail(object):
         assert not gp.login(username='I_do_not_exist', password='wrong', force=True)
 
         # make sure tokens are not set
+        # TODO: this is service-specific. It should be moved to backend/.
         assert not gp._store.access_token
         assert not gp._store.refresh_token
 
@@ -190,5 +197,6 @@ class TestPigskinAuthFail(object):
         assert not gp.refresh_tokens()
 
         # make sure new tokens are not set
+        # TODO: this is service-specific. It should be moved to backend/.
         assert not gp._store.access_token
         assert not gp._store.refresh_token
