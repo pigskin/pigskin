@@ -1,0 +1,580 @@
+interactions:
+- request:
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_5bbcbc4a0fa0406cb3911c620b0e0f1105a2d950df1973a0336abc29a5cd5a6f&grant_type=refresh_token
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['161']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://www.nflgamepass.com/api/user/oauth/token
+  response:
+    body:
+      pretty: {code: UR_10006, httpStatusCode: 401, id: 6071cd3d-756c-49ee-9a3e-5055f16e465b,
+        message: error_unauthorised, validationErrors: null}
+      string: '{"id": "6071cd3d-756c-49ee-9a3e-5055f16e465b", "code": "UR_10006",
+        "message": "error_unauthorised", "httpStatusCode": 401, "validationErrors":
+        null}'
+    headers:
+      Cache-Control: ['max-age=0, no-cache, no-store']
+      Connection: [close]
+      Content-Length: ['139']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Pragma: [no-cache]
+      Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
+      Server: [Microsoft-IIS/10.0]
+      X-Powered-By: [ASP.NET]
+    status: {code: 400, message: Bad Request}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://www.nflgamepass.com/api/en/content/v1/web/network/data
+  response:
+    body:
+      pretty:
+        header: {id: network, lastUpdate: '2018-10-09T08:06:33.516Z', title: '', version: '1.0'}
+        modules:
+          analytics: {content_type: index, language: en_US, page_detail: landing,
+            page_name: 'gamepass international:nfl network:nfl network:landing', site_name: gamepass
+              international, site_section: nfl network, site_subsection: nfl network}
+          networkEpg:
+            futurePrograms:
+            - {description: '"Good Morning Football" - Catch up on everything NFL
+                with the latest news, highlights, and trending topics from across
+                the football world and beyond.', duration: 3.0, featured: 'false',
+              logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 10, programId: 22903603, repeats: p, shortDescription: '"Good
+                Morning Football" - Catch up on everything NFL with the latest news,
+                highlights, and trending topics from across the football world and
+                beyond.', showLinkCode: 'Null', startDayEST: 9, startMonthEST: 10,
+              startTime: 1539082800000, startTimeUTC: '2018-10-09T11:00:00Z', team1: null,
+              team2: null, title: GOOD MORNING FOOTBALL}
+            - {description: '"Good Morning Football" - Catch up on everything NFL
+                with the latest news, highlights, and trending topics from across
+                the football world and beyond.', duration: 3.0, featured: 'false',
+              logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 10, programId: 22903604, repeats: r, shortDescription: '"Good
+                Morning Football" - Catch up on everything NFL with the latest news,
+                highlights, and trending topics from across the football world and
+                beyond.', showLinkCode: 'Null', startDayEST: 9, startMonthEST: 10,
+              startTime: 1539093600000, startTimeUTC: '2018-10-09T14:00:00Z', team1: null,
+              team2: null, title: GOOD MORNING FOOTBALL}
+            - {description: '"NFL Up to the Minute" - Go inside the NFL Media newsroom
+                for all the latest NFL news, injury updates and inside information
+                from reporters across the country.', duration: 1.0, featured: 'false',
+              logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 10, programId: 22903605, repeats: p, shortDescription: '"NFL
+                Up to the Minute" - Go inside the NFL Media newsroom for all the latest
+                NFL news, injury updates and inside information from reporters across
+                the country.', showLinkCode: 'Null', startDayEST: 9, startMonthEST: 10,
+              startTime: 1539104400000, startTimeUTC: '2018-10-09T17:00:00Z', team1: null,
+              team2: null, title: NFL UP TO THE MINUTE}
+            - {description: '"Monday Night Football" - Washington Redskins vs. New
+                Orleans Saints (From 10/08/18)', duration: 3.0, featured: 'false',
+              logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 10, programId: 22903606, repeats: null, shortDescription: '"Monday
+                Night Football" - Washington Redskins vs. New Orleans Saints (From
+                10/08/18)', showLinkCode: 'Null', startDayEST: 9, startMonthEST: 10,
+              startTime: 1539108000000, startTimeUTC: '2018-10-09T18:00:00Z', team1: null,
+              team2: null, title: MONDAY NIGHT FOOTBALL}
+            - {description: '"NFL Fantasy Live" - Michael Fabiano and our NFL.com
+                fantasy experts get you all the latest news and analysis you need
+                to dominate your fantasy matchup.', duration: 1.0, featured: 'false',
+              logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 10, programId: 22903607, repeats: p, shortDescription: '"NFL
+                Fantasy Live" - Michael Fabiano and our NFL.com fantasy experts get
+                you all the latest news and analysis you need to dominate your fantasy
+                matchup.', showLinkCode: 'Null', startDayEST: 9, startMonthEST: 10,
+              startTime: 1539118800000, startTimeUTC: '2018-10-09T21:00:00Z', team1: null,
+              team2: null, title: NFL FANTASY LIVE}
+            - {description: '"NFL Power Rankings" - An in depth look at where your
+                team ranks on Elliot Harrison''s rankings of all 32 clubs. Who has
+                moved up and who has lost ground in the NFL? Our experts debate.',
+              duration: 0.5, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 10, programId: 22903608, repeats: null, shortDescription: '"NFL
+                Power Rankings" - An in depth look at where your team ranks on Elliot
+                Harrison''s rankings of all 32 clubs. Who has moved up and who has
+                lost ground in the NFL? Our experts debate.', showLinkCode: 'Null',
+              startDayEST: 9, startMonthEST: 10, startTime: 1539122400000, startTimeUTC: '2018-10-09T22:00:00Z',
+              team1: null, team2: null, title: NFL POWER RANKINGS}
+            - {description: '"21st & Prime" - Deion "Primetime" Sanders takes on the
+                hottest topics from around the NFL as only he can. ', duration: 0.5,
+              featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 10, programId: 22903609, repeats: null, shortDescription: '"21st
+                & Prime" - Deion "Primetime" Sanders takes on the hottest topics from
+                around the NFL as only he can. ', showLinkCode: 'Null', startDayEST: 9,
+              startMonthEST: 10, startTime: 1539124200000, startTimeUTC: '2018-10-09T22:30:00Z',
+              team1: null, team2: null, title: 21ST & PRIME}
+            - {description: '"NFL Total Access" - NFL Network''s nightly flagship
+                program brings you all the latest news, opinions, highlights and interviews
+                from around the NFL. ', duration: 1.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 10, programId: 22903610, repeats: p, shortDescription: '"NFL
+                Total Access" - NFL Network''s nightly flagship program brings you
+                all the latest news, opinions, highlights and interviews from around
+                the NFL. ', showLinkCode: 'Null', startDayEST: 9, startMonthEST: 10,
+              startTime: 1539126000000, startTimeUTC: '2018-10-09T23:00:00Z', team1: null,
+              team2: null, title: NFL TOTAL ACCESS}
+            - {description: '"NFL Football" - 2018 Week 5: New York Giants vs. Carolina
+                Panthers (From 10/7/18).', duration: 3.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 10, programId: 22903611, repeats: null, shortDescription: '"NFL
+                Football" - 2018 Week 5: New York Giants vs. Carolina Panthers (From
+                10/7/18).', showLinkCode: 'Null', startDayEST: 9, startMonthEST: 10,
+              startTime: 1539129600000, startTimeUTC: '2018-10-10T00:00:00Z', team1: null,
+              team2: null, title: FULL GAME BROADCAST}
+            - {description: '"NFL Total Access" - NFL Network''s nightly flagship
+                program brings you all the latest news, opinions, highlights and interviews
+                from around the NFL. ', duration: 1.0, featured: 'false', logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 10, programId: 22903612, repeats: r, shortDescription: '"NFL
+                Total Access" - NFL Network''s nightly flagship program brings you
+                all the latest news, opinions, highlights and interviews from around
+                the NFL. ', showLinkCode: 'Null', startDayEST: 9, startMonthEST: 10,
+              startTime: 1539140400000, startTimeUTC: '2018-10-10T03:00:00Z', team1: null,
+              team2: null, title: NFL TOTAL ACCESS}
+            liveProgram: {description: '"Monday Night Football" - Washington Redskins
+                vs. New Orleans Saints (From 10/08/18)', duration: 3.0, featured: 'false',
+              logo: 'http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png',
+              month: 10, programId: 22899914, repeats: null, shortDescription: '"Monday
+                Night Football" - Washington Redskins vs. New Orleans Saints (From
+                10/08/18)', showLinkCode: 'Null', startDayEST: 9, startMonthEST: 10,
+              startTime: 1539072000000, startTimeUTC: '2018-10-09T08:00:00Z', team1: null,
+              team2: null, title: MONDAY NIGHT FOOTBALL}
+          networkLiveVideo:
+            content:
+            - description: '<p>NFL Network Channel</p>
+
+                '
+              isBasic: false
+              isGameOfTheWeek: false
+              kind: NFL Network Live video
+              nflprogram: null
+              nflprogramcode: null
+              scheduleDate: '2017-05-30 14:41:00Z'
+              season: null
+              seasonType: null
+              slug: nfl-network-channel
+              title: NFL Network
+              trimmedVideoDuration: ''
+              videoDuration: ''
+              videoId: 86696b55-9d15-4625-856c-d88a8cdb9f33
+              videoStatus: LIVE
+              videoThumbnail:
+                overridenFormats: {}
+                templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/l86u2cmbhskwgq7nmsph
+              vocGameTopTag: null
+              week: null
+            texts: {subTitle: videos-list-subtitle, title: videos-list-title}
+          notLoggedTeaser:
+            contentDate: '2017-08-02T11:05:25.08Z'
+            fields: {}
+            headline: ''
+            parts:
+            - content: '<p>Watch the NFL Network channel live 24 hours a day, 7 days
+                a week.Plus a huge library of on demand films, like A Football Life,
+                The Timeline, Hard Knocks and Total Access</p>
+
+                '
+              contextualFields: {}
+              type: markdown
+            references: {}
+            relations: []
+            slug: nfl-network-mobile
+            summary: '<p>Watch the NFL Network channel live 24 hours a day, 7 days
+              a week.Plus a huge library of on demand films, like A Football Life,
+              The Timeline, Hard Knocks and Total Access</p>
+
+              '
+            tags:
+            - extraData: {}
+              fields: {}
+              neutralSlug: network-heromodule-not-logged
+              slug: network-heromodule-not-logged
+              title: network-heromodule-not-logged
+              type: tag
+            thumbnail:
+              format: jpg
+              overriddenFormats: {}
+              templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/l7wc80cv63dm6cveggqg
+              thumbnailUrl: https://nflgp-prd.akamaized.net/api/images/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_jpg/l7wc80cv63dm6cveggqg
+              title: AP_Seahawks_Wilson
+            title: "NFL Network\_"
+            type: story
+      string: '{"header": {"id": "network", "version": "1.0", "title": "", "lastUpdate":
+        "2018-10-09T08:06:33.516Z"}, "modules": {"notLoggedTeaser": {"type": "story",
+        "slug": "nfl-network-mobile", "relations": [], "references": {}, "fields":
+        {}, "contentDate": "2017-08-02T11:05:25.08Z", "headline": "", "summary": "<p>Watch
+        the NFL Network channel live 24 hours a day, 7 days a week.Plus a huge library
+        of on demand films, like A Football Life, The Timeline, Hard Knocks and Total
+        Access</p>\n", "parts": [{"type": "markdown", "content": "<p>Watch the NFL
+        Network channel live 24 hours a day, 7 days a week.Plus a huge library of
+        on demand films, like A Football Life, The Timeline, Hard Knocks and Total
+        Access</p>\n", "contextualFields": {}}], "thumbnail": {"title": "AP_Seahawks_Wilson",
+        "templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/l7wc80cv63dm6cveggqg",
+        "thumbnailUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_jpg/l7wc80cv63dm6cveggqg",
+        "format": "jpg", "overriddenFormats": {}}, "tags": [{"type": "tag", "title":
+        "network-heromodule-not-logged", "slug": "network-heromodule-not-logged",
+        "neutralSlug": "network-heromodule-not-logged", "extraData": {}, "fields":
+        {}}], "title": "NFL Network\u00a0"}, "networkLiveVideo": {"texts": {"title":
+        "videos-list-title", "subTitle": "videos-list-subtitle"}, "content": [{"videoId":
+        "86696b55-9d15-4625-856c-d88a8cdb9f33", "title": "NFL Network", "description":
+        "<p>NFL Network Channel</p>\n", "kind": "NFL Network Live video", "videoStatus":
+        "LIVE", "videoDuration": "", "trimmedVideoDuration": "", "slug": "nfl-network-channel",
+        "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/l86u2cmbhskwgq7nmsph",
+        "overridenFormats": {}}, "week": null, "season": null, "seasonType": null,
+        "scheduleDate": "2017-05-30 14:41:00Z", "isGameOfTheWeek": false, "vocGameTopTag":
+        null, "isBasic": false, "nflprogram": null, "nflprogramcode": null}]}, "networkEpg":
+        {"liveProgram": {"programId": 22899914, "startTime": 1539072000000, "startTimeUTC":
+        "2018-10-09T08:00:00Z", "duration": 3.0, "repeats": null, "team1": null, "team2":
+        null, "month": 10, "showLinkCode": "Null", "featured": "false", "startMonthEST":
+        10, "startDayEST": 9, "title": "MONDAY NIGHT FOOTBALL", "description": "\"Monday
+        Night Football\" - Washington Redskins vs. New Orleans Saints (From 10/08/18)",
+        "shortDescription": "\"Monday Night Football\" - Washington Redskins vs. New
+        Orleans Saints (From 10/08/18)", "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        "futurePrograms": [{"programId": 22903603, "startTime": 1539082800000, "startTimeUTC":
+        "2018-10-09T11:00:00Z", "duration": 3.0, "repeats": "p", "team1": null, "team2":
+        null, "month": 10, "showLinkCode": "Null", "featured": "false", "startMonthEST":
+        10, "startDayEST": 9, "title": "GOOD MORNING FOOTBALL", "description": "\"Good
+        Morning Football\" - Catch up on everything NFL with the latest news, highlights,
+        and trending topics from across the football world and beyond.", "shortDescription":
+        "\"Good Morning Football\" - Catch up on everything NFL with the latest news,
+        highlights, and trending topics from across the football world and beyond.",
+        "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22903604, "startTime": 1539093600000, "startTimeUTC": "2018-10-09T14:00:00Z",
+        "duration": 3.0, "repeats": "r", "team1": null, "team2": null, "month": 10,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 10, "startDayEST":
+        9, "title": "GOOD MORNING FOOTBALL", "description": "\"Good Morning Football\"
+        - Catch up on everything NFL with the latest news, highlights, and trending
+        topics from across the football world and beyond.", "shortDescription": "\"Good
+        Morning Football\" - Catch up on everything NFL with the latest news, highlights,
+        and trending topics from across the football world and beyond.", "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22903605, "startTime": 1539104400000, "startTimeUTC": "2018-10-09T17:00:00Z",
+        "duration": 1.0, "repeats": "p", "team1": null, "team2": null, "month": 10,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 10, "startDayEST":
+        9, "title": "NFL UP TO THE MINUTE", "description": "\"NFL Up to the Minute\"
+        - Go inside the NFL Media newsroom for all the latest NFL news, injury updates
+        and inside information from reporters across the country.", "shortDescription":
+        "\"NFL Up to the Minute\" - Go inside the NFL Media newsroom for all the latest
+        NFL news, injury updates and inside information from reporters across the
+        country.", "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22903606, "startTime": 1539108000000, "startTimeUTC": "2018-10-09T18:00:00Z",
+        "duration": 3.0, "repeats": null, "team1": null, "team2": null, "month": 10,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 10, "startDayEST":
+        9, "title": "MONDAY NIGHT FOOTBALL", "description": "\"Monday Night Football\"
+        - Washington Redskins vs. New Orleans Saints (From 10/08/18)", "shortDescription":
+        "\"Monday Night Football\" - Washington Redskins vs. New Orleans Saints (From
+        10/08/18)", "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22903607, "startTime": 1539118800000, "startTimeUTC": "2018-10-09T21:00:00Z",
+        "duration": 1.0, "repeats": "p", "team1": null, "team2": null, "month": 10,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 10, "startDayEST":
+        9, "title": "NFL FANTASY LIVE", "description": "\"NFL Fantasy Live\" - Michael
+        Fabiano and our NFL.com fantasy experts get you all the latest news and analysis
+        you need to dominate your fantasy matchup.", "shortDescription": "\"NFL Fantasy
+        Live\" - Michael Fabiano and our NFL.com fantasy experts get you all the latest
+        news and analysis you need to dominate your fantasy matchup.", "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22903608, "startTime": 1539122400000, "startTimeUTC": "2018-10-09T22:00:00Z",
+        "duration": 0.5, "repeats": null, "team1": null, "team2": null, "month": 10,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 10, "startDayEST":
+        9, "title": "NFL POWER RANKINGS", "description": "\"NFL Power Rankings\" -
+        An in depth look at where your team ranks on Elliot Harrison''s rankings of
+        all 32 clubs. Who has moved up and who has lost ground in the NFL? Our experts
+        debate.", "shortDescription": "\"NFL Power Rankings\" - An in depth look at
+        where your team ranks on Elliot Harrison''s rankings of all 32 clubs. Who
+        has moved up and who has lost ground in the NFL? Our experts debate.", "logo":
+        "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22903609, "startTime": 1539124200000, "startTimeUTC": "2018-10-09T22:30:00Z",
+        "duration": 0.5, "repeats": null, "team1": null, "team2": null, "month": 10,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 10, "startDayEST":
+        9, "title": "21ST & PRIME", "description": "\"21st & Prime\" - Deion \"Primetime\"
+        Sanders takes on the hottest topics from around the NFL as only he can. ",
+        "shortDescription": "\"21st & Prime\" - Deion \"Primetime\" Sanders takes
+        on the hottest topics from around the NFL as only he can. ", "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22903610, "startTime": 1539126000000, "startTimeUTC": "2018-10-09T23:00:00Z",
+        "duration": 1.0, "repeats": "p", "team1": null, "team2": null, "month": 10,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 10, "startDayEST":
+        9, "title": "NFL TOTAL ACCESS", "description": "\"NFL Total Access\" - NFL
+        Network''s nightly flagship program brings you all the latest news, opinions,
+        highlights and interviews from around the NFL. ", "shortDescription": "\"NFL
+        Total Access\" - NFL Network''s nightly flagship program brings you all the
+        latest news, opinions, highlights and interviews from around the NFL. ", "logo":
+        "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22903611, "startTime": 1539129600000, "startTimeUTC": "2018-10-10T00:00:00Z",
+        "duration": 3.0, "repeats": null, "team1": null, "team2": null, "month": 10,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 10, "startDayEST":
+        9, "title": "FULL GAME BROADCAST", "description": "\"NFL Football\" - 2018
+        Week 5: New York Giants vs. Carolina Panthers (From 10/7/18).", "shortDescription":
+        "\"NFL Football\" - 2018 Week 5: New York Giants vs. Carolina Panthers (From
+        10/7/18).", "logo": "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"},
+        {"programId": 22903612, "startTime": 1539140400000, "startTimeUTC": "2018-10-10T03:00:00Z",
+        "duration": 1.0, "repeats": "r", "team1": null, "team2": null, "month": 10,
+        "showLinkCode": "Null", "featured": "false", "startMonthEST": 10, "startDayEST":
+        9, "title": "NFL TOTAL ACCESS", "description": "\"NFL Total Access\" - NFL
+        Network''s nightly flagship program brings you all the latest news, opinions,
+        highlights and interviews from around the NFL. ", "shortDescription": "\"NFL
+        Total Access\" - NFL Network''s nightly flagship program brings you all the
+        latest news, opinions, highlights and interviews from around the NFL. ", "logo":
+        "http://i.nflcdn.com/static/site/img/nflnetwork/1024logos/nfl-network.png"}]},
+        "analytics": {"site_name": "gamepass international", "language": "en_US",
+        "site_section": "nfl network", "site_subsection": "nfl network", "page_detail":
+        "landing", "content_type": "index", "page_name": "gamepass international:nfl
+        network:nfl network:landing"}}}'
+    headers:
+      Access-Control-Allow-Headers: [Content-Type]
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: ['private, max-age=120']
+      Connection: [keep-alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:08:33 GMT']
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-AspNet-Version: [4.0.30319]
+      content-length: ['9338']
+    status: {code: 200, message: OK}
+- request:
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_5bbcbc4a0fa0406cb3911c620b0e0f1105a2d950df1973a0336abc29a5cd5a6f&grant_type=refresh_token
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['161']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://www.nflgamepass.com/api/user/oauth/token
+  response:
+    body:
+      pretty: {code: UR_10006, httpStatusCode: 401, id: 889e2cc9-6da8-448d-9f18-bb6d445b9ba0,
+        message: error_unauthorised, validationErrors: null}
+      string: '{"id": "889e2cc9-6da8-448d-9f18-bb6d445b9ba0", "code": "UR_10006",
+        "message": "error_unauthorised", "httpStatusCode": 401, "validationErrors":
+        null}'
+    headers:
+      Cache-Control: ['max-age=0, no-cache, no-store']
+      Connection: [close]
+      Content-Length: ['139']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Pragma: [no-cache]
+      Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
+      Server: [Microsoft-IIS/10.0]
+      X-Powered-By: [ASP.NET]
+    status: {code: 400, message: Bad Request}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://www.nflgamepass.com/api/diva/diva/settings/v5/24h7d/html5
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<settings version=\"\
+        30_07_2018_0001_24h7d_html5_prod\">\r\n  <advertisement enabled=\"false\"\
+        \ />\r\n  <assets>\r\n    <parameter name=\"videoThumbnailUrl\" value=\"https://www.nflgamepass.com/api/images/image/private/t_16-9_1920/twwekbzhieranl5r9qr6\"\
+        \ />\r\n  </assets>\r\n  <behaviour>\r\n    <parameter name=\"isCommentaryEnabled\"\
+        \ value=\"false\" />\r\n    <parameter name=\"isScoreEnabled\" value=\"false\"\
+        \ />\r\n    <parameter name=\"isTitleEnabled\" value=\"false\" />\r\n  </behaviour>\r\
+        \n  <entitlementCheck encoded=\"false\" enabled=\"true\">\r\n    <parameter\
+        \ name=\"processingUrlCallPath\" value=\"https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open\"\
+        \ />\r\n    <parameter name=\"heartBeatCallPath\" value=\"https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/heartbeat\"\
+        \ />\r\n    <parameter name=\"userCookieName\" value=\"\" />\r\n    <!--to\
+        \ insert the agreeded name -->\r\n    <parameter name=\"callback\" value=\"\
+        \" />\r\n    <parameter name=\"heartbeatInterval\" value=\"00:03:00\" />\r\
+        \n    <parameter name=\"secretTxt\" value=\"\" />\r\n    <parameter name=\"\
+        other\" value=\"{Run.SessionID}|{Settings.cs1}|{Settings.cs2}|{Settings.cs3}|{Settings.cs4}|{Settings.cs5}\"\
+        \ />\r\n  </entitlementCheck>\r\n  <logging enabled=\"false\" />\r\n  <tracking\
+        \ enabled=\"true\">\r\n    <items>\r\n      <item>\r\n        <parameter name=\"\
+        type\" value=\"TagManager-html5\" />\r\n        <parameter name=\"setting1\"\
+        \ value=\"GTM-MFDKV77\" />\r\n        <parameter name=\"setting2\" value=\"\
+        https://www.nflgamepass.com/api/diva/gtm/tracking_configuration_40.json\"\
+        \ />\r\n      </item>\r\n    </items>\r\n  </tracking>\r\n  <translations>\r\
+        \n    <parameter name=\"vocabularySource\" value=\"https://www.nflgamepass.com/api/diva/vocabulary/vocabulary-en-GB.xml\"\
+        \ />\r\n  </translations>\r\n  <video>\r\n    <!--<parameter name = \"allowJSVideoUrlStage\"\
+        \ value = \"false\"/>-->\r\n    <!--<parameter name = \"allowPathResolver\"\
+        \ value = \"false\"/>-->\r\n    <parameter name=\"baseExpectedVideoDuration\"\
+        \ value=\"08:01:00\" />\r\n    <!--<parameter name = \"closedCaption\" value\
+        \ = \"false\"/>-->\r\n    <!--<parameter name = \"isVREnabledFor360video\"\
+        \ value = \"true\"/>-->\r\n    <parameter name=\"liveBackOff\" value=\"00:00:20\"\
+        \ />\r\n    <!--<parameter name = \"maxBitrateKbps\" value = \"3500\"/>-->\r\
+        \n    <!--<parameter name = \"offsetExpectedVideoDuration\" value = \"01:00:00\"\
+        />-->\r\n    <parameter name=\"retryOnVideoError\" value=\"0\" />\r\n    <!--<parameter\
+        \ name = \"trackVideodataManifest\" value = \"true\"/>-->\r\n    <parameter\
+        \ name=\"startingBitrateKbps\" value=\"600\" />\r\n    <!--<parameter name\
+        \ = \"userAudioSelection\" value = \"false\"/>-->\r\n    <!--<parameter name\
+        \ = \"videoAnalyticsEventFrequency\" value = \"00:02:00\"/>-->\r\n    <!--<parameter\
+        \ name = \"iosInternalOverrides\" value =\"{ \\\"iPhone7,1=\"\"\\\": 3238279\
+        \ }\"/>-->\r\n    <!--<parameter name = \"videoPlatformsPriority\" value=\"\
+        HLS,dash,chromecast-v2\" />-->\r\n    <!--<parameter name = \"androidForceSurfaceView\"\
+        \ value=\"false\" />-->\r\n  </video>\r\n  <videoData enabled=\"true\">\r\n\
+        \    <parameter name=\"videoDataPath\" value=\"https://www.nflgamepass.com/api/en/content/v5/diva/{V.ID}\"\
+        \ />\r\n    <parameter name=\"pollingInterval\" value=\"00:59:59\" />\r\n\
+        \  </videoData>\r\n</settings>\r\n<!--DivaS:F03toNQj05MTT+LZ/xnPOipHjtk=-->"}
+    headers:
+      Cache-Control: [max-age=300]
+      Connection: [keep-alive]
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:11:33 GMT']
+      Pragma: [no-cache]
+      Server: [Microsoft-IIS/8.5]
+      Vary: [Accept-Encoding]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+      content-length: ['3160']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://www.nflgamepass.com/api/en/content/v5/diva/86696b55-9d15-4625-856c-d88a8cdb9f33
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<video>\r\n  <assetId>86696b55-9d15-4625-856c-d88a8cdb9f33</assetId>\r\
+        \n  <videoId>86696b55-9d15-4625-856c-d88a8cdb9f33</videoId>\r\n  <alternateId>3246c820-59df-4013-8a66-96dcf9eb55e6</alternateId>\r\
+        \n  <isPrivate>false</isPrivate>\r\n  <title>NFL Network</title>\r\n  <description><![CDATA[NFL\
+        \ Network Channel]]></description>\r\n  <thumbnailUrl><![CDATA[]]></thumbnailUrl>\r\
+        \n  <assetState>2</assetState>\r\n  <isMultistream>false</isMultistream>\r\
+        \n  <events />\r\n  <videoSources>\r\n    <videoSource format=\"HLS-V3\" name=\"\
+        HLS\" offset=\"0:00:00\">\r\n      <dvrType>limited</dvrType>\r\n      <uri><![CDATA[https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=hls)]]></uri>\r\
+        \n      <drm />\r\n    </videoSource>\r\n    <videoSource format=\"HLS-V3\"\
+        \ name=\"ConnectTv\" offset=\"0:00:00\">\r\n      <dvrType>limited</dvrType>\r\
+        \n      <uri><![CDATA[https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)]]></uri>\r\
+        \n      <drm />\r\n    </videoSource>\r\n    <videoSource format=\"HLS-V3\"\
+        \ name=\"ChromeCast\" offset=\"0:00:00\">\r\n      <dvrType>limited</dvrType>\r\
+        \n      <uri><![CDATA[https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)]]></uri>\r\
+        \n      <drm />\r\n    </videoSource>\r\n  </videoSources>\r\n  <duration\
+        \ />\r\n  <trimIn />\r\n  <trimOut />\r\n  <timeCodeIn>20180101000100000</timeCodeIn>\r\
+        \n  <audioTracks default=\"en-US\">\r\n    <audioTrack id=\"en-US\" lang=\"\
+        en-US\" enabled=\"true\" displayName=\"English (US)\">English (US)</audioTrack>\r\
+        \n  </audioTracks>\r\n  <preroll template=\"\" />\r\n  <postroll template=\"\
+        \" />\r\n  <kind><![CDATA[Live]]></kind>\r\n  <category1><![CDATA[NTWL]]></category1>\r\
+        \n  <customAttributes>\r\n    <attribute key=\"area\" value=\"video\" />\r\
+        \n    <attribute key=\"section\" value=\"General\" />\r\n  </customAttributes>\r\
+        \n  <lang>en-US</lang>\r\n  <wcmEntityid>3246c820-59df-4013-8a66-96dcf9eb55e6</wcmEntityid>\r\
+        \n</video>"}
+    headers:
+      Access-Control-Allow-Headers: [Content-Type]
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: ['max-age=0, no-cache, no-store']
+      Connection: [keep-alive]
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Pragma: [no-cache]
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-AspNet-Version: [4.0.30319]
+      content-length: ['2154']
+    status: {code: 200, message: OK}
+- request:
+    body: '{"Type": "1", "User": "", "VideoId": "86696b55-9d15-4625-856c-d88a8cdb9f33",
+      "VideoSource": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=hls)",
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "84a94834-731f-4070-bdbd-05094ef90c82|FAKE_TOKEN_4ae4b46e263123cc576c8f53d8c9235d49223ed5dbef91d18788d293c7dcf1de|web|FAKE_TOKEN_4ae4b46e263123cc576c8f53d8c9235d49223ed5dbef91d18788d293c7dcf1de|undefined|Firefox"}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['548']
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
+  response:
+    body:
+      pretty: {Action: '', ActionParameters: '', ContentUrl: '', HeartBeatTime: 0,
+        Message: toke_expired, Response: KO, ResponseCode: 21, Signature: D6CDEA48BC913A408ED927583179283DE63413FD}
+      string: '{"Response": "KO", "ResponseCode": 21, "Message": "toke_expired", "Action":
+        "", "ContentUrl": "", "HeartBeatTime": 0, "Signature": "D6CDEA48BC913A408ED927583179283DE63413FD",
+        "ActionParameters": ""}'
+    headers:
+      Cache-Control: ['max-age=0, no-cache, no-store']
+      Connection: [keep-alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Pragma: [no-cache]
+      Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [ASP.NET]
+      content-length: ['183']
+    status: {code: 200, message: OK}
+- request:
+    body: '{"Type": "1", "User": "", "VideoId": "86696b55-9d15-4625-856c-d88a8cdb9f33",
+      "VideoSource": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)",
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "2db01f23-9ae3-4c7c-9684-3cc70277208c|FAKE_TOKEN_4ae4b46e263123cc576c8f53d8c9235d49223ed5dbef91d18788d293c7dcf1de|web|FAKE_TOKEN_4ae4b46e263123cc576c8f53d8c9235d49223ed5dbef91d18788d293c7dcf1de|undefined|Firefox"}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['554']
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
+  response:
+    body:
+      pretty: {Action: '', ActionParameters: '', ContentUrl: '', HeartBeatTime: 0,
+        Message: toke_expired, Response: KO, ResponseCode: 21, Signature: D6CDEA48BC913A408ED927583179283DE63413FD}
+      string: '{"Response": "KO", "ResponseCode": 21, "Message": "toke_expired", "Action":
+        "", "ContentUrl": "", "HeartBeatTime": 0, "Signature": "D6CDEA48BC913A408ED927583179283DE63413FD",
+        "ActionParameters": ""}'
+    headers:
+      Cache-Control: ['max-age=0, no-cache, no-store']
+      Connection: [keep-alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Pragma: [no-cache]
+      Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [ASP.NET]
+      content-length: ['183']
+    status: {code: 200, message: OK}
+- request:
+    body: '{"Type": "1", "User": "", "VideoId": "86696b55-9d15-4625-856c-d88a8cdb9f33",
+      "VideoSource": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)",
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "8b1e5788-7eff-43fb-99d5-8cfe77b319e7|FAKE_TOKEN_4ae4b46e263123cc576c8f53d8c9235d49223ed5dbef91d18788d293c7dcf1de|web|FAKE_TOKEN_4ae4b46e263123cc576c8f53d8c9235d49223ed5dbef91d18788d293c7dcf1de|undefined|Firefox"}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['555']
+      User-Agent: [python-requests/2.19.1]
+    method: POST
+    uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
+  response:
+    body:
+      pretty: {Action: '', ActionParameters: '', ContentUrl: '', HeartBeatTime: 0,
+        Message: toke_expired, Response: KO, ResponseCode: 21, Signature: D6CDEA48BC913A408ED927583179283DE63413FD}
+      string: '{"Response": "KO", "ResponseCode": 21, "Message": "toke_expired", "Action":
+        "", "ContentUrl": "", "HeartBeatTime": 0, "Signature": "D6CDEA48BC913A408ED927583179283DE63413FD",
+        "ActionParameters": ""}'
+    headers:
+      Cache-Control: ['max-age=0, no-cache, no-store']
+      Connection: [keep-alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Pragma: [no-cache]
+      Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [ASP.NET]
+      content-length: ['183']
+    status: {code: 200, message: OK}
+version: 1

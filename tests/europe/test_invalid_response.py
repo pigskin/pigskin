@@ -8,7 +8,7 @@ from pigskin import settings
 
 @pytest.fixture(scope='class')
 def gp():
-    with vcr.use_cassette('public_API/europe_pigskin_gp.yaml'):
+    with vcr.use_cassette('backends/europe/gp.yaml'):
         return pigskin()
 
 
