@@ -11,7 +11,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: network, lastUpdate: '2018-10-09T07:01:44.388Z', title: '', version: '1.0'}
+        header: {id: network, lastUpdate: '2018-10-09T06:34:32.139Z', title: '', version: '1.0'}
         modules:
           programs:
           - description: The 2018 NFL Draft live from Dallas, TX with the all latest
@@ -335,7 +335,7 @@ interactions:
               title: ccd
             title: Coach's Corner (DE)
       string: '{"header": {"id": "network", "version": "1.0", "title": "", "lastUpdate":
-        "2018-10-09T07:01:44.388Z"}, "modules": {"programs": [{"title": "2018 NFL
+        "2018-10-09T06:34:32.139Z"}, "modules": {"programs": [{"title": "2018 NFL
         Draft", "description": "The 2018 NFL Draft live from Dallas, TX with the all
         latest news and trending topics from rounds 1-7.", "slug": "nfl-draft-2018",
         "thumbnail": {"title": "Draft_VOD", "templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/jqjhfstr4jxrsl06vmlf",
@@ -500,8 +500,8 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 09 Oct 2018 07:05:19 GMT']
-      Expires: ['Tue, 09 Oct 2018 07:07:19 GMT']
+      Date: ['Tue, 09 Oct 2018 06:34:32 GMT']
+      Expires: ['Tue, 09 Oct 2018 06:36:32 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
