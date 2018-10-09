@@ -3,8 +3,6 @@ from datetime import datetime
 
 import pytest
 import vcr
-from pigskin.pigskin import pigskin
-
 
 try:  # Python 2.7
     # requests's ``json()`` function returns strings as unicode (as per the
@@ -16,7 +14,7 @@ except NameError:
     basestring = str
 
 
-def build_game_list(weeks=[], team=[]):
+def build_game_list(weeks=None, team=None):
     games_list = []
 
     for st in weeks:

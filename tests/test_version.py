@@ -1,8 +1,5 @@
-from collections import OrderedDict
-
 import pytest
 import vcr
-from pigskin.pigskin import pigskin
 
 
 try:  # Python 2.7
@@ -15,7 +12,7 @@ except NameError:
     basestring = str
 
 
-def build_game_list(weeks=[], team=[]):
+def build_game_list(weeks=None, team=None):
     games_list = []
 
     for st in weeks:

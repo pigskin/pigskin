@@ -1,9 +1,7 @@
 from collections import OrderedDict
-from datetime import datetime
 
 import pytest
 import vcr
-from pigskin.pigskin import pigskin
 
 
 try:  # Python 2.7
