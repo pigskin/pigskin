@@ -49,7 +49,6 @@ setuptools.setup(
         'pyflakes',
         'pytest',
         'pytest-cov',
-        'pytest-vcr',
         'vcrpy',
     ],
 )

@@ -126,8 +126,13 @@ def scrub_response(response):
     return response
 
 
+record_mode = 'once'
+if os.environ.get('CI') == 'true':
+    record_mode = 'none'
+
 vcr.default_vcr = vcr.VCR(
     cassette_library_dir='tests/cassettes',
+    record_mode=record_mode,
     decode_compressed_response=True,
     before_record_request=scrub_request,
     before_record_response=scrub_response,

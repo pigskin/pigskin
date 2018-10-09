@@ -28,5 +28,5 @@ install:
   - pip list
 script:
   - pyflakes --version && pyflakes pigskin/ setup.py
-  - pytest --version && pytest --vcr-record=none --cov=pigskin/
+  - pytest --version && pytest --cov=pigskin/
   - codecov
