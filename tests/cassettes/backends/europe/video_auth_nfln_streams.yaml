@@ -1,34 +1,35 @@
 interactions:
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_5bbcbc4a0fa0406cb3911c620b0e0f1105a2d950df1973a0336abc29a5cd5a6f&grant_type=refresh_token
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_0437b89815ae674b2391c835aea8e8a91eb9b3ea685a59d77a4fef5ce3f92597&grant_type=refresh_token
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      Content-Length: ['161']
+      Content-Length: ['1158']
       Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-requests/2.19.1]
     method: POST
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {code: UR_10006, httpStatusCode: 401, id: 6071cd3d-756c-49ee-9a3e-5055f16e465b,
-        message: error_unauthorised, validationErrors: null}
-      string: '{"id": "6071cd3d-756c-49ee-9a3e-5055f16e465b", "code": "UR_10006",
-        "message": "error_unauthorised", "httpStatusCode": 401, "validationErrors":
-        null}'
+      pretty: {access_token: FAKE_TOKEN_767e917a1e25628f68e2627da4c2f6e694fc58e79d5c8336a3c6dac7fc06e6ab,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_d95e885bc974cbbce4c54d21aa0830824570a31a2d9121ad3f4425b583826bce,
+        token_type: bearer}
+      string: '{"access_token": "FAKE_TOKEN_767e917a1e25628f68e2627da4c2f6e694fc58e79d5c8336a3c6dac7fc06e6ab",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_d95e885bc974cbbce4c54d21aa0830824570a31a2d9121ad3f4425b583826bce"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
-      Connection: [close]
-      Content-Length: ['139']
+      Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
-      Expires: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Date: ['Tue, 09 Oct 2018 08:36:35 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:36:35 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
       X-Powered-By: [ASP.NET]
-    status: {code: 400, message: Bad Request}
+      content-length: ['2141']
+    status: {code: 200, message: OK}
 - request:
     body: null
     headers:
@@ -41,7 +42,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: network, lastUpdate: '2018-10-09T08:06:33.516Z', title: '', version: '1.0'}
+        header: {id: network, lastUpdate: '2018-10-09T08:36:36.015Z', title: '', version: '1.0'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: landing,
             page_name: 'gamepass international:nfl network:nfl network:landing', site_name: gamepass
@@ -208,7 +209,7 @@ interactions:
             title: "NFL Network\_"
             type: story
       string: '{"header": {"id": "network", "version": "1.0", "title": "", "lastUpdate":
-        "2018-10-09T08:06:33.516Z"}, "modules": {"notLoggedTeaser": {"type": "story",
+        "2018-10-09T08:36:36.015Z"}, "modules": {"notLoggedTeaser": {"type": "story",
         "slug": "nfl-network-mobile", "relations": [], "references": {}, "fields":
         {}, "contentDate": "2017-08-02T11:05:25.08Z", "headline": "", "summary": "<p>Watch
         the NFL Network channel live 24 hours a day, 7 days a week.Plus a huge library
@@ -332,43 +333,44 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
-      Expires: ['Tue, 09 Oct 2018 08:08:33 GMT']
+      Date: ['Tue, 09 Oct 2018 08:36:36 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:38:36 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
       content-length: ['9338']
     status: {code: 200, message: OK}
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_5bbcbc4a0fa0406cb3911c620b0e0f1105a2d950df1973a0336abc29a5cd5a6f&grant_type=refresh_token
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_d95e885bc974cbbce4c54d21aa0830824570a31a2d9121ad3f4425b583826bce&grant_type=refresh_token
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      Content-Length: ['161']
+      Content-Length: ['1137']
       Content-Type: [application/x-www-form-urlencoded]
       User-Agent: [python-requests/2.19.1]
     method: POST
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {code: UR_10006, httpStatusCode: 401, id: 889e2cc9-6da8-448d-9f18-bb6d445b9ba0,
-        message: error_unauthorised, validationErrors: null}
-      string: '{"id": "889e2cc9-6da8-448d-9f18-bb6d445b9ba0", "code": "UR_10006",
-        "message": "error_unauthorised", "httpStatusCode": 401, "validationErrors":
-        null}'
+      pretty: {access_token: FAKE_TOKEN_94550cf3ae70321abed38f9a6f737519edcb9fabc00cb25f41b76f2ea6308549,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_78553169d69b99ed520c8517505de2dbc5fd3e7b83d09f8dbbd6ddd56843c9e2,
+        token_type: bearer}
+      string: '{"access_token": "FAKE_TOKEN_94550cf3ae70321abed38f9a6f737519edcb9fabc00cb25f41b76f2ea6308549",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_78553169d69b99ed520c8517505de2dbc5fd3e7b83d09f8dbbd6ddd56843c9e2"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
-      Connection: [close]
-      Content-Length: ['139']
+      Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
-      Expires: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Date: ['Tue, 09 Oct 2018 08:36:36 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:36:36 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
       X-Powered-By: [ASP.NET]
-    status: {code: 400, message: Bad Request}
+      content-length: ['2141']
+    status: {code: 200, message: OK}
 - request:
     body: null
     headers:
@@ -424,8 +426,8 @@ interactions:
       Cache-Control: [max-age=300]
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
-      Expires: ['Tue, 09 Oct 2018 08:11:33 GMT']
+      Date: ['Tue, 09 Oct 2018 08:36:36 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:41:36 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/8.5]
       Vary: [Accept-Encoding]
@@ -473,8 +475,8 @@ interactions:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
-      Expires: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Date: ['Tue, 09 Oct 2018 08:36:36 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:36:36 GMT']
       Pragma: [no-cache]
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
@@ -484,97 +486,100 @@ interactions:
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "86696b55-9d15-4625-856c-d88a8cdb9f33",
       "VideoSource": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=hls)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "84a94834-731f-4070-bdbd-05094ef90c82|FAKE_TOKEN_4ae4b46e263123cc576c8f53d8c9235d49223ed5dbef91d18788d293c7dcf1de|web|FAKE_TOKEN_4ae4b46e263123cc576c8f53d8c9235d49223ed5dbef91d18788d293c7dcf1de|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "f21ced97-f7b3-490c-8149-6342e6432970|FAKE_TOKEN_94550cf3ae70321abed38f9a6f737519edcb9fabc00cb25f41b76f2ea6308549|web|FAKE_TOKEN_94550cf3ae70321abed38f9a6f737519edcb9fabc00cb25f41b76f2ea6308549|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      Content-Length: ['548']
+      Content-Length: ['2422']
       User-Agent: [python-requests/2.19.1]
     method: POST
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: '', HeartBeatTime: 0,
-        Message: toke_expired, Response: KO, ResponseCode: 21, Signature: D6CDEA48BC913A408ED927583179283DE63413FD}
-      string: '{"Response": "KO", "ResponseCode": 21, "Message": "toke_expired", "Action":
-        "", "ContentUrl": "", "HeartBeatTime": 0, "Signature": "D6CDEA48BC913A408ED927583179283DE63413FD",
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1539074106~exp=1539074286~acl=/*~hmac=18f5cad37dc92e730868948242b427c7f05847381925270150dbf045c4bb2001&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 2BD24D9EBBDC43724E7A80C6A024F3976FB49DA7}
+      string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
+        "ContentUrl": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=hls)?hdnea=st=1539074106~exp=1539074286~acl=/*~hmac=18f5cad37dc92e730868948242b427c7f05847381925270150dbf045c4bb2001&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "2BD24D9EBBDC43724E7A80C6A024F3976FB49DA7",
         "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
-      Expires: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Date: ['Tue, 09 Oct 2018 08:36:36 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:36:36 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-Powered-By: [ASP.NET]
-      content-length: ['183']
+      content-length: ['462']
     status: {code: 200, message: OK}
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "86696b55-9d15-4625-856c-d88a8cdb9f33",
       "VideoSource": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "2db01f23-9ae3-4c7c-9684-3cc70277208c|FAKE_TOKEN_4ae4b46e263123cc576c8f53d8c9235d49223ed5dbef91d18788d293c7dcf1de|web|FAKE_TOKEN_4ae4b46e263123cc576c8f53d8c9235d49223ed5dbef91d18788d293c7dcf1de|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "5b324b72-dde3-4969-95de-b300d3f33223|FAKE_TOKEN_94550cf3ae70321abed38f9a6f737519edcb9fabc00cb25f41b76f2ea6308549|web|FAKE_TOKEN_94550cf3ae70321abed38f9a6f737519edcb9fabc00cb25f41b76f2ea6308549|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      Content-Length: ['554']
+      Content-Length: ['2428']
       User-Agent: [python-requests/2.19.1]
     method: POST
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: '', HeartBeatTime: 0,
-        Message: toke_expired, Response: KO, ResponseCode: 21, Signature: D6CDEA48BC913A408ED927583179283DE63413FD}
-      string: '{"Response": "KO", "ResponseCode": 21, "Message": "toke_expired", "Action":
-        "", "ContentUrl": "", "HeartBeatTime": 0, "Signature": "D6CDEA48BC913A408ED927583179283DE63413FD",
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1539074106~exp=1539074286~acl=/*~hmac=18f5cad37dc92e730868948242b427c7f05847381925270150dbf045c4bb2001&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: 3819BCDB234F18DF24B7C8C0659261DBB0701C4F}
+      string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
+        "ContentUrl": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=connecttv)?hdnea=st=1539074106~exp=1539074286~acl=/*~hmac=18f5cad37dc92e730868948242b427c7f05847381925270150dbf045c4bb2001&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "3819BCDB234F18DF24B7C8C0659261DBB0701C4F",
         "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
-      Expires: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Date: ['Tue, 09 Oct 2018 08:36:36 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:36:36 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-Powered-By: [ASP.NET]
-      content-length: ['183']
+      content-length: ['468']
     status: {code: 200, message: OK}
 - request:
     body: '{"Type": "1", "User": "", "VideoId": "86696b55-9d15-4625-856c-d88a8cdb9f33",
       "VideoSource": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)",
-      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "8b1e5788-7eff-43fb-99d5-8cfe77b319e7|FAKE_TOKEN_4ae4b46e263123cc576c8f53d8c9235d49223ed5dbef91d18788d293c7dcf1de|web|FAKE_TOKEN_4ae4b46e263123cc576c8f53d8c9235d49223ed5dbef91d18788d293c7dcf1de|undefined|Firefox"}'
+      "VideoKind": "Video", "AssetState": "3", "PlayerType": "HTML5", "other": "d5f6936e-0ad7-468b-995e-6b3676f90d6b|FAKE_TOKEN_94550cf3ae70321abed38f9a6f737519edcb9fabc00cb25f41b76f2ea6308549|web|FAKE_TOKEN_94550cf3ae70321abed38f9a6f737519edcb9fabc00cb25f41b76f2ea6308549|undefined|Firefox"}'
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      Content-Length: ['555']
+      Content-Length: ['2429']
       User-Agent: [python-requests/2.19.1]
     method: POST
     uri: https://www.nflgamepass.com/api/user/api/users/v1/videoentitlement/diva/open
   response:
     body:
-      pretty: {Action: '', ActionParameters: '', ContentUrl: '', HeartBeatTime: 0,
-        Message: toke_expired, Response: KO, ResponseCode: 21, Signature: D6CDEA48BC913A408ED927583179283DE63413FD}
-      string: '{"Response": "KO", "ResponseCode": 21, "Message": "toke_expired", "Action":
-        "", "ContentUrl": "", "HeartBeatTime": 0, "Signature": "D6CDEA48BC913A408ED927583179283DE63413FD",
+      pretty: {Action: '', ActionParameters: '', ContentUrl: 'https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1539074106~exp=1539074286~acl=/*~hmac=18f5cad37dc92e730868948242b427c7f05847381925270150dbf045c4bb2001&hdcore=2.11.3',
+        HeartBeatTime: 0, Message: '', Response: OK, ResponseCode: 1, Signature: DEF3A16DF0A1E7C621CD7CBCEBD209E378E7F303}
+      string: '{"Response": "OK", "ResponseCode": 1, "Message": "", "Action": "",
+        "ContentUrl": "https://livemain-i-video-nfl.akamaized.net/ch22/411370af-762b-4c2f-b03d-6a6d7aec6fb0/1c6b0ab0-961d-4eee-9333-16753330898c.ism/manifest(format=m3u8-aapl-v3,filter=chromecast)?hdnea=st=1539074106~exp=1539074286~acl=/*~hmac=18f5cad37dc92e730868948242b427c7f05847381925270150dbf045c4bb2001&hdcore=2.11.3",
+        "HeartBeatTime": 0, "Signature": "DEF3A16DF0A1E7C621CD7CBCEBD209E378E7F303",
         "ActionParameters": ""}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 09 Oct 2018 08:06:33 GMT']
-      Expires: ['Tue, 09 Oct 2018 08:06:33 GMT']
+      Date: ['Tue, 09 Oct 2018 08:36:36 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:36:36 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-Powered-By: [ASP.NET]
-      content-length: ['183']
+      content-length: ['469']
     status: {code: 200, message: OK}
 version: 1

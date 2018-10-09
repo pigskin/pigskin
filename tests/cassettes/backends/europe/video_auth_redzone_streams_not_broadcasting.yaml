@@ -11,7 +11,7 @@ interactions:
   response:
     body:
       pretty:
-        header: {id: red-zone-videos, lastUpdate: '2018-10-09T08:04:34.138Z', title: '',
+        header: {id: red-zone-videos, lastUpdate: '2018-10-09T08:36:37.459Z', title: '',
           version: '1'}
         modules:
           analytics: {content_type: index, language: en_US, page_detail: landing,
@@ -185,7 +185,7 @@ interactions:
               week: week-4
             texts: {subTitle: videos-list-subtitle, title: videos-list-title}
       string: '{"header": {"id": "red-zone-videos", "version": "1", "title": "", "lastUpdate":
-        "2018-10-09T08:04:34.138Z"}, "modules": {"notLoggedTeaser": {"type": "story",
+        "2018-10-09T08:36:37.459Z"}, "modules": {"notLoggedTeaser": {"type": "story",
         "slug": "nfl-redzone-mobile", "relations": [], "references": {}, "fields":
         {}, "contentDate": "2017-08-02T11:09:37.165Z", "headline": null, "summary":
         "<p>Catch every touchdown, live every Sunday with NFL RedZone.</p>\n", "parts":
@@ -252,8 +252,8 @@ interactions:
       Cache-Control: ['private, max-age=120']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 09 Oct 2018 08:06:34 GMT']
-      Expires: ['Tue, 09 Oct 2018 08:08:34 GMT']
+      Date: ['Tue, 09 Oct 2018 08:36:37 GMT']
+      Expires: ['Tue, 09 Oct 2018 08:38:37 GMT']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-AspNet-Version: [4.0.30319]
