@@ -242,34 +242,6 @@ class pigskin(object):
         return streams
 
 
-    def is_redzone_on_air(self):
-        """Return whether RedZone Live is currently broadcasting.
-
-        Returns
-        -------
-        bool
-            Returns True if RedZone Live is broadcasting, False otherwise.
-        """
-        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['redzone']
-
-        try:
-            r = self._store.s.get(url)
-            self._log_request(r)
-            data = r.json()
-        except ValueError:
-            self.logger.error('is_redzone_on_air: server response is invalid')
-            return None
-
-        try:
-            if data['modules']['redZoneLive']['content']:
-                return True
-        except KeyError:
-            self.logger.error('could not parse RedZoneLive data')
-            return None
-
-        return False
-
-
     def nfldate_to_datetime(self, nfldate, localize=False):
         """Return a datetime object from an NFL Game Pass date string.
 
