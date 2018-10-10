@@ -18,6 +18,24 @@ except NameError:
 @pytest.mark.incremental
 class TestPigskin(object):
     """These don't require authentication to Game Pass."""
+    @vcr.use_cassette('public_API/europe_pigskin_broadcast.yaml')
+    @staticmethod
+    def test_broadcast(gp):
+        # make sure we have content and it's the right type
+        assert type(gp.broadcast) is OrderedDict
+        assert gp.broadcast
+
+        for name in gp.broadcast:
+            # make sure it's a known broadcats type
+            assert name in ['nfl_network', 'redzone']
+
+            # TODO: assert that it's of type broadcast
+            assert gp.broadcast[name]
+
+            # the key should match the broadcast name
+            assert name == gp.broadcast[name].name
+
+
     @vcr.use_cassette('public_API/europe_pigskin_seasons.yaml')
     @staticmethod
     def test_seasons(gp):

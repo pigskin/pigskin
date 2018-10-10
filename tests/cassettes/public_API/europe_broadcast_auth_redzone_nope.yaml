@@ -1,0 +1,522 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://www.nflgamepass.com/api/en/content/v1/web/redzone/videos
+  response:
+    body:
+      pretty:
+        header: {id: red-zone-videos, lastUpdate: '2018-10-10T07:04:31.488Z', title: '',
+          version: '1'}
+        modules:
+          analytics: {content_type: index, language: en_US, page_detail: landing,
+            page_name: 'gamepass international:nfl redzone:nfl redzone:landing', site_name: gamepass
+              international, site_section: nfl redzone, site_subsection: nfl redzone}
+          notLoggedTeaser:
+            contentDate: '2017-08-02T11:09:37.165Z'
+            fields: {}
+            headline: null
+            parts:
+            - content: '<p>Catch every touchdown, live every Sunday with NFL RedZone.</p>
+
+                '
+              contextualFields: {}
+              type: markdown
+            references: {}
+            relations: []
+            slug: nfl-redzone-mobile
+            summary: '<p>Catch every touchdown, live every Sunday with NFL RedZone.</p>
+
+              '
+            tags:
+            - extraData: {}
+              fields: {}
+              neutralSlug: redzone-heromodule-not-logged
+              slug: redzone-heromodule-not-logged
+              title: redzone-heromodule-not-logged
+              type: tag
+            thumbnail:
+              format: jpg
+              overriddenFormats: {}
+              templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              thumbnailUrl: https://nflgp-prd.akamaized.net/api/images/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_jpg/r9ek0rlaiu0ppulbkzw1
+              title: NFL_Redzone_2048x1024_noLogo
+            title: NFL REDZONE
+            type: story
+          redZoneLive:
+            content: []
+            texts: {subTitle: videos-list-subtitle, title: videos-list-title}
+          redZoneVod:
+            content:
+            - description: '<p>Redzone</p>
+
+                '
+              isBasic: false
+              isGameOfTheWeek: false
+              kind: Red Zone video
+              nflprogram: null
+              nflprogramcode: null
+              scheduleDate: '2018-10-07 16:55:00Z'
+              season: season-2018
+              seasonType: seasontype-reg
+              slug: week-5
+              title: WEEK 5
+              trimmedVideoDuration: ''
+              videoDuration: '25951.936'
+              videoId: 8f8b39c9-8691-4e51-9ed2-f38d75d09182
+              videoStatus: ONDEMAND
+              videoThumbnail:
+                overridenFormats: {}
+                templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              vocGameTopTag: null
+              week: week-5
+            - description: '<p>Redzone</p>
+
+                '
+              isBasic: false
+              isGameOfTheWeek: false
+              kind: Red Zone video
+              nflprogram: null
+              nflprogramcode: null
+              scheduleDate: '2018-09-30 16:55:00Z'
+              season: season-2018
+              seasonType: seasontype-reg
+              slug: week-4
+              title: WEEK 4
+              trimmedVideoDuration: ''
+              videoDuration: '27331.306'
+              videoId: 4cf5bea8-10e5-48e3-8c5c-f79ef619f7ab
+              videoStatus: ONDEMAND
+              videoThumbnail:
+                overridenFormats: {}
+                templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              vocGameTopTag: null
+              week: week-4
+            - description: '<p>Redzone</p>
+
+                '
+              isBasic: false
+              isGameOfTheWeek: false
+              kind: Red Zone video
+              nflprogram: null
+              nflprogramcode: null
+              scheduleDate: '2018-09-23 17:00:00Z'
+              season: season-2018
+              seasonType: seasontype-reg
+              slug: week-3
+              title: WEEK 3
+              trimmedVideoDuration: ''
+              videoDuration: '25012.97'
+              videoId: 656dbb29-e711-4971-a41b-d9275ff5014a
+              videoStatus: ONDEMAND
+              videoThumbnail:
+                overridenFormats: {}
+                templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              vocGameTopTag: null
+              week: week-3
+            - description: '<p>Redzone</p>
+
+                '
+              isBasic: false
+              isGameOfTheWeek: false
+              kind: Red Zone video
+              nflprogram: null
+              nflprogramcode: null
+              scheduleDate: '2018-09-16 17:00:00Z'
+              season: season-2018
+              seasonType: seasontype-reg
+              slug: week-2
+              title: WEEK 2
+              trimmedVideoDuration: ''
+              videoDuration: '25439.402'
+              videoId: fb5a46a1-aad4-43c4-97b2-8fd42e30dbab
+              videoStatus: ONDEMAND
+              videoThumbnail:
+                overridenFormats: {}
+                templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              vocGameTopTag: null
+              week: week-2
+            - description: '<p>Redzone</p>
+
+                '
+              isBasic: false
+              isGameOfTheWeek: false
+              kind: Red Zone video
+              nflprogram: null
+              nflprogramcode: null
+              scheduleDate: '2018-09-09 16:55:00Z'
+              season: season-2018
+              seasonType: seasontype-reg
+              slug: week-1
+              title: WEEK 1
+              trimmedVideoDuration: ''
+              videoDuration: '25807.786'
+              videoId: 28d9cc35-c31f-4f8a-9f6f-935ee7aa8f73
+              videoStatus: ONDEMAND
+              videoThumbnail:
+                overridenFormats: {}
+                templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              vocGameTopTag: null
+              week: week-1
+            - description: ''
+              isBasic: false
+              isGameOfTheWeek: false
+              kind: Red Zone video
+              nflprogram: null
+              nflprogramcode: null
+              scheduleDate: ''
+              season: season-2018
+              seasonType: seasontype-pre
+              slug: preseason-special
+              title: PRESEASON SPECIAL
+              trimmedVideoDuration: ''
+              videoDuration: '15000'
+              videoId: e67957f4-175b-4cc9-82fc-8f721985dc3e
+              videoStatus: ONDEMAND
+              videoThumbnail:
+                overridenFormats: {}
+                templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              vocGameTopTag: null
+              week: week-4
+            texts: {subTitle: videos-list-subtitle, title: videos-list-title}
+      string: '{"header": {"id": "red-zone-videos", "version": "1", "title": "", "lastUpdate":
+        "2018-10-10T07:04:31.488Z"}, "modules": {"notLoggedTeaser": {"type": "story",
+        "slug": "nfl-redzone-mobile", "relations": [], "references": {}, "fields":
+        {}, "contentDate": "2017-08-02T11:09:37.165Z", "headline": null, "summary":
+        "<p>Catch every touchdown, live every Sunday with NFL RedZone.</p>\n", "parts":
+        [{"type": "markdown", "content": "<p>Catch every touchdown, live every Sunday
+        with NFL RedZone.</p>\n", "contextualFields": {}}], "thumbnail": {"title":
+        "NFL_Redzone_2048x1024_noLogo", "templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "thumbnailUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_jpg/r9ek0rlaiu0ppulbkzw1",
+        "format": "jpg", "overriddenFormats": {}}, "tags": [{"type": "tag", "title":
+        "redzone-heromodule-not-logged", "slug": "redzone-heromodule-not-logged",
+        "neutralSlug": "redzone-heromodule-not-logged", "extraData": {}, "fields":
+        {}}], "title": "NFL REDZONE"}, "redZoneLive": {"texts": {"title": "videos-list-title",
+        "subTitle": "videos-list-subtitle"}, "content": []}, "redZoneVod": {"texts":
+        {"title": "videos-list-title", "subTitle": "videos-list-subtitle"}, "content":
+        [{"videoId": "8f8b39c9-8691-4e51-9ed2-f38d75d09182", "title": "WEEK 5", "description":
+        "<p>Redzone</p>\n", "kind": "Red Zone video", "videoStatus": "ONDEMAND", "videoDuration":
+        "25951.936", "trimmedVideoDuration": "", "slug": "week-5", "videoThumbnail":
+        {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "overridenFormats": {}}, "week": "week-5", "season": "season-2018", "seasonType":
+        "seasontype-reg", "scheduleDate": "2018-10-07 16:55:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, {"videoId": "4cf5bea8-10e5-48e3-8c5c-f79ef619f7ab", "title": "WEEK
+        4", "description": "<p>Redzone</p>\n", "kind": "Red Zone video", "videoStatus":
+        "ONDEMAND", "videoDuration": "27331.306", "trimmedVideoDuration": "", "slug":
+        "week-4", "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "overridenFormats": {}}, "week": "week-4", "season": "season-2018", "seasonType":
+        "seasontype-reg", "scheduleDate": "2018-09-30 16:55:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, {"videoId": "656dbb29-e711-4971-a41b-d9275ff5014a", "title": "WEEK
+        3", "description": "<p>Redzone</p>\n", "kind": "Red Zone video", "videoStatus":
+        "ONDEMAND", "videoDuration": "25012.97", "trimmedVideoDuration": "", "slug":
+        "week-3", "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "overridenFormats": {}}, "week": "week-3", "season": "season-2018", "seasonType":
+        "seasontype-reg", "scheduleDate": "2018-09-23 17:00:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, {"videoId": "fb5a46a1-aad4-43c4-97b2-8fd42e30dbab", "title": "WEEK
+        2", "description": "<p>Redzone</p>\n", "kind": "Red Zone video", "videoStatus":
+        "ONDEMAND", "videoDuration": "25439.402", "trimmedVideoDuration": "", "slug":
+        "week-2", "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "overridenFormats": {}}, "week": "week-2", "season": "season-2018", "seasonType":
+        "seasontype-reg", "scheduleDate": "2018-09-16 17:00:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, {"videoId": "28d9cc35-c31f-4f8a-9f6f-935ee7aa8f73", "title": "WEEK
+        1", "description": "<p>Redzone</p>\n", "kind": "Red Zone video", "videoStatus":
+        "ONDEMAND", "videoDuration": "25807.786", "trimmedVideoDuration": "", "slug":
+        "week-1", "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "overridenFormats": {}}, "week": "week-1", "season": "season-2018", "seasonType":
+        "seasontype-reg", "scheduleDate": "2018-09-09 16:55:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, {"videoId": "e67957f4-175b-4cc9-82fc-8f721985dc3e", "title": "PRESEASON
+        SPECIAL", "description": "", "kind": "Red Zone video", "videoStatus": "ONDEMAND",
+        "videoDuration": "15000", "trimmedVideoDuration": "", "slug": "preseason-special",
+        "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "overridenFormats": {}}, "week": "week-4", "season": "season-2018", "seasonType":
+        "seasontype-pre", "scheduleDate": "", "isGameOfTheWeek": false, "vocGameTopTag":
+        null, "isBasic": false, "nflprogram": null, "nflprogramcode": null}]}, "analytics":
+        {"site_name": "gamepass international", "language": "en_US", "site_section":
+        "nfl redzone", "site_subsection": "nfl redzone", "page_detail": "landing",
+        "content_type": "index", "page_name": "gamepass international:nfl redzone:nfl
+        redzone:landing"}}}'
+    headers:
+      Access-Control-Allow-Headers: [Content-Type]
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: ['private, max-age=120']
+      Connection: [keep-alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 10 Oct 2018 07:04:31 GMT']
+      Expires: ['Wed, 10 Oct 2018 07:06:31 GMT']
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-AspNet-Version: [4.0.30319]
+      content-length: ['4958']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+    method: GET
+    uri: https://www.nflgamepass.com/api/en/content/v1/web/redzone/videos
+  response:
+    body:
+      pretty:
+        header: {id: red-zone-videos, lastUpdate: '2018-10-10T07:04:31.488Z', title: '',
+          version: '1'}
+        modules:
+          analytics: {content_type: index, language: en_US, page_detail: landing,
+            page_name: 'gamepass international:nfl redzone:nfl redzone:landing', site_name: gamepass
+              international, site_section: nfl redzone, site_subsection: nfl redzone}
+          notLoggedTeaser:
+            contentDate: '2017-08-02T11:09:37.165Z'
+            fields: {}
+            headline: null
+            parts:
+            - content: '<p>Catch every touchdown, live every Sunday with NFL RedZone.</p>
+
+                '
+              contextualFields: {}
+              type: markdown
+            references: {}
+            relations: []
+            slug: nfl-redzone-mobile
+            summary: '<p>Catch every touchdown, live every Sunday with NFL RedZone.</p>
+
+              '
+            tags:
+            - extraData: {}
+              fields: {}
+              neutralSlug: redzone-heromodule-not-logged
+              slug: redzone-heromodule-not-logged
+              title: redzone-heromodule-not-logged
+              type: tag
+            thumbnail:
+              format: jpg
+              overriddenFormats: {}
+              templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              thumbnailUrl: https://nflgp-prd.akamaized.net/api/images/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_jpg/r9ek0rlaiu0ppulbkzw1
+              title: NFL_Redzone_2048x1024_noLogo
+            title: NFL REDZONE
+            type: story
+          redZoneLive:
+            content: []
+            texts: {subTitle: videos-list-subtitle, title: videos-list-title}
+          redZoneVod:
+            content:
+            - description: '<p>Redzone</p>
+
+                '
+              isBasic: false
+              isGameOfTheWeek: false
+              kind: Red Zone video
+              nflprogram: null
+              nflprogramcode: null
+              scheduleDate: '2018-10-07 16:55:00Z'
+              season: season-2018
+              seasonType: seasontype-reg
+              slug: week-5
+              title: WEEK 5
+              trimmedVideoDuration: ''
+              videoDuration: '25951.936'
+              videoId: 8f8b39c9-8691-4e51-9ed2-f38d75d09182
+              videoStatus: ONDEMAND
+              videoThumbnail:
+                overridenFormats: {}
+                templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              vocGameTopTag: null
+              week: week-5
+            - description: '<p>Redzone</p>
+
+                '
+              isBasic: false
+              isGameOfTheWeek: false
+              kind: Red Zone video
+              nflprogram: null
+              nflprogramcode: null
+              scheduleDate: '2018-09-30 16:55:00Z'
+              season: season-2018
+              seasonType: seasontype-reg
+              slug: week-4
+              title: WEEK 4
+              trimmedVideoDuration: ''
+              videoDuration: '27331.306'
+              videoId: 4cf5bea8-10e5-48e3-8c5c-f79ef619f7ab
+              videoStatus: ONDEMAND
+              videoThumbnail:
+                overridenFormats: {}
+                templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              vocGameTopTag: null
+              week: week-4
+            - description: '<p>Redzone</p>
+
+                '
+              isBasic: false
+              isGameOfTheWeek: false
+              kind: Red Zone video
+              nflprogram: null
+              nflprogramcode: null
+              scheduleDate: '2018-09-23 17:00:00Z'
+              season: season-2018
+              seasonType: seasontype-reg
+              slug: week-3
+              title: WEEK 3
+              trimmedVideoDuration: ''
+              videoDuration: '25012.97'
+              videoId: 656dbb29-e711-4971-a41b-d9275ff5014a
+              videoStatus: ONDEMAND
+              videoThumbnail:
+                overridenFormats: {}
+                templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              vocGameTopTag: null
+              week: week-3
+            - description: '<p>Redzone</p>
+
+                '
+              isBasic: false
+              isGameOfTheWeek: false
+              kind: Red Zone video
+              nflprogram: null
+              nflprogramcode: null
+              scheduleDate: '2018-09-16 17:00:00Z'
+              season: season-2018
+              seasonType: seasontype-reg
+              slug: week-2
+              title: WEEK 2
+              trimmedVideoDuration: ''
+              videoDuration: '25439.402'
+              videoId: fb5a46a1-aad4-43c4-97b2-8fd42e30dbab
+              videoStatus: ONDEMAND
+              videoThumbnail:
+                overridenFormats: {}
+                templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              vocGameTopTag: null
+              week: week-2
+            - description: '<p>Redzone</p>
+
+                '
+              isBasic: false
+              isGameOfTheWeek: false
+              kind: Red Zone video
+              nflprogram: null
+              nflprogramcode: null
+              scheduleDate: '2018-09-09 16:55:00Z'
+              season: season-2018
+              seasonType: seasontype-reg
+              slug: week-1
+              title: WEEK 1
+              trimmedVideoDuration: ''
+              videoDuration: '25807.786'
+              videoId: 28d9cc35-c31f-4f8a-9f6f-935ee7aa8f73
+              videoStatus: ONDEMAND
+              videoThumbnail:
+                overridenFormats: {}
+                templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              vocGameTopTag: null
+              week: week-1
+            - description: ''
+              isBasic: false
+              isGameOfTheWeek: false
+              kind: Red Zone video
+              nflprogram: null
+              nflprogramcode: null
+              scheduleDate: ''
+              season: season-2018
+              seasonType: seasontype-pre
+              slug: preseason-special
+              title: PRESEASON SPECIAL
+              trimmedVideoDuration: ''
+              videoDuration: '15000'
+              videoId: e67957f4-175b-4cc9-82fc-8f721985dc3e
+              videoStatus: ONDEMAND
+              videoThumbnail:
+                overridenFormats: {}
+                templateUrl: https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1
+              vocGameTopTag: null
+              week: week-4
+            texts: {subTitle: videos-list-subtitle, title: videos-list-title}
+      string: '{"header": {"id": "red-zone-videos", "version": "1", "title": "", "lastUpdate":
+        "2018-10-10T07:04:31.488Z"}, "modules": {"notLoggedTeaser": {"type": "story",
+        "slug": "nfl-redzone-mobile", "relations": [], "references": {}, "fields":
+        {}, "contentDate": "2017-08-02T11:09:37.165Z", "headline": null, "summary":
+        "<p>Catch every touchdown, live every Sunday with NFL RedZone.</p>\n", "parts":
+        [{"type": "markdown", "content": "<p>Catch every touchdown, live every Sunday
+        with NFL RedZone.</p>\n", "contextualFields": {}}], "thumbnail": {"title":
+        "NFL_Redzone_2048x1024_noLogo", "templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "thumbnailUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_jpg/r9ek0rlaiu0ppulbkzw1",
+        "format": "jpg", "overriddenFormats": {}}, "tags": [{"type": "tag", "title":
+        "redzone-heromodule-not-logged", "slug": "redzone-heromodule-not-logged",
+        "neutralSlug": "redzone-heromodule-not-logged", "extraData": {}, "fields":
+        {}}], "title": "NFL REDZONE"}, "redZoneLive": {"texts": {"title": "videos-list-title",
+        "subTitle": "videos-list-subtitle"}, "content": []}, "redZoneVod": {"texts":
+        {"title": "videos-list-title", "subTitle": "videos-list-subtitle"}, "content":
+        [{"videoId": "8f8b39c9-8691-4e51-9ed2-f38d75d09182", "title": "WEEK 5", "description":
+        "<p>Redzone</p>\n", "kind": "Red Zone video", "videoStatus": "ONDEMAND", "videoDuration":
+        "25951.936", "trimmedVideoDuration": "", "slug": "week-5", "videoThumbnail":
+        {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "overridenFormats": {}}, "week": "week-5", "season": "season-2018", "seasonType":
+        "seasontype-reg", "scheduleDate": "2018-10-07 16:55:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, {"videoId": "4cf5bea8-10e5-48e3-8c5c-f79ef619f7ab", "title": "WEEK
+        4", "description": "<p>Redzone</p>\n", "kind": "Red Zone video", "videoStatus":
+        "ONDEMAND", "videoDuration": "27331.306", "trimmedVideoDuration": "", "slug":
+        "week-4", "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "overridenFormats": {}}, "week": "week-4", "season": "season-2018", "seasonType":
+        "seasontype-reg", "scheduleDate": "2018-09-30 16:55:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, {"videoId": "656dbb29-e711-4971-a41b-d9275ff5014a", "title": "WEEK
+        3", "description": "<p>Redzone</p>\n", "kind": "Red Zone video", "videoStatus":
+        "ONDEMAND", "videoDuration": "25012.97", "trimmedVideoDuration": "", "slug":
+        "week-3", "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "overridenFormats": {}}, "week": "week-3", "season": "season-2018", "seasonType":
+        "seasontype-reg", "scheduleDate": "2018-09-23 17:00:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, {"videoId": "fb5a46a1-aad4-43c4-97b2-8fd42e30dbab", "title": "WEEK
+        2", "description": "<p>Redzone</p>\n", "kind": "Red Zone video", "videoStatus":
+        "ONDEMAND", "videoDuration": "25439.402", "trimmedVideoDuration": "", "slug":
+        "week-2", "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "overridenFormats": {}}, "week": "week-2", "season": "season-2018", "seasonType":
+        "seasontype-reg", "scheduleDate": "2018-09-16 17:00:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, {"videoId": "28d9cc35-c31f-4f8a-9f6f-935ee7aa8f73", "title": "WEEK
+        1", "description": "<p>Redzone</p>\n", "kind": "Red Zone video", "videoStatus":
+        "ONDEMAND", "videoDuration": "25807.786", "trimmedVideoDuration": "", "slug":
+        "week-1", "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "overridenFormats": {}}, "week": "week-1", "season": "season-2018", "seasonType":
+        "seasontype-reg", "scheduleDate": "2018-09-09 16:55:00Z", "isGameOfTheWeek":
+        false, "vocGameTopTag": null, "isBasic": false, "nflprogram": null, "nflprogramcode":
+        null}, {"videoId": "e67957f4-175b-4cc9-82fc-8f721985dc3e", "title": "PRESEASON
+        SPECIAL", "description": "", "kind": "Red Zone video", "videoStatus": "ONDEMAND",
+        "videoDuration": "15000", "trimmedVideoDuration": "", "slug": "preseason-special",
+        "videoThumbnail": {"templateUrl": "https://nflgp-prd.akamaized.net/api/images/image/private/{formatInstructions}/r9ek0rlaiu0ppulbkzw1",
+        "overridenFormats": {}}, "week": "week-4", "season": "season-2018", "seasonType":
+        "seasontype-pre", "scheduleDate": "", "isGameOfTheWeek": false, "vocGameTopTag":
+        null, "isBasic": false, "nflprogram": null, "nflprogramcode": null}]}, "analytics":
+        {"site_name": "gamepass international", "language": "en_US", "site_section":
+        "nfl redzone", "site_subsection": "nfl redzone", "page_detail": "landing",
+        "content_type": "index", "page_name": "gamepass international:nfl redzone:nfl
+        redzone:landing"}}}'
+    headers:
+      Access-Control-Allow-Headers: [Content-Type]
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: ['private, max-age=120']
+      Connection: [keep-alive]
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 10 Oct 2018 07:04:31 GMT']
+      Expires: ['Wed, 10 Oct 2018 07:06:31 GMT']
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-AspNet-Version: [4.0.30319]
+      content-length: ['4958']
+    status: {code: 200, message: OK}
+version: 1
