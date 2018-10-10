@@ -18,6 +18,31 @@ class video(object):
         self.logger = logging.getLogger(__name__)
 
 
+    def get_broadcast_streams(self, name):
+        """Return a dict of available stream formats and their URLs for a
+        broadcast.
+
+        Parameters
+        ----------
+        name : str
+            The name of the broadcast. Currently accepts only ``nfl_network``
+            and ``redzone``.
+
+        Returns
+        -------
+        dict
+            with the stream format (hls, chromecast, etc) as the key and the
+            stream content_url as the value. None is there
+            was a failure.
+        """
+        if name == 'nfl_network':
+            return self._get_nfl_network_streams()
+        elif name == 'redzone':
+            return self._get_redzone_streams()
+        else:
+            return None
+
+
     def get_game_streams(self, video_id, live=False):
         """Return a dict of available stream formats and their URLs for a game.
 
@@ -42,71 +67,28 @@ class video(object):
         return streams
 
 
-    def get_nfl_network_streams(self):
-        """Return a dict of available stream formats and their URLs for NFL
-        Network Live.
+    def is_on_air(self, name):
+        """Return whether a live broadcast is currently on the air.
+
+        Parameters
+        ----------
+        name : str
+            The name of the broadcast. Currently accepts only ``nfl_network``
+            and ``redzone``.
 
         Returns
         -------
-        dict
-            with the stream format (hls, chromecast, etc) as the key and the
-            stream content_url as the value.
+        bool
+            Returns True if it is broadcasting, False if not, and None is there
+            was a failure.
         """
-        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['network']
-        diva_config_url = self._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['Live24x7']
-        self._auth.refresh_tokens()  # we aren't even told about the live video unless we have up-to-date tokens
-        streams = {}
-
-        try:
-            r = self._store.s.get(url)
-            #self._log_request(r)
-            data = r.json()
-        except ValueError:
-            self.logger.error('get_nfl_network_streams: server response is invalid')
-            return {}
-
-        try:
-            video_id = data['modules']['networkLiveVideo']['content'][0]['videoId']
-        except KeyError:
-            # TODO: move refresh_tokens() here and retry
-            self.logger.error('could not parse the nfl network video_id data')
-            return {}
-
-        streams = self._get_diva_streams(video_id=video_id, diva_config_url=diva_config_url)
-        return streams
-
-
-    def get_redzone_streams(self):
-        """Return a dict of available stream formats and their URLs for NFL Red
-        Zone.
-
-        Returns
-        -------
-        dict
-            with the stream format (hls, chromecast, etc) as the key and the
-            stream content_url as the value.
-        """
-        # TODO: do we need refresh_tokens() like get_nfl_network_streams()? likely
-        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['redzone']
-        diva_config_url = self._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['Live24x7']
-        streams = {}
-
-        try:
-            r = self._store.s.get(url)
-            #self._log_request(r)
-            data = r.json()
-        except ValueError:
-            self.logger.error('get_redzone_streams: server response is invalid')
-            return {}
-
-        try:
-            video_id = data['modules']['redZoneLive']['content'][0]['videoId']
-        except (KeyError, IndexError):
-            self.logger.error('could not parse the redzone video_id data')
-            return {}
-
-        streams = self._get_diva_streams(video_id=video_id, diva_config_url=diva_config_url)
-        return streams
+        if name == 'nfl_network':
+            # TODO: find a way to determine if nfl_network is broadcasting
+            return True
+        elif name == 'redzone':
+            return self._is_redzone_on_air()
+        else:
+            return None
 
 
     def _build_processing_url_payload(self, video_id, vs_url):
@@ -247,3 +229,96 @@ class video(object):
             streams[vs_format] = data['ContentUrl'] + '|' + urlencode(m3u8_header)
 
         return streams
+
+
+    def _get_nfl_network_streams(self):
+        """Return a dict of available stream formats and their URLs for NFL
+        Network Live.
+
+        Returns
+        -------
+        dict
+            with the stream format (hls, chromecast, etc) as the key and the
+            stream content_url as the value.
+        """
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['network']
+        diva_config_url = self._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['Live24x7']
+        self._auth.refresh_tokens()  # we aren't even told about the live video unless we have up-to-date tokens
+
+        try:
+            r = self._store.s.get(url)
+            #self._log_request(r)
+            data = r.json()
+        except ValueError:
+            self.logger.error('get_nfl_network_streams: server response is invalid')
+            return None
+
+        try:
+            video_id = data['modules']['networkLiveVideo']['content'][0]['videoId']
+        except KeyError:
+            # TODO: move refresh_tokens() here and retry
+            self.logger.error('could not parse the nfl network video_id data')
+            return None
+
+        streams = self._get_diva_streams(video_id=video_id, diva_config_url=diva_config_url)
+        return streams
+
+
+    def _get_redzone_streams(self):
+        """Return a dict of available stream formats and their URLs for NFL Red
+        Zone.
+
+        Returns
+        -------
+        dict
+            with the stream format (hls, chromecast, etc) as the key and the
+            stream content_url as the value.
+        """
+        # TODO: do we need refresh_tokens() like get_nfl_network_streams()? likely
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['redzone']
+        diva_config_url = self._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['Live24x7']
+
+        try:
+            r = self._store.s.get(url)
+            #self._log_request(r)
+            data = r.json()
+        except ValueError:
+            self.logger.error('get_redzone_streams: server response is invalid')
+            return None
+
+        try:
+            video_id = data['modules']['redZoneLive']['content'][0]['videoId']
+        except (KeyError, IndexError):
+            self.logger.error('could not parse the redzone video_id data')
+            return None
+
+        streams = self._get_diva_streams(video_id=video_id, diva_config_url=diva_config_url)
+        return streams
+
+
+    def _is_redzone_on_air(self):
+        """Is RedZone Live broadcasting.
+
+        Returns
+        -------
+        bool
+            Returns True if RedZone Live is broadcasting, False otherwise.
+        """
+        url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['redzone']
+
+        try:
+            r = self._store.s.get(url)
+            #self._log_request(r)
+            data = r.json()
+        except ValueError:
+            self.logger.error('_is_redzone_on_air: server response is invalid')
+            return None
+
+        try:
+            if data['modules']['redZoneLive']['content']:
+                return True
+        except KeyError:
+            self.logger.error('could not parse RedZoneLive data')
+            return None
+
+        return False

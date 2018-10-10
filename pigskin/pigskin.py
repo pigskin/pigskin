@@ -48,6 +48,7 @@ class pigskin(object):
         self._store.refresh_token = None
         self._store.subscription = None
 
+        self._broadcast = None
         self._current = None
         self._seasons = None
         self._shows = None
@@ -58,6 +59,38 @@ class pigskin(object):
         self._data = data(self)
         self._utils = utils()
         self._video = video(self)
+
+
+    @property
+    def broadcast(self):
+        """An OrderedDict of broadcast sources and their objects.
+
+        Returns
+        -------
+        OrderedDict
+            With the keys ``nfl_network`` and ``redzone`` set and corresponding
+            ``broadcast`` objects as the values. ``None`` if there was a
+            failure.
+
+        Note
+        ----
+        The presence of a show in the list makes no claim that it's currently
+        broadcasting. The ``on_air`` endpoint provides that information (e.g.
+        ``gp.broadcast['redzone'].on_air``).
+        """
+
+        if self._broadcast is None:
+            self.logger.debug('``broadcast`` not set. attempting to populate')
+            self._broadcast = OrderedDict()
+            for name in ['nfl_network', 'redzone']:
+                try:
+                    self._broadcast[name] = broadcast(self, name)
+                except Exception:
+                    self._broadcast[name] = None
+
+            self.logger.debug('``broadcast`` ready')
+
+        return self._broadcast
 
 
     @property
@@ -696,3 +729,52 @@ class show(object):
             self.logger.debug('show ``seasons`` ready')
 
         return self._seasons
+
+
+class broadcast(object):
+    def __init__(self, pigskin_obj, name):
+        self._pigskin = pigskin_obj
+        self._video = self._pigskin._video
+        self._name = name
+
+        self.logger = logging.getLogger(__name__)
+
+        self._descriptions = {'nfl_network': 'NFL Network', 'redzone': 'RedZone'}
+        self._streams = None
+
+
+    @property
+    def desc(self):
+        """The description of the broadcast.
+
+        Returns
+        -------
+        str
+            The description of the broadcast.
+        """
+        try:
+            return self._descriptions[self._name]
+        except KeyError:
+            return self._name
+
+
+    @property
+    def name(self):
+        # TODO: I'm unsure about the usefulness of this endpoint. Perhaps the
+        # name (slug?) should be internal only.
+        return self._name
+
+
+    @property
+    def on_air(self):
+        return self._video.is_on_air(self._name)
+
+
+    @property
+    def streams(self):
+        if self._streams is None:
+            self.logger.debug('``streams`` not set. attempting to populate')
+            self._streams = self._video.get_broadcast_streams(self._name)
+            self.logger.debug('``streams`` ready')
+
+        return self._streams
