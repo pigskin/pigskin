@@ -36,60 +36,6 @@ class TestPigskin(object):
             assert name == gp.broadcast[name].name
 
 
-    @vcr.use_cassette('public_API/europe_pigskin_seasons.yaml')
-    @staticmethod
-    def test_seasons(gp):
-        seasons = gp.seasons
-
-        # make sure we have content and it's the right type
-        assert type(seasons) is OrderedDict
-        assert seasons
-
-        assert len(seasons) > 0
-        prev = 9999
-        for s in seasons:
-            # TODO: assert type(seasons[s]) is season
-            assert seasons[s]
-
-            # make sure the years look sane-ish
-            assert int(s) > 2000 and int(s) < 2050
-
-            # make sure it's sorted high to low
-            assert int(prev) > int(s)
-            prev = s
-
-
-    @staticmethod
-    @vcr.use_cassette('public_API/europe_pigskin_teams.yaml')
-    def test_teams(gp):
-        teams = gp.seasons['2017'].teams
-
-        # make sure we have content and it's the right type
-        assert type(teams) is OrderedDict
-        assert teams
-
-        for t in teams:
-            team = teams[t]
-
-            # TODO: test that all teams are of type team
-            assert team
-
-            # TODO: check that they are alphabetized
-
-
-    @vcr.use_cassette('public_API/europe_pigskin_shows.yaml')
-    @staticmethod
-    def test_shows(gp):
-        shows = gp.shows
-
-        # make sure we have content and it's the right type
-        assert type(shows) is OrderedDict
-        assert shows
-
-        for name in shows:
-            assert name == shows[name].name
-
-
     @vcr.use_cassette('public_API/europe_pigskin_current.yaml')
     @staticmethod
     def test_current(gp):
@@ -147,6 +93,60 @@ class TestPigskin(object):
         assert not dt_utc
 
 
+    @vcr.use_cassette('public_API/europe_pigskin_seasons.yaml')
+    @staticmethod
+    def test_seasons(gp):
+        seasons = gp.seasons
+
+        # make sure we have content and it's the right type
+        assert type(seasons) is OrderedDict
+        assert seasons
+
+        assert len(seasons) > 0
+        prev = 9999
+        for s in seasons:
+            # TODO: assert type(seasons[s]) is season
+            assert seasons[s]
+
+            # make sure the years look sane-ish
+            assert int(s) > 2000 and int(s) < 2050
+
+            # make sure it's sorted high to low
+            assert int(prev) > int(s)
+            prev = s
+
+
+    @vcr.use_cassette('public_API/europe_pigskin_shows.yaml')
+    @staticmethod
+    def test_shows(gp):
+        shows = gp.shows
+
+        # make sure we have content and it's the right type
+        assert type(shows) is OrderedDict
+        assert shows
+
+        for name in shows:
+            assert name == shows[name].name
+
+
+    @staticmethod
+    @vcr.use_cassette('public_API/europe_pigskin_teams.yaml')
+    def test_teams(gp):
+        teams = gp.seasons['2017'].teams
+
+        # make sure we have content and it's the right type
+        assert type(teams) is OrderedDict
+        assert teams
+
+        for t in teams:
+            team = teams[t]
+
+            # TODO: test that all teams are of type team
+            assert team
+
+            # TODO: check that they are alphabetized
+
+
 @pytest.mark.incremental
 class TestPigskinAuth(object):
     """These require authentication to Game Pass"""
@@ -159,13 +159,6 @@ class TestPigskinAuth(object):
         # TODO: this is service-specific. It should be moved to backend/.
         assert gp._store.access_token
         assert gp._store.refresh_token
-
-
-    @vcr.use_cassette('public_API/europe_pigskin_auth_subscription.yaml')
-    @staticmethod
-    def test_subscription(gp):
-        isinstance(gp.subscription, basestring)
-        assert gp.subscription
 
 
     @vcr.use_cassette('public_API/europe_pigskin_auth_refresh_tokens.yaml')
@@ -185,6 +178,13 @@ class TestPigskinAuth(object):
         # and finally make sure they've actually been refreshed
         assert first_access_token != gp._store.access_token
         assert first_refresh_token != gp._store.refresh_token
+
+
+    @vcr.use_cassette('public_API/europe_pigskin_auth_subscription.yaml')
+    @staticmethod
+    def test_subscription(gp):
+        isinstance(gp.subscription, basestring)
+        assert gp.subscription
 
 
 @pytest.mark.incremental
