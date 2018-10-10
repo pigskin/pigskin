@@ -42,6 +42,9 @@ class TestInvalidResponseData(object):
             with vcr.use_cassette('backends/europe/invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
                 assert gp._data.get_seasons() is None
 
+            with vcr.use_cassette('backends/europe/invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
+                assert gp._data.get_show_seasons('test-slug') is None
+
             with vcr.use_cassette('backends/europe/invalid_response_get_{0}_teams.yaml'.format(junk_type), match_on=['method', 'uri']):
                 # this has its own cassette because it will loop through all
                 # non-bye-weeks searching for an answer
@@ -57,21 +60,25 @@ class TestInvalidResponseData(object):
                 assert not gp._data._fetch_games_list('2018', 'reg', '8')
 
             with vcr.use_cassette('backends/europe/invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
+                assert gp._data._get_shows_nfl_network() is None
+
+            with vcr.use_cassette('backends/europe/invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
                 assert gp._data._get_team_games_easy('2018', 'Packers') is None
 
             with vcr.use_cassette('backends/europe/invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
                 assert not gp._video._get_diva_config(junk_url)
 
-            with vcr.use_cassette('backends/europe/invalid_response_get_{0}_streams.yaml'.format(junk_type), match_on=['method', 'uri']):
-                assert not gp._video.get_nfl_network_streams()
-
-            with vcr.use_cassette('backends/europe/invalid_response_get_{0}_streams.yaml'.format(junk_type), match_on=['method', 'uri']):
-                assert not gp._video.get_redzone_streams()
-
             with vcr.use_cassette('backends/europe/invalid_response_get_{0}_diva.yaml'.format(junk_type), match_on=['method', 'uri']):
                 assert not gp._video._get_diva_streams(video_id='invalid', diva_config_url=diva_config_url)
 
-            #assert gp.is_redzone_on_air() == None
+            with vcr.use_cassette('backends/europe/invalid_response_get_{0}_streams.yaml'.format(junk_type), match_on=['method', 'uri']):
+                assert gp._video._get_nfl_network_streams() is None
+
+            with vcr.use_cassette('backends/europe/invalid_response_get_{0}_streams.yaml'.format(junk_type), match_on=['method', 'uri']):
+                assert gp._video._get_redzone_streams() is None
+
+            with vcr.use_cassette('backends/europe/invalid_response_get_{0}.yaml'.format(junk_type), match_on=['method', 'uri']):
+                assert gp._video._is_redzone_on_air() is None
 
         # _log_request needs a requests handle
         r = requests.get(junk_url)
