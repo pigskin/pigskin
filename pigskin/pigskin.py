@@ -95,11 +95,11 @@ class pigskin(object):
 
     @property
     def current(self):
-        """A Dict of the current season and week.
+        """A dict of the current season and week.
 
         Returns
         -------
-        Dict
+        dict
             With the ``season``, ``season_type``,  and ``week`` keys set.
             ``None`` if there was a failure.
         """
@@ -598,6 +598,9 @@ class game(object):
     @property
     def phase(self):
         return self._game_info['phase']
+
+
+    # TODO: add 'score' attribute
 
 
     @property

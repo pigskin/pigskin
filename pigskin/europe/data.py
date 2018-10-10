@@ -432,13 +432,13 @@ class data(object):
             #self._log_request(r)
             data = r.json()
         except ValueError:
-            self.logger.error('_get_nfl_network_shows: server response is invalid')
+            self.logger.error('_get_shows_nfl_network: server response is invalid')
             return None
 
         try:
             shows_list = sorted(data['modules']['programs'], key=lambda x: x['title'])
         except KeyError:
-            self.logger.error('_get_nfl_network_shows: could not parse nfl network shows list')
+            self.logger.error('_get_shows_nfl_network: could not parse nfl network shows list')
             return None
 
         for show in shows_list:
@@ -453,7 +453,7 @@ class data(object):
                     'slug': show['slug'],
                 }
             except KeyError:
-                self.logger.warn('_get_nfl_network_shows: invalid record; skipping.')
+                self.logger.warn('_get_shows_nfl_network: invalid record; skipping.')
                 continue
 
             # useful, but not crucial data
@@ -463,7 +463,7 @@ class data(object):
             try:
                 shows_dict[key]['logo'] = show['thumbnail']['thumbnailUrl']
             except (KeyError, TypeError):
-                self.logger.warn('_get_nfl_network_shows: cannot find logo')
+                self.logger.warn('_get_shows_nfl_network: cannot find logo')
 
         return shows_dict
 
