@@ -95,7 +95,7 @@ class data(object):
             #self._log_request(r)
             data = r.json()
             episodes_list = data['modules']['archive']['content']
-        except (KeyError, TypeError):
+        except (KeyError, TypeError, ValueError):
             self.logger.error('get_show_seasons: server response is invalid')
             return None
 
