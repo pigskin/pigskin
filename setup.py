@@ -48,7 +48,6 @@ setuptools.setup(
     tests_require = [
         'pyflakes',
         'pytest',
-        'pytest-cov',
         'vcrpy',
     ],
 )

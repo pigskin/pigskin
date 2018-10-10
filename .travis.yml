@@ -24,9 +24,14 @@ matrix:
 install:
   - pip install -U -r requirements.txt
   - pip install -U -r requirements-test.txt
-  - pip install -U codecov
+  - pip install -U codacy-coverage codecov pytest-cov
   - pip list
 script:
   - pyflakes --version && pyflakes pigskin/ setup.py
   - pytest --version && pytest --cov=pigskin/
+after_success:
   - codecov
+  - python-codacy-coverage -r coverage.xml
+env:
+  global:
+    secure: FIsFQtQhwlEc+qLZDrBmOzG7t3mPFDoH4IqzzuSjYwAN2MLM1EM3MuOad9+LBrXthYPBvF2uBbuIrS2E6LNmWMAT6/raORHk1vseoOKZ2okxqSGO3Zs0CT4aHmbXSD2bBy4xmoqcNijIsBZehc9/eKAoy2ANSxlCoeyg0KPBBBNglOzwn3FMwCwt4+ctEAnL5Ssyddewgu05X230YCZIH7Wsd33G7Z3ZIFanaDgl9kKb2S/DV1qN6z4v2OCn8CArHgaZeEkrrpKuMZbn7ZfCrdZKrd/gx8yYWU5m+ILz026BiKJZ6Uu0PnvOzNq2gTBRrSvyHfq8URTbNuI5UJWbOcN/o5e3J+3Rk5VwsGrFN0PH/jinXIF+z6LUo4tjQ/KYb3296lat4a4bSwoc5o2/eXe4Z2nLQ78oHnfS8EmCU0mpdk/GlRAOiZt/oBL6eN96pqaMUvWdhYb1P/QF0hu5HODFajXL1zJmw4pHOiZ0vo2o3M89IfFUd/mN2BvI/Pa9YdNNg5o/L+2d/iJz+P+DR4v5fyKLOZ0CF2S5zAF7SBbaGoMQOezveg/HHtsDF3UudwNLMQpv5PvicCyYYHiF+bUDOYq6dLlAuDbcQPnLdm/IhHY9yxEsQeK/GdUWq51up/1bAfXbPzLoJzSyFOPszGzOpj3EXaqQhFxSN6z6GfI=
