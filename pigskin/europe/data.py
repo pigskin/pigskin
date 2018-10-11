@@ -138,7 +138,7 @@ class data(object):
         season : str or int
             The season can be provided as either a ``str`` or ``int``.
         team : str
-            Accepts the team ``seo_name``.
+            The name of the team (e.g. Dolphins).
 
         Returns
         -------
@@ -491,7 +491,7 @@ class data(object):
         ----
         The service API this talks to only supports the current season, but
         ``season`` is accepted and checked for, just in case the service
-        changes..
+        changes.
 
         See Also
         --------
@@ -532,7 +532,6 @@ class data(object):
         # purge empty season types (the team may not have made the post season).
         games_dict = OrderedDict((st, games_dict[st]) for st in games_dict if games_dict[st])
 
-        self.logger.debug('``games`` ready')
         return games_dict
 
 
@@ -606,6 +605,23 @@ class data(object):
 
     @staticmethod
     def _week_description(abbr):
+        """The description for a week.
+
+        Parameters
+        ----------
+        abbr : str
+            The week's abbreviation (e.g. 'hof' and 'sb')
+
+        Returns
+        -------
+        str
+            The description of a week (such as "Super Bowl"). If it's a typical
+            week (or unknown), an empty string is returned.
+
+        See Also
+        --------
+        ``get_weeks()``
+        """
         descriptions = {
             'hof': 'Hall of Fame',
             'wc': 'Wild Card',

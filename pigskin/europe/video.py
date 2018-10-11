@@ -214,6 +214,7 @@ class video(object):
                 vs_format = vs.attrib['name'].lower()
                 vs_url = vs.find('uri').text
             except (KeyError, AttributeError):
+                self.logger.warn('unable to extract stream info from akamai videoSource; skipping')
                 continue
 
             payload = self._build_processing_url_payload(video_id, vs_url)
