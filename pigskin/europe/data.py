@@ -498,8 +498,7 @@ class data(object):
         ``_get_team_games_hard()``
         """
         url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['team_detail']
-        # TODO: make sure simply lower-casing is sufficient
-        team_seo_name = team.lower()
+        team_seo_name = self._team_seo_name(team)
         url = url.replace(':team', team_seo_name)
 
         games_dict = OrderedDict()
@@ -581,6 +580,28 @@ class data(object):
         games_dict = OrderedDict((st, games_dict[st]) for st in games_dict if games_dict[st])
 
         return games_dict
+
+
+    @staticmethod
+    def _team_seo_name(team):
+        """The seo_name of a team, which some Game Pass APIs require.
+
+        Parameters
+        ----------
+        team : str
+            The name of the team (e.g. Dolphins).
+
+        Returns
+        -------
+        str
+            The "seo name" of the team.
+
+
+        See Also
+        --------
+        ``_get_team_games_easy()``
+        """
+        return team.lower()
 
 
     @staticmethod
