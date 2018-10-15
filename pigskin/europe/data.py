@@ -83,7 +83,7 @@ class data(object):
     def get_show_seasons(self, show_slug):
         # TODO: accept the show name rather than slug
         # TODO: This only support NFL Network, what's the situation with RedZone?
-        # The 'seasons' list returned to _get_nfl_network_shows() cannot be
+        # The 'seasons' list returned in _get_shows_nfl_network() cannot be
         # trusted (both incomplete and missing entries). Here, we loop over
         # every episode to build the list.
         url = self._store.gp_config['modules']['API']['NETWORK_EPISODES']
@@ -100,32 +100,11 @@ class data(object):
             return None
 
         for e in episodes_list:
-            try:
-                season = e['season'].replace('season-', '')
-                season = int(season)
-            except (AttributeError, ValueError):
-                # sometime 'season' is empty, sometimes contains invalid,
-                # non-season data.
+            season = self._guess_show_season(e)
 
-                # TODO: this is such an ugly way of calling nfldate_to_datetime()
-                dt = self._pigskin._utils.nfldate_to_datetime(e['scheduleDate'])
-
-                # IMO, it's a safe guess that anything March 1st or later is the
-                # broadcast year, otherwise the previous year
-                try:
-                    if dt.month >= 2:
-                        season = dt.year
-                    else:
-                        season = dt.year - 1
-                except AttributeError:
-                    # sometimes 'scheduleDate' is empty
-                    self.logger.info('get_show_seasons: cannot find episode season info; skipping:')
-                    self.logger.debug(e)
-                    # TODO: is there any other way to guess the season?
-                    continue
-
-            if season not in season_list:
-                season_list.append(str(season))
+            if season:
+                if season not in season_list:
+                    season_list.append(season)
 
         return sorted(season_list, reverse=True)
 
@@ -579,6 +558,66 @@ class data(object):
         games_dict = OrderedDict((st, games_dict[st]) for st in games_dict if games_dict[st])
 
         return games_dict
+
+
+    def _guess_show_season(self, episode_data):
+        """The season a particular episode belongs to.
+
+        Parameters
+        ----------
+        episode_data : dict
+            The raw data for a given episode of a show.
+
+        Returns
+        -------
+        int
+            The season an episode belongs to. None if it could not be
+            determined.
+
+        Note
+        ----
+        The metadata return for episodes is impressively poor. It is best to
+        assume that everything is mangled in one way or another.
+
+
+        See Also
+        --------
+        ``get_show_seasons()``
+        """
+        # naively, we hope that the "season" field is set/useful
+        try:
+            season = episode_data['season'].replace('season-', '')
+            season = int(season)
+
+            return str(season)
+        except (AttributeError, KeyError, ValueError):
+            # more often than not, 'season' is empty or contains garbage data
+            self.logger.debug('_guess_show_season: "season" was unusable')
+
+        # unsurprised, we look at the date the episode aired
+        try:
+            # TODO: this is such an ugly way of calling nfldate_to_datetime()
+            air_date = episode_data['scheduleDate']
+            dt = self._pigskin._utils.nfldate_to_datetime(air_date)
+        except KeyError:
+            self.logger.debug('_guess_show_season: no air date available')
+
+        # IMO, it's a safe guess that anything March 1st or later is the
+        # broadcast year, otherwise the previous year
+        try:
+            if dt.month >= 2:
+                season = dt.year
+            else:
+                season = dt.year - 1
+
+            return str(season)
+        except AttributeError:
+            self.logger.debug('_guess_show_season: "scheduleDate" is malformed')
+
+        # TODO: is there any other way to guess the season?
+        self.logger.info('_guess_show_season: cannot guess episode season info; skipping:')
+        self.logger.debug(episode_data)
+        return None
 
 
     @staticmethod
