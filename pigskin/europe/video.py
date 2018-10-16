@@ -32,8 +32,7 @@ class video(object):
         -------
         dict
             with the stream format (hls, chromecast, etc) as the key and the
-            stream content_url as the value. None is there
-            was a failure.
+            stream content_url as the value. None if there was a failure.
         """
         if name == 'nfl_network':
             return self._get_nfl_network_streams()
@@ -57,7 +56,7 @@ class video(object):
         -------
         dict
             with the stream format (hls, chromecast, etc) as the key and the
-            stream content_url as the value.
+            stream content_url as the value. None if there was a failure.
         """
         diva_config_url = self._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['VodNoData']
         if live:
@@ -83,7 +82,7 @@ class video(object):
             was a failure.
         """
         if name == 'nfl_network':
-            # TODO: find a way to determine if nfl_network is broadcasting
+            # TODO: find a way to determine if NFL Network is broadcasting
             return True
         elif name == 'redzone':
             return self._is_redzone_on_air()
@@ -246,7 +245,7 @@ class video(object):
         -------
         dict
             with the stream format (hls, chromecast, etc) as the key and the
-            stream content_url as the value.
+            stream content_url as the value. None if there was a failure.
         """
         url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['network']
         diva_config_url = self._store.gp_config['modules']['DIVA']['HTML5']['SETTINGS']['Live24x7']
@@ -279,7 +278,7 @@ class video(object):
         -------
         dict
             with the stream format (hls, chromecast, etc) as the key and the
-            stream content_url as the value.
+            stream content_url as the value. None if there was a failure.
         """
         # TODO: do we need refresh_tokens() like get_nfl_network_streams()? likely
         url = self._store.gp_config['modules']['ROUTES_DATA_PROVIDERS']['redzone']
