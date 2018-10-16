@@ -115,17 +115,19 @@ class video(object):
         # the unique_id gen to __init__, login(), or refresh_tokens() rather
         # than regenerating for each request.
         unique_id = str(uuid.uuid4())
-        # TODO: This does not look right, and doesn't even use the username
-        other = '{0}|{1}|web|{1}|undefined|{2}'.format(unique_id, self._store.access_token, settings.user_agent, self._store.username)
+        other = '{0}|{1}|web|{2}|undefined|{3}'.format(unique_id, self._store.access_token, settings.user_agent, self._store.username)
+
+        # NOTE: the official web UI posts a bit more data, but it seems to have
+        #       no impact on the response.
         post_data = {
-            'Type': '1',
+            'AssetState': 3,
+            'Other': other,
+            'PlayerType': 'HTML5',
+            'Type': 1,
             'User': '',
             'VideoId': video_id,
+            'VideoKind': '',
             'VideoSource': vs_url,
-            'VideoKind': 'Video',
-            'AssetState': '3',
-            'PlayerType': 'HTML5',
-            'other': other,
         }
 
         payload = json.dumps(post_data)
