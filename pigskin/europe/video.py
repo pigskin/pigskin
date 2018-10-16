@@ -225,11 +225,15 @@ class video(object):
                 r = self._store.s.post(url=processing_url, data=payload)
                 #self._log_request(r)
                 data = r.json()
-            except ValueError:
+                content_url = data['ContentUrl']
+            except (KeyError, TypeError, ValueError):
                 self.logger.error('_get_diva_streams: server response is invalid')
                 continue
 
-            streams[vs_format] = data['ContentUrl'] + '|' + urlencode(m3u8_header)
+            if content_url:
+                streams[vs_format] = content_url + '|' + urlencode(m3u8_header)
+            else:
+                self.logger.warn('_get_diva_streams: empty content url for videoSource')
 
         return streams
 
