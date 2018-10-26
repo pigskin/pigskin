@@ -1,7 +1,7 @@
 import logging
 import uuid
 import json
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 try:
     from urllib.parse import urlencode
 except ImportError:  # Python 2.7
