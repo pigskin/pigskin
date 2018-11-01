@@ -7,21 +7,21 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['113']
       Content-Type: [application/x-www-form-urlencoded]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.20.0]
     method: POST
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body: {string: "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access\
         \ Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;nflgamepass&#46;com&#47;api&#47;user&#47;oauth&#47;token\"\
-        \ on this server.<P>\nReference&#32;&#35;18&#46;25651002&#46;1539000199&#46;2b72a10a\n\
+        \ on this server.<P>\nReference&#32;&#35;18&#46;75b51002&#46;1541087436&#46;101833e\n\
         </BODY>\n</HTML>\n"}
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [close]
-      Content-Length: ['301']
+      Content-Length: ['300']
       Content-Type: [text/html]
-      Date: ['Mon, 08 Oct 2018 12:03:19 GMT']
-      Expires: ['Mon, 08 Oct 2018 12:03:19 GMT']
+      Date: ['Thu, 01 Nov 2018 15:50:36 GMT']
+      Expires: ['Thu, 01 Nov 2018 15:50:36 GMT']
       Mime-Version: ['1.0']
       Pragma: [no-cache]
       Server: [AkamaiGHost]
@@ -34,24 +34,24 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['141']
       Content-Type: [application/x-www-form-urlencoded]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.20.0]
     method: POST
     uri: https://accounts.us1.gigya.com/accounts.login
   response:
     body:
       pretty:
         UID: 8caecb9d8857dc3fd9c7b2ce9fcc5368
-        UIDSignature: fE4HRDFVHSRDU0LhriFgZLjkgrY=
+        UIDSignature: u6LhT07ykou3RzaVluMycFvpzTg=
         apiVersion: 2
-        callId: 5378ad7a31e34674a77f53178dab3a82
+        callId: 163ca97fb9e14f488ff088f8d324809c
         created: '2012-08-04T11:20:09.000Z'
         createdTimestamp: 1344079209
         errorCode: 0
         isActive: true
         isRegistered: true
         isVerified: true
-        lastLogin: '2018-10-08T12:03:19.885Z'
-        lastLoginTimestamp: 1539000199
+        lastLogin: '2018-11-01T15:50:36.908Z'
+        lastLoginTimestamp: 1541087436
         lastUpdated: '2018-09-04T06:49:25.683Z'
         lastUpdatedTimestamp: 1536043765683
         loginProvider: site
@@ -62,69 +62,70 @@ interactions:
         registered: '2018-03-02T04:03:59.927Z'
         registeredTimestamp: 1519963439
         sessionInfo: {cookieName: gac_3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp,
-          cookieValue: st2.1FhUZRVxnGwWK8mlgXVlSx2Lo-M.Ssnhdh7S14aXrnmfUzbwLg.pPcjcqcXg5zQzbH94-_pPYyrHno}
-        signatureTimestamp: '1539000199'
+          cookieValue: st2.Tg3ASVGg_E_c8D_Nf_k-OxPqPOk.Zvyb4VKTX4Aen2q22cCMEg.e9xHpWpuvu_FG6zznXU1Yo5hMTg}
+        signatureTimestamp: '1541087436'
         socialProviders: site
         statusCode: 200
         statusReason: OK
-        time: '2018-10-08T12:03:20.056Z'
+        time: '2018-11-01T15:50:36.939Z'
         verified: '2018-03-02T04:03:59.786Z'
         verifiedTimestamp: 1519963439786
-      string: '{"callId": "5378ad7a31e34674a77f53178dab3a82", "errorCode": 0, "apiVersion":
-        2, "statusCode": 200, "statusReason": "OK", "time": "2018-10-08T12:03:20.056Z",
+      string: '{"callId": "163ca97fb9e14f488ff088f8d324809c", "errorCode": 0, "apiVersion":
+        2, "statusCode": 200, "statusReason": "OK", "time": "2018-11-01T15:50:36.939Z",
         "registeredTimestamp": 1519963439, "UID": "8caecb9d8857dc3fd9c7b2ce9fcc5368",
-        "UIDSignature": "fE4HRDFVHSRDU0LhriFgZLjkgrY=", "signatureTimestamp": "1539000199",
+        "UIDSignature": "u6LhT07ykou3RzaVluMycFvpzTg=", "signatureTimestamp": "1541087436",
         "created": "2012-08-04T11:20:09.000Z", "createdTimestamp": 1344079209, "isActive":
-        true, "isRegistered": true, "isVerified": true, "lastLogin": "2018-10-08T12:03:19.885Z",
-        "lastLoginTimestamp": 1539000199, "lastUpdated": "2018-09-04T06:49:25.683Z",
+        true, "isRegistered": true, "isVerified": true, "lastLogin": "2018-11-01T15:50:36.908Z",
+        "lastLoginTimestamp": 1541087436, "lastUpdated": "2018-09-04T06:49:25.683Z",
         "lastUpdatedTimestamp": 1536043765683, "loginProvider": "site", "oldestDataUpdated":
         "2012-08-04T11:20:09.000Z", "oldestDataUpdatedTimestamp": 1344079209000, "profile":
         "REDACTED", "registered": "2018-03-02T04:03:59.927Z", "socialProviders": "site",
         "verified": "2018-03-02T04:03:59.786Z", "verifiedTimestamp": 1519963439786,
         "newUser": false, "sessionInfo": {"cookieName": "gac_3_EH6cZ6gBJgl94hXqcCex1M71QN8eHd9G-3a5wKNqPihlX1-WTim-URKv0vym4xKp",
-        "cookieValue": "st2.1FhUZRVxnGwWK8mlgXVlSx2Lo-M.Ssnhdh7S14aXrnmfUzbwLg.pPcjcqcXg5zQzbH94-_pPYyrHno"}}'
+        "cookieValue": "st2.Tg3ASVGg_E_c8D_Nf_k-OxPqPOk.Zvyb4VKTX4Aen2q22cCMEg.e9xHpWpuvu_FG6zznXU1Yo5hMTg"}}'
     headers:
       Cache-Control: [private]
       Connection: [keep-alive]
-      Content-Length: ['1404']
       Content-Type: [text/javascript; charset=utf-8]
-      Date: ['Mon, 08 Oct 2018 12:03:19 GMT']
+      Date: ['Thu, 01 Nov 2018 15:50:37 GMT']
       P3P: [CP="IDC COR PSA DEV ADM OUR IND ONL"]
-      X-CallID: [5378ad7a31e34674a77f53178dab3a82]
+      Vary: [Accept-Encoding]
+      X-CallID: [163ca97fb9e14f488ff088f8d324809c]
       X-Gigya-HA-cfg-ver: ['5']
       X-Robots-Tag: [none]
-      X-Server: [us1d-nomad-g39]
+      X-Server: [us1d-nomad-g11]
       X-Soa: ['true, Gator']
+      content-length: ['1404']
     status: {code: 200, message: OK}
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&uuid=8caecb9d8857dc3fd9c7b2ce9fcc5368&signature=fE4HRDFVHSRDU0LhriFgZLjkgrY%3D&ts=1539000199&device_type=web&username=REDACTED&grant_type=shield_authentication
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&uuid=8caecb9d8857dc3fd9c7b2ce9fcc5368&signature=u6LhT07ykou3RzaVluMycFvpzTg%3D&ts=1541087436&device_type=web&username=REDACTED&grant_type=shield_authentication
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
       Content-Length: ['212']
       Content-Type: [application/x-www-form-urlencoded]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.20.0]
     method: POST
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_4ab2f5d7e981184ac5f52bd09fc76d15c1d16c340f3c8c14047db77acb87ec42,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_a49e0c87b12361b1a4185db7798f20c8d225765b20a8e9b71ea847cb697742ab,
+      pretty: {access_token: FAKE_TOKEN_9733c05cd5e60bf323a2e26f06e4d635114674f14f7bc6b19e148521d81db610,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_47c9af02a83ac6b7b56ce491abf81f42cea5c6214d0d5adabe52a2b0336096f7,
         token_type: bearer}
-      string: '{"access_token": "FAKE_TOKEN_4ab2f5d7e981184ac5f52bd09fc76d15c1d16c340f3c8c14047db77acb87ec42",
-        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_a49e0c87b12361b1a4185db7798f20c8d225765b20a8e9b71ea847cb697742ab"}'
+      string: '{"access_token": "FAKE_TOKEN_9733c05cd5e60bf323a2e26f06e4d635114674f14f7bc6b19e148521d81db610",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_47c9af02a83ac6b7b56ce491abf81f42cea5c6214d0d5adabe52a2b0336096f7"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 08 Oct 2018 12:03:20 GMT']
-      Expires: ['Mon, 08 Oct 2018 12:03:20 GMT']
+      Date: ['Thu, 01 Nov 2018 15:50:37 GMT']
+      Expires: ['Thu, 01 Nov 2018 15:50:37 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-Powered-By: [ASP.NET]
-      content-length: ['2162']
+      content-length: ['2278']
     status: {code: 200, message: OK}
 version: 1

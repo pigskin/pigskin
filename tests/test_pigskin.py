@@ -187,6 +187,19 @@ class TestPigskinAuth(object):
         assert gp.subscription
 
 
+    @vcr.use_cassette('public_API/europe_pigskin_auth_logout.yaml')
+    @staticmethod
+    def test_logout(gp):
+        assert gp.logout()
+
+        # make sure subscription info and tokens are unset
+        assert gp.subscription is None
+
+        # TODO: this is service-specific. It should be moved to backend/.
+        assert gp._store.access_token is None
+        assert gp._store.refresh_token is None
+
+
 @pytest.mark.incremental
 class TestPigskinAuthFail(object):
     """These require authentication to Game Pass, and should fail without it."""

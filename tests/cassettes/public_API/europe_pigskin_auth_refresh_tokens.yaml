@@ -1,33 +1,33 @@
 interactions:
 - request:
-    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_a49e0c87b12361b1a4185db7798f20c8d225765b20a8e9b71ea847cb697742ab&grant_type=refresh_token
+    body: client_id=42cc360e-6fbb-4472-9437-2f088b8730de&refresh_token=FAKE_TOKEN_47c9af02a83ac6b7b56ce491abf81f42cea5c6214d0d5adabe52a2b0336096f7&grant_type=refresh_token
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      Content-Length: ['1158']
+      Content-Length: ['1201']
       Content-Type: [application/x-www-form-urlencoded]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.20.0]
     method: POST
     uri: https://www.nflgamepass.com/api/user/oauth/token
   response:
     body:
-      pretty: {access_token: FAKE_TOKEN_3ffa6184e2b2a5f75bbee237a27108c8aff1105670aec970fa2177aace41dcac,
-        expires_in: 3539, refresh_token: FAKE_TOKEN_d7c4c2558fc4fac58d9fdf108900564eb832fe574ac8cfd9e87537c79c7236eb,
+      pretty: {access_token: FAKE_TOKEN_80edc81a57a905614b49c2ab37aa2b53d482b7a3631360338e2da1659bb41b6d,
+        expires_in: 3539, refresh_token: FAKE_TOKEN_4f27082e6db7fb10ff885a73c652284e351b8581f5307ebe726692051953d86e,
         token_type: bearer}
-      string: '{"access_token": "FAKE_TOKEN_3ffa6184e2b2a5f75bbee237a27108c8aff1105670aec970fa2177aace41dcac",
-        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_d7c4c2558fc4fac58d9fdf108900564eb832fe574ac8cfd9e87537c79c7236eb"}'
+      string: '{"access_token": "FAKE_TOKEN_80edc81a57a905614b49c2ab37aa2b53d482b7a3631360338e2da1659bb41b6d",
+        "token_type": "bearer", "expires_in": 3539, "refresh_token": "FAKE_TOKEN_4f27082e6db7fb10ff885a73c652284e351b8581f5307ebe726692051953d86e"}'
     headers:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 08 Oct 2018 12:03:21 GMT']
-      Expires: ['Mon, 08 Oct 2018 12:03:21 GMT']
+      Date: ['Thu, 01 Nov 2018 15:50:37 GMT']
+      Expires: ['Thu, 01 Nov 2018 15:50:37 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-Powered-By: [ASP.NET]
-      content-length: ['2162']
+      content-length: ['2278']
     status: {code: 200, message: OK}
 version: 1

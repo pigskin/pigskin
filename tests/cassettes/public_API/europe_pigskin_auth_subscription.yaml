@@ -6,7 +6,7 @@ interactions:
       Accept-Encoding: ['gzip, deflate']
       Authorization: [REDACTED]
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.19.1]
+      User-Agent: [python-requests/2.20.0]
     method: GET
     uri: https://www.nflgamepass.com/api/user/api/users/v1/subscription/myaccount
   response:
@@ -20,7 +20,7 @@ interactions:
         profile: REDACTED
         subscriptions:
         - billedDate: '2016-08-01T00:00:00'
-          customAttributes: {renewalPricePerInstallment: 119.99, renewalTotal: 119.99,
+          customAttributes: {renewalPricePerInstallment: 40.0, renewalTotal: 79.99,
             showAutorenewStatus: true, showDisableAutorenew: false, showEnableAutorenew: false}
           endDate: '2019-08-01T00:00:00'
           extraCustomFields: {cancellationReason__c: null, cpqBundleJsonId__QT: null,
@@ -48,8 +48,8 @@ interactions:
         false, "isFreetrialPeriodActive": false, "status": 3, "statusLabel": "active",
         "subscriptionId": "2c92a09864f40e500164f67b170c0ae7", "subscriptionNumber":
         "A-S00011893", "customAttributes": {"showAutorenewStatus": true, "showDisableAutorenew":
-        false, "showEnableAutorenew": false, "renewalTotal": 119.99, "renewalPricePerInstallment":
-        119.99}, "extraCustomFields": {"quoteNumber__QT": null, "quoteBusinessType__QT":
+        false, "showEnableAutorenew": false, "renewalTotal": 79.99, "renewalPricePerInstallment":
+        40.0}, "extraCustomFields": {"quoteNumber__QT": null, "quoteBusinessType__QT":
         null, "opportunityCloseDate__QT": null, "subscriptionLastAction__c": null,
         "opportunityName__QT": null, "iP__c": null, "sourceSystemUserID__c": null,
         "cpqBundleJsonId__QT": null, "sourceSystem__c": null, "productTag__c": null,
@@ -59,13 +59,13 @@ interactions:
       Cache-Control: ['max-age=0, no-cache, no-store']
       Connection: [keep-alive]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Mon, 08 Oct 2018 12:03:20 GMT']
-      Expires: ['Mon, 08 Oct 2018 12:03:20 GMT']
+      Date: ['Thu, 01 Nov 2018 15:50:37 GMT']
+      Expires: ['Thu, 01 Nov 2018 15:50:37 GMT']
       Pragma: [no-cache]
       Request-Context: ['appId=cid-v1:449ff629-0650-4d0a-b5fd-df8ec97c3d76']
       Server: [Microsoft-IIS/10.0]
       Vary: [Accept-Encoding]
       X-Powered-By: [ASP.NET]
-      content-length: ['1404']
+      content-length: ['1402']
     status: {code: 200, message: OK}
 version: 1
