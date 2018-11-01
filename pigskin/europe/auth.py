@@ -58,6 +58,40 @@ class auth(object):
         return False
 
 
+    def logout(self):
+        """Logout from NFL Game Pass Europe."""
+        url = self._store.gp_config['modules']['API']['LOGOUT']
+        headers = {'Authorization': 'Bearer {0}'.format(self._store.access_token)}
+
+        post_data = {
+            'client_id': self._store.gp_config['modules']['API']['CLIENT_ID'],
+            'device_type' : 'web',
+        }
+
+        if not self._store.access_token or not self._store.subscription:
+            self.logger.warn('logout: looks like a logout attempt without having logged in')
+
+        try:
+            r = self._store.s.post(url, data=post_data, headers=headers)
+            #self._log_request(r)
+            data = r.json()
+        except ValueError:
+            self.logger.error('logout: server response is invalid')
+            return False
+
+        if data:  # response is supposed to be 'null'
+            self.logger.error('logout: unexpected logout response')
+            self.logger.error(data)
+            return False
+
+        self._store.access_token = None
+        self._store.refresh_token = None
+        self._store.subscription = None
+
+        self.logger.debug('logout successful')
+        return True
+
+
     def refresh_tokens(self):
         """Refresh the tokens needed to access content."""
         url = self._store.gp_config['modules']['API']['REFRESH_TOKEN']

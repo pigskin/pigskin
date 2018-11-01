@@ -183,6 +183,21 @@ class pigskin(object):
         return self._auth.login(username, password, force)
 
 
+    def logout(self):
+        """Logout from NFL Game Pass.
+
+        Returns
+        -------
+        bool
+            True if successful, False otherwise.
+
+        See Also
+        --------
+        ``login()``
+        """
+        return self._auth.logout()
+
+
     @property
     def subscription(self):
         """The subscription type.
