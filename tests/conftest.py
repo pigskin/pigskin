@@ -58,7 +58,7 @@ def search_for_tokens(text):
             if parsed[t] not in token_list:
                 fake_token = sha256(parsed[t].encode()).hexdigest()
                 token_list[parsed[t]] = 'FAKE_TOKEN_' + fake_token
-        except KeyError:
+        except (KeyError, TypeError):
             continue
 
 
@@ -73,7 +73,7 @@ def scrub_profile_info(text):
         try:
             if parsed[i]:
                 parsed[i] = 'REDACTED'
-        except KeyError:
+        except (KeyError, TypeError):
             pass
 
     text = json.dumps(parsed)
