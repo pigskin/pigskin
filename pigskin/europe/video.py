@@ -2,11 +2,7 @@ import logging
 import uuid
 import json
 import defusedxml.ElementTree as ET
-try:
-    from urllib.parse import urlencode
-except ImportError:  # Python 2.7
-    from urllib import urlencode
-
+from urllib.parse import urlencode
 from .. import settings
 
 
@@ -152,7 +148,7 @@ class video(object):
         try:
             r = self._store.s.get(url)
             #self._log_request(r)
-            data = r.content
+            data = r.text
             data_xml = ET.fromstring(data)
         except (ET.ParseError, TypeError):
             self.logger.error('_get_diva_config: server response is invalid')
@@ -198,7 +194,7 @@ class video(object):
         try:
             r = self._store.s.get(video_data_url)
             #self._log_request(r)
-            akamai_data = r.content
+            akamai_data = r.text
             akamai_xml = ET.fromstring(akamai_data)
         except (ET.ParseError, TypeError):
             self.logger.error('_get_diva_streams: server response is invalid')
