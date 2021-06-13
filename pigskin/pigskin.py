@@ -4,11 +4,7 @@ A Python library for NFL Game Pass
 import json
 import logging
 from collections import OrderedDict
-try:
-    from urllib.parse import urlencode
-except ImportError:  # Python 2.7
-    from urllib import urlencode
-
+from urllib.parse import urlencode
 import requests
 import m3u8
 
@@ -244,7 +240,7 @@ class pigskin(object):
         try:
             r = self._store.s.get(manifest_url)
             self._log_request(r)
-            m3u8_manifest = r.content
+            m3u8_manifest = r.text
         except ValueError:
             self.logger.error('m3u8_to_dict: server response is invalid')
             return None
@@ -311,7 +307,7 @@ class pigskin(object):
                 # TODO: it would be nice handle XML too, but I have been unable
                 # to find a solution within the standard library to convert XML
                 # to a python object.
-                response_dict['body'] = str(r.content)
+                response_dict['body'] = str(r.text)
             response_dict['headers'] = dict(r.headers)
             response_dict['status_code'] = r.status_code
 
