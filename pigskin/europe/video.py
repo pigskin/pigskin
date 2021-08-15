@@ -221,7 +221,8 @@ class video(object):
             payload = self._build_processing_url_payload(video_id, vs_url)
 
             try:
-                r = self._store.s.post(url=processing_url, data=payload)
+                h = {'Content-Type': 'application/json'}
+                r = self._store.s.post(url=processing_url, data=payload, headers=h)
                 #self._log_request(r)
                 data = r.json()
                 content_url = data['ContentUrl']
